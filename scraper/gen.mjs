@@ -43,6 +43,7 @@ const layout = (title, body, depth = 0, extraHead = '') => {
   const root = '../'.repeat(depth);
   return `<!DOCTYPE html><html lang="ja"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
 <title>${esc(title)} | スマスロ目標 (個人アーカイブ)</title>
 <link rel="stylesheet" href="${root}assets/style.css">
 <link rel="manifest" href="${root}manifest.webmanifest">
@@ -230,6 +231,10 @@ fs.writeFileSync(path.join(SITE, 'tool.html'), layout('期待値計算ツール'
 // ===== アイコン(SVG) =====
 const icon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" rx="96" fill="#ffffff"/><rect x="8" y="8" width="496" height="496" rx="92" fill="none" stroke="#e5e7eb" stroke-width="8"/><text x="50%" y="54%" font-size="300" text-anchor="middle" dominant-baseline="central">🎰</text></svg>`;
 fs.writeFileSync(path.join(SITE, 'assets', 'icon.svg'), icon);
+
+// robots.txt（検索エンジン除け）＆ GitHub Pages 用 .nojekyll
+fs.writeFileSync(path.join(SITE, 'robots.txt'), 'User-agent: *\nDisallow: /\n');
+fs.writeFileSync(path.join(SITE, '.nojekyll'), '');
 
 // ===== manifest =====
 const manifest = {
