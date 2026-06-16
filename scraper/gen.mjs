@@ -46,9 +46,9 @@ const layout = (title, body, depth = 0, extraHead = '') => {
 <title>${esc(title)} | スマスロ目標 (個人アーカイブ)</title>
 <link rel="stylesheet" href="${root}assets/style.css">
 <link rel="manifest" href="${root}manifest.webmanifest">
-<meta name="theme-color" content="#0d1117">
+<meta name="theme-color" content="#ffffff">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <link rel="apple-touch-icon" href="${root}assets/icon.svg">
 <link rel="icon" href="${root}assets/icon.svg">
 <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('${root}sw.js').catch(function(){})});}</script>
@@ -228,14 +228,14 @@ calc();
 fs.writeFileSync(path.join(SITE, 'tool.html'), layout('期待値計算ツール', toolBody, 0));
 
 // ===== アイコン(SVG) =====
-const icon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" rx="96" fill="#0d1117"/><text x="50%" y="54%" font-size="300" text-anchor="middle" dominant-baseline="central">🎰</text><rect x="40" y="392" width="432" height="40" rx="20" fill="#f5b301"/></svg>`;
+const icon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" rx="96" fill="#ffffff"/><rect x="8" y="8" width="496" height="496" rx="92" fill="none" stroke="#e5e7eb" stroke-width="8"/><text x="50%" y="54%" font-size="300" text-anchor="middle" dominant-baseline="central">🎰</text></svg>`;
 fs.writeFileSync(path.join(SITE, 'assets', 'icon.svg'), icon);
 
 // ===== manifest =====
 const manifest = {
   name: 'スマスロ目標（個人アーカイブ）', short_name: 'スマスロ目標',
   start_url: './index.html', scope: './', display: 'standalone',
-  background_color: '#0d1117', theme_color: '#0d1117', lang: 'ja',
+  background_color: '#ffffff', theme_color: '#ffffff', lang: 'ja',
   icons: [{ src: 'assets/icon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any' }],
 };
 fs.writeFileSync(path.join(SITE, 'manifest.webmanifest'), JSON.stringify(manifest, null, 2));
