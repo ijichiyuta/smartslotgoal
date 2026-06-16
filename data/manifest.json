@@ -1,0 +1,3498 @@
+{
+  "https://suroschool.jp/": {
+    "ok": true,
+    "status": 200,
+    "type": "page",
+    "slug": "index__267d86f4",
+    "file": "data/raw/page/index__267d86f4.html",
+    "bytes": 357933
+  },
+  "https://suroschool.jp/%e3%81%82": {
+    "ok": true,
+    "status": 200,
+    "type": "page",
+    "slug": "あ__dbff268a",
+    "file": "data/raw/page/あ__dbff268a.html",
+    "bytes": 222942
+  },
+  "https://suroschool.jp/%e3%81%8b%e8%a1%8c": {
+    "ok": true,
+    "status": 200,
+    "type": "page",
+    "slug": "か行__05d7330f",
+    "file": "data/raw/page/か行__05d7330f.html",
+    "bytes": 236365
+  },
+  "https://suroschool.jp/%e3%81%95%e8%a1%8c": {
+    "ok": true,
+    "status": 200,
+    "type": "page",
+    "slug": "さ行__2f2342c2",
+    "file": "data/raw/page/さ行__2f2342c2.html",
+    "bytes": 265939
+  },
+  "https://suroschool.jp/%e3%81%9f%e8%a1%8c": {
+    "ok": true,
+    "status": 200,
+    "type": "page",
+    "slug": "た行__3910c35a",
+    "file": "data/raw/page/た行__3910c35a.html",
+    "bytes": 216768
+  },
+  "https://suroschool.jp/%e3%81%aa%e8%a1%8c": {
+    "ok": true,
+    "status": 200,
+    "type": "page",
+    "slug": "な行__0db69360",
+    "file": "data/raw/page/な行__0db69360.html",
+    "bytes": 143455
+  },
+  "https://suroschool.jp/%e3%81%af%e8%a1%8c": {
+    "ok": true,
+    "status": 200,
+    "type": "page",
+    "slug": "は行__d8bdbadc",
+    "file": "data/raw/page/は行__d8bdbadc.html",
+    "bytes": 205188
+  },
+  "https://suroschool.jp/%e3%81%be%e8%a1%8c": {
+    "ok": true,
+    "status": 200,
+    "type": "page",
+    "slug": "ま行__62383293",
+    "file": "data/raw/page/ま行__62383293.html",
+    "bytes": 166639
+  },
+  "https://suroschool.jp/%e3%82%84%e8%a1%8c": {
+    "ok": true,
+    "status": 200,
+    "type": "page",
+    "slug": "や行__ba321ffa",
+    "file": "data/raw/page/や行__ba321ffa.html",
+    "bytes": 146629
+  },
+  "https://suroschool.jp/%e3%82%89%e3%83%bb%e3%82%8f%e8%a1%8c": {
+    "ok": true,
+    "status": 200,
+    "type": "page",
+    "slug": "ら・わ行__f0891e9b",
+    "file": "data/raw/page/ら・わ行__f0891e9b.html",
+    "bytes": 142808
+  },
+  "https://suroschool.jp/update-notice-list": {
+    "ok": true,
+    "status": 200,
+    "type": "page",
+    "slug": "update-notice-list__11353c6e",
+    "file": "data/raw/page/update-notice-list__11353c6e.html",
+    "bytes": 158489
+  },
+  "https://suroschool.jp/%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b%e4%b8%80%e8%a6%a7": {
+    "ok": true,
+    "status": 200,
+    "type": "page",
+    "slug": "お知らせ一覧__43015dfd",
+    "file": "data/raw/page/お知らせ一覧__43015dfd.html",
+    "bytes": 129070
+  },
+  "https://suroschool.jp/%e9%81%8e%e5%8e%bb%e6%a9%9f%e7%a8%ae%e8%a8%98%e4%ba%8b%e4%b8%80%e8%a6%a7": {
+    "ok": true,
+    "status": 200,
+    "type": "page",
+    "slug": "過去機種記事一覧__fa0a15e6",
+    "file": "data/raw/page/過去機種記事一覧__fa0a15e6.html",
+    "bytes": 182876
+  },
+  "https://suroschool.jp/simple-login": {
+    "ok": true,
+    "status": 200,
+    "type": "page",
+    "slug": "simple-login__d5d21c0e",
+    "file": "data/raw/page/simple-login__d5d21c0e.html",
+    "bytes": 148251
+  },
+  "https://suroschool.jp/memo": {
+    "ok": true,
+    "status": 200,
+    "type": "page",
+    "slug": "memo__cc5699f6",
+    "file": "data/raw/page/memo__cc5699f6.html",
+    "bytes": 125279
+  },
+  "https://suroschool.jp/privacy-policy": {
+    "ok": true,
+    "status": 200,
+    "type": "page",
+    "slug": "privacy-policy__c5a637ba",
+    "file": "data/raw/page/privacy-policy__c5a637ba.html",
+    "bytes": 126412
+  },
+  "https://suroschool.jp/contact": {
+    "ok": true,
+    "status": 200,
+    "type": "page",
+    "slug": "contact__e2d7cb0a",
+    "file": "data/raw/page/contact__e2d7cb0a.html",
+    "bytes": 125656
+  },
+  "https://suroschool.jp/about": {
+    "ok": true,
+    "status": 200,
+    "type": "page",
+    "slug": "about__06632569",
+    "file": "data/raw/page/about__06632569.html",
+    "bytes": 126471
+  },
+  "https://suroschool.jp/discord-callback": {
+    "ok": true,
+    "status": 200,
+    "type": "page",
+    "slug": "discord-callback__e6d3bbad",
+    "file": "data/raw/page/discord-callback__e6d3bbad.html",
+    "bytes": 148298
+  },
+  "https://suroschool.jp/archives/machine/l%e6%9d%b1%e4%ba%ac%e5%96%b0%e7%a8%ae": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l東京喰種__c014d5f0",
+    "file": "data/raw/machine/archives_machine_l東京喰種__c014d5f0.html",
+    "bytes": 257129
+  },
+  "https://suroschool.jp/archives/machine/l%e3%82%b9%e3%83%bc%e3%83%91%e3%83%bc%e3%83%96%e3%83%a9%e3%83%83%e3%82%af%e3%82%b8%e3%83%a3%e3%83%83%e3%82%af": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lスーパーブラックジャック__c38f402c",
+    "file": "data/raw/machine/archives_machine_lスーパーブラックジャック__c38f402c.html",
+    "bytes": 241755
+  },
+  "https://suroschool.jp/archives/machine/l%e3%81%82%e3%82%8a%e3%81%b5%e3%82%8c%e3%81%9f%e8%81%b7%e6%a5%ad%e3%81%a7%e4%b8%96%e7%95%8c%e6%9c%80%e5%bc%b7": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lありふれた職業で世界最強__2c58539a",
+    "file": "data/raw/machine/archives_machine_lありふれた職業で世界最強__2c58539a.html",
+    "bytes": 272973
+  },
+  "https://suroschool.jp/archives/machine/l%e3%82%b7%e3%83%a3%e3%83%bc%e3%83%9e%e3%83%b3%e3%82%ad%e3%83%b3%e3%82%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lシャーマンキング__9a9ac32f",
+    "file": "data/raw/machine/archives_machine_lシャーマンキング__9a9ac32f.html",
+    "bytes": 291907
+  },
+  "https://suroschool.jp/archives/machine/l%e3%82%b7%e3%83%b3%e3%83%bb%e3%82%a8%e3%83%b4%e3%82%a1%e3%83%b3%e3%82%b2%e3%83%aa%e3%82%aa%e3%83%b3": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lシン・エヴァンゲリオン__6284ff5c",
+    "file": "data/raw/machine/archives_machine_lシン・エヴァンゲリオン__6284ff5c.html",
+    "bytes": 227778
+  },
+  "https://suroschool.jp/archives/machine/l%e5%b3%b6%e5%a8%98": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l島娘__9ab6b301",
+    "file": "data/raw/machine/archives_machine_l島娘__9ab6b301.html",
+    "bytes": 193832
+  },
+  "https://suroschool.jp/archives/machine/l%e3%81%ab%e3%82%83%e3%82%93%e3%81%93%e5%a4%a7%e6%88%a6%e4%ba%89%e8%b6%85%e7%a5%9e%e9%80%9f": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lにゃんこ大戦争超神速__71eb7fb6",
+    "file": "data/raw/machine/archives_machine_lにゃんこ大戦争超神速__71eb7fb6.html",
+    "bytes": 206883
+  },
+  "https://suroschool.jp/archives/machine/l%e4%b8%83%e3%81%a4%e3%81%ae%e9%ad%94%e5%89%a3%e3%81%8c%e6%94%af%e9%85%8d%e3%81%99%e3%82%8b": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l七つの魔剣が支配する__a269271a",
+    "file": "data/raw/machine/archives_machine_l七つの魔剣が支配する__a269271a.html",
+    "bytes": 251068
+  },
+  "https://suroschool.jp/archives/machine/l%e3%82%b5%e3%83%a9%e3%83%aa%e3%83%bc%e3%83%9e%e3%83%b3%e9%87%91%e5%a4%aa%e9%83%8e": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lサラリーマン金太郎__18dc3660",
+    "file": "data/raw/machine/archives_machine_lサラリーマン金太郎__18dc3660.html",
+    "bytes": 200138
+  },
+  "https://suroschool.jp/archives/machine/%e3%83%81%e3%83%90%e3%83%aa%e3%83%a82%e3%83%97%e3%83%a9%e3%82%b9": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_チバリヨ2プラス__d850cbfe",
+    "file": "data/raw/machine/archives_machine_チバリヨ2プラス__d850cbfe.html",
+    "bytes": 215497
+  },
+  "https://suroschool.jp/archives/machine/l%e3%81%a8%e3%81%82%e3%82%8b%e9%ad%94%e8%a1%93%e3%81%ae%e7%a6%81%e6%9b%b8%e7%9b%ae%e9%8c%b2%e3%80%80%e4%b8%80%e6%96%b9%e9%80%9a%e8%a1%8c%e3%80%80%e3%82%a2%e3%82%af%e3%82%bb%e3%83%ac%e3%83%bc%e3%82%bf": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lとある魔術の禁書目録　一方通行　アクセレータ__49e88ff2",
+    "file": "data/raw/machine/archives_machine_lとある魔術の禁書目録　一方通行　アクセレータ__49e88ff2.html",
+    "bytes": 242817
+  },
+  "https://suroschool.jp/archives/machine/l%e3%83%80%e3%83%b3%e3%83%99%e3%83%ab%e4%bd%95%e3%82%ad%e3%83%ad%e6%8c%81%e3%81%a6%e3%82%8b%ef%bc%9f": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lダンベル何キロ持てる___c36a27e5",
+    "file": "data/raw/machine/archives_machine_lダンベル何キロ持てる___c36a27e5.html",
+    "bytes": 271818
+  },
+  "https://suroschool.jp/archives/machine/l%e3%82%b9%e3%83%bc%e3%83%91%e3%83%bc%e3%83%93%e3%83%b3%e3%82%b4%e3%83%8d%e3%82%aa": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lスーパービンゴネオ__08d03965",
+    "file": "data/raw/machine/archives_machine_lスーパービンゴネオ__08d03965.html",
+    "bytes": 197940
+  },
+  "https://suroschool.jp/archives/machine/%e3%83%ab%e3%83%91%e3%83%b3%e4%b8%89%e4%b8%96%e3%80%80%e5%a4%a7%e8%88%aa%e6%b5%b7%e8%80%85%e3%81%ae%e7%a7%98%e5%ae%9d": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_ルパン三世　大航海者の秘宝__511eb8fc",
+    "file": "data/raw/machine/archives_machine_ルパン三世　大航海者の秘宝__511eb8fc.html",
+    "bytes": 229453
+  },
+  "https://suroschool.jp/archives/machine/%e3%81%84%e3%81%ac%e3%82%84%e3%81%97%e3%82%83%ef%bc%bd%e7%8a%ac%e5%a4%9c%e5%8f%892": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_いぬやしゃ_犬夜叉2__1de04db1",
+    "file": "data/raw/machine/archives_machine_いぬやしゃ_犬夜叉2__1de04db1.html",
+    "bytes": 217675
+  },
+  "https://suroschool.jp/archives/machine/%e3%83%80%e3%83%b3%e3%83%90%e3%82%a4%e3%83%b3": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_ダンバイン__f476210c",
+    "file": "data/raw/machine/archives_machine_ダンバイン__f476210c.html",
+    "bytes": 221006
+  },
+  "https://suroschool.jp/archives/machine/%e6%a1%83%e5%a4%aa%e9%83%8e%e9%9b%bb%e9%89%84": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_桃太郎電鉄__a7a6356b",
+    "file": "data/raw/machine/archives_machine_桃太郎電鉄__a7a6356b.html",
+    "bytes": 164334
+  },
+  "https://suroschool.jp/archives/machine/%e3%83%a2%e3%83%b3%e3%82%b9%e3%82%bf%e3%83%bc%e3%83%8f%e3%83%b3%e3%82%bf%e3%83%bc%e3%83%a9%e3%82%a4%e3%82%ba": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_モンスターハンターライズ__e5002e2a",
+    "file": "data/raw/machine/archives_machine_モンスターハンターライズ__e5002e2a.html",
+    "bytes": 333223
+  },
+  "https://suroschool.jp/archives/machine/%e3%83%90%e3%83%b3%e3%83%89%e3%83%aa": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_バンドリ__425706ca",
+    "file": "data/raw/machine/archives_machine_バンドリ__425706ca.html",
+    "bytes": 213360
+  },
+  "https://suroschool.jp/archives/machine/%e5%bf%85%e6%ae%ba%e4%bb%95%e7%bd%ae%e4%ba%ba": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_必殺仕置人__bb8a105b",
+    "file": "data/raw/machine/archives_machine_必殺仕置人__bb8a105b.html",
+    "bytes": 153632
+  },
+  "https://suroschool.jp/archives/machine/%e3%83%aa%e3%82%bc%e3%83%ad%e3%80%80season2": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_リゼロ　season2__8ede47dd",
+    "file": "data/raw/machine/archives_machine_リゼロ　season2__8ede47dd.html",
+    "bytes": 200465
+  },
+  "https://suroschool.jp/archives/machine/%e4%bb%8a%e6%97%a5%e3%81%8b%e3%82%89%e4%bf%ba%e3%81%af": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_今日から俺は__998d5598",
+    "file": "data/raw/machine/archives_machine_今日から俺は__998d5598.html",
+    "bytes": 221439
+  },
+  "https://suroschool.jp/archives/machine/%e3%81%8b%e3%81%90%e3%82%84%e6%a7%98%e3%81%af%e5%91%8a%e3%82%89%e3%81%9b%e3%81%9f%e3%81%84": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_かぐや様は告らせたい__968c9717",
+    "file": "data/raw/machine/archives_machine_かぐや様は告らせたい__968c9717.html",
+    "bytes": 264224
+  },
+  "https://suroschool.jp/archives/machine/l%e9%ac%bc%e6%ad%a6%e8%80%853": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l鬼武者3__40e2a4bc",
+    "file": "data/raw/machine/archives_machine_l鬼武者3__40e2a4bc.html",
+    "bytes": 233379
+  },
+  "https://suroschool.jp/archives/machine/%e3%81%84%e3%81%ab%e3%81%97%e3%82%83%e3%82%8b%e9%a0%ad%e6%96%87%e5%ad%97d-2nd": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_いにしゃる頭文字d-2nd__e51ab800",
+    "file": "data/raw/machine/archives_machine_いにしゃる頭文字d-2nd__e51ab800.html",
+    "bytes": 257840
+  },
+  "https://suroschool.jp/archives/machine/l%e9%bb%84%e9%96%80%e3%81%a1%e3%82%83%e3%81%be%e5%a4%a9": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l黄門ちゃま天__e1b9723c",
+    "file": "data/raw/machine/archives_machine_l黄門ちゃま天__e1b9723c.html",
+    "bytes": 213990
+  },
+  "https://suroschool.jp/archives/machine/l%e7%9c%9f%e3%83%bb%e4%b8%80%e9%a8%8e%e5%bd%93%e5%8d%83": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l真・一騎当千__7ce07270",
+    "file": "data/raw/machine/archives_machine_l真・一騎当千__7ce07270.html",
+    "bytes": 259911
+  },
+  "https://suroschool.jp/archives/machine/l%e9%96%83%e4%b9%b1%e3%82%ab%e3%82%b0%e3%83%a9": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l閃乱カグラ__67741eb0",
+    "file": "data/raw/machine/archives_machine_l閃乱カグラ__67741eb0.html",
+    "bytes": 156217
+  },
+  "https://suroschool.jp/archives/machine/%e3%82%b2%e3%82%b2%e3%82%b2%e3%81%ae%e9%ac%bc%e5%a4%aa%e9%83%8e%e8%a6%9a%e9%86%92": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_ゲゲゲの鬼太郎覚醒__60b08722",
+    "file": "data/raw/machine/archives_machine_ゲゲゲの鬼太郎覚醒__60b08722.html",
+    "bytes": 250241
+  },
+  "https://suroschool.jp/archives/machine/l%e3%83%af%e3%83%b3%e3%83%91%e3%83%b3%e3%83%9e%e3%83%b3": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lワンパンマン__26bb1b18",
+    "file": "data/raw/machine/archives_machine_lワンパンマン__26bb1b18.html",
+    "bytes": 225575
+  },
+  "https://suroschool.jp/archives/machine/l-d4dj": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l-d4dj__c71a573b",
+    "file": "data/raw/machine/archives_machine_l-d4dj__c71a573b.html",
+    "bytes": 199885
+  },
+  "https://suroschool.jp/archives/machine/l%e3%83%88%e3%83%ad%e3%83%94%e3%82%ab%e3%83%bc%e3%83%8a": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lトロピカーナ__22779099",
+    "file": "data/raw/machine/archives_machine_lトロピカーナ__22779099.html",
+    "bytes": 193508
+  },
+  "https://suroschool.jp/archives/machine/l%e3%82%b4%e3%83%83%e3%83%89%e3%82%a4%e3%83%bc%e3%82%bf%e3%83%bc%e3%83%aa%e3%82%b6%e3%83%ac%e3%82%af%e3%82%b7%e3%83%a7%e3%83%b3": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lゴッドイーターリザレクション__ca0332af",
+    "file": "data/raw/machine/archives_machine_lゴッドイーターリザレクション__ca0332af.html",
+    "bytes": 296601
+  },
+  "https://suroschool.jp/archives/machine/l%e8%b3%9e%e9%87%91%e9%a6%96%e3%80%80angel": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l賞金首　angel__d739d4c9",
+    "file": "data/raw/machine/archives_machine_l賞金首　angel__d739d4c9.html",
+    "bytes": 204282
+  },
+  "https://suroschool.jp/archives/machine/l%e7%9c%9f%e5%8c%97%e6%96%97%e7%84%a1%e5%8f%8c": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l真北斗無双__739efb7b",
+    "file": "data/raw/machine/archives_machine_l真北斗無双__739efb7b.html",
+    "bytes": 256288
+  },
+  "https://suroschool.jp/archives/machine/l%e3%82%be%e3%83%b3%e3%83%93%e3%83%a9%e3%83%b3%e3%83%89%e3%82%b5%e3%82%ac": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lゾンビランドサガ__883aad81",
+    "file": "data/raw/machine/archives_machine_lゾンビランドサガ__883aad81.html",
+    "bytes": 258050
+  },
+  "https://suroschool.jp/archives/machine/l%e3%82%b7%e3%83%b3%e3%83%95%e3%82%a9%e3%82%ae%e3%82%a2": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lシンフォギア__954b134d",
+    "file": "data/raw/machine/archives_machine_lシンフォギア__954b134d.html",
+    "bytes": 286694
+  },
+  "https://suroschool.jp/archives/machine/%e3%82%a2%e3%82%ab%e3%83%a1%e3%81%8c%e6%96%ac%e3%82%8b2": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_アカメが斬る2__656ab48b",
+    "file": "data/raw/machine/archives_machine_アカメが斬る2__656ab48b.html",
+    "bytes": 204011
+  },
+  "https://suroschool.jp/archives/machine/%e8%81%96%e9%97%98%e5%a3%ab%e6%98%9f%e7%9f%a2%e6%b5%b7%e7%9a%87%e8%a6%9a%e9%86%92": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_聖闘士星矢海皇覚醒__adcf408e",
+    "file": "data/raw/machine/archives_machine_聖闘士星矢海皇覚醒__adcf408e.html",
+    "bytes": 249390
+  },
+  "https://suroschool.jp/archives/machine/l%e8%81%96%e9%97%98%e5%a3%ab%e6%98%9f%e7%9f%a2%e6%b5%b7%e7%9a%87%e8%a6%9a%e9%86%92%ef%bc%88%e3%83%aa%e3%82%bb%e3%82%a4%e3%83%a4%ef%bc%89": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l聖闘士星矢海皇覚醒_リセイヤ___109385de",
+    "file": "data/raw/machine/archives_machine_l聖闘士星矢海皇覚醒_リセイヤ___109385de.html",
+    "bytes": 143569
+  },
+  "https://suroschool.jp/archives/machine/%e7%97%9b%e3%81%84%e3%81%ae%e3%81%af%e5%ab%8c%e3%81%aa%e3%81%ae%e3%81%a7%e9%98%b2%e5%be%a1%e5%8a%9b%e3%81%ab%e6%a5%b5%e6%8c%af%e3%82%8a%e3%81%97%e3%81%9f%e3%81%84%e3%81%a8%e6%80%9d%e3%81%84%e3%81%be": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_痛いのは嫌なので防御力に極振りしたいと思いま__e4ca9231",
+    "file": "data/raw/machine/archives_machine_痛いのは嫌なので防御力に極振りしたいと思いま__e4ca9231.html",
+    "bytes": 238291
+  },
+  "https://suroschool.jp/archives/machine/l-tolove%e3%82%8b%e3%83%80%e3%83%bc%e3%82%af%e3%83%8d%e3%82%b9": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l-toloveるダークネス__ffaec2fd",
+    "file": "data/raw/machine/archives_machine_l-toloveるダークネス__ffaec2fd.html",
+    "bytes": 234314
+  },
+  "https://suroschool.jp/archives/machine/l%e3%82%b9%e3%83%88%e3%83%aa%e3%83%bc%e3%83%88%e3%83%95%e3%82%a1%e3%82%a4%e3%82%bf%e3%83%bcv": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lストリートファイターv__5ef97887",
+    "file": "data/raw/machine/archives_machine_lストリートファイターv__5ef97887.html",
+    "bytes": 250113
+  },
+  "https://suroschool.jp/archives/machine/l%e3%82%a8%e3%82%a6%e3%83%ac%e3%82%ab%e3%82%bb%e3%83%96%e3%83%b3%ef%bc%94": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lエウレカセブン___fe615a85",
+    "file": "data/raw/machine/archives_machine_lエウレカセブン___fe615a85.html",
+    "bytes": 221354
+  },
+  "https://suroschool.jp/archives/machine/l%e7%82%8e%e7%82%8e%e3%83%8e%e6%b6%88%e9%98%b2%e9%9a%8a": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l炎炎ノ消防隊__75da7649",
+    "file": "data/raw/machine/archives_machine_l炎炎ノ消防隊__75da7649.html",
+    "bytes": 242606
+  },
+  "https://suroschool.jp/archives/machine/l%e3%82%a6%e3%83%ab%e3%83%9e%e3%83%b3%e3%83%86%e3%82%a3%e3%82%ac": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lウルマンティガ__ee879c89",
+    "file": "data/raw/machine/archives_machine_lウルマンティガ__ee879c89.html",
+    "bytes": 222510
+  },
+  "https://suroschool.jp/archives/machine/l%e7%95%aa%e9%95%b7%ef%bc%94": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l番長___064f3bf6",
+    "file": "data/raw/machine/archives_machine_l番長___064f3bf6.html",
+    "bytes": 226160
+  },
+  "https://suroschool.jp/archives/machine/l%e3%82%b4%e3%83%bc%e3%83%ab%e3%83%87%e3%83%b3%e3%82%ab%e3%83%a0%e3%82%a4": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lゴールデンカムイ__485f5367",
+    "file": "data/raw/machine/archives_machine_lゴールデンカムイ__485f5367.html",
+    "bytes": 238280
+  },
+  "https://suroschool.jp/archives/machine/l%e3%82%b9%e3%83%88%e3%83%a9%e3%82%a4%e3%82%af%e3%83%bb%e3%82%b6%e3%83%bb%e3%83%96%e3%83%a9%e3%83%83%e3%83%89": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lストライク・ザ・ブラッド__21d61c3a",
+    "file": "data/raw/machine/archives_machine_lストライク・ザ・ブラッド__21d61c3a.html",
+    "bytes": 210413
+  },
+  "https://suroschool.jp/archives/machine/l%e3%81%86%e3%82%8b%e6%98%9f%e3%82%84%e3%81%a4%e3%82%89": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lうる星やつら__328bcc7e",
+    "file": "data/raw/machine/archives_machine_lうる星やつら__328bcc7e.html",
+    "bytes": 228539
+  },
+  "https://suroschool.jp/archives/machine/l%e5%bf%8d%e9%ad%82%e5%8f%82": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l忍魂参__f994482b",
+    "file": "data/raw/machine/archives_machine_l忍魂参__f994482b.html",
+    "bytes": 141533
+  },
+  "https://suroschool.jp/archives/machine/l%e5%8d%97%e5%9b%bd%e8%82%b2%e3%81%a1": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l南国育ち__cfc29b28",
+    "file": "data/raw/machine/archives_machine_l南国育ち__cfc29b28.html",
+    "bytes": 172847
+  },
+  "https://suroschool.jp/archives/machine/l%e3%82%b4%e3%82%b8%e3%83%a9vs%e3%82%a8%e3%83%b4%e3%82%a1%e3%83%b3%e3%82%b2%e3%83%aa%e3%82%aa%e3%83%b3": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lゴジラvsエヴァンゲリオン__565e44cf",
+    "file": "data/raw/machine/archives_machine_lゴジラvsエヴァンゲリオン__565e44cf.html",
+    "bytes": 210597
+  },
+  "https://suroschool.jp/archives/machine/l%e3%82%ad%e3%83%b3%e3%82%b0%e3%83%91%e3%83%ab%e3%82%b5%e3%83%bc": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lキングパルサー__64076745",
+    "file": "data/raw/machine/archives_machine_lキングパルサー__64076745.html",
+    "bytes": 175026
+  },
+  "https://suroschool.jp/archives/machine/l%e3%82%ac%e3%83%bc%e3%83%ab%e3%82%ba%e3%83%91%e3%83%b3%e3%83%84%e3%82%a1%e3%83%bc": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lガールズパンツァー__cc123e78",
+    "file": "data/raw/machine/archives_machine_lガールズパンツァー__cc123e78.html",
+    "bytes": 214844
+  },
+  "https://suroschool.jp/archives/machine/l%e3%82%b3%e3%83%bc%e3%83%89%e3%82%ae%e3%82%a2%e3%82%b9": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lコードギアス__dd12cf66",
+    "file": "data/raw/machine/archives_machine_lコードギアス__dd12cf66.html",
+    "bytes": 211299
+  },
+  "https://suroschool.jp/archives/machine/l%e3%82%b9%e3%82%ab%e3%82%a4%e3%83%a9%e3%83%96": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lスカイラブ__55f18121",
+    "file": "data/raw/machine/archives_machine_lスカイラブ__55f18121.html",
+    "bytes": 144187
+  },
+  "https://suroschool.jp/archives/machine/l%e3%82%b9%e3%83%88%e3%83%a9%e3%82%a4%e3%82%af%e3%82%a6%e3%82%a3%e3%83%83%e3%83%81%e3%83%bc%e3%82%ba": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lストライクウィッチーズ__fef998c2",
+    "file": "data/raw/machine/archives_machine_lストライクウィッチーズ__fef998c2.html",
+    "bytes": 205609
+  },
+  "https://suroschool.jp/archives/machine/l%e5%86%b4%e3%81%88%e3%81%aa%e3%81%84%e5%bd%bc%e5%a5%b3%e3%81%ae%e8%82%b2%e3%81%a6%e6%96%b9": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l冴えない彼女の育て方__33fe6400",
+    "file": "data/raw/machine/archives_machine_l冴えない彼女の育て方__33fe6400.html",
+    "bytes": 173862
+  },
+  "https://suroschool.jp/archives/machine/lg1%e5%84%aa%e9%a7%bf%e5%80%b6%e6%a5%bd%e9%83%a8%e9%bb%84%e9%87%91": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lg1優駿倶楽部黄金__80b9f700",
+    "file": "data/raw/machine/archives_machine_lg1優駿倶楽部黄金__80b9f700.html",
+    "bytes": 143789
+  },
+  "https://suroschool.jp/archives/machine/l%e5%90%89%e5%ae%97rising": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l吉宗rising__c853139e",
+    "file": "data/raw/machine/archives_machine_l吉宗rising__c853139e.html",
+    "bytes": 197310
+  },
+  "https://suroschool.jp/archives/machine/l%e3%83%90%e3%82%a4%e3%82%aa%e3%83%8f%e3%82%b6%e3%83%bc%e3%83%89%e3%80%80%e3%83%b4%e3%82%a3%e3%83%ac%e3%83%83%e3%82%b8": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lバイオハザード　ヴィレッジ__df8267f5",
+    "file": "data/raw/machine/archives_machine_lバイオハザード　ヴィレッジ__df8267f5.html",
+    "bytes": 262068
+  },
+  "https://suroschool.jp/archives/machine/l%e3%83%9e%e3%82%af%e3%83%ad%e3%82%b9%e3%83%95%e3%83%ad%e3%83%b3%e3%83%86%e3%82%a3%e3%82%a24": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lマクロスフロンティア4__97d7c692",
+    "file": "data/raw/machine/archives_machine_lマクロスフロンティア4__97d7c692.html",
+    "bytes": 245125
+  },
+  "https://suroschool.jp/archives/machine/l%e4%bb%ae%e9%9d%a2%e3%83%a9%e3%82%a4%e3%83%80%e3%83%bc%e3%80%807riders": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l仮面ライダー　7riders__e53adb2b",
+    "file": "data/raw/machine/archives_machine_l仮面ライダー　7riders__e53adb2b.html",
+    "bytes": 196704
+  },
+  "https://suroschool.jp/archives/machine/l%e3%83%81%e3%83%90%e3%83%aa%e3%83%a8%ef%bc%92": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lチバリヨ___9451790a",
+    "file": "data/raw/machine/archives_machine_lチバリヨ___9451790a.html",
+    "bytes": 171506
+  },
+  "https://suroschool.jp/archives/machine/l%e3%83%81%e3%83%90%e3%83%aa%e3%83%a82-%e3%80%80%e5%ae%9f%e8%b7%b5%e7%9a%84%e3%81%aa%e7%8b%99%e3%81%84%e7%9b%ae": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lチバリヨ2-　実践的な狙い目__73a0f340",
+    "file": "data/raw/machine/archives_machine_lチバリヨ2-　実践的な狙い目__73a0f340.html",
+    "bytes": 175105
+  },
+  "https://suroschool.jp/archives/machine/l%e3%83%90%e3%82%b8%e3%83%aa%e3%82%b9%e3%82%af%e7%b5%862%e5%a4%a9%e5%96%84": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lバジリスク絆2天善__736e856e",
+    "file": "data/raw/machine/archives_machine_lバジリスク絆2天善__736e856e.html",
+    "bytes": 219522
+  },
+  "https://suroschool.jp/archives/machine/l%e3%83%a2%e3%83%b3%e3%82%ad%e3%83%bc%e3%82%bf%e3%83%bc%e3%83%b3v": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lモンキーターンv__fe7e2b70",
+    "file": "data/raw/machine/archives_machine_lモンキーターンv__fe7e2b70.html",
+    "bytes": 364976
+  },
+  "https://suroschool.jp/archives/machine/l%e3%83%a9%e3%83%96%e5%ac%a23": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lラブ嬢3__9cb3a129",
+    "file": "data/raw/machine/archives_machine_lラブ嬢3__9cb3a129.html",
+    "bytes": 215262
+  },
+  "https://suroschool.jp/archives/machine/l%e3%83%9e%e3%82%b8%e3%82%ab%e3%83%ab%e3%83%8f%e3%83%ad%e3%82%a6%e3%82%a3%e3%83%b38": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lマジカルハロウィン8__2d7321e7",
+    "file": "data/raw/machine/archives_machine_lマジカルハロウィン8__2d7321e7.html",
+    "bytes": 235305
+  },
+  "https://suroschool.jp/archives/machine/l%e9%ba%bb%e9%9b%80%e6%a0%bc%e9%97%98%e5%80%b6%e6%a5%bd%e9%83%a8%e3%80%80%e8%a6%9a%e9%86%92": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l麻雀格闘倶楽部　覚醒__7829ca23",
+    "file": "data/raw/machine/archives_machine_l麻雀格闘倶楽部　覚醒__7829ca23.html",
+    "bytes": 201072
+  },
+  "https://suroschool.jp/archives/machine/l%e5%8c%97%e6%96%97%e3%81%ae%e6%8b%b3": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l北斗の拳__35deff4f",
+    "file": "data/raw/machine/archives_machine_l北斗の拳__35deff4f.html",
+    "bytes": 262105
+  },
+  "https://suroschool.jp/archives/machine/l%e5%8c%97%e6%96%97%e3%81%ae%e6%8b%b3%e3%80%80%e5%84%aa%e9%81%87%e5%86%b7%e9%81%87%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l北斗の拳　優遇冷遇について__5f67880b",
+    "file": "data/raw/machine/archives_machine_l北斗の拳　優遇冷遇について__5f67880b.html",
+    "bytes": 147502
+  },
+  "https://suroschool.jp/archives/machine/l%e5%8c%97%e6%96%97%e3%81%ae%e6%8b%b3%e3%80%80%e3%82%b9%e3%83%ad%e5%a1%be%e6%b5%81%e7%84%a1%e6%83%b3%e8%bb%a2%e7%94%9f%e6%89%93%e6%b3%95": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l北斗の拳　スロ塾流無想転生打法__1c870d25",
+    "file": "data/raw/machine/archives_machine_l北斗の拳　スロ塾流無想転生打法__1c870d25.html",
+    "bytes": 137182
+  },
+  "https://suroschool.jp/archives/machine/l%e4%b8%bb%e5%bd%b9%e3%81%af%e9%8a%ad%e5%bd%a2": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l主役は銭形__31ae9c2c",
+    "file": "data/raw/machine/archives_machine_l主役は銭形__31ae9c2c.html",
+    "bytes": 218208
+  },
+  "https://suroschool.jp/archives/machine/l%e6%88%a6%e5%9b%bd%e4%b9%99%e5%a5%b34": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l戦国乙女4__5d5b4874",
+    "file": "data/raw/machine/archives_machine_l戦国乙女4__5d5b4874.html",
+    "bytes": 233859
+  },
+  "https://suroschool.jp/archives/machine/l%e9%9d%a9%e5%91%bd%e6%a9%9f%e3%83%b4%e3%82%a1%e3%83%ab%e3%83%b4%e3%83%ac%e3%82%a4%e3%83%b4": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l革命機ヴァルヴレイヴ__7641d182",
+    "file": "data/raw/machine/archives_machine_l革命機ヴァルヴレイヴ__7641d182.html",
+    "bytes": 163391
+  },
+  "https://suroschool.jp/archives/machine/l%e9%9d%a9%e5%91%bd%e6%a9%9f%e3%83%b4%e3%82%a1%e3%83%ab%e3%83%b4%e3%83%ac%e3%82%a4%e3%83%b4%e3%80%80%e9%ab%98%e3%83%a2%e3%83%bc%e3%83%89%e7%8b%99%e3%81%84": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l革命機ヴァルヴレイヴ　高モード狙い__d0db8c9b",
+    "file": "data/raw/machine/archives_machine_l革命機ヴァルヴレイヴ　高モード狙い__d0db8c9b.html",
+    "bytes": 150294
+  },
+  "https://suroschool.jp/archives/machine/l%e3%81%8b%e3%82%89%e3%81%8f%e3%82%8a%e3%82%b5%e3%83%bc%e3%82%ab%e3%82%b9": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lからくりサーカス__6614572c",
+    "file": "data/raw/machine/archives_machine_lからくりサーカス__6614572c.html",
+    "bytes": 269385
+  },
+  "https://suroschool.jp/archives/machine/s%e6%b2%96%e3%83%89%e3%82%ad%e3%82%b4%e3%83%bc%e3%82%b8%e3%83%a3%e3%82%b9": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_s沖ドキゴージャス__8aec3348",
+    "file": "data/raw/machine/archives_machine_s沖ドキゴージャス__8aec3348.html",
+    "bytes": 2144776
+  },
+  "https://suroschool.jp/archives/machine/s%e6%b2%96%e3%83%89%e3%82%adblack%e5%ae%9f%e8%b7%b5%e5%80%a4%e3%82%b7%e3%83%9f%e3%83%a5%e3%83%ac%e3%83%bc%e3%82%bf%e3%83%bc": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_s沖ドキblack実践値シミュレーター__919553a2",
+    "file": "data/raw/machine/archives_machine_s沖ドキblack実践値シミュレーター__919553a2.html",
+    "bytes": 5394831
+  },
+  "https://suroschool.jp/archives/machine/s%e6%b2%96%e3%83%89%e3%82%ad%e3%82%b4%e3%83%bc%e3%83%ab%e3%83%89": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_s沖ドキゴールド__096afff8",
+    "file": "data/raw/machine/archives_machine_s沖ドキゴールド__096afff8.html",
+    "bytes": 3576654
+  },
+  "https://suroschool.jp/archives/machine/l%e3%82%ad%e3%83%b3%e8%82%89%e3%83%9e%e3%83%b3": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lキン肉マン__b2fce5aa",
+    "file": "data/raw/machine/archives_machine_lキン肉マン__b2fce5aa.html",
+    "bytes": 258960
+  },
+  "https://suroschool.jp/archives/machine/l%e3%82%b9%e3%83%bc%e3%83%91%e3%83%bc%e3%83%93%e3%83%b3%e3%82%b4%e3%82%b9%e3%83%ad%e5%a1%be%e5%bc%8f%e3%83%aa%e3%82%bb%e7%8b%99%e3%81%84%e6%89%8b%e9%a0%86%e3%81%a8%e4%ba%88%e6%83%b3%e6%9c%9f%e5%be%85": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lスーパービンゴスロ塾式リセ狙い手順と予想期待__fa7af58e",
+    "file": "data/raw/machine/archives_machine_lスーパービンゴスロ塾式リセ狙い手順と予想期待__fa7af58e.html",
+    "bytes": 166462
+  },
+  "https://suroschool.jp/archives/machine/%e3%83%81%e3%83%90%e3%83%aa%e3%83%a8%ef%bc%92%e5%bc%b7%e5%a4%a9%e5%9b%bd%e7%8b%99%e3%81%84%e5%a4%a7%e9%87%8f%e5%ae%9f%e8%b7%b5%e5%80%a42000%e4%b8%87g%e3%83%87%e3%83%bc%e3%82%bf%e3%81%a8%e5%ae%9f": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_チバリヨ_強天国狙い大量実践値2000万gデータと実__cf53d993",
+    "file": "data/raw/machine/archives_machine_チバリヨ_強天国狙い大量実践値2000万gデータと実__cf53d993.html",
+    "bytes": 189360
+  },
+  "https://suroschool.jp/archives/machine/l%e5%b0%91%e5%a5%b3%e2%98%86%e6%ad%8c%e5%8a%87-%e3%83%ac%e3%83%b4%e3%83%a5%e3%83%bc%e3%82%b9%e3%82%bf%e3%82%a1%e3%83%a9%e3%82%a4%e3%83%88-%e2%80%90the-slot%e2%80%90": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l少女_歌劇-レヴュースタァライト-_the-slot___5becf285",
+    "file": "data/raw/machine/archives_machine_l少女_歌劇-レヴュースタァライト-_the-slot___5becf285.html",
+    "bytes": 223030
+  },
+  "https://suroschool.jp/archives/machine/l%e5%9b%9e%e8%83%b4%e9%bb%99%e7%a4%ba%e9%8c%b2%e3%82%ab%e3%82%a4%e3%82%b8-%e7%8b%82%e5%ae%b4": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l回胴黙示録カイジ-狂宴__96cddf3e",
+    "file": "data/raw/machine/archives_machine_l回胴黙示録カイジ-狂宴__96cddf3e.html",
+    "bytes": 233109
+  },
+  "https://suroschool.jp/archives/machine/l%e3%82%b7%e3%82%b9%e3%82%bf%e3%83%bc%e3%82%af%e3%82%a8%e3%82%b9%e3%83%88": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lシスタークエスト__a2827f37",
+    "file": "data/raw/machine/archives_machine_lシスタークエスト__a2827f37.html",
+    "bytes": 154419
+  },
+  "https://suroschool.jp/archives/machine/l%e3%83%90%e3%82%a4%e3%82%aa%e3%83%8f%e3%82%b6%e3%83%bc%e3%83%895": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lバイオハザード5__333bb3f6",
+    "file": "data/raw/machine/archives_machine_lバイオハザード5__333bb3f6.html",
+    "bytes": 249151
+  },
+  "https://suroschool.jp/archives/machine/l-%e4%bb%ae%e9%9d%a2%e3%83%a9%e3%82%a4%e3%83%80%e3%83%bc%e9%9b%bb%e7%8e%8b": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l-仮面ライダー電王__10775020",
+    "file": "data/raw/machine/archives_machine_l-仮面ライダー電王__10775020.html",
+    "bytes": 214229
+  },
+  "https://suroschool.jp/archives/machine/l%e3%81%a6%e3%81%83%e3%81%a0%e3%81%a9%e3%82%93%e3%81%a9%e3%82%93": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lてぃだどんどん__0f049122",
+    "file": "data/raw/machine/archives_machine_lてぃだどんどん__0f049122.html",
+    "bytes": 170210
+  },
+  "https://suroschool.jp/archives/machine/%e3%82%b9%e3%83%9e%e3%83%bc%e3%83%88%e6%b2%96%e3%82%b9%e3%83%ad-%e3%82%a2%e3%83%a1%e3%82%a4%e3%82%b8%e3%83%b3%e3%82%b0%e3%83%a9%e3%82%a4%e3%83%96": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_スマート沖スロ-アメイジングライブ__97667a63",
+    "file": "data/raw/machine/archives_machine_スマート沖スロ-アメイジングライブ__97667a63.html",
+    "bytes": 169250
+  },
+  "https://suroschool.jp/archives/machine/l%e3%81%86%e3%81%97%e3%81%8a%e3%81%a8%e3%81%a8%e3%82%89%e7%99%bd%e9%9d%a2%e6%b1%ba%e6%88%a6vh": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lうしおととら白面決戦vh__87b1bc67",
+    "file": "data/raw/machine/archives_machine_lうしおととら白面決戦vh__87b1bc67.html",
+    "bytes": 217819
+  },
+  "https://suroschool.jp/archives/machine/l%e3%82%b4%e3%82%b8%e3%83%a9": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_lゴジラ__a8d64d4e",
+    "file": "data/raw/machine/archives_machine_lゴジラ__a8d64d4e.html",
+    "bytes": 232135
+  },
+  "https://suroschool.jp/archives/machine/%e3%83%9e%e3%82%ae%e3%82%a2%e3%83%ac%e3%82%b3%e3%83%bc%e3%83%89-%e9%ad%94%e6%b3%95%e5%b0%91%e5%a5%b3%e3%81%be%e3%81%a9%e3%81%8b%e2%98%86%e3%83%9e%e3%82%ae%e3%82%ab%e5%a4%96%e4%bc%9d": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_マギアレコード-魔法少女まどか_マギカ外伝__62704cce",
+    "file": "data/raw/machine/archives_machine_マギアレコード-魔法少女まどか_マギカ外伝__62704cce.html",
+    "bytes": 371067
+  },
+  "https://suroschool.jp/archives/machine/l%e6%9d%b1%e4%ba%ac%e5%96%b0%e7%a8%ae%e3%80%90%e6%94%bb%e3%82%81%e3%81%9f%e3%83%aa%e3%82%bb%e7%8b%99%e3%81%84%e3%80%91": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l東京喰種【攻めたリセ狙い】__d5ef4703",
+    "file": "data/raw/machine/archives_machine_l東京喰種【攻めたリセ狙い】__d5ef4703.html",
+    "bytes": 175840
+  },
+  "https://suroschool.jp/archives/machine/%e3%82%a2%e3%82%a4%e3%83%89%e3%83%ab%e3%83%9e%e3%82%b9%e3%82%bf%e3%83%bc-%e3%83%9f%e3%83%aa%e3%82%aa%e3%83%b3%e3%83%a9%e3%82%a4%e3%83%96-%e3%83%8d%e3%82%af%e3%82%b9%e3%83%88%e3%83%97%e3%83%ad": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_アイドルマスター-ミリオンライブ-ネクストプロ__80540d34",
+    "file": "data/raw/machine/archives_machine_アイドルマスター-ミリオンライブ-ネクストプロ__80540d34.html",
+    "bytes": 243611
+  },
+  "https://suroschool.jp/archives/machine/l%e9%ba%bb%e9%9b%80%e7%89%a9%e8%aa%9e": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l麻雀物語__222106a5",
+    "file": "data/raw/machine/archives_machine_l麻雀物語__222106a5.html",
+    "bytes": 240239
+  },
+  "https://suroschool.jp/archives/machine/%e5%90%89%e5%ae%97": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_吉宗__387f4c16",
+    "file": "data/raw/machine/archives_machine_吉宗__387f4c16.html",
+    "bytes": 166900
+  },
+  "https://suroschool.jp/archives/machine/%e6%b2%96%e3%83%89%e3%82%adblack%e9%87%8d%e8%a6%96%e3%81%99%e3%81%b9%e3%81%8d%e5%b1%a5%e6%ad%b4%e3%81%a8%e3%83%84%e3%83%bc%e3%83%ab%e6%93%8d%e4%bd%9c": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_沖ドキblack重視すべき履歴とツール操作__7e24dc92",
+    "file": "data/raw/machine/archives_machine_沖ドキblack重視すべき履歴とツール操作__7e24dc92.html",
+    "bytes": 218533
+  },
+  "https://suroschool.jp/archives/machine/%e3%82%88%e3%81%86%e3%81%93%e3%81%9d%e5%ae%9f%e5%8a%9b%e8%87%b3%e4%b8%8a%e4%b8%bb%e7%be%a9%e3%81%ae%e6%95%99%e5%ae%a4%e3%81%b8": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_ようこそ実力至上主義の教室へ__6f9316e4",
+    "file": "data/raw/machine/archives_machine_ようこそ実力至上主義の教室へ__6f9316e4.html",
+    "bytes": 265864
+  },
+  "https://suroschool.jp/archives/machine/%e7%b7%91%e3%83%89%e3%83%b3-viva%e6%83%85%e7%86%b1%e5%8d%97%e7%b1%b3%e7%b7%a8-revival": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_緑ドン-viva情熱南米編-revival__8ab8ccd0",
+    "file": "data/raw/machine/archives_machine_緑ドン-viva情熱南米編-revival__8ab8ccd0.html",
+    "bytes": 222336
+  },
+  "https://suroschool.jp/archives/machine/%e6%a9%9f%e5%8b%95%e6%88%a6%e5%a3%ab%e3%82%ac%e3%83%b3%e3%83%80%e3%83%a0seed": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_機動戦士ガンダムseed__cea419c2",
+    "file": "data/raw/machine/archives_machine_機動戦士ガンダムseed__cea419c2.html",
+    "bytes": 218415
+  },
+  "https://suroschool.jp/archives/machine/%e8%8a%b1%e7%ac%a0": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_花笠__9e8316bb",
+    "file": "data/raw/machine/archives_machine_花笠__9e8316bb.html",
+    "bytes": 188427
+  },
+  "https://suroschool.jp/archives/machine/l-tolove%e3%82%8b%e3%83%80%e3%83%bc%e3%82%af%e3%83%8d%e3%82%b9-trance-ver-8-7": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l-toloveるダークネス-trance-ver-8-7__d46a0ab0",
+    "file": "data/raw/machine/archives_machine_l-toloveるダークネス-trance-ver-8-7__d46a0ab0.html",
+    "bytes": 206677
+  },
+  "https://suroschool.jp/archives/machine/%e3%82%ae%e3%83%ab%e3%83%86%e3%82%a3%e3%82%af%e3%83%a9%e3%82%a6%e3%83%b32": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_ギルティクラウン2__b2db936c",
+    "file": "data/raw/machine/archives_machine_ギルティクラウン2__b2db936c.html",
+    "bytes": 273362
+  },
+  "https://suroschool.jp/archives/machine/l-ultraman": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l-ultraman__ea35dd0d",
+    "file": "data/raw/machine/archives_machine_l-ultraman__ea35dd0d.html",
+    "bytes": 286047
+  },
+  "https://suroschool.jp/archives/machine/%e3%81%84%e3%81%96%e7%95%aa%e9%95%b7": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_いざ番長__a49bef99",
+    "file": "data/raw/machine/archives_machine_いざ番長__a49bef99.html",
+    "bytes": 261246
+  },
+  "https://suroschool.jp/archives/machine/%e3%83%87%e3%83%93%e3%83%ab-%e3%83%a1%e3%82%a4-%e3%82%af%e3%83%a9%e3%82%a45-%e3%82%b9%e3%82%bf%e3%82%a4%e3%83%aa%e3%83%83%e3%82%b7%e3%83%a5%e3%83%88%e3%83%a9%e3%82%a4%e3%83%96": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_デビル-メイ-クライ5-スタイリッシュトライブ__a24a7a63",
+    "file": "data/raw/machine/archives_machine_デビル-メイ-クライ5-スタイリッシュトライブ__a24a7a63.html",
+    "bytes": 267690
+  },
+  "https://suroschool.jp/archives/machine/%e3%80%90%e6%9c%9f%e5%be%85%e5%80%a4%e6%95%b0%e4%b8%87%e5%86%86%e8%b6%8a%e3%80%91%e3%82%a2%e3%82%b2%e3%82%a4%e3%83%b3%e3%83%a2%e3%83%bc%e3%83%89%e7%aa%81%e5%85%a5%e5%a5%91%e6%a9%9f%e8%80%83%e5%af%9f": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_【期待値数万円越】アゲインモード突入契機考察__93d75de9",
+    "file": "data/raw/machine/archives_machine_【期待値数万円越】アゲインモード突入契機考察__93d75de9.html",
+    "bytes": 171159
+  },
+  "https://suroschool.jp/archives/machine/l-%e7%b5%b6%e5%af%be%e8%a1%9d%e6%bf%80%ef%bd%9eplatonic-heart%ef%bd%9e": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l-絶対衝激_platonic-heart___92910762",
+    "file": "data/raw/machine/archives_machine_l-絶対衝激_platonic-heart___92910762.html",
+    "bytes": 184900
+  },
+  "https://suroschool.jp/archives/machine/%e3%82%8f%e3%81%9f%e3%81%97%e3%81%ae%e5%b9%b8%e3%81%9b%e3%81%aa%e7%b5%90%e5%a9%9a": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_わたしの幸せな結婚__033ff58c",
+    "file": "data/raw/machine/archives_machine_わたしの幸せな結婚__033ff58c.html",
+    "bytes": 217524
+  },
+  "https://suroschool.jp/archives/machine/%e3%83%8f%e3%82%a4%e3%83%93%e3%83%aa%e3%82%bf%e3%83%bc%e3%83%b3%e2%80%9030": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_ハイビリターン_30__a05c74e6",
+    "file": "data/raw/machine/archives_machine_ハイビリターン_30__a05c74e6.html",
+    "bytes": 173550
+  },
+  "https://suroschool.jp/archives/machine/%e3%81%aa%e3%82%81%e7%8c%ab%ef%bd%9e%e6%b6%b2%e6%99%b6%e3%81%aa%e3%81%84%e3%81%91%e3%81%a9%e3%81%aa%e3%82%81%e3%82%93%e3%81%98%e3%82%83%e3%81%ad%e3%81%87%ef%bd%9e": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_なめ猫_液晶ないけどなめんじゃねぇ___7b1fd18f",
+    "file": "data/raw/machine/archives_machine_なめ猫_液晶ないけどなめんじゃねぇ___7b1fd18f.html",
+    "bytes": 155748
+  },
+  "https://suroschool.jp/archives/machine/%e5%92%b2%e2%80%90saki%e2%80%90-%e9%a0%82%e4%b8%8a%e6%b1%ba%e6%88%a6": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_咲_saki_-頂上決戦__da447f10",
+    "file": "data/raw/machine/archives_machine_咲_saki_-頂上決戦__da447f10.html",
+    "bytes": 238480
+  },
+  "https://suroschool.jp/archives/machine/%e8%bb%a2%e7%94%9f%e3%81%97%e3%81%9f%e3%82%89%e5%89%a3%e3%81%a7%e3%81%97%e3%81%9f": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_転生したら剣でした__3a59da3e",
+    "file": "data/raw/machine/archives_machine_転生したら剣でした__3a59da3e.html",
+    "bytes": 254394
+  },
+  "https://suroschool.jp/archives/machine/%e3%82%a2%e3%82%ba%e3%83%bc%e3%83%ab%e3%83%ac%e3%83%bc%e3%83%b3-the-animation": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_アズールレーン-the-animation__d43929de",
+    "file": "data/raw/machine/archives_machine_アズールレーン-the-animation__d43929de.html",
+    "bytes": 266347
+  },
+  "https://suroschool.jp/archives/machine/%e3%83%80%e3%83%bc%e3%83%aa%e3%83%b3%e3%83%bb%e3%82%a4%e3%83%b3%e3%83%bb%e3%82%b6%e3%83%bb%e3%83%95%e3%83%a9%e3%83%b3%e3%82%ad%e3%82%b9": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_ダーリン・イン・ザ・フランキス__8e8ca2a6",
+    "file": "data/raw/machine/archives_machine_ダーリン・イン・ザ・フランキス__8e8ca2a6.html",
+    "bytes": 206288
+  },
+  "https://suroschool.jp/archives/machine/%e6%9d%b1%e4%ba%ac%e3%83%aa%e3%83%99%e3%83%b3%e3%82%b8%e3%83%a3%e3%83%bc%e3%82%ba": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_東京リベンジャーズ__876c978f",
+    "file": "data/raw/machine/archives_machine_東京リベンジャーズ__876c978f.html",
+    "bytes": 328176
+  },
+  "https://suroschool.jp/archives/machine/%e4%b8%bb%e5%bd%b9%e3%81%af%e9%8a%ad%e5%bd%a25": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_主役は銭形5__beb4e4cb",
+    "file": "data/raw/machine/archives_machine_主役は銭形5__beb4e4cb.html",
+    "bytes": 217585
+  },
+  "https://suroschool.jp/archives/machine/%e3%83%90%e3%83%99%e3%83%ab": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_バベル__47c739c8",
+    "file": "data/raw/machine/archives_machine_バベル__47c739c8.html",
+    "bytes": 187244
+  },
+  "https://suroschool.jp/archives/machine/%e6%96%b0%e9%ac%bc%e6%ad%a6%e8%80%853": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_新鬼武者3__2d15a174",
+    "file": "data/raw/machine/archives_machine_新鬼武者3__2d15a174.html",
+    "bytes": 236513
+  },
+  "https://suroschool.jp/archives/machine/%e8%8d%92%e9%87%8e%e3%81%ae%e3%82%b3%e3%83%88%e3%83%96%e3%82%ad%e9%a3%9b%e8%a1%8c%e9%9a%8a": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_荒野のコトブキ飛行隊__d0ef4215",
+    "file": "data/raw/machine/archives_machine_荒野のコトブキ飛行隊__d0ef4215.html",
+    "bytes": 219363
+  },
+  "https://suroschool.jp/archives/machine/%e9%9d%a9%e5%91%bd%e6%a9%9f%e3%83%b4%e3%82%a1%e3%83%ab%e3%83%b4%e3%83%ac%e3%82%a4%e3%83%b42": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_革命機ヴァルヴレイヴ2__ba09ac11",
+    "file": "data/raw/machine/archives_machine_革命機ヴァルヴレイヴ2__ba09ac11.html",
+    "bytes": 296913
+  },
+  "https://suroschool.jp/archives/machine/%e3%81%a8%e3%81%82%e3%82%8b%e7%a7%91%e5%ad%a6%e3%81%ae%e8%b6%85%e9%9b%bb%e7%a3%81%e7%a0%b22": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_とある科学の超電磁砲2__c21df628",
+    "file": "data/raw/machine/archives_machine_とある科学の超電磁砲2__c21df628.html",
+    "bytes": 219761
+  },
+  "https://suroschool.jp/archives/machine/%e7%b5%b6%e5%af%be%e8%a1%9d%e6%bf%80iv": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_絶対衝激iv__51b253cf",
+    "file": "data/raw/machine/archives_machine_絶対衝激iv__51b253cf.html",
+    "bytes": 166165
+  },
+  "https://suroschool.jp/archives/machine/%e3%83%8d%e3%82%aa%e3%83%97%e3%83%a9%e3%83%8d%e3%83%83%e3%83%88": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_ネオプラネット__72a33962",
+    "file": "data/raw/machine/archives_machine_ネオプラネット__72a33962.html",
+    "bytes": 198304
+  },
+  "https://suroschool.jp/archives/machine/%e3%83%90%e3%83%bc%e3%83%8b%e3%83%b3%e3%82%b0%e3%82%a8%e3%82%af%e3%82%b9%e3%83%97%e3%83%ac%e3%82%b9": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_バーニングエクスプレス__f5342503",
+    "file": "data/raw/machine/archives_machine_バーニングエクスプレス__f5342503.html",
+    "bytes": 182113
+  },
+  "https://suroschool.jp/archives/machine/%e3%83%97%e3%83%aa%e3%82%ba%e3%83%a0%e3%83%8a%e3%83%8a": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_プリズムナナ__2e9adec2",
+    "file": "data/raw/machine/archives_machine_プリズムナナ__2e9adec2.html",
+    "bytes": 205709
+  },
+  "https://suroschool.jp/archives/machine/%e9%8a%80%e6%b2%b3%e8%8b%b1%e9%9b%84%e4%bc%9d%e8%aa%ac-die-neue-these": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_銀河英雄伝説-die-neue-these__f0b16cf4",
+    "file": "data/raw/machine/archives_machine_銀河英雄伝説-die-neue-these__f0b16cf4.html",
+    "bytes": 203272
+  },
+  "https://suroschool.jp/archives/machine/%e5%8c%96%e7%89%a9%e8%aa%9e": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_化物語__e9e4424b",
+    "file": "data/raw/machine/archives_machine_化物語__e9e4424b.html",
+    "bytes": 209446
+  },
+  "https://suroschool.jp/archives/machine/%e3%80%90%e7%89%b9%e6%ae%8aa%e7%8b%99%e3%81%84%e3%80%91%e9%9d%a9%e5%91%bd%e6%a9%9f%e3%83%b4%e3%82%a1%e3%83%ab%e3%83%b4%e3%83%ac%e3%82%a4%e3%83%b42": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_【特殊a狙い】革命機ヴァルヴレイヴ2__51f29024",
+    "file": "data/raw/machine/archives_machine_【特殊a狙い】革命機ヴァルヴレイヴ2__51f29024.html",
+    "bytes": 241540
+  },
+  "https://suroschool.jp/archives/machine/%e6%b2%96%e3%83%89%e3%82%adduo-%e3%82%a2%e3%83%b3%e3%82%b3%e3%83%bc%e3%83%ab": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_沖ドキduo-アンコール__95f8b7d0",
+    "file": "data/raw/machine/archives_machine_沖ドキduo-アンコール__95f8b7d0.html",
+    "bytes": 232777
+  },
+  "https://suroschool.jp/archives/machine/%e7%a7%98%e5%ae%9d%e4%bc%9d": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_秘宝伝__efa74413",
+    "file": "data/raw/machine/archives_machine_秘宝伝__efa74413.html",
+    "bytes": 186165
+  },
+  "https://suroschool.jp/archives/machine/%e7%84%a1%e8%81%b7%e8%bb%a2%e7%94%9f-%ef%bd%9e%e7%95%b0%e4%b8%96%e7%95%8c%e8%a1%8c%e3%81%a3%e3%81%9f%e3%82%89%e6%9c%ac%e6%b0%97%e3%81%a0%e3%81%99%ef%bd%9e": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_無職転生-_異世界行ったら本気だす___b30f1f0f",
+    "file": "data/raw/machine/archives_machine_無職転生-_異世界行ったら本気だす___b30f1f0f.html",
+    "bytes": 212460
+  },
+  "https://suroschool.jp/archives/machine/%e5%8c%97%e6%96%97%e3%81%ae%e6%8b%b3-%e8%bb%a2%e7%94%9f%e3%81%ae%e7%ab%a02": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_北斗の拳-転生の章2__aea52cfc",
+    "file": "data/raw/machine/archives_machine_北斗の拳-転生の章2__aea52cfc.html",
+    "bytes": 280681
+  },
+  "https://suroschool.jp/archives/machine/%e9%89%84%e6%8b%b36": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_鉄拳6__0be882f8",
+    "file": "data/raw/machine/archives_machine_鉄拳6__0be882f8.html",
+    "bytes": 239181
+  },
+  "https://suroschool.jp/archives/machine/%e6%b2%96%e3%83%89%e3%82%adduo2%e9%80%a3%e8%b7%a8%e3%81%8e%e7%8b%99%e3%81%84": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_沖ドキduo2連跨ぎ狙い__eee7831b",
+    "file": "data/raw/machine/archives_machine_沖ドキduo2連跨ぎ狙い__eee7831b.html",
+    "bytes": 188432
+  },
+  "https://suroschool.jp/archives/machine/%e3%82%b9%e3%83%9e%e3%82%b9%e3%83%ad%e6%94%bb%e6%ae%bb%e6%a9%9f%e5%8b%95%e9%9a%8a": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_スマスロ攻殻機動隊__f57f0ddf",
+    "file": "data/raw/machine/archives_machine_スマスロ攻殻機動隊__f57f0ddf.html",
+    "bytes": 262982
+  },
+  "https://suroschool.jp/archives/machine/l%e7%82%8e%e7%82%8e%e3%83%8e%e6%b6%88%e9%98%b2%e9%9a%8a2": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_l炎炎ノ消防隊2__f34b77da",
+    "file": "data/raw/machine/archives_machine_l炎炎ノ消防隊2__f34b77da.html",
+    "bytes": 265187
+  },
+  "https://suroschool.jp/archives/machine/%e3%82%b4%e3%83%96%e3%83%aa%e3%83%b3%e3%82%b9%e3%83%ac%e3%82%a4%e3%83%a4%e3%83%bc%e2%85%b1": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_ゴブリンスレイヤー___cd23d606",
+    "file": "data/raw/machine/archives_machine_ゴブリンスレイヤー___cd23d606.html",
+    "bytes": 215439
+  },
+  "https://suroschool.jp/archives/machine/%e3%82%b9%e3%83%9e%e3%82%b9%e3%83%ad%e7%af%84%e9%a6%ac%e5%88%83%e7%89%99": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_スマスロ範馬刃牙__f62e7487",
+    "file": "data/raw/machine/archives_machine_スマスロ範馬刃牙__f62e7487.html",
+    "bytes": 211987
+  },
+  "https://suroschool.jp/archives/machine/%e7%94%b2%e9%89%84%e5%9f%8e%e3%81%ae%e3%82%ab%e3%83%90%e3%83%8d%e3%83%aa-%e6%b5%b7%e9%96%80%e3%81%86%e3%81%aa%e3%81%a8%e6%b1%ba%e6%88%a6": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_甲鉄城のカバネリ-海門うなと決戦__b8cfa9c1",
+    "file": "data/raw/machine/archives_machine_甲鉄城のカバネリ-海門うなと決戦__b8cfa9c1.html",
+    "bytes": 230818
+  },
+  "https://suroschool.jp/archives/machine/%e3%82%a2%e3%82%af%e3%83%80%e3%83%9e%e3%83%89%e3%83%a9%e3%82%a4%e3%83%96": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_アクダマドライブ__2fb8a9e8",
+    "file": "data/raw/machine/archives_machine_アクダマドライブ__2fb8a9e8.html",
+    "bytes": 215569
+  },
+  "https://suroschool.jp/archives/machine/%e3%83%a8%e3%83%ab%e3%83%a0%e3%83%b3%e3%82%ac%e3%83%b3%e3%83%89": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_ヨルムンガンド__0f5009a8",
+    "file": "data/raw/machine/archives_machine_ヨルムンガンド__0f5009a8.html",
+    "bytes": 212823
+  },
+  "https://suroschool.jp/archives/machine/%e8%99%9a%e6%a7%8b%e6%8e%a8%e7%90%86": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_虚構推理__4b4fd211",
+    "file": "data/raw/machine/archives_machine_虚構推理__4b4fd211.html",
+    "bytes": 201402
+  },
+  "https://suroschool.jp/archives/machine/%e7%9c%9f%e6%89%93%e5%90%89%e5%ae%97": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_真打吉宗__047a9f1c",
+    "file": "data/raw/machine/archives_machine_真打吉宗__047a9f1c.html",
+    "bytes": 224466
+  },
+  "https://suroschool.jp/archives/machine/%e8%bb%a2%e7%94%9f%e3%82%b7%e3%83%a3%e3%83%83%e3%82%bf%e3%83%bc%e7%8b%99%e3%81%84%e5%ae%9f%e8%b7%b5%e3%83%87%e3%83%bc%e3%82%bf": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_転生シャッター狙い実践データ__c74670b7",
+    "file": "data/raw/machine/archives_machine_転生シャッター狙い実践データ__c74670b7.html",
+    "bytes": 148036
+  },
+  "https://suroschool.jp/archives/machine/%e3%83%9f%e3%83%aa%e3%82%aa%e3%83%b3%e3%82%b4%e3%83%83%e3%83%89%e2%80%90%e7%a5%9e%e3%80%85%e3%81%ae%e8%bb%8c%e8%b7%a1%e2%80%90": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_ミリオンゴッド_神々の軌跡___7735a5e5",
+    "file": "data/raw/machine/archives_machine_ミリオンゴッド_神々の軌跡___7735a5e5.html",
+    "bytes": 249812
+  },
+  "https://suroschool.jp/archives/machine/%e6%a9%9f%e5%8b%95%e6%88%a6%e5%a3%ab%e3%82%ac%e3%83%b3%e3%83%80%e3%83%a0%e3%83%a6%e3%83%8b%e3%82%b3%e3%83%bc%e3%83%b3-%e8%a6%9a%e9%86%92drive": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_機動戦士ガンダムユニコーン-覚醒drive__afa8f69a",
+    "file": "data/raw/machine/archives_machine_機動戦士ガンダムユニコーン-覚醒drive__afa8f69a.html",
+    "bytes": 219124
+  },
+  "https://suroschool.jp/archives/machine/%e3%82%a2%e3%83%8b%e3%83%9e%e3%83%ab%e3%82%b9%e3%83%ad%e3%83%83%e3%83%88%e3%83%89%e3%83%83%e3%83%81": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_アニマルスロットドッチ__995aee96",
+    "file": "data/raw/machine/archives_machine_アニマルスロットドッチ__995aee96.html",
+    "bytes": 196461
+  },
+  "https://suroschool.jp/archives/machine/%e3%82%bf%e3%82%af%e3%83%88%e3%82%aa%e3%83%bc%e3%83%91%e3%82%b9-%e3%83%87%e3%82%b9%e3%83%86%e3%82%a3%e3%83%8b%e3%83%bc": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_タクトオーパス-デスティニー__9b5dbc09",
+    "file": "data/raw/machine/archives_machine_タクトオーパス-デスティニー__9b5dbc09.html",
+    "bytes": 207340
+  },
+  "https://suroschool.jp/archives/machine/%e3%83%93%e3%83%83%e3%82%b0%e3%83%89%e3%83%aa%e3%83%bc%e3%83%a0-the-golden-pusher": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_ビッグドリーム-the-golden-pusher__fef5a850",
+    "file": "data/raw/machine/archives_machine_ビッグドリーム-the-golden-pusher__fef5a850.html",
+    "bytes": 219231
+  },
+  "https://suroschool.jp/archives/machine/%e3%82%b9%e3%83%bc%e3%83%91%e3%83%bc%e3%83%aa%e3%82%aa%e3%82%a8%e3%83%bc%e3%82%b92": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_スーパーリオエース2__52e5f36a",
+    "file": "data/raw/machine/archives_machine_スーパーリオエース2__52e5f36a.html",
+    "bytes": 209560
+  },
+  "https://suroschool.jp/archives/machine/%e3%83%90%e3%82%a4%e3%82%aa%e3%83%8f%e3%82%b6%e3%83%bc%e3%83%89re3": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_バイオハザードre3__a77ba065",
+    "file": "data/raw/machine/archives_machine_バイオハザードre3__a77ba065.html",
+    "bytes": 243893
+  },
+  "https://suroschool.jp/archives/machine/%e5%90%84%e3%82%b5%e3%83%96%e3%82%b9%e3%82%af%ef%bc%88note%ef%bc%89%e3%81%ae%e7%b4%b9%e4%bb%8b": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_各サブスク_note_の紹介__7e77dec4",
+    "file": "data/raw/machine/archives_machine_各サブスク_note_の紹介__7e77dec4.html",
+    "bytes": 142446
+  },
+  "https://suroschool.jp/archives/machine/%e8%a8%ad%e5%ae%9a%e7%8b%99%e3%81%84": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_設定狙い__6addf917",
+    "file": "data/raw/machine/archives_machine_設定狙い__6addf917.html",
+    "bytes": 228514
+  },
+  "https://suroschool.jp/archives/machine/birdie-wing-%e2%80%90golf-girls-story%e2%80%90": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_birdie-wing-_golf-girls-story___2b08f9ec",
+    "file": "data/raw/machine/archives_machine_birdie-wing-_golf-girls-story___2b08f9ec.html",
+    "bytes": 155721
+  },
+  "https://suroschool.jp/archives/machine/%e3%82%bd%e3%83%bc%e3%83%89%e3%82%a2%e3%83%bc%e3%83%88%e3%83%bb%e3%82%aa%e3%83%b3%e3%83%a9%e3%82%a4%e3%83%b3ii": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_ソードアート・オンラインii__2e5d7c81",
+    "file": "data/raw/machine/archives_machine_ソードアート・オンラインii__2e5d7c81.html",
+    "bytes": 187295
+  },
+  "https://suroschool.jp/archives/machine/%e6%88%a6%e5%9b%bd%e4%b9%99%e5%a5%b35-%e6%a5%ad%e7%81%ab%e3%82%92%e7%a9%bf%e3%81%a4%e5%ae%bf%e7%84%94%e3%81%ae%e5%8f%8c%e5%88%83": {
+    "ok": true,
+    "status": 200,
+    "type": "machine",
+    "slug": "archives_machine_戦国乙女5-業火を穿つ宿焔の双刃__dc0711c2",
+    "file": "data/raw/machine/archives_machine_戦国乙女5-業火を穿つ宿焔の双刃__dc0711c2.html",
+    "bytes": 165767
+  },
+  "https://suroschool.jp/archives/news/2024%e5%b9%b4%e4%bb%a5%e9%99%8d%e3%81%ae%e6%a9%9f%e7%a8%ae%ef%bc%88%e3%82%b9%e3%83%9e%e3%82%b9%e3%83%ad%ef%bc%89%e3%81%a82023%e5%b9%b4%e4%bb%a5%e5%89%8d%e3%81%ae%e7%8f%be%e5%bd%b9%e6%a9%9f%e7%a8%ae": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_2024年以降の機種_スマスロ_と2023年以前の現役機種__509fa548",
+    "file": "data/raw/news/archives_news_2024年以降の機種_スマスロ_と2023年以前の現役機種__509fa548.html",
+    "bytes": 122823
+  },
+  "https://suroschool.jp/archives/news/2-27%e3%80%80%e3%81%82%e3%82%8a%e3%81%b5%e3%82%8c%e3%81%9f%e8%81%b7%e6%a5%ad%e3%80%81%e3%82%b7%e3%83%a3%e3%83%bc%e3%83%9e%e3%83%b3%e3%82%ad%e3%83%b3%e3%82%b0%e7%8b%99%e3%81%84%e7%9b%ae%e6%9b%b4": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_2-27　ありふれた職業、シャーマンキング狙い目更__bd927a11",
+    "file": "data/raw/news/archives_news_2-27　ありふれた職業、シャーマンキング狙い目更__bd927a11.html",
+    "bytes": 122805
+  },
+  "https://suroschool.jp/archives/news/%e3%83%93%e3%83%b3%e3%82%b4%e3%81%a8%e3%83%81%e3%83%90%e3%83%aa%e3%83%a8%ef%bc%92%e3%81%ae%e7%8b%99%e3%81%84%e7%9b%ae%e8%a8%98%e4%ba%8b%e8%bf%bd%e5%8a%a0%e3%81%97%e3%81%be%e3%81%97%e3%81%9f%e3%80%82": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_ビンゴとチバリヨ_の狙い目記事追加しました。__fcf9a307",
+    "file": "data/raw/news/archives_news_ビンゴとチバリヨ_の狙い目記事追加しました。__fcf9a307.html",
+    "bytes": 122629
+  },
+  "https://suroschool.jp/archives/news/3-1%e3%82%b7%e3%83%a3%e3%83%bc%e3%83%9e%e3%83%b3%e3%82%ad%e3%83%b3%e3%82%b0%e7%8b%99%e3%81%84%e7%9b%ae%e6%9b%b4%e6%96%b0%e3%80%82%e5%b7%ab%e9%96%80%e9%81%81%e7%94%b2%e3%83%9d%e3%82%a4%e3%83%b3": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_3-1シャーマンキング狙い目更新。巫門遁甲ポイン__e64eaeec",
+    "file": "data/raw/news/archives_news_3-1シャーマンキング狙い目更新。巫門遁甲ポイン__e64eaeec.html",
+    "bytes": 122693
+  },
+  "https://suroschool.jp/archives/news/3-1%e3%83%81%e3%83%90%e3%83%aa%e3%83%a8%e5%bc%b7%e5%a4%a9%e5%9b%bd%e7%8b%99%e3%81%84%e6%9b%b4%e6%96%b0%e3%80%82%e5%a4%a9%e4%ba%95%e6%9c%9f%e5%be%85%e5%80%a4%e8%a1%a8%e3%82%92%e8%bf%bd%e5%8a%a0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_3-1チバリヨ強天国狙い更新。天井期待値表を追加__3e365ff9",
+    "file": "data/raw/news/archives_news_3-1チバリヨ強天国狙い更新。天井期待値表を追加__3e365ff9.html",
+    "bytes": 122645
+  },
+  "https://suroschool.jp/archives/news/3-3%e6%9d%b1%e4%ba%ac%e5%96%b0%e7%a8%ae%e3%80%81%e4%b8%83%e3%81%a4%e3%81%ae%e9%ad%94%e5%89%a3%e3%80%81%e3%83%a2%e3%83%b3%e3%83%8f%e3%83%b3%e7%8b%99%e3%81%84%e7%9b%ae%e6%9b%b4%e6%96%b0%e3%80%82": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_3-3東京喰種、七つの魔剣、モンハン狙い目更新。__3359bb12",
+    "file": "data/raw/news/archives_news_3-3東京喰種、七つの魔剣、モンハン狙い目更新。__3359bb12.html",
+    "bytes": 122986
+  },
+  "https://suroschool.jp/archives/news/3-3%e3%83%81%e3%83%90%e3%83%aa%e3%83%a8%e5%bc%b7%e5%a4%a9%e5%9b%bd%e7%8b%99%e3%81%84%e6%9b%b4%e6%96%b0%e3%80%82%e3%82%b5%e3%83%b3%e3%83%97%e3%83%ab%e5%a2%97%e3%82%84%e3%81%97%e3%81%9f%e6%9c%9f": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_3-3チバリヨ強天国狙い更新。サンプル増やした期__34437942",
+    "file": "data/raw/news/archives_news_3-3チバリヨ強天国狙い更新。サンプル増やした期__34437942.html",
+    "bytes": 122703
+  },
+  "https://suroschool.jp/archives/news/3-4%e6%96%b0%e5%8f%b0%ef%bc%96%e6%a9%9f%e7%a8%ae%e6%9a%ab%e5%ae%9a%e3%81%ae%e7%8b%99%e3%81%84%e7%9b%ae%e4%bd%9c%e6%88%90%e3%81%97%e3%81%be%e3%81%97%e3%81%9f%e3%80%82": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_3-4新台_機種暫定の狙い目作成しました。__3528be3d",
+    "file": "data/raw/news/archives_news_3-4新台_機種暫定の狙い目作成しました。__3528be3d.html",
+    "bytes": 125387
+  },
+  "https://suroschool.jp/archives/news/3-5%e4%bb%ae%e9%9d%a2%e3%83%a9%e3%82%a4%e3%83%80%e3%83%bc%e3%80%81%e3%81%a6%e3%81%83%e3%81%a0%e3%81%a9%e3%82%93%e3%81%a9%e3%82%93%e3%80%81%e3%82%b7%e3%82%b9%e3%82%bf%e3%83%bc%e3%82%af%e3%82%a8": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_3-5仮面ライダー、てぃだどんどん、シスタークエ__28ae6883",
+    "file": "data/raw/news/archives_news_3-5仮面ライダー、てぃだどんどん、シスタークエ__28ae6883.html",
+    "bytes": 123793
+  },
+  "https://suroschool.jp/archives/news/3-6%e3%80%80%e6%96%b0%e5%8f%b0%e3%81%ae%e7%8b%99%e3%81%84%e7%9b%ae%e3%82%92%e6%9b%b4%e6%96%b0%e3%81%97%e3%81%be%e3%81%97%e3%81%9f%e3%80%82": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_3-6　新台の狙い目を更新しました。__75340750",
+    "file": "data/raw/news/archives_news_3-6　新台の狙い目を更新しました。__75340750.html",
+    "bytes": 124350
+  },
+  "https://suroschool.jp/archives/news/3-7%e3%80%80%e3%83%90%e3%82%a4%e3%82%aa%e3%80%81%e3%82%b7%e3%82%b9%e3%82%bf%e3%83%bc%e3%82%af%e3%82%a8%e3%82%b9%e3%83%88%e3%80%81%e4%bb%ae%e9%9d%a2%e3%83%a9%e3%82%a4%e3%83%80%e3%83%bc%e6%9b%b4": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_3-7　バイオ、シスタークエスト、仮面ライダー更__9baa5afd",
+    "file": "data/raw/news/archives_news_3-7　バイオ、シスタークエスト、仮面ライダー更__9baa5afd.html",
+    "bytes": 129261
+  },
+  "https://suroschool.jp/archives/news/3-8%e3%80%80%e3%83%90%e3%82%a4%e3%82%aa%e3%80%81%e3%83%96%e3%83%a9%e3%83%83%e3%82%af%e3%82%b8%e3%83%a3%e3%83%83%e3%82%af%e3%80%81%e3%83%ab%e3%83%91%e3%83%b3%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_3-8　バイオ、ブラックジャック、ルパン更新__8683fae0",
+    "file": "data/raw/news/archives_news_3-8　バイオ、ブラックジャック、ルパン更新__8683fae0.html",
+    "bytes": 128156
+  },
+  "https://suroschool.jp/archives/news/3-9%e3%80%80%e6%9d%b1%e4%ba%ac%e5%96%b0%e7%a8%ae%e3%80%81%e3%82%ab%e3%82%a4%e3%82%b8%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_3-9　東京喰種、カイジ更新__b5d7050e",
+    "file": "data/raw/news/archives_news_3-9　東京喰種、カイジ更新__b5d7050e.html",
+    "bytes": 126216
+  },
+  "https://suroschool.jp/archives/news/3-11%e6%9d%b1%e4%ba%ac%e5%96%b0%e7%a8%ae%e3%80%81%e3%82%ab%e3%82%a4%e3%82%b8%e3%80%81%e4%bb%ae%e9%9d%a2%e3%83%a9%e3%82%a4%e3%83%80%e3%83%bc%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_3-11東京喰種、カイジ、仮面ライダー更新__28918772",
+    "file": "data/raw/news/archives_news_3-11東京喰種、カイジ、仮面ライダー更新__28918772.html",
+    "bytes": 127789
+  },
+  "https://suroschool.jp/archives/news/3-14%e3%80%80%e3%82%ab%e3%82%a4%e3%82%b8%e3%80%81%e3%82%b7%e3%82%b9%e3%82%bf%e3%83%bc%e3%82%af%e3%82%a8%e3%82%b9%e3%83%88%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_3-14　カイジ、シスタークエスト更新__9e53712f",
+    "file": "data/raw/news/archives_news_3-14　カイジ、シスタークエスト更新__9e53712f.html",
+    "bytes": 126812
+  },
+  "https://suroschool.jp/archives/news/3-15%e3%80%80%e6%9d%b1%e4%ba%ac%e5%96%b0%e7%a8%ae%e3%80%81%e3%83%80%e3%83%b3%e3%83%99%e3%83%ab%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_3-15　東京喰種、ダンベル更新__fabb69d0",
+    "file": "data/raw/news/archives_news_3-15　東京喰種、ダンベル更新__fabb69d0.html",
+    "bytes": 126592
+  },
+  "https://suroschool.jp/archives/news/3-17%e3%80%80%e3%82%b7%e3%82%b9%e3%82%bf%e3%83%bc%e3%82%af%e3%82%a8%e3%82%b9%e3%83%88%e3%80%81%e3%82%ab%e3%82%a4%e3%82%b8%e3%80%81%e3%83%96%e3%83%a9%e3%83%83%e3%82%af%e3%82%b8%e3%83%a3%e3%83%83": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_3-17　シスタークエスト、カイジ、ブラックジャッ__b8a413ba",
+    "file": "data/raw/news/archives_news_3-17　シスタークエスト、カイジ、ブラックジャッ__b8a413ba.html",
+    "bytes": 129290
+  },
+  "https://suroschool.jp/archives/news/3-19%e3%80%80%e3%83%ac%e3%83%b4%e3%83%a5%e3%83%bc%e3%82%b9%e3%82%bf%e3%82%a1%e3%83%a9%e3%82%a4%e3%83%88%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_3-19　レヴュースタァライト更新__0f30bb14",
+    "file": "data/raw/news/archives_news_3-19　レヴュースタァライト更新__0f30bb14.html",
+    "bytes": 125885
+  },
+  "https://suroschool.jp/archives/news/3-21%e3%80%80%e3%83%90%e3%82%a4%e3%82%aa%e3%80%81%e3%82%ab%e3%82%a4%e3%82%b8%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_3-21　バイオ、カイジ更新__e682b904",
+    "file": "data/raw/news/archives_news_3-21　バイオ、カイジ更新__e682b904.html",
+    "bytes": 126430
+  },
+  "https://suroschool.jp/archives/news/3-27%e3%80%80%e4%bb%ae%e9%9d%a2%e3%83%a9%e3%82%a4%e3%83%80%e3%83%bc%e3%80%81%e3%83%ac%e3%83%b4%e3%83%a5%e3%83%bc%e3%82%b9%e3%82%bf%e3%82%a1%e3%83%a9%e3%82%a4%e3%83%88%e3%80%81%e3%82%b7%e3%82%b9": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_3-27　仮面ライダー、レヴュースタァライト、シス__54b6d009",
+    "file": "data/raw/news/archives_news_3-27　仮面ライダー、レヴュースタァライト、シス__54b6d009.html",
+    "bytes": 129757
+  },
+  "https://suroschool.jp/archives/news/4-6%e3%80%80%e3%83%ab%e3%83%91%e3%83%b3%e4%b8%89%e4%b8%96%e4%bb%a5%e9%99%8d%e3%81%ae%e5%b0%8e%e5%85%a5%e3%81%95%e3%82%8c%e3%81%9f%e6%a9%9f%e7%a8%ae%e3%81%ae%e7%8b%99%e3%81%84%e7%9b%ae%e6%9b%b4": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_4-6　ルパン三世以降の導入された機種の狙い目更__e2246bb0",
+    "file": "data/raw/news/archives_news_4-6　ルパン三世以降の導入された機種の狙い目更__e2246bb0.html",
+    "bytes": 123467
+  },
+  "https://suroschool.jp/archives/news/4-7-%e6%96%b0%e5%8f%b0%ef%bc%94%e6%a9%9f%e7%a8%ae%e3%81%ae%e3%83%9a%e3%83%bc%e3%82%b8%e3%82%92%e4%bd%9c%e6%88%90%e3%81%97%e3%81%be%e3%81%97%e3%81%9f%e3%80%82": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_4-7-新台_機種のページを作成しました。__fb8580d8",
+    "file": "data/raw/news/archives_news_4-7-新台_機種のページを作成しました。__fb8580d8.html",
+    "bytes": 123206
+  },
+  "https://suroschool.jp/archives/news/4-8%e3%80%80%e3%83%9e%e3%82%ae%e3%83%ac%e3%82%b3%e3%80%81%e3%82%b4%e3%82%b8%e3%83%a9%e3%80%81%e3%81%86%e3%81%97%e3%81%a8%e3%82%89%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_4-8　マギレコ、ゴジラ、うしとら更新__4a8f665f",
+    "file": "data/raw/news/archives_news_4-8　マギレコ、ゴジラ、うしとら更新__4a8f665f.html",
+    "bytes": 127790
+  },
+  "https://suroschool.jp/archives/news/4-9%e3%80%80%e6%96%b0%e5%8f%b03%e6%a9%9f%e7%a8%ae%e3%81%ae%e7%8b%99%e3%81%84%e7%9b%ae%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_4-9　新台3機種の狙い目更新__4b74963f",
+    "file": "data/raw/news/archives_news_4-9　新台3機種の狙い目更新__4b74963f.html",
+    "bytes": 122874
+  },
+  "https://suroschool.jp/archives/news/4-11%e3%80%80%e3%83%9e%e3%82%ae%e3%83%ac%e3%82%b3%e3%80%81%e3%82%b4%e3%82%b8%e3%83%a9%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_4-11　マギレコ、ゴジラ更新__e9dffb7e",
+    "file": "data/raw/news/archives_news_4-11　マギレコ、ゴジラ更新__e9dffb7e.html",
+    "bytes": 122770
+  },
+  "https://suroschool.jp/archives/news/4-13%e3%80%80%e3%83%9e%e3%82%ae%e3%83%ac%e3%82%b3%e3%80%81%e3%82%b4%e3%82%b8%e3%83%a9%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_4-13　マギレコ、ゴジラ更新__08138b69",
+    "file": "data/raw/news/archives_news_4-13　マギレコ、ゴジラ更新__08138b69.html",
+    "bytes": 122920
+  },
+  "https://suroschool.jp/archives/news/4-15%e3%80%80%e3%82%b4%e3%82%b8%e3%83%a9%e3%80%81%e3%81%8b%e3%82%89%e3%81%8f%e3%82%8a%e3%82%b5%e3%83%bc%e3%82%ab%e3%82%b9%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_4-15　ゴジラ、からくりサーカス更新__da18e6af",
+    "file": "data/raw/news/archives_news_4-15　ゴジラ、からくりサーカス更新__da18e6af.html",
+    "bytes": 126682
+  },
+  "https://suroschool.jp/archives/news/4-16%e3%80%80%e3%81%86%e3%81%97%e3%81%8a%e3%81%a8%e3%81%a8%e3%82%89%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_4-16　うしおととら更新__7ea761df",
+    "file": "data/raw/news/archives_news_4-16　うしおととら更新__7ea761df.html",
+    "bytes": 122634
+  },
+  "https://suroschool.jp/archives/news/4-19%e3%80%80%e3%82%b4%e3%82%b8%e3%83%a9%e3%80%81%e3%83%9e%e3%82%ae%e3%83%ac%e3%82%b3%e3%80%81%e3%83%90%e3%82%a4%e3%82%aa%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_4-19　ゴジラ、マギレコ、バイオ更新__fcae7d0c",
+    "file": "data/raw/news/archives_news_4-19　ゴジラ、マギレコ、バイオ更新__fcae7d0c.html",
+    "bytes": 127829
+  },
+  "https://suroschool.jp/archives/news/4-21%e3%80%80%e5%90%89%e5%ae%97%e3%80%81%e9%ba%bb%e9%9b%80%e7%89%a9%e8%aa%9e%e3%80%81%e3%83%9f%e3%83%aa%e3%82%aa%e3%83%b3%e3%83%a9%e3%82%a4%e3%83%96": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_4-21　吉宗、麻雀物語、ミリオンライブ__13f799a7",
+    "file": "data/raw/news/archives_news_4-21　吉宗、麻雀物語、ミリオンライブ__13f799a7.html",
+    "bytes": 123109
+  },
+  "https://suroschool.jp/archives/news/4-22%e3%80%80%e6%96%b0%e5%8f%b03%e6%a9%9f%e7%a8%ae%e7%8b%99%e3%81%84%e7%9b%ae%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_4-22　新台3機種狙い目更新__0516631a",
+    "file": "data/raw/news/archives_news_4-22　新台3機種狙い目更新__0516631a.html",
+    "bytes": 122670
+  },
+  "https://suroschool.jp/archives/news/4-25%e3%80%80%e5%90%89%e5%ae%97%e3%80%81%e3%81%86%e3%81%97%e3%81%a8%e3%82%89%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_4-25　吉宗、うしとら更新__e87cb5b1",
+    "file": "data/raw/news/archives_news_4-25　吉宗、うしとら更新__e87cb5b1.html",
+    "bytes": 122771
+  },
+  "https://suroschool.jp/archives/news/4-26-%e5%90%89%e5%ae%97%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_4-26-吉宗更新__288302b9",
+    "file": "data/raw/news/archives_news_4-26-吉宗更新__288302b9.html",
+    "bytes": 122350
+  },
+  "https://suroschool.jp/archives/news/4-27%e3%80%80%e3%82%a2%e3%82%a4%e3%83%9e%e3%82%b9%e3%80%81%e3%82%b4%e3%82%b8%e3%83%a9%e3%80%81%e5%90%89%e5%ae%97%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_4-27　アイマス、ゴジラ、吉宗更新__9c1b65f7",
+    "file": "data/raw/news/archives_news_4-27　アイマス、ゴジラ、吉宗更新__9c1b65f7.html",
+    "bytes": 127742
+  },
+  "https://suroschool.jp/archives/news/4-29%e3%80%80%e3%82%b4%e3%82%b8%e3%83%a9%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_4-29　ゴジラ更新__aecfda38",
+    "file": "data/raw/news/archives_news_4-29　ゴジラ更新__aecfda38.html",
+    "bytes": 122412
+  },
+  "https://suroschool.jp/archives/news/4-30%e3%80%80%e3%82%b4%e3%82%b8%e3%83%a9%e3%80%81%e5%90%89%e5%ae%97%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_4-30　ゴジラ、吉宗更新__3bcb4072",
+    "file": "data/raw/news/archives_news_4-30　ゴジラ、吉宗更新__3bcb4072.html",
+    "bytes": 122689
+  },
+  "https://suroschool.jp/archives/news/5-3%e3%80%80%e3%82%b7%e3%82%b9%e3%82%af%e3%82%a8%e3%80%81%e9%ba%bb%e9%9b%80%e7%89%a9%e8%aa%9e%e3%80%81%e5%90%89%e5%ae%97%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_5-3　シスクエ、麻雀物語、吉宗更新__860aeafb",
+    "file": "data/raw/news/archives_news_5-3　シスクエ、麻雀物語、吉宗更新__860aeafb.html",
+    "bytes": 123202
+  },
+  "https://suroschool.jp/archives/news/5-7%e3%80%80%e3%82%b4%e3%82%b8%e3%83%a9%e3%80%81%e9%ba%bb%e9%9b%80%e7%89%a9%e8%aa%9e%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_5-7　ゴジラ、麻雀物語更新__affd6502",
+    "file": "data/raw/news/archives_news_5-7　ゴジラ、麻雀物語更新__affd6502.html",
+    "bytes": 122985
+  },
+  "https://suroschool.jp/archives/news/5-8%e3%80%80%e3%82%ac%e3%83%b3%e3%83%80%e3%83%a0seed%e3%80%81%e7%b7%91%e3%83%89%e3%83%b3%e3%80%81%e3%82%88%e3%81%86%e5%ae%9f%e3%80%80": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_5-8　ガンダムseed、緑ドン、よう実　__b9155c1e",
+    "file": "data/raw/news/archives_news_5-8　ガンダムseed、緑ドン、よう実　__b9155c1e.html",
+    "bytes": 123034
+  },
+  "https://suroschool.jp/archives/news/5-8%e3%80%80%e9%ba%bb%e9%9b%80%e7%89%a9%e8%aa%9e%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_5-8　麻雀物語更新__95171813",
+    "file": "data/raw/news/archives_news_5-8　麻雀物語更新__95171813.html",
+    "bytes": 125161
+  },
+  "https://suroschool.jp/archives/news/5-9%e3%80%80%e3%82%ac%e3%83%b3%e3%83%80%e3%83%a0seed%e3%80%81%e7%b7%91%e3%83%89%e3%83%b3%e3%80%81%e3%82%88%e3%81%86%e5%ae%9f%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_5-9　ガンダムseed、緑ドン、よう実更新__51ac0fb9",
+    "file": "data/raw/news/archives_news_5-9　ガンダムseed、緑ドン、よう実更新__51ac0fb9.html",
+    "bytes": 123233
+  },
+  "https://suroschool.jp/archives/news/5-10%e3%80%80%e3%82%ac%e3%83%b3%e3%83%80%e3%83%a0seed%e3%80%81%e7%b7%91%e3%83%89%e3%83%b3%e3%80%81%e9%ba%bb%e9%9b%80%e7%89%a9%e8%aa%9e%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_5-10　ガンダムseed、緑ドン、麻雀物語更新__feec7a5b",
+    "file": "data/raw/news/archives_news_5-10　ガンダムseed、緑ドン、麻雀物語更新__feec7a5b.html",
+    "bytes": 123300
+  },
+  "https://suroschool.jp/archives/news/8-10-%e7%b7%91%e3%83%89%e3%83%b3%e7%8b%99%e3%81%84%e7%9b%ae%e8%a8%82%e6%ad%a3": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_8-10-緑ドン狙い目訂正__1a50d112",
+    "file": "data/raw/news/archives_news_8-10-緑ドン狙い目訂正__1a50d112.html",
+    "bytes": 122588
+  },
+  "https://suroschool.jp/archives/news/5-12%e3%80%80%e7%b7%91%e3%83%89%e3%83%b3%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_5-12　緑ドン更新__9968675d",
+    "file": "data/raw/news/archives_news_5-12　緑ドン更新__9968675d.html",
+    "bytes": 122425
+  },
+  "https://suroschool.jp/archives/news/5-13%e3%80%80%e3%82%ac%e3%83%b3%e3%83%80%e3%83%a0seed%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_5-13　ガンダムseed更新__784e2ed4",
+    "file": "data/raw/news/archives_news_5-13　ガンダムseed更新__784e2ed4.html",
+    "bytes": 122563
+  },
+  "https://suroschool.jp/archives/news/5-14%e3%80%80%e3%83%9e%e3%82%ae%e3%83%ac%e3%82%b3%e3%80%81%e3%82%b4%e3%82%b8%e3%83%a9%e3%80%81%e3%82%88%e3%81%86%e5%ae%9f%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_5-14　マギレコ、ゴジラ、よう実更新__e9a8a04f",
+    "file": "data/raw/news/archives_news_5-14　マギレコ、ゴジラ、よう実更新__e9a8a04f.html",
+    "bytes": 123207
+  },
+  "https://suroschool.jp/archives/news/5-16%e3%80%80%e7%b7%91%e3%83%89%e3%83%b3%e3%80%81%e3%82%ac%e3%83%b3%e3%83%80%e3%83%a0seed%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_5-16　緑ドン、ガンダムseed更新__7c279230",
+    "file": "data/raw/news/archives_news_5-16　緑ドン、ガンダムseed更新__7c279230.html",
+    "bytes": 122940
+  },
+  "https://suroschool.jp/archives/news/5-19%e3%80%80%e6%96%b0%e5%8f%b02%e6%a9%9f%e7%a8%ae%e3%83%9a%e3%83%bc%e3%82%b8%e3%82%92%e4%bd%9c%e6%88%90%e3%80%82": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_5-19　新台2機種ページを作成。__12039b6e",
+    "file": "data/raw/news/archives_news_5-19　新台2機種ページを作成。__12039b6e.html",
+    "bytes": 126393
+  },
+  "https://suroschool.jp/archives/news/5-20%e3%80%80%e6%96%b0%e5%8f%b02%e6%a9%9f%e7%a8%ae%e7%8b%99%e3%81%84%e7%9b%ae%e6%9b%b4%e6%96%b0%ef%bc%88%e6%9a%ab%e5%ae%9a%ef%bc%89": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_5-20　新台2機種狙い目更新_暫定___63d83878",
+    "file": "data/raw/news/archives_news_5-20　新台2機種狙い目更新_暫定___63d83878.html",
+    "bytes": 122962
+  },
+  "https://suroschool.jp/archives/news/5-23%e3%80%80%e6%96%b0%e5%8f%b02%e6%a9%9f%e7%a8%ae%e7%8b%99%e3%81%84%e7%9b%ae%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_5-23　新台2機種狙い目更新__a35b2ae3",
+    "file": "data/raw/news/archives_news_5-23　新台2機種狙い目更新__a35b2ae3.html",
+    "bytes": 122819
+  },
+  "https://suroschool.jp/archives/news/5-25-%e6%b2%96%e3%83%89%e3%82%adgold%e3%81%a8black%e8%a8%98%e4%ba%8b%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_5-25-沖ドキgoldとblack記事更新__e29f5d1c",
+    "file": "data/raw/news/archives_news_5-25-沖ドキgoldとblack記事更新__e29f5d1c.html",
+    "bytes": 125709
+  },
+  "https://suroschool.jp/archives/news/5-26%e3%80%80%e8%8a%b1%e7%ac%a0%e3%80%81%e3%82%ac%e3%83%b3%e3%83%80%e3%83%a0seed%e3%80%81%e3%82%88%e3%81%86%e5%ae%9f%e3%80%81%e3%82%b4%e3%82%b8%e3%83%a9%e3%80%81%e3%82%b4%e3%83%83%e3%83%89%e3%82%a4": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_5-26　花笠、ガンダムseed、よう実、ゴジラ、ゴッドイ__67e22fe5",
+    "file": "data/raw/news/archives_news_5-26　花笠、ガンダムseed、よう実、ゴジラ、ゴッドイ__67e22fe5.html",
+    "bytes": 123867
+  },
+  "https://suroschool.jp/archives/news/5-28%e3%80%80tolove%e3%82%8b%e3%83%80%e3%83%bc%e3%82%af%e3%83%8d%e3%82%b9-trance%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_5-28　toloveるダークネス-trance更新__9c61fd4f",
+    "file": "data/raw/news/archives_news_5-28　toloveるダークネス-trance更新__9c61fd4f.html",
+    "bytes": 125655
+  },
+  "https://suroschool.jp/archives/news/5-29%e3%80%80%e5%90%89%e5%ae%97%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_5-29　吉宗更新__814f8f32",
+    "file": "data/raw/news/archives_news_5-29　吉宗更新__814f8f32.html",
+    "bytes": 122375
+  },
+  "https://suroschool.jp/archives/news/5-30%e3%80%80%e3%82%b4%e3%82%b8%e3%83%a9%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_5-30　ゴジラ更新__49b9f29d",
+    "file": "data/raw/news/archives_news_5-30　ゴジラ更新__49b9f29d.html",
+    "bytes": 122478
+  },
+  "https://suroschool.jp/archives/news/5-31%e3%80%80%e8%8a%b1%e7%ac%a0%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_5-31　花笠更新__66e494a7",
+    "file": "data/raw/news/archives_news_5-31　花笠更新__66e494a7.html",
+    "bytes": 122357
+  },
+  "https://suroschool.jp/archives/news/6-1%e3%80%80%e3%82%88%e3%81%86%e5%ae%9f%e3%80%81%e9%ba%bb%e9%9b%80%e7%89%a9%e8%aa%9e%e3%80%81%e3%83%88%e3%83%a9%e3%83%96%e3%83%ab%ef%bc%88%e3%83%88%e3%83%a9%e3%83%b3%e3%82%b9%ef%bc%89%e6%9b%b4": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_6-1　よう実、麻雀物語、トラブル_トランス_更__ad750531",
+    "file": "data/raw/news/archives_news_6-1　よう実、麻雀物語、トラブル_トランス_更__ad750531.html",
+    "bytes": 123625
+  },
+  "https://suroschool.jp/archives/news/6-2%e3%80%80%e6%96%b0%e5%8f%b04%e6%a9%9f%e7%a8%ae%e3%81%ae%e3%83%9a%e3%83%bc%e3%82%b8%e3%82%92%e4%bd%9c%e6%88%90%e3%80%82": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_6-2　新台4機種のページを作成。__8be24123",
+    "file": "data/raw/news/archives_news_6-2　新台4機種のページを作成。__8be24123.html",
+    "bytes": 123035
+  },
+  "https://suroschool.jp/archives/news/6-3%e3%80%80%e3%81%84%e3%81%96%e7%95%aa%e9%95%b7%e3%80%81dmc%e3%80%81%e3%82%ae%e3%83%ab%e3%83%86%e3%82%a3%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_6-3　いざ番長、dmc、ギルティ更新__2ab59cee",
+    "file": "data/raw/news/archives_news_6-3　いざ番長、dmc、ギルティ更新__2ab59cee.html",
+    "bytes": 123009
+  },
+  "https://suroschool.jp/archives/news/6-4%e3%80%80%e6%96%b0%e5%8f%b04%e6%a9%9f%e7%a8%ae%e3%80%81%e3%82%ac%e3%83%b3%e3%83%80%e3%83%a0seed%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_6-4　新台4機種、ガンダムseed更新__7e6bae9a",
+    "file": "data/raw/news/archives_news_6-4　新台4機種、ガンダムseed更新__7e6bae9a.html",
+    "bytes": 122976
+  },
+  "https://suroschool.jp/archives/news/6-6%e3%80%80%e6%96%b0%e5%8f%b04%e6%a9%9f%e7%a8%ae%e7%8b%99%e3%81%84%e7%9b%ae%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_6-6　新台4機種狙い目更新__5e6694ab",
+    "file": "data/raw/news/archives_news_6-6　新台4機種狙い目更新__5e6694ab.html",
+    "bytes": 122985
+  },
+  "https://suroschool.jp/archives/news/6-7%e3%80%80%e3%81%84%e3%81%96%e7%95%aa%e9%95%b7%e3%80%81dmc5%e3%80%81%e3%83%9e%e3%82%ae%e3%83%ac%e3%82%b3%e3%80%81%e3%82%b4%e3%82%b8%e3%83%a9%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_6-7　いざ番長、dmc5、マギレコ、ゴジラ更新__369bd885",
+    "file": "data/raw/news/archives_news_6-7　いざ番長、dmc5、マギレコ、ゴジラ更新__369bd885.html",
+    "bytes": 123486
+  },
+  "https://suroschool.jp/archives/news/6-11%e3%80%80dmc5%e3%80%81%e3%82%ae%e3%83%ab%e3%83%86%e3%82%a3%e3%80%81ultraman%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_6-11　dmc5、ギルティ、ultraman更新__adbf305d",
+    "file": "data/raw/news/archives_news_6-11　dmc5、ギルティ、ultraman更新__adbf305d.html",
+    "bytes": 122951
+  },
+  "https://suroschool.jp/archives/news/6-12%e3%80%80%e6%b2%96%e3%83%89%e3%82%adblack%e7%8b%99%e3%81%84%e7%9b%ae%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_6-12　沖ドキblack狙い目更新__4319ef71",
+    "file": "data/raw/news/archives_news_6-12　沖ドキblack狙い目更新__4319ef71.html",
+    "bytes": 125625
+  },
+  "https://suroschool.jp/archives/news/6-13%e3%80%80%e3%81%84%e3%81%96%e7%95%aa%e9%95%b7%e3%80%81%e5%90%89%e5%ae%97%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_6-13　いざ番長、吉宗更新__e765a747",
+    "file": "data/raw/news/archives_news_6-13　いざ番長、吉宗更新__e765a747.html",
+    "bytes": 122788
+  },
+  "https://suroschool.jp/archives/news/6-15%e3%80%80%e3%81%84%e3%81%96%e7%95%aa%e9%95%b7%e3%80%81%e3%82%ae%e3%83%ab%e3%83%86%e3%82%a3%e3%80%81ultraman%e3%80%81%e5%90%89%e5%ae%97%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_6-15　いざ番長、ギルティ、ultraman、吉宗更新__92b126a0",
+    "file": "data/raw/news/archives_news_6-15　いざ番長、ギルティ、ultraman、吉宗更新__92b126a0.html",
+    "bytes": 123899
+  },
+  "https://suroschool.jp/archives/news/%e7%b5%b6%e5%af%be%e8%a1%9d%e6%bf%80%e4%bd%9c%e6%88%90": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_絶対衝激作成__8d1f0ad3",
+    "file": "data/raw/news/archives_news_絶対衝激作成__8d1f0ad3.html",
+    "bytes": 123257
+  },
+  "https://suroschool.jp/archives/news/6-24%e3%80%80%e3%81%8b%e3%81%90%e3%82%84%e6%a7%98%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_6-24　かぐや様更新__3b0bc3d8",
+    "file": "data/raw/news/archives_news_6-24　かぐや様更新__3b0bc3d8.html",
+    "bytes": 122703
+  },
+  "https://suroschool.jp/archives/news/6-26%e3%80%80dmc5%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_6-26　dmc5更新__a5c324fb",
+    "file": "data/raw/news/archives_news_6-26　dmc5更新__a5c324fb.html",
+    "bytes": 122882
+  },
+  "https://suroschool.jp/archives/news/7-2%e3%80%80%e5%90%89%e5%ae%97%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_7-2　吉宗更新__3775237b",
+    "file": "data/raw/news/archives_news_7-2　吉宗更新__3775237b.html",
+    "bytes": 122457
+  },
+  "https://suroschool.jp/archives/news/7-3%e3%80%80%e5%90%89%e5%ae%97%e3%80%81%e3%82%ae%e3%83%ab%e3%83%86%e3%82%a3%e3%82%af%e3%83%a9%e3%82%a6%e3%83%b3%e3%80%81%e3%83%88%e3%83%a9%e3%83%96%e3%83%abtrance%e3%80%81%e3%81%8b%e3%82%89%e3%81%95": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_7-3　吉宗、ギルティクラウン、トラブルtrance、からさ__26a9aca4",
+    "file": "data/raw/news/archives_news_7-3　吉宗、ギルティクラウン、トラブルtrance、からさ__26a9aca4.html",
+    "bytes": 124439
+  },
+  "https://suroschool.jp/archives/news/7-3%e3%80%80%e6%9d%b1%e4%ba%ac%e5%96%b0%e7%a8%ae%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_7-3　東京喰種更新__d8caa91b",
+    "file": "data/raw/news/archives_news_7-3　東京喰種更新__d8caa91b.html",
+    "bytes": 122626
+  },
+  "https://suroschool.jp/archives/news/7-4%e3%80%80%e3%81%8b%e3%81%90%e3%82%84%e6%a7%98%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_7-4　かぐや様更新__fb592d35",
+    "file": "data/raw/news/archives_news_7-4　かぐや様更新__fb592d35.html",
+    "bytes": 122714
+  },
+  "https://suroschool.jp/archives/news/7-7%e3%80%80%e3%82%8f%e3%81%9f%e3%81%97%e3%81%ae%e5%b9%b8%e3%81%9b%e3%81%aa%e7%b5%90%e5%a9%9a%e3%83%9a%e3%83%bc%e3%82%b8%e4%bd%9c%e6%88%90%e3%80%81%e3%83%90%e3%82%a4%e3%82%aa5%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_7-7　わたしの幸せな結婚ページ作成、バイオ5更新__b62456cd",
+    "file": "data/raw/news/archives_news_7-7　わたしの幸せな結婚ページ作成、バイオ5更新__b62456cd.html",
+    "bytes": 123947
+  },
+  "https://suroschool.jp/archives/news/7-8%e3%80%80%e3%82%8f%e3%81%9f%e5%a9%9a%e6%9b%b4%e6%96%b0%e3%80%81%e3%83%8f%e3%82%a4%e3%83%93%e3%83%aa%e3%82%bf%e3%83%bc%e3%83%b3%e3%83%9a%e3%83%bc%e3%82%b8%e4%bd%9c%e6%88%90": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_7-8　わた婚更新、ハイビリターンページ作成__e9bebf15",
+    "file": "data/raw/news/archives_news_7-8　わた婚更新、ハイビリターンページ作成__e9bebf15.html",
+    "bytes": 123737
+  },
+  "https://suroschool.jp/archives/news/7-10%e3%80%80%e3%82%8f%e3%81%9f%e5%a9%9a%e3%80%81%e3%83%8f%e3%82%a4%e3%83%93%e3%83%aa%e3%82%bf%e3%83%bc%e3%83%b3%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_7-10　わた婚、ハイビリターン更新__238610b4",
+    "file": "data/raw/news/archives_news_7-10　わた婚、ハイビリターン更新__238610b4.html",
+    "bytes": 123464
+  },
+  "https://suroschool.jp/archives/news/7-11%e3%80%80%e3%82%8f%e3%81%9f%e5%a9%9a%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_7-11　わた婚更新__52f9c14f",
+    "file": "data/raw/news/archives_news_7-11　わた婚更新__52f9c14f.html",
+    "bytes": 122635
+  },
+  "https://suroschool.jp/archives/news/7-12%e3%80%80%e5%90%89%e5%ae%97%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_7-12　吉宗更新__1e921e74",
+    "file": "data/raw/news/archives_news_7-12　吉宗更新__1e921e74.html",
+    "bytes": 122483
+  },
+  "https://suroschool.jp/archives/news/7-14-%e3%82%8f%e3%81%9f%e5%a9%9a%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_7-14-わた婚更新__aae0a357",
+    "file": "data/raw/news/archives_news_7-14-わた婚更新__aae0a357.html",
+    "bytes": 122560
+  },
+  "https://suroschool.jp/archives/news/7-16%e3%80%80%e3%83%8f%e3%82%a4%e3%83%93%e3%83%aa%e3%82%bf%e3%83%bc%e3%83%b3%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_7-16　ハイビリターン更新__90601b2d",
+    "file": "data/raw/news/archives_news_7-16　ハイビリターン更新__90601b2d.html",
+    "bytes": 122914
+  },
+  "https://suroschool.jp/archives/news/7-19%e3%80%80%e3%82%8f%e3%81%9f%e5%a9%9a%e3%80%81%e3%81%84%e3%81%96%e7%95%aa%e9%95%b7%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_7-19　わた婚、いざ番長更新__fa904197",
+    "file": "data/raw/news/archives_news_7-19　わた婚、いざ番長更新__fa904197.html",
+    "bytes": 123204
+  },
+  "https://suroschool.jp/archives/news/7-21%e3%80%80%e3%83%9e%e3%82%ae%e3%83%ac%e3%82%b3%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_7-21　マギレコ更新__0109970a",
+    "file": "data/raw/news/archives_news_7-21　マギレコ更新__0109970a.html",
+    "bytes": 122792
+  },
+  "https://suroschool.jp/archives/news/7-22%e3%80%80%e3%82%8f%e3%81%9f%e5%a9%9a%e3%80%81%e3%81%84%e3%81%96%e7%95%aa%e9%95%b7%e3%80%81%e3%82%b7%e3%83%b3%e3%82%a8%e3%83%b4%e3%82%a1%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_7-22　わた婚、いざ番長、シンエヴァ更新__6251f9d9",
+    "file": "data/raw/news/archives_news_7-22　わた婚、いざ番長、シンエヴァ更新__6251f9d9.html",
+    "bytes": 123865
+  },
+  "https://suroschool.jp/archives/news/7-23%e3%80%80dmc5%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_7-23　dmc5更新__721f4dd9",
+    "file": "data/raw/news/archives_news_7-23　dmc5更新__721f4dd9.html",
+    "bytes": 122513
+  },
+  "https://suroschool.jp/archives/news/7-30%e3%80%80%e6%9d%b1%e4%ba%ac%e5%96%b0%e7%a8%ae%e3%80%81%e3%82%8f%e3%81%9f%e5%a9%9a%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_7-30　東京喰種、わた婚更新__29cf66c6",
+    "file": "data/raw/news/archives_news_7-30　東京喰種、わた婚更新__29cf66c6.html",
+    "bytes": 123482
+  },
+  "https://suroschool.jp/archives/news/8-1-%e6%b2%96%e3%83%89%e3%82%adblack%e9%87%8d%e8%a6%96%e3%81%99%e3%81%b9%e3%81%8d%e5%b1%a5%e6%ad%b4%e3%81%a8%e3%83%84%e3%83%bc%e3%83%ab%e6%93%8d%e4%bd%9c-%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_8-1-沖ドキblack重視すべき履歴とツール操作-更新__27c5f44f",
+    "file": "data/raw/news/archives_news_8-1-沖ドキblack重視すべき履歴とツール操作-更新__27c5f44f.html",
+    "bytes": 125440
+  },
+  "https://suroschool.jp/archives/news/8-4%e3%80%80%e6%96%b0%e5%8f%b05%e6%a9%9f%e7%a8%ae%e3%83%9a%e3%83%bc%e3%82%b8%e4%bd%9c%e6%88%90": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_8-4　新台5機種ページ作成__4b268989",
+    "file": "data/raw/news/archives_news_8-4　新台5機種ページ作成__4b268989.html",
+    "bytes": 122737
+  },
+  "https://suroschool.jp/archives/news/8-4%e3%80%80%e7%9c%9f%e3%83%bb%e4%b8%80%e9%a8%8e%e5%bd%93%e5%8d%83%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_8-4　真・一騎当千更新__0fc775d5",
+    "file": "data/raw/news/archives_news_8-4　真・一騎当千更新__0fc775d5.html",
+    "bytes": 122782
+  },
+  "https://suroschool.jp/archives/news/8-5%e3%80%80%e6%96%b0%e5%8f%b04%e6%a9%9f%e7%a8%ae%e7%8b%99%e3%81%84%e7%9b%ae%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_8-5　新台4機種狙い目更新__71f5749b",
+    "file": "data/raw/news/archives_news_8-5　新台4機種狙い目更新__71f5749b.html",
+    "bytes": 123667
+  },
+  "https://suroschool.jp/archives/news/8-6%e3%80%80%e3%82%a2%e3%82%ba%e3%83%ac%e3%83%b3%e3%80%81%e5%92%b2%e3%80%81%e8%bb%a2%e5%89%a3%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_8-6　アズレン、咲、転剣更新__8260fc07",
+    "file": "data/raw/news/archives_news_8-6　アズレン、咲、転剣更新__8260fc07.html",
+    "bytes": 122818
+  },
+  "https://suroschool.jp/archives/news/8-8%e3%80%80%e3%83%80%e3%83%aa%e3%83%95%e3%83%a9%e3%80%81%e3%82%a2%e3%82%ba%e3%83%ac%e3%83%b3%e3%80%81%e8%bb%a2%e5%89%a3%e3%80%81%e5%92%b2%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_8-8　ダリフラ、アズレン、転剣、咲更新__0fa7ca86",
+    "file": "data/raw/news/archives_news_8-8　ダリフラ、アズレン、転剣、咲更新__0fa7ca86.html",
+    "bytes": 124100
+  },
+  "https://suroschool.jp/archives/news/8-9%e3%80%80%e5%92%b2%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_8-9　咲更新__a50a77cc",
+    "file": "data/raw/news/archives_news_8-9　咲更新__a50a77cc.html",
+    "bytes": 122454
+  },
+  "https://suroschool.jp/archives/news/8-11-%e8%bb%a2%e5%89%a3%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_8-11-転剣更新__1e92c467",
+    "file": "data/raw/news/archives_news_8-11-転剣更新__1e92c467.html",
+    "bytes": 122516
+  },
+  "https://suroschool.jp/archives/news/8-12%e3%80%80%e3%82%a2%e3%82%ba%e3%83%ac%e3%83%b3%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_8-12　アズレン更新__78597f27",
+    "file": "data/raw/news/archives_news_8-12　アズレン更新__78597f27.html",
+    "bytes": 122666
+  },
+  "https://suroschool.jp/archives/news/8-16%e3%80%80%e8%bb%a2%e5%89%a3%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_8-16　転剣更新__11036c9e",
+    "file": "data/raw/news/archives_news_8-16　転剣更新__11036c9e.html",
+    "bytes": 122532
+  },
+  "https://suroschool.jp/archives/news/8-18%e3%80%80%e5%92%b2%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_8-18　咲更新__45084854",
+    "file": "data/raw/news/archives_news_8-18　咲更新__45084854.html",
+    "bytes": 122500
+  },
+  "https://suroschool.jp/archives/news/8-21%e3%80%80%e5%92%b2%e3%80%81%e3%83%80%e3%83%aa%e3%83%95%e3%83%a9%e3%80%81%e3%82%a2%e3%82%ba%e3%83%ac%e3%83%b3%e3%80%81%e8%bb%a2%e5%89%a3%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_8-21　咲、ダリフラ、アズレン、転剣更新__26392de4",
+    "file": "data/raw/news/archives_news_8-21　咲、ダリフラ、アズレン、転剣更新__26392de4.html",
+    "bytes": 124167
+  },
+  "https://suroschool.jp/archives/news/8-31%e3%80%80%e8%bb%a2%e5%89%a3%e3%80%81%e3%82%a2%e3%82%ba%e3%83%ac%e3%83%b3%e3%80%81%e3%83%80%e3%83%aa%e3%83%95%e3%83%a9%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_8-31　転剣、アズレン、ダリフラ更新__76724fc8",
+    "file": "data/raw/news/archives_news_8-31　転剣、アズレン、ダリフラ更新__76724fc8.html",
+    "bytes": 123798
+  },
+  "https://suroschool.jp/archives/news/9-4%e3%80%80%e8%bb%a2%e5%89%a3%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_9-4　転剣更新__fc90a55b",
+    "file": "data/raw/news/archives_news_9-4　転剣更新__fc90a55b.html",
+    "bytes": 122752
+  },
+  "https://suroschool.jp/archives/news/9-8%e3%80%80%e6%9d%b1%e4%ba%ac%e5%96%b0%e7%a8%ae%e6%9b%b4%e6%96%b0%e3%80%81%e6%9d%b1%e3%83%aa%e3%83%99%e4%bd%9c%e6%88%90": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_9-8　東京喰種更新、東リベ作成__8e90f2ce",
+    "file": "data/raw/news/archives_news_9-8　東京喰種更新、東リベ作成__8e90f2ce.html",
+    "bytes": 123330
+  },
+  "https://suroschool.jp/archives/news/9-9%e3%80%80%e6%9d%b1%e3%83%aa%e3%83%99%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_9-9　東リベ更新__840eee38",
+    "file": "data/raw/news/archives_news_9-9　東リベ更新__840eee38.html",
+    "bytes": 122648
+  },
+  "https://suroschool.jp/archives/news/9-10%e3%80%80%e6%9d%b1%e3%83%aa%e3%83%99%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_9-10　東リベ更新__b19239b9",
+    "file": "data/raw/news/archives_news_9-10　東リベ更新__b19239b9.html",
+    "bytes": 122660
+  },
+  "https://suroschool.jp/archives/news/9-13%e3%80%80%e6%9d%b1%e3%83%aa%e3%83%99%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_9-13　東リベ更新__97fb09e8",
+    "file": "data/raw/news/archives_news_9-13　東リベ更新__97fb09e8.html",
+    "bytes": 122646
+  },
+  "https://suroschool.jp/archives/news/9-18%e3%80%80%e6%9d%b1%e3%83%aa%e3%83%99%e3%80%81%e3%82%a2%e3%82%ba%e3%83%ac%e3%83%b3%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_9-18　東リベ、アズレン更新__8cf9e1e6",
+    "file": "data/raw/news/archives_news_9-18　東リベ、アズレン更新__8cf9e1e6.html",
+    "bytes": 123273
+  },
+  "https://suroschool.jp/archives/news/9-20-%e6%9d%b1%e3%83%aa%e3%83%99%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_9-20-東リベ更新__84c5c670",
+    "file": "data/raw/news/archives_news_9-20-東リベ更新__84c5c670.html",
+    "bytes": 122606
+  },
+  "https://suroschool.jp/archives/news/9-21%e3%80%80%e6%9d%b1%e3%83%aa%e3%83%99%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_9-21　東リベ更新__4e830f58",
+    "file": "data/raw/news/archives_news_9-21　東リベ更新__4e830f58.html",
+    "bytes": 122716
+  },
+  "https://suroschool.jp/archives/news/9-27%e3%80%80%e6%9d%b1%e3%83%aa%e3%81%b9%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_9-27　東リべ更新__9fd6a383",
+    "file": "data/raw/news/archives_news_9-27　東リべ更新__9fd6a383.html",
+    "bytes": 122716
+  },
+  "https://suroschool.jp/archives/news/9-29-%e6%9d%b1%e3%83%aa%e3%83%99%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_9-29-東リベ更新__3751cbc9",
+    "file": "data/raw/news/archives_news_9-29-東リベ更新__3751cbc9.html",
+    "bytes": 122561
+  },
+  "https://suroschool.jp/archives/news/10-1%e3%80%80%e6%9d%b1%e3%83%aa%e3%83%99%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_10-1　東リベ更新__349e435d",
+    "file": "data/raw/news/archives_news_10-1　東リベ更新__349e435d.html",
+    "bytes": 122446
+  },
+  "https://suroschool.jp/archives/news/10-3%e3%80%80%e6%9d%b1%e3%83%aa%e3%83%99%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_10-3　東リベ更新__daad6ac5",
+    "file": "data/raw/news/archives_news_10-3　東リベ更新__daad6ac5.html",
+    "bytes": 122647
+  },
+  "https://suroschool.jp/archives/news/10-6%e3%80%80%e6%96%b0%e5%8f%b03%e6%a9%9f%e7%a8%ae%e3%81%ae%e3%83%9a%e3%83%bc%e3%82%b8%e3%82%92%e4%bd%9c%e6%88%90%e3%81%97%e3%81%be%e3%81%97%e3%81%9f%e3%80%82": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_10-6　新台3機種のページを作成しました。__52b4b30d",
+    "file": "data/raw/news/archives_news_10-6　新台3機種のページを作成しました。__52b4b30d.html",
+    "bytes": 123233
+  },
+  "https://suroschool.jp/archives/news/10-7%e3%80%80%e6%96%b0%e9%ac%bc%e6%ad%a6%e8%80%85%e3%80%81%e9%8a%ad%e5%bd%a2%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_10-7　新鬼武者、銭形更新__add96e2e",
+    "file": "data/raw/news/archives_news_10-7　新鬼武者、銭形更新__add96e2e.html",
+    "bytes": 122790
+  },
+  "https://suroschool.jp/archives/news/10-8%e3%80%80%e6%96%b0%e5%8f%b03%e6%a9%9f%e7%a8%ae%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_10-8　新台3機種更新__2012ef60",
+    "file": "data/raw/news/archives_news_10-8　新台3機種更新__2012ef60.html",
+    "bytes": 123086
+  },
+  "https://suroschool.jp/archives/news/10-9%e3%80%80%e6%96%b0%e5%8f%b03%e6%a9%9f%e7%a8%ae%e7%8b%99%e3%81%84%e7%9b%ae%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_10-9　新台3機種狙い目更新__1c0c9bb8",
+    "file": "data/raw/news/archives_news_10-9　新台3機種狙い目更新__1c0c9bb8.html",
+    "bytes": 123340
+  },
+  "https://suroschool.jp/archives/news/10-11%e3%80%80%e9%8a%ad%e5%bd%a2%e3%80%81%e3%83%90%e3%83%99%e3%83%ab%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_10-11　銭形、バベル更新__eed608cd",
+    "file": "data/raw/news/archives_news_10-11　銭形、バベル更新__eed608cd.html",
+    "bytes": 123005
+  },
+  "https://suroschool.jp/archives/news/10-13%e3%80%80%e3%82%a2%e3%82%ba%e3%83%ac%e3%83%b3%e3%80%81%e3%82%ae%e3%83%ab%e3%83%86%e3%82%a3%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_10-13　アズレン、ギルティ更新__45a39912",
+    "file": "data/raw/news/archives_news_10-13　アズレン、ギルティ更新__45a39912.html",
+    "bytes": 123285
+  },
+  "https://suroschool.jp/archives/news/10-16%e3%80%80%e9%8a%ad%e5%bd%a2%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_10-16　銭形更新__c71a44c5",
+    "file": "data/raw/news/archives_news_10-16　銭形更新__c71a44c5.html",
+    "bytes": 122509
+  },
+  "https://suroschool.jp/archives/news/10-17%e3%80%80%e9%ac%bc%e6%ad%a6%e8%80%85%e3%80%81%e4%b8%bb%e5%bd%b9%e3%81%af%e9%8a%ad%e5%bd%a2%e3%80%81%e6%9d%b1%e3%83%aa%e3%81%b9%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_10-17　鬼武者、主役は銭形、東リべ更新__afb73b60",
+    "file": "data/raw/news/archives_news_10-17　鬼武者、主役は銭形、東リべ更新__afb73b60.html",
+    "bytes": 123727
+  },
+  "https://suroschool.jp/archives/news/10-19%e3%80%80%e9%ac%bc%e6%ad%a6%e8%80%85%e3%80%81%e9%8a%ad%e5%bd%a2%e3%80%81%e3%83%90%e3%83%99%e3%83%ab%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_10-19　鬼武者、銭形、バベル更新__c76cd1a6",
+    "file": "data/raw/news/archives_news_10-19　鬼武者、銭形、バベル更新__c76cd1a6.html",
+    "bytes": 123510
+  },
+  "https://suroschool.jp/archives/news/10-20%e3%80%80%e9%ac%bc%e6%ad%a6%e8%80%85%e3%80%81%e6%9d%b1%e3%83%aa%e3%81%b9%e3%80%81%e3%83%9e%e3%82%ae%e3%83%ac%e3%82%b3%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_10-20　鬼武者、東リべ、マギレコ更新__c5c590a5",
+    "file": "data/raw/news/archives_news_10-20　鬼武者、東リべ、マギレコ更新__c5c590a5.html",
+    "bytes": 123814
+  },
+  "https://suroschool.jp/archives/news/10-20%e3%80%80%e8%8d%92%e9%87%8e%e3%81%ae%e3%82%b3%e3%83%88%e3%83%96%e3%82%ad%e9%a3%9b%e8%a1%8c%e9%9a%8a%e3%81%ae%e3%83%9a%e3%83%bc%e3%82%b8%e4%bd%9c%e6%88%90": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_10-20　荒野のコトブキ飛行隊のページ作成__f8f8f074",
+    "file": "data/raw/news/archives_news_10-20　荒野のコトブキ飛行隊のページ作成__f8f8f074.html",
+    "bytes": 123413
+  },
+  "https://suroschool.jp/archives/news/10-21%e3%80%80%e3%82%b3%e3%83%88%e3%83%96%e3%82%ad%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_10-21　コトブキ更新__5a9ac1af",
+    "file": "data/raw/news/archives_news_10-21　コトブキ更新__5a9ac1af.html",
+    "bytes": 122736
+  },
+  "https://suroschool.jp/archives/news/10-22%e3%80%80%e3%80%90%e9%87%8d%e8%a6%81%e3%80%91%e3%80%80%e6%9d%b1%e3%83%aa%e3%83%99%e3%81%ae%e7%8b%99%e3%81%84%e7%9b%ae%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_10-22　【重要】　東リベの狙い目更新__c85a0a2d",
+    "file": "data/raw/news/archives_news_10-22　【重要】　東リベの狙い目更新__c85a0a2d.html",
+    "bytes": 123403
+  },
+  "https://suroschool.jp/archives/news/10-23%e3%80%80%e9%8a%ad%e5%bd%a2%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_10-23　銭形更新__bba5c77d",
+    "file": "data/raw/news/archives_news_10-23　銭形更新__bba5c77d.html",
+    "bytes": 122647
+  },
+  "https://suroschool.jp/archives/news/10-25%e3%80%80%e3%82%b3%e3%83%88%e3%83%96%e3%82%ad%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_10-25　コトブキ更新__410f389f",
+    "file": "data/raw/news/archives_news_10-25　コトブキ更新__410f389f.html",
+    "bytes": 122754
+  },
+  "https://suroschool.jp/archives/news/10-26%e3%80%80%e6%9d%b1%e3%83%aa%e3%83%99%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_10-26　東リベ更新__352a22b7",
+    "file": "data/raw/news/archives_news_10-26　東リベ更新__352a22b7.html",
+    "bytes": 122606
+  },
+  "https://suroschool.jp/archives/news/10-30%e3%80%80%e9%ac%bc%e6%ad%a6%e8%80%85%e3%80%81%e3%82%b3%e3%83%88%e3%83%96%e3%82%ad%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_10-30　鬼武者、コトブキ更新__d977a43a",
+    "file": "data/raw/news/archives_news_10-30　鬼武者、コトブキ更新__d977a43a.html",
+    "bytes": 123575
+  },
+  "https://suroschool.jp/archives/news/10-31%e3%80%80%e9%8a%ad%e5%bd%a2%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_10-31　銭形更新__b89eeea9",
+    "file": "data/raw/news/archives_news_10-31　銭形更新__b89eeea9.html",
+    "bytes": 122547
+  },
+  "https://suroschool.jp/archives/news/11-3-%e6%9d%b1%e3%83%aa%e3%83%99%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_11-3-東リベ更新__891aceec",
+    "file": "data/raw/news/archives_news_11-3-東リベ更新__891aceec.html",
+    "bytes": 122534
+  },
+  "https://suroschool.jp/archives/news/11-4%e3%80%80%e7%b7%91%e3%83%89%e3%83%b3%e3%80%81%e3%83%9e%e3%82%ae%e3%83%ac%e3%82%b3%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_11-4　緑ドン、マギレコ更新__91ebe161",
+    "file": "data/raw/news/archives_news_11-4　緑ドン、マギレコ更新__91ebe161.html",
+    "bytes": 123583
+  },
+  "https://suroschool.jp/archives/news/11-4%e3%80%80%e6%96%b0%e5%8f%b03%e6%a9%9f%e7%a8%ae%e3%81%ae%e3%83%9a%e3%83%bc%e3%82%b8%e4%bd%9c%e6%88%90": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_11-4　新台3機種のページ作成__20b612bb",
+    "file": "data/raw/news/archives_news_11-4　新台3機種のページ作成__20b612bb.html",
+    "bytes": 122743
+  },
+  "https://suroschool.jp/archives/news/11-5%e3%80%80%e6%96%b0%e5%8f%b02%e6%a9%9f%e7%a8%ae%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_11-5　新台2機種更新__a43c78c2",
+    "file": "data/raw/news/archives_news_11-5　新台2機種更新__a43c78c2.html",
+    "bytes": 123006
+  },
+  "https://suroschool.jp/archives/news/11-6%e3%80%80%e3%83%b4%e3%83%b4%e3%83%b42%e3%80%81%e3%83%ac%e3%83%bc%e3%83%ab%e3%82%ac%e3%83%b32%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_11-6　ヴヴヴ2、レールガン2更新__b577a51b",
+    "file": "data/raw/news/archives_news_11-6　ヴヴヴ2、レールガン2更新__b577a51b.html",
+    "bytes": 123317
+  },
+  "https://suroschool.jp/archives/news/11-7%e3%80%80%e7%b5%b6%e5%af%be%e8%a1%9d%e6%92%83%e3%80%81%e3%83%ac%e3%83%bc%e3%83%ab%e3%82%ac%e3%83%b32%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_11-7　絶対衝撃、レールガン2更新__3ca42b79",
+    "file": "data/raw/news/archives_news_11-7　絶対衝撃、レールガン2更新__3ca42b79.html",
+    "bytes": 123344
+  },
+  "https://suroschool.jp/archives/news/11-10%e3%80%80%e6%96%b0%e5%8f%b03%e6%a9%9f%e7%a8%ae%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_11-10　新台3機種更新__bf84718c",
+    "file": "data/raw/news/archives_news_11-10　新台3機種更新__bf84718c.html",
+    "bytes": 123258
+  },
+  "https://suroschool.jp/archives/news/11-11%e3%80%80%e7%b5%b6%e5%af%be%e8%a1%9d%e6%92%83%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_11-11　絶対衝撃更新__1323ae5a",
+    "file": "data/raw/news/archives_news_11-11　絶対衝撃更新__1323ae5a.html",
+    "bytes": 122701
+  },
+  "https://suroschool.jp/archives/news/11-13%e3%80%80%e3%83%b4%e3%83%b4%e3%83%b42%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_11-13　ヴヴヴ2更新__58820f4b",
+    "file": "data/raw/news/archives_news_11-13　ヴヴヴ2更新__58820f4b.html",
+    "bytes": 122679
+  },
+  "https://suroschool.jp/archives/news/11-17%e3%80%80%e3%83%8d%e3%82%aa%e3%83%97%e3%83%a9%e3%83%8d%e3%83%83%e3%83%88%e3%83%9a%e3%83%bc%e3%82%b8%e4%bd%9c%e6%88%90": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_11-17　ネオプラネットページ作成__b9e3e1e2",
+    "file": "data/raw/news/archives_news_11-17　ネオプラネットページ作成__b9e3e1e2.html",
+    "bytes": 123109
+  },
+  "https://suroschool.jp/archives/news/11-18%e3%80%80%e3%83%8d%e3%82%aa%e3%83%97%e3%83%a9%e3%80%81%e3%83%b4%e3%83%b4%e3%83%b42%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_11-18　ネオプラ、ヴヴヴ2更新__90aa7bd8",
+    "file": "data/raw/news/archives_news_11-18　ネオプラ、ヴヴヴ2更新__90aa7bd8.html",
+    "bytes": 123276
+  },
+  "https://suroschool.jp/archives/news/11-19%e3%80%80%e7%b5%b6%e5%af%be%e8%a1%9d%e6%92%83%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_11-19　絶対衝撃更新__d2429f9b",
+    "file": "data/raw/news/archives_news_11-19　絶対衝撃更新__d2429f9b.html",
+    "bytes": 122657
+  },
+  "https://suroschool.jp/archives/news/11-20%e3%80%80%e3%83%8d%e3%82%aa%e3%83%97%e3%83%a9%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_11-20　ネオプラ更新__4cac51e6",
+    "file": "data/raw/news/archives_news_11-20　ネオプラ更新__4cac51e6.html",
+    "bytes": 122693
+  },
+  "https://suroschool.jp/archives/news/11-22%e3%80%80%e3%83%b4%e3%83%b4%e3%83%b42%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_11-22　ヴヴヴ2更新__bd98879f",
+    "file": "data/raw/news/archives_news_11-22　ヴヴヴ2更新__bd98879f.html",
+    "bytes": 122729
+  },
+  "https://suroschool.jp/archives/news/11-23%e3%80%80%e3%83%b4%e3%83%b4%e3%83%b42%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_11-23　ヴヴヴ2更新__4044ecfa",
+    "file": "data/raw/news/archives_news_11-23　ヴヴヴ2更新__4044ecfa.html",
+    "bytes": 122663
+  },
+  "https://suroschool.jp/archives/news/11-25%e3%80%80%e3%83%b4%e3%83%b4%e3%83%b42%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_11-25　ヴヴヴ2更新__b51be600",
+    "file": "data/raw/news/archives_news_11-25　ヴヴヴ2更新__b51be600.html",
+    "bytes": 122646
+  },
+  "https://suroschool.jp/archives/news/11-26%e3%80%80%e3%83%b4%e3%83%b4%e3%83%b42%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_11-26　ヴヴヴ2更新__2fff2e67",
+    "file": "data/raw/news/archives_news_11-26　ヴヴヴ2更新__2fff2e67.html",
+    "bytes": 122628
+  },
+  "https://suroschool.jp/archives/news/11-28%e3%80%80%e3%83%b4%e3%83%b4%e3%83%b42%e3%80%81%e7%b5%b6%e5%af%be%e8%a1%9d%e6%92%83%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_11-28　ヴヴヴ2、絶対衝撃更新__adba6472",
+    "file": "data/raw/news/archives_news_11-28　ヴヴヴ2、絶対衝撃更新__adba6472.html",
+    "bytes": 123232
+  },
+  "https://suroschool.jp/archives/news/11-30%e3%80%80%e3%83%8d%e3%82%aa%e3%83%97%e3%83%a9%e3%80%81%e7%b5%b6%e5%af%be%e8%a1%9d%e6%92%83%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_11-30　ネオプラ、絶対衝撃更新__b0ded08f",
+    "file": "data/raw/news/archives_news_11-30　ネオプラ、絶対衝撃更新__b0ded08f.html",
+    "bytes": 123244
+  },
+  "https://suroschool.jp/archives/news/12-2%e3%80%80%e3%83%90%e3%83%bc%e3%83%8b%e3%83%b3%e3%82%b0%e3%82%a8%e3%82%af%e3%82%b9%e3%83%97%e3%83%ac%e3%82%b9%e3%80%81%e3%83%ac%e3%83%bc%e3%83%ab%e3%82%ac%e3%83%b32%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_12-2　バーニングエクスプレス、レールガン2更新__b7f459de",
+    "file": "data/raw/news/archives_news_12-2　バーニングエクスプレス、レールガン2更新__b7f459de.html",
+    "bytes": 123883
+  },
+  "https://suroschool.jp/archives/news/12-5%e3%80%80%e3%83%90%e3%83%bc%e3%83%8b%e3%83%b3%e3%82%b0%e3%82%a8%e3%82%af%e3%82%b9%e3%83%97%e3%83%ac%e3%82%b9%e3%80%81%e3%83%8d%e3%82%aa%e3%83%97%e3%83%a9%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_12-5　バーニングエクスプレス、ネオプラ更新__5f428480",
+    "file": "data/raw/news/archives_news_12-5　バーニングエクスプレス、ネオプラ更新__5f428480.html",
+    "bytes": 123755
+  },
+  "https://suroschool.jp/archives/news/12-6%e3%80%80%e3%83%b4%e3%83%b4%e3%83%b42%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_12-6　ヴヴヴ2更新__ebcbad4d",
+    "file": "data/raw/news/archives_news_12-6　ヴヴヴ2更新__ebcbad4d.html",
+    "bytes": 122675
+  },
+  "https://suroschool.jp/archives/news/12-8%e3%80%80%e6%96%b0%e5%8f%b03%e6%a9%9f%e7%a8%ae%e3%83%9a%e3%83%bc%e3%82%b8%e4%bd%9c%e6%88%90%e3%80%81%e3%83%8d%e3%82%aa%e3%83%97%e3%83%a9%e3%80%81%e3%83%90%e3%83%bc%e3%83%8b%e3%83%b3%e3%82%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_12-8　新台3機種ページ作成、ネオプラ、バーニング__4e92631d",
+    "file": "data/raw/news/archives_news_12-8　新台3機種ページ作成、ネオプラ、バーニング__4e92631d.html",
+    "bytes": 123936
+  },
+  "https://suroschool.jp/archives/news/12-9%e3%80%80%e5%8c%96%e7%89%a9%e8%aa%9e%e3%80%81%e9%8a%80%e6%b2%b3%e8%8b%b1%e9%9b%84%e4%bc%9d%e8%aa%ac%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_12-9　化物語、銀河英雄伝説更新__8fdf2a30",
+    "file": "data/raw/news/archives_news_12-9　化物語、銀河英雄伝説更新__8fdf2a30.html",
+    "bytes": 123260
+  },
+  "https://suroschool.jp/archives/news/12-10%e3%80%80%e9%8a%80%e6%b2%b3%e8%8b%b1%e9%9b%84%e4%bc%9d%e8%aa%ac%e3%80%81%e3%83%97%e3%83%aa%e3%82%ba%e3%83%a0%e3%83%8a%e3%83%8a%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_12-10　銀河英雄伝説、プリズムナナ更新__d4494080",
+    "file": "data/raw/news/archives_news_12-10　銀河英雄伝説、プリズムナナ更新__d4494080.html",
+    "bytes": 123491
+  },
+  "https://suroschool.jp/archives/news/12-11%e3%80%80%e5%8c%96%e7%89%a9%e8%aa%9e%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_12-11　化物語更新__33432f6b",
+    "file": "data/raw/news/archives_news_12-11　化物語更新__33432f6b.html",
+    "bytes": 122559
+  },
+  "https://suroschool.jp/archives/news/12-11-%e3%80%90%e7%89%b9%e6%ae%8aa%e7%8b%99%e3%81%84%e3%80%91%e9%9d%a9%e5%91%bd%e6%a9%9f%e3%83%b4%e3%82%a1%e3%83%ab%e3%83%b4%e3%83%ac%e3%82%a4%e3%83%b42": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_12-11-【特殊a狙い】革命機ヴァルヴレイヴ2__11d7b1b7",
+    "file": "data/raw/news/archives_news_12-11-【特殊a狙い】革命機ヴァルヴレイヴ2__11d7b1b7.html",
+    "bytes": 125235
+  },
+  "https://suroschool.jp/archives/news/%e9%8a%80%e6%b2%b3%e8%8b%b1%e9%9b%84%e4%bc%9d%e8%aa%ac%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_銀河英雄伝説更新__6ac4bafb",
+    "file": "data/raw/news/archives_news_銀河英雄伝説更新__6ac4bafb.html",
+    "bytes": 122736
+  },
+  "https://suroschool.jp/archives/news/%e6%96%b0%e5%8f%b03%e6%a9%9f%e7%a8%ae%e3%81%ae%e3%83%9a%e3%83%bc%e3%82%b8%e3%82%92%e4%bd%9c%e6%88%90": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_新台3機種のページを作成__5fca7794",
+    "file": "data/raw/news/archives_news_新台3機種のページを作成__5fca7794.html",
+    "bytes": 122768
+  },
+  "https://suroschool.jp/archives/news/%e6%b2%96%e3%83%89%e3%82%adduo%e3%80%81%e7%a7%98%e5%ae%9d%e4%bc%9d%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_沖ドキduo、秘宝伝更新__64994b66",
+    "file": "data/raw/news/archives_news_沖ドキduo、秘宝伝更新__64994b66.html",
+    "bytes": 122971
+  },
+  "https://suroschool.jp/archives/news/%e6%b2%96%e3%83%89%e3%82%adduo%e3%80%81%e7%84%a1%e8%81%b7%e8%bb%a2%e7%94%9f%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_沖ドキduo、無職転生更新__dbdfca93",
+    "file": "data/raw/news/archives_news_沖ドキduo、無職転生更新__dbdfca93.html",
+    "bytes": 123215
+  },
+  "https://suroschool.jp/archives/news/%e6%b2%96%e3%83%89%e3%82%adduo%e3%80%81%e7%a7%98%e5%ae%9d%e4%bc%9d%e6%9b%b4%e6%96%b0-2": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_沖ドキduo、秘宝伝更新-2__eae56de7",
+    "file": "data/raw/news/archives_news_沖ドキduo、秘宝伝更新-2__eae56de7.html",
+    "bytes": 123056
+  },
+  "https://suroschool.jp/archives/news/%e6%b2%96%e3%83%89%e3%82%adduo%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_沖ドキduo更新__9ef14882",
+    "file": "data/raw/news/archives_news_沖ドキduo更新__9ef14882.html",
+    "bytes": 122567
+  },
+  "https://suroschool.jp/archives/news/%e3%83%b4%e3%83%b4%e3%83%b42-%e5%89%8d%e5%9b%9e%e5%89%8d%e3%80%85%e5%9b%9e%e5%b1%a5%e6%ad%b4%e3%81%ae0%e3%82%b9%e3%83%ab%e3%83%bc%e7%89%b9%e6%ae%8aa%e7%8b%99%e3%81%84%e6%9d%a1%e4%bb%b6%e3%82%92": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_ヴヴヴ2-前回前々回履歴の0スルー特殊a狙い条件を__7410ac3e",
+    "file": "data/raw/news/archives_news_ヴヴヴ2-前回前々回履歴の0スルー特殊a狙い条件を__7410ac3e.html",
+    "bytes": 124102
+  },
+  "https://suroschool.jp/archives/news/%e6%b2%96%e3%83%89%e3%82%adduo%e3%80%81%e7%84%a1%e8%81%b7%e8%bb%a2%e7%94%9f%e6%9b%b4%e6%96%b0-2": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_沖ドキduo、無職転生更新-2__a5a641ae",
+    "file": "data/raw/news/archives_news_沖ドキduo、無職転生更新-2__a5a641ae.html",
+    "bytes": 123256
+  },
+  "https://suroschool.jp/archives/news/%e6%b2%96%e3%83%89%e3%82%adduo%e6%9b%b4%e6%96%b0-2": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_沖ドキduo更新-2__75dbfc51",
+    "file": "data/raw/news/archives_news_沖ドキduo更新-2__75dbfc51.html",
+    "bytes": 122645
+  },
+  "https://suroschool.jp/archives/news/%e6%b2%96%e3%83%89%e3%82%adduo%e6%9b%b4%e6%96%b0-3": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_沖ドキduo更新-3__29845a2b",
+    "file": "data/raw/news/archives_news_沖ドキduo更新-3__29845a2b.html",
+    "bytes": 122624
+  },
+  "https://suroschool.jp/archives/news/%e6%b2%96%e3%83%89%e3%82%adduo%e3%80%81%e3%83%97%e3%83%aa%e3%82%ba%e3%83%a0%e3%83%8a%e3%83%8a%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_沖ドキduo、プリズムナナ更新__38c4983e",
+    "file": "data/raw/news/archives_news_沖ドキduo、プリズムナナ更新__38c4983e.html",
+    "bytes": 123284
+  },
+  "https://suroschool.jp/archives/news/%e5%8c%97%e6%96%97%e3%81%ae%e6%8b%b3%e8%bb%a2%e7%94%9f%e3%81%ae%e7%ab%a02%e3%80%81%e9%89%84%e6%8b%b36%e3%83%9a%e3%83%bc%e3%82%b8%e4%bd%9c%e6%88%90": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_北斗の拳転生の章2、鉄拳6ページ作成__d5048576",
+    "file": "data/raw/news/archives_news_北斗の拳転生の章2、鉄拳6ページ作成__d5048576.html",
+    "bytes": 123113
+  },
+  "https://suroschool.jp/archives/news/%e5%8c%97%e6%96%97%e8%bb%a2%e7%94%9f%e3%80%81%e9%89%84%e6%8b%b3%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_北斗転生、鉄拳更新__45903ed3",
+    "file": "data/raw/news/archives_news_北斗転生、鉄拳更新__45903ed3.html",
+    "bytes": 123020
+  },
+  "https://suroschool.jp/archives/news/%e5%8c%97%e6%96%97%e8%bb%a2%e7%94%9f%e3%80%81%e9%8a%ad%e5%bd%a2%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_北斗転生、銭形更新__ab5af6fb",
+    "file": "data/raw/news/archives_news_北斗転生、銭形更新__ab5af6fb.html",
+    "bytes": 123027
+  },
+  "https://suroschool.jp/archives/news/%e9%89%84%e6%8b%b3%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_鉄拳更新__eb6ac7f3",
+    "file": "data/raw/news/archives_news_鉄拳更新__eb6ac7f3.html",
+    "bytes": 122537
+  },
+  "https://suroschool.jp/archives/news/duo%e3%80%81%e9%89%84%e6%8b%b3%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_duo、鉄拳更新__812fc014",
+    "file": "data/raw/news/archives_news_duo、鉄拳更新__812fc014.html",
+    "bytes": 122817
+  },
+  "https://suroschool.jp/archives/news/duo%e3%80%81%e9%89%84%e6%8b%b3%e6%9b%b4%e6%96%b0-2": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_duo、鉄拳更新-2__7df798d4",
+    "file": "data/raw/news/archives_news_duo、鉄拳更新-2__7df798d4.html",
+    "bytes": 122756
+  },
+  "https://suroschool.jp/archives/news/duo%e3%80%81%e6%b2%96%e3%83%89%e3%82%ad%e3%83%96%e3%83%a9%e3%83%83%e3%82%af%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_duo、沖ドキブラック更新__c0ec10aa",
+    "file": "data/raw/news/archives_news_duo、沖ドキブラック更新__c0ec10aa.html",
+    "bytes": 123266
+  },
+  "https://suroschool.jp/archives/news/duo%e3%80%81%e8%bb%a2%e7%94%9f%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_duo、転生更新__bce8aede",
+    "file": "data/raw/news/archives_news_duo、転生更新__bce8aede.html",
+    "bytes": 122818
+  },
+  "https://suroschool.jp/archives/news/%e8%bb%a2%e7%94%9f%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_転生更新__6d1cdb6d",
+    "file": "data/raw/news/archives_news_転生更新__6d1cdb6d.html",
+    "bytes": 122427
+  },
+  "https://suroschool.jp/archives/news/%e8%bb%a2%e7%94%9f%e3%80%81%e9%89%84%e6%8b%b3%e3%80%81%e5%8c%96%e7%89%a9%e8%aa%9e%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_転生、鉄拳、化物語更新__8f03ef9d",
+    "file": "data/raw/news/archives_news_転生、鉄拳、化物語更新__8f03ef9d.html",
+    "bytes": 123414
+  },
+  "https://suroschool.jp/archives/news/%e8%bb%a2%e7%94%9f%e3%80%81duo%e3%80%81%e9%89%84%e6%8b%b3%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_転生、duo、鉄拳更新__c79586ed",
+    "file": "data/raw/news/archives_news_転生、duo、鉄拳更新__c79586ed.html",
+    "bytes": 123208
+  },
+  "https://suroschool.jp/archives/news/%e8%bb%a2%e7%94%9f%e6%9b%b4%e6%96%b0-2": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_転生更新-2__15f25bb7",
+    "file": "data/raw/news/archives_news_転生更新-2__15f25bb7.html",
+    "bytes": 122440
+  },
+  "https://suroschool.jp/archives/news/%e8%bb%a2%e7%94%9f%e6%9b%b4%e6%96%b0-3": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_転生更新-3__8a2937e0",
+    "file": "data/raw/news/archives_news_転生更新-3__8a2937e0.html",
+    "bytes": 122449
+  },
+  "https://suroschool.jp/archives/news/%e6%96%b0%e5%8f%b04%e6%a9%9f%e7%a8%ae%e3%83%9a%e3%83%bc%e3%82%b8%e4%bd%9c%e6%88%90": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_新台4機種ページ作成__c91d7703",
+    "file": "data/raw/news/archives_news_新台4機種ページ作成__c91d7703.html",
+    "bytes": 122594
+  },
+  "https://suroschool.jp/archives/news/%e7%82%8e%e7%82%8e2%e3%80%81%e6%94%bb%e6%ae%bb%e6%a9%9f%e5%8b%95%e9%9a%8a%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_炎炎2、攻殻機動隊更新__67303cca",
+    "file": "data/raw/news/archives_news_炎炎2、攻殻機動隊更新__67303cca.html",
+    "bytes": 123081
+  },
+  "https://suroschool.jp/archives/news/%e3%82%b4%e3%83%96%e3%82%b9%e3%83%ac%e3%80%81%e5%88%83%e7%89%99%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_ゴブスレ、刃牙更新__11eb5454",
+    "file": "data/raw/news/archives_news_ゴブスレ、刃牙更新__11eb5454.html",
+    "bytes": 123287
+  },
+  "https://suroschool.jp/archives/news/%e7%82%8e%e7%82%8e2%e3%80%81%e3%82%b4%e3%83%96%e3%82%b9%e3%83%ac%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_炎炎2、ゴブスレ更新__f140758e",
+    "file": "data/raw/news/archives_news_炎炎2、ゴブスレ更新__f140758e.html",
+    "bytes": 123026
+  },
+  "https://suroschool.jp/archives/news/%e7%82%8e%e7%82%8e%e3%80%81%e6%94%bb%e6%ae%bb%e6%a9%9f%e5%8b%95%e9%9a%8a%e3%80%81%e5%88%83%e7%89%99%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_炎炎、攻殻機動隊、刃牙更新__5caba217",
+    "file": "data/raw/news/archives_news_炎炎、攻殻機動隊、刃牙更新__5caba217.html",
+    "bytes": 123480
+  },
+  "https://suroschool.jp/archives/news/%e6%94%bb%e6%ae%bb%e6%a9%9f%e5%8b%95%e9%9a%8a%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_攻殻機動隊更新__db3fa740",
+    "file": "data/raw/news/archives_news_攻殻機動隊更新__db3fa740.html",
+    "bytes": 122628
+  },
+  "https://suroschool.jp/archives/news/%e7%82%8e%e7%82%8e2%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_炎炎2更新__1c94e557",
+    "file": "data/raw/news/archives_news_炎炎2更新__1c94e557.html",
+    "bytes": 122471
+  },
+  "https://suroschool.jp/archives/news/%e6%94%bb%e6%ae%bb%e6%a9%9f%e5%8b%95%e9%9a%8a%e6%9b%b4%e6%96%b0-2": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_攻殻機動隊更新-2__f0471d81",
+    "file": "data/raw/news/archives_news_攻殻機動隊更新-2__f0471d81.html",
+    "bytes": 122651
+  },
+  "https://suroschool.jp/archives/news/%e7%82%8e%e7%82%8e2%e3%80%81%e6%94%bb%e6%ae%bb%e6%a9%9f%e5%8b%95%e9%9a%8a%e3%80%81%e5%88%83%e7%89%99%e3%80%81%e5%8c%97%e6%96%97%e8%bb%a2%e7%94%9f%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_炎炎2、攻殻機動隊、刃牙、北斗転生更新__efbc7968",
+    "file": "data/raw/news/archives_news_炎炎2、攻殻機動隊、刃牙、北斗転生更新__efbc7968.html",
+    "bytes": 124121
+  },
+  "https://suroschool.jp/archives/news/%e3%82%b4%e3%83%96%e3%82%b9%e3%83%ac%e3%80%81%e5%88%83%e7%89%99%e6%9b%b4%e6%96%b0-2": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_ゴブスレ、刃牙更新-2__9e6b400b",
+    "file": "data/raw/news/archives_news_ゴブスレ、刃牙更新-2__9e6b400b.html",
+    "bytes": 123042
+  },
+  "https://suroschool.jp/archives/news/%e6%b2%96%e3%83%89%e3%82%adduo%e3%80%802%e9%80%a3%e8%b7%a8%e3%81%8e%e7%8b%99%e3%81%84%e4%bd%9c%e6%88%90": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_沖ドキduo　2連跨ぎ狙い作成__a96d4c1c",
+    "file": "data/raw/news/archives_news_沖ドキduo　2連跨ぎ狙い作成__a96d4c1c.html",
+    "bytes": 122964
+  },
+  "https://suroschool.jp/archives/news/%e8%bb%a2%e7%94%9f%e6%9b%b4%e6%96%b0-4": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_転生更新-4__9f42bf5d",
+    "file": "data/raw/news/archives_news_転生更新-4__9f42bf5d.html",
+    "bytes": 122526
+  },
+  "https://suroschool.jp/archives/news/%e8%bb%a2%e7%94%9f%e6%9b%b4%e6%96%b0-5": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_転生更新-5__55883485",
+    "file": "data/raw/news/archives_news_転生更新-5__55883485.html",
+    "bytes": 122437
+  },
+  "https://suroschool.jp/archives/news/%e8%bb%a2%e7%94%9f%e6%9b%b4%e6%96%b0-6": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_転生更新-6__e9289f85",
+    "file": "data/raw/news/archives_news_転生更新-6__e9289f85.html",
+    "bytes": 122560
+  },
+  "https://suroschool.jp/archives/news/%e6%96%b0%e5%8f%b0%e3%83%9a%e3%83%bc%e3%82%b8%e8%bf%bd%e5%8a%a0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_新台ページ追加__fec667ce",
+    "file": "data/raw/news/archives_news_新台ページ追加__fec667ce.html",
+    "bytes": 122731
+  },
+  "https://suroschool.jp/archives/news/%e3%82%ab%e3%83%90%e3%83%8d%e3%83%aa%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_カバネリ更新__b1f7d1be",
+    "file": "data/raw/news/archives_news_カバネリ更新__b1f7d1be.html",
+    "bytes": 122630
+  },
+  "https://suroschool.jp/archives/news/%e3%82%ab%e3%83%90%e3%83%8d%e3%83%aa%e6%9b%b4%e6%96%b0-2": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_カバネリ更新-2__20a83aac",
+    "file": "data/raw/news/archives_news_カバネリ更新-2__20a83aac.html",
+    "bytes": 122631
+  },
+  "https://suroschool.jp/archives/news/%e8%bb%a2%e7%94%9f%e6%9b%b4%e6%96%b0-7": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_転生更新-7__cdc158c5",
+    "file": "data/raw/news/archives_news_転生更新-7__cdc158c5.html",
+    "bytes": 122506
+  },
+  "https://suroschool.jp/archives/news/%e3%82%ab%e3%83%90%e3%83%8d%e3%83%aa%e3%80%81%e8%bb%a2%e7%94%9f%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_カバネリ、転生更新__86b62b45",
+    "file": "data/raw/news/archives_news_カバネリ、転生更新__86b62b45.html",
+    "bytes": 123130
+  },
+  "https://suroschool.jp/archives/news/%e3%82%ab%e3%83%90%e3%83%8d%e3%83%aa%e3%80%81%e5%88%83%e7%89%99%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_カバネリ、刃牙更新__a8f8d323",
+    "file": "data/raw/news/archives_news_カバネリ、刃牙更新__a8f8d323.html",
+    "bytes": 123072
+  },
+  "https://suroschool.jp/archives/news/%e7%82%8e%e7%82%8e2%e6%9b%b4%e6%96%b0-2": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_炎炎2更新-2__da2ab8f0",
+    "file": "data/raw/news/archives_news_炎炎2更新-2__da2ab8f0.html",
+    "bytes": 122429
+  },
+  "https://suroschool.jp/archives/news/%e3%82%ab%e3%83%90%e3%83%8d%e3%83%aa%e6%9b%b4%e6%96%b0-3": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_カバネリ更新-3__490086bd",
+    "file": "data/raw/news/archives_news_カバネリ更新-3__490086bd.html",
+    "bytes": 122964
+  },
+  "https://suroschool.jp/archives/news/%e3%82%ab%e3%83%90%e3%83%8d%e3%83%aa%e6%9b%b4%e6%96%b0-4": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_カバネリ更新-4__9ef24a60",
+    "file": "data/raw/news/archives_news_カバネリ更新-4__9ef24a60.html",
+    "bytes": 122690
+  },
+  "https://suroschool.jp/archives/news/%e6%94%bb%e6%ae%bb%e6%a9%9f%e5%8b%95%e9%9a%8a%e6%9b%b4%e6%96%b0-3": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_攻殻機動隊更新-3__c4005f5c",
+    "file": "data/raw/news/archives_news_攻殻機動隊更新-3__c4005f5c.html",
+    "bytes": 122711
+  },
+  "https://suroschool.jp/archives/news/%e3%82%ab%e3%83%90%e3%83%8d%e3%83%aa%e6%9b%b4%e6%96%b0-5": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_カバネリ更新-5__bad3d71e",
+    "file": "data/raw/news/archives_news_カバネリ更新-5__bad3d71e.html",
+    "bytes": 122675
+  },
+  "https://suroschool.jp/archives/news/%e5%88%83%e7%89%99%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_刃牙更新__3bbc8958",
+    "file": "data/raw/news/archives_news_刃牙更新__3bbc8958.html",
+    "bytes": 122391
+  },
+  "https://suroschool.jp/archives/news/%e8%bb%a2%e7%94%9f%e6%9b%b4%e6%96%b0-8": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_転生更新-8__9076badd",
+    "file": "data/raw/news/archives_news_転生更新-8__9076badd.html",
+    "bytes": 122461
+  },
+  "https://suroschool.jp/archives/news/%e3%82%ab%e3%83%90%e3%83%8d%e3%83%aa%e3%80%81%e9%89%84%e6%8b%b3%e3%80%81%e3%83%97%e3%83%aa%e3%82%ba%e3%83%a0%e3%83%8a%e3%83%8a%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_カバネリ、鉄拳、プリズムナナ更新__f5b91a81",
+    "file": "data/raw/news/archives_news_カバネリ、鉄拳、プリズムナナ更新__f5b91a81.html",
+    "bytes": 123762
+  },
+  "https://suroschool.jp/archives/news/%e6%96%b0%e5%8f%b04%e6%a9%9f%e7%a8%ae%e3%83%9a%e3%83%bc%e3%82%b8%e4%bd%9c%e6%88%90-2": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_新台4機種ページ作成-2__f429a48f",
+    "file": "data/raw/news/archives_news_新台4機種ページ作成-2__f429a48f.html",
+    "bytes": 122604
+  },
+  "https://suroschool.jp/archives/news/%e7%9c%9f%e6%89%93%e5%90%89%e5%ae%97%e3%80%81%e3%83%a8%e3%83%ab%e3%83%a0%e3%83%b3%e3%82%ac%e3%83%b3%e3%83%89%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_真打吉宗、ヨルムンガンド更新__9204cf76",
+    "file": "data/raw/news/archives_news_真打吉宗、ヨルムンガンド更新__9204cf76.html",
+    "bytes": 122945
+  },
+  "https://suroschool.jp/archives/news/%e7%9c%9f%e6%89%93%e5%90%89%e5%ae%97%e3%80%81%e3%82%a2%e3%82%af%e3%83%80%e3%83%9e%e3%83%89%e3%83%a9%e3%82%a4%e3%83%96%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_真打吉宗、アクダマドライブ更新__922006d6",
+    "file": "data/raw/news/archives_news_真打吉宗、アクダマドライブ更新__922006d6.html",
+    "bytes": 123403
+  },
+  "https://suroschool.jp/archives/news/%e8%99%9a%e6%a7%8b%e6%8e%a8%e7%90%86%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_虚構推理更新__026a0a35",
+    "file": "data/raw/news/archives_news_虚構推理更新__026a0a35.html",
+    "bytes": 122518
+  },
+  "https://suroschool.jp/archives/news/%e6%96%b0%e5%8f%b04%e6%a9%9f%e7%a8%ae%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_新台4機種更新__71c888c0",
+    "file": "data/raw/news/archives_news_新台4機種更新__71c888c0.html",
+    "bytes": 122406
+  },
+  "https://suroschool.jp/archives/news/%e7%9c%9f%e6%89%93%e5%90%89%e5%ae%97%e6%9b%b4%e6%96%b0%e3%80%81%e8%bb%a2%e7%94%9f%e3%82%b7%e3%83%a3%e3%83%83%e3%82%bf%e3%83%bc%e7%8b%99%e3%81%84%e5%ae%9f%e8%b7%b5%e7%b5%90%e6%9e%9c%e8%bf%bd%e5%8a%a0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_真打吉宗更新、転生シャッター狙い実践結果追加__0da8864b",
+    "file": "data/raw/news/archives_news_真打吉宗更新、転生シャッター狙い実践結果追加__0da8864b.html",
+    "bytes": 124048
+  },
+  "https://suroschool.jp/archives/news/%e7%9c%9f%e6%89%93%e5%90%89%e5%ae%97%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_真打吉宗更新__cd0153e9",
+    "file": "data/raw/news/archives_news_真打吉宗更新__cd0153e9.html",
+    "bytes": 122583
+  },
+  "https://suroschool.jp/archives/news/%e7%9c%9f%e6%89%93%e5%90%89%e5%ae%97%e6%9b%b4%e6%96%b0-2": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_真打吉宗更新-2__b4c38ae0",
+    "file": "data/raw/news/archives_news_真打吉宗更新-2__b4c38ae0.html",
+    "bytes": 122607
+  },
+  "https://suroschool.jp/archives/news/%e3%83%a8%e3%83%ab%e3%83%a0%e3%83%b3%e3%82%ac%e3%83%b3%e3%83%89%e3%80%81%e8%99%9a%e6%a7%8b%e6%8e%a8%e7%90%86%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_ヨルムンガンド、虚構推理更新__85e3183d",
+    "file": "data/raw/news/archives_news_ヨルムンガンド、虚構推理更新__85e3183d.html",
+    "bytes": 123293
+  },
+  "https://suroschool.jp/archives/news/%e7%9c%9f%e6%89%93%e5%90%89%e5%ae%97%e3%80%81%e3%82%a2%e3%82%af%e3%83%80%e3%83%9e%e3%83%89%e3%83%a9%e3%82%a4%e3%83%96%e6%9b%b4%e6%96%b0-2": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_真打吉宗、アクダマドライブ更新-2__686b5034",
+    "file": "data/raw/news/archives_news_真打吉宗、アクダマドライブ更新-2__686b5034.html",
+    "bytes": 123427
+  },
+  "https://suroschool.jp/archives/news/%e6%96%b0%e5%8f%b03%e6%a9%9f%e7%a8%ae%e3%83%9a%e3%83%bc%e3%82%b8%e4%bd%9c%e6%88%90": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_新台3機種ページ作成__24c9d4db",
+    "file": "data/raw/news/archives_news_新台3機種ページ作成__24c9d4db.html",
+    "bytes": 122589
+  },
+  "https://suroschool.jp/archives/news/%e8%bb%a2%e7%94%9f%e3%82%b7%e3%83%a3%e3%83%83%e3%82%bf%e3%83%bc%e7%8b%99%e3%81%84%e5%ae%9f%e8%b7%b5%e3%83%87%e3%83%bc%e3%82%bf%e8%bf%bd%e5%8a%a0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_転生シャッター狙い実践データ追加__1a7826fd",
+    "file": "data/raw/news/archives_news_転生シャッター狙い実践データ追加__1a7826fd.html",
+    "bytes": 123306
+  },
+  "https://suroschool.jp/archives/news/%e3%83%9f%e3%83%aa%e3%82%aa%e3%83%b3%e3%82%b4%e3%83%83%e3%83%89%e3%80%81%e3%83%a6%e3%83%8b%e3%82%b3%e3%83%bc%e3%83%b3": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_ミリオンゴッド、ユニコーン__78fa8425",
+    "file": "data/raw/news/archives_news_ミリオンゴッド、ユニコーン__78fa8425.html",
+    "bytes": 122921
+  },
+  "https://suroschool.jp/archives/news/%e3%82%a2%e3%83%8b%e3%83%9e%e3%83%ab%e3%82%b9%e3%83%ad%e3%83%83%e3%83%88%e3%83%89%e3%83%83%e3%83%81%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_アニマルスロットドッチ更新__617c7c84",
+    "file": "data/raw/news/archives_news_アニマルスロットドッチ更新__617c7c84.html",
+    "bytes": 123444
+  },
+  "https://suroschool.jp/archives/news/%e3%83%9f%e3%83%aa%e3%82%aa%e3%83%b3%e3%82%b4%e3%83%83%e3%83%89%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_ミリオンゴッド更新__9c6baa3d",
+    "file": "data/raw/news/archives_news_ミリオンゴッド更新__9c6baa3d.html",
+    "bytes": 122910
+  },
+  "https://suroschool.jp/archives/news/%e3%83%9f%e3%83%aa%e3%82%aa%e3%83%b3%e3%82%b4%e3%83%83%e3%83%89%e6%9b%b4%e6%96%b0-2": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_ミリオンゴッド更新-2__8b5cbfb3",
+    "file": "data/raw/news/archives_news_ミリオンゴッド更新-2__8b5cbfb3.html",
+    "bytes": 122847
+  },
+  "https://suroschool.jp/archives/news/%e3%83%a6%e3%83%8b%e3%82%b3%e3%83%bc%e3%83%b3%e3%80%81%e3%82%a2%e3%83%8b%e3%83%9e%e3%83%ab%e3%82%b9%e3%83%ad%e3%83%83%e3%83%88%e3%83%89%e3%83%83%e3%83%81%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_ユニコーン、アニマルスロットドッチ更新__b7de05e9",
+    "file": "data/raw/news/archives_news_ユニコーン、アニマルスロットドッチ更新__b7de05e9.html",
+    "bytes": 123839
+  },
+  "https://suroschool.jp/archives/news/%e3%83%9f%e3%83%aa%e3%82%aa%e3%83%b3%e3%82%b4%e3%83%83%e3%83%89%e3%80%81%e3%82%a2%e3%83%8b%e3%83%9e%e3%83%ab%e3%82%b9%e3%83%ad%e3%83%83%e3%83%88%e3%83%89%e3%83%83%e3%83%81%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_ミリオンゴッド、アニマルスロットドッチ更新__268ba1f7",
+    "file": "data/raw/news/archives_news_ミリオンゴッド、アニマルスロットドッチ更新__268ba1f7.html",
+    "bytes": 123941
+  },
+  "https://suroschool.jp/archives/news/%e3%83%a6%e3%83%8b%e3%82%b3%e3%83%bc%e3%83%b3%e3%80%81%e6%94%bb%e6%ae%bb%e6%a9%9f%e5%8b%95%e9%9a%8a%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_ユニコーン、攻殻機動隊更新__7cb4b9c8",
+    "file": "data/raw/news/archives_news_ユニコーン、攻殻機動隊更新__7cb4b9c8.html",
+    "bytes": 123419
+  },
+  "https://suroschool.jp/archives/news/%e3%83%a6%e3%83%8b%e3%82%b3%e3%83%bc%e3%83%b3%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_ユニコーン更新__22237c58",
+    "file": "data/raw/news/archives_news_ユニコーン更新__22237c58.html",
+    "bytes": 122702
+  },
+  "https://suroschool.jp/archives/news/%e3%83%9f%e3%83%aa%e3%82%aa%e3%83%b3%e3%82%b4%e3%83%83%e3%83%89%e6%9b%b4%e6%96%b0-3": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_ミリオンゴッド更新-3__6fb40f31",
+    "file": "data/raw/news/archives_news_ミリオンゴッド更新-3__6fb40f31.html",
+    "bytes": 123166
+  },
+  "https://suroschool.jp/archives/news/%e3%83%9f%e3%83%aa%e3%82%aa%e3%83%b3%e3%82%b4%e3%83%83%e3%83%89%e6%9b%b4%e6%96%b0-4": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_ミリオンゴッド更新-4__647d0fd5",
+    "file": "data/raw/news/archives_news_ミリオンゴッド更新-4__647d0fd5.html",
+    "bytes": 122824
+  },
+  "https://suroschool.jp/archives/news/%e8%99%9a%e6%a7%8b%e6%8e%a8%e7%90%86%e6%9b%b4%e6%96%b0-2": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_虚構推理更新-2__584c8c6e",
+    "file": "data/raw/news/archives_news_虚構推理更新-2__584c8c6e.html",
+    "bytes": 122618
+  },
+  "https://suroschool.jp/archives/news/%e5%90%89%e5%ae%97%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_吉宗更新__3b70e0f3",
+    "file": "data/raw/news/archives_news_吉宗更新__3b70e0f3.html",
+    "bytes": 122365
+  },
+  "https://suroschool.jp/archives/news/%e6%b2%96%e3%83%89%e3%82%adduo%e3%80%81%e3%82%ab%e3%83%90%e3%83%8d%e3%83%aa%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_沖ドキduo、カバネリ更新__b5eece01",
+    "file": "data/raw/news/archives_news_沖ドキduo、カバネリ更新__b5eece01.html",
+    "bytes": 123180
+  },
+  "https://suroschool.jp/archives/news/%e3%83%a6%e3%83%8b%e3%82%b3%e3%83%bc%e3%83%b3%e6%9b%b4%e6%96%b0-2": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_ユニコーン更新-2__744895b8",
+    "file": "data/raw/news/archives_news_ユニコーン更新-2__744895b8.html",
+    "bytes": 122711
+  },
+  "https://suroschool.jp/archives/news/%e6%96%b0%e5%8f%b04%e6%a9%9f%e7%a8%ae%e3%83%9a%e3%83%bc%e3%82%b8%e4%bd%9c%e6%88%90-3": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_新台4機種ページ作成-3__2c1831ac",
+    "file": "data/raw/news/archives_news_新台4機種ページ作成-3__2c1831ac.html",
+    "bytes": 122611
+  },
+  "https://suroschool.jp/archives/news/%e6%96%b0%e5%8f%b03%e6%a9%9f%e7%a8%ae%e7%8b%99%e3%81%84%e7%9b%ae%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_新台3機種狙い目更新__7cd61552",
+    "file": "data/raw/news/archives_news_新台3機種狙い目更新__7cd61552.html",
+    "bytes": 122642
+  },
+  "https://suroschool.jp/archives/news/%e3%83%90%e3%82%a4%e3%82%aa%e3%80%81%e3%82%bf%e3%82%af%e3%83%88%e3%82%aa%e3%83%bc%e3%83%91%e3%82%b9%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_バイオ、タクトオーパス更新__8bb7a078",
+    "file": "data/raw/news/archives_news_バイオ、タクトオーパス更新__8bb7a078.html",
+    "bytes": 123363
+  },
+  "https://suroschool.jp/archives/news/%e3%83%93%e3%83%83%e3%82%b0%e3%83%89%e3%83%aa%e3%83%bc%e3%83%a0%e3%80%81%e3%83%90%e3%82%a4%e3%82%aa%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_ビッグドリーム、バイオ更新__8576ec1d",
+    "file": "data/raw/news/archives_news_ビッグドリーム、バイオ更新__8576ec1d.html",
+    "bytes": 123418
+  },
+  "https://suroschool.jp/archives/news/%e3%83%93%e3%83%83%e3%82%b0%e3%83%89%e3%83%aa%e3%83%bc%e3%83%a0%e3%80%81%e3%83%90%e3%82%a4%e3%82%aa%e6%9b%b4%e6%96%b0-2": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_ビッグドリーム、バイオ更新-2__158db1a1",
+    "file": "data/raw/news/archives_news_ビッグドリーム、バイオ更新-2__158db1a1.html",
+    "bytes": 123262
+  },
+  "https://suroschool.jp/archives/news/%e5%90%84%e3%82%b5%e3%83%96%e3%82%b9%e3%82%af%e3%81%ae%e7%b4%b9%e4%bb%8b%e3%83%9a%e3%83%bc%e3%82%b8%e4%bd%9c%e6%88%90": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_各サブスクの紹介ページ作成__21fdeddc",
+    "file": "data/raw/news/archives_news_各サブスクの紹介ページ作成__21fdeddc.html",
+    "bytes": 123081
+  },
+  "https://suroschool.jp/archives/news/%e3%83%93%e3%83%83%e3%82%b0%e3%83%89%e3%83%aa%e3%83%bc%e3%83%a0%e3%80%81%e3%83%90%e3%82%a4%e3%82%aa%e6%9b%b4%e6%96%b0-3": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_ビッグドリーム、バイオ更新-3__e655350a",
+    "file": "data/raw/news/archives_news_ビッグドリーム、バイオ更新-3__e655350a.html",
+    "bytes": 123342
+  },
+  "https://suroschool.jp/archives/news/%e3%83%93%e3%83%83%e3%82%b0%e3%83%89%e3%83%aa%e3%83%bc%e3%83%a0%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_ビッグドリーム更新__c3e4bfb3",
+    "file": "data/raw/news/archives_news_ビッグドリーム更新__c3e4bfb3.html",
+    "bytes": 122777
+  },
+  "https://suroschool.jp/archives/news/%e3%83%93%e3%83%83%e3%82%b0%e3%83%89%e3%83%aa%e3%83%bc%e3%83%a0%e3%80%81%e3%83%aa%e3%82%aa%e3%82%a8%e3%83%bc%e3%82%b9%e3%80%81%e3%82%bf%e3%82%af%e3%83%88%e3%82%aa%e3%83%bc%e3%83%91%e3%82%b9%e6%9b%b4": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_ビッグドリーム、リオエース、タクトオーパス更__0b9d8d29",
+    "file": "data/raw/news/archives_news_ビッグドリーム、リオエース、タクトオーパス更__0b9d8d29.html",
+    "bytes": 124261
+  },
+  "https://suroschool.jp/archives/news/%e3%83%9f%e3%83%aa%e3%82%aa%e3%83%b3%e3%82%b4%e3%83%83%e3%83%89%e6%9b%b4%e6%96%b0-5": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_ミリオンゴッド更新-5__edfff63c",
+    "file": "data/raw/news/archives_news_ミリオンゴッド更新-5__edfff63c.html",
+    "bytes": 122826
+  },
+  "https://suroschool.jp/archives/news/%e3%83%93%e3%83%83%e3%82%b0%e3%83%89%e3%83%aa%e3%83%bc%e3%83%a0%e3%80%81%e3%82%bf%e3%82%af%e3%83%88%e3%82%aa%e3%83%bc%e3%83%91%e3%82%b9%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_ビッグドリーム、タクトオーパス更新__d4349b8c",
+    "file": "data/raw/news/archives_news_ビッグドリーム、タクトオーパス更新__d4349b8c.html",
+    "bytes": 123657
+  },
+  "https://suroschool.jp/archives/news/%e5%8c%97%e6%96%97%e8%bb%a2%e7%94%9f%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_北斗転生更新__8eba629f",
+    "file": "data/raw/news/archives_news_北斗転生更新__8eba629f.html",
+    "bytes": 122706
+  },
+  "https://suroschool.jp/archives/news/%e3%83%aa%e3%82%aa%e3%82%a8%e3%83%bc%e3%82%b9%e3%80%81%e3%83%93%e3%83%83%e3%82%b0%e3%83%89%e3%83%aa%e3%83%bc%e3%83%a0%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_リオエース、ビッグドリーム更新__77c1d14b",
+    "file": "data/raw/news/archives_news_リオエース、ビッグドリーム更新__77c1d14b.html",
+    "bytes": 123447
+  },
+  "https://suroschool.jp/archives/news/%e3%83%93%e3%83%83%e3%82%b0%e3%83%89%e3%83%aa%e3%83%bc%e3%83%a0%e3%80%81%e3%83%90%e3%82%a4%e3%82%aa%e6%9b%b4%e6%96%b0-4": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_ビッグドリーム、バイオ更新-4__43cfded0",
+    "file": "data/raw/news/archives_news_ビッグドリーム、バイオ更新-4__43cfded0.html",
+    "bytes": 123405
+  },
+  "https://suroschool.jp/archives/news/%e8%a8%ad%e5%ae%9a%e7%8b%99%e3%81%84%e3%81%ae%e3%83%9a%e3%83%bc%e3%82%b8%e4%bd%9c%e6%88%90": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_設定狙いのページ作成__fa19f889",
+    "file": "data/raw/news/archives_news_設定狙いのページ作成__fa19f889.html",
+    "bytes": 122743
+  },
+  "https://suroschool.jp/archives/news/%e3%83%aa%e3%82%aa%e3%82%a8%e3%83%bc%e3%82%b9%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_リオエース更新__17bba456",
+    "file": "data/raw/news/archives_news_リオエース更新__17bba456.html",
+    "bytes": 122631
+  },
+  "https://suroschool.jp/archives/news/%e3%83%93%e3%83%83%e3%82%b0%e3%83%89%e3%83%aa%e3%83%bc%e3%83%a0%e3%80%81%e3%82%ab%e3%83%90%e3%83%8d%e3%83%aa%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_ビッグドリーム、カバネリ更新__08a61114",
+    "file": "data/raw/news/archives_news_ビッグドリーム、カバネリ更新__08a61114.html",
+    "bytes": 123506
+  },
+  "https://suroschool.jp/archives/news/%e7%9c%9f%e6%89%93%e5%90%89%e5%ae%97%e6%9b%b4%e6%96%b0-3": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_真打吉宗更新-3__5d47a8e2",
+    "file": "data/raw/news/archives_news_真打吉宗更新-3__5d47a8e2.html",
+    "bytes": 122503
+  },
+  "https://suroschool.jp/archives/news/%e6%96%b0%e5%8f%b03%e6%a9%9f%e7%a8%ae%e3%81%ae%e3%83%9a%e3%83%bc%e3%82%b8%e4%bd%9c%e6%88%90": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_新台3機種のページ作成__0266364a",
+    "file": "data/raw/news/archives_news_新台3機種のページ作成__0266364a.html",
+    "bytes": 122706
+  },
+  "https://suroschool.jp/archives/news/%e6%96%b0%e5%8f%b03%e6%a9%9f%e7%a8%ae%e7%8b%99%e3%81%84%e7%9b%ae%e4%bd%9c%e6%88%90": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_新台3機種狙い目作成__37361c68",
+    "file": "data/raw/news/archives_news_新台3機種狙い目作成__37361c68.html",
+    "bytes": 122617
+  },
+  "https://suroschool.jp/archives/news/%e6%96%b0%e5%8f%b03%e6%a9%9f%e7%a8%ae%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_新台3機種更新__03f78a56",
+    "file": "data/raw/news/archives_news_新台3機種更新__03f78a56.html",
+    "bytes": 123215
+  },
+  "https://suroschool.jp/archives/news/%e3%83%93%e3%83%83%e3%82%b0%e3%83%89%e3%83%aa%e3%83%bc%e3%83%a0%e6%9b%b4%e6%96%b0-2": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_ビッグドリーム更新-2__5e1f81a1",
+    "file": "data/raw/news/archives_news_ビッグドリーム更新-2__5e1f81a1.html",
+    "bytes": 122875
+  },
+  "https://suroschool.jp/archives/news/%e6%88%a6%e5%9b%bd%e4%b9%99%e5%a5%b3%e3%80%81%e3%83%90%e3%83%bc%e3%83%87%e3%82%a3%e3%83%bc%e3%82%a6%e3%82%a4%e3%83%b3%e3%82%b0%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_戦国乙女、バーディーウイング更新__290eadfe",
+    "file": "data/raw/news/archives_news_戦国乙女、バーディーウイング更新__290eadfe.html",
+    "bytes": 123548
+  },
+  "https://suroschool.jp/archives/news/%e3%83%9f%e3%83%aa%e3%82%aa%e3%83%b3%e3%82%b4%e3%83%83%e3%83%89%e3%80%81%e5%8c%97%e6%96%97%e8%bb%a2%e7%94%9f%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_ミリオンゴッド、北斗転生更新__bc534922",
+    "file": "data/raw/news/archives_news_ミリオンゴッド、北斗転生更新__bc534922.html",
+    "bytes": 123414
+  },
+  "https://suroschool.jp/archives/news/sao2%e6%9b%b4%e6%96%b0": {
+    "ok": true,
+    "status": 200,
+    "type": "news",
+    "slug": "archives_news_sao2更新__3af58db2",
+    "file": "data/raw/news/archives_news_sao2更新__3af58db2.html",
+    "bytes": 122398
+  }
+}

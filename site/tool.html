@@ -1,0 +1,106 @@
+<!DOCTYPE html><html lang="ja"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>期待値計算ツール | スマスロ目標 (個人アーカイブ)</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0d1117">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="assets/icon.svg">
+<link rel="icon" href="assets/icon.svg">
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})});}</script>
+
+</head><body>
+<header class="topbar">
+  <a class="brand" href="index.html">🎰 スマスロ目標</a>
+  <nav>
+    <a href="index.html">機種</a>
+    <a href="news.html">お知らせ</a>
+    <a href="tool.html">期待値計算</a>
+    <a href="pages.html">資料</a>
+  </nav>
+</header>
+<main>
+<h1>期待値計算ツール</h1>
+<p class="note">スロット稼働の期待収支を概算します。公開されている計算理論に基づく自作ツールです（機種別の具体的な期待値は各機種ページの「狙い目」を参照）。</p>
+
+<div class="card-box">
+  <h2 style="margin-top:0">① 機械割ベース 期待収支</h2>
+  <div class="calc">
+    <div class="row">
+      <div class="field"><label>機械割（%） 例: 102.5</label><input id="kw" type="number" step="0.1" value="102.5"></div>
+      <div class="field"><label>回転数（G）</label><input id="games" type="number" step="100" value="8000"></div>
+    </div>
+    <div class="row">
+      <div class="field"><label>1G あたり投入枚数</label><input id="bet" type="number" step="0.5" value="3"></div>
+      <div class="field"><label>1枚あたりの価値（円） 等価=20</label><input id="coin" type="number" step="0.1" value="20"></div>
+    </div>
+    <div class="result" id="r1"></div>
+  </div>
+</div>
+
+<div class="card-box">
+  <h2 style="margin-top:0">② 期待差枚 → 期待収支・時給</h2>
+  <div class="calc">
+    <div class="row">
+      <div class="field"><label>期待差枚（枚） 例: +800</label><input id="diff" type="number" step="50" value="800"></div>
+      <div class="field"><label>交換率（円/枚） 等価=20 / 5.6枚=17.85…</label><input id="rate" type="number" step="0.05" value="20"></div>
+    </div>
+    <div class="row">
+      <div class="field"><label>消化に要する時間（分）</label><input id="min" type="number" step="10" value="120"></div>
+      <div class="field"><label>持ちメダル / 現金投資（任意・差枚に含めない場合は0）</label><input id="adj" type="number" step="100" value="0"></div>
+    </div>
+    <div class="result" id="r2"></div>
+  </div>
+</div>
+
+<div class="card-box">
+  <h2 style="margin-top:0">③ 天井期待値 ざっくり判定</h2>
+  <div class="calc">
+    <div class="row">
+      <div class="field"><label>狙い始めG（現在ゲーム数）</label><input id="cur" type="number" step="50" value="500"></div>
+      <div class="field"><label>天井G</label><input id="ceil" type="number" step="50" value="1000"></div>
+    </div>
+    <div class="row">
+      <div class="field"><label>平均獲得枚数（天井到達時）</label><input id="payout" type="number" step="100" value="1500"></div>
+      <div class="field"><label>1G投入</label><input id="bet3" type="number" step="0.5" value="3"></div>
+    </div>
+    <div class="result" id="r3"></div>
+  </div>
+</div>
+
+<script>
+function yen(n){return (n>=0?'+':'') + Math.round(n).toLocaleString() + '円';}
+function cls(n){return n>=0?'pos':'neg';}
+function calc(){
+  // ①
+  var kw=+kwEl.value, g=+gamesEl.value, bet=+betEl.value, coin=+coinEl.value;
+  var inSheets = g*bet;                       // 総投入枚数
+  var diff1 = inSheets*(kw/100-1);            // 期待差枚 = 投入 * (機械割-1)
+  var yen1 = diff1*coin;
+  r1.innerHTML='<div>総投入: '+Math.round(inSheets).toLocaleString()+'枚 / 期待差枚: <b>'+(diff1>=0?'+':'')+Math.round(diff1).toLocaleString()+'枚</b></div>'+
+    '<div class="big '+cls(yen1)+'">'+yen(yen1)+'</div><div class="note">機械割×回転数からの理論期待収支</div>';
+  // ②
+  var diff=+diffEl.value, rate=+rateEl.value, mn=+minEl.value, adj=+adjEl.value;
+  var yen2=(diff)*rate - adj;
+  var hourly = mn>0 ? yen2/(mn/60) : 0;
+  r2.innerHTML='<div class="big '+cls(yen2)+'">'+yen(yen2)+'</div>'+
+    '<div>時給換算: <b class="'+cls(hourly)+'">'+yen(hourly)+'/時</b>（'+mn+'分）</div>';
+  // ③
+  var cur=+curEl.value, ceil=+ceilEl.value, pay=+payoutEl.value, bet3=+bet3El.value;
+  var remain=Math.max(0,ceil-cur);
+  var cost=remain*bet3;                        // 天井まで投資（枚）
+  var net=pay-cost;                            // 到達時の素の差枚
+  r3.innerHTML='<div>天井まで残り: '+remain+'G / 投資: '+Math.round(cost)+'枚</div>'+
+    '<div class="big '+cls(net)+'">'+(net>=0?'+':'')+Math.round(net).toLocaleString()+'枚</div>'+
+    '<div class="note">獲得−投資の素の差枚（小役/通常時の出玉は別途）。プラスなら天井狙いの目安。</div>';
+}
+var ids=['kw','games','bet','coin','diff','rate','min','adj','cur','ceil','payout','bet3'];
+var kwEl=kw,gamesEl=games,betEl=bet,coinEl=coin,diffEl=diff,rateEl=rate,minEl=min,adjEl=adj,curEl=cur,ceilEl=ceil,payoutEl=payout,bet3El=bet3;
+ids.forEach(function(id){var e=document.getElementById(id); if(e) e.addEventListener('input',calc);});
+calc();
+</script>
+</main>
+<footer class="foot">個人アーカイブ（suroschool.jp / たかどらのスロ塾 会員コンテンツ）・閲覧用</footer>
+<script src="assets/app.js"></script>
+</body></html>

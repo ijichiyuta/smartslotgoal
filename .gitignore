@@ -1,0 +1,14 @@
+# suroschool.jp（たかどらのスロ塾）会員コンテンツの個人アーカイブ。
+# リポジトリは PRIVATE 前提。会員コンテンツを含むため絶対に public 化しないこと。
+# ※ .gitignore は行末インラインコメント非対応。パターンは単独行で書く。
+
+# --- 秘密情報（絶対にコミットしない）---
+scraper/.profile/
+data/auth.json
+scraper/node_modules/
+
+# --- 大きい派生データ（再生成可能・リポジトリを軽く保つ）---
+data/raw/
+
+# OS
+.DS_Store

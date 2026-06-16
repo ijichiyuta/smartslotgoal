@@ -1,0 +1,1584 @@
+<!DOCTYPE html><html lang="ja"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>【特殊A狙い】革命機ヴァルヴレイヴ2 | スマスロ目標 (個人アーカイブ)</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="theme-color" content="#0d1117">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="../assets/icon.svg">
+<link rel="icon" href="../assets/icon.svg">
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){})});}</script>
+
+</head><body>
+<header class="topbar">
+  <a class="brand" href="../index.html">🎰 スマスロ目標</a>
+  <nav>
+    <a href="../index.html">機種</a>
+    <a href="../news.html">お知らせ</a>
+    <a href="../tool.html">期待値計算</a>
+    <a href="../pages.html">資料</a>
+  </nav>
+</header>
+<main>
+  <article class="machine">
+    <a class="back" href="../index.html">← 機種一覧</a>
+    <h1>【特殊A狙い】革命機ヴァルヴレイヴ2</h1>
+    <img class="thumb" src="../img/28c6093f7e8fa674.png" alt="">
+    
+  <div class="tabs">
+    <button class="tab is-active" data-tab="nerai">狙い目</button>
+    
+    
+  </div>
+  <section class="panel is-active" data-panel="nerai"><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>特殊A狙いツール (WP Native Monochrome)</title>
+    
+
+
+
+<div id="vvv-tool-wrapper">
+    
+<h3 class="tool-title"><span id="A">特殊A狙い目検索ツール</span></h3>
+
+    <!-- STEP 1: CZスルー回数 -->
+    <div class="vvv-step" id="step-1">
+        <div class="vvv-step-header" onclick="toggleStep('1')">
+            <h4><span id="1_CZ"><span class="vvv-step-num">1</span> CZスルー回数</span></h4>
+            <span class="vvv-selected-val" id="disp-1">未選択</span>
+        </div>
+        <div class="vvv-step-content">
+            <div class="vvv-grid">
+                <div>
+                    <input type="radio" name="tc" id="tc-0" value="0" onchange="next('1', '0スルー目')">
+                    <label for="tc-0">0スルー目</label>
+                </div>
+                <div>
+                    <input type="radio" name="tc" id="tc-1p" value="1p" onchange="next('1', '1スルー以降')">
+                    <label for="tc-1p">1スルー以降</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- STEP 2-0: 有利区間 (0スルー) -->
+    <div class="vvv-step hidden" id="step-2-0">
+        <div class="vvv-step-header" onclick="toggleStep('2-0')">
+            <h4><span id="2_10_or"><span class="vvv-step-num">2</span> 10連以上 or 切断</span></h4>
+            <span class="vvv-selected-val" id="disp-2-0">未選択</span>
+        </div>
+        <div class="vvv-step-content">
+            <p class="vvv-desc">同一区間内に10連以上または切断の履歴はありますか？</p>
+            <div class="vvv-grid">
+                <div>
+                    <input type="radio" name="cut" id="cut-no" value="no" onchange="next('2-0', '履歴なし')">
+                    <label for="cut-no">なし / 不明</label>
+                </div>
+                <div>
+                    <input type="radio" name="cut" id="cut-yes" value="yes" onchange="next('2-0', '履歴あり')">
+                    <label for="cut-yes">ある</label>
+                </div>
+            </div>
+            <p class="vvv-note">※差枚+1001枚以上の上位AT後は切断の可能性が高く、正確な差枚把握が困難です。</p>
+        </div>
+    </div>
+
+    <!-- STEP 3-0: 切断あり詳細 -->
+    <div class="vvv-step hidden" id="step-3-0">
+        <div class="vvv-step-header" onclick="toggleStep('3-0')">
+            <h4><span id="3"><span class="vvv-step-num">3</span> 切断後の履歴状況</span></h4>
+            <span class="vvv-selected-val" id="disp-3-0">未選択</span>
+        </div>
+        <div class="vvv-step-content">
+            <p class="vvv-desc">切断（の可能性）後、上位AT(9連以下)が2回以上ありますか？</p>
+            <div class="vvv-grid">
+                <div>
+                    <input type="radio" name="mu" id="mu-yes" value="yes" onchange="next('3-0', '2回以上ある')">
+                    <label for="mu-yes">ある</label>
+                </div>
+                <div>
+                    <input type="radio" name="mu" id="mu-no" value="no" onchange="next('3-0', 'ない')">
+                    <label for="mu-no">ない (1回以下)</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- STEP 4-0: 前々回 -->
+    <div class="vvv-step hidden" id="step-4-0">
+        <div class="vvv-step-header" onclick="toggleStep('4-0')">
+            <h4><span id="4"><span class="vvv-step-num">4</span> 前々回の履歴</span></h4>
+            <span class="vvv-selected-val" id="disp-4-0">未選択</span>
+        </div>
+        <div class="vvv-step-content">
+            <div class="vvv-grid">
+                <div>
+                    <input type="radio" name="pre" id="pre-none" value="none" onchange="next('4-0', '履歴なし')">
+                    <label for="pre-none">前々回なし</label>
+                </div>
+                <div>
+                    <input type="radio" name="pre" id="pre-reset" value="reset" onchange="next('4-0', '設定変更から1回目AT後')">
+                    <label for="pre-reset">設定変更から1回目AT後</label>
+                </div>
+                <div>
+                    <input type="radio" name="pre" id="pre-other" value="other" onchange="next('4-0', 'その他')">
+                    <label for="pre-other">その他(単発等)</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- STEP 5-0: 差枚 -->
+    <div class="vvv-step hidden" id="step-5-0">
+        <div class="vvv-step-header" onclick="toggleStep('5-0')">
+            <h4><span id="5"><span class="vvv-step-num">5</span> 差枚状況</span></h4>
+            <span class="vvv-selected-val" id="disp-5-0">未選択</span>
+        </div>
+        <div class="vvv-step-content">
+            <div class="vvv-grid">
+                <div>
+                    <input type="radio" name="sm" id="sm-none" value="none" onchange="next('5-0', 'マイナス')">
+                    <label for="sm-none">マイナス</label>
+                </div>
+                <div>
+                    <input type="radio" name="sm" id="sm-low" value="low" onchange="next('5-0', '+1〜+1000枚')">
+                    <label for="sm-low">+1〜+1000枚</label>
+                </div>
+                <div>
+                    <input type="radio" name="sm" id="sm-high" value="high" onchange="next('5-0', '+1001枚以上')">
+                    <label for="sm-high">+1001枚以上</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- STEP 6-0: 前回種類 -->
+    <div class="vvv-step hidden" id="step-6-0">
+        <div class="vvv-step-header" onclick="toggleStep('6-0')">
+            <h4><span id="6"><span class="vvv-step-num">6</span> 前回の種類</span></h4>
+            <span class="vvv-selected-val" id="disp-6-0">未選択</span>
+        </div>
+        <div class="vvv-step-content">
+            <div class="vvv-grid">
+                <div>
+                    <input type="radio" name="at0" id="at0-upper" value="upper" onchange="diagnose('上位AT(9連以下)')">
+                    <label for="at0-upper">上位AT (9連以下)</label>
+                </div>
+                <div>
+                    <input type="radio" name="at0" id="at0-lower" value="lower" onchange="diagnose('下位AT後')">
+                    <label for="at0-lower">下位AT (1-3連)</label>
+                </div>
+                <div>
+                    <input type="radio" name="at0" id="at0-bb" value="bb" onchange="diagnose('BB後')">
+                    <label for="at0-bb">BB (革命ボナ)</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- STEP 2-1: 種類 (1スルー以降) -->
+    <div class="vvv-step hidden" id="step-2-1">
+        <div class="vvv-step-header" onclick="toggleStep('2-1')">
+            <h4><span id="2"><span class="vvv-step-num">2</span> 前回の種類</span></h4>
+            <span class="vvv-selected-val" id="disp-2-1">未選択</span>
+        </div>
+        <div class="vvv-step-content">
+            <div class="vvv-grid">
+                <div>
+                    <input type="radio" name="at1" id="at1-upper" value="upper" onchange="buildCZG('上位AT後(9連以下)')">
+                    <label for="at1-upper">上位AT (9連以下)</label>
+                </div>
+                <div>
+                    <input type="radio" name="at1" id="at1-lower" value="lower" onchange="buildCZG('下位AT後(1-3連)')">
+                    <label for="at1-lower">下位AT (1-3連)</label>
+                </div>
+                <div>
+                    <input type="radio" name="at1" id="at1-bb" value="bb" onchange="buildCZG('BB後')">
+                    <label for="at1-bb">BB (革命ボナ)</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- STEP 3-1: CZG -->
+    <div class="vvv-step hidden" id="step-3-1">
+        <div class="vvv-step-header" onclick="toggleStep('3-1')">
+            <h4><span id="3_CZG"><span class="vvv-step-num">3</span> 前回のCZ当選G数</span></h4>
+            <span class="vvv-selected-val" id="disp-3-1">未選択</span>
+        </div>
+        <div class="vvv-step-content">
+            <div class="vvv-grid" id="czg-group">
+                <!-- JSで動的に生成 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 結果エリア -->
+    <div id="vvv-result-area" class="initial">
+        <span id="result-placeholder">ここに診断結果が表示されます</span>
+        <div id="result-content" class="hidden"></div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<p class="wp-block-paragraph"><a href="https://vvv2.suroschool.jp/">解析値期待値算出ツール</a>の具体的な使い方「<a href="#section-a">特殊A狙いと解析値期待値算出ツールの実践的な使用方法</a>」を参考にしてください</p>
+
+
+
+
+
+<h1><span id="A-2">条件別特殊A狙い</span></h1>
+
+
+<h2><span id="i">はじめに</span></h2>
+
+
+<p>一般的なミミズ狙いの狙い方は以下の通りです：</p>
+
+
+<ul>
+  <li>9連以下の上位AT後や下位AT後を狙う</li>
+  <li>2〜3周期目の100pt・200ptゾーンでCZ当選を期待</li>
+  <li>ボーナスかラッシュ当選で状態終了</li>
+</ul>
+
+
+<p>しかし、<strong>集計値とは別に実践で得られた239件のサンプルデータを集計・分析した結果、これはミミズというよりも特殊Aである可能性が浮かび上がりました。</strong></p>
+
+
+<hr>
+
+
+<h2><span id="A-3">特殊Aの特徴</span></h2>
+
+
+<table class="wp-table">
+  <thead>
+    <tr>
+      <th>項目</th>
+      <th>内容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>継続性</td>
+      <td>終日継続ではない。ボーナスかラッシュ当選で終了</td>
+    </tr>
+    <tr>
+      <td>当選傾向</td>
+      <td>2周期目200ptまでに当選か、発展し非当選の場合は3周期目の100ptまでにCZにかなり当選しやすい。さらにボーナスかラッシュ当選までループする可能性がかなり高い</td>
+    </tr>
+    <tr>
+      <td>判別方法</td>
+      <td>B以上示唆が出ると特殊A否定の可能性が高い（白背景、化物じゃないセリフなど）</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<hr>
+
+
+<h2><span id="0A">[0スルー時]データから見えた特殊Aの特徴</span></h2>
+
+
+<h3><span id="B">モードB以上示唆と当選率の逆転現象</span></h3>
+
+
+<table class="wp-table">
+  <thead>
+    <tr>
+      <th>演出</th>
+      <th>解析上の示唆</th>
+      <th>実際の当選率</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>化け物じゃない</td>
+      <td>通常B以上 80%</td>
+      <td><strong>0%</strong>（15件中0件）</td>
+    </tr>
+    <tr>
+      <td>白背景</td>
+      <td>通常B以上 80%</td>
+      <td><strong>25%</strong>（4件中1件）</td>
+    </tr>
+    <tr>
+      <td>適切な判断</td>
+      <td>通常B以上 50%</td>
+      <td><strong>10%</strong>（10件中1件）</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<p>一方で、モード示唆ではない演出の当選率は：</p>
+
+
+<table class="wp-table">
+  <thead>
+    <tr>
+      <th>演出</th>
+      <th>示唆内容</th>
+      <th>実際の当選率</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img draggable="false" role="img" class="emoji" alt="🟩" src="https://s.w.org/images/core/emoji/17.0.2/svg/1f7e9.svg">（マギウス）2周目出現</td>
+      <td>CZ示唆</td>
+      <td><strong>73%</strong>（11件中8件）</td>
+    </tr>
+    <tr>
+      <td>ナーイス</td>
+      <td>CZ示唆</td>
+      <td><strong>52%</strong>（23件中12件）</td>
+    </tr>
+    <tr>
+      <td>黒ピノステ</td>
+      <td>CZ示唆</td>
+      <td><strong>67%</strong>（3件中2件）</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<p><strong>０スルー時B以上示唆が出ると当選率が激減し、CZ示唆演出だと高当選率を維持している。</strong></p>
+
+
+<hr>
+
+
+<h2><span id="A-4">「特殊A」の存在仮説</span></h2>
+
+
+<p>この矛盾を説明するため、以下の仮説を立てました。</p>
+
+
+<h3><span id="i-2">論理展開</span></h3>
+
+
+<div class="code-box">
+  <pre>【事実1】0スルー時B以上示唆出現時 → 2周200以内の発展/当選率と3周100の当選率が著しく低下
+【事実2】解析値の通常Aでは、集計上の高当選率パターンを説明できない
+【事実3】特殊Aはボーナス当選またはラッシュ当選までループする可能性が非常に高い（実践上85%以上継続）
+【結論】通常Aとは別の未発表モード「特殊A」が存在すると推測
+</pre>
+</div>
+
+
+<p>つまり、これまで「ミミズ」と呼ばれていた優遇状態の正体は<strong>特殊Aモード</strong>であり、モードB以上とは全く別の抽選体系を持つと考えられます。</p>
+
+
+<h3><span id="A-5">特殊A移行しやすい条件（優先度順）</span></h3>
+
+
+<table class="wp-table">
+  <thead>
+    <tr>
+      <th>優先度</th>
+      <th>条件</th>
+      <th>集計根拠</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>★★★</td>
+      <td>9連以下の超革命ラッシュ後</td>
+      <td>上位AT後41%、差枚あり45%超</td>
+    </tr>
+    <tr>
+      <td>★★☆</td>
+      <td>革命ラッシュ後（1-3連）</td>
+      <td>下位AT後33%、差枚あり44%</td>
+    </tr>
+    <tr>
+      <td>★☆☆</td>
+      <td>革命ボーナス後</td>
+      <td>BB後33%、差枚なし25%</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2><span id="212A">【ヴヴヴ2】1回前、2回前履歴別の特殊A優遇区間特徴</span></h2>
+
+<h3><span id="1_10ATTYA">1. 10連以上の上位AT後は「平均TY優遇」「特殊A冷遇」</span></h3>
+
+<p>10連以上の上位AT終了後は、内部状態がリセットされ、基本的に<strong>特殊A優遇状態への移行が制限される区間</strong>に入ります。</p>
+
+<h4><span id="A-6">原則：特殊A状態へ移行しにくい</span></h4>
+
+<p>10連以上の上位AT後は、次回・次々回でのAT平均出玉（性能）は優遇されますが、<strong>「特殊Aの当たりやすさ（101-250Gでの当選率）」は著しく低下</strong>します。</p>
+
+<ul>
+  <li><strong>10連以上直後の挙動:</strong>
+    AT直撃やボーナスからの繋がりやすさはありますが、早いG数での当選率は低くなります。</li>
+  <li><strong>前々回が10連以上の場合:</strong>
+    前回が平均TY優遇区間であることが多いため履歴に関わらず特殊Aに移行しにくい。</li>
+</ul>
+
+<h4><span id="103">結論：「10連以上から数えて3区間目」</span></h4>
+
+<p>最も間違いやすいのが、履歴上で「10連以上後」→「5-9上位後、下位AT後」→「現在（3区間目）」となっているケースです。</p>
+
+<p><strong>「前回が5〜9連の上位ATなら特殊A優遇ではないか？」</strong>
+  通常であればその通りですが、<strong>前々回が10連以上の場合は例外</strong>です。</p>
+
+<table class="wp-table">
+  <thead>
+    <tr>
+      <th>履歴パターン（前々回 → 前回）</th>
+      <th>判定</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10連以上 → 5〜9連上位AT</td>
+      <td><img draggable="false" role="img" class="emoji" alt="🙅‍♂️" src="https://s.w.org/images/core/emoji/17.0.2/svg/1f645-200d-2642-fe0f.svg"> <strong>狙えない</strong></td>
+    </tr>
+    <tr>
+      <td>10連以上 → 決戦・ボナ・下位</td>
+      <td><img draggable="false" role="img" class="emoji" alt="🙅‍♂️" src="https://s.w.org/images/core/emoji/17.0.2/svg/1f645-200d-2642-fe0f.svg"> <strong>狙えない</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>たとえ前回が「本来なら熱い5〜9連後」であっても、その前が10連以上であれば冷遇期間内であり、特殊Aのような高当選率は期待できません。</p>
+
+<hr>
+
+<h3><span id="2_TYA">2. 平均TY優遇区間から特殊A優遇区間への復帰条件</span></h3>
+
+<p>では、一度特殊A冷遇状態に入った後、いつになれば再び美味しい「特殊A」の状態に戻るのでしょうか？
+  その鍵は<strong>「5〜9連の上位AT」</strong>を複数回挟むことにあります。</p>
+
+<h4><span id="592">復帰のサイン：同一有利区間内で5〜9連状態を2回以上繰り返す</span></h4>
+
+<p>履歴上で同一有利区間内で5〜9連の上位ATが2回以上繰り返されるとその後も特殊A優遇状態に突入する傾向があります。</p>
+
+<h4><span id="A-7">狙い目：特殊Aへ復帰パターン</span></h4>
+
+<p>以下の履歴フローを辿った台は、高い期待値を持ちます。</p>
+
+<p>例：</p>
+
+<ol>
+  <li><strong>3回前</strong>：10連以上の上位AT</li>
+  <li><strong>前々回</strong>：5〜9連の上位AT（ここで冷遇解除の準備）</li>
+  <li><strong>前回</strong>：5〜9連の上位AT（2回目の9連上位後状態で特殊Aに復帰）</li>
+</ol>
+
+<p>この「3回前が10連以上」かつ「直近2回が5〜9連」のパターンは、見つけたら最優先で確保すべきお宝台です。</p>
+
+<p>例:</p>
+
+<ol>
+  <li>4回前:10連以上の上位AT</li>
+  <li>3回前:上位AT9連(上位5~9連1回目)</li>
+  <li>2回前:下位AT</li>
+  <li>1回前:上位AT9連(上位5~9連2回目)</li>
+</ol>
+
+<p>これも上位5~9連2回目で特殊A優遇区間の可能性が高いです。</p>
+
+<hr>
+
+<h3><span id="3_A">3. 設定変更後の特殊A優遇区間まとめ</span></h3>
+
+<p>朝イチ設定変更後の挙動も、履歴によって明暗がはっきりと分かれます。</p>
+
+<h4><span id="59AT">狙い目：初回5〜9連上位ATの後</span></h4>
+
+<p>設定変更後、最初のATが5〜9連で終了した場合、その次は特殊Aがかなり優遇され非常に美味しい区間となります。</p>
+
+<ul>
+  <li><strong>出玉率</strong>：<strong>110%以上</strong></li>
+  <li><strong>特徴</strong>：平均出玉が高く、安定してプラスになりやすい。</li>
+</ul>
+
+<h4><span id="2-2">危険：2区間目への過度な期待</span></h4>
+
+<p>設定変更後、初回が革命ボーナスや下位ATで終わった場合、その次の区間（2区間目）は狙い目ではありません。</p>
+
+<ul>
+  <li><strong>設定変更 → 革命ボーナス後</strong>：100~150G当選率が30%</li>
+  <li><strong>設定変更 → 下位AT後</strong>：100~150G当選率が30%</li>
+</ul>
+
+<p>特殊Aで当選しにくいため、ねらわないようにします。</p>
+
+<hr>
+
+<h3><span id="i-3">まとめ：統合・立ち回りチェックリスト</span></h3>
+
+<p>ホールで履歴・データカウンターを見る際は、以下の優先順位で判断してください。</p>
+
+<h4><span id="i-4">積極的に狙うパターン</span></h4>
+
+<ol>
+  <li><strong>設定変更後1回目の5〜9連上位AT後</strong>：特殊Aがかなり優遇される</li>
+  <li><strong>強いパターン</strong>：[5〜9連] → [5〜9連] 後の台は特殊Aが優遇される</li>
+  <li><strong>基本の特殊A</strong>：履歴に10連以上がなく、前回が5〜9連上位ATの台は優先的に狙う</li>
+</ol>
+
+<h4><span id="i-5">避けるパターン</span></h4>
+
+<ol>
+  <li><strong>3区間目の罠</strong>：[10連以上] → [何か] の後の台（まだ冷遇内）3回目は特殊Aの冷遇区間</li>
+  <li><strong>朝イチの罠</strong>：[設定変更] → [革命ボナ/下位AT] の後の台</li>
+</ol>
+
+<div class="code-box">
+  <pre><strong>鉄則</strong>
+「10連以上したら、その後２回上位5~9連後がないと特殊A優遇にならない傾向」
+</pre>
+</div>
+
+
+<h3><span id="A-8">特殊A否定条件（打ってはいけない）</span></h3>
+
+
+<ul>
+  <li>設定変更後2回目区間が上位以外</li>
+  <li>決戦ボーナス後</li>
+  <li>10連以上の上位AT後</li>
+</ul>
+
+
+<hr>
+
+
+<h2><span id="A-9">演出による特殊A判別</span></h2>
+
+
+<h3><span id="A22003100">特殊A狙い(2周200,3周100以内)中続行可能演出</span></h3>
+
+
+<table class="wp-table">
+  <thead>
+    <tr>
+      <th>演出</th>
+      <th>当選率</th>
+      <th>解釈</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong><img draggable="false" role="img" class="emoji" alt="🟩" src="https://s.w.org/images/core/emoji/17.0.2/svg/1f7e9.svg">（マギウス）2周目出現</strong></td>
+      <td><strong>73%</strong></td>
+      <td>特殊Aの可能性が高い</td>
+    </tr>
+    <tr>
+      <td><strong>ナーイス</strong></td>
+      <td><strong>52%</strong></td>
+      <td>特殊Aの可能性がまだ高い</td>
+    </tr>
+    <tr>
+      <td>黒ピノステ</td>
+      <td>67%</td>
+      <td>特殊Aの可能性がまだ高い</td>
+    </tr>
+    <tr>
+      <td>自分で自分が</td>
+      <td>33%</td>
+      <td>少し弱いが現時点では続行</td>
+    </tr>
+    <tr>
+      <td>v3/v5</td>
+      <td>48%</td>
+      <td>現時点では続行</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h3><span id="A-10">特殊A否定の可能性が高い(周期の進み具合でやめ判断)</span></h3>
+
+
+<table class="wp-table">
+  <thead>
+    <tr>
+      <th>演出</th>
+      <th>示唆内容</th>
+      <th>当選率</th>
+      <th>判断</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>化け物じゃない</strong></td>
+      <td>B以上80%</td>
+      <td><strong>0%</strong></td>
+      <td>特殊A否定の可能性が高い</td>
+    </tr>
+    <tr>
+      <td><strong>白背景（ピノなし）</strong></td>
+      <td>B以上80%</td>
+      <td>25%</td>
+      <td>特殊A否定の可能性が高い</td>
+    </tr>
+    <tr>
+      <td><strong>適切な判断</strong></td>
+      <td>B以上50%</td>
+      <td>10%</td>
+      <td>注意</td>
+    </tr>
+    <tr>
+      <td>火の輪</td>
+      <td>B以上50%</td>
+      <td>33%</td>
+      <td>注意</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h3><span id="i-6">白ピノ（白背景+ピノシルエット）について</span></h3>
+
+
+<table class="wp-table">
+  <thead>
+    <tr>
+      <th>示唆内容</th>
+      <th>集計当選率</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>B以上80% + 当該or次周期CZ80%</td>
+      <td>17%（18件中3件）</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<p><strong>特殊A否定の可能性が高い</strong>が、「当該or次周期CZ80%」は解析値でみると期待値がある場面が多い。</p>
+
+
+<p><strong>→ 周期の進行次第で狙える可能性あり</strong></p>
+
+
+<hr>
+
+
+<h2><span id="i-7">狙い目</span></h2>
+
+
+<p><strong>※これは特殊Aの狙い目です。もし当選しない場合は滞在ptや出現演出を<a href="https://vvv2.suroschool.jp">https://vvv2.suroschool.jp</a>こちらのツールに反映させ、続行するかも判断してください。</strong></p>
+
+
+<p>レベルでうち分け</p>
+
+
+<p>状態をレベル1〜4の4段階にわけ特殊Aの当選を狙う</p>
+
+
+<hr>
+
+
+<h3><span id="i-8">レベル別の立ち回り</span></h3>
+
+
+<h4><span id="1">レベル1（低期待度）</span></h4>
+
+
+<table class="wp-table">
+  <thead>
+    <tr>
+      <th>項目</th>
+      <th>内容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>打ち出し</td>
+      <td>2周目0pt〜</td>
+    </tr>
+    <tr>
+      <td>やめ時</td>
+      <td>2周目100発展なし → やめ</td>
+    </tr>
+    <tr>
+      <td>継続条件</td>
+      <td>2周目100発展あり → 3周目100発展確認やめ</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h4><span id="2-3">レベル2（中期待度）</span></h4>
+
+
+<table class="wp-table">
+  <thead>
+    <tr>
+      <th>項目</th>
+      <th>内容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>打ち出し</td>
+      <td>2周目0pt〜</td>
+    </tr>
+    <tr>
+      <td>やめ時</td>
+      <td>2周目200まで発展なし → やめ</td>
+    </tr>
+    <tr>
+      <td>継続条件</td>
+      <td>2周目200まで発展あり → 3周目100発展確認やめ</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h4><span id="3-2">レベル3（高期待度）</span></h4>
+
+
+<table class="wp-table">
+  <thead>
+    <tr>
+      <th>項目</th>
+      <th>内容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>打ち出し</td>
+      <td>1周目100pt〜</td>
+    </tr>
+    <tr>
+      <td>やめ時</td>
+      <td>2周目200まで発展なし → やめ</td>
+    </tr>
+    <tr>
+      <td>継続条件</td>
+      <td>2周目200まで発展あり → 3周目100発展確認やめ</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h4><span id="4-2">レベル4（最高期待度）</span></h4>
+
+
+<table class="wp-table">
+  <thead>
+    <tr>
+      <th>項目</th>
+      <th>内容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>打ち出し</td>
+      <td><strong>1周目0pt〜</strong></td>
+    </tr>
+    <tr>
+      <td>やめ時</td>
+      <td>2周目200まで発展なし → やめ</td>
+    </tr>
+    <tr>
+      <td>継続条件</td>
+      <td>2周目200まで発展あり → 3周目100発展確認まで続行</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<hr>
+
+
+<h3><span id="i-9">条件別レベル表</span></h3>
+
+
+<h4><span id="11000">差枚あり（+1〜+1000枚）</span></h4>
+
+
+<table class="wp-table">
+  <thead>
+    <tr>
+      <th>条件</th>
+      <th>レベル</th>
+      <th>打ち出し</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>上位AT後</td>
+      <td><strong>3</strong></td>
+      <td>1周目100pt〜</td>
+    </tr>
+    <tr>
+      <td>下位AT後</td>
+      <td><strong>2</strong></td>
+      <td>2周目0pt〜</td>
+    </tr>
+    <tr>
+      <td>BB後</td>
+      <td><strong>1</strong></td>
+      <td>2周目0pt〜</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h4><span id="1000">差枚あり（+1000枚以上）</span></h4>
+
+
+<p>※1000〜2200枚の範囲でラッシュに入っていない台は切断していない可能性が高い （下位でも切断の可能性は捨て切れないが、現時点では切断していないと仮定）</p>
+
+
+<table class="wp-table">
+  <thead>
+    <tr>
+      <th>条件</th>
+      <th>レベル</th>
+      <th>打ち出し</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>切断なしと推測</td>
+      <td><strong>3</strong></td>
+      <td><strong>1周目0pt〜</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h4><span id="i-10">差枚なし</span></h4>
+
+
+<table class="wp-table">
+  <thead>
+    <tr>
+      <th>条件</th>
+      <th>レベル</th>
+      <th>打ち出し</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>上位AT後</td>
+      <td><strong>2</strong></td>
+      <td>2周目0pt〜</td>
+    </tr>
+    <tr>
+      <td>下位AT後</td>
+      <td><strong>1</strong></td>
+      <td>2周目0pt〜</td>
+    </tr>
+    <tr>
+      <td>BB後</td>
+      <td><strong>1</strong></td>
+      <td>2周目0pt〜</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<hr>
+
+
+<h3><span id="1-2">1スルー目の継続条件</span></h3>
+
+
+<p>以下の<strong>すべて</strong>を満たす場合、1スルー目レベル4で続行：</p>
+
+
+<ol>
+  <li>自力以外のCZ当選</li>
+  <li>特殊A否定演出が出ていない</li>
+  <li>ボーナスまたはラッシュに当選していない</li>
+</ol>
+
+
+<p>→ 上記を満たせばレベル4で継続</p>
+
+
+<hr>
+
+
+<h3><span id="1-3">データ履歴から見る1スルー目以降の狙い方</span></h3>
+
+
+<h4><span id="i-11">0スルー目で当選周期が確認できない場合</span></h4>
+
+
+<p>差枚に関係なく、<strong>前回のデータ履歴（CZ当選G数）</strong>で判断</p>
+
+
+<h4><span id="9">超革命ラッシュ後（9連以下）</span></h4>
+
+
+<table class="wp-table">
+  <thead>
+    <tr>
+      <th>前回CZ当選G数</th>
+      <th>レベル</th>
+      <th>打ち出し</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>140-220G</td>
+      <td><strong>4</strong></td>
+      <td>1周目0pt〜</td>
+    </tr>
+    <tr>
+      <td>100-140G / 220-250G</td>
+      <td><strong>3</strong></td>
+      <td>1周目100pt〜</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h4><span id="1-3">革命ラッシュ後（1-3連）</span></h4>
+
+
+<table class="wp-table">
+  <thead>
+    <tr>
+      <th>前回CZ当選G数</th>
+      <th>レベル</th>
+      <th>打ち出し</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>150-200G</td>
+      <td><strong>4</strong></td>
+      <td>1周目0pt〜</td>
+    </tr>
+    <tr>
+      <td>100-150G / 200-250G</td>
+      <td><strong>3</strong></td>
+      <td>1周目100pt〜</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h4><span id="i-12">革命ボーナス後</span></h4>
+
+
+<table class="wp-table">
+  <thead>
+    <tr>
+      <th>前回CZ当選G数</th>
+      <th>レベル</th>
+      <th>打ち出し</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>150-200G</td>
+      <td><strong>3</strong></td>
+      <td>1周目100pt〜</td>
+    </tr>
+    <tr>
+      <td>100-150G / 200-250G</td>
+      <td><strong>1</strong></td>
+      <td>2周目0pt〜</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<hr>
+
+
+<h2><span id="CZ">周期別CZ当選率</span></h2>
+
+
+<table class="wp-table">
+  <thead>
+    <tr>
+      <th>ポイント</th>
+      <th>当選率</th>
+      <th>評価</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>2周100</strong></td>
+      <td><strong>18.4%</strong></td>
+      <td>★★★</td>
+    </tr>
+    <tr>
+      <td>2周200</td>
+      <td>7.9%</td>
+      <td>★☆☆</td>
+    </tr>
+    <tr>
+      <td><strong>3周100</strong></td>
+      <td><strong>17.0%</strong></td>
+      <td>★★☆</td>
+    </tr>
+    <tr>
+      <td>3周200</td>
+      <td>5.5%</td>
+      <td>★☆☆</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<hr>
+
+
+<h2><span id="i-13">やめ時</span></h2>
+
+
+<h3><span id="i-14">レベル別やめ時</span></h3>
+
+
+<div class="code-box">
+  <pre>【レベル1】
+2周目100発展なし → やめ
+2周目100発展あり → 3周目100発展確認やめ
+
+【レベル2】
+2周目200まで発展なし → やめ
+2周目200まで発展あり → 3周目100発展確認やめ
+
+【レベル3】
+1周目100pt〜打ち出し
+2周目200まで発展なし → やめ
+2周目200まで発展あり → 3周目100発展確認やめ
+
+【レベル4】
+1周目0pt〜打ち出し
+2周目200まで発展なし → やめ
+2周目200まで発展あり → 3周目100発展確認まで続行
+</pre>
+</div>
+
+
+<h3><span id="i-15">共通やめ時</span></h3>
+
+
+<div class="code-box">
+  <pre>特殊A否定演出出現 → 撤退検討
+白ピノ出現 → 特殊A否定だが、周期の進行次第で続行可
+CZ当選→ボーナス/ラッシュ当選 → 引き戻し確認して続行状況でなければやめ
+CZ当選→スルー → 特殊Ａ当選なら1スルー目続行
+</pre>
+</div>
+
+
+<hr>
+
+
+<h2><span id="i-16">まとめ</span></h2>
+
+
+<p>従来の「ミミズ狙い」は、データ分析の結果「<strong>特殊A狙い</strong>」として再定義します。</p>
+
+
+<h3><span id="i-17">ポイント</span></h3>
+
+
+<ol>
+  <li><strong>モードB(80%)以上示唆 ＝ 特殊A否定の可能性が高い → 撤退検討</strong></li>
+  <li><strong>レベル制（1〜4）で打ち出し・やめ時を明確化</strong></li>
+  <li><strong>差枚ありは期待度UP、特に+1000枚以上は最優先</strong></li>
+  <li><strong>1スルー目以降は前回CZ当選G数でレベル判定</strong></li>
+</ol>
+
+
+<h3><span id="i-18">早見表（0スルー目）</span></h3>
+
+
+<table class="wp-table">
+  <thead>
+    <tr>
+      <th>状況</th>
+      <th>レベル</th>
+      <th>打ち出し</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>差枚あり+上位AT後</td>
+      <td>3</td>
+      <td>1周目100pt〜</td>
+    </tr>
+    <tr>
+      <td>差枚あり+下位AT後</td>
+      <td>2</td>
+      <td>2周目0pt〜</td>
+    </tr>
+    <tr>
+      <td>差枚あり+BB後</td>
+      <td>1</td>
+      <td>2周目0pt〜</td>
+    </tr>
+    <tr>
+      <td>差枚+1000以上（切断なし推測）</td>
+      <td>3</td>
+      <td>1周目0pt〜</td>
+    </tr>
+    <tr>
+      <td>差枚なし+上位AT後</td>
+      <td>2</td>
+      <td>2周目0pt〜</td>
+    </tr>
+    <tr>
+      <td>差枚なし+下位AT後</td>
+      <td>1</td>
+      <td>2周目0pt〜</td>
+    </tr>
+    <tr>
+      <td>差枚なし+BB後</td>
+      <td>1</td>
+      <td>2周目0pt〜</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h3><span id="1CZG">早見表（1スルー目以降・前回CZ当選G数）</span></h3>
+
+
+<table class="wp-table">
+  <thead>
+    <tr>
+      <th>条件</th>
+      <th>CZ当選G数</th>
+      <th>レベル</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>超革命後（9連以下）</td>
+      <td>140-220G</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>超革命後（9連以下）</td>
+      <td>100-140G / 220-250G</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>革命ラッシュ後（1-3連）</td>
+      <td>150-200G</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>革命ラッシュ後（1-3連）</td>
+      <td>100-150G / 200-250G</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>革命ボーナス後</td>
+      <td>150-200G</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>革命ボーナス後</td>
+      <td>100-150G / 200-250G</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h2><span id="i-19">参考ソース</span></h2>
+
+
+<h3><span id="i-20">集計データ</span></h3>
+
+
+<ul>
+  <li>実践サンプル：全239件の実戦記録</li>
+  <li>集計サマリー：条件別当選率</li>
+  <li>演出別分析：演出と当選率の相関</li>
+  <li>周期パターン分析：周期別CZ当選率</li>
+  <li>実戦結論：狙い目・やめ時まとめ</li>
+</ul>
+
+
+<h3><span id="i-21">サンプル数詳細</span></h3>
+
+
+<p><strong>全体</strong></p>
+
+<ul>
+  <li>総サンプル数: 239件</li>
+  <li>当選: 87件</li>
+  <li>当選率: 36.4%</li>
+</ul>
+
+
+<p><strong>条件別（n=236）</strong></p>
+
+<table class="wp-table">
+  <thead>
+    <tr>
+      <th>条件</th>
+      <th>サンプル数</th>
+      <th>当選</th>
+      <th>当選率</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>上位AT後</td>
+      <td>97</td>
+      <td>40</td>
+      <td>41%</td>
+    </tr>
+    <tr>
+      <td>下位AT後</td>
+      <td>87</td>
+      <td>29</td>
+      <td>33%</td>
+    </tr>
+    <tr>
+      <td>BB後</td>
+      <td>52</td>
+      <td>17</td>
+      <td>33%</td>
+    </tr>
+    <tr>
+      <td>RB後</td>
+      <td>3</td>
+      <td>1</td>
+      <td>33%（参考）</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<p><strong>差枚あり（n=49）</strong></p>
+
+<table class="wp-table">
+  <thead>
+    <tr>
+      <th>条件</th>
+      <th>サンプル数</th>
+      <th>当選</th>
+      <th>当選率</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BB後+枚</td>
+      <td>8</td>
+      <td>6</td>
+      <td>75%</td>
+    </tr>
+    <tr>
+      <td>下位AT後+枚</td>
+      <td>18</td>
+      <td>8</td>
+      <td>44%</td>
+    </tr>
+    <tr>
+      <td>上位AT後+枚</td>
+      <td>23</td>
+      <td>8</td>
+      <td>35%</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<p><strong>演出別</strong></p>
+
+<table class="wp-table">
+  <thead>
+    <tr>
+      <th>演出</th>
+      <th>サンプル数</th>
+      <th>当選</th>
+      <th>当選率</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img draggable="false" role="img" class="emoji" alt="🟩" src="https://s.w.org/images/core/emoji/17.0.2/svg/1f7e9.svg">（マギウス）2周目出現</td>
+      <td>11</td>
+      <td>8</td>
+      <td>73%</td>
+    </tr>
+    <tr>
+      <td>黒ピノステ</td>
+      <td>3</td>
+      <td>2</td>
+      <td>67%</td>
+    </tr>
+    <tr>
+      <td>ナーイス</td>
+      <td>23</td>
+      <td>12</td>
+      <td>52%</td>
+    </tr>
+    <tr>
+      <td>v3/v5</td>
+      <td>23</td>
+      <td>11</td>
+      <td>48%</td>
+    </tr>
+    <tr>
+      <td>黒ピノ</td>
+      <td>11</td>
+      <td>4</td>
+      <td>36%</td>
+    </tr>
+    <tr>
+      <td>火の輪</td>
+      <td>6</td>
+      <td>2</td>
+      <td>33%</td>
+    </tr>
+    <tr>
+      <td>自分で自分が</td>
+      <td>3</td>
+      <td>1</td>
+      <td>33%</td>
+    </tr>
+    <tr>
+      <td><img draggable="false" role="img" class="emoji" alt="🟩" src="https://s.w.org/images/core/emoji/17.0.2/svg/1f7e9.svg">（マギウス）3周目出現</td>
+      <td>21</td>
+      <td>5</td>
+      <td>24%</td>
+    </tr>
+    <tr>
+      <td>白ピノ</td>
+      <td>18</td>
+      <td>3</td>
+      <td>17%</td>
+    </tr>
+    <tr>
+      <td>適切な判断</td>
+      <td>10</td>
+      <td>1</td>
+      <td>10%</td>
+    </tr>
+    <tr>
+      <td>化け物じゃない</td>
+      <td>15</td>
+      <td>0</td>
+      <td>0%</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<p><strong>周期別CZ当選率</strong></p>
+
+<table class="wp-table">
+  <thead>
+    <tr>
+      <th>ポイント</th>
+      <th>サンプル数</th>
+      <th>CZ当選</th>
+      <th>当選率</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2周100</td>
+      <td>217</td>
+      <td>40</td>
+      <td>18.4%</td>
+    </tr>
+    <tr>
+      <td>2周200</td>
+      <td>177</td>
+      <td>14</td>
+      <td>7.9%</td>
+    </tr>
+    <tr>
+      <td>3周100</td>
+      <td>88</td>
+      <td>15</td>
+      <td>17.0%</td>
+    </tr>
+    <tr>
+      <td>3周200</td>
+      <td>73</td>
+      <td>4</td>
+      <td>5.5%</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<h2 class="wp-block-heading" id="section-a"><span id="A-11"> 特殊A狙いと<a href="https://vvv2.suroschool.jp/">解析値期待値算出ツール</a>の実践的な使用方法</span></h2>
+
+
+
+<p class="wp-block-paragraph">「特殊A狙い」から「解析値ツール」を使った実戦的な立ち回り方について、具体的な実践例を交えて解説します。</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h3 class="wp-block-heading"><span id="1_A">1. 特殊A狙いの基本とツールの位置づけ</span></h3>
+
+
+
+<p class="wp-block-paragraph">まずは、<strong>特殊A狙いの手順</strong>に従って特殊Aを狙います。</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>重要</strong>: 実践中に<strong>出現する示唆演出</strong>を<strong>メモ</strong>するか、<strong>リアルタイムで解析値ツールに反映</strong>させてください。</li>
+</ul>
+
+
+
+<h4 class="wp-block-heading"><span id="i-22"><img draggable="false" role="img" class="emoji" alt="⚠️" src="https://s.w.org/images/core/emoji/17.0.2/svg/26a0.svg"> 注意点：ツールの位置づけについて</span></h4>
+
+
+
+<ul class="wp-block-list">
+<li><strong><a href="https://vvv2.suroschool.jp/">解析値期待値算出ツール</a></strong>は、あくまでも<strong>解析値ベースの期待値</strong>を算出するものです。</li>
+
+
+
+<li>このツールでは、<strong>特殊Aの期待値は算出されません</strong>。特殊Aは集計値から導かれた狙い目であり、ツールを使用する<strong>きっかけ作り</strong>と考えましょう。</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h3 class="wp-block-heading"><span id="2_1">2. 実践例1：周期と発展ポイントからの判断</span></h3>
+
+
+
+<p class="wp-block-paragraph">下位AT終了後、特殊A狙いを実行し、情報を収集します。</p>
+
+
+
+<figure style="font-size:12px;letter-spacing:0px" class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-center" data-align="center">周目</th><th class="has-text-align-center" data-align="center">ゲーム数</th><th class="has-text-align-center" data-align="center">発展の有無</th><th class="has-text-align-center" data-align="center">マギウスの周期示唆</th></tr></thead><tbody><tr><td class="has-text-align-center" data-align="center">1周目</td><td class="has-text-align-center" data-align="center">200p</td><td class="has-text-align-center" data-align="center">有</td><td class="has-text-align-center" data-align="center"><strong>3</strong> にマギウス</td></tr><tr><td class="has-text-align-center" data-align="center">2周目</td><td class="has-text-align-center" data-align="center">100p</td><td class="has-text-align-center" data-align="center">有</td><td class="has-text-align-center" data-align="center">–</td></tr><tr><td class="has-text-align-center" data-align="center">3周目</td><td class="has-text-align-center" data-align="center">100p</td><td class="has-text-align-center" data-align="center">無</td><td class="has-text-align-center" data-align="center">–</td></tr></tbody></table></figure>
+
+
+
+<p class="wp-block-paragraph"><strong>特殊A狙いはここまでです。</strong></p>
+
+
+
+<h4 class="wp-block-heading"><span id="i-23">ツールへの入力と判断</span></h4>
+
+
+
+<p class="wp-block-paragraph">ここからはツールに現在の状況を入力して期待値を見ます。<br>これが1周200発展、2周100発展、3周にマギウスを選択している状態</p>
+
+
+
+<figure class="wp-block-image size-full"><img width="429" height="357" src="../img/5150abaef62fa23a.png" alt="" class="wp-image-2362" decoding="async" sizes="auto, (max-width: 429px) 100vw, 429px"></figure>
+
+
+
+<p class="wp-block-paragraph">次に現在周期とptを選択</p>
+
+
+
+<figure class="wp-block-image size-full"><img width="424" height="456" src="../img/38f07c1631c785e2.png" alt="" class="wp-image-2363" decoding="async" sizes="auto, (max-width: 424px) 100vw, 424px"></figure>
+
+
+
+<p class="wp-block-paragraph"><strong>期待値確認</strong>: 算出された期待値を確認します。この場合はCZ天井狙いで+73.7枚(109%)<br><strong>判断</strong>: この期待値をみて打つか打たないかは個人の判断になりますが、<strong>106%</strong>あれば「<strong>CZを当てるまで打っても大丈夫そうなボーダー</strong>」になります。</p>
+
+
+
+<ol class="wp-block-list">
+<li></li>
+</ol>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h3 class="wp-block-heading"><span id="3_2">3. 実践例2：示唆演出とスルーからの判断</span></h3>
+
+
+
+<p class="wp-block-paragraph">複数の示唆演出を記録し、期待値を判断します。</p>
+
+
+
+<figure style="font-size:12px;letter-spacing:0px" class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-center" data-align="center">周目</th><th class="has-text-align-center" data-align="center">示唆演出</th><th class="has-text-align-center" data-align="center">ゲーム数</th><th class="has-text-align-center" data-align="center">発展の有無</th></tr></thead><tbody><tr><td class="has-text-align-center" data-align="center">1周目</td><td class="has-text-align-center" data-align="center">火の輪</td><td class="has-text-align-center" data-align="center">200p</td><td class="has-text-align-center" data-align="center">有</td></tr><tr><td class="has-text-align-center" data-align="center">2周目</td><td class="has-text-align-center" data-align="center">適切な判断</td><td class="has-text-align-center" data-align="center">100p</td><td class="has-text-align-center" data-align="center">有</td></tr><tr><td class="has-text-align-center" data-align="center">3周目</td><td class="has-text-align-center" data-align="center">白ピノ</td><td class="has-text-align-center" data-align="center">200p</td><td class="has-text-align-center" data-align="center">無</td></tr></tbody></table></figure>
+
+
+
+<p class="wp-block-paragraph"><strong>これもここまでで特殊A狙いが完了し、次に出た演出で解析値ツールに入力します。</strong></p>
+
+
+
+<h4 class="wp-block-heading"><span id="i-24">ツールへの入力と判断</span></h4>
+
+
+
+<p class="wp-block-paragraph"><strong>入力項目</strong>: 発展ポイント、示唆演出、現在のptなどをツールに入力します。火の輪と適切な判断はモード示唆で出現周期は大事ではないが、白ピノは出現周期を選択する必要があります。今回の場合は「白ピノが３周目に出現」なので<strong>白ピノを選択し3cを選択</strong>します。</p>
+
+
+
+<figure class="wp-block-image size-full"><img width="425" height="650" src="../img/b1fa082488611f81.png" alt="" class="wp-image-2364" decoding="async" sizes="auto, (max-width: 425px) 100vw, 425px"></figure>
+
+
+
+<p class="wp-block-paragraph">その後「周期×pt」選択に戻り残りの情報を入力</p>
+
+
+
+<figure class="wp-block-image size-full"><img width="429" height="421" src="../img/f86843665987e129.png" alt="" class="wp-image-2365" decoding="async" sizes="auto, (max-width: 429px) 100vw, 429px"></figure>
+
+
+
+<figure class="wp-block-image size-full"><img width="421" height="526" src="../img/5cf2311a896a91ff.png" alt="" class="wp-image-2366" decoding="async" sizes="auto, (max-width: 421px) 100vw, 421px"></figure>
+
+
+
+<p class="wp-block-paragraph"><strong>期待値確認</strong>: 算出された期待値を確認します。<br><strong>判断</strong>: このケースも、当てるまで<strong>106%を超えそう</strong>なので<strong>CZまで打ち切り</strong>という流れになります。</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h3 class="wp-block-heading"><span id="i-25">まとめ</span></h3>
+
+
+
+<p class="wp-block-paragraph">特殊A狙いで台を選んだ後、<strong><a href="https://vvv2.suroschool.jp/">解析値期待値算出ツール</a></strong>を用いて客観的な情報（示唆、周期、pt）から期待値を算出し、より精度の高いヤメ時・続行の判断を行いましょう。</p>
+<div class="post-views content-post post-2344 entry-meta load-static">
+				<span class="post-views-icon dashicons dashicons-chart-bar"></span> <span class="post-views-label">Post Views:</span> <span class="post-views-count">5,662</span>
+			</div>
+          <!-- 目次ハンバーガー（右下固定・常時）。中身はJSが見出し(h2/h3)から生成。会員ロック時は空→自動非表示 --></section>
+  
+  
+  
+  </article></main>
+<footer class="foot">個人アーカイブ（suroschool.jp / たかどらのスロ塾 会員コンテンツ）・閲覧用</footer>
+<script src="../assets/app.js"></script>
+</body></html>

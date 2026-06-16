@@ -1,0 +1,1794 @@
+<!DOCTYPE html><html lang="ja"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>L ToLOVEるダークネス | スマスロ目標 (個人アーカイブ)</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="theme-color" content="#0d1117">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="../assets/icon.svg">
+<link rel="icon" href="../assets/icon.svg">
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){})});}</script>
+
+</head><body>
+<header class="topbar">
+  <a class="brand" href="../index.html">🎰 スマスロ目標</a>
+  <nav>
+    <a href="../index.html">機種</a>
+    <a href="../news.html">お知らせ</a>
+    <a href="../tool.html">期待値計算</a>
+    <a href="../pages.html">資料</a>
+  </nav>
+</header>
+<main>
+  <article class="machine">
+    <a class="back" href="../index.html">← 機種一覧</a>
+    <h1>L ToLOVEるダークネス</h1>
+    <img class="thumb" src="../img/c8106a6aaa2157a1.jpg" alt="">
+    
+  <div class="tabs">
+    <button class="tab is-active" data-tab="nerai">狙い目</button>
+    <button class="tab" data-tab="kaiseki">解析情報</button>
+    
+  </div>
+  <section class="panel is-active" data-panel="nerai"><div class="tenjo-info"><div class="my-spoiler-wrapper" id="my-spoiler-1"><div class="my-spoiler-title" style="cursor:pointer; background:rgba(245,184,0,0.08); padding:10px; border:1px solid rgba(245,184,0,0.3); color:var(--text-main); font-weight:700; letter-spacing:0.04em;"><span class="spoiler-icon" style="margin-right:5px;">[-]</span>機種情報</div><div class="my-spoiler-content" style="display:block; padding:10px; border:1px solid rgba(245,184,0,0.2); border-top:0; background:var(--bg-card-hi); color:var(--text-main);"><p>[天井情報]</p>
+<p>999G ST当選</p>
+<p>リセット時　650G+α</p>
+<p>※ボーナス当選でST突入</p>
+<p>※ゲーム数は液晶確認</p>
+<p>&nbsp;</p>
+<p>[リセット判別]</p>
+<p>ガックン判別は不可 内部依存で発明品チャンスやゾーン煽りが発生</p>
+<p>※１回目の発明品チャンスが出るまで当日依存で前兆発生？ リセ時は内部的に規定ゲーム数ランダム加算</p>
+<p>&nbsp;</p>
+<p>[有利区間について]</p>
+<p>エンディング到達で、もぐもぐたい焼きタイムへ移行。</p>
+<p>RUSH1個以上+上位STハーレムモード突入。</p>
+</div></div></div>  <!-- タイトル削除 -->
+
+  <div class="status-bar">
+    <button id="stateLow" onclick="setState('low')">昼</button>
+    <button id="stateMid" onclick="setState('mid')">夕方</button>
+    <button id="stateHigh" onclick="setState('high')">夜</button>
+  </div>
+  <div class="action-buttons">
+    <button id="doubleDeltaBtn" class="off" onclick="toggleDoubleDelta()">
+      <img decoding="async" src="../img/b71549cb99e0b6ad.jpeg" alt="にゃんにゃんコピー">
+    </button>
+    <button onclick="reducePoints(150)">クリア</button>
+    <button id="toggleAdjustModeBtn" onclick="toggleAdjustMode()" style="background-color: rgb(255, 204, 204);"><img draggable="false" role="img" class="emoji" alt="➕" src="https://s.w.org/images/core/emoji/17.0.2/svg/2795.svg"></button>
+  </div>
+
+  <div id="ptBarContainer">
+    <div class="ptBarItem">
+      <span class="ptBarLabel">左pt:</span>
+      <div class="ptBarWrapper" id="leftPtWrapper">
+        <div class="ptBar" id="leftPtBar" style="width: 0%; background: rgb(255, 214, 232);">0pt</div>
+      </div>
+    </div>
+    <div class="ptBarItem">
+      <span class="ptBarLabel">中pt:</span>
+      <div class="ptBarWrapper" id="middlePtWrapper">
+        <div class="ptBar" id="middlePtBar" style="width: 0%; background: rgb(214, 255, 214);">0pt</div>
+      </div>
+    </div>
+    <div class="ptBarItem">
+      <span class="ptBarLabel">右pt:</span>
+      <div class="ptBarWrapper" id="rightPtWrapper">
+        <div class="ptBar" id="rightPtBar" style="width: 0%; background: rgb(230, 214, 255);">0pt</div>
+      </div>
+    </div>
+    <div class="ptBarComment">スライドで数値調整可能</div>
+  </div>
+
+  <table class="main-table">
+    <tbody><tr>
+      <th>種類</th>
+      <th>左チャ目</th>
+      <th>中チャ目</th>
+      <th>右チャ目</th>
+    </tr>
+    <tr class="minHoldRow">
+      <td>最低所持pt</td>
+      <td><input type="text" class="pointInput" id="leftPt" value="0"></td>
+      <td><input type="text" class="pointInput" id="middlePt" value="0"></td>
+      <td><input type="text" class="pointInput" id="rightPt" value="0"></td>
+    </tr>
+    <tr>
+      <td>チャ目</td>
+      <td>
+        <button class="adjustBtn" onclick="adjustPoints('left','nonGlowing')" style="background-color: rgb(255, 204, 204);">
+          <img decoding="async" src="../img/64454d13a9c6b89d.jpeg" alt="左チャ目">
+        </button>
+      </td>
+      <td>
+        <button class="adjustBtn" onclick="adjustPoints('middle','nonGlowing')" style="background-color: rgb(255, 204, 204);">
+          <img decoding="async" src="../img/b9cedcfcd19073ec.jpeg" alt="中チャ目">
+        </button>
+      </td>
+      <td>
+        <button class="adjustBtn" onclick="adjustPoints('right','nonGlowing')" style="background-color: rgb(255, 204, 204);">
+          <img decoding="async" src="../img/90acb3b8721e1f18.jpeg" alt="右チャ目">
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td><img draggable="false" role="img" class="emoji" alt="❤️" src="https://s.w.org/images/core/emoji/17.0.2/svg/2764.svg">付</td>
+      <td>
+        <button class="adjustBtn" onclick="adjustPoints('left','glowing')" style="background-color: rgb(255, 204, 204);">
+          <img decoding="async" src="../img/9f774d72e7f5a2ce.jpeg" alt="左チャ目 1チャ目 [♥️付]">
+        </button>
+      </td>
+      <td>
+        <button class="adjustBtn" onclick="adjustPoints('middle','glowing')" style="background-color: rgb(255, 204, 204);">
+          <img decoding="async" src="../img/b3698530b2d62cc0.jpeg" alt="中チャ目 1チャ目 [♥️付]">
+        </button>
+      </td>
+      <td>
+        <button class="adjustBtn" onclick="adjustPoints('right','glowing')" style="background-color: rgb(255, 204, 204);">
+          <img decoding="async" src="../img/d73bf28a86119d14.jpeg" alt="右チャ目 1チャ目 [♥️付]">
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>2チャ目</td>
+      <td>
+        <button class="adjustBtn" onclick="adjustPoints('left','twoChance')" style="background-color: rgb(255, 204, 204);">
+          <img decoding="async" src="../img/14f74e549db4d24c.jpeg" alt="左チャ目 2チャ目">
+        </button>
+      </td>
+      <td>
+        <button class="adjustBtn" onclick="adjustPoints('middle','twoChance')" style="background-color: rgb(255, 204, 204);">
+          <img decoding="async" src="../img/cec0fa03eaf532d2.jpeg" alt="中チャ目 2チャ目">
+        </button>
+      </td>
+      <td>
+        <button class="adjustBtn" onclick="adjustPoints('right','twoChance')" style="background-color: rgb(255, 204, 204);">
+          <img decoding="async" src="../img/7bc0b7c53a0a0ca4.jpeg" alt="右チャ目 2チャ目">
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>高確帯</td>
+      <td><button id="toggleHighModeLeftBtn" class="highModeBtn" onclick="toggleHighMode('left')" style="background-color: rgb(238, 238, 238); color: black;">なし</button></td>
+      <td><button id="toggleHighModeMiddleBtn" class="highModeBtn" onclick="toggleHighMode('middle')" style="background-color: rgb(238, 238, 238); color: black;">なし</button></td>
+      <td><button id="toggleHighModeRightBtn" class="highModeBtn" onclick="toggleHighMode('right')" style="background-color: rgb(238, 238, 238); color: black;">なし</button></td>
+    </tr>
+    <tr>
+      <td>示唆出現</td>
+      <td>
+        <button onclick="setMinimum('left', 100)">100pt以上</button>
+        <button onclick="setMinimum('left', 140)">140pt以上</button>
+      </td>
+      <td>
+        <button onclick="setMinimum('middle', 100)">100pt以上</button>
+        <button onclick="setMinimum('middle', 140)">140pt以上</button>
+      </td>
+      <td>
+        <button onclick="setMinimum('right', 100)">100pt以上</button>
+        <button onclick="setMinimum('right', 140)">140pt以上</button>
+      </td>
+    </tr>
+    <tr>
+      <td>CZ当選</td>
+      <td>
+        <button class="czBtn" onclick="reducePointsForColumn('left',150)">
+          <img decoding="async" src="../img/e8d11a959d5f62ec.jpeg" alt="左チャ目 CZ当選">
+        </button>
+      </td>
+      <td>
+        <button class="czBtn" onclick="reducePointsForColumn('middle',150)">
+          <img decoding="async" src="../img/5ad984f14fd4be73.jpeg" alt="中チャ目 CZ当選">
+        </button>
+      </td>
+      <td>
+        <button class="czBtn" onclick="reducePointsForColumn('right',150)">
+          <img decoding="async" src="../img/f8457638c9f17b24.jpeg" alt="右チャ目 CZ当選">
+        </button>
+      </td>
+    </tr>
+  </tbody></table>
+
+  <!-- 状態別カスタム値設定（初期非表示、ヘッダータップで切替） -->
+  <h3 id="toggleCustomValuesBtn" style="font-size:16px; margin-top:21px; cursor:pointer;">状態別カスタム値設定 (タップで表示／非表示)</h3>
+  <div id="customValuesContainer" style="display:none;">
+    <table class="custom-table">
+      <tbody><tr>
+        <th>種類</th>
+        <th>昼(低確)</th>
+        <th>夕方(高確)</th>
+        <th>夜(超高確)</th>
+      </tr>
+      <tr>
+        <td>1個チャンス目 [<img draggable="false" role="img" class="emoji" alt="🩷" src="https://s.w.org/images/core/emoji/17.0.2/svg/1fa77.svg">無]</td>
+        <td><input type="number" id="customLowNonGlowing" value="1"></td>
+        <td><input type="number" id="customMidNonGlowing" value="10"></td>
+        <td><input type="number" id="customHighNonGlowing" value="75"></td>
+      </tr>
+      <tr>
+        <td>1個チャンス目 [<img draggable="false" role="img" class="emoji" alt="🩷" src="https://s.w.org/images/core/emoji/17.0.2/svg/1fa77.svg">付]</td>
+        <td><input type="number" id="customLowGlowing" value="3"></td>
+        <td><input type="number" id="customMidGlowing" value="10"></td>
+        <td><input type="number" id="customHighGlowing" value="75"></td>
+      </tr>
+      <tr>
+        <td>2個チャンス目</td>
+        <td><input type="number" id="customLowTwoChance" value="5"></td>
+        <td><input type="number" id="customMidTwoChance" value="10"></td>
+        <td><input type="number" id="customHighTwoChance" value="75"></td>
+      </tr>
+    </tbody></table>
+    <div class="action-buttons">
+      <button onclick="resetCustomValues()">デフォルトにリセット</button>
+    </div>
+  </div></section>
+  <section class="panel" data-panel="kaiseki"><div class="kaiseki-toolbar">
+              
+            </div>
+            <div class="kaiseki-accordion">
+              <details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i">基本情報</span></summary><div class="kaiseki-section-body">
+<ul>
+<li>メーカー: オリンピアエステート</li>
+<li>機械割: 98.0% 〜 110.1%</li>
+<li>導入開始日: 2024年06月03日（月）</li>
+<li>ゲーム性概要: 大人気作品とのコラボで、『L ToLOVEるダークネス』が登場する。 通常時はチャンス目で規定ポイントを貯めつつCZからSTを目指すゲーム性。ST中はチャンス目と共通ベルでボーナスを抽選して、見事ヒロインをすべて攻略（最大6連）で上位STへ突入する。</li>
+</ul>
+<p><img alt="L ToLOVEるダークネス（パチスロ）のリール配列" src="https://p-town.dmm.com/upload/machines/4571/reel.jpg?t=1779358756" decoding="async"></p>
+<p><img alt="L ToLOVEるダークネス（パチスロ）のゲームフロー" src="https://p-town.dmm.com/upload/machines/4571/flow.jpg?t=1779358756" decoding="async"></p>
+</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-2">打ち方</span></summary><div class="kaiseki-section-body">
+<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-3">打ち方・小役</span></summary><div class="kaiseki-subsection-body">
+<h4><span id="i-4">打ち方（小役狙い）</span></h4>
+<p>［最初に狙う絵柄］</p>
+<p><img alt="スマスロToLOVEる打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-03-01.jpg" decoding="async"></p>
+<p>通常時・ST中・ボーナス中ともにナビ非発生時はオールフリー打ちでOK。押し順ナビ発生時は押し順に従って消化しよう。</p>
+<p>［チャンス目］</p>
+<p><img alt="スマスロToLOVEるチャンス目" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/06@3x.jpg" decoding="async"></p>
+<p>各リールにチャンス目対象の絵柄が停止かつ、リプレイorベルが揃わなければチャンス目。チャンス目対象の絵柄が2つならダブルチャンス目、3つ止まればハーレム目となる。</p>
+<h4><span id="NG">変則押しはNG</span></h4>
+<p><img alt="スマスロToLOVEる変則押し" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-03-04.jpg" decoding="async"></p>
+<p>ナビ非発生時は左1stでの消化を推奨だ。</p></div></details>
+</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-5">解析情報通常時</span></summary><div class="kaiseki-section-body">
+<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-6">小役関連</span></summary><div class="kaiseki-subsection-body">
+<h4><span id="i-7">小役確率</span></h4>
+<table>
+<thead>
+<tr>
+<th>役</th>
+<th>確率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>リプレイ</td>
+<td>1/16.7</td>
+</tr>
+<tr>
+<td>左チャンス目</td>
+<td>1/32.0</td>
+</tr>
+<tr>
+<td>中チャンス目</td>
+<td>1/40.0</td>
+</tr>
+<tr>
+<td>右チャンス目</td>
+<td>1/68.0</td>
+</tr>
+<tr>
+<td>左＆中ダブルチャンス目</td>
+<td>1/512.0</td>
+</tr>
+<tr>
+<td>左＆右ダブルチャンス目</td>
+<td>1/512.0</td>
+</tr>
+<tr>
+<td>中＆右ダブルチャンス目</td>
+<td>1/512.0</td>
+</tr>
+<tr>
+<td>ハーレム目</td>
+<td>1/5461.3</td>
+</tr>
+<tr>
+<td>共通ベル（ナビなしベル）合算</td>
+<td>1/8.5</td>
+</tr>
+<tr>
+<td>チャンス目合算</td>
+<td>1/13.0</td>
+</tr>
+<tr>
+<td>ナビなし時小役揃い合算</td>
+<td>1/3.9</td>
+</tr>
+</tbody>
+</table>
+</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-8">内部状態関連</span></summary><div class="kaiseki-subsection-body">
+<h4><span id="i-9">内部状態概要</span></h4>
+<p>通常時の内部状態は通常＜高確＜超高確の3種類で、滞在状態に応じてチャンス目成立時に獲得するどきどきポイントの量が変化。楽園計画終了時と100Gゲーム消化ごとに必ず高確へ移行する。</p>
+<h4><span id="i-10">高確ゲーム数振り分け</span></h4>
+<table>
+<thead>
+<tr>
+<th>契機</th>
+<th>高確20G</th>
+<th>高確30G</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>楽園計画終了後</td>
+<td>ー</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>100G消化時 （100～900G）</td>
+<td>69.9%</td>
+<td>30.1%</td>
+</tr>
+</tbody>
+</table>
+</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-11">トランスポイント</span></summary><div class="kaiseki-subsection-body">
+<h4><span id="i-12">トランスポイント概要</span></h4>
+<p><img alt="スマスロToLOVEるダークネス・トランスポイント概要" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0602/kegare.jpg" decoding="async"></p>
+<p>CZ失敗時や楽園計画が単発で終了した場合に内部的に蓄積されるポイント。100ptに到達すると次回初当り時にToLOVEるエピソードに当選する。設定変更時は初期ポイント抽選がおこなわれる。</p>
+<h4><span id="i-13">トランスポイント性能</span></h4>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>獲得契機</td>
+<td>設定変更時、CZ失敗後、楽園計画単発終了後、 CZ成功確定後の小役抽選</td>
+</tr>
+<tr>
+<td>100pt獲得時の恩恵</td>
+<td>次回初当りがToLOVEるエピソード （ヤミエピソードの可能性もあり）</td>
+</tr>
+</tbody>
+</table>
+<h4><span id="CZ">CZ中のトランスポイント加算当選率</span></h4>
+<p>CZのきゅんきゅんバルーン成功確定後（7揃い後）の 1G間の成立役 、ときめきスイートの内部的に 成功確定後の成立役 、ぷっちゅんチャレンジの 成功契機役 でトランスポイントの獲得を抽選。 当選率は低いが、この抽選に当選した場合、100ptを獲得するのでToLOVEるエピソード当選が確定する。</p>
+<p>ハーレム目はときめきスイートとぷっちゅんチャレンジ中に引けば、成功確定後でなくとも、トランスポイント100pt獲得確定だ。</p>
+<h4><span id="100pt">契機別トランスポイント100pt当選率</span></h4>
+<table>
+<thead>
+<tr>
+<th>役</th>
+<th>当選率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>下記以外</td>
+<td>0.4%</td>
+</tr>
+<tr>
+<td>チャンス目1個</td>
+<td>0.8%</td>
+</tr>
+<tr>
+<td>ダブルチャンス目</td>
+<td>1.2%</td>
+</tr>
+<tr>
+<td>ハーレム目</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table>
+</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-14">チャンス目</span></summary><div class="kaiseki-subsection-body">
+<h4><span id="i-15">チャンス目の抽選</span></h4>
+<p><img alt="スマスロToLOVEるチャンス目" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-01-01.jpg" decoding="async"></p>
+<p>チャンス目は左・中・右の3種類（リール左側に表示）があり、各チャンス目を引くごとにポイントが蓄積されていき、 規定ポイントに到達したらチャンス目に対応したCZに発展 。もちろんチャンス目のダブル停止は大量ポイント獲得、トリプル停止時（ハーレム目）は大量ポイント獲得＋αに期待できる。 チャンス目確率は 約1/13 。</p>
+<p>［チャンス目のキャラはCZごとに変化］</p>
+<p><img alt="スマスロToLOVEる　チャンス目" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-01-02.jpg" decoding="async"></p>
+<p>各チャンス目は2人1組で、右チャンス目ならヤミ→モモというようにCZに当選するごとに入れ替わる。ヒロインが変化するのはあくまで演出なので期待度差などはない。</p>
+<h4><span id="i-16">どきどきポイント</span></h4>
+<p><img alt="スマスロToLOVEるダークネス・どきどきポイント" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0602/0602-08-01.jpg" decoding="async"></p>
+<p>チャンス目成立時は、チャンス目の種類に対応したどきどきポイントを1pt以上獲得。150ptに到達するとCZへ突入する。上位の内部状態（通常＜高確＜超高確）に滞在しているほど、大量ポイントを獲得しやすい。</p>
+<p>なお、 CZ終了後は初期ポイントを多く獲得する場合がある ので、早い段階でCZに当選することもある。</p>
+<h4><span id="i-17">どきどきポイント性能</span></h4>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>獲得契機</td>
+<td>チャンス目成立時（1pt以上）</td>
+</tr>
+<tr>
+<td>150pt到達時</td>
+<td>該当するチャンス目のCZへ</td>
+</tr>
+<tr>
+<td>リセット契機</td>
+<td>もぐもぐたい焼きタイム終了後 ※STやCZではクリアされない</td>
+</tr>
+</tbody>
+</table>
+<h4><span id="i-18">内部状態ごとの最低獲得量</span></h4>
+<table>
+<thead>
+<tr>
+<th>内部状態</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>通常</td>
+<td>1pt以上</td>
+</tr>
+<tr>
+<td>高確（夕方）</td>
+<td>10pt以上</td>
+</tr>
+<tr>
+<td>超高確（夜更け）</td>
+<td>75pt以上</td>
+</tr>
+</tbody>
+</table>
+<p>通常滞在時は、リール左のキャラアイコンが点灯すると大量ポイント獲得に期待できる。</p>
+<h4><span id="i-19">どきどき高確</span></h4>
+<p><img alt="L ToLOVEるダークネススマスロチャンス目どきどきポイント" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0602/0602-08-04.jpg" decoding="async"></p>
+<h4><span id="i-20">どきどき高確移行率</span></h4>
+<table>
+<thead>
+<tr>
+<th>契機</th>
+<th>移行率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>チャンス目成立</td>
+<td>19.9% （30G継続）</td>
+</tr>
+</tbody>
+</table>
+<p>チャンス目成立時の一部でどきどき高確へ突入。滞在中はチャンス目成立時に追加で10pt以上を獲得する。</p>
+</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-21">発明品</span></summary><div class="kaiseki-subsection-body">
+<h4><span id="i-22">発明品概要</span></h4>
+<p><img alt="スマスロToLOVEるチャンス目発明品" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-02-01.jpg" decoding="async"></p>
+<p>規定ゲーム数消化時などに獲得できるアイテムで、基本的にCZを有利に進めるアイテムをゲット。なかにはボーナス直撃が確定するアイテムもある。 100G、300G、500G、700G消化時は発明品チャンスが発生して、発明品を獲得する。</p>
+<h4><span id="i-23">発明品一覧（通常時）</span></h4>
+<table>
+<thead>
+<tr>
+<th>発明品</th>
+<th>効果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>にゃんにゃんコピーくん</td>
+<td>チャンス目成立時のポイント獲得量が2倍</td>
+</tr>
+<tr>
+<td>べとべとランチャーくん</td>
+<td>CZのゲーム数減算が一定ゲーム数間ストップ</td>
+</tr>
+<tr>
+<td>ぴょんぴょんワープくん</td>
+<td>ステージ移行（内部状態昇格、前兆移行）</td>
+</tr>
+</tbody>
+</table>
+<h4><span id="i-24">発明品振り分け</span></h4>
+<table>
+<thead>
+<tr>
+<th>発明品</th>
+<th>振り分け</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>にゃんにゃんコピーくん</td>
+<td>83.6%</td>
+</tr>
+<tr>
+<td>べとべとランチャーくん</td>
+<td>6.2%</td>
+</tr>
+<tr>
+<td>ぴょんぴょんワープくん</td>
+<td>10.2%</td>
+</tr>
+</tbody>
+</table>
+</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-25">追憶の闇（ゲーム数前兆）</span></summary><div class="kaiseki-subsection-body">
+<h4><span id="i-26">追憶の闇概要</span></h4>
+<p><img alt="スマスロToLOVEる追憶の闇前兆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-05-01.jpg" decoding="async"></p>
+<p>ゲーム数消化から突入する前兆ステージ。ラストの連続演出に成功すればボーナスが確定する。</p>
+</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="CZ-2">おでかけステージ（CZ前兆）</span></summary><div class="kaiseki-subsection-body">
+<h4><span id="i-27">おでかけ概要</span></h4>
+<p><img alt="スマスロToLOVEるおでかけ前兆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-04-01.jpg" decoding="async"></p>
+<p>チャンス目を契機に移行する前兆ステージ。最終的にチャンス目のキャラとデートできればCZに突入する。</p>
+</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="CZ-3">CZ共通</span></summary><div class="kaiseki-subsection-body">
+<h4><span id="CZ-4">CZ確率</span></h4>
+<table>
+<thead>
+<tr>
+<th>CZ</th>
+<th>確率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>きゅんきゅんバルーン</td>
+<td>1/417.9</td>
+</tr>
+<tr>
+<td>ときめきスイート</td>
+<td>1/528.6</td>
+</tr>
+<tr>
+<td>ぷっちゅんちゃれんじ</td>
+<td>1/742.4</td>
+</tr>
+<tr>
+<td>CZ合算</td>
+<td>1/177.6</td>
+</tr>
+</tbody>
+</table>
+</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="CZ-5">きゅんきゅんバルーン（CZ）</span></summary><div class="kaiseki-subsection-body">
+<h4><span id="i-28">きゅんきゅんバルーン概要</span></h4>
+<p><img alt="スマスロToLOVEるCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-06-01.jpg" decoding="async"></p>
+<p>6G＋α間、小役を揃えるごとにバルーンが昇格。終了時はバルーンの色を参照してボーナス当選をジャッジ。小役成立時はバルーンが昇格するだけでなく、ゲーム数も1G加算されるため、終了間際でも小役さえ連打できれば期待できる。</p>
+<h4><span id="i-29">きゅんきゅんバルーン性能</span></h4>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当選契機</td>
+<td>左チャンス目の規定ポイント到達</td>
+</tr>
+<tr>
+<td>継続ゲーム数</td>
+<td>6G＋α</td>
+</tr>
+<tr>
+<td>当選確率</td>
+<td>1/417.9</td>
+</tr>
+<tr>
+<td>ボーナス期待度</td>
+<td>約33%</td>
+</tr>
+<tr>
+<td>消化中の抽選</td>
+<td>小役入賞でバルーンが昇格かつCZゲーム数＋1G</td>
+</tr>
+</tbody>
+</table>
+<p>［バルーンの色］</p>
+<p><img alt="スマスロToLOVEるCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-06-03.jpg" decoding="async"></p>
+<p>色で期待度を示唆。金まで行けばボーナス濃厚！</p>
+<p>［最終ジャッジ］</p>
+<p><img alt="スマスロToLOVEるCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-06-04.jpg" decoding="async"></p>
+<p>終了後は逆押しカットインで7が揃えばボーナスだ。</p>
+<h4><span id="i-30">成功抽選</span></h4>
+<p>小役が揃うたびにバルーンの色がランクアップし、最終的なランクで初当りをジャッジ。ランク6（金のバルーン）まで到達すれば楽園計画確定だ。 ランク6到達後は、小役揃い（ランクアップ抽選に当選）のたびにかちこちカッチンくんをストックする。</p>
+<h4><span id="i-31">小役揃い時・ランクアップ数振り分け</span></h4>
+<table>
+<thead>
+<tr>
+<th>役</th>
+<th>＋1ランク</th>
+<th>＋2ランク</th>
+<th>＋3ランク</th>
+<th>＋6ランク</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>リプレイ・ベル</td>
+<td>99.6%</td>
+<td>0.4%</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+<tr>
+<td>チャンス目1個停止</td>
+<td>89.8%</td>
+<td>9.8%</td>
+<td>0.4%</td>
+<td>ー</td>
+</tr>
+<tr>
+<td>ダブルチャンス目</td>
+<td>ー</td>
+<td>50.0%</td>
+<td>50.0%</td>
+<td>ー</td>
+</tr>
+<tr>
+<td>ハーレム目</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table>
+<p>※ハーレム目は成功確定かつ、かちこちカッチンくんを1個以上ストック</p>
+<h4><span id="i-32">ランク（バルーン色）ごとの成功率</span></h4>
+<table>
+<thead>
+<tr>
+<th>ランク（色）</th>
+<th>成功率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ランク1（白）</td>
+<td>3.1%</td>
+</tr>
+<tr>
+<td>ランク2（青）</td>
+<td>4.7%</td>
+</tr>
+<tr>
+<td>ランク3（緑）</td>
+<td>12.5%</td>
+</tr>
+<tr>
+<td>ランク4（赤）</td>
+<td>50.0%</td>
+</tr>
+<tr>
+<td>ランク5（紫）</td>
+<td>80.1%</td>
+</tr>
+<tr>
+<td>ランク6（金）</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table>
+</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="CZ-6">ときめきスイート（CZ）</span></summary><div class="kaiseki-subsection-body">
+<h4><span id="i-33">ときめきスイート概要</span></h4>
+<p><img alt="スマスロToLOVEるCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-07-01.jpg" decoding="async"></p>
+<p>5G/セットのST型CZで、小役を引くごとにゲーム数がリセット。成立役に応じて進行するコマ数（デートスポット）が変化していく。最終的に終了時（5G間小役非成立）のデートスポットでボーナス当選をジャッジする。</p>
+<h4><span id="i-34">ときめきスイート性能</span></h4>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当選契機</td>
+<td>中チャンス目の規定ポイント到達</td>
+</tr>
+<tr>
+<td>継続ゲーム数</td>
+<td>5G連続の小役非入賞まで</td>
+</tr>
+<tr>
+<td>当選確率</td>
+<td>1/528.6</td>
+</tr>
+<tr>
+<td>ボーナス期待度</td>
+<td>約40%</td>
+</tr>
+<tr>
+<td>消化中の抽選</td>
+<td>小役入賞で5G再セット</td>
+</tr>
+</tbody>
+</table>
+<p>［砂時計とデートスポット］</p>
+<p><img alt="スマスロToLOVEるCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-07-03.jpg" decoding="async"></p>
+<p>［最終ジャッジ］</p>
+<p><img alt="スマスロToLOVEるCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-07-04.jpg" decoding="async"></p>
+<p>現在いるデートスポットでボーナス当落をジャッジする。</p>
+<h4><span id="i-35">成功抽選</span></h4>
+<p>到達したマスに応じて成功を抽選。内部的に失敗の場合は最終ジャッジ中の小役で書き換えが抽選される。</p>
+<h4><span id="i-36">小役揃い時・マス進行数振り分け</span></h4>
+<table>
+<thead>
+<tr>
+<th>進行数</th>
+<th>リプレイ ベル</th>
+<th>チャンス目 1個停止</th>
+<th>ダブル チャンス目</th>
+<th>ハーレム目</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1マス</td>
+<td>98.0%</td>
+<td>53.5%</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+<tr>
+<td>2マス</td>
+<td>1.6%</td>
+<td>37.1%</td>
+<td>50.0%</td>
+<td>ー</td>
+</tr>
+<tr>
+<td>3マス</td>
+<td>0.4%</td>
+<td>9.4%</td>
+<td>35.9%</td>
+<td>ー</td>
+</tr>
+<tr>
+<td>4マス</td>
+<td>ー</td>
+<td>ー</td>
+<td>5.9%</td>
+<td>ー</td>
+</tr>
+<tr>
+<td>5マス</td>
+<td>ー</td>
+<td>ー</td>
+<td>1.2%</td>
+<td>ー</td>
+</tr>
+<tr>
+<td>6マス</td>
+<td>ー</td>
+<td>ー</td>
+<td>1.2%</td>
+<td>ー</td>
+</tr>
+<tr>
+<td>7マス</td>
+<td>ー</td>
+<td>ー</td>
+<td>1.2%</td>
+<td>ー</td>
+</tr>
+<tr>
+<td>8マス</td>
+<td>ー</td>
+<td>ー</td>
+<td>4.7%</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table>
+<h4><span id="i-37">マスの色（デートスポット）ごとの成功率</span></h4>
+<table>
+<thead>
+<tr>
+<th>到達マス（色）</th>
+<th>成功率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1～3マス目（白）</td>
+<td>10.2%</td>
+</tr>
+<tr>
+<td>4～5マス目（青）</td>
+<td>33.2%</td>
+</tr>
+<tr>
+<td>6～7マス目（緑）</td>
+<td>50.0%</td>
+</tr>
+<tr>
+<td>8マス目（赤）</td>
+<td>80.1%</td>
+</tr>
+<tr>
+<td>9マス目（金）</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table>
+<h4><span id="i-38">内部的に失敗時・逆転当選率</span></h4>
+<table>
+<thead>
+<tr>
+<th>役</th>
+<th>当選率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>下記以外</td>
+<td>0.4%</td>
+</tr>
+<tr>
+<td>左チャンス目</td>
+<td>3.1%</td>
+</tr>
+<tr>
+<td>中チャンス目</td>
+<td>3.9%</td>
+</tr>
+<tr>
+<td>右チャンス目</td>
+<td>4.7%</td>
+</tr>
+<tr>
+<td>ダブルチャンス目</td>
+<td>33.2%</td>
+</tr>
+<tr>
+<td>ハーレム目</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table>
+</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="CZ-7">ぷっちゅんちゃれんじ（CZ）</span></summary><div class="kaiseki-subsection-body">
+<h4><span id="i-39">ぷっちゅんちゃれんじ概要</span></h4>
+<p><img alt="スマスロToLOVEるCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-08-01.jpg" decoding="async"></p>
+<p>7G間、成立役に応じて毎ゲームボーナスを抽選する高期待度CZ。プチュンすればボーナス濃厚となる。</p>
+<h4><span id="i-40">ぷっちゅんちゃれんじ性能</span></h4>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当選契機</td>
+<td>右チャンス目の規定ポイント到達</td>
+</tr>
+<tr>
+<td>継続ゲーム数</td>
+<td>7G固定</td>
+</tr>
+<tr>
+<td>当選確率</td>
+<td>1/742.4</td>
+</tr>
+<tr>
+<td>ボーナス期待度</td>
+<td>約70%</td>
+</tr>
+<tr>
+<td>消化中の抽選</td>
+<td>毎ゲーム成立役に応じてボーナス抽選</td>
+</tr>
+</tbody>
+</table>
+<p>［セリフの色で期待度示唆］</p>
+<p><img alt="スマスロToLOVEるCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-08-03.jpg" decoding="async"></p>
+<p>赤文字ならチャンス！</p>
+<p>［プチュン］</p>
+<p><img alt="スマスロToLOVEるCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-08-04.jpg" decoding="async"></p>
+<p>プチュンするタイミングも多彩だ。</p>
+<h4><span id="i-41">成功抽選</span></h4>
+<p>7G間、全役で成功を抽選。チャンス目は成功確定だ。</p>
+<h4><span id="i-42">ぷっちゅんちゃれんじ・成功当選率</span></h4>
+<table>
+<thead>
+<tr>
+<th>役</th>
+<th>当選率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>下記以外</td>
+<td>8.6%</td>
+</tr>
+<tr>
+<td>チャンス目（位置・個数不問）</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table>
+</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-43">天井</span></summary><div class="kaiseki-subsection-body">
+<h4><span id="i-44">天井ゲーム数</span></h4>
+<p>最大天井は999G＋αだが、設定変更後は最大650G＋αに短縮。設定変更時は通常ゲーム数がランダムに加算されるので、さらに早いゲーム数で楽園計画に当選する。 最大天井以外のゲーム数でも楽園計画に当選する可能性があり、 高設定ほどゲーム数契機で当たりやすい 。</p>
+</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-45">演出動画</span></summary><div class="kaiseki-subsection-body">
+<h4><span id="i-46">ロングフリーズ</span></h4>
+<p>ボーナス当選時の一部で発生。エピソード消化後は特化ゾーンのダークネス計画を経由して、楽園計画（ST）がスタートする。</p></div></details>
+</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-47">解析情報ボーナス時</span></summary><div class="kaiseki-section-body">
+<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="ST">楽園計画（ST）</span></summary><div class="kaiseki-subsection-body">
+<h4><span id="ST-2">ST概要</span></h4>
+<p><img alt="スマスロToLOVEるST" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-11-01.jpg" decoding="async"></p>
+<p>STは10G＋αで、チャンス目や共通ベルでボーナスを抽選。STはセットごとに攻略対象ヒロインが決まっていて、 ヒロインに対応したチャンス目を引けばボーナスの大チャンス となる。ヒロインはセット継続すると変化していき、3人攻略（3セット継続）で、上位STのハーレムモード移行のチャンス、6人攻略（6セット継続）でハーレムモード突入が確定する。 リプレイ成立時はお友達召喚（ミッション）が抽選される。</p>
+<h4><span id="ST-3">楽園計画（ST）性能</span></h4>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当選契機</td>
+<td>初当りボーナス後</td>
+</tr>
+<tr>
+<td>継続ゲーム数</td>
+<td>10G＋α</td>
+</tr>
+<tr>
+<td>ボーナス期待度</td>
+<td>約52%</td>
+</tr>
+<tr>
+<td>消化中の抽選</td>
+<td>チャンス目・共通ベルでボーナス抽選、 リプレイでお友達召喚（ミッション）抽選</td>
+</tr>
+<tr>
+<td>備考</td>
+<td>3セット継続でハーレムモードのチャンス、 6セット継続でハーレムモード確定</td>
+</tr>
+</tbody>
+</table>
+<p>「モード選択」</p>
+<p><img alt="画像" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0629/0627-05-01.jpg" decoding="async"></p>
+<p>左右キーでノーマル、違和感、先告知の3種類から告知モードを選択できる。</p>
+<p>［攻略対象のヒロイン］</p>
+<p><img alt="スマスロToLOVEるST" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-11-03.jpg" decoding="async"></p>
+<p>液晶内にどのチャンス目が期待できるのかが表示されるのでわかりやすい。</p>
+<p>［お友達召喚］</p>
+<p><img alt="スマスロToLOVEるST" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-11-04.jpg" decoding="async"></p>
+<p>ミッション内容をクリアできればボーナス。ミッション内容は全部で5種類で、チャンス目を引いた場合はミッションの内容不問で成功確定となる。</p>
+<p>［ヒロインコンプリート］</p>
+<p><img alt="スマスロToLOVEるST" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-11-05.jpg" decoding="async"></p>
+<p>6人を攻略できればハーレムモードへ！</p>
+<h4><span id="2">ボーナス回数別・ハーレムモード突入期待度（設定2）</span></h4>
+<table>
+<thead>
+<tr>
+<th>ボーナス回数</th>
+<th>期待度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1回目</td>
+<td>低</td>
+</tr>
+<tr>
+<td>2回目</td>
+<td>低</td>
+</tr>
+<tr>
+<td>3回目</td>
+<td>約34%</td>
+</tr>
+<tr>
+<td>4回目</td>
+<td>中</td>
+</tr>
+<tr>
+<td>5回目</td>
+<td>中</td>
+</tr>
+<tr>
+<td>6回目</td>
+<td>確定</td>
+</tr>
+</tbody>
+</table>
+<h4><span id="i-48">［通常の楽園計画中］ボーナス当選率</span></h4>
+<table>
+<thead>
+<tr>
+<th>役</th>
+<th>攻略対象キャラ（液晶のキャラ）</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>役</td>
+<td>ララorナナ</td>
+<td>春菜or唯</td>
+<td>モモorヤミ</td>
+</tr>
+<tr>
+<td>左チャンス目</td>
+<td>69.0%</td>
+<td>35.0%</td>
+<td>43.0%</td>
+</tr>
+<tr>
+<td>中チャンス目</td>
+<td>35.0%</td>
+<td>75.0%</td>
+<td>43.0%</td>
+</tr>
+<tr>
+<td>右チャンス目</td>
+<td>35.0%</td>
+<td>35.0%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>ダブルチャンス目</td>
+<td>100%</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>ハーレム目</td>
+<td>100%</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>共通ベル</td>
+<td>15.9%</td>
+<td>15.9%</td>
+<td>15.9%</td>
+</tr>
+</tbody>
+</table>
+<p>※液晶にいるキャラは左から順に左・中・右チャンス目対応のキャラ ※発明品のピタピタくっつくん所有時はすべてのチャンス目がボーナス確定</p>
+<h4><span id="i-49">［ハーレムモード中］ボーナス当選率</span></h4>
+<table>
+<thead>
+<tr>
+<th>役</th>
+<th>攻略対象キャラ不問</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>左チャンス目</td>
+<td>50.0%</td>
+</tr>
+<tr>
+<td>中チャンス目</td>
+<td>50.0%</td>
+</tr>
+<tr>
+<td>右チャンス目</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>ダブルチャンス目</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>ハーレム目</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>ナビなしベル揃い</td>
+<td>15.9%</td>
+</tr>
+</tbody>
+</table>
+<h4><span id="i-50">ミッション当選率</span></h4>
+<table>
+<thead>
+<tr>
+<th>お友達召喚システム</th>
+<th>リプレイ以外</th>
+<th>リプレイ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ナシ</td>
+<td>ー</td>
+<td>52.1%</td>
+</tr>
+<tr>
+<td>アリ</td>
+<td>40.2%</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table>
+</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-51">メモリアルボーナス（初当り）</span></summary><div class="kaiseki-subsection-body">
+<h4><span id="i-52">メモリアルボーナス概要</span></h4>
+<p><img alt="スマスロToLOVEるボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-09-01.jpg" decoding="async"></p>
+<p>初当りのメインとなるボーナスで、終了後は必ずSTに突入。消化中はSTを有利に進めるアイテム獲得が抽選される。</p>
+<h4><span id="i-53">メモリアルボーナス性能</span></h4>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当選契機</td>
+<td>CZ成功、規定ゲーム数消化時</td>
+</tr>
+<tr>
+<td>継続ゲーム数</td>
+<td>100枚獲得まで</td>
+</tr>
+<tr>
+<td>1Gあたりの純増</td>
+<td>約6.6枚</td>
+</tr>
+<tr>
+<td>ST突入率</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>消化中の抽選</td>
+<td>発明品獲得を抽選</td>
+</tr>
+</tbody>
+</table>
+</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="ToLOVE">ToLOVEるエピソード（初当り）</span></summary><div class="kaiseki-subsection-body">
+<h4><span id="ToLOVE-2">ToLOVEるエピソード概要</span></h4>
+<p><img alt="スマスロToLOVEるボーナスエピソード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-10-01.jpg" decoding="async"></p>
+<p>ST＋STのVストック1個以上が確定するボーナス。ヤミエピソードならダークネス計画（STゲーム数上乗せ特化ゾーン）移行も確定する。</p>
+<h4><span id="ToLOVE-3">ToLOVEるエピソード性能</span></h4>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当選契機</td>
+<td>メモリアルボーナス（初当り）当選時の一部</td>
+</tr>
+<tr>
+<td>継続ゲーム数</td>
+<td>20G</td>
+</tr>
+<tr>
+<td>1Gあたりの純増</td>
+<td>約6.6枚</td>
+</tr>
+<tr>
+<td>ST突入率</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>消化中の抽選</td>
+<td>発明品獲得を抽選</td>
+</tr>
+<tr>
+<td>備考</td>
+<td>STのVストック獲得</td>
+</tr>
+</tbody>
+</table>
+<p>［ヤミエピソード］</p>
+<p><img alt="スマスロToLOVEるボーナスエピソード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-10-03.jpg" decoding="async"></p>
+</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="ST-4">とらぶるボーナス（ST中ボーナス）</span></summary><div class="kaiseki-subsection-body">
+<h4><span id="i-54">とらぶるボーナス概要</span></h4>
+<p><img alt="スマスロToLOVEるボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-12-01.jpg" decoding="async"></p>
+<p>ボーナスは枚数管理型で、ボーナス当選後の「枚数決定ゾーン」で枚数を決定。消化中は成立役に応じて「発明品ポイント」が抽選され、 10pt貯まるごとにSTを有利に進める「発明品」をゲット できる。</p>
+<h4><span id="i-55">とらぶるボーナス性能</span></h4>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当選契機</td>
+<td>ST中のボーナス</td>
+</tr>
+<tr>
+<td>獲得枚数</td>
+<td>100枚～1600枚（枚数決定ゾーンで決定）</td>
+</tr>
+<tr>
+<td>1Gあたりの純増</td>
+<td>約6.6枚</td>
+</tr>
+<tr>
+<td>消化中の抽選</td>
+<td>発明品獲得を抽選</td>
+</tr>
+</tbody>
+</table>
+<h4><span id="i-56">ボーナス平均獲得枚数</span></h4>
+<table>
+<thead>
+<tr>
+<th>状況</th>
+<th>枚数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ハーレムモード以外</td>
+<td>375.2枚</td>
+</tr>
+<tr>
+<td>ハーレムモード中</td>
+<td>650.0枚</td>
+</tr>
+</tbody>
+</table>
+<p>［チャンス目のヒキが重要］</p>
+<p><img alt="スマスロToLOVEるボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-12-04.jpg" decoding="async"></p>
+<p>チャンス目は発明品ポイント獲得濃厚だ。</p>
+<h4><span id="i-57">発明品</span></h4>
+<p>とらぶるボーナス中に獲得できるアイテムで、ゲットするほどSTを有利に進めることができる。ST巻き戻し（再セット）やボーナスが確定するアイテムも存在する。</p>
+<h4><span id="ST-5">発明品一覧（ST中）</span></h4>
+<table>
+<thead>
+<tr>
+<th>発明品</th>
+<th>効果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>お友達召喚システム</td>
+<td>リプレイ成立でミッション確定 リプレイ以外でもミッション抽選をおこなう</td>
+</tr>
+<tr>
+<td>ピタピタくっつくん</td>
+<td>チャンス目成立でボーナス確定</td>
+</tr>
+<tr>
+<td>かちこちカッチンくん</td>
+<td>STのゲーム数減算がストップ</td>
+</tr>
+<tr>
+<td>モドリスカンク</td>
+<td>STが終了した場合にゲーム数を巻き戻し</td>
+</tr>
+<tr>
+<td>Vストック</td>
+<td>ST終了時にボーナス放出</td>
+</tr>
+<tr>
+<td>ハーレムモード</td>
+<td>ハーレムモード突入</td>
+</tr>
+</tbody>
+</table>
+<p>［お友達召喚システム］</p>
+<p><img alt="スマスロToLOVEる発明品" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-16-03.jpg" decoding="async"></p>
+<p>［ピタピタくっつくん］</p>
+<p><img alt="スマスロToLOVEる発明品" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-16-04.jpg" decoding="async"></p>
+<p>［かちこちカッチンくん］</p>
+<p><img alt="スマスロToLOVEる発明品" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-16-05.jpg" decoding="async"></p>
+<p>［モドリスカンク］</p>
+<p><img alt="スマスロToLOVEる発明品" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-16-06.jpg" decoding="async"></p>
+<p>［Vストック］</p>
+<p><img alt="スマスロToLOVEる発明品" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-16-07.jpg" decoding="async"></p>
+<p>［ハーレムモード］</p>
+<p><img alt="スマスロToLOVEる発明品" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-16-08.jpg" decoding="async"></p>
+<h4><span id="i-58">ボーナス中・発明品ポイント獲得率＆振り分け</span></h4>
+<table>
+<thead>
+<tr>
+<th>ポイント</th>
+<th>チャンス目 以外</th>
+<th>チャンス目 1個停止</th>
+<th>ダブル チャンス目</th>
+<th>ハーレム目</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>＋1pt</td>
+<td>0.4%</td>
+<td>92.2%</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+<tr>
+<td>＋2pt</td>
+<td>ー</td>
+<td>6.3%</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+<tr>
+<td>＋3pt</td>
+<td>ー</td>
+<td>0.8%</td>
+<td>98.8%</td>
+<td>ー</td>
+</tr>
+<tr>
+<td>＋5pt</td>
+<td>ー</td>
+<td>0.4%</td>
+<td>0.8%</td>
+<td>ー</td>
+</tr>
+<tr>
+<td>＋10pt</td>
+<td>ー</td>
+<td>0.4%</td>
+<td>0.4%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>トータル</td>
+<td>0.4%</td>
+<td>100%</td>
+<td>100%</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table>
+<h4><span id="i-59">発明品振り分け</span></h4>
+<table>
+<thead>
+<tr>
+<th>発明品</th>
+<th>振り分け</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>かちこちカッチンくん</td>
+<td>71.1%</td>
+</tr>
+<tr>
+<td>お友達召喚システム</td>
+<td>16.0%</td>
+</tr>
+<tr>
+<td>ピタピタくっつくん</td>
+<td>12.2%</td>
+</tr>
+<tr>
+<td>モドリスカンク</td>
+<td>0.4%</td>
+</tr>
+<tr>
+<td>Vストック</td>
+<td>0.4%</td>
+</tr>
+</tbody>
+</table>
+<p>※ハーレム目成立時はVストック確定</p>
+<p>お友達召喚システム、ピタピタくっつくん、モドリスカンクは1個しか所持できないため、獲得後は振り分けがほかのアイテムにまわる。</p>
+</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-60">枚数決定ゾーン</span></summary><div class="kaiseki-subsection-body">
+<h4><span id="i-61">ばいんアタック概要</span></h4>
+<p><img alt="スマスロToLOVEる枚数決定ゾーンボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-13-01.jpg" decoding="async"></p>
+<p>枚数期待度低めのゾーン。ばいんだけに、ボタン長押しで成功するごとに枚数が倍（倍ん）になっていくゲーム性。ばいんアタックと思いきや、800枚or1600枚が確定する「ウィスパー演出」が発生することもある。</p>
+<h4><span id="i-62">ばいんアタック性能</span></h4>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>ウィスパー演出非発生時</th>
+<th>ウィスパー演出発生時</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>上乗せ枚数</td>
+<td>100枚～1600枚</td>
+<td>800枚or1600枚</td>
+</tr>
+<tr>
+<td>平均獲得上乗せ枚数</td>
+<td>251.6枚</td>
+<td>1200枚</td>
+</tr>
+</tbody>
+</table>
+<h4><span id="i-63">ウィスパー演出発生時の上乗せ枚数振り分け</span></h4>
+<table>
+<thead>
+<tr>
+<th>枚数</th>
+<th>振り分け</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>＋800枚</td>
+<td>50.0%</td>
+</tr>
+<tr>
+<td>＋1600枚</td>
+<td>50.0%</td>
+</tr>
+</tbody>
+</table>
+<p>［枚数が倍にアップ］</p>
+<p><img alt="スマスロToLOVEる枚数決定ゾーンボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-13-03.jpg" decoding="async"></p>
+<p>［ウィスパー演出］</p>
+<p><img alt="スマスロToLOVEる枚数決定ゾーンボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-13-04.jpg" decoding="async"></p>
+<h4><span id="i-64">ぺろぺろちゃんす概要</span></h4>
+<p><img alt="スマスロToLOVEる枚数決定ゾーンボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-14-01.jpg" decoding="async"></p>
+<p>マロン（犬）が女の子をぺろぺろするほど枚数が増えていくボタン連打タイプの枚数決定ゾーンだ。</p>
+<h4><span id="i-65">ぺろぺろちゃんす性能</span></h4>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>上乗せ枚数</td>
+<td>300枚以上</td>
+</tr>
+<tr>
+<td>平均獲得上乗せ枚数</td>
+<td>390.3枚</td>
+</tr>
+</tbody>
+</table>
+<p>［ぺろぺろが続くほど枚数アップ］</p>
+<p><img alt="スマスロToLOVEる枚数決定ゾーンボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-14-03.jpg" decoding="async"></p>
+<h4><span id="i-66">愛すぷラッシュ概要</span></h4>
+<p><img alt="スマスロToLOVEる枚数決定ゾーンボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-15-01.jpg" decoding="async"></p>
+<p>500枚以上が確定する枚数決定ゾーン。複数のトリガー（バストやヒップ）で枚数を上乗せした後、さらにボタン連打で枚数を上乗せしていくゲーム性となる。</p>
+<h4><span id="i-67">愛すぷラッシュ性能</span></h4>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>上乗せ枚数</td>
+<td>500枚以上</td>
+</tr>
+<tr>
+<td>平均獲得上乗せ枚数</td>
+<td>638.8枚</td>
+</tr>
+</tbody>
+</table>
+<p>［トリガーでの上乗せ］</p>
+<p><img alt="スマスロToLOVEる枚数決定ゾーンボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-15-03.jpg" decoding="async"></p>
+<p>［ボタン連打の上乗せ］</p>
+<p><img alt="スマスロToLOVEる枚数決定ゾーンボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-15-04.jpg" decoding="async"></p>
+<h4><span id="i-68">［通常の楽園計画中］枚数決定ゾーンの選択比率</span></h4>
+<table>
+<thead>
+<tr>
+<th>枚数決定ゾーン</th>
+<th>比率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ばいんあたっく</td>
+<td>42.9%</td>
+</tr>
+<tr>
+<td>ウィスパー演出</td>
+<td>出現の可能性あり</td>
+</tr>
+<tr>
+<td>ぺろぺろちゃんす</td>
+<td>37.5%</td>
+</tr>
+<tr>
+<td>愛すぷラッシュ</td>
+<td>19.0%</td>
+</tr>
+</tbody>
+</table>
+<p>※ばいんあたっくの一部でウィスパー演出が発生</p>
+</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-69">ダークネス計画</span></summary><div class="kaiseki-subsection-body">
+<h4><span id="i-70">ダークネス計画概要</span></h4>
+<p><img alt="スマスロToLOVEるダークネス計画" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-16-09.jpg" decoding="async"></p>
+<p>STのゲーム数を上乗せする特化ゾーン。上乗せしたゲーム数を使い切るまでSTの基本ゲーム数は使用されない。もちろんボーナスを引いても、残りゲーム数は次のSTに引き継がれる。</p>
+<h4><span id="i-71">ダークネス計画性能</span></h4>
+<table>
+<thead>
+<tr>
+<th>画面</th>
+<th>示唆</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>突入契機</td>
+<td>トランスポイント解放時の一部</td>
+</tr>
+<tr>
+<td>継続ゲーム数</td>
+<td>5G</td>
+</tr>
+<tr>
+<td>消化中の抽選</td>
+<td>楽園計画のゲーム数加算を抽選</td>
+</tr>
+<tr>
+<td>終了後</td>
+<td>45Gのエピソードを消化後楽園計画へ</td>
+</tr>
+</tbody>
+</table>
+<p>［毎ゲーム上乗せを抽選］</p>
+<p><img alt="スマスロToLOVEるダークネス計画" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-16-10.jpg" decoding="async"></p>
+</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="ST-6">ハーレムモード（上位ST）</span></summary><div class="kaiseki-subsection-body">
+<h4><span id="i-72">ハーレムモード概要</span></h4>
+<p><img alt="スマスロToLOVEるハーレムモード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-17-01.jpg" decoding="async"></p>
+<p>継続期待度が約80%となるうえ、枚数決定ゾーンが「愛すぷラッシュ」以上となるため、ボーナスの平均枚数が約650枚になる強力な上位ST。エンディングに到達すれば引き戻し確定の「もぐもぐたい焼きタイム」に移行するため、ボーナスを経て再度ハーレムモードに突入する（エンディング未到達でも、もぐもぐたい焼きタイム突入の可能性あり）</p>
+<h4><span id="i-73">ハーレムモード性能</span></h4>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当選契機</td>
+<td>3セット継続時の一部、ST6セット継続時など</td>
+</tr>
+<tr>
+<td>継続ゲーム数</td>
+<td>10G＋α</td>
+</tr>
+<tr>
+<td>ボーナス期待度</td>
+<td>約80%</td>
+</tr>
+<tr>
+<td>期待獲得枚数</td>
+<td>3000枚以上</td>
+</tr>
+<tr>
+<td>消化中の抽選</td>
+<td>チャンス目・共通ベルでボーナス抽選、 リプレイでお友達召喚（ミッション）抽選</td>
+</tr>
+<tr>
+<td>備考</td>
+<td>滞在中のボーナスは平均650枚</td>
+</tr>
+</tbody>
+</table>
+</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-74">もぐもぐたい焼きタイム</span></summary><div class="kaiseki-subsection-body">
+<h4><span id="i-75">もぐもぐたい焼きタイム概要</span></h4>
+<p><img alt="スマスロToLOVEるもぐもぐたい焼きタイム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-18-01.jpg" decoding="async"></p>
+<p>おもにエンディング後に移行する32G間の発明品獲得特化ゾーンで、終了後はボーナス当選確定＝ハーレムモード突入が確約される。</p>
+<h4><span id="i-76">もぐもぐたい焼きタイム性能</span></h4>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当選契機</td>
+<td>エンディング到達後など</td>
+</tr>
+<tr>
+<td>継続ゲーム数</td>
+<td>32G</td>
+</tr>
+<tr>
+<td>期待獲得枚数</td>
+<td>3000枚以上</td>
+</tr>
+<tr>
+<td>消化中の抽選</td>
+<td>高確率で発明品を獲得</td>
+</tr>
+<tr>
+<td>備考</td>
+<td>終了後はとらぶるボーナスを経由して ハーレムモードへ移行</td>
+</tr>
+</tbody>
+</table>
+<p>［発明品はボーナス中と共通］</p>
+<p><img alt="スマスロToLOVEるもぐもぐたい焼きタイム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-18-03.jpg" decoding="async"></p>
+<h4><span id="i-77">発明品獲得時の振り分け</span></h4>
+<p>獲得時はまず、Vストック or Vストック以外のどちらになるかを抽選し、Vストック以外が選ばれた場合はとらぶるボーナス中と同様の振り分けで発明品の種類が抽選される。</p>
+<h4><span id="i-78">発明品獲得時の振り分け</span></h4>
+<table>
+<thead>
+<tr>
+<th>役</th>
+<th>Vストック</th>
+<th>Vストック以外</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>チャンス目1個</td>
+<td>1.2%</td>
+<td>98.8%</td>
+</tr>
+<tr>
+<td>ダブルチャンス目</td>
+<td>12.5%</td>
+<td>87.5%</td>
+</tr>
+<tr>
+<td>ハーレム目</td>
+<td>100%</td>
+<td>ー</td>
+</tr>
+</tbody>
+</table>
+<h4><span id="V">Vストック以外選択時・発明品振り分け</span></h4>
+<p>※とらぶるボーナス中と同じ振り分け</p>
+</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-79">ツラヌキ・有利区間</span></summary><div class="kaiseki-subsection-body">
+<h4><span id="i-80">ツラヌキ条件と恩恵</span></h4>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>条件</td>
+<td>エンディング到達後など</td>
+</tr>
+<tr>
+<td>恩恵</td>
+<td>もぐもぐたい焼きタイム突入 もぐもぐたい焼きタイム概要はコチラ</td>
+</tr>
+</tbody>
+</table>
+<p>エンディング到達後は有利区間がリセットされ「もぐもぐたい焼きタイム」へ突入。32G間、発明品を高確率で獲得できるうえ、終了後はボーナスを経てハーレムモードに突入する。</p></div></details>
+</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-81">演出情報</span></summary><div class="kaiseki-section-body">
+<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-82">通常時</span></summary><div class="kaiseki-subsection-body">
+<h4><span id="i-83">ステージ解説</span></h4>
+<p>「昼」</p>
+<p><img alt="スマスロToLOVEるダークネス・ステージ解説" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0602/0602-19-01.jpg" decoding="async"></p>
+<p>通常ステージ。</p>
+<p>「夕暮れ」</p>
+<p><img alt="スマスロToLOVEるダークネス・ステージ解説" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0602/0602-19-02.jpg" decoding="async"></p>
+<p>高確示唆ステージ。</p>
+<p>「夜更け」</p>
+<p><img alt="スマスロToLOVEるダークネス・ステージ解説" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0602/0602-19-03.jpg" decoding="async"></p>
+<p>超高確示唆ステージ。</p>
+<h4><span id="i-84">どきどきポイント・天井・トランスポイント示唆</span></h4>
+<p>「アイキャッチ」</p>
+<p><img alt="画像" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0629/0627-02-01.jpg" decoding="async"></p>
+<p>通常時のアイキャッチでは、どきどきポイントの蓄積量や天井到達期待度、トランスポイント量などを示唆する。</p>
+<p>「会話演出の文字色」</p>
+<p><img alt="画像" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0629/0627-02-02.jpg" decoding="async"></p>
+<p>通常時の会話演出の文字色が変化すれば、対応するどきどきポイントが140pt以上貯まっていることを示唆。ピンク文字は左チャンス目、緑文字は中チャンス目、紫文字は右チャンス目に対応している。</p>
+<p>「美柑看板演出の文字」</p>
+<p><img alt="画像" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0629/0627-02-03.jpg" decoding="async"></p>
+<p><img alt="画像" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0629/0627-02-04.jpg" decoding="async"></p>
+<p>液晶左に出現する美柑が持つ看板の文字に注目。「怪」ならポイント蓄積期待度中〜大、「近」なら140pt以上蓄積を示唆する。</p>
+<p>※画像はキュインちゃんねる@HEIWA(ハルルナ)のものを使用しています</p>
+</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="ST-7">楽園計画（ST）</span></summary><div class="kaiseki-subsection-body">
+<h4><span id="i-85">楽園計画中の違和感演出一覧</span></h4>
+<table>
+<thead>
+<tr>
+<th>No.</th>
+<th>演出</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>下パネル点滅</td>
+</tr>
+<tr>
+<td>2</td>
+<td>BGMストップ</td>
+</tr>
+<tr>
+<td>3</td>
+<td>上パネル消灯</td>
+</tr>
+<tr>
+<td>4</td>
+<td>上部ランプ高速点滅</td>
+</tr>
+<tr>
+<td>5</td>
+<td>枠ランプ虹</td>
+</tr>
+<tr>
+<td>6</td>
+<td>全ランプ消灯</td>
+</tr>
+<tr>
+<td>7</td>
+<td>レバーON時にマロンのボイス</td>
+</tr>
+<tr>
+<td>8</td>
+<td>レバーON時に各キャラのボイス</td>
+</tr>
+<tr>
+<td>9</td>
+<td>停止音「ばいばいアップくん」</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Vボタン内の赤丸のみ点灯</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Vボタンが一瞬開閉</td>
+</tr>
+<tr>
+<td>12</td>
+<td>PUSHが振動</td>
+</tr>
+<tr>
+<td>13</td>
+<td>パオーン音</td>
+</tr>
+</tbody>
+</table>
+<p>違和感モード中は上記違和感演出の発生率がアップ。違和感演出自体はノーマルモードでも発生する可能性がある。</p>
+</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-86">裏ボタン</span></summary><div class="kaiseki-subsection-body">
+<h4><span id="i-87">楽園計画中の裏ボタン別・告知パターン</span></h4>
+<table>
+<thead>
+<tr>
+<th>押したボタン</th>
+<th>告知パターン</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PUSHボタン</td>
+<td>ボーナス時の約50%でPUSHボタンが振動</td>
+</tr>
+<tr>
+<td>左右キー</td>
+<td>ボーナス時の約75%で告知音が発生</td>
+</tr>
+<tr>
+<td>上下キー</td>
+<td>ボーナス時の約75%でランプが消灯</td>
+</tr>
+<tr>
+<td>決定キー</td>
+<td>ボーナス時の約99%でボイスが発生</td>
+</tr>
+</tbody>
+</table>
+<p>レバーON後、第1停止ボタンを押すまでにいずれかのボタンを押すと、ボーナス当選時に専用の告知が発生する可能性あり。決定キー（上下左右キーの右側にある赤いボタン）はほぼボイスが発生するので、実質的には一発告知のような使い方ができる。</p>
+<div class="post-views content-post post-481 entry-meta load-static">
+				<span class="post-views-icon dashicons dashicons-chart-bar"></span> <span class="post-views-label">Post Views:</span> <span class="post-views-count">1,849</span>
+			</div></div></details></div></details>
+            </div>
+
+            <!-- 目次ハンバーガー（右下固定・常時）。中身はJSがセクションから生成 --></section>
+  
+  
+  </article></main>
+<footer class="foot">個人アーカイブ（suroschool.jp / たかどらのスロ塾 会員コンテンツ）・閲覧用</footer>
+<script src="../assets/app.js"></script>
+</body></html>

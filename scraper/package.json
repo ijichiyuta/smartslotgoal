@@ -1,0 +1,11 @@
+{
+  "name": "smartslotgoal-scraper",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Personal archive tooling for suroschool.jp (authorized member use)",
+  "dependencies": {
+    "playwright": "^1.49.0",
+    "cheerio": "^1.0.0"
+  }
+}
