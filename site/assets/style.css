@@ -42,9 +42,17 @@ input[type=search]:focus,#search:focus{outline:none;border-color:var(--accent);b
 .badge{font-size:11px;padding:2px 9px;border-radius:999px;background:var(--panel2);color:var(--muted);border:1px solid var(--border)}
 .badge.k{background:var(--good-bg);color:var(--good);border-color:#bbf7d0}
 .badge.s{background:var(--amber-bg);color:var(--amber);border-color:#fde68a}
-.favbtn{position:absolute;top:10px;right:10px;background:none;border:none;color:#cbd5e1;font-size:19px;cursor:pointer;line-height:1;padding:2px}
+.favbtn{position:absolute;top:4px;right:4px;background:none;border:none;color:#cbd5e1;font-size:22px;cursor:pointer;line-height:1;padding:8px;z-index:2}
 .favbtn.on{color:#f59e0b}
-.favbtn:hover{transform:scale(1.12)}
+.favbtn:active{transform:scale(.9)}
+.favbtn:hover{color:#f59e0b}
+
+/* 機種ページのお気に入りトグル */
+.title-row{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.title-row h1{margin:.1em 0}
+.fav-toggle{flex:none;background:#fff;border:1px solid var(--border);color:var(--muted);font-size:13px;font-weight:600;padding:8px 14px;border-radius:999px;cursor:pointer;white-space:nowrap}
+.fav-toggle.on{background:#fffbeb;border-color:#fde68a;color:#b45309}
+.fav-toggle:active{transform:scale(.97)}
 
 /* tabs */
 .tabs{position:sticky;top:50px;background:#fff;z-index:5;display:flex;gap:4px;margin:18px 0 14px;border-bottom:1px solid var(--border)}

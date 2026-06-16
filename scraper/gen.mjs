@@ -2,6 +2,7 @@
 import { fileURLToPath } from 'url';
 import fs from 'fs';
 import path from 'path';
+import crypto from 'crypto';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
@@ -90,7 +91,10 @@ for (const m of machines) {
   const body = `
   <article class="machine">
     <a class="back" href="../index.html">← 機種一覧</a>
-    <h1>${esc(m.title)}</h1>
+    <div class="title-row">
+      <h1>${esc(m.title)}</h1>
+      <button id="favToggle" class="fav-toggle" data-u="m/${fnameFor(m)}" aria-label="お気に入り">☆ お気に入り</button>
+    </div>
     ${m.thumb ? `<img class="thumb" ${thumb} alt="">` : ''}
     ${tabs}
   </article>`;
@@ -258,7 +262,10 @@ function walk(dir, base = SITE) {
 const files = walk(SITE);
 const core = files.filter(f => !f.startsWith('./img/'));   // HTML/CSS/JS/JSON/svg/manifest（軽量・必須）
 const media = files.filter(f => f.startsWith('./img/'));   // 画像（重い・ベストエフォート）
-const VER = 'v' + files.length + '-' + (machines.length + news.length + pages.length);
+// バージョンはコア資産(CSS/JS/HTMLの主要部)の内容ハッシュ。変更時に確実にSWキャッシュを更新。
+const hashSrc = ['assets/style.css', 'assets/app.js', 'index.html', 'tool.html']
+  .map(f => { try { return fs.readFileSync(path.join(SITE, f), 'utf-8'); } catch { return ''; } }).join('');
+const VER = 'v' + crypto.createHash('md5').update(hashSrc).digest('hex').slice(0, 10) + '-' + files.length;
 const sw = `// 自動生成: 全ファイルをプリキャッシュ。オフライン/低電波でも即表示（cache-first）。
 // addAll は1件でも失敗すると全滅するため、個別 add + allSettled で堅牢化。コア優先→画像はベストエフォート。
 const CACHE='smartslotgoal-${VER}';

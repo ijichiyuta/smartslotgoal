@@ -2,11 +2,32 @@
 (function () {
   'use strict';
 
-  // ---- お気に入り(localStorage) ----
+  // ---- お気に入り(localStorage / 失敗時はcookieフォールバック) ----
   const FAV_KEY = 'smartslotgoal_favs';
-  const getFavs = () => { try { return JSON.parse(localStorage.getItem(FAV_KEY) || '[]'); } catch { return []; } };
-  const setFavs = (a) => localStorage.setItem(FAV_KEY, JSON.stringify(a));
+  let storageOK = true;
+  try { localStorage.setItem('__t', '1'); localStorage.removeItem('__t'); } catch (e) { storageOK = false; }
+  const cookieGet = () => { const m = document.cookie.match(/(?:^|; )ssg_favs=([^;]*)/); return m ? decodeURIComponent(m[1]) : ''; };
+  const cookieSet = (v) => { document.cookie = 'ssg_favs=' + encodeURIComponent(v) + ';path=/;max-age=31536000;SameSite=Lax'; };
+  const getFavs = () => {
+    try { if (storageOK) return JSON.parse(localStorage.getItem(FAV_KEY) || '[]'); } catch (e) {}
+    try { return JSON.parse(cookieGet() || '[]'); } catch (e) { return []; }
+  };
+  const setFavs = (a) => {
+    const s = JSON.stringify(a);
+    try { if (storageOK) localStorage.setItem(FAV_KEY, s); } catch (e) {}
+    try { cookieSet(s); } catch (e) {}   // 冗長保存（localStorageが消えても復元）
+  };
   const toggleFav = (u) => { const f = getFavs(); const i = f.indexOf(u); i >= 0 ? f.splice(i, 1) : f.unshift(u); setFavs(f); return f; };
+
+  // プライベートブラウズ等でストレージ不可なら警告
+  if (!storageOK) {
+    window.addEventListener('DOMContentLoaded', () => {
+      const w = document.createElement('div');
+      w.style.cssText = 'background:#fef2f2;color:#b91c1c;border:1px solid #fecaca;padding:8px 14px;font-size:13px;border-radius:8px;margin:10px 0';
+      w.textContent = '⚠️ ブラウザの設定（プライベートブラウズ等）でお気に入りが保存できません。通常モードで開いてください。';
+      const main = document.querySelector('main'); if (main) main.prepend(w);
+    });
+  }
 
   // ---- 機種一覧 ----
   const grid = document.getElementById('grid');
@@ -86,6 +107,19 @@
       bar.querySelector('#expandAll').addEventListener('click', () => details.forEach(d => d.open = true));
       bar.querySelector('#collapseAll').addEventListener('click', () => details.forEach(d => d.open = false));
     }
+  }
+
+  // ---- 機種ページのお気に入りトグル ----
+  const favToggle = document.getElementById('favToggle');
+  if (favToggle) {
+    const u = favToggle.dataset.u;
+    const sync = () => {
+      const on = getFavs().includes(u);
+      favToggle.classList.toggle('on', on);
+      favToggle.textContent = on ? '★ お気に入り済み' : '☆ お気に入り';
+    };
+    favToggle.addEventListener('click', () => { toggleFav(u); sync(); });
+    sync();
   }
 
   // ---- 汎用リスト検索（ニュース等） ----
