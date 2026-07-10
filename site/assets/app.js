@@ -77,8 +77,8 @@
     if (onlyK) onlyK.addEventListener('change', render);
     if (onlyFav) onlyFav.addEventListener('change', render);
     if (sortSel) sortSel.addEventListener('change', render);
+    if (onlyFav && location.search.indexOf('fav=1') >= 0) onlyFav.checked = true;  // ボトムナビ★から遷移
     render();
-    if (search) search.focus();
   }
 
   // ---- タブ切替（機種ページ） ----
@@ -120,6 +120,47 @@
     };
     favToggle.addEventListener('click', () => { toggleFav(u); sync(); });
     sync();
+  }
+
+  // ---- 全ページ横断 検索オーバーレイ ----
+  const esc2 = (s) => (s || '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const overlay = document.getElementById('searchOverlay');
+  if (overlay && window.__SEARCH__) {
+    const ROOT = window.__ROOT__ || '';
+    const input = document.getElementById('globalSearch');
+    const results = document.getElementById('searchResults');
+    const norm = (s) => (s || '').toLowerCase().replace(/\s+/g, '');
+    const draw = () => {
+      const q = norm(input.value);
+      let list = window.__SEARCH__;
+      if (q) list = list.filter(m => norm(m.t).includes(q));
+      results.innerHTML = list.slice(0, 80).map(m =>
+        `<a class="sr-item" href="${ROOT}${m.u}"><span class="sr-name">${esc2(m.t)}</span>`
+        + `${m.k ? '<i class="badge k">解析</i>' : ''}${m.s ? '<i class="badge s">集計</i>' : ''}</a>`
+      ).join('') || '<p class="empty" style="padding:16px">該当する機種がありません</p>';
+    };
+    const open = () => { overlay.hidden = false; document.body.style.overflow = 'hidden'; draw(); setTimeout(() => input.focus(), 60); };
+    const close = () => { overlay.hidden = true; document.body.style.overflow = ''; };
+    ['searchOpen', 'searchOpen2'].forEach(id => { const b = document.getElementById(id); if (b) b.addEventListener('click', open); });
+    const cb = document.getElementById('searchClose'); if (cb) cb.addEventListener('click', close);
+    input.addEventListener('input', draw);
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !overlay.hidden) close(); });
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+  }
+
+  // ---- ボトムナビ / ヘッダー: スクロールで隠す・出す（ひょこっと） ----
+  const botnav = document.getElementById('botnav');
+  const topbar = document.getElementById('topbar');
+  if (botnav || topbar) {
+    let lastY = window.scrollY, ticking = false;
+    const onScroll = () => {
+      const y = window.scrollY;
+      const down = y > lastY && y > 80;
+      if (botnav) botnav.classList.toggle('nav-hidden', down);
+      if (topbar) topbar.classList.toggle('bar-hidden', down);
+      lastY = y; ticking = false;
+    };
+    window.addEventListener('scroll', () => { if (!ticking) { requestAnimationFrame(onScroll); ticking = true; } }, { passive: true });
   }
 
   // ---- 汎用リスト検索（ニュース等） ----

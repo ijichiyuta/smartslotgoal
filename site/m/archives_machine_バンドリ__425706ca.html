@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="ja"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>Lバンドリ | スマスロ目標 (個人アーカイブ)</title>
+<title>Lバンドリ | スマスロ期待値 (個人アーカイブ)</title>
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="manifest" href="../manifest.webmanifest">
 <meta name="theme-color" content="#ffffff">
@@ -10,16 +10,18 @@
 <link rel="apple-touch-icon" href="../assets/icon.svg">
 <link rel="icon" href="../assets/icon.svg">
 <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){})});}</script>
+<script>window.__ROOT__='../';</script>
 
 </head><body>
-<header class="topbar">
-  <a class="brand" href="../index.html">🎰 スマスロ目標</a>
-  <nav>
+<header class="topbar" id="topbar">
+  <a class="brand" href="../index.html">🎰 スマスロ期待値</a>
+  <nav class="topnav">
     <a href="../index.html">機種</a>
     <a href="../news.html">お知らせ</a>
     <a href="../tool.html">期待値計算</a>
     <a href="../pages.html">資料</a>
   </nav>
+  <button class="topbar-search" id="searchOpen" aria-label="検索">🔍</button>
 </header>
 <main>
   <article class="machine">
@@ -35,23 +37,12 @@
     <button class="tab" data-tab="kaiseki">解析情報</button>
     
   </div>
-  <section class="panel is-active" data-panel="nerai"><div class="tenjo-info"><div class="my-spoiler-wrapper" id="my-spoiler-1"><div class="my-spoiler-title" style="cursor:pointer; background:rgba(245,184,0,0.08); padding:10px; border:1px solid rgba(245,184,0,0.3); color:var(--text-main); font-weight:700; letter-spacing:0.04em;"><span class="spoiler-icon" style="margin-right:5px;">[-]</span>機種情報</div><div class="my-spoiler-content" style="display:block; padding:10px; border:1px solid rgba(245,184,0,0.2); border-top:0; background:var(--bg-card-hi); color:var(--text-main);"><p>【天井情報】</p>
-<p>最大10周期　AT当選<br>
-1周期の平均は62G+前兆</p>
-<p>設定変更時　最大7周期<br>
-ST駆け抜け後　最大5周期<br>
-大ガルバチャレンジ失敗後　1周期</p>
-<p>【リセット判別】</p>
-<p>オリンピアなのでガックン判別不可</p>
-<p>【有利区間について】</p>
-<p>有利区間完走時は上位STから始まる？</p>
-</div></div></div>
-
-<h2 class="wp-block-heading"><span id="i"><strong>狙い目</strong></span></h2>
+  <section class="panel is-active" data-panel="nerai"><img loading="lazy" decoding="async" width="150" height="150" src="../img/ce8c1d77f7ef05f1.jpg" class="machine-thumbnail wp-post-image" alt="" style="display:block; margin:0 auto;" srcset="https://suroschool.jp/wp-content/uploads/2025/02/thumb_1-10-150x150.jpg 150w, https://suroschool.jp/wp-content/uploads/2025/02/thumb_1-10-120x120.jpg 120w" sizes="auto, (max-width: 150px) 100vw, 150px" />
+<h2 class="wp-block-heading"><strong>狙い目</strong></h2>
 
 
 
-<h3 class="wp-block-heading"><span id="i-2">【リセット狙い】</span></h3>
+<h3 class="wp-block-heading">【リセット狙い】</h3>
 
 
 
@@ -60,7 +51,7 @@ ST駆け抜け後　最大5周期<br>
 
 
 
-<h3 class="wp-block-heading"><span id="AT">【AT間(周期)天井狙い】</span></h3>
+<h3 class="wp-block-heading">【AT間(周期)天井狙い】</h3>
 
 
 
@@ -80,7 +71,7 @@ ST駆け抜け後　最大5周期<br>
 
 
 
-<h3 class="wp-block-heading"><span id="i-3">【ディスク狙い】</span></h3>
+<h3 class="wp-block-heading">【ディスク狙い】</h3>
 
 
 
@@ -88,7 +79,7 @@ ST駆け抜け後　最大5周期<br>
 
 
 
-<h3 class="wp-block-heading"><span id="i-4">【実ゲーム天井狙い】</span></h3>
+<h3 class="wp-block-heading">【実ゲーム天井狙い】</h3>
 
 
 
@@ -100,7 +91,7 @@ ST駆け抜け後　最大5周期<br>
 
 
 
-<h3 class="wp-block-heading"><span id="pt">【pt(スター数)狙い】</span></h3>
+<h3 class="wp-block-heading">【pt(スター数)狙い】</h3>
 
 
 
@@ -113,7 +104,7 @@ ST駆け抜け後　最大5周期<br>
 
 
 
-<h3 class="wp-block-heading"><span id="i-5">【大ガルバチャレンジ失敗後狙い】</span></h3>
+<h3 class="wp-block-heading">【大ガルバチャレンジ失敗後狙い】</h3>
 
 
 
@@ -133,7 +124,7 @@ ST駆け抜け後　最大5周期<br>
 
 
 
-<h3 class="wp-block-heading"><span id="ST4">【ST単発4連続後狙い】</span></h3>
+<h3 class="wp-block-heading">【ST単発4連続後狙い】</h3>
 
 
 
@@ -159,7 +150,7 @@ ST駆け抜け後　最大5周期<br>
 
 
 
-<h3 class="wp-block-heading"><span id="i-6">【有利区間切れ狙い】</span></h3>
+<h3 class="wp-block-heading">【有利区間切れ狙い】</h3>
 
 
 
@@ -171,7 +162,7 @@ ST駆け抜け後　最大5周期<br>
 
 
 
-<h2 class="wp-block-heading"><span id="i-7"><strong>やめ時</strong></span></h2>
+<h2 class="wp-block-heading"><strong>やめ時</strong></h2>
 
 
 
@@ -208,27 +199,15 @@ Roseliaは3周期まで？</p>
 
 
 
-<h2 class="wp-block-heading"><span id="i-8"><strong>その他</strong></span></h2>
+<h2 class="wp-block-heading"><strong>その他</strong></h2>
 
 
 
-<h3 class="wp-block-heading"><span id="i-9">モード</span></h3>
+<h3 class="wp-block-heading">モード</h3>
 
 
 
-<figure class="wp-block-image"><a href="../img/8561205fd2232f48.jpg"><img width="282" height="300" src="../img/0ca4ea3a1ff6c2f4.jpg" alt="" class="wp-image-704" decoding="async" sizes="auto, (max-width: 282px) 100vw, 282px"></a></figure>
-
-
-
-<p class="wp-block-paragraph"></p>
-
-
-
-<h3 class="wp-block-heading"><span id="i-10">ステチェン示唆</span></h3>
-
-
-
-<figure class="wp-block-image"><a href="../img/a725689f9b8271fb.jpg"><img width="252" height="300" src="../img/11c80281ffba9774.jpg" alt="" class="wp-image-313" decoding="async" sizes="auto, (max-width: 252px) 100vw, 252px"></a></figure>
+<figure class="wp-block-image"><a href="../img/8561205fd2232f48.jpg"><img width="282" height="300" src="../img/0ca4ea3a1ff6c2f4.jpg" alt="" class="wp-image-704"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/02/3DCF1E78-C729-4012-8FA7-9B82FF979DE0-282x300.jpg 282w, https://suroschool.jp/wp-content/uploads/2025/02/3DCF1E78-C729-4012-8FA7-9B82FF979DE0-963x1024.jpg 963w, https://suroschool.jp/wp-content/uploads/2025/02/3DCF1E78-C729-4012-8FA7-9B82FF979DE0-768x817.jpg 768w, https://suroschool.jp/wp-content/uploads/2025/02/3DCF1E78-C729-4012-8FA7-9B82FF979DE0.jpg 1170w" sizes="auto, (max-width: 282px) 100vw, 282px" /></a></figure>
 
 
 
@@ -236,11 +215,11 @@ Roseliaは3周期まで？</p>
 
 
 
-<h3 class="wp-block-heading"><span id="i-11">隠しボイス示唆</span></h3>
+<h3 class="wp-block-heading">ステチェン示唆</h3>
 
 
 
-<figure class="wp-block-image"><a href="../img/721ea96689d1332f.jpg"><img width="213" height="300" src="../img/2b5fe039a1fcfc7d.jpg" alt="" class="wp-image-314" decoding="async" sizes="auto, (max-width: 213px) 100vw, 213px"></a></figure>
+<figure class="wp-block-image"><a href="../img/a725689f9b8271fb.jpg"><img width="252" height="300" src="../img/11c80281ffba9774.jpg" alt="" class="wp-image-313"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/02/IMG_3472-252x300.jpg 252w, https://suroschool.jp/wp-content/uploads/2025/02/IMG_3472-860x1024.jpg 860w, https://suroschool.jp/wp-content/uploads/2025/02/IMG_3472-768x914.jpg 768w, https://suroschool.jp/wp-content/uploads/2025/02/IMG_3472.jpg 1170w" sizes="auto, (max-width: 252px) 100vw, 252px" /></a></figure>
 
 
 
@@ -248,11 +227,23 @@ Roseliaは3周期まで？</p>
 
 
 
-<h3 class="wp-block-heading"><span id="ST">ST終了時の開始バンド</span></h3>
+<h3 class="wp-block-heading">隠しボイス示唆</h3>
 
 
 
-<figure class="wp-block-image"><a href="../img/7a90713b74211df7.jpg"><img width="241" height="300" src="../img/85a0985e35d7a6e7.jpg" alt="" class="wp-image-315" decoding="async" sizes="auto, (max-width: 241px) 100vw, 241px"></a></figure>
+<figure class="wp-block-image"><a href="../img/721ea96689d1332f.jpg"><img width="213" height="300" src="../img/2b5fe039a1fcfc7d.jpg" alt="" class="wp-image-314"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/02/7C1870A5-E445-4354-B49B-30FE3B7D98AE-213x300.jpg 213w, https://suroschool.jp/wp-content/uploads/2025/02/7C1870A5-E445-4354-B49B-30FE3B7D98AE-727x1024.jpg 727w, https://suroschool.jp/wp-content/uploads/2025/02/7C1870A5-E445-4354-B49B-30FE3B7D98AE-768x1082.jpg 768w, https://suroschool.jp/wp-content/uploads/2025/02/7C1870A5-E445-4354-B49B-30FE3B7D98AE-1090x1536.jpg 1090w, https://suroschool.jp/wp-content/uploads/2025/02/7C1870A5-E445-4354-B49B-30FE3B7D98AE.jpg 1170w" sizes="auto, (max-width: 213px) 100vw, 213px" /></a></figure>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<h3 class="wp-block-heading">ST終了時の開始バンド</h3>
+
+
+
+<figure class="wp-block-image"><a href="../img/7a90713b74211df7.jpg"><img width="241" height="300" src="../img/85a0985e35d7a6e7.jpg" alt="" class="wp-image-315"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/02/IMG_3493-241x300.jpg 241w, https://suroschool.jp/wp-content/uploads/2025/02/IMG_3493-821x1024.jpg 821w, https://suroschool.jp/wp-content/uploads/2025/02/IMG_3493-768x958.jpg 768w, https://suroschool.jp/wp-content/uploads/2025/02/IMG_3493.jpg 1170w" sizes="auto, (max-width: 241px) 100vw, 241px" /></a></figure>
 
 
 
@@ -264,7 +255,7 @@ Roseliaは3周期まで？</p>
 
 
 
-<h2 class="wp-block-heading"><span id="i-12"><strong>参考元</strong></span></h2>
+<h2 class="wp-block-heading"><strong>参考元</strong></h2>
 
 
 
@@ -281,40 +272,33 @@ Roseliaは3周期まで？</p>
 
 
 <p class="wp-block-paragraph"><a href="https://note.com/kenslodata/n/nc28afc00207e" target="_blank" rel="noopener">けんけん＠スロットデータ分析</a></p>
-<div class="post-views content-post post-310 entry-meta load-static">
-				<span class="post-views-icon dashicons dashicons-chart-bar"></span> <span class="post-views-label">Post Views:</span> <span class="post-views-count">399</span>
-			</div>
-          <!-- 目次ハンバーガー（右下固定・常時）。中身はJSが見出し(h2/h3)から生成。会員ロック時は空→自動非表示 --></section>
-  <section class="panel" data-panel="kaiseki"><div class="kaiseki-toolbar">
-              
-            </div>
-            <div class="kaiseki-accordion">
-              <details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i">基本情報</span></summary><div class="kaiseki-section-body">
+</section>
+  <section class="panel" data-panel="kaiseki"><h2>基本情報</h2>
 <ul>
 <li>メーカー: オリンピアエステート</li>
 <li>機械割: 97.6% 〜 112.5%</li>
 <li>導入開始日: 2024年11月05日（火）</li>
 <li>ゲーム性概要: 通常時は成立役に応じてスターポイントを貯めていき、250スターになると1周期に到達して前兆へ移行。最終的に演出をクリアすればボーナスとなり、ボーナス後は必ずSTへ突入する。 ST「ガールズバンドパーティ！」は20G or 無限継続で、ボーナス当選で再セット。ボーナスは「クライマックスライブ！」と「ライブジャック」のいずれかで枚数を決定しボーナス中は枚数上乗せや次回無限ST移行を抽選する。 特定の条件を満たすと、上位ST突入をかけた「大ガールズバンドパーティ！チャレンジ」へ突入。成功期待度は約50%で、上位ST中は当選したボーナスがすべて「クライマックスライブ！」になる。</li>
 </ul>
-<p><img alt="Lバンドリ！（パチスロ）のリール配列" src="https://p-town.dmm.com/upload/machines/4641/reel.jpg?t=1779358806" decoding="async"></p>
-<p><img alt="Lバンドリ！（パチスロ）のゲームフロー" src="https://p-town.dmm.com/upload/machines/4641/flow.jpg?t=1779358806" decoding="async"></p>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-2">打ち方</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-3">打ち方・小役</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-4">打ち方（小役狙い）</span></h4>
+<p><img alt="Lバンドリ！（パチスロ）のリール配列" src="https://p-town.dmm.com/upload/machines/4641/reel.jpg?t=1779358806"></p>
+<p><img alt="Lバンドリ！（パチスロ）のゲームフロー" src="https://p-town.dmm.com/upload/machines/4641/flow.jpg?t=1779358806"></p>
+<h2>打ち方</h2>
+<h3>打ち方・小役</h3>
+<h4>打ち方（小役狙い）</h4>
 <p>［最初に狙う絵柄］</p>
-<p><img alt="スマスロLバンドリ！打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-01-01.jpg" decoding="async"></p>
+<p><img alt="スマスロLバンドリ！打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-01-01.jpg"></p>
 <p>左リール枠上から上段付近にBARを目押し。</p>
 <p>［スイカ停止時は中リールを目押し］</p>
-<p><img alt="スマスロLバンドリ！打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-01-02.jpg" decoding="async"></p>
+<p><img alt="スマスロLバンドリ！打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-01-02.jpg"></p>
 <p>［レア役の停止例］</p>
-<p><img alt="スマスロLバンドリ！打ち方レア役" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-01-03.jpg" decoding="async"></p>
+<p><img alt="スマスロLバンドリ！打ち方レア役" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-01-03.jpg"></p>
 <p>※強チャンス目は中リールにスイカを狙うのが条件（スイカの取りこぼしは含まない）</p>
-<h4><span id="NG">変則押しはNG</span></h4>
-<p><img alt="スマスロLバンドリ！打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-01-04.jpg" decoding="async"></p>
-<p>ナビ非発生時は左1stでの消化を推奨だ。</p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-5">解析情報通常時</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-6">小役関連</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-7">小役確率</span></h4>
+<h4>変則押しはNG</h4>
+<p><img alt="スマスロLバンドリ！打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-01-04.jpg"></p>
+<p>ナビ非発生時は左1stでの消化を推奨だ。</p>
+<h2>解析情報通常時</h2>
+<h3>小役関連</h3>
+<h4>小役確率</h4>
 <table>
 <thead>
 <tr>
@@ -357,7 +341,7 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-<h4><span id="i-8">状態ごとのバンドリンク役確率</span></h4>
+<h4>状態ごとのバンドリンク役確率</h4>
 <table>
 <thead>
 <tr>
@@ -392,10 +376,10 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-<h4><span id="i-9">リールロック</span></h4>
-<p><img alt="スマスロLバンドリ！リールロック" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/1102/1102-04-01.jpg" decoding="async"></p>
+<h4>リールロック</h4>
+<p><img alt="スマスロLバンドリ！リールロック" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/1102/1102-04-01.jpg"></p>
 <p>発生した時点で夢撃ち成功以上濃厚となる。</p>
-<h4><span id="i-10">リールロック段階ごとの特徴</span></h4>
+<h4>リールロック段階ごとの特徴</h4>
 <table>
 <thead>
 <tr>
@@ -422,7 +406,7 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-<h4><span id="i-11">リールロック確率</span></h4>
+<h4>リールロック確率</h4>
 <table>
 <thead>
 <tr>
@@ -449,7 +433,7 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-<h4><span id="i-12">スターブースト当選率</span></h4>
+<h4>スターブースト当選率</h4>
 <table>
 <thead>
 <tr>
@@ -486,10 +470,10 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-13">内部状態関連</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-14">内部状態移行率</span></h4>
+<h3>内部状態関連</h3>
+<h4>内部状態移行率</h4>
 <p>通常・高確・超高確の3種類があり、レア役成立時のスターブースト当選率が変化。レア役で昇格を、ハズレで転落を抽選する。</p>
-<h4><span id="i-15">［通常中］内部状態移行率</span></h4>
+<h4>［通常中］内部状態移行率</h4>
 <table>
 <thead>
 <tr>
@@ -544,7 +528,7 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-<h4><span id="i-16">［高確中］内部状態移行率</span></h4>
+<h4>［高確中］内部状態移行率</h4>
 <table>
 <thead>
 <tr>
@@ -599,7 +583,7 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-<h4><span id="i-17">［超高確中］内部状態移行率</span></h4>
+<h4>［超高確中］内部状態移行率</h4>
 <table>
 <thead>
 <tr>
@@ -654,8 +638,8 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-18">モード</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-19">モードごとの天井周期</span></h4>
+<h3>モード</h3>
+<h4>モードごとの天井周期</h4>
 <table>
 <thead>
 <tr>
@@ -690,7 +674,7 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-<h4><span id="i-20">特定タイミングでのモード移行</span></h4>
+<h4>特定タイミングでのモード移行</h4>
 <table>
 <thead>
 <tr>
@@ -713,11 +697,11 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-21">スターポイント（周期抽選）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-22">周期抽選概要</span></h4>
-<p><img alt="スマスロLバンドリ！周期抽選" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-02-01.jpg" decoding="async"></p>
+<h3>スターポイント（周期抽選）</h3>
+<h4>周期抽選概要</h4>
+<p><img alt="スマスロLバンドリ！周期抽選" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-02-01.jpg"></p>
 <p>通常時は毎ゲーム成立役に応じてスターポイントを加算。250pt貯まると1周期でATを抽選する。 スターポイント獲得の特化ゾーン「スターブースト」も存在。</p>
-<h4><span id="i-23">周期抽選 性能</span></h4>
+<h4>周期抽選 性能</h4>
 <table>
 <thead>
 <tr>
@@ -745,12 +729,12 @@ Roseliaは3周期まで？</p>
 </tbody>
 </table>
 <p>［ディスクの色で期待度示唆］</p>
-<p><img alt="スマスロLバンドリ！周期抽選" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-02-03.jpg" decoding="async"></p>
+<p><img alt="スマスロLバンドリ！周期抽選" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-02-03.jpg"></p>
 <p>ディスクの色で当該周期の期待度を、バンドの種類で周期天井回数を示唆。出現後はリールの下側に表示されるのでいつでも確認できる。赤や紫ならチャンスだ。</p>
-<h4><span id="i-24">サポートバンド</span></h4>
-<p><img alt="スマスロLバンドリ！周期抽選サポートバンド" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-03-01.jpg" decoding="async"></p>
+<h4>サポートバンド</h4>
+<p><img alt="スマスロLバンドリ！周期抽選サポートバンド" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-03-01.jpg"></p>
 <p>通常時はサポートバンドを獲得することで様々な恩恵を受けることができる。周期開始時の 27.0% でサポートバンドを獲得。獲得後は250スター到達（周期到達）まで滞在し続ける。</p>
-<h4><span id="i-25">小役別の獲得スターポイント</span></h4>
+<h4>小役別の獲得スターポイント</h4>
 <table>
 <thead>
 <tr>
@@ -778,11 +762,11 @@ Roseliaは3周期まで？</p>
 </tbody>
 </table>
 <p>※獲得ポイントは5pt、10pt、20pt、30pt、50pt、100pt、250pt</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-26">スターブースト</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-27">スターブースト概要</span></h4>
-<p><img alt="スマスロLバンドリ！周期抽選スターブースト" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-04-01.jpg" decoding="async"></p>
+<h3>スターブースト</h3>
+<h4>スターブースト概要</h4>
+<p><img alt="スマスロLバンドリ！周期抽選スターブースト" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-04-01.jpg"></p>
 <p>スターポイント特化ゾーンで、2種類の告知パターンを任意に選択できる。 消化中は小役を引けばポイントが加算。レア役成立時はポイントに加え、ゲーム数が再セットされる。</p>
-<h4><span id="i-28">スターブースト 性能</span></h4>
+<h4>スターブースト 性能</h4>
 <table>
 <thead>
 <tr>
@@ -814,11 +798,11 @@ Roseliaは3周期まで？</p>
 </tbody>
 </table>
 <p>［先告知タイプ］</p>
-<p><img alt="スマスロLバンドリ！周期抽選スターブースト" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-04-03.jpg" decoding="async"></p>
+<p><img alt="スマスロLバンドリ！周期抽選スターブースト" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-04-03.jpg"></p>
 <p>ポイントを獲得するごとに告知。</p>
 <p>［後告知タイプ］ ポイント獲得時に星アイコンを獲得して、終了時にまとめて告知。</p>
-<p><img alt="スマスロLバンドリ！周期抽選スターブースト" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-04-04.jpg" decoding="async"></p>
-<h4><span id="i-29">小役別の獲得スターポイント</span></h4>
+<p><img alt="スマスロLバンドリ！周期抽選スターブースト" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-04-04.jpg"></p>
+<h4>小役別の獲得スターポイント</h4>
 <table>
 <thead>
 <tr>
@@ -846,21 +830,21 @@ Roseliaは3周期まで？</p>
 </tbody>
 </table>
 <p>※獲得ポイントは10pt、20pt、30pt、50pt、100pt、250pt</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-30">ストーリーステージ（前兆）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-31">ストーリーステージ概要</span></h4>
-<p><img alt="スマスロLバンドリ！前兆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-05-01.jpg" decoding="async"></p>
+<h3>ストーリーステージ（前兆）</h3>
+<h4>ストーリーステージ概要</h4>
+<p><img alt="スマスロLバンドリ！前兆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-05-01.jpg"></p>
 <p>導入パート・進行パート・ジャッジパートの3つで構成されたAT前兆。 ストーリーは全5種類で、エフェクトの色や演出パターンで期待度が示唆される。</p>
 <p>［ストーリーの種類］</p>
-<p><img alt="スマスロLバンドリ！前兆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-05-02.jpg" decoding="async"></p>
+<p><img alt="スマスロLバンドリ！前兆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-05-02.jpg"></p>
 <p>［エフェクトの色］</p>
-<p><img alt="スマスロLバンドリ！前兆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-05-03.jpg" decoding="async"></p>
+<p><img alt="スマスロLバンドリ！前兆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-05-03.jpg"></p>
 <p>青＜黄＜緑＜赤＜虹の順で期待度がアップする。</p>
 <p>［期待度を示唆する多彩な演出］</p>
-<p><img alt="スマスロLバンドリ！前兆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-05-04.jpg" decoding="async"></p>
+<p><img alt="スマスロLバンドリ！前兆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-05-04.jpg"></p>
 <p>［ジャッジパート］</p>
-<p><img alt="スマスロLバンドリ！前兆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-05-05.jpg" decoding="async"></p>
+<p><img alt="スマスロLバンドリ！前兆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-05-05.jpg"></p>
 <p>カウントアップ形式の連続演出で成否が告知される。</p>
-<h4><span id="i-32">クライマックスジャッジ中・成功書き換え当選率</span></h4>
+<h4>クライマックスジャッジ中・成功書き換え当選率</h4>
 <table>
 <thead>
 <tr>
@@ -876,15 +860,15 @@ Roseliaは3周期まで？</p>
 </tbody>
 </table>
 <p>クライマックスジャッジ中の強レア役は書き換え確定。すでに成功の場合はクライマックスライブ！のストック獲得を抽選する。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-33">演出動画</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-34">ロングフリーズ</span></h4>
-<p>リールロック3段階発生時に、赤7がハズれるとロングフリーズが発生。クライマックスライブを消化後、大ガールズバンドパーティ！（上位AT）へ直行する。</p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-35">解析情報ボーナス時</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-36">初当り時のボーナス</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-37">エピローグボーナス概要</span></h4>
-<p><img alt="スマスロLバンドリ！初当りボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-06-01.jpg" decoding="async"></p>
+<h3>演出動画</h3>
+<h4>ロングフリーズ</h4>
+<p>リールロック3段階発生時に、赤7がハズれるとロングフリーズが発生。クライマックスライブを消化後、大ガールズバンドパーティ！（上位AT）へ直行する。</p>
+<h2>解析情報ボーナス時</h2>
+<h3>初当り時のボーナス</h3>
+<h4>エピローグボーナス概要</h4>
+<p><img alt="スマスロLバンドリ！初当りボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-06-01.jpg"></p>
 <p>初当り時は基本的にエピローグボーナスを経由してSTへ移行。消化中は無限STを抽選する。</p>
-<h4><span id="i-38">エピローグボーナス 性能</span></h4>
+<h4>エピローグボーナス 性能</h4>
 <table>
 <thead>
 <tr>
@@ -911,10 +895,10 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-<h4><span id="i-39">スタービートボーナス概要</span></h4>
-<p><img alt="スマスロLバンドリ！初当りボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-07-01.jpg" decoding="async"></p>
+<h4>スタービートボーナス概要</h4>
+<p><img alt="スマスロLバンドリ！初当りボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-07-01.jpg"></p>
 <p>初当り時のプレミアムパターン的な存在で、終了後は上位STへ直行する。</p>
-<h4><span id="i-40">スタービートボーナス 性能</span></h4>
+<h4>スタービートボーナス 性能</h4>
 <table>
 <thead>
 <tr>
@@ -941,11 +925,11 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="ST">ガールズバンドパーティ！（ST）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="ST-2">ST概要</span></h4>
-<p><img alt="スマスロLバンドリ！ST" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-08-01.jpg" decoding="async"></p>
+<h3>ガールズバンドパーティ！（ST）</h3>
+<h4>ST概要</h4>
+<p><img alt="スマスロLバンドリ！ST" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-08-01.jpg"></p>
 <p>20GのSTで、消化中はおもにレア役でボーナスを抽選。レア役成立後の夢撃ち演出（擬似遊技）に成功すればボーナスとなる。 ディスクの色で夢撃ち演出の期待度が示唆されていて、夢撃ち演出ごとにディスクとバンドが変化。黒ディスクは成功すれば上位STをかけた「大ガールズバンドパーティ！チャレンジ」をストックする。</p>
-<h4><span id="ST-3">ガールズバンドパーティ！（ST）性能</span></h4>
+<h4>ガールズバンドパーティ！（ST）性能</h4>
 <table>
 <thead>
 <tr>
@@ -976,7 +960,7 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-<h4><span id="i-41">ガールズバンドパーティ！初当り確率</span></h4>
+<h4>ガールズバンドパーティ！初当り確率</h4>
 <table>
 <thead>
 <tr>
@@ -1007,7 +991,7 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-<h4><span id="i-42">ディスクの色別・夢撃ち演出成功期待度＆特徴</span></h4>
+<h4>ディスクの色別・夢撃ち演出成功期待度＆特徴</h4>
 <table>
 <thead>
 <tr>
@@ -1035,18 +1019,18 @@ Roseliaは3周期まで？</p>
 </tbody>
 </table>
 <p>［夢撃ち演出］</p>
-<p><img alt="スマスロLバンドリ！ST" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-08-04.jpg" decoding="async"></p>
+<p><img alt="スマスロLバンドリ！ST" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-08-04.jpg"></p>
 <p>青がデフォルト、赤なら大チャンス、虹ならボーナス濃厚だ。</p>
 <p>［黒ディスク］</p>
-<p><img alt="スマスロLバンドリ！ST" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-08-05.jpg" decoding="async"></p>
+<p><img alt="スマスロLバンドリ！ST" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-08-05.jpg"></p>
 <p>ディスクは通常時と同じくリールの下側に表示。ディスク5枚目以降は黒の出現率がアップする。</p>
 <p>［バンドの種類］</p>
-<p><img alt="スマスロLバンドリ！ST" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-08-06.jpg" decoding="async"></p>
+<p><img alt="スマスロLバンドリ！ST" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-08-06.jpg"></p>
 <p>バンドによってクライマックスライブ！当選時の初期枚数特化ゾーンの種類が変化する。</p>
 <p>［大ガールズバンドパーティ！チャレンジストック］</p>
-<p><img alt="スマスロLバンドリ！ST" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-08-07.jpg" decoding="async"></p>
+<p><img alt="スマスロLバンドリ！ST" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-08-07.jpg"></p>
 <p>基本的にボーナス確定後のPUSHボタンでストック獲得を告知。ストックはST終了時に使用される。</p>
-<h4><span id="i-43">ボーナス当選期待度</span></h4>
+<h4>ボーナス当選期待度</h4>
 <table>
 <thead>
 <tr>
@@ -1105,11 +1089,11 @@ Roseliaは3周期まで？</p>
 </table>
 <p>※前兆中の書き換えを考慮しない期待度</p>
 <p>前兆中のレア役は書き換え濃厚。成功確定後はクライマックスライブ！への書き換え抽選がおこなわれる（レア役は書き換え濃厚）。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="ST-4">ST中ボーナス</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-44">ライブジャック概要</span></h4>
-<p><img alt="スマスロLバンドリ！ST中ボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-09-01.jpg" decoding="async"></p>
+<h3>ST中ボーナス</h3>
+<h4>ライブジャック概要</h4>
+<p><img alt="スマスロLバンドリ！ST中ボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-09-01.jpg"></p>
 <p>100枚を獲得してすぐにボーナスパートへ移行する。</p>
-<h4><span id="i-45">ライブジャック性能</span></h4>
+<h4>ライブジャック性能</h4>
 <table>
 <thead>
 <tr>
@@ -1128,10 +1112,10 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-<h4><span id="i-46">クライマックスライブ！概要</span></h4>
-<p><img alt="スマスロLバンドリ！STクライマックスライブ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-10-01.jpg" decoding="async"></p>
+<h4>クライマックスライブ！概要</h4>
+<p><img alt="スマスロLバンドリ！STクライマックスライブ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-10-01.jpg"></p>
 <p>開始時にSTクリア時のバンドに対応した特化ゾーンで、ボーナスの枚数を決定。枚数決定後はボーナスパートへ移行する。 超強力な上乗せ性能を秘めた対バンスペシャルライブへの発展することもある。</p>
-<h4><span id="i-47">クライマックスライブ！性能</span></h4>
+<h4>クライマックスライブ！性能</h4>
 <table>
 <thead>
 <tr>
@@ -1158,7 +1142,7 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-<h4><span id="i-48">タイプごとの特徴</span></h4>
+<h4>タイプごとの特徴</h4>
 <table>
 <thead>
 <tr>
@@ -1181,7 +1165,7 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-<h4><span id="i-49">タイプに対応したバンド</span></h4>
+<h4>タイプに対応したバンド</h4>
 <table>
 <thead>
 <tr>
@@ -1205,24 +1189,24 @@ Roseliaは3周期まで？</p>
 </tbody>
 </table>
 <p>［タイプは開始時に表示］</p>
-<p><img alt="スマスロLバンドリ！STクライマックスライブ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-10-05.jpg" decoding="async"></p>
+<p><img alt="スマスロLバンドリ！STクライマックスライブ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-10-05.jpg"></p>
 <p>バンドごとにタイプは決まっているが、画面でも表示してくれる。</p>
 <p>［パネルスライドタイプ］</p>
-<p><img alt="スマスロLバンドリ！STクライマックスライブ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-10-06.jpg" decoding="async"></p>
+<p><img alt="スマスロLバンドリ！STクライマックスライブ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-10-06.jpg"></p>
 <p>［パネル増加タイプ］</p>
-<p><img alt="スマスロLバンドリ！STクライマックスライブ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-10-07.jpg" decoding="async"></p>
+<p><img alt="スマスロLバンドリ！STクライマックスライブ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-10-07.jpg"></p>
 <p>［パネル昇格タイプ］</p>
-<p><img alt="スマスロLバンドリ！STクライマックスライブ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-10-08.jpg" decoding="async"></p>
+<p><img alt="スマスロLバンドリ！STクライマックスライブ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-10-08.jpg"></p>
 <p>［対バンスペシャルライブ］</p>
-<p><img alt="スマスロLバンドリ！STクライマックスライブ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-10-08a.jpg" decoding="async"></p>
+<p><img alt="スマスロLバンドリ！STクライマックスライブ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-10-08a.jpg"></p>
 <p>クライマックスライブ開始時に発展する可能性がある。</p>
 <p>［アンコール］</p>
-<p><img alt="スマスロLバンドリ！STクライマックスライブ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-10-09.jpg" decoding="async"></p>
+<p><img alt="スマスロLバンドリ！STクライマックスライブ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-10-09.jpg"></p>
 <p>アンコールが発生するとボーナスパート消化後、再度クライマックスライブ！に突入。対バンだった場合は対バンに再突入するので超激アツだ。</p>
-<h4><span id="i-50">ボーナスパート</span></h4>
-<p><img alt="スマスロLバンドリ！STボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-10-10.jpg" decoding="async"></p>
+<h4>ボーナスパート</h4>
+<p><img alt="スマスロLバンドリ！STボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-10-10.jpg"></p>
 <p>初期枚数決定ゾーンで獲得した枚数を消化するゾーン。消化中は無限STや差枚数上乗せが抽選される。</p>
-<h4><span id="i-51">ボーナスパート性能</span></h4>
+<h4>ボーナスパート性能</h4>
 <table>
 <thead>
 <tr>
@@ -1245,9 +1229,9 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-<p><img alt="スマスロLバンドリ！STボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-10-12.jpg" decoding="async"></p>
+<p><img alt="スマスロLバンドリ！STボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-10-12.jpg"></p>
 <p>ボーナスの差枚数上乗せも抽選！</p>
-<h4><span id="i-52">ボーナス中の上乗せ枚数</span></h4>
+<h4>ボーナス中の上乗せ枚数</h4>
 <table>
 <thead>
 <tr>
@@ -1271,7 +1255,7 @@ Roseliaは3周期まで？</p>
 </tbody>
 </table>
 <p>※上乗せされる枚数は10、30、50、100枚のいずれか</p>
-<h4><span id="ST-5">無限ST抽選（クライマックスライブ！消化中のみ）</span></h4>
+<h4>無限ST抽選（クライマックスライブ！消化中のみ）</h4>
 <table>
 <thead>
 <tr>
@@ -1294,7 +1278,7 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-<h4><span id="i-53">ボーナス比率</span></h4>
+<h4>ボーナス比率</h4>
 <table>
 <thead>
 <tr>
@@ -1316,7 +1300,7 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-<h4><span id="i-54">登場バンドの振り分け＆平均上乗せ枚数</span></h4>
+<h4>登場バンドの振り分け＆平均上乗せ枚数</h4>
 <table>
 <thead>
 <tr>
@@ -1327,7 +1311,7 @@ Roseliaは3周期まで？</p>
 </thead>
 <tbody>
 <tr>
-<td>Poppin’Party</td>
+<td>Poppin'Party</td>
 <td>各14.3%</td>
 <td>約305枚</td>
 </tr>
@@ -1364,7 +1348,7 @@ Roseliaは3周期まで？</p>
 </tbody>
 </table>
 <p>※平均上乗せ枚数は対バン非発生時のもの</p>
-<h4><span id="i-55">対バン発生時・平均上乗せ枚数</span></h4>
+<h4>対バン発生時・平均上乗せ枚数</h4>
 <table>
 <thead>
 <tr>
@@ -1388,7 +1372,7 @@ Roseliaは3周期まで？</p>
 </tbody>
 </table>
 <p>各バンドの振り分けは均等だ。</p>
-<h4><span id="i-56">［パネル増加タイプ］基本ルール</span></h4>
+<h4>［パネル増加タイプ］基本ルール</h4>
 <table>
 <thead>
 <tr>
@@ -1412,7 +1396,7 @@ Roseliaは3周期まで？</p>
 </tbody>
 </table>
 <p>小役成立でパネル（上乗せ）を獲得していき、2択のベルナビ失敗までに獲得したパネル分の枚数を上乗せ。パネルは最大で5枚まで獲得することができる。 ハロー、ハッピーワールド！は＋50枚の振り分けがある代わりに、＋200枚の振り分けがAfterglowよりも多く、5枚目到達時に必ず倍チャレンジに発展するのが特徴だ。</p>
-<h4><span id="Afterglow14">［Afterglow］1～4枚目の獲得枚数振り分け</span></h4>
+<h4>［Afterglow］1～4枚目の獲得枚数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1467,7 +1451,7 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-<h4><span id="_14">［ハロー、ハッピーワールド！］ 1～4枚目の獲得枚数振り分け</span></h4>
+<h4>［ハロー、ハッピーワールド！］ 1～4枚目の獲得枚数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1522,7 +1506,7 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-<h4><span id="14">［対バン］1～4枚目の獲得枚数振り分け</span></h4>
+<h4>［対バン］1～4枚目の獲得枚数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1545,7 +1529,7 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-<h4><span id="5">5枚目の獲得枚数振り分け</span></h4>
+<h4>5枚目の獲得枚数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1573,10 +1557,10 @@ Roseliaは3周期まで？</p>
 </tbody>
 </table>
 <p>［倍チャレンジ］</p>
-<p><img alt="スマスロバンドリクライマックスライブ倍チャレンジ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/1113/1113-03-05.jpg" decoding="async"></p>
-<p><img alt="スマスロバンドリクライマックスライブ倍チャレンジ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/1113/1113-03-06.jpg" decoding="async"></p>
+<p><img alt="スマスロバンドリクライマックスライブ倍チャレンジ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/1113/1113-03-05.jpg"></p>
+<p><img alt="スマスロバンドリクライマックスライブ倍チャレンジ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/1113/1113-03-06.jpg"></p>
 <p>チャレンジ成功で、それまでに獲得していた枚数が2倍に！</p>
-<h4><span id="i-57">［パネルスライドタイプ］基本ルール</span></h4>
+<h4>［パネルスライドタイプ］基本ルール</h4>
 <table>
 <thead>
 <tr>
@@ -1600,7 +1584,7 @@ Roseliaは3周期まで？</p>
 </tbody>
 </table>
 <p>小役成立でパネルに表示された枚数を獲得。一度に複数のパネルを獲得する可能性もある。上乗せしてもしなくても、1Gごとに次のパネルへスライド。100枚以上の枚数選択時の一部で歌パネルが出現する。 Poppin’Partyはハイタッチの振り分けが多い分、＋100枚の振り分けが低めに設定されている。</p>
-<h4><span id="i-58">初期パネルの振り分け</span></h4>
+<h4>初期パネルの振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1717,7 +1701,7 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-<h4><span id="5-2">［5の倍数目以外］追加されるパネルの振り分け</span></h4>
+<h4>［5の倍数目以外］追加されるパネルの振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1834,7 +1818,7 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-<h4><span id="5-3">［5の倍数目］追加されるパネルの振り分け</span></h4>
+<h4>［5の倍数目］追加されるパネルの振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1886,7 +1870,7 @@ Roseliaは3周期まで？</p>
 </tbody>
 </table>
 <p>※バンドの種類は不問</p>
-<h4><span id="i-59">パネル獲得枚数振り分け</span></h4>
+<h4>パネル獲得枚数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1966,10 +1950,10 @@ Roseliaは3周期まで？</p>
 </tbody>
 </table>
 <p>［ハイタッチ］</p>
-<p><img alt="スマスロバンドリクライマックスライブ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/1113/1113-04-06.jpg" decoding="async"></p>
-<p><img alt="スマスロバンドリクライマックスライブ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/1113/1113-04-07.jpg" decoding="async"></p>
+<p><img alt="スマスロバンドリクライマックスライブ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/1113/1113-04-06.jpg"></p>
+<p><img alt="スマスロバンドリクライマックスライブ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/1113/1113-04-07.jpg"></p>
 <p>2枚分のパネルを使って出現。 20枚×ループ抽選がおこなわれ、ハイタッチが続く限り上乗せを獲得する。</p>
-<h4><span id="i-60">ハイタッチのループ率振り分け</span></h4>
+<h4>ハイタッチのループ率振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1993,9 +1977,9 @@ Roseliaは3周期まで？</p>
 </tbody>
 </table>
 <p>［歌］</p>
-<p><img alt="スマスロバンドリクライマックスライブ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/1113/1113-04-08.jpg" decoding="async"></p>
+<p><img alt="スマスロバンドリクライマックスライブ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/1113/1113-04-08.jpg"></p>
 <p>100枚以上のパネルの一部が歌パネル（画像の一番右のパネル）に変化。</p>
-<h4><span id="i-61">［パネル昇格タイプ］基本ルール</span></h4>
+<h4>［パネル昇格タイプ］基本ルール</h4>
 <table>
 <thead>
 <tr>
@@ -2019,7 +2003,7 @@ Roseliaは3周期まで？</p>
 </tbody>
 </table>
 <p>バンドの種類と成立役を参照して、毎ゲームパネル（枚数）が昇格。最終的に昇格させたパネル分を合計した枚数を獲得する。</p>
-<h4><span id="Roselia">［Roselia］昇格枚数振り分け</span></h4>
+<h4>［Roselia］昇格枚数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2134,7 +2118,7 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-<h4><span id="RAISE_A_SUILEN">［RAISE A SUILEN］昇格枚数振り分け</span></h4>
+<h4>［RAISE A SUILEN］昇格枚数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2249,7 +2233,7 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-<h4><span id="i-62">［対バン］昇格枚数振り分け</span></h4>
+<h4>［対バン］昇格枚数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2364,13 +2348,13 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-<h4><span id="i-63">ボーナス種別ジャッジゲームのレア役</span></h4>
-<p><img alt="スマスロバンドリボーナス種別ジャッジゲームのレア役" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/1113/1113-14-01.jpg" decoding="async"></p>
+<h4>ボーナス種別ジャッジゲームのレア役</h4>
+<p><img alt="スマスロバンドリボーナス種別ジャッジゲームのレア役" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/1113/1113-14-01.jpg"></p>
 <p>内部的にライブジャックだった場合でも、ボーナス種別のジャッジゲームでレア役を引けばクライマックスライブ！確定だ。</p>
-<h4><span id="i-64">対バン当選率</span></h4>
-<p><img alt="スマスロバンドリ対バン当選率" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/1113/1113-15-01.jpg" decoding="async"></p>
+<h4>対バン当選率</h4>
+<p><img alt="スマスロバンドリ対バン当選率" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/1113/1113-15-01.jpg"></p>
 <p>登場バンド（曲名）が表示されている画面でレア役を引いた場合に、対バンを抽選する。</p>
-<h4><span id="i-65">バンド表示画面・対バン当選率</span></h4>
+<h4>バンド表示画面・対バン当選率</h4>
 <table>
 <thead>
 <tr>
@@ -2393,19 +2377,19 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-66">ピコアタック</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-67">ピコアタック概要</span></h4>
-<p><img alt="スマスロLバンドリ！STピコアタック" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-11-01.jpg" decoding="async"></p>
+<h3>ピコアタック</h3>
+<h4>ピコアタック概要</h4>
+<p><img alt="スマスロLバンドリ！STピコアタック" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-11-01.jpg"></p>
 <p>ST終了時に抽選される引き戻しゾーン。発生時はクライマックス ライブ！が確定する。ST駆け抜け時は当選確率が優遇される。</p>
-<h4><span id="ST-6">ST終了時・ピコアタック当選率</span></h4>
+<h4>ST終了時・ピコアタック当選率</h4>
 <p>［終了画面のピコあおり］</p>
-<p><img alt="スマスロLバンドリ！STピコアタック" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-11-02.jpg" decoding="async"></p>
+<p><img alt="スマスロLバンドリ！STピコアタック" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-11-02.jpg"></p>
 <p>あおりが成功すればピコアタックへ突入する。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="CZ">大ガールズバンドパーティ！チャレンジ（特殊CZ）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="CZ-2">特殊CZ概要</span></h4>
-<p><img alt="スマスロLバンドリ！特殊CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-12-01.jpg" decoding="async"></p>
+<h3>大ガールズバンドパーティ！チャレンジ（特殊CZ）</h3>
+<h4>特殊CZ概要</h4>
+<p><img alt="スマスロLバンドリ！特殊CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-12-01.jpg"></p>
 <p>上位ST突入をかけた期待度約50%のCZ。15G以内に夢撃ち演出に成功すれば上位STへ移行する。</p>
-<h4><span id="_CZ">大ガールズバンドパーティ！チャレンジ （特殊CZ） 性能</span></h4>
+<h4>大ガールズバンドパーティ！チャレンジ （特殊CZ） 性能</h4>
 <table>
 <thead>
 <tr>
@@ -2432,7 +2416,7 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-<h4><span id="i-68">成功当選率</span></h4>
+<h4>成功当選率</h4>
 <table>
 <thead>
 <tr>
@@ -2460,11 +2444,11 @@ Roseliaは3周期まで？</p>
 </tbody>
 </table>
 <p>最終ゲームはバンドリンク役でも成功濃厚！</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="AT">大ガールズバンドパーティ！（上位AT）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="AT-2">上位AT概要</span></h4>
-<p><img alt="スマスロLバンドリ！上位AT" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-13-01.jpg" decoding="async"></p>
+<h3>大ガールズバンドパーティ！（上位AT）</h3>
+<h4>上位AT概要</h4>
+<p><img alt="スマスロLバンドリ！上位AT" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/0926/0924-13-01.jpg"></p>
 <p>ボーナスがすべてクライマックスライブ！になる上位AT。初回セットは継続濃厚なので必ずクライマックスライブ！を獲得できる。</p>
-<h4><span id="ST-7">大ガールズバンドパーティ！（上位ST）性能</span></h4>
+<h4>大ガールズバンドパーティ！（上位ST）性能</h4>
 <table>
 <thead>
 <tr>
@@ -2495,7 +2479,7 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-<h4><span id="i-69">ディスクの色別・夢撃ち演出成功期待度</span></h4>
+<h4>ディスクの色別・夢撃ち演出成功期待度</h4>
 <table>
 <thead>
 <tr>
@@ -2522,7 +2506,7 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-<h4><span id="_84">ボーナス当選期待度 84%ループ時</span></h4>
+<h4>ボーナス当選期待度 84%ループ時</h4>
 <table>
 <thead>
 <tr>
@@ -2579,7 +2563,7 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-<h4><span id="93">93%ループ時</span></h4>
+<h4>93%ループ時</h4>
 <table>
 <thead>
 <tr>
@@ -2637,13 +2621,13 @@ Roseliaは3周期まで？</p>
 </tbody>
 </table>
 <p>※前兆中の書き換えを考慮しない期待度</p>
-<p>前兆中にレア役が成立した場合は書き換え濃厚だ。</p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-70">演出情報</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-71">通常時</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="ST-8">ST終了後のバンドによるモード示唆</span></h4>
-<p><img alt="スマスロバンドリST終了後のバンド" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/1113/1113-07-01.jpg" decoding="async"></p>
-<p>ST終了後の初回バンドはPoppin’Partyがデフォルト。その他のバンドだった場合は上位モード滞在に期待できる。STを駆け抜けていた場合はさらに期待度アップ！</p>
-<h4><span id="ST-9">ST終了後のバンド・示唆内容</span></h4>
+<p>前兆中にレア役が成立した場合は書き換え濃厚だ。</p>
+<h2>演出情報</h2>
+<h3>通常時</h3>
+<h4>ST終了後のバンドによるモード示唆</h4>
+<p><img alt="スマスロバンドリST終了後のバンド" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/1113/1113-07-01.jpg"></p>
+<p>ST終了後の初回バンドはPoppin'Partyがデフォルト。その他のバンドだった場合は上位モード滞在に期待できる。STを駆け抜けていた場合はさらに期待度アップ！</p>
+<h4>ST終了後のバンド・示唆内容</h4>
 <table>
 <thead>
 <tr>
@@ -2653,7 +2637,7 @@ Roseliaは3周期まで？</p>
 </thead>
 <tbody>
 <tr>
-<td>Poppin’Party</td>
+<td>Poppin'Party</td>
 <td>デフォルト</td>
 </tr>
 <tr>
@@ -2674,8 +2658,8 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="ST-10">ガールズバンドパーティ！（ST）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-72">前兆中・発展時の色別のボーナス期待度</span></h4>
+<h3>ガールズバンドパーティ！（ST）</h3>
+<h4>前兆中・発展時の色別のボーナス期待度</h4>
 <table>
 <thead>
 <tr>
@@ -2712,7 +2696,7 @@ Roseliaは3周期まで？</p>
 </tr>
 </tbody>
 </table>
-<h4><span id="i-73">夢撃ち演出・カットイン色別の期待度</span></h4>
+<h4>夢撃ち演出・カットイン色別の期待度</h4>
 <table>
 <thead>
 <tr>
@@ -2750,7 +2734,7 @@ Roseliaは3周期まで？</p>
 </tbody>
 </table>
 <p>※リールロック3段階はクライマックスライブ！濃厚</p>
-<h4><span id="i-74">夢撃ち演出・リールロック段階別の期待度</span></h4>
+<h4>夢撃ち演出・リールロック段階別の期待度</h4>
 <table>
 <thead>
 <tr>
@@ -2779,14 +2763,14 @@ Roseliaは3周期まで？</p>
 </table>
 <p>※リールロック3段階はクライマックスライブ！濃厚</p>
 <p>［キャライルミ：赤］</p>
-<p><img alt="スマスロバンドリST" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/1113/1113-18-03a.jpg" decoding="async"></p>
+<p><img alt="スマスロバンドリST" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/1113/1113-18-03a.jpg"></p>
 <p>［夢撃ち演出：虹カットイン］</p>
-<p><img alt="スマスロバンドリST" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/1113/1113-18-04.jpg" decoding="async"></p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-75">裏ボタン</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-76">周期回数天井示唆</span></h4>
-<p><img alt="スマスロLバンドリ！周期回数天井示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/1102/1102-01-01.jpg" decoding="async"></p>
+<p><img alt="スマスロバンドリST" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/1113/1113-18-04.jpg"></p>
+<h3>裏ボタン</h3>
+<h4>周期回数天井示唆</h4>
+<p><img alt="スマスロLバンドリ！周期回数天井示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1032_L%E3%83%90%E3%83%B3%E3%83%89%E3%83%AA/1102/1102-01-01.jpg"></p>
 <p>ストーリーステージ（前兆）終了ゲームやST終了画面の次ゲームでPUSHボタンを押すと、ボイスが発生して周期回数天井を示唆する。8周期目以降は示唆ボイスは発生しない。</p>
-<h4><span id="ST-11">ストーリーステージ＆ST終了時のボイス・示唆内容</span></h4>
+<h4>ストーリーステージ＆ST終了時のボイス・示唆内容</h4>
 <table>
 <thead>
 <tr>
@@ -2820,16 +2804,30 @@ Roseliaは3周期まで？</p>
 <td>次周期が天井濃厚</td>
 </tr>
 </tbody>
-</table>
-<div class="post-views content-post post-310 entry-meta load-static">
-				<span class="post-views-icon dashicons dashicons-chart-bar"></span> <span class="post-views-label">Post Views:</span> <span class="post-views-count">399</span>
-			</div></div></details></div></details>
-            </div>
-
-            <!-- 目次ハンバーガー（右下固定・常時）。中身はJSがセクションから生成 --></section>
+</table></section>
   
   
   </article></main>
 <footer class="foot">個人アーカイブ（suroschool.jp / たかどらのスロ塾 会員コンテンツ）・閲覧用</footer>
+
+<!-- スマホ用ボトムナビ（スクロールで隠れる/出る） -->
+<nav class="botnav" id="botnav">
+  <a href="../index.html" data-nav="index">🎰<span>機種</span></a>
+  <button id="searchOpen2">🔍<span>検索</span></button>
+  <a href="../index.html?fav=1">★<span>お気に入り</span></a>
+  <a href="../news.html">📰<span>お知らせ</span></a>
+  <a href="../tool.html">🧮<span>期待値</span></a>
+</nav>
+
+<!-- 全ページ横断の検索オーバーレイ -->
+<div class="search-overlay" id="searchOverlay" hidden>
+  <div class="search-head">
+    <input id="globalSearch" type="search" placeholder="機種名で検索…" autocomplete="off">
+    <button id="searchClose" aria-label="閉じる">✕</button>
+  </div>
+  <div id="searchResults" class="search-results"></div>
+</div>
+
+<script src="../assets/search-index.js"></script>
 <script src="../assets/app.js"></script>
 </body></html>

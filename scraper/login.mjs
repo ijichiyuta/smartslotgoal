@@ -9,8 +9,8 @@ const PROFILE_DIR = path.join(__dirname, '.profile');   // 永続プロファイ
 const STATE_PATH = path.join(__dirname, '..', 'data', 'auth.json');
 
 const isLoggedIn = (cookies) =>
-  cookies.some(c => /^wordpress_logged_in/.test(c.name)) ||
-  cookies.some(c => /^wordpress_sec/.test(c.name));
+  cookies.some(c => c.name === 'custom_logged_in' && c.value === 'yes') ||
+  cookies.some(c => /^wordpress_logged_in/.test(c.name));
 
 const ctx = await chromium.launchPersistentContext(PROFILE_DIR, {
   headless: false,

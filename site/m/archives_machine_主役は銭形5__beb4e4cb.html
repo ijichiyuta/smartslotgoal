@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="ja"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>主役は銭形5 | スマスロ目標 (個人アーカイブ)</title>
+<title>主役は銭形5 | スマスロ期待値 (個人アーカイブ)</title>
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="manifest" href="../manifest.webmanifest">
 <meta name="theme-color" content="#ffffff">
@@ -10,16 +10,18 @@
 <link rel="apple-touch-icon" href="../assets/icon.svg">
 <link rel="icon" href="../assets/icon.svg">
 <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){})});}</script>
+<script>window.__ROOT__='../';</script>
 
 </head><body>
-<header class="topbar">
-  <a class="brand" href="../index.html">🎰 スマスロ目標</a>
-  <nav>
+<header class="topbar" id="topbar">
+  <a class="brand" href="../index.html">🎰 スマスロ期待値</a>
+  <nav class="topnav">
     <a href="../index.html">機種</a>
     <a href="../news.html">お知らせ</a>
     <a href="../tool.html">期待値計算</a>
     <a href="../pages.html">資料</a>
   </nav>
+  <button class="topbar-search" id="searchOpen" aria-label="検索">🔍</button>
 </header>
 <main>
   <article class="machine">
@@ -35,23 +37,12 @@
     <button class="tab" data-tab="kaiseki">解析情報</button>
     
   </div>
-  <section class="panel is-active" data-panel="nerai"><div class="tenjo-info"><div class="my-spoiler-wrapper" id="my-spoiler-1"><div class="my-spoiler-title" style="cursor:pointer; background:rgba(245,184,0,0.08); padding:10px; border:1px solid rgba(245,184,0,0.3); color:var(--text-main); font-weight:700; letter-spacing:0.04em;"><span class="spoiler-icon" style="margin-right:5px;">[-]</span>機種情報</div><div class="my-spoiler-content" style="display:block; padding:10px; border:1px solid rgba(245,184,0,0.2); border-top:0; background:var(--bg-card-hi); color:var(--text-main);"><p>【天井情報】<br>
-1250G到達時は50%で不二子デカタイムに突入。<br>
-設定変更時は天井が850Gに短縮。<br>
-1000Gハマり後は次回通常B以上。</p>
-<p>【リセット判別】<br>
-不明<br>
-リセット時はG数の内部加算あり。</p>
-<p>【有利区間について】<br>
-基本的に差枚+2000枚以上時にボーナス当選で有利切れ？<br>
-+2000枚未満で有利切れするケースもありハッキリしなそう。</p>
-</div></div></div>
-
-<h2 class="wp-block-heading"><span id="i"><strong>狙い目</strong></span></h2>
+  <section class="panel is-active" data-panel="nerai"><img loading="lazy" decoding="async" width="150" height="150" src="../img/1748f8f188018ecb.jpg" class="machine-thumbnail wp-post-image" alt="" style="display:block; margin:0 auto;" srcset="https://suroschool.jp/wp-content/uploads/2025/10/thumb_1-1-150x150.jpg 150w, https://suroschool.jp/wp-content/uploads/2025/10/thumb_1-1-120x120.jpg 120w" sizes="auto, (max-width: 150px) 100vw, 150px" />
+<h2 class="wp-block-heading"><strong>狙い目</strong></h2>
 
 
 
-<h3 class="wp-block-heading"><span id="i-2"><strong>【リセット狙い】</strong></span></h3>
+<h3 class="wp-block-heading"><strong>【リセット狙い】</strong></h3>
 
 
 
@@ -59,11 +50,11 @@
 
 
 
-<h3 class="wp-block-heading"><span id="i-3"><strong>【ゲーム数天井狙い】</strong></span></h3>
+<h3 class="wp-block-heading"><strong>【ゲーム数天井狙い】</strong></h3>
 
 
 
-<h4 class="wp-block-heading"><span id="1000G">前回1000G未満ハマり後</span></h4>
+<h4 class="wp-block-heading">前回1000G未満ハマり後</h4>
 
 
 
@@ -71,7 +62,7 @@
 
 
 
-<h4 class="wp-block-heading"><span id="1000GB">前回1000G以上ハマり後（B以上濃厚）　</span></h4>
+<h4 class="wp-block-heading">前回1000G以上ハマり後（B以上濃厚）　</h4>
 
 
 
@@ -79,11 +70,11 @@
 
 
 
-<h3 class="wp-block-heading"><span id="i-4"><strong>【ゾーン狙い】</strong></span></h3>
+<h3 class="wp-block-heading"><strong>【ゾーン狙い】</strong></h3>
 
 
 
-<h4 class="wp-block-heading"><span id="150G">150Gゾーン　</span></h4>
+<h4 class="wp-block-heading">150Gゾーン　</h4>
 
 
 
@@ -95,7 +86,7 @@
 
 
 
-<h4 class="wp-block-heading"><span id="350G">350Gゾーン　</span></h4>
+<h4 class="wp-block-heading">350Gゾーン　</h4>
 
 
 
@@ -103,7 +94,7 @@
 
 
 
-<h4 class="wp-block-heading"><span id="550G">550Gゾーン　</span></h4>
+<h4 class="wp-block-heading">550Gゾーン　</h4>
 
 
 
@@ -111,7 +102,7 @@
 
 
 
-<h3 class="wp-block-heading"><span id="i-5">【捜査ポイント狙い】</span></h3>
+<h3 class="wp-block-heading">【捜査ポイント狙い】</h3>
 
 
 
@@ -123,7 +114,7 @@
 
 
 
-<h3 class="wp-block-heading"><span id="i-6">【次回ゾーン数値の色】</span></h3>
+<h3 class="wp-block-heading">【次回ゾーン数値の色】</h3>
 
 
 
@@ -135,15 +126,15 @@
 
 
 
-<figure class="wp-block-image size-full"><img width="239" height="61" src="../img/5dfb88f5cb96a868.png" alt="" class="wp-image-2114" decoding="async"></figure>
+<figure class="wp-block-image size-full"><img width="239" height="61" src="../img/5dfb88f5cb96a868.png" alt="" class="wp-image-2114"/ loading="lazy" decoding="async"></figure>
 
 
 
-<h3 class="wp-block-heading"><span id="i-7">【示唆関連の押し引きについて】</span></h3>
+<h3 class="wp-block-heading">【示唆関連の押し引きについて】</h3>
 
 
 
-<h4 class="wp-block-heading"><span id="ST">ST終了画面</span></h4>
+<h4 class="wp-block-heading">ST終了画面</h4>
 
 
 
@@ -155,7 +146,7 @@
 
 
 
-<h4 class="wp-block-heading"><span id="CZPUSH">CZ終了後のPUSHボタン</span></h4>
+<h4 class="wp-block-heading">CZ終了後のPUSHボタン</h4>
 
 
 
@@ -171,7 +162,7 @@
 
 
 
-<h4 class="wp-block-heading"><span id="i-8">ステージチェンジ時のアイキャッチ</span></h4>
+<h4 class="wp-block-heading">ステージチェンジ時のアイキャッチ</h4>
 
 
 
@@ -183,7 +174,7 @@
 
 
 
-<h4 class="wp-block-heading"><span id="i-9">引き戻しの押し引きについて</span></h4>
+<h4 class="wp-block-heading">引き戻しの押し引きについて</h4>
 
 
 
@@ -191,7 +182,7 @@
 
 
 
-<h3 class="wp-block-heading"><span id="i-10"><strong>【有利区間関連狙い】</strong></span></h3>
+<h3 class="wp-block-heading"><strong>【有利区間関連狙い】</strong></h3>
 
 
 
@@ -203,7 +194,7 @@
 
 
 
-<h2 class="wp-block-heading"><span id="i-11"><strong>やめ時</strong></span></h2>
+<h2 class="wp-block-heading"><strong>やめ時</strong></h2>
 
 
 
@@ -235,11 +226,11 @@
 
 
 
-<h2 class="wp-block-heading"><span id="i-12"><strong>その他</strong></span></h2>
+<h2 class="wp-block-heading"><strong>その他</strong></h2>
 
 
 
-<h4 class="wp-block-heading"><span id="i-13">差枚の計算方法</span></h4>
+<h4 class="wp-block-heading">差枚の計算方法</h4>
 
 
 
@@ -315,15 +306,15 @@
 
 
 
-<figure class="wp-block-image size-full"><img width="426" height="735" src="../img/5a4daefa240d235b.webp" alt="" class="wp-image-2549" decoding="async" sizes="auto, (max-width: 426px) 100vw, 426px"></figure>
+<figure class="wp-block-image size-full"><img width="426" height="735" src="../img/5a4daefa240d235b.webp" alt="" class="wp-image-2549"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/10/jouirireki1.webp 426w, https://suroschool.jp/wp-content/uploads/2025/10/jouirireki1-174x300.webp 174w" sizes="auto, (max-width: 426px) 100vw, 426px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="426" height="734" src="../img/79e5fd12b5e41096.webp" alt="" class="wp-image-2550" decoding="async" sizes="auto, (max-width: 426px) 100vw, 426px"></figure>
+<figure class="wp-block-image size-full"><img width="426" height="734" src="../img/79e5fd12b5e41096.webp" alt="" class="wp-image-2550"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/10/jouirireki2.webp 426w, https://suroschool.jp/wp-content/uploads/2025/10/jouirireki2-174x300.webp 174w" sizes="auto, (max-width: 426px) 100vw, 426px" /></figure>
 
 
 
-<h4 class="wp-block-heading"><span id="ST-2">上位ST後を推測する方法</span></h4>
+<h4 class="wp-block-heading">上位ST後を推測する方法</h4>
 
 
 
@@ -335,7 +326,7 @@
 
 
 
-<h5 class="wp-block-heading"><span id="ST-3"><strong>以下に上位STが推測される履歴</strong></span></h5>
+<h5 class="wp-block-heading"><strong>以下に上位STが推測される履歴</strong></h5>
 
 
 
@@ -355,7 +346,7 @@
 
 
 
-<h5 class="wp-block-heading"><span id="ST-4"><strong>上位ST突入したと推測される履歴</strong></span></h5>
+<h5 class="wp-block-heading"><strong>上位ST突入したと推測される履歴</strong></h5>
 
 
 
@@ -363,31 +354,31 @@
 
 
 
-<figure class="wp-block-image size-full"><img width="495" height="839" src="../img/cd3b3eed271048ba.png" alt="" class="wp-image-2149" decoding="async" sizes="auto, (max-width: 495px) 100vw, 495px"></figure>
+<figure class="wp-block-image size-full"><img width="495" height="839" src="../img/cd3b3eed271048ba.png" alt="" class="wp-image-2149"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/10/rekisjou.png 495w, https://suroschool.jp/wp-content/uploads/2025/10/rekisjou-177x300.png 177w" sizes="auto, (max-width: 495px) 100vw, 495px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="360" height="690" src="../img/ad1f1cd18fbd9887.png" alt="" class="wp-image-2060" decoding="async" sizes="auto, (max-width: 360px) 100vw, 360px"></figure>
+<figure class="wp-block-image size-full"><img width="360" height="690" src="../img/ad1f1cd18fbd9887.png" alt="" class="wp-image-2060"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/10/taber.png 360w, https://suroschool.jp/wp-content/uploads/2025/10/taber-157x300.png 157w" sizes="auto, (max-width: 360px) 100vw, 360px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="593" height="558" src="../img/c26c2337c2e537c7.png" alt="" class="wp-image-2061" decoding="async" sizes="auto, (max-width: 593px) 100vw, 593px"></figure>
+<figure class="wp-block-image size-full"><img width="593" height="558" src="../img/c26c2337c2e537c7.png" alt="" class="wp-image-2061"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/10/shryoaga.png 593w, https://suroschool.jp/wp-content/uploads/2025/10/shryoaga-300x282.png 300w" sizes="auto, (max-width: 593px) 100vw, 593px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="574" height="137" src="../img/729394fdebb070e8.png" alt="" class="wp-image-2062" decoding="async" sizes="auto, (max-width: 574px) 100vw, 574px"></figure>
+<figure class="wp-block-image size-full"><img width="574" height="137" src="../img/729394fdebb070e8.png" alt="" class="wp-image-2062"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/10/czpush.png 574w, https://suroschool.jp/wp-content/uploads/2025/10/czpush-300x72.png 300w" sizes="auto, (max-width: 574px) 100vw, 574px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="482" height="791" src="../img/9e5687c402ef4214.png" alt="" class="wp-image-2090" decoding="async" sizes="auto, (max-width: 482px) 100vw, 482px"></figure>
+<figure class="wp-block-image size-full"><img width="482" height="791" src="../img/9e5687c402ef4214.png" alt="" class="wp-image-2090"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/10/スクリーンショット-2025-10-10-070839.png 482w, https://suroschool.jp/wp-content/uploads/2025/10/スクリーンショット-2025-10-10-070839-183x300.png 183w" sizes="auto, (max-width: 482px) 100vw, 482px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="475" height="260" src="../img/c9a225932b486ddc.png" alt="" class="wp-image-2092" decoding="async" sizes="auto, (max-width: 475px) 100vw, 475px"></figure>
+<figure class="wp-block-image size-full"><img width="475" height="260" src="../img/c9a225932b486ddc.png" alt="" class="wp-image-2092"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/10/スクリーンショット-2025-10-10-070924.png 475w, https://suroschool.jp/wp-content/uploads/2025/10/スクリーンショット-2025-10-10-070924-300x164.png 300w" sizes="auto, (max-width: 475px) 100vw, 475px" /></figure>
 
 
 
-<h2 class="wp-block-heading"><span id="i-14"><strong>参考元</strong></span></h2>
+<h2 class="wp-block-heading"><strong>参考元</strong></h2>
 
 
 
@@ -408,32 +399,25 @@
 
 
 <p class="wp-block-paragraph"></p>
-<div class="post-views content-post post-2058 entry-meta load-static">
-				<span class="post-views-icon dashicons dashicons-chart-bar"></span> <span class="post-views-label">Post Views:</span> <span class="post-views-count">2,109</span>
-			</div>
-          <!-- 目次ハンバーガー（右下固定・常時）。中身はJSが見出し(h2/h3)から生成。会員ロック時は空→自動非表示 --></section>
-  <section class="panel" data-panel="kaiseki"><div class="kaiseki-toolbar">
-              
-            </div>
-            <div class="kaiseki-accordion">
-              <details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i">基本情報</span></summary><div class="kaiseki-section-body">
+</section>
+  <section class="panel" data-panel="kaiseki"><h2>基本情報</h2>
 <ul>
 <li>メーカー: オリンピア</li>
 <li>機械割: 97.9% 〜 112.1%</li>
 <li>導入開始日: 2025年10月06日（月）</li>
 <li>ゲーム性概要: ●ボーナス当選契機はゲーム数消化・ポイント契機のCZ・デカ目 ●初当りの銭形ボーナス後は10G＋αのデカタイムで連チャンを目指すゲーム性 ●デカタイム中のボーナス期待度は約59%（設定2） ●ボーナス当選時の一部で移行するBIGジャッジに成功すればBIGボーナスを獲得 ●3・6・9回目のボーナスがBIGジャッジのチャンス!? ●BIGボーナス後はボーナス期待度約80%（設定2）の超デカタイムへ突入！</li>
 </ul>
-<p><img alt="L主役は銭形5（パチスロ）のリール配列" src="https://p-town.dmm.com/upload/machines/4877/reel.jpg?t=1779358741" decoding="async"></p>
-<p><img alt="L主役は銭形5（パチスロ）のゲームフロー" src="https://p-town.dmm.com/upload/machines/4877/flow.jpg?t=1779358741" decoding="async"></p>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-2">打ち方</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-3">打ち方・小役</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-4">打ち方（小役狙い）</span></h4>
+<p><img alt="L主役は銭形5（パチスロ）のリール配列" src="https://p-town.dmm.com/upload/machines/4877/reel.jpg?t=1779358741"></p>
+<p><img alt="L主役は銭形5（パチスロ）のゲームフロー" src="https://p-town.dmm.com/upload/machines/4877/flow.jpg?t=1779358741"></p>
+<h2>打ち方</h2>
+<h3>打ち方・小役</h3>
+<h4>打ち方（小役狙い）</h4>
 <p>「最初に狙う絵柄」 左リール枠上から上段にBARを狙う。左リールの停止形にかかわらず、中・右リールはフリー打ちでOKだ。</p>
 <p>「レア役の停止例」</p>
 <p>「デカ目の停止例」 通常時・ST中ともにデカ目停止でボーナス濃厚、中段チェリーはBIGボーナス濃厚となる。</p>
-<h4><span id="NG">変則押しはNG</span></h4>
+<h4>変則押しはNG</h4>
 <p>通常時・押し順ナビなし時は左リール第1停止での消化を推奨する。</p>
-<h4><span id="7">白7狙い（小役狙い）</span></h4>
+<h4>白7狙い（小役狙い）</h4>
 <p>［上段に白7を目押し］ 左リール枠内に白7を目押しすることで、BAR狙いとは違った出目法則が楽しめる。 まずは上段に白7をビタ押しした時の法則を紹介。1コマでもズレた場合の停止法則もページ下側で紹介しているぞ。</p>
 <p>［白7下段停止］ 成立役：ハズレorプラムorチャンスリプレイorデカ目 この停止形からリプレイは揃わないので、リプレイ告知発生時はデカ目の1確になる。</p>
 <p>［白7上段停止］ 成立役：リプレイorデカ目 リプレイが揃わなければデカ目濃厚。一見ベルも揃いそうだが、ここからベルは揃わないので、ベルナビが出ていた場合もデカ目濃厚になる。ちなみに、白7を上段に押すと中段チェリーを引き込めないため、中段リプレイ・リプレイ・チェリーのデカ目が中段チェリーの代用として停止する。</p>
@@ -444,8 +428,8 @@
 <p>【白7を中段に押した場合】 中段に押した場合、デカ目の停止形などは上段白7狙い時と同じだが、中段にリプレイが揃う可能性があるため注意。 左リール中段白7停止時は上段白7狙い時と同じくデカ目の1確になる。</p>
 <p>ベル停止時は上段白7狙い時と同じくベルorデカ目だが、斜めベルハズレのデカ目の可能性がある。</p>
 <p>コマ数的に中段チェリーも引き込んでくれる。 もちろん出現時はBIG濃厚だ（BARを狙えばBARが揃う）。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-5">中段チェリー</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-6">中段チェリーの恩恵</span></h4>
+<h3>中段チェリー</h3>
+<h4>中段チェリーの恩恵</h4>
 <table>
 <thead>
 <tr>
@@ -468,10 +452,10 @@
 </tr>
 </tbody>
 </table>
-<p>※BIGボーナス中は中段チェリーは出現しない</p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-7">解析情報通常時</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-8">小役関連</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-9">通常時・小役確率</span></h4>
+<p>※BIGボーナス中は中段チェリーは出現しない</p>
+<h2>解析情報通常時</h2>
+<h3>小役関連</h3>
+<h4>通常時・小役確率</h4>
 <table>
 <thead>
 <tr>
@@ -511,10 +495,10 @@
 </tbody>
 </table>
 <p>※レア役合算確率は1/21.3</p>
-<h4><span id="i-10">ボーナス本前兆中以外・デカ目確率</span></h4>
+<h4>ボーナス本前兆中以外・デカ目確率</h4>
 <p>※CZ中のデカ目確率は1/372.6</p>
 <p>デカ目はボーナス直撃濃厚。非本前兆中のデカ目は高設定ほど出現しやすい。</p>
-<h4><span id="i-11">通常時・デカ目の出現条件</span></h4>
+<h4>通常時・デカ目の出現条件</h4>
 <table>
 <thead>
 <tr>
@@ -538,8 +522,8 @@
 </tbody>
 </table>
 <p>末尾50G到達（ボーナス当選ゲーム到達）から、ボーナス告知ゲームまでが本前兆中。 本前兆の最終ゲームで内部的にデカ目のリプレイフラグを引くと、約80%で演出としてデカ目が出現する。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-12">モード</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-13">モードごとの天井</span></h4>
+<h3>モード</h3>
+<h4>モードごとの天井</h4>
 <table>
 <thead>
 <tr>
@@ -571,7 +555,7 @@
 <p>1000Gを超えてのボーナス当選時は、次回モード通常B以上濃厚（※）</p>
 <p>1250G＋α到達時は約50%で初回STが不二子STになる</p>
 <p>※有利区間リセット時や、950Gで当選したボーナスがCZなどで1000Gを超えて告知された場合を除く</p>
-<h4><span id="i-14">モードごとのゾーン表</span></h4>
+<h4>モードごとのゾーン表</h4>
 <table>
 <thead>
 <tr>
@@ -678,8 +662,8 @@
 </table>
 <p>※期待度…▲＜△＜◯＜◎</p>
 <p>有利区間移行時とボーナス当選時にモードと規定ゲーム数を決定。モードの移行率には設定差があり、高設定ほど良いモードが選ばれやすい。 50GのゾーンはST終了後のみ選択される可能性あり（AT終了時の引き戻し抽選に当選）。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="CZ">CZ抽選</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="CZ-2">CZの抽選方式</span></h4>
+<h3>CZ抽選</h3>
+<h4>CZの抽選方式</h4>
 <table>
 <thead>
 <tr>
@@ -703,8 +687,8 @@
 </tbody>
 </table>
 <p>CZの抽選タイミングは2箇所あり、上記のどちらかに当選すればCZに当選する。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-15">捜査ポイント（周期抽選）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-16">捜査ポイント性能</span></h4>
+<h3>捜査ポイント（周期抽選）</h3>
+<h4>捜査ポイント性能</h4>
 <table>
 <thead>
 <tr>
@@ -738,7 +722,7 @@
 <p>毎ゲーム1pt以上ずつ減算されていくポイントで、0ptに到達するとCZを抽選。レア役は大量減算のチャンス、強チェリーは999pt減算濃厚だ。 0pt到達時のキャラのリアクションでCZ当選期待度が変化する。</p>
 <p>「リアクション」 不二子のリアクションなら大チャンス!?</p>
 <p>「ポイント高確（ゼニガタイム）」 ゼニガタイム中とゼニガタイム終了後13G間はポイントの高確率状態となり、リプレイとレア役以外でもポイント減算を抽選する。</p>
-<h4><span id="i-17">成立役ごとの減算ポイント</span></h4>
+<h4>成立役ごとの減算ポイント</h4>
 <table>
 <thead>
 <tr>
@@ -774,16 +758,16 @@
 </tbody>
 </table>
 <p>1契機で減算されるポイントは1pt・5pt・10pt・50pt・100pt・200pt・500pt・999ptのいずれか。 ポイント高確中はリプレイやレア役以外でもポイント減算を抽選する（リプレイとレア役は非高確中と同様の抽選）。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-18">ゼニガタイム</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-19">ゼニガタイム解説</span></h4>
+<h3>ゼニガタイム</h3>
+<h4>ゼニガタイム解説</h4>
 <p>規定ゲーム数消化で移行する前兆ステージで、ルパンを逮捕できればボーナス濃厚。 ゼニガタイム中は捜査ポイントの高確状態になっている。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-20">規定ゲーム数抽選</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-21">規定ゲーム数</span></h4>
+<h3>規定ゲーム数抽選</h3>
+<h4>規定ゲーム数</h4>
 <p>規定ゲーム数到達でボーナス当選濃厚。NEXT部分には次回の期待できるゾーンのゲーム数が表示されている。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="CZ-3">逮捕チャレンジ（CZ）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-22">逮捕チャレンジ概要</span></h4>
+<h3>逮捕チャレンジ（CZ）</h3>
+<h4>逮捕チャレンジ概要</h4>
 <p>捜査ポイント0pt到達時の抽選で突入。銭形がルパン一味を逮捕できればボーナス濃厚となる。</p>
-<h4><span id="CZ-4">逮捕チャレンジ（CZ）性能</span></h4>
+<h4>逮捕チャレンジ（CZ）性能</h4>
 <table>
 <thead>
 <tr>
@@ -816,7 +800,7 @@
 </table>
 <p>「逮捕のチャンスは4回」 1戦目〜4戦目まで、最大4回の逮捕チャンスが発生。いずれか一人を逮捕した時点でボーナス当選となり、確定画面へ移行する。</p>
 <p>「不二子逮捕でチャンス」 4戦目で登場する不二子を逮捕できれば、デカタイム（ST）の初回キャラが不二子（全レア役対応のST）になるので連チャン期待度がアップ！</p>
-<h4><span id="i-23">ボーナス当選率 ルパン・次元・五ェ門</span></h4>
+<h4>ボーナス当選率 ルパン・次元・五ェ門</h4>
 <table>
 <thead>
 <tr>
@@ -855,7 +839,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-24">不二子</span></h4>
+<h4>不二子</h4>
 <table>
 <thead>
 <tr>
@@ -883,7 +867,7 @@
 </tbody>
 </table>
 <p>※CZ中のデカ目確率は1/372.6</p>
-<h4><span id="i-25">キャラごとの対応レア役</span></h4>
+<h4>キャラごとの対応レア役</h4>
 <table>
 <thead>
 <tr>
@@ -911,16 +895,16 @@
 </tbody>
 </table>
 <p>リプレイや右下がりプラム成立で勝利のチャンス。キャラごとの対応レア役はボーナス濃厚（対応役はST中と同じ）で、強チェリーとデカ目はキャラ不問でボーナス濃厚だ。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-26">フリーズ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-27">ロングフリーズ動画</span></h4>
+<h3>フリーズ</h3>
+<h4>ロングフリーズ動画</h4>
 <p>実戦上は中段チェリーを契機に発生し、ゼニロボビッグバンを経由してBIGボーナスに突入していた。</p>
-<p>中段チェリーの恩恵がBIGボーナス＋ゼニロボビッグバンorエンディング発生なので、状況によってはゼニロボビッグバンではなく、エンディングへ直行するかも!?</p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-28">解析情報ボーナス時</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-29">ボーナス</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-30">銭形ボーナス概要</span></h4>
+<p>中段チェリーの恩恵がBIGボーナス＋ゼニロボビッグバンorエンディング発生なので、状況によってはゼニロボビッグバンではなく、エンディングへ直行するかも!?</p>
+<h2>解析情報ボーナス時</h2>
+<h3>ボーナス</h3>
+<h4>銭形ボーナス概要</h4>
 <p>白7揃いで突入するボーナス。初当りは基本的に100枚払い出しで、ST中に当選した場合の平均払い出し枚数は300枚オーバー（設定2）。 消化中はリプレイとレア役でゼニポイントを貯めていき、メーターがMAX（20pt到達）になるとさまざまなアイテムを獲得できる。</p>
 <p>※ST中の払い出し枚数は100枚〜3000枚から抽選</p>
-<h4><span id="i-31">銭形ボーナス性能</span></h4>
+<h4>銭形ボーナス性能</h4>
 <table>
 <thead>
 <tr>
@@ -954,7 +938,7 @@
 <p>「枚数決定」 ST中のボーナス当選後は、最終的にボタンを押して枚数を告知。銭形がステップアップするほど多い枚数に期待できる。</p>
 <p>「ゼニポイントと獲得できるアイテム」</p>
 <p>［ゼニメーター］ ポイントはリール左に表示されていて、20ptを獲得すればメーターMAXとなりアイテムを獲得する。</p>
-<h4><span id="i-32">銭形ボーナス中のアイテム一覧</span></h4>
+<h4>銭形ボーナス中のアイテム一覧</h4>
 <table>
 <thead>
 <tr>
@@ -982,9 +966,9 @@
 </tbody>
 </table>
 <p>※BIGボーナス中の獲得アイテムは手錠と3G連チャレンジのみ</p>
-<h4><span id="3G">3G連チャレンジ</span></h4>
+<h4>3G連チャレンジ</h4>
 <p>ボーナス中に3G連チャレンジアイテムを獲得すると突入。 ボーナス消化後に突入し、ルパン逮捕でボーナス濃厚。3G連チャレンジでのボーナスもSTでのボーナス当選扱いになる（連チャン数加算＝逮捕キャラ進行）。</p>
-<h4><span id="3G-2">3G連チャレンジ性能</span></h4>
+<h4>3G連チャレンジ性能</h4>
 <table>
 <thead>
 <tr>
@@ -1011,9 +995,9 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="BIG">BIGボーナス概要</span></h4>
+<h4>BIGボーナス概要</h4>
 <p>超デカタイム中のボーナスはすべてBIGボーナス。払い出し枚数は500枚〜3000枚となっていて、平均払い出し枚数は650枚オーバー（設定2）と超強力だ。 消化中は銭形ボーナスと同様にリプレイとレア役でゼニポイントを獲得して、20pt貯めると手錠or3G連チャレンジを獲得。超ゼニガタイムは全レア役が対応役なので、サーチライトと不二子デカタイムは存在しない。</p>
-<h4><span id="BIG-2">BIGボーナス性能</span></h4>
+<h4>BIGボーナス性能</h4>
 <table>
 <thead>
 <tr>
@@ -1041,9 +1025,9 @@
 </tbody>
 </table>
 <p>「枚数決定」 ボタンPUSHで枚数を告知。このタイミングでプチュンが発生すると、1000枚以上濃厚のゼニロボビッグバンへ移行する。</p>
-<h4><span id="i-33">ゼニロボビッグバン</span></h4>
+<h4>ゼニロボビッグバン</h4>
 <p>BIGボーナスの払い出し枚数決定時の一部で発生し、1000・1500・2000・3000枚払い出しのいずれかを獲得できる。</p>
-<h4><span id="MAX">［銭形ボーナス中］ゼニメーターMAX時のアイテム振り分け</span></h4>
+<h4>［銭形ボーナス中］ゼニメーターMAX時のアイテム振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1070,10 +1054,10 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="ST">デカタイム（ST）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="ST-2">ST概要</span></h4>
+<h3>デカタイム（ST）</h3>
+<h4>ST概要</h4>
 <p>10G＋αのSTで、ルパン・次元・五ェ門・不二子の各キャラに対応したレア役を引けばボーナス濃厚。ゲーム数消化後もラストチャンスでボーナス当選の可能性がある。 基本的にボーナス3・6・9回当選（3人逮捕）ごとに突入するBIGジャッジを成功させて、超デカタイム（上位ST）を目指すゲーム性。ボーナス9回当選時はジャッジ成功濃厚だ。</p>
-<h4><span id="i-34">デカタイム性能</span></h4>
+<h4>デカタイム性能</h4>
 <table>
 <thead>
 <tr>
@@ -1108,7 +1092,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-35">デカタイム中・リプレイとデカ目確率</span></h4>
+<h4>デカタイム中・リプレイとデカ目確率</h4>
 <table>
 <thead>
 <tr>
@@ -1130,7 +1114,7 @@
 <p>※レア役＆デカ目合算確率は1/14.6　その他の小役確率は通常時と同じ</p>
 <p>デカ目はリプレイフラグで、通常時は基本的に押し順リプレイが出現。ST中はデカ目が確率通りに出現するので、通常時に比べてリプレイ揃い確率は下がる。</p>
 <p>「キャラの対応役」</p>
-<h4><span id="i-36">キャラごとの対応レア役とトータルボーナス期待度</span></h4>
+<h4>キャラごとの対応レア役とトータルボーナス期待度</h4>
 <table>
 <thead>
 <tr>
@@ -1171,7 +1155,7 @@
 <p>ラストジャッジ中のレア役も、ST中と同様の数値で成功を抽選（対応レア役・強チェリー・デカ目はボーナス濃厚）。ボーナス中にアイテム「サーチライト」を獲得した場合は対応役が増加する。</p>
 <p>「デカタイムマップ」 リールの下には3回分の登場キャラが表示。キャラ順は固定ではなく抽選で決定、ボーナス3回当選ごとにBIGジャッジへ移行する。</p>
 <p>「ラストジャッジ」 ゲーム数を消化し終えるとラストジャッジが発生。3連7が止まればボーナス！</p>
-<h4><span id="i-37">ボーナス当選率</span></h4>
+<h4>ボーナス当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1194,7 +1178,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="BIG-3">BIGジャッジ突入率</span></h4>
+<h4>BIGジャッジ突入率</h4>
 <table>
 <thead>
 <tr>
@@ -1217,16 +1201,16 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-38">終了画面での復活抽選</span></h4>
+<h4>終了画面での復活抽選</h4>
 <p>（上位）ST終了画面でレア役やデカ目が成立すれば復活濃厚。終了画面でレア役やデカ目を引けるトータル期待度は6.8%だ。</p>
-<h4><span id="i-39">引き戻し抽選</span></h4>
+<h4>引き戻し抽選</h4>
 <p>ST（上位ST含む）終了後に成立役不問で引き戻し抽選がおこなわれ、当選時は80G以内に前兆を経由してボーナスを告知。デカタイムマップ（キャラの逮捕状況・ボーナス連チャン回数）は引き継がれ、ボーナス枚数も連チャン中と同様の抽選になる。 また、80G以内にCZ契機の自力当選でSTに復帰した場合も引き戻しとして扱われる。</p>
-<h4><span id="i-40">デカタイムマップ抽選</span></h4>
+<h4>デカタイムマップ抽選</h4>
 <p>設定変更後とSTの引き戻しゾーン抜け後に、次回のデカタイムマップのキャラを抽選。基本的にはルパン・次元・五ェ門の3人が1セットなので、出現する順番を決め、順番が決まった後、各キャラを不二子に書き換える抽選をおこなう。 1250G＋α到達後の一部や逮捕チャレンジでの不二子逮捕後、ボーナス中に不二子デカタイムを獲得時は次のキャラが不二子に書き換えられる。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="BIG-4">BIGジャッジ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="BIG-5">BIGジャッジ概要</span></h4>
+<h3>BIGジャッジ</h3>
+<h4>BIGジャッジ概要</h4>
 <p>ゼニガタイム中のボーナス当選時の一部で突入する、超デカタイムをかけたCZ。1G完結で、成功すればBIGボーナスを経由して超デカタイムへ移行する。 失敗した場合は銭形ボーナス消化後、デカタイムへ戻る。</p>
-<h4><span id="BIG-6">BIGジャッジ性能</span></h4>
+<h4>BIGジャッジ性能</h4>
 <table>
 <thead>
 <tr>
@@ -1249,7 +1233,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="BIG2">BIGジャッジ成功期待度（設定2）</span></h4>
+<h4>BIGジャッジ成功期待度（設定2）</h4>
 <table>
 <thead>
 <tr>
@@ -1280,7 +1264,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="BIG-7">［消化中］BIGジャッジの成功当選率</span></h4>
+<h4>［消化中］BIGジャッジの成功当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1300,10 +1284,10 @@
 </tbody>
 </table>
 <p>BIGジャッジの成否は突入時に抽選。ジャッジゲームでレア役を引けば成功への書き換えを抽選する。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="ST-3">超デカタイム（上位ST）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="ST-4">上位ST概要</span></h4>
+<h3>超デカタイム（上位ST）</h3>
+<h4>上位ST概要</h4>
 <p>すべてのレア役が対応役となるデカタイムの上位版で、当選するボーナスはすべてBIGボーナス。平均650枚の払い出しが約80%でループする（数値はすべて設定2）。</p>
-<h4><span id="i-41">超デカタイム性能</span></h4>
+<h4>超デカタイム性能</h4>
 <table>
 <thead>
 <tr>
@@ -1355,10 +1339,10 @@
 </tbody>
 </table>
 <p>強チェリーとデカ目契機のボーナスは払い出し700枚以上濃厚だが、BIGジャッジ中や3G連チャレンジ中に強チェリーやデカ目を引いた場合は700枚以上濃厚とはならない。</p>
-<h4><span id="i-42">超デカタイム中・リプレイとデカ目確率</span></h4>
+<h4>超デカタイム中・リプレイとデカ目確率</h4>
 <p>※レア役＆デカ目合算確率は1/14.6　その他の小役確率は通常時と同じ</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-43">ツラヌキ・有利区間</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-44">ツラヌキ条件と恩恵</span></h4>
+<h3>ツラヌキ・有利区間</h3>
+<h4>ツラヌキ条件と恩恵</h4>
 <table>
 <thead>
 <tr>
@@ -1377,10 +1361,10 @@
 </tr>
 </tbody>
 </table>
-<p>［エンディング］ 規定の枚数を獲得するとエンディングが発生。エンディング終了後は700枚以上払い出しのBIGを経由して超デカタイムへ復帰する。</p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-45">演出情報</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-46">通常時</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-47">画像ごとの示唆</span></h4>
+<p>［エンディング］ 規定の枚数を獲得するとエンディングが発生。エンディング終了後は700枚以上払い出しのBIGを経由して超デカタイムへ復帰する。</p>
+<h2>演出情報</h2>
+<h3>通常時</h3>
+<h4>画像ごとの示唆</h4>
 <table>
 <thead>
 <tr>
@@ -1428,7 +1412,7 @@
 <p>［ルパン＆銭形］</p>
 <p>［警官］</p>
 <p>［警官＋自転車］</p>
-<h4><span id="CZ-5">アイコンごとのCZ当選期待度</span></h4>
+<h4>アイコンごとのCZ当選期待度</h4>
 <table>
 <thead>
 <tr>
@@ -1457,7 +1441,7 @@
 <p>ルパンは青と緑の2種類。</p>
 <p>［紫］</p>
 <p>紫アイコンでは不二子が登場する。</p>
-<h4><span id="i-48">ステージチェンジ演出ごとの示唆</span></h4>
+<h4>ステージチェンジ演出ごとの示唆</h4>
 <table>
 <thead>
 <tr>
@@ -1489,7 +1473,7 @@
 <p>［ルパン］</p>
 <p>［銭形］</p>
 <p>［不二子］</p>
-<h4><span id="CM">CMアイキャッチ演出</span></h4>
+<h4>CMアイキャッチ演出</h4>
 <table>
 <thead>
 <tr>
@@ -1520,7 +1504,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="CM-2">CMアイキャッチ演出経由の発展先</span></h4>
+<h4>CMアイキャッチ演出経由の発展先</h4>
 <table>
 <thead>
 <tr>
@@ -1549,7 +1533,7 @@
 <p>［豪華な車に飛び乗り成功］</p>
 <p>［囚人服のルパン］</p>
 <p>［次回予告］ CMアイキャッチ演出のゲームで次回予告が発生する可能性あり（本前兆濃厚）。</p>
-<h4><span id="i-49">連続演出の期待度序列</span></h4>
+<h4>連続演出の期待度序列</h4>
 <table>
 <thead>
 <tr>
@@ -1589,8 +1573,8 @@
 </tbody>
 </table>
 <p>「チャンスアップ」 タイトル色変化（白＜赤＜金）や不二子登場でチャンスだ。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-50">前兆</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-51">ゼニガタイム中の演出法則</span></h4>
+<h3>前兆</h3>
+<h4>ゼニガタイム中の演出法則</h4>
 <table>
 <thead>
 <tr>
@@ -1625,7 +1609,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-52">発展時の警戒レベルごとの本前兆期待度</span></h4>
+<h4>発展時の警戒レベルごとの本前兆期待度</h4>
 <table>
 <thead>
 <tr>
@@ -1659,8 +1643,8 @@
 <p>［パトカー通過］</p>
 <p>［警戒レベル］ 警戒レベルはリール左に表示。基本はレベルが上がるほど期待度アップとなるが、レベル1のまま発展すれば本前兆濃厚だ。</p>
 <p>「2G構成の連続演出」 「弾丸の行方」・「斬鉄剣一閃」・「舞い降りる女神」の3演出が2G構成の連続演出に該当。ゼニガタイム経由で発展した場合はボーナス濃厚だ。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="ST-5">ST関連</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="STST">ST（上位ST）終了画面の示唆</span></h4>
+<h3>ST関連</h3>
+<h4>ST（上位ST）終了画面の示唆</h4>
 <table>
 <thead>
 <tr>
@@ -1701,7 +1685,7 @@
 <p>［ルパン］</p>
 <p>［銭形＆ルパン］</p>
 <p>［不二子］</p>
-<h4><span id="i-53">セブンジャッジの演出パターン別期待度</span></h4>
+<h4>セブンジャッジの演出パターン別期待度</h4>
 <table>
 <thead>
 <tr>
@@ -1761,7 +1745,7 @@
 <p>［青］</p>
 <p>［赤］</p>
 <p>［虹］</p>
-<h4><span id="ST-6">ST中のラストジャッジ成功示唆演出</span></h4>
+<h4>ST中のラストジャッジ成功示唆演出</h4>
 <table>
 <thead>
 <tr>
@@ -1780,7 +1764,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-54">パトカー通過演出でのラストジャッジ成功期待度</span></h4>
+<h4>パトカー通過演出でのラストジャッジ成功期待度</h4>
 <table>
 <thead>
 <tr>
@@ -1822,7 +1806,7 @@
 <p>［パトカー1台］</p>
 <p>［パトカー3台］</p>
 <p>［パトカー群］</p>
-<h4><span id="i-55">ラストジャッジのシャッター色変化時の成功期待度</span></h4>
+<h4>ラストジャッジのシャッター色変化時の成功期待度</h4>
 <table>
 <thead>
 <tr>
@@ -1862,7 +1846,7 @@
 <p>［通常シャッター］</p>
 <p>［赤シャッター］</p>
 <p>［金シャッター］ シャッターの色が赤なら期待度90%オーバー、金は成功濃厚だ。</p>
-<h4><span id="i-56">ラストジャッジ中の演出期待度</span></h4>
+<h4>ラストジャッジ中の演出期待度</h4>
 <table>
 <thead>
 <tr>
@@ -1886,7 +1870,7 @@
 <p>［通常狙え］</p>
 <p>［赤］</p>
 <p>［虹］</p>
-<h4><span id="i-57">［デカタイム中］演出ごとの法則</span></h4>
+<h4>［デカタイム中］演出ごとの法則</h4>
 <table>
 <thead>
 <tr>
@@ -1932,7 +1916,7 @@
 <p>デカゼニロボ告知</p>
 <p>デカタイムの 3 ・ 6 ・ 9 セット目に出現した場合は BIG ジャッジ濃厚</p>
 <p>［その他・リールロック有無別の詳細期待度］</p>
-<h4><span id="i-58">リールロックのトータルボーナス期待度</span></h4>
+<h4>リールロックのトータルボーナス期待度</h4>
 <table>
 <thead>
 <tr>
@@ -1964,7 +1948,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-59">演出ごとのボーナス期待度（ノーマルモード中） キャラ：次元</span></h4>
+<h4>演出ごとのボーナス期待度（ノーマルモード中） キャラ：次元</h4>
 <table>
 <thead>
 <tr>
@@ -2043,7 +2027,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-60">キャラ：五ェ門</span></h4>
+<h4>キャラ：五ェ門</h4>
 <table>
 <thead>
 <tr>
@@ -2116,7 +2100,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-61">キャラ：ルパン</span></h4>
+<h4>キャラ：ルパン</h4>
 <table>
 <thead>
 <tr>
@@ -2189,7 +2173,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-62">キャラ：不二子</span></h4>
+<h4>キャラ：不二子</h4>
 <table>
 <thead>
 <tr>
@@ -2230,7 +2214,7 @@
 <p>［予告状演出］</p>
 <p>［PUSH演出］</p>
 <p>［タイプライタ演出］</p>
-<h4><span id="i-63">演出モードごとのタイプライタ演出の特徴</span></h4>
+<h4>演出モードごとのタイプライタ演出の特徴</h4>
 <table>
 <thead>
 <tr>
@@ -2253,7 +2237,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-64">リールロックとタイプライタ演出の期待度まとめ</span></h4>
+<h4>リールロックとタイプライタ演出の期待度まとめ</h4>
 <table>
 <thead>
 <tr>
@@ -2276,7 +2260,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="ON">［レバーON時に発生］ボーナス期待度</span></h4>
+<h4>［レバーON時に発生］ボーナス期待度</h4>
 <table>
 <thead>
 <tr>
@@ -2395,7 +2379,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="1">［リール回転開始時に発生＋リールロック1段階］ ボーナス期待度</span></h4>
+<h4>［リール回転開始時に発生＋リールロック1段階］ ボーナス期待度</h4>
 <table>
 <thead>
 <tr>
@@ -2515,7 +2499,7 @@
 </tbody>
 </table>
 <p>※上表はすべてタイプライタモード中の期待度</p>
-<h4><span id="i-65">リールロックのトータルボーナス期待度</span></h4>
+<h4>リールロックのトータルボーナス期待度</h4>
 <table>
 <thead>
 <tr>
@@ -2534,7 +2518,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-66">［ノーマルモード中］演出ごとのボーナス期待度</span></h4>
+<h4>［ノーマルモード中］演出ごとのボーナス期待度</h4>
 <table>
 <thead>
 <tr>
@@ -2620,7 +2604,7 @@
 </tbody>
 </table>
 <p>※ リールロック2段階はボーナス濃厚</p>
-<h4><span id="i-67">［タイプライタモード］ タイプライタ演出のボーナス期待度</span></h4>
+<h4>［タイプライタモード］ タイプライタ演出のボーナス期待度</h4>
 <table>
 <thead>
 <tr>
@@ -2710,8 +2694,8 @@
 <p>［ゼニロボ弱攻撃］</p>
 <p>［ゼニロボ中攻撃］</p>
 <p>［ゼニロボ強攻撃］</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-68">カスタム</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-69">演出モードの特徴</span></h4>
+<h3>カスタム</h3>
+<h4>演出モードの特徴</h4>
 <table>
 <thead>
 <tr>
@@ -2735,10 +2719,10 @@
 </tbody>
 </table>
 <p>ST中に左右キーを押すと演出モードを変更できる。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-70">裏ボタン</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="ST-7">ST中のボーナス期待度示唆</span></h4>
+<h3>裏ボタン</h3>
+<h4>ST中のボーナス期待度示唆</h4>
 <p>頭上注意演出発生時に筐体左側の「デカ注意ランプ」が点灯すればボーナス当選の大チャンス。レバーONで先バレ的に光るパターンと、PUSHボタンを押すと光るパターンの2種類がある。</p>
-<h4><span id="i-71">ランプ色ごとのボーナス期待度</span></h4>
+<h4>ランプ色ごとのボーナス期待度</h4>
 <table>
 <thead>
 <tr>
@@ -2776,9 +2760,9 @@
 </tbody>
 </table>
 <p>※ 虹点灯はボーナス濃厚（強チェリーorデカ目が成立）</p>
-<h4><span id="BIG-8">BIGジャッジ中の先告知</span></h4>
+<h4>BIGジャッジ中の先告知</h4>
 <p>2G目のレバーON〜結果の告知までの間でPUSHボタンを押すと、先告知が発生する可能性あり。成功時は必ず先告知が発生するわけではないので、告知が発生しなくても成功している可能性は十分にある。 また、逆転パターンでの成功が選択されていた場合は先告知が発生しない。</p>
-<h4><span id="i-72">ジャッジ成功時のボタン回数別の先告知発生率</span></h4>
+<h4>ジャッジ成功時のボタン回数別の先告知発生率</h4>
 <table>
 <thead>
 <tr>
@@ -2805,16 +2789,30 @@
 </tr>
 </tbody>
 </table>
-<p>7回目は発生率が大幅にアップする。</p>
-<div class="post-views content-post post-2058 entry-meta load-static">
-				<span class="post-views-icon dashicons dashicons-chart-bar"></span> <span class="post-views-label">Post Views:</span> <span class="post-views-count">2,109</span>
-			</div></div></details></div></details>
-            </div>
-
-            <!-- 目次ハンバーガー（右下固定・常時）。中身はJSがセクションから生成 --></section>
+<p>7回目は発生率が大幅にアップする。</p></section>
   
   
   </article></main>
 <footer class="foot">個人アーカイブ（suroschool.jp / たかどらのスロ塾 会員コンテンツ）・閲覧用</footer>
+
+<!-- スマホ用ボトムナビ（スクロールで隠れる/出る） -->
+<nav class="botnav" id="botnav">
+  <a href="../index.html" data-nav="index">🎰<span>機種</span></a>
+  <button id="searchOpen2">🔍<span>検索</span></button>
+  <a href="../index.html?fav=1">★<span>お気に入り</span></a>
+  <a href="../news.html">📰<span>お知らせ</span></a>
+  <a href="../tool.html">🧮<span>期待値</span></a>
+</nav>
+
+<!-- 全ページ横断の検索オーバーレイ -->
+<div class="search-overlay" id="searchOverlay" hidden>
+  <div class="search-head">
+    <input id="globalSearch" type="search" placeholder="機種名で検索…" autocomplete="off">
+    <button id="searchClose" aria-label="閉じる">✕</button>
+  </div>
+  <div id="searchResults" class="search-results"></div>
+</div>
+
+<script src="../assets/search-index.js"></script>
 <script src="../assets/app.js"></script>
 </body></html>

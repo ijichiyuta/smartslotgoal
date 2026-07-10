@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="ja"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>L北斗の拳 | スマスロ目標 (個人アーカイブ)</title>
+<title>L北斗の拳 | スマスロ期待値 (個人アーカイブ)</title>
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="manifest" href="../manifest.webmanifest">
 <meta name="theme-color" content="#ffffff">
@@ -10,16 +10,18 @@
 <link rel="apple-touch-icon" href="../assets/icon.svg">
 <link rel="icon" href="../assets/icon.svg">
 <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){})});}</script>
+<script>window.__ROOT__='../';</script>
 
 </head><body>
-<header class="topbar">
-  <a class="brand" href="../index.html">🎰 スマスロ目標</a>
-  <nav>
+<header class="topbar" id="topbar">
+  <a class="brand" href="../index.html">🎰 スマスロ期待値</a>
+  <nav class="topnav">
     <a href="../index.html">機種</a>
     <a href="../news.html">お知らせ</a>
     <a href="../tool.html">期待値計算</a>
     <a href="../pages.html">資料</a>
   </nav>
+  <button class="topbar-search" id="searchOpen" aria-label="検索">🔍</button>
 </header>
 <main>
   <article class="machine">
@@ -35,13 +37,210 @@
     <button class="tab" data-tab="kaiseki">解析情報</button>
     
   </div>
-  <section class="panel is-active" data-panel="nerai"><div class="tenjo-info"><div class="my-spoiler-wrapper" id="my-spoiler-1"><div class="my-spoiler-title" style="cursor:pointer; background:rgba(245,184,0,0.08); padding:10px; border:1px solid rgba(245,184,0,0.3); color:var(--text-main); font-weight:700; letter-spacing:0.04em;"><span class="spoiler-icon" style="margin-right:5px;">[-]</span>機種情報</div><div class="my-spoiler-content" style="display:block; padding:10px; border:1px solid rgba(245,184,0,0.2); border-top:0; background:var(--bg-card-hi); color:var(--text-main);"><p>①天井情報 1268+α AT確定</p>
-<p>リセット時は天井短縮 800+α AT確定</p>
-<p>[リセット関連] ガックンなし</p>
-</div></div></div><p>[su_spoiler title=”直近差枚CK” style=”fancy” icon=”folder-1″]
-</p><div class="hoku-diff-ck-container">
+  <section class="panel is-active" data-panel="nerai"><img loading="lazy" decoding="async" width="150" height="150" src="../img/5371a7f473de5ef6.jpg" class="machine-thumbnail wp-post-image" alt="" style="display:block; margin:0 auto;" srcset="https://suroschool.jp/wp-content/uploads/2025/02/thumb_1-1-34-150x150.jpg 150w, https://suroschool.jp/wp-content/uploads/2025/02/thumb_1-1-34-120x120.jpg 120w" sizes="auto, (max-width: 150px) 100vw, 150px" /><p>[su_spoiler title=&#8221;直近差枚CK&#8221; style=&#8221;fancy&#8221; icon=&#8221;folder-1&#8243;]
+<div class="hoku-diff-ck-container">
 
+<style>
+  .hoku-diff-ck-container {
+    margin: 10px auto;
+    padding: 10px;
+    max-width: 600px;
+    width: 100%;
+  }
 
+  .hoku-diff-ck-container table {
+    width: 100%;
+    max-width: 600px;
+    table-layout: fixed;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .hoku-diff-ck-container {
+      max-width: 100%;
+      padding: 5px;
+    }
+    .hoku-diff-ck-container table {
+      width: 100%;
+      max-width: 100%;
+    }
+    .hoku-diff-ck-container th,
+    .hoku-diff-ck-container td {
+      font-size: 14px;
+      padding: 4px;
+    }
+    .hoku-diff-ck-container input.hamari {
+      width: 5ch;
+    }
+    .hoku-diff-ck-container input.bb {
+      width: 3ch;
+    }
+    .hoku-diff-ck-container .btn {
+      font-size: 14px;
+      padding: 6px 10px;
+    }
+    .hoku-diff-ck-container #instructions h2 {
+      font-size: 18px;
+    }
+    .hoku-diff-ck-container #instructions li {
+      font-size: 14px;
+    }
+  }
+
+  .hoku-diff-ck-container th,
+  .hoku-diff-ck-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+  }
+
+  .hoku-diff-ck-container th {
+    background-color: #007bff;
+    color: white;
+  }
+
+  .hoku-diff-ck-container input {
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+  .hoku-diff-ck-container input.hamari {
+    width: 5ch;
+  }
+  .hoku-diff-ck-container input.bb {
+    width: 3ch;
+  }
+
+  .hoku-diff-ck-container .btn {
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+  }
+  .hoku-diff-ck-container .btn:hover {
+    background-color: #0056b3;
+  }
+
+  .hoku-diff-ck-container .positive {
+    color: blue;
+  }
+  .hoku-diff-ck-container .negative {
+    color: red;
+  }
+
+  .hoku-diff-ck-container #instructions {
+    width: 90%;
+    margin: 20px auto;
+    text-align: left;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    display: none;
+  }
+
+  .hoku-diff-ck-container #instructions h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #007bff;
+  }
+  .hoku-diff-ck-container #instructions ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  .hoku-diff-ck-container #instructions li {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .hoku-diff-ck-container .swipeable {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    position: relative;
+    touch-action: pan-y;
+  }
+  .hoku-diff-ck-container .slide-out {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  .hoku-diff-ck-container .cumulative-diff {
+    position: relative;
+    padding-right: 0;
+  }
+
+  .hoku-diff-ck-container #tool-links {
+    margin-top: 40px;
+    text-align: left;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .hoku-diff-ck-container #tool-links h2 {
+    font-size: 18px;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  .hoku-diff-ck-container #tool-links ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .hoku-diff-ck-container #tool-links li {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  .hoku-diff-ck-container #tool-links a {
+    color: #000;
+    text-decoration: none;
+  }
+  .hoku-diff-ck-container #tool-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ボタンを横一列にする */
+  .button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 10px auto;
+  }
+  
+  .hoku-diff-ck-container .button-container .btn {
+    display: inline-block;
+    width: auto;
+    margin: 0;
+    padding: 10px;
+    flex: 1 1 30%;
+    max-width: 150px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .hoku-diff-ck-container .button-container .btn {
+      flex: 1 1 30%;
+      font-size: 14px;
+      padding: 6px 10px;
+    }
+  }
+</style>
 
 <table>
   <thead>
@@ -53,25 +252,7 @@
       <th>差枚</th>
     </tr>
   </thead>
-  <tbody id="input-table"><!-- JSで追加 --><tr class="swipeable">
-      <td>前回</td>
-      <td><input type="number" class="hamari" placeholder="ハマリ (G)" inputmode="numeric" pattern="[0-9]*"></td>
-      <td><input type="number" class="bb" placeholder="BB連" inputmode="numeric" pattern="[0-9]*"></td>
-      <td class="cumulative-games">[ - ]</td>
-      <td class="cumulative-diff"><span class="diff-value">0.0</span></td>
-    </tr><tr class="swipeable">
-      <td>前々回</td>
-      <td><input type="number" class="hamari" placeholder="ハマリ (G)" inputmode="numeric" pattern="[0-9]*"></td>
-      <td><input type="number" class="bb" placeholder="BB連" inputmode="numeric" pattern="[0-9]*"></td>
-      <td class="cumulative-games">[ - ]</td>
-      <td class="cumulative-diff"><span class="diff-value">0.0</span></td>
-    </tr><tr class="swipeable">
-      <td>3回前</td>
-      <td><input type="number" class="hamari" placeholder="ハマリ (G)" inputmode="numeric" pattern="[0-9]*"></td>
-      <td><input type="number" class="bb" placeholder="BB連" inputmode="numeric" pattern="[0-9]*"></td>
-      <td class="cumulative-games">[ - ]</td>
-      <td class="cumulative-diff"><span class="diff-value">0.0</span></td>
-    </tr></tbody>
+  <tbody id="input-table"><!-- JSで追加 --></tbody>
 </table>
 
 <div class="button-container">
@@ -80,7 +261,7 @@
   <button class="btn" onclick="clearInputs()">クリア</button>
 </div>
 
-<h2>直近差枚: <span id="latest-diff" class="positive">0.0</span></h2>
+<h2>直近差枚: <span id="latest-diff">0</span></h2>
 
 <button class="btn" id="toggleInstructions">使い方を表示</button>
 
@@ -102,8 +283,248 @@
   </ul>
 </div>
 
-
-</div>[/su_spoiler]<p></p>
+<script>
+  const MAX_GAME = 1300;
+  
+  document.getElementById('toggleInstructions').addEventListener('click', function() {
+    const instr = document.getElementById('instructions');
+    if (instr.style.display === 'none' || instr.style.display === '') {
+      instr.style.display = 'block';
+      this.textContent = '使い方を非表示';
+    } else {
+      instr.style.display = 'none';
+      this.textContent = '使い方を表示';
+    }
+  });
+  
+  function attachSwipeListener(row) {
+    let startX = 0, currentX = 0, moved = false;
+    const threshold = -100;
+    
+    row.addEventListener('touchstart', e => {
+      startX = e.touches[0].clientX;
+      moved = false;
+      row.style.transition = '';
+    });
+    row.addEventListener('touchmove', e => {
+      currentX = e.touches[0].clientX;
+      let diff = currentX - startX;
+      if (Math.abs(diff) > 10) moved = true;
+      if(diff < 0) row.style.transform = `translateX(${diff}px)`;
+    });
+    row.addEventListener('touchend', () => {
+      let diff = currentX - startX;
+      if(moved && diff < threshold) {
+        row.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
+        row.classList.add('slide-out');
+        setTimeout(() => {
+          row.remove();
+          updateRowNumbers();
+          calculate();
+          saveData();
+        }, 300);
+      } else {
+        row.style.transition = 'transform 0.3s ease';
+        row.style.transform = '';
+      }
+      startX = 0; currentX = 0;
+    });
+    
+    row.addEventListener('mousedown', e => {
+      startX = e.clientX;
+      moved = false;
+      row.style.transition = '';
+      function onMouseMove(e) {
+        currentX = e.clientX;
+        let diff = currentX - startX;
+        if(Math.abs(diff) > 10) moved = true;
+        if(diff < 0) row.style.transform = `translateX(${diff}px)`;
+      }
+      function onMouseUp(e) {
+        let diff = currentX - startX;
+        if(moved && diff < threshold) {
+          row.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
+          row.classList.add('slide-out');
+          setTimeout(() => {
+            row.remove();
+            updateRowNumbers();
+            calculate();
+            saveData();
+          }, 300);
+        } else {
+          row.style.transition = 'transform 0.3s ease';
+          row.style.transform = '';
+        }
+        document.removeEventListener('mousemove', onMouseMove);
+        document.removeEventListener('mouseup', onMouseUp);
+        startX = 0; currentX = 0;
+      }
+      document.addEventListener('mousemove', onMouseMove);
+      document.addEventListener('mouseup', onMouseUp);
+    });
+  }
+  
+  function saveData() {
+    const rows = document.querySelectorAll("#input-table tr");
+    const data = [];
+    rows.forEach(row => {
+      const hamari = row.querySelector(".hamari").value;
+      const bb = row.querySelector(".bb").value;
+      data.push({ hamari, bb });
+    });
+    localStorage.setItem("tableData", JSON.stringify(data));
+  }
+  
+  function addRow() {
+    const table = document.getElementById("input-table");
+    const rowCount = table.rows.length;
+    const row = document.createElement("tr");
+    row.classList.add("swipeable");
+    let rowName = rowCount === 0 ? "前回" : rowCount === 1 ? "前々回" : `${rowCount + 1}回前`;
+    row.innerHTML = `
+      <td>${rowName}</td>
+      <td><input type="number" class="hamari" placeholder="ハマリ (G)" inputmode="numeric" pattern="[0-9]*" /></td>
+      <td><input type="number" class="bb" placeholder="BB連" inputmode="numeric" pattern="[0-9]*" /></td>
+      <td class="cumulative-games">0</td>
+      <td class="cumulative-diff"><span class="diff-value">0</span></td>
+    `;
+    document.getElementById("input-table").appendChild(row);
+    updateRowNumbers();
+    calculate();
+    attachSwipeListener(row);
+    row.querySelector(".hamari").focus();
+    saveData();
+  }
+  
+  function shiftRowsDown() {
+    const table = document.getElementById("input-table");
+    const newRow = document.createElement("tr");
+    newRow.classList.add("swipeable");
+    newRow.innerHTML = `
+      <td></td>
+      <td><input type="number" class="hamari" placeholder="ハマリ (G)" inputmode="numeric" pattern="[0-9]*" /></td>
+      <td><input type="number" class="bb" placeholder="BB連" inputmode="numeric" pattern="[0-9]*" /></td>
+      <td class="cumulative-games">0</td>
+      <td class="cumulative-diff"><span class="diff-value">0</span></td>
+    `;
+    table.insertBefore(newRow, table.firstChild);
+    updateRowNumbers();
+    calculate();
+    attachSwipeListener(newRow);
+    newRow.querySelector(".hamari").focus();
+    saveData();
+  }
+  
+  function clearInputs() {
+    const inputs = document.querySelectorAll("#input-table input");
+    inputs.forEach(input => input.value = "");
+    calculate();
+    saveData();
+  }
+  
+  function updateRowNumbers() {
+    const rows = document.querySelectorAll("#input-table tr");
+    rows.forEach((row, index) => {
+      row.cells[0].textContent = index === 0 ? "前回" : index === 1 ? "前々回" : `${index + 1}回前`;
+    });
+  }
+  
+  function calculate() {
+    const rows = document.querySelectorAll("#input-table tr");
+    let cumulativeG = 0, cumulativeNormal = 0, cumulativeAT = 0, coinHolding = 0;
+    rows.forEach(row => {
+      const hamariInput = row.querySelector(".hamari").value;
+      const bbInput = row.querySelector(".bb").value;
+      const isEmpty = (hamariInput === "" && bbInput === "");
+      let hamari = parseInt(hamariInput) || 0;
+      let bb = parseInt(bbInput) || 0;
+      let normalCost = hamari * 1.35;
+      let atGames = (bb * 41) - 10;
+      let atIncrease = bb * 114.5;
+      let totalGames = hamari + atGames;
+      if (cumulativeG + totalGames > MAX_GAME) {
+        let excess = (cumulativeG + totalGames) - MAX_GAME;
+        if (excess > hamari) {
+          excess -= hamari;
+          hamari = 0;
+          normalCost = 0;
+          atGames -= excess;
+          atIncrease = (atGames / 41) * 114.5;
+        } else {
+          hamari -= excess;
+          normalCost = hamari * 1.35;
+        }
+        totalGames = hamari + atGames;
+      }
+      cumulativeG += totalGames;
+      cumulativeNormal += normalCost;
+      cumulativeAT += atIncrease;
+      coinHolding = cumulativeAT - cumulativeNormal;
+      row.querySelector(".cumulative-games").textContent = isEmpty ? "[ - ]" : cumulativeG.toFixed(0);
+      row.querySelector(".cumulative-diff").innerHTML = `<span class="diff-value">${coinHolding.toFixed(1)}</span>`;
+    });
+    const latestDiff = document.getElementById("latest-diff");
+    latestDiff.textContent = coinHolding.toFixed(1);
+    latestDiff.className = coinHolding >= 0 ? "positive" : "negative";
+    updateTargetTableHighlight(coinHolding);
+  }
+  
+  function updateTargetTableHighlight(coinHolding) {
+    const table = document.getElementById("targetTable");
+    if(!table) return;
+    const rows = table.querySelectorAll("tbody tr");
+    rows.forEach(row => row.classList.remove("highlight"));
+    if (coinHolding < -500 && rows[0]) rows[0].classList.add("highlight");
+    else if (coinHolding >= -500 && coinHolding < 0 && rows[1]) rows[1].classList.add("highlight");
+    else if (coinHolding >= 0 && coinHolding < 500 && rows[2]) rows[2].classList.add("highlight");
+    else if (coinHolding >= 500 && rows[3]) rows[3].classList.add("highlight");
+  }
+  
+  document.getElementById("input-table").addEventListener("input", function() {
+    calculate();
+    saveData();
+  });
+  
+  document.addEventListener("keydown", function(event) {
+    if (event.key === "Enter" && document.activeElement.tagName === "INPUT") {
+      const inputs = Array.from(document.querySelectorAll("input"));
+      const index = inputs.indexOf(document.activeElement);
+      if (index !== -1 && index < inputs.length - 1) inputs[index + 1].focus();
+      else addRow();
+      event.preventDefault();
+    }
+  });
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    const stored = localStorage.getItem("tableData");
+    if (stored) {
+      const data = JSON.parse(stored);
+      data.forEach(rowData => {
+        const table = document.getElementById("input-table");
+        const row = document.createElement("tr");
+        row.classList.add("swipeable");
+        const rowCount = table.rows.length;
+        let rowName = rowCount === 0 ? "前回" : rowCount === 1 ? "前々回" : `${rowCount + 1}回前`;
+        row.innerHTML = `
+          <td>${rowName}</td>
+          <td><input type="number" class="hamari" placeholder="ハマリ (G)" value="${rowData.hamari}" /></td>
+          <td><input type="number" class="bb" placeholder="BB連" value="${rowData.bb}" /></td>
+          <td class="cumulative-games">0</td>
+          <td class="cumulative-diff"><span class="diff-value">0</span></td>
+        `;
+        document.getElementById("input-table").appendChild(row);
+        attachSwipeListener(row);
+      });
+      updateRowNumbers();
+      calculate();
+    } else {
+      addRow();
+      addRow();
+      addRow();
+    }
+  });
+</script>
+</div>[/su_spoiler]</p>
 
 
 
@@ -207,7 +628,7 @@
 
 
 
-<figure class="wp-block-image"><a href="../img/b639a77edf1d3357.jpg"><img width="300" height="170" src="../img/c414af85fa5c0447.jpg" alt="" class="wp-image-637" decoding="async" sizes="auto, (max-width: 300px) 100vw, 300px"></a></figure>
+<figure class="wp-block-image"><a href="../img/b639a77edf1d3357.jpg"><img width="300" height="170" src="../img/c414af85fa5c0447.jpg" alt="" class="wp-image-637"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/02/IMG_3161-300x170.jpg 300w, https://suroschool.jp/wp-content/uploads/2025/02/IMG_3161-1024x580.jpg 1024w, https://suroschool.jp/wp-content/uploads/2025/02/IMG_3161-768x435.jpg 768w, https://suroschool.jp/wp-content/uploads/2025/02/IMG_3161-1536x871.jpg 1536w, https://suroschool.jp/wp-content/uploads/2025/02/IMG_3161-2048x1161.jpg 2048w" sizes="auto, (max-width: 300px) 100vw, 300px" /></a></figure>
 
 
 
@@ -240,48 +661,41 @@
 
 
 <p class="wp-block-paragraph"><a href="https://note.com/dakuo_slot/n/n083ade44913e" target="_blank" rel="noreferrer noopener">期待値見える化だくお　有料　一部無料</a><br>リセット天井期待値は無料で見れる</p>
-<div class="post-views content-post post-636 entry-meta load-static">
-				<span class="post-views-icon dashicons dashicons-chart-bar"></span> <span class="post-views-label">Post Views:</span> <span class="post-views-count">1,436</span>
-			</div>
-          <!-- 目次ハンバーガー（右下固定・常時）。中身はJSが見出し(h2/h3)から生成。会員ロック時は空→自動非表示 --></section>
-  <section class="panel" data-panel="kaiseki"><div class="kaiseki-toolbar">
-              
-            </div>
-            <div class="kaiseki-accordion">
-              <details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i">基本情報</span></summary><div class="kaiseki-section-body">
+</section>
+  <section class="panel" data-panel="kaiseki"><h2>基本情報</h2>
 <ul>
 <li>メーカー: サミー</li>
 <li>機械割: 98.0% 〜 113.0%</li>
 <li>導入開始日: 2023年04月03日（月）</li>
 <li>ゲーム性概要: サミーのスマスロ第1弾は『スマスロ北斗の拳』。初代の演出やゲーム性が完全再現されているのが最大の特徴で、バトルボーナスを継続させて出玉を増やす仕様となっている。バトルの性能を底上げしてくれるレイ共闘やトキ共闘、継続率94%を誇る無想転生バトルなど、ロング継続に期待できる新要素も追加されているぞ！</li>
 </ul>
-<p><img alt="スマスロ北斗の拳（パチスロ）のリール配列" src="https://p-town.dmm.com/upload/machines/4301/reel.jpg?t=1779358808" decoding="async"></p>
-<p><img alt="スマスロ北斗の拳（パチスロ）のゲームフロー" src="https://p-town.dmm.com/upload/machines/4301/flow.jpg?t=1779358808" decoding="async"></p>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-2">打ち方</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-3">打ち方・小役</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-4">中押し小役狙い</span></h4>
+<p><img alt="スマスロ北斗の拳（パチスロ）のリール配列" src="https://p-town.dmm.com/upload/machines/4301/reel.jpg?t=1779358808"></p>
+<p><img alt="スマスロ北斗の拳（パチスロ）のゲームフロー" src="https://p-town.dmm.com/upload/machines/4301/flow.jpg?t=1779358808"></p>
+<h2>打ち方</h2>
+<h3>打ち方・小役</h3>
+<h4>中押し小役狙い</h4>
 <p>［最初に狙う絵柄］ 中リールに赤7を目押し。取りこぼしを防ぐため、停止順は中→右→左を推奨だ。</p>
-<p><img alt="スマスロ北斗の拳打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-16-01.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-16-01.jpg"></p>
 <p>［ベル中段停止］ 成立役：ハズレorベルorチャンス目</p>
-<p><img alt="スマスロ北斗の拳打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-16-02.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-16-02.jpg"></p>
 <p>［赤7中段停止→リプレイテンパイ］ 成立役：リプレイ</p>
-<p><img alt="スマスロ北斗の拳打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-16-03.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-16-03.jpg"></p>
 <p>［赤7中段停止→リプレイ非テンパイ］ 成立役：角チェリーor中段チェリーorリーチ目役 白BARを目安にチェリーを目押し。チェリーを否定すればリーチ目役だ。</p>
-<p><img alt="スマスロ北斗の拳打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-16-04.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-16-04.jpg"></p>
 <p>［スイカ中段停止］ 成立役：弱スイカor強スイカorリーチ目役</p>
-<p><img alt="スマスロ北斗の拳打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-16-05.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-16-05.jpg"></p>
 <p>「レア役の停止形」</p>
-<p><img alt="スマスロ北斗の拳打ち方レア役" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-16-06.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳打ち方レア役" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-16-06.jpg"></p>
 <p>「リーチ目役の停止例」</p>
-<p><img alt="スマスロ北斗の拳リーチ目" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0322/07@3x.jpg" decoding="async"></p>
-<h4><span id="i-5">順押し手順</span></h4>
+<p><img alt="スマスロ北斗の拳リーチ目" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0322/07@3x.jpg"></p>
+<h4>順押し手順</h4>
 <p>順押し時はスイカの強弱が判別できない、チャンス目とベルこぼしが見分けづらいというデメリットがある。</p>
-<p><img alt="スマスロ北斗の拳順押し" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0327/0327-05-01.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳順押し" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0327/0327-05-01.jpg"></p>
 <p>［順押しリーチ目役の停止例］</p>
-<p><img alt="スマスロ北斗の拳順押し" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0327/0327-05-02.jpg" decoding="async"></p>
-<h4><span id="AB">強スイカと中段チェリーのA・B</span></h4>
+<p><img alt="スマスロ北斗の拳順押し" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0327/0327-05-02.jpg"></p>
+<h4>強スイカと中段チェリーのA・B</h4>
 <p>強スイカと中段チェリーは内部的に2種類あり、若干制御が異なる（役割は同じ）。</p>
-<h4><span id="AB-2">強スイカと中段チェリーA・Bの制御特徴</span></h4>
+<h4>強スイカと中段チェリーA・Bの制御特徴</h4>
 <table>
 <thead>
 <tr>
@@ -310,24 +724,24 @@
 </table>
 <p>※中段チェリーはどちらも左下段にチェリーをビタ押しすると角チェリーが停止</p>
 <p>「強スイカのオススメ判別」 右リールに9番のスイカを狙えば強スイカ時は必ず斜めに揃う。</p>
-<p><img alt="スマスロ北斗強レア役" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0417/0417-03-02.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗強レア役" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0417/0417-03-02.jpg"></p>
 <p>「中段チェリーのオススメ判別」 中段チェリー時は必ず中段に停止する。</p>
-<p><img alt="スマスロ北斗強レア役" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0417/0417-03-03.jpg" decoding="async"></p>
-<h4><span id="7">順押し赤7の小役狙い</span></h4>
+<p><img alt="スマスロ北斗強レア役" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0417/0417-03-03.jpg"></p>
+<h4>順押し赤7の小役狙い</h4>
 <p>順押し赤7狙いはスイカの強弱が見抜けなくなり、中段チェリー時に北斗カウンターが発動しない、チャンス目が見抜けない場合がある、リーチ目役成立時にJACを揃えることができる…という特徴がある。 左リールのJACがチェリーの代用になるのでチェリーの取りこぼしはなし。気分転換に最適な打ち方だ。</p>
 <p>［最初に狙う絵柄］</p>
-<p><img alt="スマスロ北斗の拳順押し" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-11-01.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳順押し" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-11-01.jpg"></p>
 <p>［BAR下段停止］ 成立役：ハズレorベルorチャンス目orリーチ目役 チャンス目は中押し時と同じく中＆右リール中段のベル停止だが、ベルこぼし時の一部で同様の出目が停止する場合がある。</p>
-<p><img alt="スマスロ北斗の拳順押し" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-11-02.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳順押し" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-11-02.jpg"></p>
 <p>［赤7上段停止］ 成立役：リプレイorスイカorリーチ目役</p>
-<p><img alt="スマスロ北斗の拳順押し" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-11-03.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳順押し" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-11-03.jpg"></p>
 <p>［角JAC停止］ 成立役：角チェリー</p>
-<p><img alt="スマスロ北斗の拳順押し" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/tsuika/0427-11-04a.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳順押し" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/tsuika/0427-11-04a.jpg"></p>
 <p>［中段JAC停止］ 成立役：中段チェリーorリーチ目役 JACを狙って揃えばリーチ目役だ。</p>
-<p><img alt="スマスロ北斗の拳順押し" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/tsuika/0427-11-05a.jpg" decoding="async"></p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-6">解析情報通常時</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-7">小役関連</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-8">小役確率</span></h4>
+<p><img alt="スマスロ北斗の拳順押し" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/tsuika/0427-11-05a.jpg"></p>
+<h2>解析情報通常時</h2>
+<h3>小役関連</h3>
+<h4>小役確率</h4>
 <table>
 <thead>
 <tr>
@@ -406,7 +820,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-9">強スイカ・中段チェリーの詳細確率</span></h4>
+<h4>強スイカ・中段チェリーの詳細確率</h4>
 <table>
 <thead>
 <tr>
@@ -456,7 +870,7 @@
 </tbody>
 </table>
 <p>※強スイカA…打ち方によって弱スイカと同じ停止形をとる ※中段チェリーB…左1st時は角チェリーから3連チェリーの形をとる</p>
-<h4><span id="i-10">レア役合算確率</span></h4>
+<h4>レア役合算確率</h4>
 <table>
 <thead>
 <tr>
@@ -487,8 +901,8 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-11">内部状態関連</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-12">内部状態一覧</span></h4>
+<h3>内部状態関連</h3>
+<h4>内部状態一覧</h4>
 <table>
 <thead>
 <tr>
@@ -511,7 +925,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-13">内部状態アップ期待度</span></h4>
+<h4>内部状態アップ期待度</h4>
 <table>
 <thead>
 <tr>
@@ -544,9 +958,9 @@
 </table>
 <p>※リーチ目役はBB濃厚</p>
 <p>内部状態がアップするほど レア役成立時のBB（バトルボーナス）当選率がアップ 。これまでのシリーズと同じく、中段チェリーの期待度は天国時なら100%、地獄時でも25%で当選する。 転落抽選はリプレイ時におこなわれる。</p>
-<h4><span id="BB">設定変更・BB終了後の内部状態移行率</span></h4>
+<h4>設定変更・BB終了後の内部状態移行率</h4>
 <p>高設定は設定変更（リセット）後やBB終了後に天国へ移行しやすい。</p>
-<h4><span id="i-14">［地獄滞在時］成立役ごとの抽選</span></h4>
+<h4>［地獄滞在時］成立役ごとの抽選</h4>
 <table>
 <thead>
 <tr>
@@ -593,7 +1007,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-15">［通常滞在時］成立役ごとの抽選</span></h4>
+<h4>［通常滞在時］成立役ごとの抽選</h4>
 <table>
 <thead>
 <tr>
@@ -640,7 +1054,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-16">［天国滞在時］成立役ごとの抽選</span></h4>
+<h4>［天国滞在時］成立役ごとの抽選</h4>
 <table>
 <thead>
 <tr>
@@ -684,13 +1098,13 @@
 </tbody>
 </table>
 <p>※転落時の比率は通常：地獄＝1：2（66.7%が地獄へ）</p>
-<h4><span id="i-17">リーチ目役</span></h4>
+<h4>リーチ目役</h4>
 <p>通常・天国ともにリプレイ時の11.2%で状態が転落。 天国滞在時は地獄or通常（2：１）へ、通常滞在時は地獄へ移行する。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-18">前兆</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-19">本前兆ゲーム数</span></h4>
+<h3>前兆</h3>
+<h4>本前兆ゲーム数</h4>
 <p>本前兆のゲーム数が6〜32G。北斗揃い時のみ最大の32Gが選択される可能性がある。</p>
-<p><img alt="スマスロ北斗の拳前兆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0410/0410-02-01.jpg" decoding="async"></p>
-<h4><span id="BB-2">BB本前兆中のレア役・抽選内容</span></h4>
+<p><img alt="スマスロ北斗の拳前兆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0410/0410-02-01.jpg"></p>
+<h4>BB本前兆中のレア役・抽選内容</h4>
 <table>
 <thead>
 <tr>
@@ -710,7 +1124,7 @@
 </tbody>
 </table>
 <p>リーチ目役は、北斗揃いへの昇格 or Vストックが確定する。</p>
-<h4><span id="BB-3">BB本前兆ゲーム数振り分け</span></h4>
+<h4>BB本前兆ゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -858,13 +1272,13 @@
 </tbody>
 </table>
 <p>※リセット後や変則押しした場合はゲーム数がずれる可能性がある</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-20">有利区間関連</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-21">ツラヌキスペック改</span></h4>
+<h3>有利区間関連</h3>
+<h4>ツラヌキスペック改</h4>
 <p>AT中はどこで有利区間が切れるかわからない仕様になっているが、有利区間が切れると 有利区間移行時に継続率84%以上のBBが再セット される。無想転生バトルは、この有利区間が切れるシステムを加味した上で平均94%ループ（平均16.6連）に設計されている。 あくまで内部的な仕様なので、有利区間移行に関わらず、見た目上はBBが途切れずに継続する。</p>
 <p>当然、昇天＝有利区間切れではないので、有利区間を意識せずどこからでも打つことができる。</p>
-<p><img alt="スマスロ北斗の拳昇天" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0327/0327-08-01.jpg" decoding="async"></p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-22">天井</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-23">天井短縮が抽選されるゲーム数</span></h4>
+<p><img alt="スマスロ北斗の拳昇天" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0327/0327-08-01.jpg"></p>
+<h3>天井</h3>
+<h4>天井短縮が抽選されるゲーム数</h4>
 <table>
 <thead>
 <tr>
@@ -888,16 +1302,16 @@
 </tbody>
 </table>
 <p>規定ゲーム数到達時に天井の短縮を抽選。 当選時は最大32Gの前兆を経てBBに突入 する。設定変更後は最大天井が800Gになるため混同しないようにしておこう。 最大天井到達時（設定変更後含む）はBBの84%以上選択率が優遇される（短縮時は優遇なし）。 777Gに短縮された場合は 北斗揃いが確定 する。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-24">演出動画</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-25">ロングフリーズ</span></h4>
+<h3>演出動画</h3>
+<h4>ロングフリーズ</h4>
 <p>通常時の白BAR揃いで発生する、無想転生バトル突入確定演出。発生確率は約1/85000と激低だが、恩恵はかなり大きい。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-26">フリーズ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-27">ロングフリーズ</span></h4>
+<h3>フリーズ</h3>
+<h4>ロングフリーズ</h4>
 <p>発生すれば無想転生バトルに突入する！</p>
-<p><img alt="スマスロ北斗の拳ロングフリーズ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-15-01.jpg" decoding="async"></p>
-<p><img alt="スマスロ北斗の拳ロングフリーズ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-15-02.jpg" decoding="async"></p>
-<p><img alt="スマスロ北斗の拳ロングフリーズ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-15-03.jpg" decoding="async"></p>
-<h4><span id="i-28">ロングフリーズ性能</span></h4>
+<p><img alt="スマスロ北斗の拳ロングフリーズ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-15-01.jpg"></p>
+<p><img alt="スマスロ北斗の拳ロングフリーズ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-15-02.jpg"></p>
+<p><img alt="スマスロ北斗の拳ロングフリーズ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-15-03.jpg"></p>
+<h4>ロングフリーズ性能</h4>
 <table>
 <thead>
 <tr>
@@ -915,12 +1329,12 @@
 <td>無想転生バトル</td>
 </tr>
 </tbody>
-</table></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-29">解析情報ボーナス時</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="BB-4">バトルボーナス（BB）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="BB-5">BB概要</span></h4>
-<p><img alt="スマスロ北斗の拳バトルボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-06-01.jpg" decoding="async"></p>
-<h4><span id="BB-6">バトルボーナス（BB性能）</span></h4>
+</table>
+<h2>解析情報ボーナス時</h2>
+<h3>バトルボーナス（BB）</h3>
+<h4>BB概要</h4>
+<p><img alt="スマスロ北斗の拳バトルボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-06-01.jpg"></p>
+<h4>バトルボーナス（BB性能）</h4>
 <table>
 <thead>
 <tr>
@@ -974,16 +1388,16 @@
 </table>
 <p>初代と同じく小役パート終了後にバトルパートへ移行して継続をジャッジ。レア役は 小役パート中なら宿命バトル（勝利でVストック）やレイorトキの共闘、バトルパート中は継続率アップを抽選 するため、初代と違ってヒキ損なし！</p>
 <p>［小役パート］ 30G＋α消化でバトルパートへ。今回も バトル移行ゲームの第3停止ボタンを離した瞬間 に継続率を参照して継続の当否がジャッジされる。</p>
-<p><img alt="スマスロ北斗の拳バトルボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-06-03.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳バトルボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-06-03.jpg"></p>
 <p>［バトルパート］ ケンシロウが負けなければBB継続だ。</p>
-<p><img alt="スマスロ北斗の拳バトルボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-06-04.jpg" decoding="async"></p>
-<h4><span id="i-30">レイ・トキ昇天エピソード</span></h4>
+<p><img alt="スマスロ北斗の拳バトルボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-06-04.jpg"></p>
+<h4>レイ・トキ昇天エピソード</h4>
 <p>レイ共闘、トキ共闘時に発生する可能性がある無想転生バトル濃厚エピソード。</p>
 <p>［レイ昇天エピソード］</p>
-<p><img alt="スマスロ北斗の拳スペシャルエピソード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-13-01.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳スペシャルエピソード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-13-01.jpg"></p>
 <p>［トキ昇天エピソード］</p>
-<p><img alt="スマスロ北斗の拳スペシャルエピソード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-13-02.jpg" decoding="async"></p>
-<h4><span id="BBBB">［全BBの平均値］BB継続率分布</span></h4>
+<p><img alt="スマスロ北斗の拳スペシャルエピソード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-13-02.jpg"></p>
+<h4>［全BBの平均値］BB継続率分布</h4>
 <table>
 <thead>
 <tr>
@@ -1033,7 +1447,7 @@
 </tbody>
 </table>
 <p>※北斗揃い・天井到達時の数値を含む</p>
-<h4><span id="BB-7">［北斗揃い］BB継続率振り分け</span></h4>
+<h4>［北斗揃い］BB継続率振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1084,15 +1498,15 @@
 </table>
 <p>※フリーズ時は無想転生バトル（継続率94%）</p>
 <p>継続率の選択率には設定差がなく、4割弱が79%以上となる。ただし、低設定のほうが天井に到達しやすいため、トータルで見ると84%以上の選択率が高くなる（天井到達時は継続率84%以上選択率が優遇）。</p>
-<h4><span id="i-31">継続バトル中の押し順ナビ</span></h4>
+<h4>継続バトル中の押し順ナビ</h4>
 <p>継続バトル中の押し順ベルでナビ （約1/200） が発生した場合は 中段チェリーと同等の抽選が受けられる ため、内部的に敗北だった場合でも勝利確定。内部的に勝利だった場合は継続率アップに期待だ。</p>
-<p><img alt="スマスロ北斗の拳押し順" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0403/0403-04-01.jpg" decoding="async"></p>
-<h4><span id="1G">1G連抽選</span></h4>
+<p><img alt="スマスロ北斗の拳押し順" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0403/0403-04-01.jpg"></p>
+<h4>1G連抽選</h4>
 <p>BB終了画面で第3停止ボタンを離したタイミングで1G連を抽選。1G連に当選しなくても、本前兆からスタートすることもある。</p>
-<p><img alt="スマスロ北斗の拳1G連" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0403/0403-06-01.jpg" decoding="async"></p>
-<h4><span id="7-2">赤7揃い＆フェイク確率</span></h4>
+<p><img alt="スマスロ北斗の拳1G連" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0403/0403-06-01.jpg"></p>
+<h4>赤7揃い＆フェイク確率</h4>
 <p>赤7揃いの前にフェイクを引くことができれば北斗揃いに昇格。理論上、先にフェイクを引ける確率は赤7BB時の約180回に1回（約0.8%）程度となる。</p>
-<h4><span id="7-3">赤7揃い＆フェイク（北斗昇格）確率</span></h4>
+<h4>赤7揃い＆フェイク（北斗昇格）確率</h4>
 <table>
 <thead>
 <tr>
@@ -1119,7 +1533,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="BB7">BB（赤7揃い）時の割合</span></h4>
+<h4>BB（赤7揃い）時の割合</h4>
 <table>
 <thead>
 <tr>
@@ -1147,12 +1561,12 @@
 </tbody>
 </table>
 <p>※赤7揃い＆フェイク時のみでの数値</p>
-<h4><span id="i-32">前兆ゲーム数</span></h4>
+<h4>前兆ゲーム数</h4>
 <p>宿命バトルの前兆が 7G だった（契機役から7G目に発展した）場合、アミババトル濃厚となる。</p>
-<p><img alt="スマスロ北斗の拳アミババトル" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/tsuika/amiba.jpg" decoding="async"></p>
-<h4><span id="i-33">攻撃パターン別の無想転生チャンス抽選</span></h4>
+<p><img alt="スマスロ北斗の拳アミババトル" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/tsuika/amiba.jpg"></p>
+<h4>攻撃パターン別の無想転生チャンス抽選</h4>
 <p>ケンシロウorレイ先制時に、 ラオウへの攻撃がHITしたタイミング でも無想転生チャンスを抽選。レイ無想転生は期待度こそ控えめだが、必ず攻撃がHITするためチャンス、トキの無想転生は無想転生チャンス確定だ。</p>
-<h4><span id="HIT">攻撃HIT時・無想転生チャンス当選率</span></h4>
+<h4>攻撃HIT時・無想転生チャンス当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1190,7 +1604,7 @@
 </tbody>
 </table>
 <p>※攻撃のカッコ内はレイ共闘時の攻撃パターン</p>
-<h4><span id="i-34">確定画面中・レア役時の抽選</span></h4>
+<h4>確定画面中・レア役時の抽選</h4>
 <table>
 <thead>
 <tr>
@@ -1210,7 +1624,7 @@
 </tbody>
 </table>
 <p>確定画面中のレア役はVストックを抽選する。</p>
-<h4><span id="i-35">バトル中のレア役成立時ポイント</span></h4>
+<h4>バトル中のレア役成立時ポイント</h4>
 <table>
 <thead>
 <tr>
@@ -1242,10 +1656,10 @@
 </tbody>
 </table>
 <p>リーチ目役は無想転生チャンスの大チャンス、ラオウガード時のゲームなら無想転生チャンス濃厚だ。</p>
-<h4><span id="i-36">バトルパート中の攻防抽選</span></h4>
+<h4>バトルパート中の攻防抽選</h4>
 <p>バトルパートの演出は継続の成否と同じく、JACIN演出の第3停止を離した瞬間に決定。バトルパート中はタイミングごとに演出の書き換え（継続率アップ）を抽選しているため、百裂拳を放つゲームならHIT（継続率84%以上）ラオウのパンチで倒れたゲームならユリア復活（継続率84%以上）などに期待できる。</p>
-<p><img alt="スマスロ北斗の拳JAC" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0613/0613-01-01.jpg" decoding="async"></p>
-<h4><span id="BBV">BB確定画面のVストック当選率</span></h4>
+<p><img alt="スマスロ北斗の拳JAC" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0613/0613-01-01.jpg"></p>
+<h4>BB確定画面のVストック当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1281,12 +1695,12 @@
 </tbody>
 </table>
 <p>レア役を複数回引けば複数ストックにも期待できる。</p>
-<h4><span id="i-37">バトルパート最終ゲームのレア役</span></h4>
+<h4>バトルパート最終ゲームのレア役</h4>
 <p>バトルの最終ゲームでレア役を引いた場合、勝利書き換えだけでなく、BB終了後のモード移行も優遇。強スイカなら書き換えに漏れた場合でも、約50%で本前兆へ移行する。</p>
-<p><img alt="スマスロ北斗の拳BB" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0824/0828-02-01.jpg" decoding="async"></p>
-<h4><span id="i-38">宿命バトル高確</span></h4>
+<p><img alt="スマスロ北斗の拳BB" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0824/0828-02-01.jpg"></p>
+<h4>宿命バトル高確</h4>
 <p>BB中はチャンス目時の50%で宿命バトル高確へ移行。高確は3or5or10G継続して、滞在中はレア役時の宿命バトル当選率が大幅にアップする。</p>
-<h4><span id="i-39">チャンス目時の宿命バトル高確移行率</span></h4>
+<h4>チャンス目時の宿命バトル高確移行率</h4>
 <table>
 <thead>
 <tr>
@@ -1313,16 +1727,16 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-40">共闘</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-41">共闘概要</span></h4>
+<h3>共闘</h3>
+<h4>共闘概要</h4>
 <p>共闘はレイとトキの2種類で、どちらも バトル継続濃厚＋無想転生チャンス移行 に期待できる。バトルでレイやトキが昇天すれば無想転生バトルへ移行する。</p>
 <p>バトル中に下パネルが消灯すれば…!?</p>
 <p>「共闘のループもあり」 宿命バトル勝利時に当選した共闘はループすることもある。ループ率は 12.5%or50%or66% の3種類。ループ当選時は次セットがＶストック保持＋レイ共闘orトキ共闘状態からスタートする。</p>
 <p>［レイ共闘］ バトルの展開によって無想転生チャンスや昇天の期待度を示唆。</p>
-<p><img alt="スマスロ北斗の拳共闘" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-08-01.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳共闘" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-08-01.jpg"></p>
 <p>［トキ共闘］ 8G目にトキが死兆星を指せば!?</p>
-<p><img alt="スマスロ北斗の拳共闘" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-08-02.jpg" decoding="async"></p>
-<h4><span id="i-42">トキ共闘時の恩恵振り分け</span></h4>
+<p><img alt="スマスロ北斗の拳共闘" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-08-02.jpg"></p>
+<h4>トキ共闘時の恩恵振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1346,7 +1760,7 @@
 </tbody>
 </table>
 <p>※レア役による書き換えを含まない数値</p>
-<h4><span id="V">昇天中のVストック当選率（レイ・トキ共通）</span></h4>
+<h4>昇天中のVストック当選率（レイ・トキ共通）</h4>
 <table>
 <thead>
 <tr>
@@ -1425,9 +1839,9 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-43">昇天（スペシャルエピソード）抽選</span></h4>
+<h4>昇天（スペシャルエピソード）抽選</h4>
 <p>レイ・トキ共闘中のバトルパートではレア役で昇天（スペシャルエピソード）を抽選。レイはレア役以外でも攻撃HIT時の抽選があるため、レア役以外でも当選する可能性はある。トキに関しては共闘当選時の恩恵が継続のみ：無想転生チャンス：トキ昇天＝1：1：1で当選する。</p>
-<h4><span id="i-44">レア役契機の昇天（スペシャルエピソード）当選率</span></h4>
+<h4>レア役契機の昇天（スペシャルエピソード）当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1470,19 +1884,19 @@
 </tbody>
 </table>
 <p>※バトルパート中の抽選値</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-45">宿命バトル</span></summary><div class="kaiseki-subsection-body">
+<h3>宿命バトル</h3>
 <p>2G間のバトルで、勝利すればVストックを獲得。さらに勝利時はレイやトキ共闘に移行することもある。 トータル確率は1/162.5（設定1）だ。</p>
 <p>［VSシン］</p>
-<p><img alt="スマスロ北斗の拳宿命バトル" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-07-01.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳宿命バトル" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-07-01.jpg"></p>
 <p>［VSサウザー］</p>
-<p><img alt="スマスロ北斗の拳宿命バトル" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-07-02.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳宿命バトル" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-07-02.jpg"></p>
 <p>［VSウイグル］</p>
-<p><img alt="スマスロ北斗の拳宿命バトル" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-07-03.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳宿命バトル" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-07-03.jpg"></p>
 <p>［VSジャギ］</p>
-<p><img alt="スマスロ北斗の拳宿命バトル" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/h00001.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳宿命バトル" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/h00001.jpg"></p>
 <p>［VSアミバ］</p>
-<p><img alt="スマスロ北斗の拳宿命バトル" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-07-05.jpg" decoding="async"></p>
-<h4><span id="i-46">宿命バトルのキャラ別出現割合＆勝率</span></h4>
+<p><img alt="スマスロ北斗の拳宿命バトル" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-07-05.jpg"></p>
+<h4>宿命バトルのキャラ別出現割合＆勝率</h4>
 <table>
 <thead>
 <tr>
@@ -1519,7 +1933,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-47">宿命バトル中の成立役ごとのポイント</span></h4>
+<h4>宿命バトル中の成立役ごとのポイント</h4>
 <table>
 <thead>
 <tr>
@@ -1554,7 +1968,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-48">対戦相手別の勝率</span></h4>
+<h4>対戦相手別の勝率</h4>
 <table>
 <thead>
 <tr>
@@ -1585,7 +1999,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-49">勝利時の報酬振り分け</span></h4>
+<h4>勝利時の報酬振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1629,7 +2043,7 @@
 </tbody>
 </table>
 <p>アミバは共闘が確定する。</p>
-<h4><span id="i-50">成立役別のトータル勝利期待度</span></h4>
+<h4>成立役別のトータル勝利期待度</h4>
 <table>
 <thead>
 <tr>
@@ -1679,7 +2093,7 @@
 </tbody>
 </table>
 <p>開始画面とボタンジャッジ（計2G間）それぞれの抽選値は同じ。1枚役は期待薄なので、押し順ナビ非発生時はリプレイやレア役に期待！</p>
-<h4><span id="i-51">［リプレイ成立時］結果振り分け</span></h4>
+<h4>［リプレイ成立時］結果振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1728,7 +2142,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-52">［ベル成立時］結果振り分け</span></h4>
+<h4>［ベル成立時］結果振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1777,7 +2191,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="1">［1枚役成立時］結果振り分け</span></h4>
+<h4>［1枚役成立時］結果振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1826,7 +2240,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-53">［弱スイカ成立時］結果振り分け</span></h4>
+<h4>［弱スイカ成立時］結果振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1875,7 +2289,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-54">［強スイカ成立時］結果振り分け</span></h4>
+<h4>［強スイカ成立時］結果振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1924,7 +2338,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-55">［中段チェリー成立時］結果振り分け</span></h4>
+<h4>［中段チェリー成立時］結果振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1973,7 +2387,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-56">［チャンス目成立時］結果振り分け</span></h4>
+<h4>［チャンス目成立時］結果振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2022,7 +2436,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-57">［リーチ目役成立時］結果振り分け</span></h4>
+<h4>［リーチ目役成立時］結果振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2071,7 +2485,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-58">宿命バトルトータル確率</span></h4>
+<h4>宿命バトルトータル確率</h4>
 <table>
 <thead>
 <tr>
@@ -2102,7 +2516,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-59">レア役ごとの宿命バトルトータル当選率</span></h4>
+<h4>レア役ごとの宿命バトルトータル当選率</h4>
 <table>
 <thead>
 <tr>
@@ -2144,7 +2558,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-60">成立役別・宿命バトル当選時の対戦相手振り分け</span></h4>
+<h4>成立役別・宿命バトル当選時の対戦相手振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2223,9 +2637,9 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-61">前兆ゲーム数振り分け</span></h4>
+<h4>前兆ゲーム数振り分け</h4>
 <p>前兆が5G以上ならウイグル以上が確定。BBの残りゲーム数が前兆よりも少なかった場合は即告知される（前兆0G）。</p>
-<h4><span id="i-62">前兆ゲーム数振り分け</span></h4>
+<h4>前兆ゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2304,7 +2718,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-63">前兆ゲーム数ごとの対戦相手出現割合</span></h4>
+<h4>前兆ゲーム数ごとの対戦相手出現割合</h4>
 <table>
 <thead>
 <tr>
@@ -2383,11 +2797,11 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-64">無想転生チャンス</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-65">無想転生チャンス概要</span></h4>
+<h3>無想転生チャンス</h3>
+<h4>無想転生チャンス概要</h4>
 <p>無想転生バトルをかけたチャンスゾーンで、滞在中のレア役は成功のチャンス。白BARが揃えば成功だ。 無想転生バトル確定後はVストックを抽選する。</p>
-<p><img alt="スマスロ北斗の拳無想転生チャンス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-09-01.jpg" decoding="async"></p>
-<h4><span id="i-66">無想転生チャンス性能</span></h4>
+<p><img alt="スマスロ北斗の拳無想転生チャンス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-09-01.jpg"></p>
+<h4>無想転生チャンス性能</h4>
 <table>
 <thead>
 <tr>
@@ -2410,7 +2824,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-67">無想転生バトル当選率（一部）</span></h4>
+<h4>無想転生バトル当選率（一部）</h4>
 <table>
 <thead>
 <tr>
@@ -2430,9 +2844,9 @@
 </tbody>
 </table>
 <p>強スイカや中段チェリーを引けば大チャンス！</p>
-<h4><span id="V-2">無想転生バトル確定後のVストック抽選</span></h4>
+<h4>無想転生バトル確定後のVストック抽選</h4>
 <p>無想転生バトルが確定した後は成立役に応じてVストックを抽選する。</p>
-<h4><span id="i-68">レア役ごとの宿命バトル当選率</span></h4>
+<h4>レア役ごとの宿命バトル当選率</h4>
 <table>
 <thead>
 <tr>
@@ -2523,10 +2937,10 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-69">無想転生バトル</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-70">無想転生バトル概要</span></h4>
-<p><img alt="スマスロ北斗の拳無想転生バトル" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-14-01.jpg" decoding="async"></p>
-<h4><span id="i-71">無想転生バトル性能</span></h4>
+<h3>無想転生バトル</h3>
+<h4>無想転生バトル概要</h4>
+<p><img alt="スマスロ北斗の拳無想転生バトル" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-14-01.jpg"></p>
+<h4>無想転生バトル性能</h4>
 <table>
 <thead>
 <tr>
@@ -2569,10 +2983,10 @@
 </tbody>
 </table>
 <p>継続率94%の最強バトル！ ケンシロウ攻撃HIT時やレア役で無想転生ボーナスが抽選される。</p>
-<h4><span id="i-72">無想転生ボーナス概要</span></h4>
+<h4>無想転生ボーナス概要</h4>
 <p>無想転生バトル継続時に突入する可能性のあるボーナスだ。</p>
-<p><img alt="スマスロ北斗の拳無想転生ボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0403/0403-07-01.jpg" decoding="async"></p>
-<h4><span id="i-73">無想転生ボーナス性能</span></h4>
+<p><img alt="スマスロ北斗の拳無想転生ボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0403/0403-07-01.jpg"></p>
+<h4>無想転生ボーナス性能</h4>
 <table>
 <thead>
 <tr>
@@ -2594,44 +3008,44 @@
 <td>成立役に応じてVストックを抽選</td>
 </tr>
 </tbody>
-</table></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-74">演出情報</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-75">ガポリ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-76">新時代のゲーセン体験</span></h4>
+</table>
+<h2>演出情報</h2>
+<h3>ガポリ</h3>
+<h4>新時代のゲーセン体験</h4>
 <p>オンラインゲームでコインを集めて、ショッピングモールでお買い物！ ダウンロード不要でPC、スマホから、いつでもどこでも遊べる！</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-77">通常時</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-78">ステージ解説</span></h4>
+<h3>通常時</h3>
+<h4>ステージ解説</h4>
 <p>ジャギやラオウステージは天国や前兆のチャンスだ。</p>
 <p>［シンステージ］</p>
-<p><img alt="スマスロ北斗の拳ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/h00006.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/h00006.jpg"></p>
 <p>［サウザーステージ］</p>
-<p><img alt="スマスロ北斗の拳ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/h00004.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/h00004.jpg"></p>
 <p>［ジャギステージ］</p>
-<p><img alt="スマスロ北斗の拳ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/h00005.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/h00005.jpg"></p>
 <p>［ラオウステージ］</p>
-<p><img alt="スマスロ北斗の拳ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/h00008.jpg" decoding="async"></p>
-<h4><span id="i-79">連続演出</span></h4>
+<p><img alt="スマスロ北斗の拳ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/h00008.jpg"></p>
+<h4>連続演出</h4>
 <p>連続演出は滞在ステージに対応（どのパターンも勝利すればBB）。奇跡の村や南斗最後の将、新規で追加されたチャンスバトルのウイグルバトル、デビルリバースバトルは全ステージ共通で発生する。</p>
 <p>アミバやでかいババアとのバトルは勝利濃厚だ。</p>
 <p>［シンバトル］</p>
-<p><img alt="スマスロ北斗の拳連続演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-03-01.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳連続演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-03-01.jpg"></p>
 <p>［サウザーバトル］</p>
-<p><img alt="スマスロ北斗の拳連続演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-03-02.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳連続演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-03-02.jpg"></p>
 <p>［ジャギバトル］</p>
-<p><img alt="スマスロ北斗の拳連続演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-03-03.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳連続演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-03-03.jpg"></p>
 <p>［奇跡の村］ アミバ登場でVSアミバへ、トキ登場でBB!?</p>
-<p><img alt="スマスロ北斗の拳連続演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-03-04.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳連続演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-03-04.jpg"></p>
 <p>［南斗最後の将］</p>
-<p><img alt="スマスロ北斗の拳連続演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-03-05.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳連続演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-03-05.jpg"></p>
 <p>［ウイグルバトル］</p>
-<p><img alt="スマスロ北斗の拳連続演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-03-06.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳連続演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-03-06.jpg"></p>
 <p>［デビルリバースバトル］</p>
-<p><img alt="スマスロ北斗の拳連続演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-03-07.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳連続演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-03-07.jpg"></p>
 <p>［アミババトル］</p>
-<p><img alt="スマスロ北斗の拳連続演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/h00002.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳連続演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/h00002.jpg"></p>
 <p>［でかいババアバトル］</p>
-<p><img alt="スマスロ北斗の拳連続演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-03-09.jpg" decoding="async"></p>
-<h4><span id="i-80">天国以上示唆</span></h4>
+<p><img alt="スマスロ北斗の拳連続演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-03-09.jpg"></p>
+<h4>天国以上示唆</h4>
 <table>
 <thead>
 <tr>
@@ -2708,23 +3122,23 @@
 </table>
 <p>初代でおなじみの内部状態示唆は今回も健在。同行キャラの組み合わせで天国以上が確定するパターンもある。 もちろんランプ矛盾や青オーラ大は天国以上濃厚！</p>
 <p>［ランプ矛盾］</p>
-<p><img alt="スマスロ北斗の拳天国示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-04-02a.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳天国示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-04-02a.jpg"></p>
 <p>［青オーラ大］</p>
-<p><img alt="スマスロ北斗の拳天国示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-04-03.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳天国示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-04-03.jpg"></p>
 <p>［レイ無想転生］ ケンシロウが雑魚をレイの南斗水鳥拳で撃破！</p>
-<p><img alt="スマスロ北斗の拳レイ無想転生" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-02-02.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳レイ無想転生" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-02-02.jpg"></p>
 <p>［第3停止時の見渡し］</p>
-<p><img alt="スマスロ北斗の拳天国示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-04-04.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳天国示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-04-04.jpg"></p>
 <p>［第3停止時の振り向き］</p>
-<p><img alt="スマスロ北斗の拳天国示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-04-05.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳天国示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-04-05.jpg"></p>
 <p>［第3停止時にリンがつまずく］ 第3停止時の転ぶパターンも天国以上のチャンスだ。</p>
-<p><img alt="スマスロ北斗の拳天国示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-04-06.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳天国示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-04-06.jpg"></p>
 <p>［第3停止時にバット白缶3つ］ もちろん第3停止時の青缶3つでも天国以上のチャンス！</p>
-<p><img alt="スマスロ北斗の拳天国示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-04-07.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳天国示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-04-07.jpg"></p>
 <p>［同行キャラ］ マミヤ同行時は通常以上、リン＆マミヤ同行時は天国以上の期待大。</p>
-<p><img alt="スマスロ北斗の拳天国示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-04-08.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳天国示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-04-08.jpg"></p>
 <p>［通常時の押し順ナビ］ 通常時に押し順ナビが発生した場合は天国or本前兆のチャンス。リプレイの押し順ナビは本前兆時にのみ発生、押し順ベルナビ（BB中と同じ雑魚）が発生した場合は、滞在モードを問わず約25%で天国へ移行する。</p>
-<h4><span id="i-81">北斗揃いに期待できる展開</span></h4>
+<h4>北斗揃いに期待できる展開</h4>
 <table>
 <thead>
 <tr>
@@ -2757,12 +3171,12 @@
 </table>
 <p>本前兆中にプレミアが頻発したり、ジャギステージ中にウイグルやデビルリバースのバトルに発展すれば北斗揃いの期待大だ。</p>
 <p>［プレミア演出］ エイリやん！</p>
-<p><img alt="スマスロ北斗の拳プレミアム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-05-01.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳プレミアム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-05-01.jpg"></p>
 <p>獣王シリーズの肉！</p>
-<p><img alt="スマスロ北斗の拳プレミアム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-05-02.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳プレミアム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-05-02.jpg"></p>
 <p>ダナゾ！</p>
-<p><img alt="スマスロ北斗の拳プレミアム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-05-03.jpg" decoding="async"></p>
-<h4><span id="BB-8">BBに期待できる激アツ演出一覧</span></h4>
+<p><img alt="スマスロ北斗の拳プレミアム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-05-03.jpg"></p>
+<h4>BBに期待できる激アツ演出一覧</h4>
 <table>
 <thead>
 <tr>
@@ -2810,7 +3224,7 @@
 </tbody>
 </table>
 <p>ほかにもギター音から仲間が登場するなどの違和感パターンはBB濃厚となる。</p>
-<h4><span id="BB-9">BBに期待できる大チャンス演出一覧</span></h4>
+<h4>BBに期待できる大チャンス演出一覧</h4>
 <table>
 <thead>
 <tr>
@@ -2870,20 +3284,20 @@
 </tbody>
 </table>
 <p>［お前はもう死んでいるカウントダウン演出］ カウントダウンの数値が残っている状況でBBが告知されると、北斗揃い濃厚！</p>
-<p><img alt="スマスロ北斗の拳演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0403/0403-01-03.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0403/0403-01-03.jpg"></p>
 <p>［バット演出：缶大量］</p>
-<p><img alt="スマスロ北斗の拳演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0403/0403-01-04.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0403/0403-01-04.jpg"></p>
 <p>［ゴンズ演出］</p>
-<p><img alt="スマスロ北斗の拳演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0403/0403-01-05.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0403/0403-01-05.jpg"></p>
 <p>［メッセンジャー演出］</p>
-<p><img alt="スマスロ北斗の拳演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0403/0403-01-06.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0403/0403-01-06.jpg"></p>
 <p>［キャラ演出：キリン柄］</p>
-<p><img alt="スマスロ北斗の拳演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0403/0403-01-07.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0403/0403-01-07.jpg"></p>
 <p>［北斗七星＋死兆星］</p>
-<p><img alt="スマスロ北斗の拳BBに期待できる演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/tsuika/hokutoshichisei.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳BBに期待できる演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/tsuika/hokutoshichisei.jpg"></p>
 <p>［錬気闘座演出］</p>
-<p><img alt="スマスロ北斗の拳演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0403/0403-01-08.jpg" decoding="async"></p>
-<h4><span id="i-82">通常以上示唆</span></h4>
+<p><img alt="スマスロ北斗の拳演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0403/0403-01-08.jpg"></p>
+<h4>通常以上示唆</h4>
 <table>
 <thead>
 <tr>
@@ -2919,10 +3333,10 @@
 </tbody>
 </table>
 <p>［南斗最後の将：時計回り］ 通常は登る方向が反時計回り。</p>
-<p><img alt="スマスロ北斗の拳モード示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-03-02.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳モード示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-03-02.jpg"></p>
 <p>［抱きつき雑魚演出：往復ビンタ］</p>
-<p><img alt="スマスロ北斗の拳モード示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-03-03.jpg" decoding="async"></p>
-<h4><span id="i-83">中段チェリー示唆パターン</span></h4>
+<p><img alt="スマスロ北斗の拳モード示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-03-03.jpg"></p>
+<h4>中段チェリー示唆パターン</h4>
 <table>
 <thead>
 <tr>
@@ -2962,12 +3376,12 @@
 </tbody>
 </table>
 <p>［石柱演出：緑/赤］</p>
-<p><img alt="スマスロ北斗の拳中段チェリー" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-04-02.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳中段チェリー" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-04-02.jpg"></p>
 <p>［大オーラ：赤］</p>
-<p><img alt="スマスロ北斗の拳中段チェリー" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-04-03.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳中段チェリー" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-04-03.jpg"></p>
 <p>［強襲演出］</p>
-<p><img alt="スマスロ北斗の拳中段チェリー" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-04-04.jpg" decoding="async"></p>
-<h4><span id="i-84">連続演出の大チャンスパターン</span></h4>
+<p><img alt="スマスロ北斗の拳中段チェリー" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-04-04.jpg"></p>
+<h4>連続演出の大チャンスパターン</h4>
 <table>
 <thead>
 <tr>
@@ -2992,10 +3406,10 @@
 </table>
 <p>もちろん今回も3G目にケンシロウが攻撃した時点で勝利確定だ。</p>
 <p>［気合いを入れろ!!：キリン柄］</p>
-<p><img alt="スマスロ北斗の拳キリン柄レバー" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-05-02.jpg" decoding="async"></p>
-<h4><span id="i-85">ステージチェンジ演出の法則</span></h4>
+<p><img alt="スマスロ北斗の拳キリン柄レバー" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-05-02.jpg"></p>
+<h4>ステージチェンジ演出の法則</h4>
 <p>もちろん今作でも稲妻のパターンで天国や本前兆を示唆。ステージチェンジ時はモード示唆、演出発展時は稲妻：大なら強スイカ以上（さらに天国以上の期待度アップ）となる。キリン柄やロングはステージチェンジ時・演出発展時ともにBB当選濃厚。 また、BB終了後の稲妻は大以上（大・キリン柄・ロング）ならBB本前兆濃厚だ。</p>
-<h4><span id="i-86">ステージチェンジの稲妻別法則</span></h4>
+<h4>ステージチェンジの稲妻別法則</h4>
 <table>
 <thead>
 <tr>
@@ -3019,7 +3433,7 @@
 </tbody>
 </table>
 <p>※稲妻：ロングは稲妻の表示時間が長いパターン</p>
-<h4><span id="i-87">演出発展時の稲妻別成立役法則</span></h4>
+<h4>演出発展時の稲妻別成立役法則</h4>
 <table>
 <thead>
 <tr>
@@ -3044,13 +3458,13 @@
 </table>
 <p>※上記成立役否定で本前兆濃厚</p>
 <p>［稲妻：大］</p>
-<p><img alt="スマスロ北斗の拳稲妻" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0824/0828-01-02.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳稲妻" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0824/0828-01-02.jpg"></p>
 <p>［稲妻：キリン柄］</p>
-<p><img alt="スマスロ北斗の拳稲妻" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0824/0828-01-03.jpg" decoding="async"></p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-88">バトルボーナス</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="BB-10">BB開始時・オーラの継続率示唆</span></h4>
+<p><img alt="スマスロ北斗の拳稲妻" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0824/0828-01-03.jpg"></p>
+<h3>バトルボーナス</h3>
+<h4>BB開始時・オーラの継続率示唆</h4>
 <p>おなじみのバトルボーナス開始時のオーラ色による継続率示唆も健在。虹なら継続率89%の期待大だ。</p>
-<h4><span id="7-4">［赤7揃い時］継続率別のオーラ振り分け</span></h4>
+<h4>［赤7揃い時］継続率別のオーラ振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -3106,7 +3520,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-89">［北斗揃い時］継続率別のオーラ振り分け</span></h4>
+<h4>［北斗揃い時］継続率別のオーラ振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -3162,7 +3576,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-90">［北斗揃い時］オーラごとの継続率分布</span></h4>
+<h4>［北斗揃い時］オーラごとの継続率分布</h4>
 <table>
 <thead>
 <tr>
@@ -3205,18 +3619,18 @@
 </tbody>
 </table>
 <p>［白オーラ］</p>
-<p><img alt="スマスロ北斗の拳オーラ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-10-01.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳オーラ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-10-01.jpg"></p>
 <p>［青オーラ］</p>
-<p><img alt="スマスロ北斗の拳オーラ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-10-02.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳オーラ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-10-02.jpg"></p>
 <p>［黄オーラ］</p>
-<p><img alt="スマスロ北斗の拳オーラ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-10-03.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳オーラ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-10-03.jpg"></p>
 <p>［緑オーラ］</p>
-<p><img alt="スマスロ北斗の拳オーラ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-10-04.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳オーラ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-10-04.jpg"></p>
 <p>［赤オーラ］</p>
-<p><img alt="スマスロ北斗の拳オーラ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-10-05.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳オーラ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-10-05.jpg"></p>
 <p>［虹オーラ］</p>
-<p><img alt="スマスロ北斗の拳オーラ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-10-06.jpg" decoding="async"></p>
-<h4><span id="i-91">バトルパートの継続率示唆演出</span></h4>
+<p><img alt="スマスロ北斗の拳オーラ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-10-06.jpg"></p>
+<h4>バトルパートの継続率示唆演出</h4>
 <table>
 <thead>
 <tr>
@@ -3265,20 +3679,20 @@
 </table>
 <p>初代と同じく、継続時のパターンによって継続率が示唆される。</p>
 <p>［ケンシロウ先制時：レイ］</p>
-<p><img alt="スマスロ北斗の拳バトルボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-11-02.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳バトルボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-11-02.jpg"></p>
 <p>［ラオウ先制時：北斗剛掌波］ 喰らったあとに自力で立ち上がれば！</p>
-<p><img alt="スマスロ北斗の拳バトルボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/h00010.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳バトルボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/h00010.jpg"></p>
 <p>［ラオウ先制時：トキのパンチ避け］</p>
-<p><img alt="スマスロ北斗の拳バトルボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/h00007.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳バトルボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/h00007.jpg"></p>
 <p>［ケンシロウ先制時：北斗百裂拳ヒット］</p>
-<p><img alt="スマスロ北斗の拳バトルボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-11-05.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳バトルボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-11-05.jpg"></p>
 <p>［ラオウ先制時：ユリア復活］ パンチでやられた後にユリアで復活すれば！</p>
-<p><img alt="スマスロ北斗の拳バトルボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-11-06.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳バトルボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-11-06.jpg"></p>
 <p>［ラオウ先制時：死兆星］</p>
-<p><img alt="スマスロ北斗の拳バトルボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/h00009.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳バトルボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/h00009.jpg"></p>
 <p>［ラオウ先制時：雲が高速で流れる］ もちろん雲が動いていた時点で継続濃厚、高速で流れれば継続率79%以上という新規要素を搭載している。 さらに雲が動いていたのにケンシロウが倒れる継続率84%以上濃厚パターンもあり（必ず復活で勝利）。</p>
-<p><img alt="スマスロ北斗の拳バトルボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-11-08.jpg" decoding="async"></p>
-<h4><span id="BGM">変化時に発生するBGM</span></h4>
+<p><img alt="スマスロ北斗の拳バトルボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0210/0206-11-08.jpg"></p>
+<h4>変化時に発生するBGM</h4>
 <table>
 <thead>
 <tr>
@@ -3302,10 +3716,10 @@
 </tbody>
 </table>
 <p>今回もバトルパート開始時にBGMが変化すれば継続濃厚だ。</p>
-<h4><span id="i-92">確定画面の絵柄別継続率</span></h4>
+<h4>確定画面の絵柄別継続率</h4>
 <p>赤7を狙って揃わなかった場合は北斗揃い確定。狙え表示がレバーON時ではなくリール回転開始時に発生した場合も北斗揃いが確定する。</p>
-<p><img alt="スマスロ北斗の拳確定画面の絵柄別継続率" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0327/0327-03-01.jpg" decoding="async"></p>
-<h4><span id="BB-11">BB突入時の狙えパターン別示唆</span></h4>
+<p><img alt="スマスロ北斗の拳確定画面の絵柄別継続率" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0327/0327-03-01.jpg"></p>
+<h4>BB突入時の狙えパターン別示唆</h4>
 <table>
 <thead>
 <tr>
@@ -3332,7 +3746,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="7-5">赤7下段揃い （右下段からの斜め揃い含む） の継続率振り分け</span></h4>
+<h4>赤7下段揃い （右下段からの斜め揃い含む） の継続率振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -3361,10 +3775,10 @@
 </table>
 <p>オーラ別の継続率はコチラ</p>
 <p>［赤7揃わず→北斗揃いの抽選］ 赤7揃いのフラグより前に、赤7ハズレのフラグを引けば、赤7狙え→揃わずとなって北斗揃いへ昇格（システム的に転生の章と同じ）。あらかじめ決まっている北斗揃いを昇格しているように見せているわけではない。 最初から北斗揃いが確定している時にフェイクフラグを引いた場合、無演出でリプレイが表示。つまり、リプレイが表示された時点で北斗揃いが確定するわけだ。 赤7ハズレ時の約1/10で赤7テンパイ音なし、約1/10で北斗揃い時のテンパイ音といった確定パターンが発生する。</p>
-<h4><span id="i-93">ラオウ先制時の北斗七星</span></h4>
+<h4>ラオウ先制時の北斗七星</h4>
 <p>ラオウの背後に北斗七星が出現すれば勝利期待度95%OVER！ 死兆星も表示されていれば継続確定＋継続率79%以上だ。</p>
-<p><img alt="スマスロ北斗の拳北斗七星" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/tsuika/raoh_shichisei.jpg" decoding="async"></p>
-<h4><span id="i-94">宿命バトルに期待できる演出</span></h4>
+<p><img alt="スマスロ北斗の拳北斗七星" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/tsuika/raoh_shichisei.jpg"></p>
+<h4>宿命バトルに期待できる演出</h4>
 <table>
 <thead>
 <tr>
@@ -3408,14 +3822,14 @@
 </tbody>
 </table>
 <p>［押し順：キリン柄雑魚］</p>
-<p><img alt="スマスロ北斗の拳BB宿命バトル前兆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-07-02.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳BB宿命バトル前兆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-07-02.jpg"></p>
 <p>［押し順：白雑魚］</p>
-<p><img alt="スマスロ北斗の拳BB宿命バトル前兆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-07-03.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳BB宿命バトル前兆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-07-03.jpg"></p>
 <p>［PUSH雑魚］</p>
-<p><img alt="スマスロ北斗の拳BB宿命バトル前兆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-07-04.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳BB宿命バトル前兆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-07-04.jpg"></p>
 <p>「対応演出の法則崩れでキャラ格上げ」 通常時にも発生するKINGの居城など、ステージ対応演出が発生して、対応キャラとのバトルに発展しなければ、そのキャラ以上とのバトルに発展（もちろんフェイク前兆だった場合は無効）。毎ゲーム発生してキャラが格上げされていく大チャンスパターンもある。 演出発生時に表示される稲妻が太かったら期待大、キリン柄なら本前兆濃厚、ロングパターンなら…!?</p>
-<p><img alt="スマスロ北斗の拳BB宿命バトル前兆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-07-06.jpg" decoding="async"></p>
-<h4><span id="i-95">ステージ対応演出の対応キャラ（通常時と共通）</span></h4>
+<p><img alt="スマスロ北斗の拳BB宿命バトル前兆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-07-06.jpg"></p>
+<h4>ステージ対応演出の対応キャラ（通常時と共通）</h4>
 <table>
 <thead>
 <tr>
@@ -3446,7 +3860,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-96">宿命バトルの勝利契機＆演出別・示唆パターン</span></h4>
+<h4>宿命バトルの勝利契機＆演出別・示唆パターン</h4>
 <table>
 <thead>
 <tr>
@@ -3482,7 +3896,7 @@
 </tbody>
 </table>
 <p>共闘は潜伏するパターンもあり、潜伏時は継続バトルでいきなりレイorトキが登場する。</p>
-<h4><span id="i-97">［レイ共闘］無想転生チャンスに期待できる演出</span></h4>
+<h4>［レイ共闘］無想転生チャンスに期待できる演出</h4>
 <table>
 <thead>
 <tr>
@@ -3513,7 +3927,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-98">［トキ共闘］無想転生チャンスに期待できる演出</span></h4>
+<h4>［トキ共闘］無想転生チャンスに期待できる演出</h4>
 <table>
 <thead>
 <tr>
@@ -3532,7 +3946,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-99">［共闘なし］無想転生チャンスに期待できる演出</span></h4>
+<h4>［共闘なし］無想転生チャンスに期待できる演出</h4>
 <table>
 <thead>
 <tr>
@@ -3573,19 +3987,19 @@
 </table>
 <p>今回の攻防パターンは継続率示唆より無想転生チャンスを示唆する性格が強いので、パターンにもよるが、高継続率時に発生しやすいというわけではない。</p>
 <p>［飛翔白麗］</p>
-<p><img alt="スマスロ北斗の拳BB無想転生チャンス示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-09-04.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳BB無想転生チャンス示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-09-04.jpg"></p>
 <p>［アイリ復活］</p>
-<p><img alt="スマスロ北斗の拳BB無想転生チャンス示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-09-05.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳BB無想転生チャンス示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-09-05.jpg"></p>
 <p>［トキが死兆星を指さす］</p>
-<p><img alt="スマスロ北斗の拳BB無想転生チャンス示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-09-06.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳BB無想転生チャンス示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-09-06.jpg"></p>
 <p>［北斗百裂拳］</p>
-<p><img alt="スマスロ北斗の拳BB無想転生チャンス示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-09-07.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳BB無想転生チャンス示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-09-07.jpg"></p>
 <p>［ユリア復活］</p>
-<p><img alt="スマスロ北斗の拳BB無想転生チャンス示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-09-08.jpg" decoding="async"></p>
-<h4><span id="i-100">継続バトル開始時のセリフ掛け合い</span></h4>
+<p><img alt="スマスロ北斗の拳BB無想転生チャンス示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-09-08.jpg"></p>
+<h4>継続バトル開始時のセリフ掛け合い</h4>
 <p>継続バトル開始時にセリフの掛け合いが発生すれば期待度アップ。セリフの内容などによって期待度が変化する。ケンシロウの「くるえる暴凶星、死すべき時はきた!!」なら高継続の期待大、「おれの中には〜」なら継続率79%以上確定だ。</p>
-<p><img alt="画像" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-10-01.jpg" decoding="async"></p>
-<h4><span id="i-101">掛け合いのセリフ別期待度</span></h4>
+<p><img alt="画像" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0427/0427-10-01.jpg"></p>
+<h4>掛け合いのセリフ別期待度</h4>
 <table>
 <thead>
 <tr>
@@ -3610,22 +4024,22 @@
 </table>
 <p>※おれの中には～は継続率79%以上も確定</p>
 <p>掛け合い自体は継続時の約1/9で選択される。</p>
-<h4><span id="i-102">ラオウ昇天</span></h4>
+<h4>ラオウ昇天</h4>
 <p>今回もBB20連以降は敗北時に昇天演出が発生。20連以降は通常のBATTLEが発生した時点で継続濃厚となる。</p>
-<p><img alt="スマスロ北斗の拳ラオウ昇天" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/tsuika/STR.jpg" decoding="async"></p>
-<h4><span id="i-103">無想転生チャンスの画面割れ法則</span></h4>
+<p><img alt="スマスロ北斗の拳ラオウ昇天" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/tsuika/STR.jpg"></p>
+<h4>無想転生チャンスの画面割れ法則</h4>
 <p>押し順ベルやレア役時の画面割れは3割れ時にPUSHボタンが表示されればチャンス。 押し順ベル→PUSHボタンなら約25% で成功する。基本的に画面割れは第1停止〜第3停止の順でステップアップ式にヒビが深くなっていくが、第1停止→第3停止、第2停止から始まる…といった変則パターンが発生すれば成功が確定する。</p>
-<p><img alt="スマスロ北斗の拳無想転生チャンス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0613/0613-05-01.jpg" decoding="async"></p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-104">カスタム</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="OFF">初代モード＆カウンタOFF</span></h4>
+<p><img alt="スマスロ北斗の拳無想転生チャンス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0613/0613-05-01.jpg"></p>
+<h3>カスタム</h3>
+<h4>初代モード＆カウンタOFF</h4>
 <p>サブ液晶のメニュー画面からカスタムすることが可能。発展ゲームなどの一部の状況を除き、いつでも変更できる。BB中は確定画面や継続時のBB回数表示画面（ピキドゴ画面）でのみ変更できる。</p>
 <p>［初代モード：通常時］ 演出バランスが初代に近い仕様に変化する。</p>
-<p><img alt="スマスロ北斗の拳カスタム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0327/0327-01-01.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳カスタム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0327/0327-01-01.jpg"></p>
 <p>［カウンタOFF］ 北斗カウンタをOFFにして、初代のような緊張感を味わえる（初代カスタムとの複合設定も可能）。</p>
-<p><img alt="スマスロ北斗の拳カスタム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0327/0327-01-02.jpg" decoding="async"></p>
+<p><img alt="スマスロ北斗の拳カスタム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0327/0327-01-02.jpg"></p>
 <p>［初代モード：BB中］ Vストックや宿命バトルも表示されなくなる（もちろん内部的には抽選）。</p>
-<p><img alt="スマスロ北斗の拳カスタム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0327/0327-01-03.jpg" decoding="async"></p>
-<h4><span id="BB-12">BB中の初代モード特徴</span></h4>
+<p><img alt="スマスロ北斗の拳カスタム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S905_%E3%82%B9%E3%83%9E%E3%82%B9%E3%83%AD%E5%8C%97%E6%96%97%E3%81%AE%E6%8B%B3/0327/0327-01-03.jpg"></p>
+<h4>BB中の初代モード特徴</h4>
 <table>
 <thead>
 <tr>
@@ -3668,18 +4082,32 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-105">裏ボタン</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-106">継続バトル中のボタンねじり</span></h4>
-<p>継続バトルでレア役を引いた時に第3停止ボタンを長押しして効果音が発生すれば継続以上。すでに継続が確定している展開でなった場合は無想転生チャンスや継続率アップなどの恩恵が!?</p>
-<div class="post-views content-post post-636 entry-meta load-static">
-				<span class="post-views-icon dashicons dashicons-chart-bar"></span> <span class="post-views-label">Post Views:</span> <span class="post-views-count">1,436</span>
-			</div></div></details></div></details>
-            </div>
-
-            <!-- 目次ハンバーガー（右下固定・常時）。中身はJSがセクションから生成 --></section>
+<h3>裏ボタン</h3>
+<h4>継続バトル中のボタンねじり</h4>
+<p>継続バトルでレア役を引いた時に第3停止ボタンを長押しして効果音が発生すれば継続以上。すでに継続が確定している展開でなった場合は無想転生チャンスや継続率アップなどの恩恵が!?</p></section>
   
   
   </article></main>
 <footer class="foot">個人アーカイブ（suroschool.jp / たかどらのスロ塾 会員コンテンツ）・閲覧用</footer>
+
+<!-- スマホ用ボトムナビ（スクロールで隠れる/出る） -->
+<nav class="botnav" id="botnav">
+  <a href="../index.html" data-nav="index">🎰<span>機種</span></a>
+  <button id="searchOpen2">🔍<span>検索</span></button>
+  <a href="../index.html?fav=1">★<span>お気に入り</span></a>
+  <a href="../news.html">📰<span>お知らせ</span></a>
+  <a href="../tool.html">🧮<span>期待値</span></a>
+</nav>
+
+<!-- 全ページ横断の検索オーバーレイ -->
+<div class="search-overlay" id="searchOverlay" hidden>
+  <div class="search-head">
+    <input id="globalSearch" type="search" placeholder="機種名で検索…" autocomplete="off">
+    <button id="searchClose" aria-label="閉じる">✕</button>
+  </div>
+  <div id="searchResults" class="search-results"></div>
+</div>
+
+<script src="../assets/search-index.js"></script>
 <script src="../assets/app.js"></script>
 </body></html>

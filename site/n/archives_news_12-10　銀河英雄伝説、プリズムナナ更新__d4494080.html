@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="ja"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>銀河英雄伝説、プリズムナナ更新 | スマスロ目標 (個人アーカイブ)</title>
+<title>銀河英雄伝説、プリズムナナ更新 | スマスロ期待値 (個人アーカイブ)</title>
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="manifest" href="../manifest.webmanifest">
 <meta name="theme-color" content="#ffffff">
@@ -10,20 +10,23 @@
 <link rel="apple-touch-icon" href="../assets/icon.svg">
 <link rel="icon" href="../assets/icon.svg">
 <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){})});}</script>
+<script>window.__ROOT__='../';</script>
 
 </head><body>
-<header class="topbar">
-  <a class="brand" href="../index.html">🎰 スマスロ目標</a>
-  <nav>
+<header class="topbar" id="topbar">
+  <a class="brand" href="../index.html">🎰 スマスロ期待値</a>
+  <nav class="topnav">
     <a href="../index.html">機種</a>
     <a href="../news.html">お知らせ</a>
     <a href="../tool.html">期待値計算</a>
     <a href="../pages.html">資料</a>
   </nav>
+  <button class="topbar-search" id="searchOpen" aria-label="検索">🔍</button>
 </header>
 <main><article class="post"><a class="back" href="../news.html">← お知らせ一覧</a>
-  <h1>銀河英雄伝説、プリズムナナ更新</h1><div class="date">2025-12-09</div>
-  <div class="content"><p class="wp-block-paragraph"><a href="https://suroschool.jp/archives/machine/%e9%8a%80%e6%b2%b3%e8%8b%b1%e9%9b%84%e4%bc%9d%e8%aa%ac-die-neue-these#i-9" target="_blank" rel="noreferrer noopener">銀河英雄伝説</a>　その他の項目にデータ履歴を追加しました。</p>
+  <h1>銀河英雄伝説、プリズムナナ更新</h1><div class="date">2025-12-10</div>
+  <div class="content">
+<p class="wp-block-paragraph"><a href="https://suroschool.jp/archives/machine/%e9%8a%80%e6%b2%b3%e8%8b%b1%e9%9b%84%e4%bc%9d%e8%aa%ac-die-neue-these#i-9" target="_blank" rel="noreferrer noopener">銀河英雄伝説</a>　その他の項目にデータ履歴を追加しました。</p>
 
 
 
@@ -31,7 +34,28 @@
 
 
 
-<p class="wp-block-paragraph"></p></div></article></main>
+<p class="wp-block-paragraph"></p>
+</div></article></main>
 <footer class="foot">個人アーカイブ（suroschool.jp / たかどらのスロ塾 会員コンテンツ）・閲覧用</footer>
+
+<!-- スマホ用ボトムナビ（スクロールで隠れる/出る） -->
+<nav class="botnav" id="botnav">
+  <a href="../index.html" data-nav="index">🎰<span>機種</span></a>
+  <button id="searchOpen2">🔍<span>検索</span></button>
+  <a href="../index.html?fav=1">★<span>お気に入り</span></a>
+  <a href="../news.html">📰<span>お知らせ</span></a>
+  <a href="../tool.html">🧮<span>期待値</span></a>
+</nav>
+
+<!-- 全ページ横断の検索オーバーレイ -->
+<div class="search-overlay" id="searchOverlay" hidden>
+  <div class="search-head">
+    <input id="globalSearch" type="search" placeholder="機種名で検索…" autocomplete="off">
+    <button id="searchClose" aria-label="閉じる">✕</button>
+  </div>
+  <div id="searchResults" class="search-results"></div>
+</div>
+
+<script src="../assets/search-index.js"></script>
 <script src="../assets/app.js"></script>
 </body></html>

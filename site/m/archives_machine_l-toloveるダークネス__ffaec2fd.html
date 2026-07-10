@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="ja"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>L ToLOVEるダークネス | スマスロ目標 (個人アーカイブ)</title>
+<title>L ToLOVEるダークネス | スマスロ期待値 (個人アーカイブ)</title>
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="manifest" href="../manifest.webmanifest">
 <meta name="theme-color" content="#ffffff">
@@ -10,16 +10,18 @@
 <link rel="apple-touch-icon" href="../assets/icon.svg">
 <link rel="icon" href="../assets/icon.svg">
 <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){})});}</script>
+<script>window.__ROOT__='../';</script>
 
 </head><body>
-<header class="topbar">
-  <a class="brand" href="../index.html">🎰 スマスロ目標</a>
-  <nav>
+<header class="topbar" id="topbar">
+  <a class="brand" href="../index.html">🎰 スマスロ期待値</a>
+  <nav class="topnav">
     <a href="../index.html">機種</a>
     <a href="../news.html">お知らせ</a>
     <a href="../tool.html">期待値計算</a>
     <a href="../pages.html">資料</a>
   </nav>
+  <button class="topbar-search" id="searchOpen" aria-label="検索">🔍</button>
 </header>
 <main>
   <article class="machine">
@@ -35,20 +37,7 @@
     <button class="tab" data-tab="kaiseki">解析情報</button>
     
   </div>
-  <section class="panel is-active" data-panel="nerai"><div class="tenjo-info"><div class="my-spoiler-wrapper" id="my-spoiler-1"><div class="my-spoiler-title" style="cursor:pointer; background:rgba(245,184,0,0.08); padding:10px; border:1px solid rgba(245,184,0,0.3); color:var(--text-main); font-weight:700; letter-spacing:0.04em;"><span class="spoiler-icon" style="margin-right:5px;">[-]</span>機種情報</div><div class="my-spoiler-content" style="display:block; padding:10px; border:1px solid rgba(245,184,0,0.2); border-top:0; background:var(--bg-card-hi); color:var(--text-main);"><p>[天井情報]</p>
-<p>999G ST当選</p>
-<p>リセット時　650G+α</p>
-<p>※ボーナス当選でST突入</p>
-<p>※ゲーム数は液晶確認</p>
-<p>&nbsp;</p>
-<p>[リセット判別]</p>
-<p>ガックン判別は不可 内部依存で発明品チャンスやゾーン煽りが発生</p>
-<p>※１回目の発明品チャンスが出るまで当日依存で前兆発生？ リセ時は内部的に規定ゲーム数ランダム加算</p>
-<p>&nbsp;</p>
-<p>[有利区間について]</p>
-<p>エンディング到達で、もぐもぐたい焼きタイムへ移行。</p>
-<p>RUSH1個以上+上位STハーレムモード突入。</p>
-</div></div></div>  <!-- タイトル削除 -->
+  <section class="panel is-active" data-panel="nerai"><img loading="lazy" decoding="async" width="150" height="150" src="../img/15e52633356abb79.jpg" class="machine-thumbnail wp-post-image" alt="" style="display:block; margin:0 auto;" srcset="https://suroschool.jp/wp-content/uploads/2025/02/thumb_1-21-150x150.jpg 150w, https://suroschool.jp/wp-content/uploads/2025/02/thumb_1-21-120x120.jpg 120w" sizes="auto, (max-width: 150px) 100vw, 150px" />  <!-- タイトル削除 -->
 
   <div class="status-bar">
     <button id="stateLow" onclick="setState('low')">昼</button>
@@ -60,33 +49,33 @@
       <img decoding="async" src="../img/b71549cb99e0b6ad.jpeg" alt="にゃんにゃんコピー">
     </button>
     <button onclick="reducePoints(150)">クリア</button>
-    <button id="toggleAdjustModeBtn" onclick="toggleAdjustMode()" style="background-color: rgb(255, 204, 204);"><img draggable="false" role="img" class="emoji" alt="➕" src="https://s.w.org/images/core/emoji/17.0.2/svg/2795.svg"></button>
+    <button id="toggleAdjustModeBtn" onclick="toggleAdjustMode()">➕</button>
   </div>
 
   <div id="ptBarContainer">
     <div class="ptBarItem">
       <span class="ptBarLabel">左pt:</span>
       <div class="ptBarWrapper" id="leftPtWrapper">
-        <div class="ptBar" id="leftPtBar" style="width: 0%; background: rgb(255, 214, 232);">0pt</div>
+        <div class="ptBar" id="leftPtBar">0pt</div>
       </div>
     </div>
     <div class="ptBarItem">
       <span class="ptBarLabel">中pt:</span>
       <div class="ptBarWrapper" id="middlePtWrapper">
-        <div class="ptBar" id="middlePtBar" style="width: 0%; background: rgb(214, 255, 214);">0pt</div>
+        <div class="ptBar" id="middlePtBar">0pt</div>
       </div>
     </div>
     <div class="ptBarItem">
       <span class="ptBarLabel">右pt:</span>
       <div class="ptBarWrapper" id="rightPtWrapper">
-        <div class="ptBar" id="rightPtBar" style="width: 0%; background: rgb(230, 214, 255);">0pt</div>
+        <div class="ptBar" id="rightPtBar">0pt</div>
       </div>
     </div>
     <div class="ptBarComment">スライドで数値調整可能</div>
   </div>
 
   <table class="main-table">
-    <tbody><tr>
+    <tr>
       <th>種類</th>
       <th>左チャ目</th>
       <th>中チャ目</th>
@@ -101,35 +90,35 @@
     <tr>
       <td>チャ目</td>
       <td>
-        <button class="adjustBtn" onclick="adjustPoints('left','nonGlowing')" style="background-color: rgb(255, 204, 204);">
+        <button class="adjustBtn" onclick="adjustPoints('left','nonGlowing')">
           <img decoding="async" src="../img/64454d13a9c6b89d.jpeg" alt="左チャ目">
         </button>
       </td>
       <td>
-        <button class="adjustBtn" onclick="adjustPoints('middle','nonGlowing')" style="background-color: rgb(255, 204, 204);">
+        <button class="adjustBtn" onclick="adjustPoints('middle','nonGlowing')">
           <img decoding="async" src="../img/b9cedcfcd19073ec.jpeg" alt="中チャ目">
         </button>
       </td>
       <td>
-        <button class="adjustBtn" onclick="adjustPoints('right','nonGlowing')" style="background-color: rgb(255, 204, 204);">
+        <button class="adjustBtn" onclick="adjustPoints('right','nonGlowing')">
           <img decoding="async" src="../img/90acb3b8721e1f18.jpeg" alt="右チャ目">
         </button>
       </td>
     </tr>
     <tr>
-      <td><img draggable="false" role="img" class="emoji" alt="❤️" src="https://s.w.org/images/core/emoji/17.0.2/svg/2764.svg">付</td>
+      <td>❤️付</td>
       <td>
-        <button class="adjustBtn" onclick="adjustPoints('left','glowing')" style="background-color: rgb(255, 204, 204);">
+        <button class="adjustBtn" onclick="adjustPoints('left','glowing')">
           <img decoding="async" src="../img/9f774d72e7f5a2ce.jpeg" alt="左チャ目 1チャ目 [♥️付]">
         </button>
       </td>
       <td>
-        <button class="adjustBtn" onclick="adjustPoints('middle','glowing')" style="background-color: rgb(255, 204, 204);">
+        <button class="adjustBtn" onclick="adjustPoints('middle','glowing')">
           <img decoding="async" src="../img/b3698530b2d62cc0.jpeg" alt="中チャ目 1チャ目 [♥️付]">
         </button>
       </td>
       <td>
-        <button class="adjustBtn" onclick="adjustPoints('right','glowing')" style="background-color: rgb(255, 204, 204);">
+        <button class="adjustBtn" onclick="adjustPoints('right','glowing')">
           <img decoding="async" src="../img/d73bf28a86119d14.jpeg" alt="右チャ目 1チャ目 [♥️付]">
         </button>
       </td>
@@ -137,26 +126,26 @@
     <tr>
       <td>2チャ目</td>
       <td>
-        <button class="adjustBtn" onclick="adjustPoints('left','twoChance')" style="background-color: rgb(255, 204, 204);">
+        <button class="adjustBtn" onclick="adjustPoints('left','twoChance')">
           <img decoding="async" src="../img/14f74e549db4d24c.jpeg" alt="左チャ目 2チャ目">
         </button>
       </td>
       <td>
-        <button class="adjustBtn" onclick="adjustPoints('middle','twoChance')" style="background-color: rgb(255, 204, 204);">
+        <button class="adjustBtn" onclick="adjustPoints('middle','twoChance')">
           <img decoding="async" src="../img/cec0fa03eaf532d2.jpeg" alt="中チャ目 2チャ目">
         </button>
       </td>
       <td>
-        <button class="adjustBtn" onclick="adjustPoints('right','twoChance')" style="background-color: rgb(255, 204, 204);">
+        <button class="adjustBtn" onclick="adjustPoints('right','twoChance')">
           <img decoding="async" src="../img/7bc0b7c53a0a0ca4.jpeg" alt="右チャ目 2チャ目">
         </button>
       </td>
     </tr>
     <tr>
       <td>高確帯</td>
-      <td><button id="toggleHighModeLeftBtn" class="highModeBtn" onclick="toggleHighMode('left')" style="background-color: rgb(238, 238, 238); color: black;">なし</button></td>
-      <td><button id="toggleHighModeMiddleBtn" class="highModeBtn" onclick="toggleHighMode('middle')" style="background-color: rgb(238, 238, 238); color: black;">なし</button></td>
-      <td><button id="toggleHighModeRightBtn" class="highModeBtn" onclick="toggleHighMode('right')" style="background-color: rgb(238, 238, 238); color: black;">なし</button></td>
+      <td><button id="toggleHighModeLeftBtn" class="highModeBtn" onclick="toggleHighMode('left')">なし</button></td>
+      <td><button id="toggleHighModeMiddleBtn" class="highModeBtn" onclick="toggleHighMode('middle')">なし</button></td>
+      <td><button id="toggleHighModeRightBtn" class="highModeBtn" onclick="toggleHighMode('right')">なし</button></td>
     </tr>
     <tr>
       <td>示唆出現</td>
@@ -191,26 +180,26 @@
         </button>
       </td>
     </tr>
-  </tbody></table>
+  </table>
 
   <!-- 状態別カスタム値設定（初期非表示、ヘッダータップで切替） -->
   <h3 id="toggleCustomValuesBtn" style="font-size:16px; margin-top:21px; cursor:pointer;">状態別カスタム値設定 (タップで表示／非表示)</h3>
   <div id="customValuesContainer" style="display:none;">
     <table class="custom-table">
-      <tbody><tr>
+      <tr>
         <th>種類</th>
         <th>昼(低確)</th>
         <th>夕方(高確)</th>
         <th>夜(超高確)</th>
       </tr>
       <tr>
-        <td>1個チャンス目 [<img draggable="false" role="img" class="emoji" alt="🩷" src="https://s.w.org/images/core/emoji/17.0.2/svg/1fa77.svg">無]</td>
+        <td>1個チャンス目 [🩷無]</td>
         <td><input type="number" id="customLowNonGlowing" value="1"></td>
         <td><input type="number" id="customMidNonGlowing" value="10"></td>
         <td><input type="number" id="customHighNonGlowing" value="75"></td>
       </tr>
       <tr>
-        <td>1個チャンス目 [<img draggable="false" role="img" class="emoji" alt="🩷" src="https://s.w.org/images/core/emoji/17.0.2/svg/1fa77.svg">付]</td>
+        <td>1個チャンス目 [🩷付]</td>
         <td><input type="number" id="customLowGlowing" value="3"></td>
         <td><input type="number" id="customMidGlowing" value="10"></td>
         <td><input type="number" id="customHighGlowing" value="75"></td>
@@ -221,39 +210,911 @@
         <td><input type="number" id="customMidTwoChance" value="10"></td>
         <td><input type="number" id="customHighTwoChance" value="75"></td>
       </tr>
-    </tbody></table>
+    </table>
     <div class="action-buttons">
       <button onclick="resetCustomValues()">デフォルトにリセット</button>
     </div>
-  </div></section>
-  <section class="panel" data-panel="kaiseki"><div class="kaiseki-toolbar">
-              
-            </div>
-            <div class="kaiseki-accordion">
-              <details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i">基本情報</span></summary><div class="kaiseki-section-body">
+  </div>
+</div>
+
+<!-- スタイル -->
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: sans-serif; background: #fff; color: #000; }
+.container { max-width: 600px; margin: 20px auto; padding: 10px; }
+
+/* 状態ボタン */
+.status-bar {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.status-bar button {
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.2s ease;
+}
+
+/* 昼・夕方・夜の背景画像 */
+#stateLow { background-image: url('https://suroschool.jp/wp-content/uploads/2025/03/IMG_5472.jpeg'); }
+#stateMid { background-image: url('https://suroschool.jp/wp-content/uploads/2025/03/IMG_5473.jpeg'); }
+#stateHigh { background-image: url('https://suroschool.jp/wp-content/uploads/2025/03/IMG_5474.jpeg'); }
+
+/* 選択時の強調表示 */
+.status-bar button.active {
+  border: 3px solid #FFD700;
+  box-shadow: 0 0 12px rgba(255,215,0,0.8);
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+/* 以下、既存スタイル */
+.action-buttons { display: flex; gap: 5px; margin-bottom: 10px; }
+.action-buttons button {
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.action-buttons button img { width: 24px; height: 24px; }
+#toggleAdjustModeBtn { background-color: #ffcccc; }
+#doubleDeltaBtn { position: relative; }
+#doubleDeltaBtn.off { background-color: #eee; }
+#doubleDeltaBtn.off::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background: red;
+  transform: translateY(-50%) rotate(-10deg);
+  pointer-events: none;
+  border-radius: 1px;
+}
+#doubleDeltaBtn.active { background-color: yellow; }
+#doubleDeltaBtn.active::before { display: none; }
+.adjustBtn { background-color: transparent; border: none; padding: 5px; transition: transform 0.1s ease; }
+.adjustBtn img { width: 50px; max-width: 100%; height: auto; display: block; margin: 0 auto; }
+.czBtn img { width: 60px; max-width: 100%; height: auto; display: block; margin: 0 auto; }
+.adjustBtn.animate { animation: tapFlash 0.3s ease; }
+@keyframes tapFlash {
+  0% { transform: scale(1) rotate(0deg); background-color: transparent; }
+  50% { transform: scale(0.8) rotate(-15deg); background-color: brown; }
+  100% { transform: scale(1) rotate(0deg); background-color: transparent; }
+}
+#ptBarContainer { width: 90%; margin: 10px auto 20px auto; }
+.ptBarItem { display: flex; align-items: center; gap: 10px; margin-bottom: 15px; }
+.ptBarLabel { min-width: 50px; font-size: 14px; white-space: nowrap; }
+.ptBarWrapper {
+  flex: 1;
+  background: #ffeef8;
+  border-radius: 10px;
+  padding: 3px;
+  cursor: ew-resize;
+  user-select: none;
+  position: relative;
+}
+.ptBar {
+  display: inline-block;
+  height: 20px;
+  border-radius: 5px;
+  transition: width 0.3s ease, background 0.3s ease;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  min-width: 20px;
+}
+#leftPtBar { background: #ffd6e8; }
+#middlePtBar { background: #d6ffd6; }
+#rightPtBar { background: #e6d6ff; }
+.ptBarComment { text-align: center; font-size: 12px; color: #555; margin-bottom: 20px; }
+table.main-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+table.main-table th, table.main-table td {
+  border: 1px solid #f0d9e6;
+  padding: 8px;
+  text-align: center;
+  font-size: 14px;
+}
+table.main-table th { background: #ffeef8; }
+input.pointInput {
+  width: 60px;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  padding: 4px;
+  border-radius: 5px;
+}
+table.custom-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: auto;
+  margin: 20px auto;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+table.custom-table th, table.custom-table td {
+  border: 1px solid #f0d9e6;
+  padding: 4px 6px;
+  text-align: center;
+  font-size: 12px;
+}
+table.custom-table th { background: #ffeef8; }
+.custom-table input[type="number"] {
+  width: 40px;
+  font-size: 12px;
+  padding: 1px;
+  text-align: center;
+  border-radius: 3px;
+}
+.highModeBtn {
+  font-size: 18px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ccc;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.1s ease;
+}
+.minHoldRow { display: none; }
+</style>
+
+<!-- スクリプト -->
+<script>
+let adjustMode = 1;
+let currentState = 'low';
+let multiplier = 1;
+let isHighModeLeft = false;
+let isHighModeMiddle = false;
+let isHighModeRight = false;
+const swipeScale = 5;
+
+function initPtBarSwipe(wrapperId, inputId) {
+  const wrapper = document.getElementById(wrapperId);
+  let startX = 0, initialValue = 0;
+  function updateFromDelta(dx) {
+    const deltaPt = Math.floor(dx / swipeScale);
+    let newVal = initialValue + deltaPt;
+    newVal = Math.max(0, Math.min(150, newVal));
+    document.getElementById(inputId).value = newVal;
+    updatePtBars();
+  }
+  wrapper.addEventListener("touchstart", function(e) {
+    startX = e.touches[0].clientX;
+    initialValue = parseInt(document.getElementById(inputId).value.replace(/[^\d]/g,'')) || 0;
+  });
+  wrapper.addEventListener("touchmove", function(e) {
+    const dx = e.touches[0].clientX - startX;
+    updateFromDelta(dx);
+    e.preventDefault();
+  });
+  wrapper.addEventListener("mousedown", function(e) {
+    startX = e.clientX;
+    initialValue = parseInt(document.getElementById(inputId).value.replace(/[^\d]/g,'')) || 0;
+    function onMouseMove(ev) {
+      const dx = ev.clientX - startX;
+      updateFromDelta(dx);
+    }
+    function onMouseUp() {
+      document.removeEventListener("mousemove", onMouseMove);
+      document.removeEventListener("mouseup", onMouseUp);
+    }
+    document.addEventListener("mousemove", onMouseMove);
+    document.addEventListener("mouseup", onMouseUp);
+  });
+}
+
+function interpolateColor(color1, color2, factor) {
+  color1 = color1.replace('#', '');
+  color2 = color2.replace('#', '');
+  const r1 = parseInt(color1.substring(0,2), 16);
+  const g1 = parseInt(color1.substring(2,4), 16);
+  const b1 = parseInt(color1.substring(4,6), 16);
+  const r2 = parseInt(color2.substring(0,2), 16);
+  const g2 = parseInt(color2.substring(2,4), 16);
+  const b2 = parseInt(color2.substring(4,6), 16);
+  const r = Math.round(r1 + factor * (r2 - r1));
+  const g = Math.round(g1 + factor * (g2 - g1));
+  const b = Math.round(b1 + factor * (b2 - b1));
+  const hr = ("0" + r.toString(16)).slice(-2);
+  const hg = ("0" + g.toString(16)).slice(-2);
+  const hb = ("0" + b.toString(16)).slice(-2);
+  return "#" + hr + hg + hb;
+}
+
+function updatePtBars() {
+  const leftValue   = parseInt(document.getElementById("leftPt").value.replace(/[^\d]/g,'')) || 0;
+  const middleValue = parseInt(document.getElementById("middlePt").value.replace(/[^\d]/g,'')) || 0;
+  const rightValue  = parseInt(document.getElementById("rightPt").value.replace(/[^\d]/g,'')) || 0;
+  const leftPct   = Math.min(leftValue, 150) / 150 * 100;
+  const middlePct = Math.min(middleValue, 150) / 150 * 100;
+  const rightPct  = Math.min(rightValue, 150) / 150 * 100;
+
+  let leftColor = leftValue >= 100 ? "#ff69b4" : interpolateColor("#ffd6e8", "#ff69b4", leftValue/100);
+  let middleColor = middleValue >= 100 ? "#32cd32" : interpolateColor("#d6ffd6", "#32cd32", middleValue/100);
+  let rightColor = rightValue >= 100 ? "#800080" : interpolateColor("#e6d6ff", "#800080", rightValue/100);
+
+  document.getElementById("leftPtBar").style.width   = leftPct + "%";
+  document.getElementById("middlePtBar").style.width = middlePct + "%";
+  document.getElementById("rightPtBar").style.width  = rightPct + "%";
+
+  document.getElementById("leftPtBar").style.background   = leftColor;
+  document.getElementById("middlePtBar").style.background = middleColor;
+  document.getElementById("rightPtBar").style.background  = rightColor;
+
+  let leftInner = leftValue + "pt";
+  if (leftValue >= 140) leftInner += ' <span style="color:red;">怪</span>';
+  else if (leftValue >= 100) leftInner += ' <span style="color:blue;">近</span>';
+  document.getElementById("leftPtBar").innerHTML = leftInner;
+
+  let middleInner = middleValue + "pt";
+  if (middleValue >= 140) middleInner += ' <span style="color:red;">怪</span>';
+  else if (middleValue >= 100) middleInner += ' <span style="color:blue;">近</span>';
+  document.getElementById("middlePtBar").innerHTML = middleInner;
+
+  let rightInner = rightValue + "pt";
+  if (rightValue >= 140) rightInner += ' <span style="color:red;">怪</span>';
+  else if (rightValue >= 100) rightInner += ' <span style="color:blue;">近</span>';
+  document.getElementById("rightPtBar").innerHTML = rightInner;
+}
+
+function saveData() {
+  localStorage.setItem("leftPt", document.getElementById("leftPt").value);
+  localStorage.setItem("middlePt", document.getElementById("middlePt").value);
+  localStorage.setItem("rightPt", document.getElementById("rightPt").value);
+  localStorage.setItem("customLowNonGlowing", document.getElementById("customLowNonGlowing").value);
+  localStorage.setItem("customMidNonGlowing", document.getElementById("customMidNonGlowing").value);
+  localStorage.setItem("customHighNonGlowing", document.getElementById("customHighNonGlowing").value);
+  localStorage.setItem("customLowGlowing", document.getElementById("customLowGlowing").value);
+  localStorage.setItem("customMidGlowing", document.getElementById("customMidGlowing").value);
+  localStorage.setItem("customHighGlowing", document.getElementById("customHighGlowing").value);
+  localStorage.setItem("customLowTwoChance", document.getElementById("customLowTwoChance").value);
+  localStorage.setItem("customMidTwoChance", document.getElementById("customMidTwoChance").value);
+  localStorage.setItem("customHighTwoChance", document.getElementById("customHighTwoChance").value);
+  localStorage.setItem("currentState", currentState);
+  localStorage.setItem("multiplier", multiplier);
+  localStorage.setItem("isHighModeLeft", isHighModeLeft ? '1' : '0');
+  localStorage.setItem("isHighModeMiddle", isHighModeMiddle ? '1' : '0');
+  localStorage.setItem("isHighModeRight", isHighModeRight ? '1' : '0');
+}
+
+function loadData() {
+  if(localStorage.getItem("leftPt"))
+    document.getElementById("leftPt").value = localStorage.getItem("leftPt");
+  if(localStorage.getItem("middlePt"))
+    document.getElementById("middlePt").value = localStorage.getItem("middlePt");
+  if(localStorage.getItem("rightPt"))
+    document.getElementById("rightPt").value = localStorage.getItem("rightPt");
+
+  if(localStorage.getItem("customLowNonGlowing"))
+    document.getElementById("customLowNonGlowing").value = localStorage.getItem("customLowNonGlowing");
+  if(localStorage.getItem("customMidNonGlowing"))
+    document.getElementById("customMidNonGlowing").value = localStorage.getItem("customMidNonGlowing");
+  if(localStorage.getItem("customHighNonGlowing"))
+    document.getElementById("customHighNonGlowing").value = localStorage.getItem("customHighNonGlowing");
+  if(localStorage.getItem("customLowGlowing"))
+    document.getElementById("customLowGlowing").value = localStorage.getItem("customLowGlowing");
+  if(localStorage.getItem("customMidGlowing"))
+    document.getElementById("customMidGlowing").value = localStorage.getItem("customMidGlowing");
+  if(localStorage.getItem("customHighGlowing"))
+    document.getElementById("customHighGlowing").value = localStorage.getItem("customHighGlowing");
+  if(localStorage.getItem("customLowTwoChance"))
+    document.getElementById("customLowTwoChance").value = localStorage.getItem("customLowTwoChance");
+  if(localStorage.getItem("customMidTwoChance"))
+    document.getElementById("customMidTwoChance").value = localStorage.getItem("customMidTwoChance");
+  if(localStorage.getItem("customHighTwoChance"))
+    document.getElementById("customHighTwoChance").value = localStorage.getItem("customHighTwoChance");
+
+  if(localStorage.getItem("currentState")) {
+    currentState = localStorage.getItem("currentState");
+    setState(currentState);
+  }
+  if(localStorage.getItem("multiplier")) {
+    multiplier = Number(localStorage.getItem("multiplier"));
+    updateDoubleDeltaUI();
+  }
+  isHighModeLeft   = (localStorage.getItem("isHighModeLeft")   === '1');
+  isHighModeMiddle = (localStorage.getItem("isHighModeMiddle") === '1');
+  isHighModeRight  = (localStorage.getItem("isHighModeRight")  === '1');
+  updateHighModeUI('left', isHighModeLeft);
+  updateHighModeUI('middle', isHighModeMiddle);
+  updateHighModeUI('right', isHighModeRight);
+  updateAdjustModeUI();
+  updatePtBars();
+}
+
+function setState(state) {
+  currentState = state;
+  document.getElementById('stateLow').classList.remove('active');
+  document.getElementById('stateMid').classList.remove('active');
+  document.getElementById('stateHigh').classList.remove('active');
+  if(state === 'low'){
+    document.getElementById('stateLow').classList.add('active');
+  } else if(state === 'mid'){
+    document.getElementById('stateMid').classList.add('active');
+  } else if(state === 'high'){
+    document.getElementById('stateHigh').classList.add('active');
+  }
+  saveData();
+}
+
+function reducePoints(value) {
+  ['left','middle','right'].forEach(icon => {
+    let input = document.getElementById(icon + 'Pt');
+    let num = parseInt(input.value.replace(/[^\d]/g,'')) || 0;
+    num = Math.max(0, num - value);
+    input.value = num;
+  });
+  saveData();
+  updatePtBars();
+}
+
+function reducePointsForColumn(column, value) {
+  let input = document.getElementById(column + 'Pt');
+  let num = parseInt(input.value.replace(/[^\d]/g,'')) || 0;
+  num = Math.max(0, num - value);
+  input.value = num;
+  saveData();
+  updatePtBars();
+}
+
+function toggleAdjustMode() {
+  adjustMode *= -1;
+  document.getElementById('toggleAdjustModeBtn').innerText = (adjustMode === 1 ? '➕' : '➖');
+  updateAdjustModeUI();
+  saveData();
+}
+
+function updateAdjustModeUI() {
+  const btn = document.getElementById('toggleAdjustModeBtn');
+  const adjustButtons = document.querySelectorAll('.adjustBtn');
+  if (adjustMode === 1) {
+    btn.style.backgroundColor = '#ffcccc';
+    adjustButtons.forEach(b => { b.style.backgroundColor = '#ffcccc'; });
+  } else {
+    btn.style.backgroundColor = '#cce5ff';
+    adjustButtons.forEach(b => { b.style.backgroundColor = '#cce5ff'; });
+  }
+}
+
+function resetCustomValues() {
+  document.querySelectorAll('.custom-table input[type=number]').forEach(input => {
+    input.value = input.defaultValue;
+  });
+  saveData();
+}
+
+function adjustPoints(column, type) {
+  let input = document.getElementById(column + 'Pt');
+  let num = parseInt(input.value.replace(/[^\d]/g,'')) || 0;
+  let delta = getCustomValue(type, column);
+  num = num + delta * adjustMode * multiplier;
+  num = Math.max(0, num);
+  input.value = num;
+  saveData();
+  updatePtBars();
+}
+
+function getCustomValue(type, column) {
+  let statePrefix = currentState.charAt(0).toUpperCase() + currentState.slice(1);
+  let inputId = `custom${statePrefix}${(type.charAt(0).toUpperCase() + type.slice(1))}`;
+  let inputElement = document.getElementById(inputId);
+  let base = inputElement ? parseInt(inputElement.value) || 0 : 0;
+  if (column === 'left' && isHighModeLeft) base += 10;
+  if (column === 'middle' && isHighModeMiddle) base += 10;
+  if (column === 'right' && isHighModeRight) base += 10;
+  return base;
+}
+
+function setMinimum(column, minValue) {
+  let input = document.getElementById(column + 'Pt');
+  let num = parseInt(input.value.replace(/[^\d]/g,'')) || 0;
+  if (num < minValue) num = minValue;
+  input.value = num;
+  saveData();
+  updatePtBars();
+}
+
+function toggleDoubleDelta() {
+  multiplier = (multiplier === 1) ? 2 : 1;
+  updateDoubleDeltaUI();
+  saveData();
+}
+
+function updateDoubleDeltaUI() {
+  const btn = document.getElementById('doubleDeltaBtn');
+  if (multiplier === 2) {
+    btn.classList.remove('off');
+    btn.classList.add('active');
+  } else {
+    btn.classList.remove('active');
+    btn.classList.add('off');
+  }
+}
+
+function toggleHighMode(column) {
+  switch(column) {
+    case 'left':
+      isHighModeLeft = !isHighModeLeft;
+      updateHighModeUI('left', isHighModeLeft);
+      break;
+    case 'middle':
+      isHighModeMiddle = !isHighModeMiddle;
+      updateHighModeUI('middle', isHighModeMiddle);
+      break;
+    case 'right':
+      isHighModeRight = !isHighModeRight;
+      updateHighModeUI('right', isHighModeRight);
+      break;
+  }
+  saveData();
+}
+
+function updateHighModeUI(column, isOn) {
+  let btnId = '';
+  if (column === 'left')   btnId = 'toggleHighModeLeftBtn';
+  if (column === 'middle') btnId = 'toggleHighModeMiddleBtn';
+  if (column === 'right')  btnId = 'toggleHighModeRightBtn';
+  let btn = document.getElementById(btnId);
+  if (!btn) return;
+  btn.innerText = isOn ? 'あり' : 'なし';
+  btn.style.backgroundColor = isOn ? 'red' : '#eee';
+  btn.style.color = isOn ? 'white' : 'black';
+}
+
+function setupAdjustBtnAnimation() {
+  const btns = document.querySelectorAll('.adjustBtn');
+  btns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      btn.classList.remove('animate');
+      void btn.offsetWidth;
+      btn.classList.add('animate');
+    });
+  });
+}
+
+// 状態別カスタム値設定の表示切替
+document.getElementById("toggleCustomValuesBtn").addEventListener("click", function(){
+  var container = document.getElementById("customValuesContainer");
+  if(container.style.display === "none" || container.style.display === ""){
+    container.style.display = "block";
+  } else {
+    container.style.display = "none";
+  }
+});
+
+window.addEventListener("load", function() {
+  initPtBarSwipe("leftPtWrapper", "leftPt");
+  initPtBarSwipe("middlePtWrapper", "middlePt");
+  initPtBarSwipe("rightPtWrapper", "rightPt");
+  setupAdjustBtnAnimation();
+  loadData();
+});
+</script>
+
+
+
+<h2 class="wp-block-heading"><strong>狙い目　</strong></h2>
+
+
+
+<p class="wp-block-paragraph">実践上CZが遠い状態から打ち始めるためか期待値通りにならない可能性があるため110%ボーダーとなります。<br>
+朝イチ以外は店データ機と液晶ゲーム数が10Gズレてます。ゾーン狙いやボーダーギリギリを打つ時はご注意ください。</p>
+
+
+
+<p class="wp-block-paragraph">[リセット狙い]</p>
+
+
+
+<p class="wp-block-paragraph">積極派　100Gから<br>
+慎重派　130Gから<br>
+※当日CZ未当選の場合はボーダーを-30G下げる</p>
+
+
+
+<p class="wp-block-paragraph">&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">[ボーナス間天井狙い]</p>
+
+
+
+<p class="wp-block-paragraph">440Gから</p>
+
+
+
+<p class="wp-block-paragraph">駆け抜け後　370Gから<br>
+※差枚プラスの場合は通常の狙い目</p>
+
+
+
+<p class="wp-block-paragraph">天井後or 650ゾーン当選後　370Gから<br>
+※650ゾーン当選は店データ機で680-690Gくらい</p>
+
+
+
+<p class="wp-block-paragraph">天井or650ゾーン当選　＆　駆け抜け後 210Gから</p>
+
+
+
+<p class="wp-block-paragraph">※駆け抜け後はAT性能が上がる</p>
+
+
+
+<p class="wp-block-paragraph">&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">[有利区間の差枚で調整]</p>
+
+
+
+<p class="wp-block-paragraph">差枚がプラスだと冷遇がありそうなので、下記差枚時はボーダーを上げる。<br>
++1000枚以上の場合は扱い不明。</p>
+
+
+
+<p class="wp-block-paragraph">+500枚から+1000枚<br>
+駆け抜け後は通常の狙い目<br>
+それ以外　+20G</p>
+
+
+
+<p class="wp-block-paragraph">+0から+500枚<br>
+駆け抜け後は通常の狙い目<br>
+それ以外　+20G</p>
+
+
+
+<p class="wp-block-paragraph">&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">[ゾーン狙い]</p>
+
+
+
+<p class="wp-block-paragraph">250Gゾーン　245Gから</p>
+
+
+
+<p class="wp-block-paragraph">&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">[ぷっちゅんチャレンジ間狙い］</p>
+
+
+
+<p class="wp-block-paragraph">①夕方ステージ消化、発明品チャンス10G手前から<br>
+②夕方ステージ消化、発明品チャンス20G手前から</p>
+
+
+
+<p class="wp-block-paragraph">・駆け抜け後<br>
+ぷっちゅん間　350G以上　→①<br>
+ぷっちゅん間　600G以上　→②</p>
+
+
+
+<p class="wp-block-paragraph">・駆け抜け以外後かつ差枚マイナス<br>
+ぷっちゅん間　500G以上　→①<br>
+ぷっちゅん間　700G以上　→②</p>
+
+
+
+<p class="wp-block-paragraph">・当日通常G数からぷっちゅん当選率1/1000以下　→①<br>
+かつ駆け抜け後なら　→②</p>
+
+
+
+<p class="wp-block-paragraph">・前回、650Gゾーンまたは天井当選後　→②</p>
+
+
+
+<p class="wp-block-paragraph">左、中は140pt以上濃厚なら対象CZまで<br>
+右は看板やアイキャッチで100pt以上濃厚なら対象CZ当選まで。</p>
+
+
+
+<p class="wp-block-paragraph">発明品チャンスは100.300.500.700G到達時に発生する。</p>
+
+
+
+<p class="wp-block-paragraph">前任者がptで押し引きする様な知識層の場合は打たない方が無難。</p>
+
+
+
+<p class="wp-block-paragraph">&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">[一撃枚数別狙い]</p>
+
+
+
+<p class="wp-block-paragraph">枚数引継ぎ含め、通常STは1500枚以上、もぐもぐたい焼き後は1800枚以上で有利切れしてもぐもぐたい焼きタイムに突入。</p>
+
+
+
+<p class="wp-block-paragraph">狙い方のパターンは2種類</p>
+
+
+
+<p class="wp-block-paragraph">① 即やめ台を夕方ステージ消化。何かしらCZの示唆が出たら100Gの発明品チャンス+夕方ステージまで。または80Gから発明品チャンス+夕方ステージ消化まで。<br>
+②即やめ台を100Gの発明品チャンス+夕方ステージ消化まで。<br>
+※どちらもCZまで近そうなら200G+αまで続行。</p>
+
+
+
+<p class="wp-block-paragraph">・もぐもぐたい焼き後<br>
+一撃1000-1500枚後　①手順<br>
+一撃1500枚以上後　②手順</p>
+
+
+
+<p class="wp-block-paragraph">・非もぐもぐたい焼き後<br>
+一撃1300枚以上　①手順</p>
+
+
+
+<p class="wp-block-paragraph">&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">[発明品狙い]</p>
+
+
+
+<p class="wp-block-paragraph">100Gと300Gで発明品獲得。<br>
+獲得したアイテムで押し引き。<br>
+カバネリと比較してCZが重要。</p>
+
+
+
+<p class="wp-block-paragraph">駆け抜け後以外　10G手前<br>
+駆け抜け後　20G手前<br>
+あたりから狙えそう。</p>
+
+
+
+<p class="wp-block-paragraph">ただし明らかに直前にCZ当選(特にぷっちゅんチャレンジ)している場合は狙えない可能性もある。</p>
+
+
+
+<p class="wp-block-paragraph">にゃんにゃんコピーくん<br>
+→消えるまで打ちその後CZの示唆で押し引き</p>
+
+
+
+<p class="wp-block-paragraph">ぴょんぴょんワープくん<br>
+→超高確(夜更け)移行時は抜けるまで消化</p>
+
+
+
+<p class="wp-block-paragraph">べとべとランチャーくん<br>
+→CZ突入でゲーム数ブロックのためCZ突入まで</p>
+
+
+
+<p class="wp-block-paragraph">&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">[トランスポイント狙い]</p>
+
+
+
+<p class="wp-block-paragraph">ポイントが貯まると次回初当たりがtoloveるエピソードに突入。</p>
+
+
+
+<p class="wp-block-paragraph">アイキャッチ「白雪姫美柑」はトランスポイントMAXのため解放まで。</p>
+
+
+
+<figure class="wp-block-image"><a href="../img/e88aaf51768382c5.jpg"><img width="245" height="300" src="../img/a1f7593cfbe7de5a.jpg" alt="" class="wp-image-483"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/02/C1D29BD7-7F3A-41A4-BD56-ED4E6DF5ECC9-245x300.jpg 245w, https://suroschool.jp/wp-content/uploads/2025/02/C1D29BD7-7F3A-41A4-BD56-ED4E6DF5ECC9-836x1024.jpg 836w, https://suroschool.jp/wp-content/uploads/2025/02/C1D29BD7-7F3A-41A4-BD56-ED4E6DF5ECC9-768x941.jpg 768w, https://suroschool.jp/wp-content/uploads/2025/02/C1D29BD7-7F3A-41A4-BD56-ED4E6DF5ECC9.jpg 1114w" sizes="auto, (max-width: 245px) 100vw, 245px" /></a></figure>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<p class="wp-block-paragraph">&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">[ST即やめ台狙い]</p>
+
+
+
+<p class="wp-block-paragraph">即やめ台で左液晶女の子がハートに包まれてたらCZ突入濃厚。真ん中のボタンを押してチェック出来る。</p>
+
+
+
+<p class="wp-block-paragraph">&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">[有利区間切れ狙い]</p>
+
+
+
+<p class="wp-block-paragraph">不明</p>
+
+
+
+<p class="wp-block-paragraph">&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph"><strong>やめ時</strong></p>
+
+
+
+<p class="wp-block-paragraph">ST終了後1G回してやめ<br>
+ST終了直後に液晶左の女の子がハートに包まれてたらCZ出てくるため消化</p>
+
+
+
+<p class="wp-block-paragraph">&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph"><strong>その他</strong></p>
+
+
+
+<p class="wp-block-paragraph">【ポイントのカウント方法】</p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://note.com/kingtqkq/n/ne118b356c24a?sub_rt=share_b">詳細記事</a></p>
+
+
+
+<p class="wp-block-paragraph">通常ハート非点灯　1pt<br>
+通常ハート点灯　1pt<br>
+どきどき高確中　10pt<br>
+高確(夕方) 10pt<br>
+超高確(夜) 75pt<br>
+通常時複合チャンス目　5pt (高確時、どきどき高確中は更に+10pt)<br>
+ハーレム目　左20pt中20pt右150pt</p>
+
+
+
+<p class="wp-block-paragraph">にゃんにゃんコピーくん滞在時は2倍にする。</p>
+
+
+
+<p class="wp-block-paragraph">STで有利区間切った場合、ptはリセットされると思われる。</p>
+
+
+
+<p class="wp-block-paragraph">&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">・アイキャッチまとめ</p>
+
+
+
+<figure class="wp-block-image"><a href="../img/303a47b85500d1db.jpg"><img width="300" height="297" src="../img/b6efa2d658876da6.jpg" alt="" class="wp-image-487"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/02/7BD7D7D4-EB88-42CA-BDC9-F7D34C50F4C3-300x297.jpg 300w, https://suroschool.jp/wp-content/uploads/2025/02/7BD7D7D4-EB88-42CA-BDC9-F7D34C50F4C3-1024x1014.jpg 1024w, https://suroschool.jp/wp-content/uploads/2025/02/7BD7D7D4-EB88-42CA-BDC9-F7D34C50F4C3-150x150.jpg 150w, https://suroschool.jp/wp-content/uploads/2025/02/7BD7D7D4-EB88-42CA-BDC9-F7D34C50F4C3-768x761.jpg 768w, https://suroschool.jp/wp-content/uploads/2025/02/7BD7D7D4-EB88-42CA-BDC9-F7D34C50F4C3-120x120.jpg 120w, https://suroschool.jp/wp-content/uploads/2025/02/7BD7D7D4-EB88-42CA-BDC9-F7D34C50F4C3.jpg 1170w" sizes="auto, (max-width: 300px) 100vw, 300px" /></a></figure>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<p class="wp-block-paragraph">・会話演出ポイント示唆</p>
+
+
+
+<figure class="wp-block-image"><a href="../img/9edf8baf64a5b726.jpg"><img width="201" height="300" src="../img/27594d8572d0a1bf.jpg" alt="" class="wp-image-486"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/02/F39BCEFF-9BAA-403E-8C96-648D6F867C2D-201x300.jpg 201w, https://suroschool.jp/wp-content/uploads/2025/02/F39BCEFF-9BAA-403E-8C96-648D6F867C2D-686x1024.jpg 686w, https://suroschool.jp/wp-content/uploads/2025/02/F39BCEFF-9BAA-403E-8C96-648D6F867C2D-768x1146.jpg 768w, https://suroschool.jp/wp-content/uploads/2025/02/F39BCEFF-9BAA-403E-8C96-648D6F867C2D-1030x1536.jpg 1030w, https://suroschool.jp/wp-content/uploads/2025/02/F39BCEFF-9BAA-403E-8C96-648D6F867C2D.jpg 1114w" sizes="auto, (max-width: 201px) 100vw, 201px" /></a></figure>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<p class="wp-block-paragraph">・美柑看板演出</p>
+
+
+
+<p class="wp-block-paragraph">近　140pt以上<br>
+怪　100pt以上</p>
+
+
+
+<p class="wp-block-paragraph">「近」が出た場合はST当選後でも対象のCZ当選までは打った方が良さそう。</p>
+
+
+
+<figure class="wp-block-image"><a href="../img/c448817735162378.jpg"><img width="211" height="300" src="../img/aa3725c99305192a.jpg" alt="" class="wp-image-485"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/02/D3B886A7-69FA-469E-845D-7222447D8273-211x300.jpg 211w, https://suroschool.jp/wp-content/uploads/2025/02/D3B886A7-69FA-469E-845D-7222447D8273-722x1024.jpg 722w, https://suroschool.jp/wp-content/uploads/2025/02/D3B886A7-69FA-469E-845D-7222447D8273-768x1089.jpg 768w, https://suroschool.jp/wp-content/uploads/2025/02/D3B886A7-69FA-469E-845D-7222447D8273-1083x1536.jpg 1083w, https://suroschool.jp/wp-content/uploads/2025/02/D3B886A7-69FA-469E-845D-7222447D8273.jpg 1099w" sizes="auto, (max-width: 211px) 100vw, 211px" /></a></figure>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<p class="wp-block-paragraph">&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph"><strong>参考元</strong></p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://chonborista.com/slot/orinpia-slot/210861/" target="_blank" rel="noopener">ちょんぼりすた</a></p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://www.slopachi-quest.com/article/toloverudarkness-tenjou/" target="_blank" rel="noopener">すろぱちくえすと</a></p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://tsuranuki-method.com/expected-value-about-limit/ltoloverudarkness-1/" target="_blank" rel="noopener">ツラヌキメソッド（無料期待値表）</a></p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://suroschool.jp/toloveltool.html" target="_blank" rel="noopener">ポイントカウンター</a></p>
+</section>
+  <section class="panel" data-panel="kaiseki"><h2>基本情報</h2>
 <ul>
 <li>メーカー: オリンピアエステート</li>
 <li>機械割: 98.0% 〜 110.1%</li>
 <li>導入開始日: 2024年06月03日（月）</li>
 <li>ゲーム性概要: 大人気作品とのコラボで、『L ToLOVEるダークネス』が登場する。 通常時はチャンス目で規定ポイントを貯めつつCZからSTを目指すゲーム性。ST中はチャンス目と共通ベルでボーナスを抽選して、見事ヒロインをすべて攻略（最大6連）で上位STへ突入する。</li>
 </ul>
-<p><img alt="L ToLOVEるダークネス（パチスロ）のリール配列" src="https://p-town.dmm.com/upload/machines/4571/reel.jpg?t=1779358756" decoding="async"></p>
-<p><img alt="L ToLOVEるダークネス（パチスロ）のゲームフロー" src="https://p-town.dmm.com/upload/machines/4571/flow.jpg?t=1779358756" decoding="async"></p>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-2">打ち方</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-3">打ち方・小役</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-4">打ち方（小役狙い）</span></h4>
+<p><img alt="L ToLOVEるダークネス（パチスロ）のリール配列" src="https://p-town.dmm.com/upload/machines/4571/reel.jpg?t=1779358756"></p>
+<p><img alt="L ToLOVEるダークネス（パチスロ）のゲームフロー" src="https://p-town.dmm.com/upload/machines/4571/flow.jpg?t=1779358756"></p>
+<h2>打ち方</h2>
+<h3>打ち方・小役</h3>
+<h4>打ち方（小役狙い）</h4>
 <p>［最初に狙う絵柄］</p>
-<p><img alt="スマスロToLOVEる打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-03-01.jpg" decoding="async"></p>
+<p><img alt="スマスロToLOVEる打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-03-01.jpg"></p>
 <p>通常時・ST中・ボーナス中ともにナビ非発生時はオールフリー打ちでOK。押し順ナビ発生時は押し順に従って消化しよう。</p>
 <p>［チャンス目］</p>
-<p><img alt="スマスロToLOVEるチャンス目" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/06@3x.jpg" decoding="async"></p>
+<p><img alt="スマスロToLOVEるチャンス目" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/06@3x.jpg"></p>
 <p>各リールにチャンス目対象の絵柄が停止かつ、リプレイorベルが揃わなければチャンス目。チャンス目対象の絵柄が2つならダブルチャンス目、3つ止まればハーレム目となる。</p>
-<h4><span id="NG">変則押しはNG</span></h4>
-<p><img alt="スマスロToLOVEる変則押し" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-03-04.jpg" decoding="async"></p>
-<p>ナビ非発生時は左1stでの消化を推奨だ。</p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-5">解析情報通常時</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-6">小役関連</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-7">小役確率</span></h4>
+<h4>変則押しはNG</h4>
+<p><img alt="スマスロToLOVEる変則押し" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-03-04.jpg"></p>
+<p>ナビ非発生時は左1stでの消化を推奨だ。</p>
+<h2>解析情報通常時</h2>
+<h3>小役関連</h3>
+<h4>小役確率</h4>
 <table>
 <thead>
 <tr>
@@ -308,10 +1169,10 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-8">内部状態関連</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-9">内部状態概要</span></h4>
+<h3>内部状態関連</h3>
+<h4>内部状態概要</h4>
 <p>通常時の内部状態は通常＜高確＜超高確の3種類で、滞在状態に応じてチャンス目成立時に獲得するどきどきポイントの量が変化。楽園計画終了時と100Gゲーム消化ごとに必ず高確へ移行する。</p>
-<h4><span id="i-10">高確ゲーム数振り分け</span></h4>
+<h4>高確ゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -333,11 +1194,11 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-11">トランスポイント</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-12">トランスポイント概要</span></h4>
-<p><img alt="スマスロToLOVEるダークネス・トランスポイント概要" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0602/kegare.jpg" decoding="async"></p>
+<h3>トランスポイント</h3>
+<h4>トランスポイント概要</h4>
+<p><img alt="スマスロToLOVEるダークネス・トランスポイント概要" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0602/kegare.jpg"></p>
 <p>CZ失敗時や楽園計画が単発で終了した場合に内部的に蓄積されるポイント。100ptに到達すると次回初当り時にToLOVEるエピソードに当選する。設定変更時は初期ポイント抽選がおこなわれる。</p>
-<h4><span id="i-13">トランスポイント性能</span></h4>
+<h4>トランスポイント性能</h4>
 <table>
 <thead>
 <tr>
@@ -356,10 +1217,10 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="CZ">CZ中のトランスポイント加算当選率</span></h4>
+<h4>CZ中のトランスポイント加算当選率</h4>
 <p>CZのきゅんきゅんバルーン成功確定後（7揃い後）の 1G間の成立役 、ときめきスイートの内部的に 成功確定後の成立役 、ぷっちゅんチャレンジの 成功契機役 でトランスポイントの獲得を抽選。 当選率は低いが、この抽選に当選した場合、100ptを獲得するのでToLOVEるエピソード当選が確定する。</p>
 <p>ハーレム目はときめきスイートとぷっちゅんチャレンジ中に引けば、成功確定後でなくとも、トランスポイント100pt獲得確定だ。</p>
-<h4><span id="100pt">契機別トランスポイント100pt当選率</span></h4>
+<h4>契機別トランスポイント100pt当選率</h4>
 <table>
 <thead>
 <tr>
@@ -386,18 +1247,18 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-14">チャンス目</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-15">チャンス目の抽選</span></h4>
-<p><img alt="スマスロToLOVEるチャンス目" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-01-01.jpg" decoding="async"></p>
+<h3>チャンス目</h3>
+<h4>チャンス目の抽選</h4>
+<p><img alt="スマスロToLOVEるチャンス目" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-01-01.jpg"></p>
 <p>チャンス目は左・中・右の3種類（リール左側に表示）があり、各チャンス目を引くごとにポイントが蓄積されていき、 規定ポイントに到達したらチャンス目に対応したCZに発展 。もちろんチャンス目のダブル停止は大量ポイント獲得、トリプル停止時（ハーレム目）は大量ポイント獲得＋αに期待できる。 チャンス目確率は 約1/13 。</p>
 <p>［チャンス目のキャラはCZごとに変化］</p>
-<p><img alt="スマスロToLOVEる　チャンス目" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-01-02.jpg" decoding="async"></p>
+<p><img alt="スマスロToLOVEる　チャンス目" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-01-02.jpg"></p>
 <p>各チャンス目は2人1組で、右チャンス目ならヤミ→モモというようにCZに当選するごとに入れ替わる。ヒロインが変化するのはあくまで演出なので期待度差などはない。</p>
-<h4><span id="i-16">どきどきポイント</span></h4>
-<p><img alt="スマスロToLOVEるダークネス・どきどきポイント" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0602/0602-08-01.jpg" decoding="async"></p>
+<h4>どきどきポイント</h4>
+<p><img alt="スマスロToLOVEるダークネス・どきどきポイント" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0602/0602-08-01.jpg"></p>
 <p>チャンス目成立時は、チャンス目の種類に対応したどきどきポイントを1pt以上獲得。150ptに到達するとCZへ突入する。上位の内部状態（通常＜高確＜超高確）に滞在しているほど、大量ポイントを獲得しやすい。</p>
 <p>なお、 CZ終了後は初期ポイントを多く獲得する場合がある ので、早い段階でCZに当選することもある。</p>
-<h4><span id="i-17">どきどきポイント性能</span></h4>
+<h4>どきどきポイント性能</h4>
 <table>
 <thead>
 <tr>
@@ -420,7 +1281,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-18">内部状態ごとの最低獲得量</span></h4>
+<h4>内部状態ごとの最低獲得量</h4>
 <table>
 <thead>
 <tr>
@@ -444,9 +1305,9 @@
 </tbody>
 </table>
 <p>通常滞在時は、リール左のキャラアイコンが点灯すると大量ポイント獲得に期待できる。</p>
-<h4><span id="i-19">どきどき高確</span></h4>
-<p><img alt="L ToLOVEるダークネススマスロチャンス目どきどきポイント" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0602/0602-08-04.jpg" decoding="async"></p>
-<h4><span id="i-20">どきどき高確移行率</span></h4>
+<h4>どきどき高確</h4>
+<p><img alt="L ToLOVEるダークネススマスロチャンス目どきどきポイント" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0602/0602-08-04.jpg"></p>
+<h4>どきどき高確移行率</h4>
 <table>
 <thead>
 <tr>
@@ -462,11 +1323,11 @@
 </tbody>
 </table>
 <p>チャンス目成立時の一部でどきどき高確へ突入。滞在中はチャンス目成立時に追加で10pt以上を獲得する。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-21">発明品</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-22">発明品概要</span></h4>
-<p><img alt="スマスロToLOVEるチャンス目発明品" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-02-01.jpg" decoding="async"></p>
+<h3>発明品</h3>
+<h4>発明品概要</h4>
+<p><img alt="スマスロToLOVEるチャンス目発明品" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-02-01.jpg"></p>
 <p>規定ゲーム数消化時などに獲得できるアイテムで、基本的にCZを有利に進めるアイテムをゲット。なかにはボーナス直撃が確定するアイテムもある。 100G、300G、500G、700G消化時は発明品チャンスが発生して、発明品を獲得する。</p>
-<h4><span id="i-23">発明品一覧（通常時）</span></h4>
+<h4>発明品一覧（通常時）</h4>
 <table>
 <thead>
 <tr>
@@ -489,7 +1350,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-24">発明品振り分け</span></h4>
+<h4>発明品振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -512,16 +1373,16 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-25">追憶の闇（ゲーム数前兆）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-26">追憶の闇概要</span></h4>
-<p><img alt="スマスロToLOVEる追憶の闇前兆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-05-01.jpg" decoding="async"></p>
+<h3>追憶の闇（ゲーム数前兆）</h3>
+<h4>追憶の闇概要</h4>
+<p><img alt="スマスロToLOVEる追憶の闇前兆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-05-01.jpg"></p>
 <p>ゲーム数消化から突入する前兆ステージ。ラストの連続演出に成功すればボーナスが確定する。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="CZ-2">おでかけステージ（CZ前兆）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-27">おでかけ概要</span></h4>
-<p><img alt="スマスロToLOVEるおでかけ前兆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-04-01.jpg" decoding="async"></p>
+<h3>おでかけステージ（CZ前兆）</h3>
+<h4>おでかけ概要</h4>
+<p><img alt="スマスロToLOVEるおでかけ前兆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-04-01.jpg"></p>
 <p>チャンス目を契機に移行する前兆ステージ。最終的にチャンス目のキャラとデートできればCZに突入する。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="CZ-3">CZ共通</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="CZ-4">CZ確率</span></h4>
+<h3>CZ共通</h3>
+<h4>CZ確率</h4>
 <table>
 <thead>
 <tr>
@@ -548,11 +1409,11 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="CZ-5">きゅんきゅんバルーン（CZ）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-28">きゅんきゅんバルーン概要</span></h4>
-<p><img alt="スマスロToLOVEるCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-06-01.jpg" decoding="async"></p>
+<h3>きゅんきゅんバルーン（CZ）</h3>
+<h4>きゅんきゅんバルーン概要</h4>
+<p><img alt="スマスロToLOVEるCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-06-01.jpg"></p>
 <p>6G＋α間、小役を揃えるごとにバルーンが昇格。終了時はバルーンの色を参照してボーナス当選をジャッジ。小役成立時はバルーンが昇格するだけでなく、ゲーム数も1G加算されるため、終了間際でも小役さえ連打できれば期待できる。</p>
-<h4><span id="i-29">きゅんきゅんバルーン性能</span></h4>
+<h4>きゅんきゅんバルーン性能</h4>
 <table>
 <thead>
 <tr>
@@ -584,14 +1445,14 @@
 </tbody>
 </table>
 <p>［バルーンの色］</p>
-<p><img alt="スマスロToLOVEるCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-06-03.jpg" decoding="async"></p>
+<p><img alt="スマスロToLOVEるCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-06-03.jpg"></p>
 <p>色で期待度を示唆。金まで行けばボーナス濃厚！</p>
 <p>［最終ジャッジ］</p>
-<p><img alt="スマスロToLOVEるCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-06-04.jpg" decoding="async"></p>
+<p><img alt="スマスロToLOVEるCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-06-04.jpg"></p>
 <p>終了後は逆押しカットインで7が揃えばボーナスだ。</p>
-<h4><span id="i-30">成功抽選</span></h4>
+<h4>成功抽選</h4>
 <p>小役が揃うたびにバルーンの色がランクアップし、最終的なランクで初当りをジャッジ。ランク6（金のバルーン）まで到達すれば楽園計画確定だ。 ランク6到達後は、小役揃い（ランクアップ抽選に当選）のたびにかちこちカッチンくんをストックする。</p>
-<h4><span id="i-31">小役揃い時・ランクアップ数振り分け</span></h4>
+<h4>小役揃い時・ランクアップ数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -634,7 +1495,7 @@
 </tbody>
 </table>
 <p>※ハーレム目は成功確定かつ、かちこちカッチンくんを1個以上ストック</p>
-<h4><span id="i-32">ランク（バルーン色）ごとの成功率</span></h4>
+<h4>ランク（バルーン色）ごとの成功率</h4>
 <table>
 <thead>
 <tr>
@@ -669,11 +1530,11 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="CZ-6">ときめきスイート（CZ）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-33">ときめきスイート概要</span></h4>
-<p><img alt="スマスロToLOVEるCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-07-01.jpg" decoding="async"></p>
+<h3>ときめきスイート（CZ）</h3>
+<h4>ときめきスイート概要</h4>
+<p><img alt="スマスロToLOVEるCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-07-01.jpg"></p>
 <p>5G/セットのST型CZで、小役を引くごとにゲーム数がリセット。成立役に応じて進行するコマ数（デートスポット）が変化していく。最終的に終了時（5G間小役非成立）のデートスポットでボーナス当選をジャッジする。</p>
-<h4><span id="i-34">ときめきスイート性能</span></h4>
+<h4>ときめきスイート性能</h4>
 <table>
 <thead>
 <tr>
@@ -705,13 +1566,13 @@
 </tbody>
 </table>
 <p>［砂時計とデートスポット］</p>
-<p><img alt="スマスロToLOVEるCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-07-03.jpg" decoding="async"></p>
+<p><img alt="スマスロToLOVEるCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-07-03.jpg"></p>
 <p>［最終ジャッジ］</p>
-<p><img alt="スマスロToLOVEるCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-07-04.jpg" decoding="async"></p>
+<p><img alt="スマスロToLOVEるCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-07-04.jpg"></p>
 <p>現在いるデートスポットでボーナス当落をジャッジする。</p>
-<h4><span id="i-35">成功抽選</span></h4>
+<h4>成功抽選</h4>
 <p>到達したマスに応じて成功を抽選。内部的に失敗の場合は最終ジャッジ中の小役で書き換えが抽選される。</p>
-<h4><span id="i-36">小役揃い時・マス進行数振り分け</span></h4>
+<h4>小役揃い時・マス進行数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -781,7 +1642,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-37">マスの色（デートスポット）ごとの成功率</span></h4>
+<h4>マスの色（デートスポット）ごとの成功率</h4>
 <table>
 <thead>
 <tr>
@@ -812,7 +1673,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-38">内部的に失敗時・逆転当選率</span></h4>
+<h4>内部的に失敗時・逆転当選率</h4>
 <table>
 <thead>
 <tr>
@@ -847,11 +1708,11 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="CZ-7">ぷっちゅんちゃれんじ（CZ）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-39">ぷっちゅんちゃれんじ概要</span></h4>
-<p><img alt="スマスロToLOVEるCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-08-01.jpg" decoding="async"></p>
+<h3>ぷっちゅんちゃれんじ（CZ）</h3>
+<h4>ぷっちゅんちゃれんじ概要</h4>
+<p><img alt="スマスロToLOVEるCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-08-01.jpg"></p>
 <p>7G間、成立役に応じて毎ゲームボーナスを抽選する高期待度CZ。プチュンすればボーナス濃厚となる。</p>
-<h4><span id="i-40">ぷっちゅんちゃれんじ性能</span></h4>
+<h4>ぷっちゅんちゃれんじ性能</h4>
 <table>
 <thead>
 <tr>
@@ -883,14 +1744,14 @@
 </tbody>
 </table>
 <p>［セリフの色で期待度示唆］</p>
-<p><img alt="スマスロToLOVEるCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-08-03.jpg" decoding="async"></p>
+<p><img alt="スマスロToLOVEるCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-08-03.jpg"></p>
 <p>赤文字ならチャンス！</p>
 <p>［プチュン］</p>
-<p><img alt="スマスロToLOVEるCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-08-04.jpg" decoding="async"></p>
+<p><img alt="スマスロToLOVEるCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-08-04.jpg"></p>
 <p>プチュンするタイミングも多彩だ。</p>
-<h4><span id="i-41">成功抽選</span></h4>
+<h4>成功抽選</h4>
 <p>7G間、全役で成功を抽選。チャンス目は成功確定だ。</p>
-<h4><span id="i-42">ぷっちゅんちゃれんじ・成功当選率</span></h4>
+<h4>ぷっちゅんちゃれんじ・成功当選率</h4>
 <table>
 <thead>
 <tr>
@@ -909,18 +1770,18 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-43">天井</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-44">天井ゲーム数</span></h4>
+<h3>天井</h3>
+<h4>天井ゲーム数</h4>
 <p>最大天井は999G＋αだが、設定変更後は最大650G＋αに短縮。設定変更時は通常ゲーム数がランダムに加算されるので、さらに早いゲーム数で楽園計画に当選する。 最大天井以外のゲーム数でも楽園計画に当選する可能性があり、 高設定ほどゲーム数契機で当たりやすい 。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-45">演出動画</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-46">ロングフリーズ</span></h4>
-<p>ボーナス当選時の一部で発生。エピソード消化後は特化ゾーンのダークネス計画を経由して、楽園計画（ST）がスタートする。</p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-47">解析情報ボーナス時</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="ST">楽園計画（ST）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="ST-2">ST概要</span></h4>
-<p><img alt="スマスロToLOVEるST" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-11-01.jpg" decoding="async"></p>
+<h3>演出動画</h3>
+<h4>ロングフリーズ</h4>
+<p>ボーナス当選時の一部で発生。エピソード消化後は特化ゾーンのダークネス計画を経由して、楽園計画（ST）がスタートする。</p>
+<h2>解析情報ボーナス時</h2>
+<h3>楽園計画（ST）</h3>
+<h4>ST概要</h4>
+<p><img alt="スマスロToLOVEるST" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-11-01.jpg"></p>
 <p>STは10G＋αで、チャンス目や共通ベルでボーナスを抽選。STはセットごとに攻略対象ヒロインが決まっていて、 ヒロインに対応したチャンス目を引けばボーナスの大チャンス となる。ヒロインはセット継続すると変化していき、3人攻略（3セット継続）で、上位STのハーレムモード移行のチャンス、6人攻略（6セット継続）でハーレムモード突入が確定する。 リプレイ成立時はお友達召喚（ミッション）が抽選される。</p>
-<h4><span id="ST-3">楽園計画（ST）性能</span></h4>
+<h4>楽園計画（ST）性能</h4>
 <table>
 <thead>
 <tr>
@@ -952,18 +1813,18 @@
 </tbody>
 </table>
 <p>「モード選択」</p>
-<p><img alt="画像" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0629/0627-05-01.jpg" decoding="async"></p>
+<p><img alt="画像" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0629/0627-05-01.jpg"></p>
 <p>左右キーでノーマル、違和感、先告知の3種類から告知モードを選択できる。</p>
 <p>［攻略対象のヒロイン］</p>
-<p><img alt="スマスロToLOVEるST" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-11-03.jpg" decoding="async"></p>
+<p><img alt="スマスロToLOVEるST" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-11-03.jpg"></p>
 <p>液晶内にどのチャンス目が期待できるのかが表示されるのでわかりやすい。</p>
 <p>［お友達召喚］</p>
-<p><img alt="スマスロToLOVEるST" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-11-04.jpg" decoding="async"></p>
+<p><img alt="スマスロToLOVEるST" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-11-04.jpg"></p>
 <p>ミッション内容をクリアできればボーナス。ミッション内容は全部で5種類で、チャンス目を引いた場合はミッションの内容不問で成功確定となる。</p>
 <p>［ヒロインコンプリート］</p>
-<p><img alt="スマスロToLOVEるST" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-11-05.jpg" decoding="async"></p>
+<p><img alt="スマスロToLOVEるST" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-11-05.jpg"></p>
 <p>6人を攻略できればハーレムモードへ！</p>
-<h4><span id="2">ボーナス回数別・ハーレムモード突入期待度（設定2）</span></h4>
+<h4>ボーナス回数別・ハーレムモード突入期待度（設定2）</h4>
 <table>
 <thead>
 <tr>
@@ -998,7 +1859,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-48">［通常の楽園計画中］ボーナス当選率</span></h4>
+<h4>［通常の楽園計画中］ボーナス当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1054,7 +1915,7 @@
 </tbody>
 </table>
 <p>※液晶にいるキャラは左から順に左・中・右チャンス目対応のキャラ ※発明品のピタピタくっつくん所有時はすべてのチャンス目がボーナス確定</p>
-<h4><span id="i-49">［ハーレムモード中］ボーナス当選率</span></h4>
+<h4>［ハーレムモード中］ボーナス当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1089,7 +1950,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-50">ミッション当選率</span></h4>
+<h4>ミッション当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1111,11 +1972,11 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-51">メモリアルボーナス（初当り）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-52">メモリアルボーナス概要</span></h4>
-<p><img alt="スマスロToLOVEるボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-09-01.jpg" decoding="async"></p>
+<h3>メモリアルボーナス（初当り）</h3>
+<h4>メモリアルボーナス概要</h4>
+<p><img alt="スマスロToLOVEるボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-09-01.jpg"></p>
 <p>初当りのメインとなるボーナスで、終了後は必ずSTに突入。消化中はSTを有利に進めるアイテム獲得が抽選される。</p>
-<h4><span id="i-53">メモリアルボーナス性能</span></h4>
+<h4>メモリアルボーナス性能</h4>
 <table>
 <thead>
 <tr>
@@ -1146,11 +2007,11 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="ToLOVE">ToLOVEるエピソード（初当り）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="ToLOVE-2">ToLOVEるエピソード概要</span></h4>
-<p><img alt="スマスロToLOVEるボーナスエピソード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-10-01.jpg" decoding="async"></p>
+<h3>ToLOVEるエピソード（初当り）</h3>
+<h4>ToLOVEるエピソード概要</h4>
+<p><img alt="スマスロToLOVEるボーナスエピソード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-10-01.jpg"></p>
 <p>ST＋STのVストック1個以上が確定するボーナス。ヤミエピソードならダークネス計画（STゲーム数上乗せ特化ゾーン）移行も確定する。</p>
-<h4><span id="ToLOVE-3">ToLOVEるエピソード性能</span></h4>
+<h4>ToLOVEるエピソード性能</h4>
 <table>
 <thead>
 <tr>
@@ -1186,12 +2047,12 @@
 </tbody>
 </table>
 <p>［ヤミエピソード］</p>
-<p><img alt="スマスロToLOVEるボーナスエピソード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-10-03.jpg" decoding="async"></p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="ST-4">とらぶるボーナス（ST中ボーナス）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-54">とらぶるボーナス概要</span></h4>
-<p><img alt="スマスロToLOVEるボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-12-01.jpg" decoding="async"></p>
+<p><img alt="スマスロToLOVEるボーナスエピソード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-10-03.jpg"></p>
+<h3>とらぶるボーナス（ST中ボーナス）</h3>
+<h4>とらぶるボーナス概要</h4>
+<p><img alt="スマスロToLOVEるボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-12-01.jpg"></p>
 <p>ボーナスは枚数管理型で、ボーナス当選後の「枚数決定ゾーン」で枚数を決定。消化中は成立役に応じて「発明品ポイント」が抽選され、 10pt貯まるごとにSTを有利に進める「発明品」をゲット できる。</p>
-<h4><span id="i-55">とらぶるボーナス性能</span></h4>
+<h4>とらぶるボーナス性能</h4>
 <table>
 <thead>
 <tr>
@@ -1218,7 +2079,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-56">ボーナス平均獲得枚数</span></h4>
+<h4>ボーナス平均獲得枚数</h4>
 <table>
 <thead>
 <tr>
@@ -1238,11 +2099,11 @@
 </tbody>
 </table>
 <p>［チャンス目のヒキが重要］</p>
-<p><img alt="スマスロToLOVEるボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-12-04.jpg" decoding="async"></p>
+<p><img alt="スマスロToLOVEるボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-12-04.jpg"></p>
 <p>チャンス目は発明品ポイント獲得濃厚だ。</p>
-<h4><span id="i-57">発明品</span></h4>
+<h4>発明品</h4>
 <p>とらぶるボーナス中に獲得できるアイテムで、ゲットするほどSTを有利に進めることができる。ST巻き戻し（再セット）やボーナスが確定するアイテムも存在する。</p>
-<h4><span id="ST-5">発明品一覧（ST中）</span></h4>
+<h4>発明品一覧（ST中）</h4>
 <table>
 <thead>
 <tr>
@@ -1278,18 +2139,18 @@
 </tbody>
 </table>
 <p>［お友達召喚システム］</p>
-<p><img alt="スマスロToLOVEる発明品" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-16-03.jpg" decoding="async"></p>
+<p><img alt="スマスロToLOVEる発明品" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-16-03.jpg"></p>
 <p>［ピタピタくっつくん］</p>
-<p><img alt="スマスロToLOVEる発明品" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-16-04.jpg" decoding="async"></p>
+<p><img alt="スマスロToLOVEる発明品" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-16-04.jpg"></p>
 <p>［かちこちカッチンくん］</p>
-<p><img alt="スマスロToLOVEる発明品" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-16-05.jpg" decoding="async"></p>
+<p><img alt="スマスロToLOVEる発明品" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-16-05.jpg"></p>
 <p>［モドリスカンク］</p>
-<p><img alt="スマスロToLOVEる発明品" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-16-06.jpg" decoding="async"></p>
+<p><img alt="スマスロToLOVEる発明品" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-16-06.jpg"></p>
 <p>［Vストック］</p>
-<p><img alt="スマスロToLOVEる発明品" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-16-07.jpg" decoding="async"></p>
+<p><img alt="スマスロToLOVEる発明品" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-16-07.jpg"></p>
 <p>［ハーレムモード］</p>
-<p><img alt="スマスロToLOVEる発明品" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-16-08.jpg" decoding="async"></p>
-<h4><span id="i-58">ボーナス中・発明品ポイント獲得率＆振り分け</span></h4>
+<p><img alt="スマスロToLOVEる発明品" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-16-08.jpg"></p>
+<h4>ボーナス中・発明品ポイント獲得率＆振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1345,7 +2206,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-59">発明品振り分け</span></h4>
+<h4>発明品振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1378,11 +2239,11 @@
 </table>
 <p>※ハーレム目成立時はVストック確定</p>
 <p>お友達召喚システム、ピタピタくっつくん、モドリスカンクは1個しか所持できないため、獲得後は振り分けがほかのアイテムにまわる。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-60">枚数決定ゾーン</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-61">ばいんアタック概要</span></h4>
-<p><img alt="スマスロToLOVEる枚数決定ゾーンボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-13-01.jpg" decoding="async"></p>
+<h3>枚数決定ゾーン</h3>
+<h4>ばいんアタック概要</h4>
+<p><img alt="スマスロToLOVEる枚数決定ゾーンボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-13-01.jpg"></p>
 <p>枚数期待度低めのゾーン。ばいんだけに、ボタン長押しで成功するごとに枚数が倍（倍ん）になっていくゲーム性。ばいんアタックと思いきや、800枚or1600枚が確定する「ウィスパー演出」が発生することもある。</p>
-<h4><span id="i-62">ばいんアタック性能</span></h4>
+<h4>ばいんアタック性能</h4>
 <table>
 <thead>
 <tr>
@@ -1404,7 +2265,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-63">ウィスパー演出発生時の上乗せ枚数振り分け</span></h4>
+<h4>ウィスパー演出発生時の上乗せ枚数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1424,13 +2285,13 @@
 </tbody>
 </table>
 <p>［枚数が倍にアップ］</p>
-<p><img alt="スマスロToLOVEる枚数決定ゾーンボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-13-03.jpg" decoding="async"></p>
+<p><img alt="スマスロToLOVEる枚数決定ゾーンボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-13-03.jpg"></p>
 <p>［ウィスパー演出］</p>
-<p><img alt="スマスロToLOVEる枚数決定ゾーンボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-13-04.jpg" decoding="async"></p>
-<h4><span id="i-64">ぺろぺろちゃんす概要</span></h4>
-<p><img alt="スマスロToLOVEる枚数決定ゾーンボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-14-01.jpg" decoding="async"></p>
+<p><img alt="スマスロToLOVEる枚数決定ゾーンボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-13-04.jpg"></p>
+<h4>ぺろぺろちゃんす概要</h4>
+<p><img alt="スマスロToLOVEる枚数決定ゾーンボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-14-01.jpg"></p>
 <p>マロン（犬）が女の子をぺろぺろするほど枚数が増えていくボタン連打タイプの枚数決定ゾーンだ。</p>
-<h4><span id="i-65">ぺろぺろちゃんす性能</span></h4>
+<h4>ぺろぺろちゃんす性能</h4>
 <table>
 <thead>
 <tr>
@@ -1450,11 +2311,11 @@
 </tbody>
 </table>
 <p>［ぺろぺろが続くほど枚数アップ］</p>
-<p><img alt="スマスロToLOVEる枚数決定ゾーンボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-14-03.jpg" decoding="async"></p>
-<h4><span id="i-66">愛すぷラッシュ概要</span></h4>
-<p><img alt="スマスロToLOVEる枚数決定ゾーンボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-15-01.jpg" decoding="async"></p>
+<p><img alt="スマスロToLOVEる枚数決定ゾーンボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-14-03.jpg"></p>
+<h4>愛すぷラッシュ概要</h4>
+<p><img alt="スマスロToLOVEる枚数決定ゾーンボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-15-01.jpg"></p>
 <p>500枚以上が確定する枚数決定ゾーン。複数のトリガー（バストやヒップ）で枚数を上乗せした後、さらにボタン連打で枚数を上乗せしていくゲーム性となる。</p>
-<h4><span id="i-67">愛すぷラッシュ性能</span></h4>
+<h4>愛すぷラッシュ性能</h4>
 <table>
 <thead>
 <tr>
@@ -1474,10 +2335,10 @@
 </tbody>
 </table>
 <p>［トリガーでの上乗せ］</p>
-<p><img alt="スマスロToLOVEる枚数決定ゾーンボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-15-03.jpg" decoding="async"></p>
+<p><img alt="スマスロToLOVEる枚数決定ゾーンボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-15-03.jpg"></p>
 <p>［ボタン連打の上乗せ］</p>
-<p><img alt="スマスロToLOVEる枚数決定ゾーンボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-15-04.jpg" decoding="async"></p>
-<h4><span id="i-68">［通常の楽園計画中］枚数決定ゾーンの選択比率</span></h4>
+<p><img alt="スマスロToLOVEる枚数決定ゾーンボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-15-04.jpg"></p>
+<h4>［通常の楽園計画中］枚数決定ゾーンの選択比率</h4>
 <table>
 <thead>
 <tr>
@@ -1505,11 +2366,11 @@
 </tbody>
 </table>
 <p>※ばいんあたっくの一部でウィスパー演出が発生</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-69">ダークネス計画</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-70">ダークネス計画概要</span></h4>
-<p><img alt="スマスロToLOVEるダークネス計画" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-16-09.jpg" decoding="async"></p>
+<h3>ダークネス計画</h3>
+<h4>ダークネス計画概要</h4>
+<p><img alt="スマスロToLOVEるダークネス計画" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-16-09.jpg"></p>
 <p>STのゲーム数を上乗せする特化ゾーン。上乗せしたゲーム数を使い切るまでSTの基本ゲーム数は使用されない。もちろんボーナスを引いても、残りゲーム数は次のSTに引き継がれる。</p>
-<h4><span id="i-71">ダークネス計画性能</span></h4>
+<h4>ダークネス計画性能</h4>
 <table>
 <thead>
 <tr>
@@ -1537,12 +2398,12 @@
 </tbody>
 </table>
 <p>［毎ゲーム上乗せを抽選］</p>
-<p><img alt="スマスロToLOVEるダークネス計画" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-16-10.jpg" decoding="async"></p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="ST-6">ハーレムモード（上位ST）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-72">ハーレムモード概要</span></h4>
-<p><img alt="スマスロToLOVEるハーレムモード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-17-01.jpg" decoding="async"></p>
+<p><img alt="スマスロToLOVEるダークネス計画" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-16-10.jpg"></p>
+<h3>ハーレムモード（上位ST）</h3>
+<h4>ハーレムモード概要</h4>
+<p><img alt="スマスロToLOVEるハーレムモード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-17-01.jpg"></p>
 <p>継続期待度が約80%となるうえ、枚数決定ゾーンが「愛すぷラッシュ」以上となるため、ボーナスの平均枚数が約650枚になる強力な上位ST。エンディングに到達すれば引き戻し確定の「もぐもぐたい焼きタイム」に移行するため、ボーナスを経て再度ハーレムモードに突入する（エンディング未到達でも、もぐもぐたい焼きタイム突入の可能性あり）</p>
-<h4><span id="i-73">ハーレムモード性能</span></h4>
+<h4>ハーレムモード性能</h4>
 <table>
 <thead>
 <tr>
@@ -1577,11 +2438,11 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-74">もぐもぐたい焼きタイム</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-75">もぐもぐたい焼きタイム概要</span></h4>
-<p><img alt="スマスロToLOVEるもぐもぐたい焼きタイム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-18-01.jpg" decoding="async"></p>
+<h3>もぐもぐたい焼きタイム</h3>
+<h4>もぐもぐたい焼きタイム概要</h4>
+<p><img alt="スマスロToLOVEるもぐもぐたい焼きタイム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-18-01.jpg"></p>
 <p>おもにエンディング後に移行する32G間の発明品獲得特化ゾーンで、終了後はボーナス当選確定＝ハーレムモード突入が確約される。</p>
-<h4><span id="i-76">もぐもぐたい焼きタイム性能</span></h4>
+<h4>もぐもぐたい焼きタイム性能</h4>
 <table>
 <thead>
 <tr>
@@ -1613,10 +2474,10 @@
 </tbody>
 </table>
 <p>［発明品はボーナス中と共通］</p>
-<p><img alt="スマスロToLOVEるもぐもぐたい焼きタイム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-18-03.jpg" decoding="async"></p>
-<h4><span id="i-77">発明品獲得時の振り分け</span></h4>
+<p><img alt="スマスロToLOVEるもぐもぐたい焼きタイム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0426/0426-18-03.jpg"></p>
+<h4>発明品獲得時の振り分け</h4>
 <p>獲得時はまず、Vストック or Vストック以外のどちらになるかを抽選し、Vストック以外が選ばれた場合はとらぶるボーナス中と同様の振り分けで発明品の種類が抽選される。</p>
-<h4><span id="i-78">発明品獲得時の振り分け</span></h4>
+<h4>発明品獲得時の振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1643,10 +2504,10 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="V">Vストック以外選択時・発明品振り分け</span></h4>
+<h4>Vストック以外選択時・発明品振り分け</h4>
 <p>※とらぶるボーナス中と同じ振り分け</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-79">ツラヌキ・有利区間</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-80">ツラヌキ条件と恩恵</span></h4>
+<h3>ツラヌキ・有利区間</h3>
+<h4>ツラヌキ条件と恩恵</h4>
 <table>
 <thead>
 <tr>
@@ -1665,33 +2526,33 @@
 </tr>
 </tbody>
 </table>
-<p>エンディング到達後は有利区間がリセットされ「もぐもぐたい焼きタイム」へ突入。32G間、発明品を高確率で獲得できるうえ、終了後はボーナスを経てハーレムモードに突入する。</p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-81">演出情報</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-82">通常時</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-83">ステージ解説</span></h4>
+<p>エンディング到達後は有利区間がリセットされ「もぐもぐたい焼きタイム」へ突入。32G間、発明品を高確率で獲得できるうえ、終了後はボーナスを経てハーレムモードに突入する。</p>
+<h2>演出情報</h2>
+<h3>通常時</h3>
+<h4>ステージ解説</h4>
 <p>「昼」</p>
-<p><img alt="スマスロToLOVEるダークネス・ステージ解説" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0602/0602-19-01.jpg" decoding="async"></p>
+<p><img alt="スマスロToLOVEるダークネス・ステージ解説" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0602/0602-19-01.jpg"></p>
 <p>通常ステージ。</p>
 <p>「夕暮れ」</p>
-<p><img alt="スマスロToLOVEるダークネス・ステージ解説" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0602/0602-19-02.jpg" decoding="async"></p>
+<p><img alt="スマスロToLOVEるダークネス・ステージ解説" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0602/0602-19-02.jpg"></p>
 <p>高確示唆ステージ。</p>
 <p>「夜更け」</p>
-<p><img alt="スマスロToLOVEるダークネス・ステージ解説" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0602/0602-19-03.jpg" decoding="async"></p>
+<p><img alt="スマスロToLOVEるダークネス・ステージ解説" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0602/0602-19-03.jpg"></p>
 <p>超高確示唆ステージ。</p>
-<h4><span id="i-84">どきどきポイント・天井・トランスポイント示唆</span></h4>
+<h4>どきどきポイント・天井・トランスポイント示唆</h4>
 <p>「アイキャッチ」</p>
-<p><img alt="画像" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0629/0627-02-01.jpg" decoding="async"></p>
+<p><img alt="画像" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0629/0627-02-01.jpg"></p>
 <p>通常時のアイキャッチでは、どきどきポイントの蓄積量や天井到達期待度、トランスポイント量などを示唆する。</p>
 <p>「会話演出の文字色」</p>
-<p><img alt="画像" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0629/0627-02-02.jpg" decoding="async"></p>
+<p><img alt="画像" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0629/0627-02-02.jpg"></p>
 <p>通常時の会話演出の文字色が変化すれば、対応するどきどきポイントが140pt以上貯まっていることを示唆。ピンク文字は左チャンス目、緑文字は中チャンス目、紫文字は右チャンス目に対応している。</p>
 <p>「美柑看板演出の文字」</p>
-<p><img alt="画像" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0629/0627-02-03.jpg" decoding="async"></p>
-<p><img alt="画像" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0629/0627-02-04.jpg" decoding="async"></p>
+<p><img alt="画像" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0629/0627-02-03.jpg"></p>
+<p><img alt="画像" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1002_ToLOVE%E3%82%8B/0629/0627-02-04.jpg"></p>
 <p>液晶左に出現する美柑が持つ看板の文字に注目。「怪」ならポイント蓄積期待度中〜大、「近」なら140pt以上蓄積を示唆する。</p>
 <p>※画像はキュインちゃんねる@HEIWA(ハルルナ)のものを使用しています</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="ST-7">楽園計画（ST）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-85">楽園計画中の違和感演出一覧</span></h4>
+<h3>楽園計画（ST）</h3>
+<h4>楽園計画中の違和感演出一覧</h4>
 <table>
 <thead>
 <tr>
@@ -1755,8 +2616,8 @@
 </tbody>
 </table>
 <p>違和感モード中は上記違和感演出の発生率がアップ。違和感演出自体はノーマルモードでも発生する可能性がある。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-86">裏ボタン</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-87">楽園計画中の裏ボタン別・告知パターン</span></h4>
+<h3>裏ボタン</h3>
+<h4>楽園計画中の裏ボタン別・告知パターン</h4>
 <table>
 <thead>
 <tr>
@@ -1783,16 +2644,30 @@
 </tr>
 </tbody>
 </table>
-<p>レバーON後、第1停止ボタンを押すまでにいずれかのボタンを押すと、ボーナス当選時に専用の告知が発生する可能性あり。決定キー（上下左右キーの右側にある赤いボタン）はほぼボイスが発生するので、実質的には一発告知のような使い方ができる。</p>
-<div class="post-views content-post post-481 entry-meta load-static">
-				<span class="post-views-icon dashicons dashicons-chart-bar"></span> <span class="post-views-label">Post Views:</span> <span class="post-views-count">1,849</span>
-			</div></div></details></div></details>
-            </div>
-
-            <!-- 目次ハンバーガー（右下固定・常時）。中身はJSがセクションから生成 --></section>
+<p>レバーON後、第1停止ボタンを押すまでにいずれかのボタンを押すと、ボーナス当選時に専用の告知が発生する可能性あり。決定キー（上下左右キーの右側にある赤いボタン）はほぼボイスが発生するので、実質的には一発告知のような使い方ができる。</p></section>
   
   
   </article></main>
 <footer class="foot">個人アーカイブ（suroschool.jp / たかどらのスロ塾 会員コンテンツ）・閲覧用</footer>
+
+<!-- スマホ用ボトムナビ（スクロールで隠れる/出る） -->
+<nav class="botnav" id="botnav">
+  <a href="../index.html" data-nav="index">🎰<span>機種</span></a>
+  <button id="searchOpen2">🔍<span>検索</span></button>
+  <a href="../index.html?fav=1">★<span>お気に入り</span></a>
+  <a href="../news.html">📰<span>お知らせ</span></a>
+  <a href="../tool.html">🧮<span>期待値</span></a>
+</nav>
+
+<!-- 全ページ横断の検索オーバーレイ -->
+<div class="search-overlay" id="searchOverlay" hidden>
+  <div class="search-head">
+    <input id="globalSearch" type="search" placeholder="機種名で検索…" autocomplete="off">
+    <button id="searchClose" aria-label="閉じる">✕</button>
+  </div>
+  <div id="searchResults" class="search-results"></div>
+</div>
+
+<script src="../assets/search-index.js"></script>
 <script src="../assets/app.js"></script>
 </body></html>

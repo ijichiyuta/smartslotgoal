@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="ja"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>【特殊A狙い】革命機ヴァルヴレイヴ2 | スマスロ目標 (個人アーカイブ)</title>
+<title>【特殊A狙い】革命機ヴァルヴレイヴ2 | スマスロ期待値 (個人アーカイブ)</title>
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="manifest" href="../manifest.webmanifest">
 <meta name="theme-color" content="#ffffff">
@@ -10,16 +10,18 @@
 <link rel="apple-touch-icon" href="../assets/icon.svg">
 <link rel="icon" href="../assets/icon.svg">
 <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){})});}</script>
+<script>window.__ROOT__='../';</script>
 
 </head><body>
-<header class="topbar">
-  <a class="brand" href="../index.html">🎰 スマスロ目標</a>
-  <nav>
+<header class="topbar" id="topbar">
+  <a class="brand" href="../index.html">🎰 スマスロ期待値</a>
+  <nav class="topnav">
     <a href="../index.html">機種</a>
     <a href="../news.html">お知らせ</a>
     <a href="../tool.html">期待値計算</a>
     <a href="../pages.html">資料</a>
   </nav>
+  <button class="topbar-search" id="searchOpen" aria-label="検索">🔍</button>
 </header>
 <main>
   <article class="machine">
@@ -35,21 +37,285 @@
     
     
   </div>
-  <section class="panel is-active" data-panel="nerai"><meta charset="UTF-8">
+  <section class="panel is-active" data-panel="nerai"><img loading="lazy" decoding="async" width="150" height="150" src="../img/f435ff5da26b3a10.png" class="machine-thumbnail wp-post-image" alt="" style="display:block; margin:0 auto;" srcset="https://suroschool.jp/wp-content/uploads/2025/12/t特殊A狙い-150x150.png 150w, https://suroschool.jp/wp-content/uploads/2025/12/t特殊A狙い-120x120.png 120w" sizes="auto, (max-width: 150px) 100vw, 150px" />
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>特殊A狙いツール (WP Native Monochrome)</title>
-    
+    <style>
+        /* * WP Native Blend & Monochrome High-Contrast Style */
 
+        #vvv-tool-wrapper {
+            background-color: transparent;
+            border: none;
+            box-shadow: none;
+            max-width: 100%;
+            margin: 2em auto;
+            color: inherit; 
+            font-family: inherit;
+            line-height: 1.6;
+        }
 
+        #vvv-tool-wrapper h3.tool-title {
+            text-align: center;
+            margin-bottom: 1.5em;
+            font-size: 1.4em;
+            border: none;
+            padding: 0;
+            color: inherit;
+        }
+
+        .vvv-step {
+            margin-bottom: 1.5em;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+            padding-bottom: 1em;
+        }
+
+        .vvv-step-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding: 0.5em 0;
+            user-select: none;
+        }
+
+        .vvv-step-header h4 {
+            margin: 0;
+            font-size: 1.1em;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        
+        .vvv-step-num {
+            display: inline-block;
+            width: 1.5em;
+            height: 1.5em;
+            line-height: 1.5em;
+            text-align: center;
+            background: #333;
+            color: #fff;
+            border-radius: 50%;
+            margin-right: 0.5em;
+            font-size: 0.8em;
+        }
+
+        .vvv-selected-val {
+            font-size: 0.9em;
+            font-weight: bold;
+            opacity: 0.8;
+        }
+
+        .vvv-step-content {
+            margin-top: 1em;
+            display: block;
+            animation: vvvFadeIn 0.3s ease;
+        }
+        
+        .vvv-step.collapsed .vvv-step-content {
+            display: none;
+        }
+
+        .vvv-step.collapsed .vvv-step-header {
+            opacity: 0.7;
+        }
+
+        .vvv-desc {
+            font-size: 0.9em;
+            margin-bottom: 1em;
+            opacity: 0.8;
+        }
+        .vvv-note {
+            font-size: 0.8em;
+            margin-top: 0.5em;
+            opacity: 0.6;
+        }
+
+        .vvv-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 8px;
+        }
+
+        .vvv-grid input[type="radio"] {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .vvv-grid label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 8px;
+            background: #fff;
+            border: 1px solid #ccc;
+            color: #333;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 0.95em;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+
+        .vvv-grid label:hover {
+            border-color: #999;
+            background: #f9f9f9;
+        }
+
+        .vvv-grid input[type="radio"]:checked + label {
+            background: #333;
+            color: #fff;
+            border-color: #333;
+            box-shadow: none;
+        }
+
+        #vvv-result-area {
+            margin-top: 2em;
+            padding: 1.5em;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        #vvv-result-area.initial {
+            border: 2px dashed #ccc;
+            color: #999;
+            text-align: center;
+        }
+
+        #vvv-result-area.shown {
+            border: 2px solid #333;
+            background: transparent;
+        }
+
+        .vvv-result-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            border-bottom: 1px solid #333;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+            display: block;
+        }
+
+        .vvv-result-row {
+            margin-bottom: 0.8em;
+            padding-left: 1em;
+            border-left: 4px solid #ccc;
+        }
+
+        /* 打ち出し目安の強調スタイル */
+        .start-guideline {
+            background-color: #ffebee;
+            color: #c62828;
+            font-weight: bold;
+            font-size: 1.1em;
+            border-left: 5px solid #d32f2f;
+            padding: 12px;
+            margin-bottom: 12px;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .res-lv-4 {
+            border-left-color: #000;
+            font-weight: bold;
+        }
+        .res-lv-0 {
+            border-left-style: dashed;
+            border-left-color: #666;
+            color: #666;
+        }
+
+        .hidden { display: none !important; }
+
+        @keyframes vvvFadeIn {
+            from { opacity: 0; transform: translateY(-5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* スマホ向け調整 */
+        @media (max-width: 600px) {
+            #vvv-tool-wrapper {
+                font-size: 14px;
+            }
+            #vvv-tool-wrapper h3.tool-title {
+                font-size: 1.2em;
+                margin-bottom: 1em;
+            }
+            .vvv-step-header h4 {
+                font-size: 1em;
+            }
+            .vvv-grid {
+                grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+                gap: 6px;
+            }
+            .vvv-grid label {
+                font-size: 0.85em;
+                padding: 8px 4px;
+            }
+            .vvv-desc {
+                font-size: 0.85em;
+            }
+            .vvv-result-title {
+                font-size: 1em;
+            }
+            .start-guideline {
+                font-size: 1em;
+                padding: 10px;
+            }
+            #vvv-result-area {
+                padding: 1em;
+                margin-top: 1.5em;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .vvv-grid label {
+                background: #f0f0f0;
+                color: #333;
+                border-color: #ccc;
+            }
+            .vvv-grid input[type="radio"]:checked + label {
+                background: #eee;
+                color: #000;
+                border-color: #fff;
+            }
+            .vvv-step-num {
+                background: #eee;
+                color: #000;
+            }
+             #vvv-result-area.shown {
+                border-color: #eee;
+            }
+            .vvv-result-title {
+                border-bottom-color: #eee;
+            }
+            .res-lv-4 {
+                border-left-color: #fff;
+            }
+            .start-guideline {
+                background-color: #3e2723;
+                color: #ffcdd2;
+                border-left-color: #ef5350;
+            }
+        }
+    </style>
+</head>
+<body>
 
 <div id="vvv-tool-wrapper">
-    
-<h3 class="tool-title"><span id="A">特殊A狙い目検索ツール</span></h3>
+    <h3 class="tool-title">特殊A狙い目検索ツール</h3>
 
     <!-- STEP 1: CZスルー回数 -->
     <div class="vvv-step" id="step-1">
         <div class="vvv-step-header" onclick="toggleStep('1')">
-            <h4><span id="1_CZ"><span class="vvv-step-num">1</span> CZスルー回数</span></h4>
+            <h4><span class="vvv-step-num">1</span> CZスルー回数</h4>
             <span class="vvv-selected-val" id="disp-1">未選択</span>
         </div>
         <div class="vvv-step-content">
@@ -69,7 +335,7 @@
     <!-- STEP 2-0: 有利区間 (0スルー) -->
     <div class="vvv-step hidden" id="step-2-0">
         <div class="vvv-step-header" onclick="toggleStep('2-0')">
-            <h4><span id="2_10_or"><span class="vvv-step-num">2</span> 10連以上 or 切断</span></h4>
+            <h4><span class="vvv-step-num">2</span> 10連以上 or 切断</h4>
             <span class="vvv-selected-val" id="disp-2-0">未選択</span>
         </div>
         <div class="vvv-step-content">
@@ -91,7 +357,7 @@
     <!-- STEP 3-0: 切断あり詳細 -->
     <div class="vvv-step hidden" id="step-3-0">
         <div class="vvv-step-header" onclick="toggleStep('3-0')">
-            <h4><span id="3"><span class="vvv-step-num">3</span> 切断後の履歴状況</span></h4>
+            <h4><span class="vvv-step-num">3</span> 切断後の履歴状況</h4>
             <span class="vvv-selected-val" id="disp-3-0">未選択</span>
         </div>
         <div class="vvv-step-content">
@@ -112,7 +378,7 @@
     <!-- STEP 4-0: 前々回 -->
     <div class="vvv-step hidden" id="step-4-0">
         <div class="vvv-step-header" onclick="toggleStep('4-0')">
-            <h4><span id="4"><span class="vvv-step-num">4</span> 前々回の履歴</span></h4>
+            <h4><span class="vvv-step-num">4</span> 前々回の履歴</h4>
             <span class="vvv-selected-val" id="disp-4-0">未選択</span>
         </div>
         <div class="vvv-step-content">
@@ -136,7 +402,7 @@
     <!-- STEP 5-0: 差枚 -->
     <div class="vvv-step hidden" id="step-5-0">
         <div class="vvv-step-header" onclick="toggleStep('5-0')">
-            <h4><span id="5"><span class="vvv-step-num">5</span> 差枚状況</span></h4>
+            <h4><span class="vvv-step-num">5</span> 差枚状況</h4>
             <span class="vvv-selected-val" id="disp-5-0">未選択</span>
         </div>
         <div class="vvv-step-content">
@@ -160,7 +426,7 @@
     <!-- STEP 6-0: 前回種類 -->
     <div class="vvv-step hidden" id="step-6-0">
         <div class="vvv-step-header" onclick="toggleStep('6-0')">
-            <h4><span id="6"><span class="vvv-step-num">6</span> 前回の種類</span></h4>
+            <h4><span class="vvv-step-num">6</span> 前回の種類</h4>
             <span class="vvv-selected-val" id="disp-6-0">未選択</span>
         </div>
         <div class="vvv-step-content">
@@ -184,7 +450,7 @@
     <!-- STEP 2-1: 種類 (1スルー以降) -->
     <div class="vvv-step hidden" id="step-2-1">
         <div class="vvv-step-header" onclick="toggleStep('2-1')">
-            <h4><span id="2"><span class="vvv-step-num">2</span> 前回の種類</span></h4>
+            <h4><span class="vvv-step-num">2</span> 前回の種類</h4>
             <span class="vvv-selected-val" id="disp-2-1">未選択</span>
         </div>
         <div class="vvv-step-content">
@@ -208,7 +474,7 @@
     <!-- STEP 3-1: CZG -->
     <div class="vvv-step hidden" id="step-3-1">
         <div class="vvv-step-header" onclick="toggleStep('3-1')">
-            <h4><span id="3_CZG"><span class="vvv-step-num">3</span> 前回のCZ当選G数</span></h4>
+            <h4><span class="vvv-step-num">3</span> 前回のCZ当選G数</h4>
             <span class="vvv-selected-val" id="disp-3-1">未選択</span>
         </div>
         <div class="vvv-step-content">
@@ -226,9 +492,264 @@
 
 </div>
 
+<script>
+    // 診断ロジック
+    const judgmentData0 = {
+        none: { upper: { level: 2, s: "2周目0pt〜" }, lower: { level: 1, s: "2周目0pt〜" }, bb: { level: 1, s: "2周目0pt〜" } },
+        low: { upper: { level: 3, s: "1周目100pt〜" }, lower: { level: 2, s: "2周目0pt〜" }, bb: { level: 1, s: "2周目0pt〜" } },
+        high: { upper: { level: 0, s: "" }, lower: { level: 3, s: "1周目0pt〜" }, bb: { level: 3, s: "1周目0pt〜" } }
+    };
 
+    const levels = {
+        0: { n: "推奨されません (慎重判断)", stop: "冷遇状態や期待度の低い可能性があります" },
+        1: { n: "レベル1 (期待度: 低)", stop: "2周目100発展なし等で終了検討", cont: "2周目100発展あり→3周目100確認" },
+        2: { n: "レベル2 (期待度: 中)", stop: "2周目200発展なし等で終了検討", cont: "2周目200発展あり→3周目100確認" },
+        3: { n: "レベル3 (期待度: 高)", stop: "2周目200発展なし等で終了検討", cont: "2周目200発展あり→3周目100確認" },
+        4: { n: "レベル4 (期待度: 最高)", stop: "2周目200発展なし等で終了検討", cont: "2周目200発展あり→3周目100確認まで推奨" }
+    };
 
+    // リセット機能：指定したID以降のステップを初期化
+    function resetFollowingSteps(currentId) {
+        resetResult(); // 結果エリアをクリア
 
+        // 0スルーのステップ順
+        const route0 = ['2-0', '3-0', '4-0', '5-0', '6-0'];
+        // 1スルーのステップ順
+        const route1 = ['2-1', '3-1'];
+
+        if (currentId === '1') {
+            // ルート分岐点なので全てリセット
+            [...route0, ...route1].forEach(id => hideStep(id));
+        } else if (route0.includes(currentId)) {
+            // 0スルー系: 現在より後ろをリセット
+            const idx = route0.indexOf(currentId);
+            route0.slice(idx + 1).forEach(id => hideStep(id));
+        } else if (route1.includes(currentId)) {
+            // 1スルー系: 現在より後ろをリセット
+            const idx = route1.indexOf(currentId);
+            route1.slice(idx + 1).forEach(id => hideStep(id));
+        }
+    }
+
+    function hideStep(id) {
+        const el = document.getElementById('step-' + id);
+        if(el) {
+            el.classList.add('hidden', 'collapsed');
+            // 入力のリセット
+            el.querySelectorAll('input').forEach(i => i.checked = false);
+            // 表示テキストのリセット
+            const disp = document.getElementById('disp-' + id);
+            if(disp) disp.innerText = "未選択";
+        }
+    }
+
+    function resetResult() {
+        const resArea = document.getElementById('vvv-result-area');
+        const resContent = document.getElementById('result-content');
+        const placeholder = document.getElementById('result-placeholder');
+        
+        resArea.className = ''; 
+        resArea.classList.add('initial');
+        resContent.classList.add('hidden');
+        resContent.innerHTML = '';
+        placeholder.style.display = 'inline';
+    }
+
+    function next(id, text) {
+        updateDisp(id, text);
+        closeStep(id);
+
+        // ★選択変更時に、それ以降のステップをリセット
+        resetFollowingSteps(id);
+
+        if (id === '1') {
+            const val = document.querySelector('input[name="tc"]:checked').value;
+            // リセット済みなのでシンプルに次のステップを開くのみ
+            if (val === '0') openStep('2-0'); else openStep('2-1');
+        } else if (id === '2-0') {
+            const val = document.querySelector('input[name="cut"]:checked').value;
+            if (val === 'yes') openStep('3-0'); else openStep('4-0');
+        } else if (id === '3-0') {
+            const val = document.querySelector('input[name="mu"]:checked').value;
+            if (val === 'no') diagnose(); else openStep('4-0');
+        } else if (id === '4-0') {
+            openStep('5-0');
+        } else if (id === '5-0') {
+            openStep('6-0');
+        }
+    }
+
+    function updateDisp(id, text) {
+        const dispEl = document.getElementById('disp-' + id);
+        if(dispEl) {
+            dispEl.innerText = text;
+            closeStep(id);
+        }
+    }
+
+    function openStep(id) {
+        const el = document.getElementById('step-' + id);
+        if(el) {
+            el.classList.remove('hidden', 'collapsed');
+            setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'center' }), 100);
+        }
+    }
+
+    function closeStep(id) {
+        const el = document.getElementById('step-' + id);
+        if(el) el.classList.add('collapsed');
+    }
+
+    function toggleStep(id) {
+        const el = document.getElementById('step-' + id);
+        if(el) el.classList.toggle('collapsed');
+    }
+
+    function buildCZG(text) {
+        updateDisp('2-1', text);
+        
+        // ★2-1変更時に3-1以降をリセット
+        resetFollowingSteps('2-1');
+
+        const at = document.querySelector('input[name="at1"]:checked').value;
+        const group = document.getElementById('czg-group');
+        
+        let html = `
+            <div>
+                <input type="radio" name="cz1" id="cz1-sp" value="sp" onchange="diagnose('特殊A当選台')">
+                <label for="cz1-sp" style="font-weight:bold; border:2px solid #333;">前回 特殊A当選 (確信)</label>
+            </div>
+        `;
+        
+        const ranges = {
+            upper: [
+                { val: "target", label: "140-220G" },
+                { val: "others", label: "100-140G / 220-250G" }
+            ],
+            lower: [
+                { val: "target", label: "150-200G" },
+                { val: "others", label: "100-150G / 200-250G" }
+            ],
+            bb: [
+                { val: "target", label: "150-200G" },
+                { val: "others", label: "100-150G / 200-250G" }
+            ]
+        };
+        
+        if (ranges[at]) {
+            ranges[at].forEach((item, idx) => {
+                html += `
+                    <div>
+                        <input type="radio" name="cz1" id="cz1-${idx}" value="${item.val}" onchange="diagnose('${item.label}')">
+                        <label for="cz1-${idx}">${item.label}</label>
+                    </div>
+                `;
+            });
+        }
+        
+        group.innerHTML = html;
+        openStep('3-1');
+    }
+
+    function diagnose(text) {
+        // ガード処理
+        const tcInput = document.querySelector('input[name="tc"]:checked');
+        if(!tcInput) return;
+        const tc = tcInput.value;
+
+        if(text) {
+            if(tc === '0') updateDisp('6-0', text);
+            else updateDisp('3-1', text);
+        }
+
+        const resArea = document.getElementById('vvv-result-area');
+        const resContent = document.getElementById('result-content');
+        const placeholder = document.getElementById('result-placeholder');
+
+        let lv = 0, reason = "", start = "-";
+
+        if (tc === '0') {
+            const cut = document.querySelector('input[name="cut"]:checked')?.value;
+            const mu = document.querySelector('input[name="mu"]:checked')?.value;
+            const pre = document.querySelector('input[name="pre"]:checked')?.value;
+            const sm = document.querySelector('input[name="sm"]:checked')?.value;
+            const at = document.querySelector('input[name="at0"]:checked')?.value;
+
+            if (!cut) return;
+
+            if (cut === 'yes' && mu === 'no') {
+                reason = "10連以上/差枚+1001枚後、引き戻し履歴不足のため冷遇状態の可能性あり。";
+                lv = 0;
+            } else if (sm === 'high' && at === 'upper') {
+                reason = "差枚+1001枚以上かつ前回上位ATは期待度が低下する傾向。";
+                lv = 0;
+            } else if ((pre === 'none' || pre === 'reset') && at === 'upper') {
+                reason = "リセット/履歴なし→前回上位ATは特殊A期待度高。";
+                lv = 4; start = "1周目0pt〜";
+            } else if (pre === 'reset' && (at === 'lower' || at === 'bb')) {
+                lv = 0; reason = "設定変更→前回ボナ/下位ATは優遇薄の可能性。";
+            } else {
+                if(sm && at && judgmentData0[sm] && judgmentData0[sm][at]){
+                    const d = judgmentData0[sm][at];
+                    lv = d.level; start = d.s;
+                } else {
+                    lv = 0; reason = "条件が不足しているか、判定外の組み合わせです。";
+                }
+            }
+        } else {
+            const czInput = document.querySelector('input[name="cz1"]:checked');
+            const at1Input = document.querySelector('input[name="at1"]:checked');
+            
+            if (!czInput || !at1Input) return;
+            
+            const cz = czInput.value;
+            const at1 = at1Input.value;
+
+            if (cz === 'sp') {
+                lv = 4; start = "1周目0pt〜"; reason = "前回特殊A濃厚のため期待度高。";
+            } else {
+                if (at1 === 'upper') {
+                   if (cz === 'target') { lv = 4; start = "1周目0pt〜"; }
+                   else { lv = 3; start = "1周目100pt〜"; }
+                   reason = "超革命ラッシュ後(9連以下)のゾーン振り分けに基づく判定です。";
+               } else if (at1 === 'lower') {
+                   if (cz === 'target') { lv = 4; start = "1周目0pt〜"; }
+                   else { lv = 3; start = "1周目100pt〜"; }
+                   reason = "革命ラッシュ後(1-3連)のゾーン振り分けに基づく判定です。";
+               } else if (at1 === 'bb') {
+                   if (cz === 'target') { lv = 3; start = "1周目100pt〜"; }
+                   else { lv = 1; start = "2周目0pt〜"; }
+                   reason = "革命ボーナス後のゾーン振り分けに基づく判定です。";
+               }
+            }
+        }
+
+        const info = levels[lv];
+        let html = `<span class="vvv-result-title">診断結果: ${info.n}</span>`;
+        
+        if (lv === 0) {
+            html += `<div class="vvv-result-row res-lv-0">${reason || info.stop}</div>`;
+        } else {
+            html += `
+                <div class="start-guideline">打ち出し目安: ${start}</div>
+                <div class="vvv-result-row">終了検討: ${info.stop}</div>
+                <div class="vvv-result-row">継続目安: ${info.cont}</div>
+                <p class="vvv-note">${reason}</p>
+            `;
+        }
+
+        resContent.innerHTML = html;
+        resContent.classList.remove('hidden');
+        placeholder.style.display = 'none';
+        
+        resArea.classList.remove('initial');
+        resArea.classList.add('shown');
+        
+        setTimeout(() => resArea.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 100);
+    }
+</script>
+</body>
+</html>
 
 
 
@@ -239,12 +760,105 @@
 
 
 
+<style>
+  /* コードボックス用スタイル */
+  .code-box {
+    background: #f4f4f4;
+    border-left: 4px solid #4CAF50;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 4px;
+  }
+
+  .code-box pre {
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* テーブル用スタイル（強化版） */
+  table.wp-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border: 2px solid #333;
+    background-color: #fff;
+  }
+
+  table.wp-table thead {
+    background-color: #333;
+    color: #fff;
+  }
+
+  table.wp-table th {
+    border: 1px solid #333;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  table.wp-table td {
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    text-align: left;
+  }
+
+  table.wp-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  table.wp-table tbody tr:hover {
+    background-color: #f0f0f0;
+  }
+
+  /* 段落スタイル */
+  p {
+    margin-bottom: 16px;
+    line-height: 1.8;
+  }
+
+  /* リストスタイル */
+  ul,
+  ol {
+    margin-bottom: 16px;
+    padding-left: 30px;
+  }
+
+  li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+  }
+
+  /* 区切り線 */
+  hr {
+    border: none;
+    border-top: 2px solid #ddd;
+    margin: 30px 0;
+  }
+
+  /* スマホ対応 */
+  @media screen and (max-width: 768px) {
+    table.wp-table th {
+      font-size: 12px;
+      padding: 8px 6px;
+    }
+
+    table.wp-table td {
+      font-size: 11px;
+      padding: 6px 5px;
+      line-height: 1.4;
+    }
+  }
+</style>
+
+<h1>条件別特殊A狙い</h1>
 
 
-<h1><span id="A-2">条件別特殊A狙い</span></h1>
-
-
-<h2><span id="i">はじめに</span></h2>
+<h2>はじめに</h2>
 
 
 <p>一般的なミミズ狙いの狙い方は以下の通りです：</p>
@@ -263,7 +877,7 @@
 <hr>
 
 
-<h2><span id="A-3">特殊Aの特徴</span></h2>
+<h2>特殊Aの特徴</h2>
 
 
 <table class="wp-table">
@@ -293,10 +907,10 @@
 <hr>
 
 
-<h2><span id="0A">[0スルー時]データから見えた特殊Aの特徴</span></h2>
+<h2>[0スルー時]データから見えた特殊Aの特徴</h2>
 
 
-<h3><span id="B">モードB以上示唆と当選率の逆転現象</span></h3>
+<h3>モードB以上示唆と当選率の逆転現象</h3>
 
 
 <table class="wp-table">
@@ -340,7 +954,7 @@
   </thead>
   <tbody>
     <tr>
-      <td><img draggable="false" role="img" class="emoji" alt="🟩" src="https://s.w.org/images/core/emoji/17.0.2/svg/1f7e9.svg">（マギウス）2周目出現</td>
+      <td>🟩（マギウス）2周目出現</td>
       <td>CZ示唆</td>
       <td><strong>73%</strong>（11件中8件）</td>
     </tr>
@@ -364,17 +978,18 @@
 <hr>
 
 
-<h2><span id="A-4">「特殊A」の存在仮説</span></h2>
+<h2>「特殊A」の存在仮説</h2>
 
 
 <p>この矛盾を説明するため、以下の仮説を立てました。</p>
 
 
-<h3><span id="i-2">論理展開</span></h3>
+<h3>論理展開</h3>
 
 
 <div class="code-box">
-  <pre>【事実1】0スルー時B以上示唆出現時 → 2周200以内の発展/当選率と3周100の当選率が著しく低下
+  <pre>
+【事実1】0スルー時B以上示唆出現時 → 2周200以内の発展/当選率と3周100の当選率が著しく低下
 【事実2】解析値の通常Aでは、集計上の高当選率パターンを説明できない
 【事実3】特殊Aはボーナス当選またはラッシュ当選までループする可能性が非常に高い（実践上85%以上継続）
 【結論】通常Aとは別の未発表モード「特殊A」が存在すると推測
@@ -385,7 +1000,7 @@
 <p>つまり、これまで「ミミズ」と呼ばれていた優遇状態の正体は<strong>特殊Aモード</strong>であり、モードB以上とは全く別の抽選体系を持つと考えられます。</p>
 
 
-<h3><span id="A-5">特殊A移行しやすい条件（優先度順）</span></h3>
+<h3>特殊A移行しやすい条件（優先度順）</h3>
 
 
 <table class="wp-table">
@@ -417,13 +1032,13 @@
 
 <hr>
 
-<h2><span id="212A">【ヴヴヴ2】1回前、2回前履歴別の特殊A優遇区間特徴</span></h2>
+<h2>【ヴヴヴ2】1回前、2回前履歴別の特殊A優遇区間特徴</h2>
 
-<h3><span id="1_10ATTYA">1. 10連以上の上位AT後は「平均TY優遇」「特殊A冷遇」</span></h3>
+<h3>1. 10連以上の上位AT後は「平均TY優遇」「特殊A冷遇」</h3>
 
 <p>10連以上の上位AT終了後は、内部状態がリセットされ、基本的に<strong>特殊A優遇状態への移行が制限される区間</strong>に入ります。</p>
 
-<h4><span id="A-6">原則：特殊A状態へ移行しにくい</span></h4>
+<h4>原則：特殊A状態へ移行しにくい</h4>
 
 <p>10連以上の上位AT後は、次回・次々回でのAT平均出玉（性能）は優遇されますが、<strong>「特殊Aの当たりやすさ（101-250Gでの当選率）」は著しく低下</strong>します。</p>
 
@@ -434,7 +1049,7 @@
     前回が平均TY優遇区間であることが多いため履歴に関わらず特殊Aに移行しにくい。</li>
 </ul>
 
-<h4><span id="103">結論：「10連以上から数えて3区間目」</span></h4>
+<h4>結論：「10連以上から数えて3区間目」</h4>
 
 <p>最も間違いやすいのが、履歴上で「10連以上後」→「5-9上位後、下位AT後」→「現在（3区間目）」となっているケースです。</p>
 
@@ -451,11 +1066,11 @@
   <tbody>
     <tr>
       <td>10連以上 → 5〜9連上位AT</td>
-      <td><img draggable="false" role="img" class="emoji" alt="🙅‍♂️" src="https://s.w.org/images/core/emoji/17.0.2/svg/1f645-200d-2642-fe0f.svg"> <strong>狙えない</strong></td>
+      <td>🙅‍♂️ <strong>狙えない</strong></td>
     </tr>
     <tr>
       <td>10連以上 → 決戦・ボナ・下位</td>
-      <td><img draggable="false" role="img" class="emoji" alt="🙅‍♂️" src="https://s.w.org/images/core/emoji/17.0.2/svg/1f645-200d-2642-fe0f.svg"> <strong>狙えない</strong></td>
+      <td>🙅‍♂️ <strong>狙えない</strong></td>
     </tr>
   </tbody>
 </table>
@@ -464,16 +1079,16 @@
 
 <hr>
 
-<h3><span id="2_TYA">2. 平均TY優遇区間から特殊A優遇区間への復帰条件</span></h3>
+<h3>2. 平均TY優遇区間から特殊A優遇区間への復帰条件</h3>
 
 <p>では、一度特殊A冷遇状態に入った後、いつになれば再び美味しい「特殊A」の状態に戻るのでしょうか？
   その鍵は<strong>「5〜9連の上位AT」</strong>を複数回挟むことにあります。</p>
 
-<h4><span id="592">復帰のサイン：同一有利区間内で5〜9連状態を2回以上繰り返す</span></h4>
+<h4>復帰のサイン：同一有利区間内で5〜9連状態を2回以上繰り返す</h4>
 
 <p>履歴上で同一有利区間内で5〜9連の上位ATが2回以上繰り返されるとその後も特殊A優遇状態に突入する傾向があります。</p>
 
-<h4><span id="A-7">狙い目：特殊Aへ復帰パターン</span></h4>
+<h4>狙い目：特殊Aへ復帰パターン</h4>
 
 <p>以下の履歴フローを辿った台は、高い期待値を持ちます。</p>
 
@@ -500,11 +1115,11 @@
 
 <hr>
 
-<h3><span id="3_A">3. 設定変更後の特殊A優遇区間まとめ</span></h3>
+<h3>3. 設定変更後の特殊A優遇区間まとめ</h3>
 
 <p>朝イチ設定変更後の挙動も、履歴によって明暗がはっきりと分かれます。</p>
 
-<h4><span id="59AT">狙い目：初回5〜9連上位ATの後</span></h4>
+<h4>狙い目：初回5〜9連上位ATの後</h4>
 
 <p>設定変更後、最初のATが5〜9連で終了した場合、その次は特殊Aがかなり優遇され非常に美味しい区間となります。</p>
 
@@ -513,7 +1128,7 @@
   <li><strong>特徴</strong>：平均出玉が高く、安定してプラスになりやすい。</li>
 </ul>
 
-<h4><span id="2-2">危険：2区間目への過度な期待</span></h4>
+<h4>危険：2区間目への過度な期待</h4>
 
 <p>設定変更後、初回が革命ボーナスや下位ATで終わった場合、その次の区間（2区間目）は狙い目ではありません。</p>
 
@@ -526,11 +1141,11 @@
 
 <hr>
 
-<h3><span id="i-3">まとめ：統合・立ち回りチェックリスト</span></h3>
+<h3>まとめ：統合・立ち回りチェックリスト</h3>
 
 <p>ホールで履歴・データカウンターを見る際は、以下の優先順位で判断してください。</p>
 
-<h4><span id="i-4">積極的に狙うパターン</span></h4>
+<h4>積極的に狙うパターン</h4>
 
 <ol>
   <li><strong>設定変更後1回目の5〜9連上位AT後</strong>：特殊Aがかなり優遇される</li>
@@ -538,7 +1153,7 @@
   <li><strong>基本の特殊A</strong>：履歴に10連以上がなく、前回が5〜9連上位ATの台は優先的に狙う</li>
 </ol>
 
-<h4><span id="i-5">避けるパターン</span></h4>
+<h4>避けるパターン</h4>
 
 <ol>
   <li><strong>3区間目の罠</strong>：[10連以上] → [何か] の後の台（まだ冷遇内）3回目は特殊Aの冷遇区間</li>
@@ -546,13 +1161,14 @@
 </ol>
 
 <div class="code-box">
-  <pre><strong>鉄則</strong>
+  <pre>
+<strong>鉄則</strong>
 「10連以上したら、その後２回上位5~9連後がないと特殊A優遇にならない傾向」
 </pre>
 </div>
 
 
-<h3><span id="A-8">特殊A否定条件（打ってはいけない）</span></h3>
+<h3>特殊A否定条件（打ってはいけない）</h3>
 
 
 <ul>
@@ -565,10 +1181,10 @@
 <hr>
 
 
-<h2><span id="A-9">演出による特殊A判別</span></h2>
+<h2>演出による特殊A判別</h2>
 
 
-<h3><span id="A22003100">特殊A狙い(2周200,3周100以内)中続行可能演出</span></h3>
+<h3>特殊A狙い(2周200,3周100以内)中続行可能演出</h3>
 
 
 <table class="wp-table">
@@ -581,7 +1197,7 @@
   </thead>
   <tbody>
     <tr>
-      <td><strong><img draggable="false" role="img" class="emoji" alt="🟩" src="https://s.w.org/images/core/emoji/17.0.2/svg/1f7e9.svg">（マギウス）2周目出現</strong></td>
+      <td><strong>🟩（マギウス）2周目出現</strong></td>
       <td><strong>73%</strong></td>
       <td>特殊Aの可能性が高い</td>
     </tr>
@@ -609,7 +1225,7 @@
 </table>
 
 
-<h3><span id="A-10">特殊A否定の可能性が高い(周期の進み具合でやめ判断)</span></h3>
+<h3>特殊A否定の可能性が高い(周期の進み具合でやめ判断)</h3>
 
 
 <table class="wp-table">
@@ -650,7 +1266,7 @@
 </table>
 
 
-<h3><span id="i-6">白ピノ（白背景+ピノシルエット）について</span></h3>
+<h3>白ピノ（白背景+ピノシルエット）について</h3>
 
 
 <table class="wp-table">
@@ -678,10 +1294,11 @@
 <hr>
 
 
-<h2><span id="i-7">狙い目</span></h2>
+<h2>狙い目</h2>
 
 
-<p><strong>※これは特殊Aの狙い目です。もし当選しない場合は滞在ptや出現演出を<a href="https://vvv2.suroschool.jp">https://vvv2.suroschool.jp</a>こちらのツールに反映させ、続行するかも判断してください。</strong></p>
+<p><strong>※これは特殊Aの狙い目です。もし当選しない場合は滞在ptや出現演出を<a
+      href="https://vvv2.suroschool.jp">https://vvv2.suroschool.jp</a>こちらのツールに反映させ、続行するかも判断してください。</strong></p>
 
 
 <p>レベルでうち分け</p>
@@ -693,10 +1310,10 @@
 <hr>
 
 
-<h3><span id="i-8">レベル別の立ち回り</span></h3>
+<h3>レベル別の立ち回り</h3>
 
 
-<h4><span id="1">レベル1（低期待度）</span></h4>
+<h4>レベル1（低期待度）</h4>
 
 
 <table class="wp-table">
@@ -723,7 +1340,7 @@
 </table>
 
 
-<h4><span id="2-3">レベル2（中期待度）</span></h4>
+<h4>レベル2（中期待度）</h4>
 
 
 <table class="wp-table">
@@ -750,7 +1367,7 @@
 </table>
 
 
-<h4><span id="3-2">レベル3（高期待度）</span></h4>
+<h4>レベル3（高期待度）</h4>
 
 
 <table class="wp-table">
@@ -777,7 +1394,7 @@
 </table>
 
 
-<h4><span id="4-2">レベル4（最高期待度）</span></h4>
+<h4>レベル4（最高期待度）</h4>
 
 
 <table class="wp-table">
@@ -807,10 +1424,10 @@
 <hr>
 
 
-<h3><span id="i-9">条件別レベル表</span></h3>
+<h3>条件別レベル表</h3>
 
 
-<h4><span id="11000">差枚あり（+1〜+1000枚）</span></h4>
+<h4>差枚あり（+1〜+1000枚）</h4>
 
 
 <table class="wp-table">
@@ -841,7 +1458,7 @@
 </table>
 
 
-<h4><span id="1000">差枚あり（+1000枚以上）</span></h4>
+<h4>差枚あり（+1000枚以上）</h4>
 
 
 <p>※1000〜2200枚の範囲でラッシュに入っていない台は切断していない可能性が高い （下位でも切断の可能性は捨て切れないが、現時点では切断していないと仮定）</p>
@@ -865,7 +1482,7 @@
 </table>
 
 
-<h4><span id="i-10">差枚なし</span></h4>
+<h4>差枚なし</h4>
 
 
 <table class="wp-table">
@@ -899,7 +1516,7 @@
 <hr>
 
 
-<h3><span id="1-2">1スルー目の継続条件</span></h3>
+<h3>1スルー目の継続条件</h3>
 
 
 <p>以下の<strong>すべて</strong>を満たす場合、1スルー目レベル4で続行：</p>
@@ -918,16 +1535,16 @@
 <hr>
 
 
-<h3><span id="1-3">データ履歴から見る1スルー目以降の狙い方</span></h3>
+<h3>データ履歴から見る1スルー目以降の狙い方</h3>
 
 
-<h4><span id="i-11">0スルー目で当選周期が確認できない場合</span></h4>
+<h4>0スルー目で当選周期が確認できない場合</h4>
 
 
 <p>差枚に関係なく、<strong>前回のデータ履歴（CZ当選G数）</strong>で判断</p>
 
 
-<h4><span id="9">超革命ラッシュ後（9連以下）</span></h4>
+<h4>超革命ラッシュ後（9連以下）</h4>
 
 
 <table class="wp-table">
@@ -953,7 +1570,7 @@
 </table>
 
 
-<h4><span id="1-3">革命ラッシュ後（1-3連）</span></h4>
+<h4>革命ラッシュ後（1-3連）</h4>
 
 
 <table class="wp-table">
@@ -979,7 +1596,7 @@
 </table>
 
 
-<h4><span id="i-12">革命ボーナス後</span></h4>
+<h4>革命ボーナス後</h4>
 
 
 <table class="wp-table">
@@ -1008,7 +1625,7 @@
 <hr>
 
 
-<h2><span id="CZ">周期別CZ当選率</span></h2>
+<h2>周期別CZ当選率</h2>
 
 
 <table class="wp-table">
@@ -1047,14 +1664,15 @@
 <hr>
 
 
-<h2><span id="i-13">やめ時</span></h2>
+<h2>やめ時</h2>
 
 
-<h3><span id="i-14">レベル別やめ時</span></h3>
+<h3>レベル別やめ時</h3>
 
 
 <div class="code-box">
-  <pre>【レベル1】
+  <pre>
+【レベル1】
 2周目100発展なし → やめ
 2周目100発展あり → 3周目100発展確認やめ
 
@@ -1075,11 +1693,12 @@
 </div>
 
 
-<h3><span id="i-15">共通やめ時</span></h3>
+<h3>共通やめ時</h3>
 
 
 <div class="code-box">
-  <pre>特殊A否定演出出現 → 撤退検討
+  <pre>
+特殊A否定演出出現 → 撤退検討
 白ピノ出現 → 特殊A否定だが、周期の進行次第で続行可
 CZ当選→ボーナス/ラッシュ当選 → 引き戻し確認して続行状況でなければやめ
 CZ当選→スルー → 特殊Ａ当選なら1スルー目続行
@@ -1090,13 +1709,13 @@ CZ当選→スルー → 特殊Ａ当選なら1スルー目続行
 <hr>
 
 
-<h2><span id="i-16">まとめ</span></h2>
+<h2>まとめ</h2>
 
 
 <p>従来の「ミミズ狙い」は、データ分析の結果「<strong>特殊A狙い</strong>」として再定義します。</p>
 
 
-<h3><span id="i-17">ポイント</span></h3>
+<h3>ポイント</h3>
 
 
 <ol>
@@ -1107,7 +1726,7 @@ CZ当選→スルー → 特殊Ａ当選なら1スルー目続行
 </ol>
 
 
-<h3><span id="i-18">早見表（0スルー目）</span></h3>
+<h3>早見表（0スルー目）</h3>
 
 
 <table class="wp-table">
@@ -1158,7 +1777,7 @@ CZ当選→スルー → 特殊Ａ当選なら1スルー目続行
 </table>
 
 
-<h3><span id="1CZG">早見表（1スルー目以降・前回CZ当選G数）</span></h3>
+<h3>早見表（1スルー目以降・前回CZ当選G数）</h3>
 
 
 <table class="wp-table">
@@ -1204,10 +1823,10 @@ CZ当選→スルー → 特殊Ａ当選なら1スルー目続行
 </table>
 
 
-<h2><span id="i-19">参考ソース</span></h2>
+<h2>参考ソース</h2>
 
 
-<h3><span id="i-20">集計データ</span></h3>
+<h3>集計データ</h3>
 
 
 <ul>
@@ -1219,7 +1838,7 @@ CZ当選→スルー → 特殊Ａ当選なら1スルー目続行
 </ul>
 
 
-<h3><span id="i-21">サンプル数詳細</span></h3>
+<h3>サンプル数詳細</h3>
 
 
 <p><strong>全体</strong></p>
@@ -1318,7 +1937,7 @@ CZ当選→スルー → 特殊Ａ当選なら1スルー目続行
   </thead>
   <tbody>
     <tr>
-      <td><img draggable="false" role="img" class="emoji" alt="🟩" src="https://s.w.org/images/core/emoji/17.0.2/svg/1f7e9.svg">（マギウス）2周目出現</td>
+      <td>🟩（マギウス）2周目出現</td>
       <td>11</td>
       <td>8</td>
       <td>73%</td>
@@ -1360,7 +1979,7 @@ CZ当選→スルー → 特殊Ａ当選なら1スルー目続行
       <td>33%</td>
     </tr>
     <tr>
-      <td><img draggable="false" role="img" class="emoji" alt="🟩" src="https://s.w.org/images/core/emoji/17.0.2/svg/1f7e9.svg">（マギウス）3周目出現</td>
+      <td>🟩（マギウス）3周目出現</td>
       <td>21</td>
       <td>5</td>
       <td>24%</td>
@@ -1428,7 +2047,7 @@ CZ当選→スルー → 特殊Ａ当選なら1スルー目続行
 
 
 
-<h2 class="wp-block-heading" id="section-a"><span id="A-11"> 特殊A狙いと<a href="https://vvv2.suroschool.jp/">解析値期待値算出ツール</a>の実践的な使用方法</span></h2>
+<h2 class="wp-block-heading" id="section-a"> 特殊A狙いと<a href="https://vvv2.suroschool.jp/">解析値期待値算出ツール</a>の実践的な使用方法</h2>
 
 
 
@@ -1436,11 +2055,11 @@ CZ当選→スルー → 特殊Ａ当選なら1スルー目続行
 
 
 
-<hr class="wp-block-separator has-alpha-channel-opacity">
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
-<h3 class="wp-block-heading"><span id="1_A">1. 特殊A狙いの基本とツールの位置づけ</span></h3>
+<h3 class="wp-block-heading">1. 特殊A狙いの基本とツールの位置づけ</h3>
 
 
 
@@ -1454,7 +2073,7 @@ CZ当選→スルー → 特殊Ａ当選なら1スルー目続行
 
 
 
-<h4 class="wp-block-heading"><span id="i-22"><img draggable="false" role="img" class="emoji" alt="⚠️" src="https://s.w.org/images/core/emoji/17.0.2/svg/26a0.svg"> 注意点：ツールの位置づけについて</span></h4>
+<h4 class="wp-block-heading">⚠️ 注意点：ツールの位置づけについて</h4>
 
 
 
@@ -1468,11 +2087,11 @@ CZ当選→スルー → 特殊Ａ当選なら1スルー目続行
 
 
 
-<hr class="wp-block-separator has-alpha-channel-opacity">
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
-<h3 class="wp-block-heading"><span id="2_1">2. 実践例1：周期と発展ポイントからの判断</span></h3>
+<h3 class="wp-block-heading">2. 実践例1：周期と発展ポイントからの判断</h3>
 
 
 
@@ -1480,7 +2099,7 @@ CZ当選→スルー → 特殊Ａ当選なら1スルー目続行
 
 
 
-<figure style="font-size:12px;letter-spacing:0px" class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-center" data-align="center">周目</th><th class="has-text-align-center" data-align="center">ゲーム数</th><th class="has-text-align-center" data-align="center">発展の有無</th><th class="has-text-align-center" data-align="center">マギウスの周期示唆</th></tr></thead><tbody><tr><td class="has-text-align-center" data-align="center">1周目</td><td class="has-text-align-center" data-align="center">200p</td><td class="has-text-align-center" data-align="center">有</td><td class="has-text-align-center" data-align="center"><strong>3</strong> にマギウス</td></tr><tr><td class="has-text-align-center" data-align="center">2周目</td><td class="has-text-align-center" data-align="center">100p</td><td class="has-text-align-center" data-align="center">有</td><td class="has-text-align-center" data-align="center">–</td></tr><tr><td class="has-text-align-center" data-align="center">3周目</td><td class="has-text-align-center" data-align="center">100p</td><td class="has-text-align-center" data-align="center">無</td><td class="has-text-align-center" data-align="center">–</td></tr></tbody></table></figure>
+<figure style="font-size:12px;letter-spacing:0px" class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-center" data-align="center">周目</th><th class="has-text-align-center" data-align="center">ゲーム数</th><th class="has-text-align-center" data-align="center">発展の有無</th><th class="has-text-align-center" data-align="center">マギウスの周期示唆</th></tr></thead><tbody><tr><td class="has-text-align-center" data-align="center">1周目</td><td class="has-text-align-center" data-align="center">200p</td><td class="has-text-align-center" data-align="center">有</td><td class="has-text-align-center" data-align="center"><strong>3</strong> にマギウス</td></tr><tr><td class="has-text-align-center" data-align="center">2周目</td><td class="has-text-align-center" data-align="center">100p</td><td class="has-text-align-center" data-align="center">有</td><td class="has-text-align-center" data-align="center">&#8211;</td></tr><tr><td class="has-text-align-center" data-align="center">3周目</td><td class="has-text-align-center" data-align="center">100p</td><td class="has-text-align-center" data-align="center">無</td><td class="has-text-align-center" data-align="center">&#8211;</td></tr></tbody></table></figure>
 
 
 
@@ -1488,7 +2107,7 @@ CZ当選→スルー → 特殊Ａ当選なら1スルー目続行
 
 
 
-<h4 class="wp-block-heading"><span id="i-23">ツールへの入力と判断</span></h4>
+<h4 class="wp-block-heading">ツールへの入力と判断</h4>
 
 
 
@@ -1496,7 +2115,7 @@ CZ当選→スルー → 特殊Ａ当選なら1スルー目続行
 
 
 
-<figure class="wp-block-image size-full"><img width="429" height="357" src="../img/5150abaef62fa23a.png" alt="" class="wp-image-2362" decoding="async" sizes="auto, (max-width: 429px) 100vw, 429px"></figure>
+<figure class="wp-block-image size-full"><img width="429" height="357" src="../img/5150abaef62fa23a.png" alt="" class="wp-image-2362"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/12/image.png 429w, https://suroschool.jp/wp-content/uploads/2025/12/image-300x250.png 300w" sizes="auto, (max-width: 429px) 100vw, 429px" /></figure>
 
 
 
@@ -1504,7 +2123,7 @@ CZ当選→スルー → 特殊Ａ当選なら1スルー目続行
 
 
 
-<figure class="wp-block-image size-full"><img width="424" height="456" src="../img/38f07c1631c785e2.png" alt="" class="wp-image-2363" decoding="async" sizes="auto, (max-width: 424px) 100vw, 424px"></figure>
+<figure class="wp-block-image size-full"><img width="424" height="456" src="../img/38f07c1631c785e2.png" alt="" class="wp-image-2363"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/12/image-1.png 424w, https://suroschool.jp/wp-content/uploads/2025/12/image-1-279x300.png 279w" sizes="auto, (max-width: 424px) 100vw, 424px" /></figure>
 
 
 
@@ -1518,11 +2137,11 @@ CZ当選→スルー → 特殊Ａ当選なら1スルー目続行
 
 
 
-<hr class="wp-block-separator has-alpha-channel-opacity">
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
-<h3 class="wp-block-heading"><span id="3_2">3. 実践例2：示唆演出とスルーからの判断</span></h3>
+<h3 class="wp-block-heading">3. 実践例2：示唆演出とスルーからの判断</h3>
 
 
 
@@ -1538,7 +2157,7 @@ CZ当選→スルー → 特殊Ａ当選なら1スルー目続行
 
 
 
-<h4 class="wp-block-heading"><span id="i-24">ツールへの入力と判断</span></h4>
+<h4 class="wp-block-heading">ツールへの入力と判断</h4>
 
 
 
@@ -1546,7 +2165,7 @@ CZ当選→スルー → 特殊Ａ当選なら1スルー目続行
 
 
 
-<figure class="wp-block-image size-full"><img width="425" height="650" src="../img/b1fa082488611f81.png" alt="" class="wp-image-2364" decoding="async" sizes="auto, (max-width: 425px) 100vw, 425px"></figure>
+<figure class="wp-block-image size-full"><img width="425" height="650" src="../img/b1fa082488611f81.png" alt="" class="wp-image-2364"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/12/image-2.png 425w, https://suroschool.jp/wp-content/uploads/2025/12/image-2-196x300.png 196w" sizes="auto, (max-width: 425px) 100vw, 425px" /></figure>
 
 
 
@@ -1554,11 +2173,11 @@ CZ当選→スルー → 特殊Ａ当選なら1スルー目続行
 
 
 
-<figure class="wp-block-image size-full"><img width="429" height="421" src="../img/f86843665987e129.png" alt="" class="wp-image-2365" decoding="async" sizes="auto, (max-width: 429px) 100vw, 429px"></figure>
+<figure class="wp-block-image size-full"><img width="429" height="421" src="../img/f86843665987e129.png" alt="" class="wp-image-2365"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/12/image-3.png 429w, https://suroschool.jp/wp-content/uploads/2025/12/image-3-300x294.png 300w" sizes="auto, (max-width: 429px) 100vw, 429px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="421" height="526" src="../img/5cf2311a896a91ff.png" alt="" class="wp-image-2366" decoding="async" sizes="auto, (max-width: 421px) 100vw, 421px"></figure>
+<figure class="wp-block-image size-full"><img width="421" height="526" src="../img/5cf2311a896a91ff.png" alt="" class="wp-image-2366"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/12/image-4.png 421w, https://suroschool.jp/wp-content/uploads/2025/12/image-4-240x300.png 240w" sizes="auto, (max-width: 421px) 100vw, 421px" /></figure>
 
 
 
@@ -1566,23 +2185,40 @@ CZ当選→スルー → 特殊Ａ当選なら1スルー目続行
 
 
 
-<hr class="wp-block-separator has-alpha-channel-opacity">
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
-<h3 class="wp-block-heading"><span id="i-25">まとめ</span></h3>
+<h3 class="wp-block-heading">まとめ</h3>
 
 
 
 <p class="wp-block-paragraph">特殊A狙いで台を選んだ後、<strong><a href="https://vvv2.suroschool.jp/">解析値期待値算出ツール</a></strong>を用いて客観的な情報（示唆、周期、pt）から期待値を算出し、より精度の高いヤメ時・続行の判断を行いましょう。</p>
-<div class="post-views content-post post-2344 entry-meta load-static">
-				<span class="post-views-icon dashicons dashicons-chart-bar"></span> <span class="post-views-label">Post Views:</span> <span class="post-views-count">5,662</span>
-			</div>
-          <!-- 目次ハンバーガー（右下固定・常時）。中身はJSが見出し(h2/h3)から生成。会員ロック時は空→自動非表示 --></section>
+</section>
   
   
   
   </article></main>
 <footer class="foot">個人アーカイブ（suroschool.jp / たかどらのスロ塾 会員コンテンツ）・閲覧用</footer>
+
+<!-- スマホ用ボトムナビ（スクロールで隠れる/出る） -->
+<nav class="botnav" id="botnav">
+  <a href="../index.html" data-nav="index">🎰<span>機種</span></a>
+  <button id="searchOpen2">🔍<span>検索</span></button>
+  <a href="../index.html?fav=1">★<span>お気に入り</span></a>
+  <a href="../news.html">📰<span>お知らせ</span></a>
+  <a href="../tool.html">🧮<span>期待値</span></a>
+</nav>
+
+<!-- 全ページ横断の検索オーバーレイ -->
+<div class="search-overlay" id="searchOverlay" hidden>
+  <div class="search-head">
+    <input id="globalSearch" type="search" placeholder="機種名で検索…" autocomplete="off">
+    <button id="searchClose" aria-label="閉じる">✕</button>
+  </div>
+  <div id="searchResults" class="search-results"></div>
+</div>
+
+<script src="../assets/search-index.js"></script>
 <script src="../assets/app.js"></script>
 </body></html>

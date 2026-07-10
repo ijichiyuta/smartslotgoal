@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="ja"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>アクダマドライブ | スマスロ目標 (個人アーカイブ)</title>
+<title>アクダマドライブ | スマスロ期待値 (個人アーカイブ)</title>
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="manifest" href="../manifest.webmanifest">
 <meta name="theme-color" content="#ffffff">
@@ -10,16 +10,18 @@
 <link rel="apple-touch-icon" href="../assets/icon.svg">
 <link rel="icon" href="../assets/icon.svg">
 <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){})});}</script>
+<script>window.__ROOT__='../';</script>
 
 </head><body>
-<header class="topbar">
-  <a class="brand" href="../index.html">🎰 スマスロ目標</a>
-  <nav>
+<header class="topbar" id="topbar">
+  <a class="brand" href="../index.html">🎰 スマスロ期待値</a>
+  <nav class="topnav">
     <a href="../index.html">機種</a>
     <a href="../news.html">お知らせ</a>
     <a href="../tool.html">期待値計算</a>
     <a href="../pages.html">資料</a>
   </nav>
+  <button class="topbar-search" id="searchOpen" aria-label="検索">🔍</button>
 </header>
 <main>
   <article class="machine">
@@ -35,15 +37,7 @@
     <button class="tab" data-tab="kaiseki">解析情報</button>
     
   </div>
-  <section class="panel is-active" data-panel="nerai"><div class="tenjo-info"><div class="my-spoiler-wrapper" id="my-spoiler-1"><div class="my-spoiler-title" style="cursor:pointer; background:rgba(245,184,0,0.08); padding:10px; border:1px solid rgba(245,184,0,0.3); color:var(--text-main); font-weight:700; letter-spacing:0.04em;"><span class="spoiler-icon" style="margin-right:5px;">[-]</span>機種情報</div><div class="my-spoiler-content" style="display:block; padding:10px; border:1px solid rgba(245,184,0,0.2); border-top:0; background:var(--bg-card-hi); color:var(--text-main);"><p>【天井情報】<br>
-通常時を最大967G＋α消化でボーナスに当選。<br>
-745G以上ハマり後のボーナスでAT非突入時や、上位AT終了後は天井が589G＋αに短縮。</p>
-<p>STからのAT非当選が最大6連続すると7回目のボーナスがエピソードボーナス（AT濃厚）となる。</p>
-<p>【リセット判別】<br>
-不明</p>
-<p>【有利区間について】<br>
-実戦上、エンディング（有利区間リセット）後は「超S級デッドオアアライブ」へ。</p>
-</div></div></div>
+  <section class="panel is-active" data-panel="nerai"><img loading="lazy" decoding="async" width="150" height="150" src="../img/fe9dfca2515c54be.jpg" class="machine-thumbnail wp-post-image" alt="" style="display:block; margin:0 auto;" srcset="https://suroschool.jp/wp-content/uploads/2026/04/thumb_1-1-150x150.jpg 150w, https://suroschool.jp/wp-content/uploads/2026/04/thumb_1-1-120x120.jpg 120w" sizes="auto, (max-width: 150px) 100vw, 150px" />
 <p class="wp-block-paragraph"><strong>※スルー別で狙い目が変わる、ゾーンが強くゾーン抜け後に期待値が下がる、設置が少なくサンプル数が少ない。以上の点から暫くは狙い目が不安定になりそうです。</strong></p>
 
 
@@ -52,8 +46,7 @@
 
 
 
-
-<h2 class="wp-block-heading"><span id="i"><strong>狙い目</strong></span></h2>
+<h2 class="wp-block-heading"><strong>狙い目</strong></h2>
 
 
 
@@ -61,11 +54,11 @@
 
 
 
-<h3 class="wp-block-heading"><span id="i-2"><strong>【リセット狙い】</strong></span></h3>
+<h3 class="wp-block-heading"><strong>【リセット狙い】</strong></h3>
 
 
 
-<h4 class="wp-block-heading"><span id="i-3">ボーナス間（0スルー）</span></h4>
+<h4 class="wp-block-heading">ボーナス間（0スルー）</h4>
 
 
 
@@ -73,7 +66,7 @@
 
 
 
-<h4 class="wp-block-heading"><span id="i-4">ゾーン狙い（0スルー）</span></h4>
+<h4 class="wp-block-heading">ゾーン狙い（0スルー）</h4>
 
 
 
@@ -93,11 +86,11 @@
 
 
 
-<h4 class="wp-block-heading"><span id="i-5">スルー別</span></h4>
+<h4 class="wp-block-heading">スルー別</h4>
 
 
 
-<h5 class="wp-block-heading"><span id="1">1スルー</span></h5>
+<h5 class="wp-block-heading">1スルー</h5>
 
 
 
@@ -109,7 +102,7 @@
 
 
 
-<h5 class="wp-block-heading"><span id="2">2スルー</span></h5>
+<h5 class="wp-block-heading">2スルー</h5>
 
 
 
@@ -121,7 +114,7 @@
 
 
 
-<h5 class="wp-block-heading"><span id="3">3スルー</span></h5>
+<h5 class="wp-block-heading">3スルー</h5>
 
 
 
@@ -133,7 +126,7 @@
 
 
 
-<h5 class="wp-block-heading"><span id="4">4スルー</span></h5>
+<h5 class="wp-block-heading">4スルー</h5>
 
 
 
@@ -141,11 +134,11 @@
 
 
 
-<h3 class="wp-block-heading"><span id="i-6"><strong>【スルー別ゲーム数天井狙い】</strong></span></h3>
+<h3 class="wp-block-heading"><strong>【スルー別ゲーム数天井狙い】</strong></h3>
 
 
 
-<h4 class="wp-block-heading"><span id="i-7">0スルー</span></h4>
+<h4 class="wp-block-heading">0スルー</h4>
 
 
 
@@ -161,7 +154,7 @@
 
 
 
-<h4 class="wp-block-heading"><span id="1-2">1スルー</span></h4>
+<h4 class="wp-block-heading">1スルー</h4>
 
 
 
@@ -173,7 +166,7 @@
 
 
 
-<h4 class="wp-block-heading"><span id="2-2">2スルー</span></h4>
+<h4 class="wp-block-heading">2スルー</h4>
 
 
 
@@ -185,7 +178,7 @@
 
 
 
-<h4 class="wp-block-heading"><span id="3-2">3スルー</span></h4>
+<h4 class="wp-block-heading">3スルー</h4>
 
 
 
@@ -197,7 +190,7 @@
 
 
 
-<h4 class="wp-block-heading"><span id="4-2">4スルー以降</span></h4>
+<h4 class="wp-block-heading">4スルー以降</h4>
 
 
 
@@ -205,7 +198,7 @@
 
 
 
-<h3 class="wp-block-heading"><span id="i-8"><strong>【ゾーン狙い】</strong></span></h3>
+<h3 class="wp-block-heading"><strong>【ゾーン狙い】</strong></h3>
 
 
 
@@ -213,7 +206,7 @@
 
 
 
-<h4 class="wp-block-heading"><span id="111G">111Gゾーン</span></h4>
+<h4 class="wp-block-heading">111Gゾーン</h4>
 
 
 
@@ -221,7 +214,7 @@
 
 
 
-<h4 class="wp-block-heading"><span id="333G">333Gゾーン</span></h4>
+<h4 class="wp-block-heading">333Gゾーン</h4>
 
 
 
@@ -229,7 +222,7 @@
 
 
 
-<h4 class="wp-block-heading"><span id="666G">666Gゾーン</span></h4>
+<h4 class="wp-block-heading">666Gゾーン</h4>
 
 
 
@@ -237,7 +230,7 @@
 
 
 
-<h3 class="wp-block-heading"><span id="i-9">【シンテツドウポイント】</span></h3>
+<h3 class="wp-block-heading">【シンテツドウポイント】</h3>
 
 
 
@@ -245,11 +238,11 @@
 
 
 
-<h3 class="wp-block-heading"><span id="i-10">【<strong>示唆関連の押し引きについて</strong>】</span></h3>
+<h3 class="wp-block-heading">【<strong>示唆関連の押し引きについて</strong>】</h3>
 
 
 
-<h4 class="wp-block-heading"><span id="i-11">通常ステージ・フェーズ</span></h4>
+<h4 class="wp-block-heading">通常ステージ・フェーズ</h4>
 
 
 
@@ -257,7 +250,7 @@
 
 
 
-<h4 class="wp-block-heading"><span id="CZ">CZ失敗時のボイス</span></h4>
+<h4 class="wp-block-heading">CZ失敗時のボイス</h4>
 
 
 
@@ -265,7 +258,7 @@
 
 
 
-<h4 class="wp-block-heading"><span id="i-12">アイテム</span></h4>
+<h4 class="wp-block-heading">アイテム</h4>
 
 
 
@@ -281,7 +274,7 @@
 
 
 
-<h3 class="wp-block-heading"><span id="i-13"><strong>【有利区間関連狙い】</strong></span></h3>
+<h3 class="wp-block-heading"><strong>【有利区間関連狙い】</strong></h3>
 
 
 
@@ -289,7 +282,7 @@
 
 
 
-<h2 class="wp-block-heading"><span id="i-14"><strong>やめ時</strong></span></h2>
+<h2 class="wp-block-heading"><strong>やめ時</strong></h2>
 
 
 
@@ -297,11 +290,11 @@
 
 
 
-<h2 class="wp-block-heading"><span id="i-15"><strong>その他</strong></span></h2>
+<h2 class="wp-block-heading"><strong>その他</strong></h2>
 
 
 
-<h4 class="wp-block-heading"><span id="i-16">データ履歴</span></h4>
+<h4 class="wp-block-heading">データ履歴</h4>
 
 
 
@@ -313,59 +306,59 @@
 
 
 
-<figure class="wp-block-image size-full"><img width="504" height="838" src="../img/8b1e94a2b129e7e2.webp" alt="" class="wp-image-2821" decoding="async" sizes="auto, (max-width: 504px) 100vw, 504px"></figure>
+<figure class="wp-block-image size-full"><img width="504" height="838" src="../img/8b1e94a2b129e7e2.webp" alt="" class="wp-image-2821"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2026/04/B5DDA7E7-3FB2-43B3-B727-1FA32E0FD303.webp 504w, https://suroschool.jp/wp-content/uploads/2026/04/B5DDA7E7-3FB2-43B3-B727-1FA32E0FD303-180x300.webp 180w" sizes="auto, (max-width: 504px) 100vw, 504px" /></figure>
 
 
 
-<h4 class="wp-block-heading"><span id="i-17">通常ステージ・フェーズ</span></h4>
+<h4 class="wp-block-heading">通常ステージ・フェーズ</h4>
 
 
 
-<figure class="wp-block-image size-full"><img width="352" height="820" src="../img/c49eb3104c55810c.png" alt="" class="wp-image-2793" decoding="async" sizes="auto, (max-width: 352px) 100vw, 352px"></figure>
+<figure class="wp-block-image size-full"><img width="352" height="820" src="../img/c49eb3104c55810c.png" alt="" class="wp-image-2793"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2026/04/スクリーンショット-2026-04-06-070845.png 352w, https://suroschool.jp/wp-content/uploads/2026/04/スクリーンショット-2026-04-06-070845-129x300.png 129w" sizes="auto, (max-width: 352px) 100vw, 352px" /></figure>
 
 
 
-<h4 class="wp-block-heading"><span id="i-18">特殊ステージ（カンサイ教育番組、一般人自宅）</span></h4>
+<h4 class="wp-block-heading">特殊ステージ（カンサイ教育番組、一般人自宅）</h4>
 
 
 
-<figure class="wp-block-image size-full"><img width="354" height="552" src="../img/17a3fc42a04d4abb.png" alt="" class="wp-image-2794" decoding="async" sizes="auto, (max-width: 354px) 100vw, 354px"></figure>
+<figure class="wp-block-image size-full"><img width="354" height="552" src="../img/17a3fc42a04d4abb.png" alt="" class="wp-image-2794"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2026/04/スクリーンショット-2026-04-06-071031.png 354w, https://suroschool.jp/wp-content/uploads/2026/04/スクリーンショット-2026-04-06-071031-192x300.png 192w" sizes="auto, (max-width: 354px) 100vw, 354px" /></figure>
 
 
 
-<h4 class="wp-block-heading"><span id="i-19">アイテム効果</span></h4>
+<h4 class="wp-block-heading">アイテム効果</h4>
 
 
 
-<figure class="wp-block-image size-full"><img width="355" height="459" src="../img/57235ed34cda7719.png" alt="" class="wp-image-2795" decoding="async" sizes="auto, (max-width: 355px) 100vw, 355px"></figure>
+<figure class="wp-block-image size-full"><img width="355" height="459" src="../img/57235ed34cda7719.png" alt="" class="wp-image-2795"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2026/04/スクリーンショット-2026-04-06-071123.png 355w, https://suroschool.jp/wp-content/uploads/2026/04/スクリーンショット-2026-04-06-071123-232x300.png 232w" sizes="auto, (max-width: 355px) 100vw, 355px" /></figure>
 
 
 
-<h4 class="wp-block-heading"><span id="i-20">シンテツドウポイント</span></h4>
+<h4 class="wp-block-heading">シンテツドウポイント</h4>
 
 
 
-<figure class="wp-block-image size-full"><img width="352" height="474" src="../img/a873596d906295f6.png" alt="" class="wp-image-2796" decoding="async" sizes="auto, (max-width: 352px) 100vw, 352px"></figure>
+<figure class="wp-block-image size-full"><img width="352" height="474" src="../img/a873596d906295f6.png" alt="" class="wp-image-2796"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2026/04/スクリーンショット-2026-04-06-071158.png 352w, https://suroschool.jp/wp-content/uploads/2026/04/スクリーンショット-2026-04-06-071158-223x300.png 223w" sizes="auto, (max-width: 352px) 100vw, 352px" /></figure>
 
 
 
-<h4 class="wp-block-heading"><span id="i-21">スルー回数振り分け</span></h4>
+<h4 class="wp-block-heading">スルー回数振り分け</h4>
 
 
 
-<figure class="wp-block-image size-full"><img width="539" height="320" src="../img/07073d731924a3cb.png" alt="" class="wp-image-2775" decoding="async" sizes="auto, (max-width: 539px) 100vw, 539px"></figure>
+<figure class="wp-block-image size-full"><img width="539" height="320" src="../img/07073d731924a3cb.png" alt="" class="wp-image-2775"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2026/04/スクリーンショット-2026-04-05-070730.png 539w, https://suroschool.jp/wp-content/uploads/2026/04/スクリーンショット-2026-04-05-070730-300x178.png 300w" sizes="auto, (max-width: 539px) 100vw, 539px" /></figure>
 
 
 
-<h4 class="wp-block-heading"><span id="CZ-2">CZ終了時のボイス</span></h4>
+<h4 class="wp-block-heading">CZ終了時のボイス</h4>
 
 
 
-<figure class="wp-block-image size-full"><img width="477" height="627" src="../img/59a95025b676809c.png" alt="" class="wp-image-2792" decoding="async" sizes="auto, (max-width: 477px) 100vw, 477px"></figure>
+<figure class="wp-block-image size-full"><img width="477" height="627" src="../img/59a95025b676809c.png" alt="" class="wp-image-2792"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2026/04/スクリーンショット-2026-04-06-070705.png 477w, https://suroschool.jp/wp-content/uploads/2026/04/スクリーンショット-2026-04-06-070705-228x300.png 228w" sizes="auto, (max-width: 477px) 100vw, 477px" /></figure>
 
 
 
-<h2 class="wp-block-heading"><span id="i-22"><strong>参考元</strong></span></h2>
+<h2 class="wp-block-heading"><strong>参考元</strong></h2>
 
 
 
@@ -386,36 +379,29 @@
 
 
 <p class="wp-block-paragraph"></p>
-<div class="post-views content-post post-2773 entry-meta load-static">
-				<span class="post-views-icon dashicons dashicons-chart-bar"></span> <span class="post-views-label">Post Views:</span> <span class="post-views-count">675</span>
-			</div>
-          <!-- 目次ハンバーガー（右下固定・常時）。中身はJSが見出し(h2/h3)から生成。会員ロック時は空→自動非表示 --></section>
-  <section class="panel" data-panel="kaiseki"><div class="kaiseki-toolbar">
-              
-            </div>
-            <div class="kaiseki-accordion">
-              <details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i">基本情報</span></summary><div class="kaiseki-section-body">
+</section>
+  <section class="panel" data-panel="kaiseki"><h2>基本情報</h2>
 <ul>
 <li>メーカー: サンスリー</li>
 <li>機械割: 97.4% 〜 112.0%</li>
 <li>導入開始日: 2026年04月06日（月）</li>
 <li>ゲーム性概要: ●レア役やシンテツドウポイント（ベル揃いで減算）契機でCZに当選 ●CZは3種類あり成功すればボーナス ●アクダマボーナス後はSTへ、エピソードボーナスはATへ直行 ●STは9G継続で、全役でATを抽選。AT期待度は約50% ●ATは純増約7.1枚、初期ゲーム数は30Gのゲーム数上乗せ型（2連目以降は初期20G） ●AT終了後は必ずSTへ復帰 ●STの一部で突入する「処刑課バトル」成功で特化ゾーン＋上位AT濃厚</li>
 </ul>
-<p><img alt="Lアクダマドライブ（パチスロ）のリール配列" src="https://p-town.dmm.com/upload/machines/4956/reel.jpg?t=1779358626" decoding="async"></p>
-<p><img alt="Lアクダマドライブ（パチスロ）のゲームフロー" src="https://p-town.dmm.com/upload/machines/4956/flow.jpg?t=1779358626" decoding="async"></p>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-2">打ち方</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-3">打ち方・小役</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-4">打ち方（小役狙い）</span></h4>
+<p><img alt="Lアクダマドライブ（パチスロ）のリール配列" src="https://p-town.dmm.com/upload/machines/4956/reel.jpg?t=1779358626"></p>
+<p><img alt="Lアクダマドライブ（パチスロ）のゲームフロー" src="https://p-town.dmm.com/upload/machines/4956/flow.jpg?t=1779358626"></p>
+<h2>打ち方</h2>
+<h3>打ち方・小役</h3>
+<h4>打ち方（小役狙い）</h4>
 <p>「最初に狙う絵柄」 通常時は基本的にフリー打ちでOK。</p>
 <p>「レア役の停止例」</p>
 <p>「2択チャレンジ」 おもにCZ・AT中に発生。第3停止時に赤7or青7を狙って、アクダマ目（青7or赤7のサンド目）が停止すれば正解。 アクダマ目停止時は、CZ中ならボーナス、AT中はゲーム数上乗せを獲得できる。</p>
 <p>［2択履歴チェック］ 2択チャレンジ発生時にPUSHボタンを押すと、過去10回分のアクダマ目の傾向を確認可能だ。</p>
-<h4><span id="NG">変則押しはNG</span></h4>
+<h4>変則押しはNG</h4>
 <p>ナビなし時は左リール第1停止での消化を推奨する。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-5">確定役</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-6">運命揃いの恩恵</span></h4>
+<h3>確定役</h3>
+<h4>運命揃いの恩恵</h4>
 <p>運命揃い（1/7281.8）は成立した状況に応じて、強力な恩恵を獲得できる。</p>
-<h4><span id="i-7">運命揃いの恩恵</span></h4>
+<h4>運命揃いの恩恵</h4>
 <table>
 <thead>
 <tr>
@@ -457,10 +443,10 @@
 <td>ゲーム数上乗せ</td>
 </tr>
 </tbody>
-</table></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-8">解析情報通常時</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-9">小役関連</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-10">小役確率</span></h4>
+</table>
+<h2>解析情報通常時</h2>
+<h3>小役関連</h3>
+<h4>小役確率</h4>
 <table>
 <thead>
 <tr>
@@ -496,10 +482,10 @@
 </tbody>
 </table>
 <p>※共通ベル…上段or右下がりベル</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-11">モード</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="CZ">CZモード</span></h4>
+<h3>モード</h3>
+<h4>CZモード</h4>
 <p>［CZ種別に影響する3つのモード］ フェーズ契機のCZ当選時の種別（多脚戦車バトルor処刑執行）を決定するCZモードが存在。CZモードはA〜Cの3種類で、上位モードほど処刑執行に当選しやすい。</p>
-<h4><span id="CZ-2">多脚戦車バトル終了時・CZモード昇格率</span></h4>
+<h4>多脚戦車バトル終了時・CZモード昇格率</h4>
 <table>
 <thead>
 <tr>
@@ -536,7 +522,7 @@
 </table>
 <p>※昇格は1段階ずつ、モードC時は昇格抽選ナシ</p>
 <p>多脚戦車バトルに失敗した場合、CZモードの昇格が抽選される。</p>
-<h4><span id="STCZ">処刑執終了時＆ST終了時・CZモード振り分け</span></h4>
+<h4>処刑執終了時＆ST終了時・CZモード振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -560,9 +546,9 @@
 </tbody>
 </table>
 <p>処刑執行終了時とST終了時に、初期のCZモードを抽選する。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-12">シンテツドウポイント</span></summary><div class="kaiseki-subsection-body">
+<h3>シンテツドウポイント</h3>
 <p>ベル入賞時にリール右に表示されたポイントを減算していき、0ptになるとCZ「アナライズチャレンジ」を抽選。 初期ポイントは20ptで、上段ベルと右下がりベルは1pt、小Vベルは2ptが減算される。朝イチ（設定変更時・電源OFF/ON時）は??で隠れた状態からスタートする。</p>
-<h4><span id="i-13">シンテツドウポイント</span></h4>
+<h4>シンテツドウポイント</h4>
 <table>
 <thead>
 <tr>
@@ -587,10 +573,10 @@
 </table>
 <p>20ptを超えた分は次回へ持ち越される。</p>
 <p>「0pt到達時の好機の文字色」 青＜緑＜赤の順にCZ当選に期待できる。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-14">フェーズ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-15">フェーズ解説</span></h4>
+<h3>フェーズ</h3>
+<h4>フェーズ解説</h4>
 <p>通常時はおもに悪揃いやチャンス目でフェーズの昇格を抽選していて、フェーズ（ステージ）が上がるほどCZ当選期待度がアップ。 フェーズはリール左に1〜3まで表示されていて、フェーズ4ではCZの前兆ステージへ移行する。</p>
-<h4><span id="i-16">フェーズと滞在ステージ</span></h4>
+<h4>フェーズと滞在ステージ</h4>
 <table>
 <thead>
 <tr>
@@ -617,7 +603,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-17">各フェーズの継続ゲーム数</span></h4>
+<h4>各フェーズの継続ゲーム数</h4>
 <table>
 <thead>
 <tr>
@@ -650,7 +636,7 @@
 </table>
 <p>※各フェーズの規定ゲーム消化後はフェーズ1に転落（フェーズ4の本前兆時はCZへ）</p>
 <p>フェーズ4移行契機が小役orカンサイ教育番組経由で継続ゲーム数が変化。小役契機の場合は最低16Gと長くなる。</p>
-<h4><span id="4">小役契機・フェーズ4の継続ゲーム数振り分け</span></h4>
+<h4>小役契機・フェーズ4の継続ゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -688,7 +674,7 @@
 </tbody>
 </table>
 <p>フェーズ4へ移行したタイミングでCZやボーナスの当否を抽選。漏れた場合はフェーズ4中の悪揃いやレア役でCZ・ボーナス抽選がおこなわれる。 フェーズ4移行時にCZの本前兆だった場合、前兆中はボーナスへの昇格を抽選する。</p>
-<h4><span id="12">［フェーズ1滞在時］フェーズ2移行率</span></h4>
+<h4>［フェーズ1滞在時］フェーズ2移行率</h4>
 <table>
 <thead>
 <tr>
@@ -707,7 +693,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="23">［フェーズ2滞在時］フェーズ3移行率</span></h4>
+<h4>［フェーズ2滞在時］フェーズ3移行率</h4>
 <table>
 <thead>
 <tr>
@@ -730,7 +716,7 @@
 </tbody>
 </table>
 <p>成立役に応じて1段階上のフェーズへの昇格を抽選。 この抽選とは別に、どのフェーズにいてもフェーズ4（前兆）への直行抽選がおこなわれる。</p>
-<h4><span id="4-2">フェーズ4移行率</span></h4>
+<h4>フェーズ4移行率</h4>
 <table>
 <thead>
 <tr>
@@ -757,7 +743,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="4-3">アナライズチャレンジの前兆中・フェーズ4移行率</span></h4>
+<h4>アナライズチャレンジの前兆中・フェーズ4移行率</h4>
 <table>
 <thead>
 <tr>
@@ -777,8 +763,8 @@
 </tbody>
 </table>
 <p>アナライズチャレンジの前兆中（シンテツドウポイント20pt獲得後）の悪揃いやレア役では、フェーズ4への移行が抽選される。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="CZ-3">CZ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="CZ-4">CZ合算確率</span></h4>
+<h3>CZ</h3>
+<h4>CZ合算確率</h4>
 <table>
 <thead>
 <tr>
@@ -813,9 +799,9 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-18">多脚戦車バトル</span></h4>
+<h4>多脚戦車バトル</h4>
 <p>前半では成立役に応じて後半のゲーム数獲得を抽選。後半でアクダマ目が止まればボーナス当選となる。</p>
-<h4><span id="i-19">多脚戦車バトル性能</span></h4>
+<h4>多脚戦車バトル性能</h4>
 <table>
 <thead>
 <tr>
@@ -847,7 +833,7 @@
 </tbody>
 </table>
 <p>「前半」 獲得したゲーム数は液晶右上に表示。 アイテム「HOLDハンコ」を持っている場合は一定ゲーム数間、前半のゲーム数減算がストップする。</p>
-<h4><span id="i-20">［前半パート］後半パートの獲得ゲーム数振り分け</span></h4>
+<h4>［前半パート］後半パートの獲得ゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -933,7 +919,7 @@
 </table>
 <p>※運命揃いはエピソードボーナス＋上位AT濃厚</p>
 <p>「後半」 前半で獲得したゲーム数分継続。 2択チャレンジでアクダマ目が止まればボーナス濃厚だ。</p>
-<h4><span id="i-21">［後半パート］成立役ごとの抽選内容</span></h4>
+<h4>［後半パート］成立役ごとの抽選内容</h4>
 <table>
 <thead>
 <tr>
@@ -965,9 +951,9 @@
 </tbody>
 </table>
 <p>ボーナス当選時は、残った処刑執行ゲーム数を参照してボーナス種別の昇格を抽選。 昇格順はアクダマボーナス＜エピソードボーナス＜エピソードボーナス＋極悪ドライブの順で、残りゲーム数が多いほど昇格に期待できる（昇格当選時はボーナス種別が1段階昇格）。</p>
-<h4><span id="i-22">処刑執行</span></h4>
+<h4>処刑執行</h4>
 <p>毎ゲームボーナス抽選をおこなう高期待度CZ。悪揃いでチャンス、チャンス目はボーナス濃厚だ。</p>
-<h4><span id="i-23">処刑執行性能</span></h4>
+<h4>処刑執行性能</h4>
 <table>
 <thead>
 <tr>
@@ -992,7 +978,7 @@
 </table>
 <p>アイテム「HOLDハンコ」を持っている場合は一定ゲーム数間、ゲーム数の減算がストップ。</p>
 <p>「演出発生でチャンス」 開眼成功でボーナス！</p>
-<h4><span id="i-24">ボーナス当選率</span></h4>
+<h4>ボーナス当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1019,9 +1005,9 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-25">アナライズチャレンジ</span></h4>
+<h4>アナライズチャレンジ</h4>
 <p>シンテツドウポイントを契機に突入するCZ。 前半でカイセキランクを上げていき、後半でカイセキランクを参照したボーナス抽選をおこなう。</p>
-<h4><span id="i-26">アナライズチャレンジ性能</span></h4>
+<h4>アナライズチャレンジ性能</h4>
 <table>
 <thead>
 <tr>
@@ -1050,7 +1036,7 @@
 </table>
 <p>アイテム「HOLDハンコ」あり時は、ゲーム数の減算がストップする。</p>
 <p>「カイセキランク」</p>
-<h4><span id="i-27">カイセキランク</span></h4>
+<h4>カイセキランク</h4>
 <table>
 <thead>
 <tr>
@@ -1090,7 +1076,7 @@
 </tbody>
 </table>
 <p>保障として1段階はランクが上がるので、後半は最低でも1/10でボーナスが抽選される。</p>
-<h4><span id="i-28">カイセキランクアップ当選率</span></h4>
+<h4>カイセキランクアップ当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1147,7 +1133,7 @@
 </table>
 <p>カイセキランクが1/1に到達でボーナス濃厚。1/1に到達した後はエピソードボーナスへの昇格を抽選する。</p>
 <p>「後半」 前半で上げたカイセキランクでボーナスを抽選！</p>
-<h4><span id="i-29">成功期待度序列</span></h4>
+<h4>成功期待度序列</h4>
 <table>
 <thead>
 <tr>
@@ -1179,9 +1165,9 @@
 </tbody>
 </table>
 <p>※期待度はカイセキランクによって変化</p>
-<h4><span id="i-30">運命チャンス</span></h4>
+<h4>運命チャンス</h4>
 <p>通常時の運命揃いで突入する特殊CZ。 突入した時点でアクダマボーナス以上濃厚で、5G以内にランクアップに成功すれば恩恵がエピソードボーナスに昇格＆5Gが再セットされる。次の5Gで再びランクアップに成功すると上位AT（エピソードボーナス経由）突入濃厚だ。</p>
-<h4><span id="i-31">運命チャンス性能</span></h4>
+<h4>運命チャンス性能</h4>
 <table>
 <thead>
 <tr>
@@ -1216,7 +1202,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-32">ランクアップ当選率</span></h4>
+<h4>ランクアップ当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1249,7 +1235,7 @@
 </tbody>
 </table>
 <p>「ランクアップ」 2択チャレンジ時にアクダマ目停止でランクアップ濃厚。 ランクアップ抽選は悪揃いなどでもおこなわれる。</p>
-<h4><span id="CZCZ">フェーズ経由のCZ当選時・CZ種別振り分け</span></h4>
+<h4>フェーズ経由のCZ当選時・CZ種別振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1276,9 +1262,9 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-33">カンサイ教育番組</span></summary><div class="kaiseki-subsection-body">
+<h3>カンサイ教育番組</h3>
 <p>111G・333G・666G付近で移行する特殊ステージ。 フェーズ昇格やCZ直行の可能性がある。</p>
-<h4><span id="i-34">カンサイ教育番組性能</span></h4>
+<h4>カンサイ教育番組性能</h4>
 <table>
 <thead>
 <tr>
@@ -1301,7 +1287,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-35">獲得報酬ごとの継続ゲーム数振り分け</span></h4>
+<h4>獲得報酬ごとの継続ゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1337,7 +1323,7 @@
 </tbody>
 </table>
 <p>カンサイ教育番組のゲーム数が長いほど上位報酬獲得の期待度がアップ。消化中の悪揃いとチャンス目では、当選しているフェーズを1段階昇格させる抽選をおこなう。</p>
-<h4><span id="1">カンサイ教育番組消化中・フェーズ1段階昇格率</span></h4>
+<h4>カンサイ教育番組消化中・フェーズ1段階昇格率</h4>
 <table>
 <thead>
 <tr>
@@ -1356,11 +1342,11 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-36">アイテム</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-37">アイテム解説</span></h4>
+<h3>アイテム</h3>
+<h4>アイテム解説</h4>
 <p>一般人自宅ステージやアクダマボーナス中の抽選でアイテムを獲得する可能性あり。アイテムは3種類で、獲得アイテムはそれぞれの使用タイミングまで液晶右下に保持される。</p>
 <p>※ボーナス中は上乗せハンコのみ獲得</p>
-<h4><span id="i-38">アイテムの効果</span></h4>
+<h4>アイテムの効果</h4>
 <table>
 <thead>
 <tr>
@@ -1382,8 +1368,8 @@
 <p>［HOLDハンコ］</p>
 <p>［上乗せハンコ］ ハンコを複数獲得時などは、リール下のアイコンの色が変化することで上乗せゲーム数を示唆。 青＜緑＜赤の順にゲーム数が多い可能性が高い。</p>
 <p>［超S級ハンコ］</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-39">フリーズ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-40">ロングフリーズ性能</span></h4>
+<h3>フリーズ</h3>
+<h4>ロングフリーズ性能</h4>
 <table>
 <thead>
 <tr>
@@ -1399,14 +1385,14 @@
 </tbody>
 </table>
 <p>チャンス目成立時の一部でロングフリーズが発生。当選時は前兆を経由してエピソードボーナスが告知される。 エピソードボーナス後は極悪ドライブへ突入するので、上位ATも濃厚だ。</p>
-<h4><span id="i-41">ロングフリーズ動画</span></h4>
+<h4>ロングフリーズ動画</h4>
 <p>通常時のチャンス目の一部でロングフリーズが発生。</p>
-<p>エピソードボーナス＋極悪ドライブを経由して上位ATへ直行する。</p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-42">解析情報ボーナス時</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-43">ボーナス</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-44">アクダマボーナス</span></h4>
+<p>エピソードボーナス＋極悪ドライブを経由して上位ATへ直行する。</p>
+<h2>解析情報ボーナス時</h2>
+<h3>ボーナス</h3>
+<h4>アクダマボーナス</h4>
 <p>初当りのメインとなるボーナス。ボーナス中はアイテム「上乗せハンコ」の獲得を抽選していて、獲得時はATの初期ゲーム数を加算。 ボーナス終了後は必ずSTへ移行する。</p>
-<h4><span id="i-45">アクダマボーナス性能</span></h4>
+<h4>アクダマボーナス性能</h4>
 <table>
 <thead>
 <tr>
@@ -1434,9 +1420,9 @@
 </tbody>
 </table>
 <p>「上乗せハンコ獲得」 獲得した上乗せハンコは液晶右下にアイコンで表示され、獲得したアイテムは使用するまでなくならない（AT突入まで保持）。色で上乗せゲーム数が示唆される（青＜緑＜赤の順に大量上乗せのチャンス）。</p>
-<h4><span id="i-46">エピソードボーナス</span></h4>
+<h4>エピソードボーナス</h4>
 <p>AT突入濃厚のボーナスで、消化中はATゲーム数の上乗せを抽選。エピソードの種類で移行先が示唆される。</p>
-<h4><span id="i-47">エピソードボーナス性能</span></h4>
+<h4>エピソードボーナス性能</h4>
 <table>
 <thead>
 <tr>
@@ -1471,7 +1457,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-48">エピソードごとの恩恵</span></h4>
+<h4>エピソードごとの恩恵</h4>
 <table>
 <thead>
 <tr>
@@ -1502,7 +1488,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-49">ボーナススルー回数振り分け</span></h4>
+<h4>ボーナススルー回数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1526,11 +1512,11 @@
 </tbody>
 </table>
 <p>設定変更時・ST（処刑課バトル）終了時は、共通の数値でボーナススルー回数天井が抽選される。</p>
-<h4><span id="i-50">ボーナス種別昇格当選率</span></h4>
+<h4>ボーナス種別昇格当選率</h4>
 <p>アクダマボーナス当選時は設定に応じてエピソードボーナスへの昇格を抽選する。</p>
-<h4><span id="i-51">エピソードボーナス当選時・極悪ドライブ当選率</span></h4>
+<h4>エピソードボーナス当選時・極悪ドライブ当選率</h4>
 <p>エピソードボーナス当選時に極悪ドライブを抽選。当選時はボーナス終了後に極悪ドライブへ移行する。</p>
-<h4><span id="AT">ATゲーム数上乗せ当選率</span></h4>
+<h4>ATゲーム数上乗せ当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1567,10 +1553,10 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="STSST">デッドオアアライブ（ST）・超S級デッドオアアライブ（上位ST）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="ST">ST概要</span></h4>
+<h3>デッドオアアライブ（ST）・超S級デッドオアアライブ（上位ST）</h3>
+<h4>ST概要</h4>
 <p>アクダマボーナス後は必ずSTに突入。継続ゲーム数は9Gで、成立役に応じたAT抽選がおこなわれる。 AT終了後は必ずSTへ突入するので、STとATのループで出玉を増やすゲーム性だ。</p>
-<h4><span id="ST-2">ST性能</span></h4>
+<h4>ST性能</h4>
 <table>
 <thead>
 <tr>
@@ -1601,7 +1587,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="AT-2">AT当選期待度序列</span></h4>
+<h4>AT当選期待度序列</h4>
 <table>
 <thead>
 <tr>
@@ -1634,9 +1620,9 @@
 </table>
 <p>「カットイン発生でチャンス」 赤ならAT当選の大チャンス、金は特化ゾーン＋上位AT!?</p>
 <p>「最終ゲームの2択チャレンジ」 ST最終ゲームは2択チャレンジ発生の可能性あり。 2択に正解し、アクダマ目が止まればAT濃厚だ。</p>
-<h4><span id="ST-3">上位ST概要</span></h4>
+<h4>上位ST概要</h4>
 <p>成功で上位ATとなるST。成功期待度が約80%と高く、一度上位STに突入した場合は失敗まで上位STと上位ATがループする。</p>
-<h4><span id="ST-4">上位ST性能</span></h4>
+<h4>上位ST性能</h4>
 <table>
 <thead>
 <tr>
@@ -1659,7 +1645,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="AT-3">上位AT当選期待度</span></h4>
+<h4>上位AT当選期待度</h4>
 <table>
 <thead>
 <tr>
@@ -1691,7 +1677,7 @@
 </tbody>
 </table>
 <p>「上位ST中の2択チャレンジ」 上位ST中の2択チャレンジの一部で極悪2択が発生。極悪2択は発生した時点でAT濃厚かつ、正解した場合は超極悪ドライブに突入する。</p>
-<h4><span id="ATAT">AT告知ゲームの小役別・ATゲーム数上乗せ当選率</span></h4>
+<h4>AT告知ゲームの小役別・ATゲーム数上乗せ当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1728,10 +1714,10 @@
 </table>
 <p>※残り2G以下（最後のキャラ）での成功時を除く</p>
 <p>STをレア役以外で成功させた場合、AT告知ゲームで悪揃いやレア役を引くとATゲーム数の上乗せを抽選する。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="ST-5">処刑課バトル（強ST）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-52">処刑課バトル概要</span></h4>
+<h3>処刑課バトル（強ST）</h3>
+<h4>処刑課バトル概要</h4>
 <p>ST突入時の一部で移行する特殊なCZで、成功すれば特化ゾーンを経由して上位ATへ突入する。 大きくメインパートとハイモードの2つの状態に分かれていて、メインパート中は成立役に応じてハイモードへの移行を抽選。ハイモード中に上位AT当選を目指すというゲーム性だ。</p>
-<h4><span id="i-53">処刑課バトル性能</span></h4>
+<h4>処刑課バトル性能</h4>
 <table>
 <thead>
 <tr>
@@ -1760,7 +1746,7 @@
 <p>7セット目は突入濃厚（設定変更時は5セット目で突入濃厚）</p>
 <p>処刑課バトルは獲得枚数とセット数に応じて抽選。セット数よりも、獲得枚数を契機に突入するケースの方が多い。</p>
 <p>「メインパート」 小役入賞でハイモード移行のチャンス。</p>
-<h4><span id="i-54">メインパート中の抽選内容</span></h4>
+<h4>メインパート中の抽選内容</h4>
 <table>
 <thead>
 <tr>
@@ -1799,7 +1785,7 @@
 </table>
 <p>基本はハイモードを抽選するが、上位AT直撃の可能性もあり。運命揃いは上位AT直撃濃厚となる。</p>
 <p>「ハイモード」 ハイモードは3G固定で、消化中はメインパートのゲーム数減算がストップ。登場キャラによって成功期待度が変化する。</p>
-<h4><span id="i-55">キャラごとの性能</span></h4>
+<h4>キャラごとの性能</h4>
 <table>
 <thead>
 <tr>
@@ -1825,7 +1811,7 @@
 <p>［喧嘩屋］</p>
 <p>［運び屋］</p>
 <p>［キラー］</p>
-<h4><span id="i-56">ハイモード非経由の成功当選率</span></h4>
+<h4>ハイモード非経由の成功当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1849,7 +1835,7 @@
 </tbody>
 </table>
 <p>基本はハイモードへ移行させてST当選を目指すが、悪揃いとレア役は直撃抽選（ハイモード非経由で成功）もおこなう。運命揃いなら成功濃厚＋上乗せ80Gを獲得できる。</p>
-<h4><span id="i-57">ハイモード移行率</span></h4>
+<h4>ハイモード移行率</h4>
 <table>
 <thead>
 <tr>
@@ -1881,7 +1867,7 @@
 </tbody>
 </table>
 <p>ベルでチャンス、レア役は移行濃厚。</p>
-<h4><span id="i-58">ハイモードのキャラ振り分け</span></h4>
+<h4>ハイモードのキャラ振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1913,7 +1899,7 @@
 </tbody>
 </table>
 <p>悪揃いやレア役でのハイモード移行時は上位のキャラが選択されやすい。</p>
-<h4><span id="i-59">ハイモード中・キャラごとの成功当選率</span></h4>
+<h4>ハイモード中・キャラごとの成功当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1956,7 +1942,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-60">処刑課バトルの継続抽選当選率</span></h4>
+<h4>処刑課バトルの継続抽選当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1972,10 +1958,10 @@
 </tbody>
 </table>
 <p>処刑課バトルのゲーム数を消化した後はハズレ（1枚役）時に継続を抽選する。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="ATSAT">アクダマドライブ（AT）・超S級アクダマドライブ（上位AT）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="AT-4">AT概要</span></h4>
+<h3>アクダマドライブ（AT）・超S級アクダマドライブ（上位AT）</h3>
+<h4>AT概要</h4>
 <p>30G＋α（2連目以降は20G＋α）のゲーム数上乗せ型AT。 消化中はゲーム数上乗せ抽選やブースト高確、ブーストゾーンを抽選する。</p>
-<h4><span id="AT-5">AT性能</span></h4>
+<h4>AT性能</h4>
 <table>
 <thead>
 <tr>
@@ -2002,7 +1988,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-61">おもな抽選内容</span></h4>
+<h4>おもな抽選内容</h4>
 <table>
 <thead>
 <tr>
@@ -2030,7 +2016,7 @@
 </tbody>
 </table>
 <p>「BARを狙え」 BARが揃えば上乗せ濃厚。カットインの色で期待度が変化する。</p>
-<h4><span id="i-62">カットイン色ごとの期待度</span></h4>
+<h4>カットイン色ごとの期待度</h4>
 <table>
 <thead>
 <tr>
@@ -2053,9 +2039,9 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-63">ブースト高確</span></h4>
+<h4>ブースト高確</h4>
 <p>悪揃いやチャンス目で移行する可能性があるブーストゾーンの高確率状態。滞在中にアクダマ目が停止（基本的に2択チャレンジ成功）すればブーストゾーン突入濃厚だ。</p>
-<h4><span id="i-64">ブースト高確</span></h4>
+<h4>ブースト高確</h4>
 <table>
 <thead>
 <tr>
@@ -2079,7 +2065,7 @@
 </tbody>
 </table>
 <p>ブースト高確中にATゲーム数が0になった場合でも、ブースト高確のゲーム数を消費しきるまでATが継続する。</p>
-<h4><span id="i-65">ブースト高確移行率</span></h4>
+<h4>ブースト高確移行率</h4>
 <table>
 <thead>
 <tr>
@@ -2103,9 +2089,9 @@
 </tbody>
 </table>
 <p>「アクダマ目」 ブースト高確中のアクダマ目の確率は1/5.9。基本的には2択当てになるが、正解のナビ（1択ナビ）が出ることもある。</p>
-<h4><span id="i-66">ブーストゾーン</span></h4>
+<h4>ブーストゾーン</h4>
 <p>5or7or10G継続の上乗せ特化ゾーン。アクダマ目停止でATゲーム数が上乗せされる（アクダマ目は完全ナビ）。</p>
-<h4><span id="i-67">ブーストゾーン性能</span></h4>
+<h4>ブーストゾーン性能</h4>
 <table>
 <thead>
 <tr>
@@ -2133,7 +2119,7 @@
 </tbody>
 </table>
 <p>「ゲーム上乗せ」 滞在中はアクダマ目が完全にナビされるので、1/5.9以上で上乗せが発生する。 アクダマ目停止で＋5G以上、連続で停止した時は＋20G以上濃厚（アクダマ上乗せ）。悪揃いでも上乗せのチャンス、チャンス目は上乗せ濃厚だ。</p>
-<h4><span id="i-68">［アクダマ目］上乗せゲーム数振り分け</span></h4>
+<h4>［アクダマ目］上乗せゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2153,7 +2139,7 @@
 </tbody>
 </table>
 <p>※アクダマ目2連時はアクダマ上乗せ発生</p>
-<h4><span id="i-69">アクダマ上乗せ性能</span></h4>
+<h4>アクダマ上乗せ性能</h4>
 <table>
 <thead>
 <tr>
@@ -2206,7 +2192,7 @@
 </tbody>
 </table>
 <p>ブーストゾーン中にアクダマ目が連続して停止した場合や、（超）極悪ドライブ中のアクダマ目停止時にアクダマ上乗せが発生。上乗せゲーム数は20〜300Gで、登場キャラによって期待度が変化する。</p>
-<h4><span id="i-70">アクダマ上乗せ当選時の上乗せゲーム数振り分け</span></h4>
+<h4>アクダマ上乗せ当選時の上乗せゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2250,7 +2236,7 @@
 </tbody>
 </table>
 <p>※ハッカー上乗せを除く</p>
-<h4><span id="i-71">ハッカー上乗せの上乗せゲーム数振り分け</span></h4>
+<h4>ハッカー上乗せの上乗せゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2284,9 +2270,9 @@
 <p>［運び屋］</p>
 <p>［キラー］</p>
 <p>［詐欺師］ その他キャラのアクダマ上乗せ発生後、詐欺師が割り込んできて3桁上乗せに書き換えるパターンもある。</p>
-<h4><span id="i-72">ベルフリーズ</span></h4>
+<h4>ベルフリーズ</h4>
 <p>ベル揃い時の一部で発生する3桁上乗せ濃厚演出だ。</p>
-<h4><span id="i-73">ベルフリーズ性能</span></h4>
+<h4>ベルフリーズ性能</h4>
 <table>
 <thead>
 <tr>
@@ -2305,7 +2291,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-74">ベルフリーズ・上乗せゲーム数振り分け</span></h4>
+<h4>ベルフリーズ・上乗せゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2328,9 +2314,9 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="AT-6">上位AT概要</span></h4>
+<h4>上位AT概要</h4>
 <p>見た目と名称が異なる以外、消化中の抽選値等は通常のATと同じ。 終了後は必ず上位STへ移行するため、約80%で上位ATがループする。</p>
-<h4><span id="AT-7">上位AT性能</span></h4>
+<h4>上位AT性能</h4>
 <table>
 <thead>
 <tr>
@@ -2357,7 +2343,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-75">アクダマ目成立時・ナビ発生率</span></h4>
+<h4>アクダマ目成立時・ナビ発生率</h4>
 <table>
 <thead>
 <tr>
@@ -2382,7 +2368,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-76">アクダマ目停止時・ブーストゾーンゲーム数振り分け</span></h4>
+<h4>アクダマ目停止時・ブーストゾーンゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2405,7 +2391,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-77">レア役・上乗せゲーム数振り分け</span></h4>
+<h4>レア役・上乗せゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2438,7 +2424,7 @@
 </tbody>
 </table>
 <p>「BARを狙え」</p>
-<h4><span id="i-78">カットイン色ごとの示唆</span></h4>
+<h4>カットイン色ごとの示唆</h4>
 <table>
 <thead>
 <tr>
@@ -2462,7 +2448,7 @@
 </tbody>
 </table>
 <p>狙えカットイン発生時にBARが揃えばATゲーム数の上乗せ濃厚。カットインの色は途中で変化するパターンもある。</p>
-<h4><span id="BAR">BAR揃い時・上乗せゲーム数振り分け</span></h4>
+<h4>BAR揃い時・上乗せゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2489,10 +2475,10 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-79">（超）極悪ドライブ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-80">極悪ドライブ</span></h4>
+<h3>（超）極悪ドライブ</h3>
+<h4>極悪ドライブ</h4>
 <p>7G継続の上乗せ特化ゾーンで、毎ゲーム成立役に応じてATゲーム数の上乗せを抽選（最低でも5Gを上乗せ）。 アクダマ目停止時はアクダマ上乗せ濃厚で、終了後は必ず上位ATへ突入する。</p>
-<h4><span id="i-81">極悪ドライブ性能</span></h4>
+<h4>極悪ドライブ性能</h4>
 <table>
 <thead>
 <tr>
@@ -2533,9 +2519,9 @@
 </table>
 <p>「上乗せ」 アクダマ目停止時は必ずアクダマ上乗せが発生！</p>
 <p>「BARを狙え」 （超）極悪ドライブ中のBARを狙えはBAR揃い濃厚かつ、3桁上乗せ濃厚（金カットインのみ発生）。</p>
-<h4><span id="i-82">超極悪ドライブ</span></h4>
+<h4>超極悪ドライブ</h4>
 <p>継続ゲーム数が20Gになった、極悪ドライブの上位版。 毎ゲームで上乗せが発生、アクダマ目停止でアクダマ上乗せという基本的な仕様は極悪ドライブと同様だ。</p>
-<h4><span id="i-83">超極悪ドライブ性能</span></h4>
+<h4>超極悪ドライブ性能</h4>
 <table>
 <thead>
 <tr>
@@ -2570,7 +2556,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-84">上乗せゲーム数振り分け</span></h4>
+<h4>上乗せゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2650,8 +2636,8 @@
 </tbody>
 </table>
 <p>成立役に応じて、毎ゲーム5G以上を上乗せ。アクダマ目停止時はアクダマ上乗せが発生する。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-85">ツラヌキ・有利区間</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-86">ツラヌキ条件と恩恵</span></h4>
+<h3>ツラヌキ・有利区間</h3>
+<h4>ツラヌキ条件と恩恵</h4>
 <table>
 <thead>
 <tr>
@@ -2670,10 +2656,10 @@
 </tr>
 </tbody>
 </table>
-<p>［エンディング］</p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-87">演出情報</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-88">通常時</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-89">ステージの示唆</span></h4>
+<p>［エンディング］</p>
+<h2>演出情報</h2>
+<h3>通常時</h3>
+<h4>ステージの示唆</h4>
 <table>
 <thead>
 <tr>
@@ -2730,10 +2716,10 @@
 <p>［第参作戦室］ アクダマ集結よりも本前兆期待度が高いステージ。本前兆だった場合は処刑執行が選択されている可能性もアップする。</p>
 <p>［カントウ］</p>
 <p>［一般人自宅］</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="ST-6">ST関連</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="ST-7">STの演出モード</span></h4>
+<h3>ST関連</h3>
+<h4>STの演出モード</h4>
 <p>ボーナス終了画面or（上位）AT終了画面でPUSHボタンを長押しすると、STの演出モードを変更できる。</p>
-<h4><span id="ST-8">STの演出モード</span></h4>
+<h4>STの演出モード</h4>
 <table>
 <thead>
 <tr>
@@ -2752,7 +2738,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="STPUSH">ST終了画面（PUSH後）の示唆</span></h4>
+<h4>ST終了画面（PUSH後）の示唆</h4>
 <table>
 <thead>
 <tr>
@@ -2811,8 +2797,8 @@
 <p>［十字架］</p>
 <p>［ロケット］</p>
 <p>［絶対隔離領域］</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="AT-8">AT関連</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-90">搭載楽曲</span></h4>
+<h3>AT関連</h3>
+<h4>搭載楽曲</h4>
 <table>
 <thead>
 <tr>
@@ -2860,9 +2846,9 @@
 </tbody>
 </table>
 <p>（上位）AT中の全リール停止後に、十字キーの左右ボタンで楽曲の変更が可能。 ブーストゾーン・極悪ドライブ中は専用のBGMに変化。上乗せ100G以上獲得時も該当する楽曲（Lose control）に変化する。</p>
-<h4><span id="AT-9">ATセット開始画面</span></h4>
+<h4>ATセット開始画面</h4>
 <p>ATのセット開始画面には秘密あり!?</p>
-<h4><span id="AT-10">ATセット開始画面の示唆 （示唆要素のあるもののみ抜粋）</span></h4>
+<h4>ATセット開始画面の示唆 （示唆要素のあるもののみ抜粋）</h4>
 <table>
 <thead>
 <tr>
@@ -2909,9 +2895,9 @@
 <p>［後輩］</p>
 <p>［詐欺師］</p>
 <p>［兄妹］</p>
-<h4><span id="i-91">次回処刑課バトル示唆</span></h4>
+<h4>次回処刑課バトル示唆</h4>
 <p>ATの終了画面で表示される、「DEAD OR ALIVE」のロゴのパターンで、突入するSTが処刑課バトルである期待度を示唆する。</p>
-<h4><span id="i-92">ロゴパターンの示唆</span></h4>
+<h4>ロゴパターンの示唆</h4>
 <table>
 <thead>
 <tr>
@@ -2934,12 +2920,12 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-93">カスタム</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-94">ナビボイスカスタム</span></h4>
+<h3>カスタム</h3>
+<h4>ナビボイスカスタム</h4>
 <p>メニュー画面から押し順ナビ等のボイスを任意のキャラに変更できる。</p>
-<h4><span id="i-95">アクバレカスタム</span></h4>
+<h4>アクバレカスタム</h4>
 <p>アクダマ目成立時に先告知を発生させる先バレ的なカスタム。</p>
-<h4><span id="i-96">アクバレカスタム</span></h4>
+<h4>アクバレカスタム</h4>
 <table>
 <thead>
 <tr>
@@ -2969,10 +2955,10 @@
 <p>AT・上位AT中</p>
 <p>極悪ドライブ・超極悪ドライブ中</p>
 <p>「アクバレ」 専用の告知音に加え、停止ボタン左右にあるスピーカーの周囲にフラッシュが発生する（スピンフラッシュ）。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-97">裏ボタン</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="CZCZ-2">CZ失敗時のCZモード示唆</span></h4>
+<h3>裏ボタン</h3>
+<h4>CZ失敗時のCZモード示唆</h4>
 <p>CZ（多脚戦車バトル・処刑執行・アナライズチャレンジ）の終了画面でPUSHボタンを押すと、次回CZモードを示唆するボイスが発生する。</p>
-<h4><span id="CZ-5">CZ失敗時のボイスごとの示唆</span></h4>
+<h4>CZ失敗時のボイスごとの示唆</h4>
 <table>
 <thead>
 <tr>
@@ -3002,16 +2988,30 @@
 <td>モードC濃厚</td>
 </tr>
 </tbody>
-</table>
-<div class="post-views content-post post-2773 entry-meta load-static">
-				<span class="post-views-icon dashicons dashicons-chart-bar"></span> <span class="post-views-label">Post Views:</span> <span class="post-views-count">675</span>
-			</div></div></details></div></details>
-            </div>
-
-            <!-- 目次ハンバーガー（右下固定・常時）。中身はJSがセクションから生成 --></section>
+</table></section>
   
   
   </article></main>
 <footer class="foot">個人アーカイブ（suroschool.jp / たかどらのスロ塾 会員コンテンツ）・閲覧用</footer>
+
+<!-- スマホ用ボトムナビ（スクロールで隠れる/出る） -->
+<nav class="botnav" id="botnav">
+  <a href="../index.html" data-nav="index">🎰<span>機種</span></a>
+  <button id="searchOpen2">🔍<span>検索</span></button>
+  <a href="../index.html?fav=1">★<span>お気に入り</span></a>
+  <a href="../news.html">📰<span>お知らせ</span></a>
+  <a href="../tool.html">🧮<span>期待値</span></a>
+</nav>
+
+<!-- 全ページ横断の検索オーバーレイ -->
+<div class="search-overlay" id="searchOverlay" hidden>
+  <div class="search-head">
+    <input id="globalSearch" type="search" placeholder="機種名で検索…" autocomplete="off">
+    <button id="searchClose" aria-label="閉じる">✕</button>
+  </div>
+  <div id="searchResults" class="search-results"></div>
+</div>
+
+<script src="../assets/search-index.js"></script>
 <script src="../assets/app.js"></script>
 </body></html>

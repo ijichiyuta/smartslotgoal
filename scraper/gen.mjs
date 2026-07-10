@@ -45,7 +45,7 @@ const layout = (title, body, depth = 0, extraHead = '') => {
   return `<!DOCTYPE html><html lang="ja"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>${esc(title)} | スマスロ目標 (個人アーカイブ)</title>
+<title>${esc(title)} | スマスロ期待値 (個人アーカイブ)</title>
 <link rel="stylesheet" href="${root}assets/style.css">
 <link rel="manifest" href="${root}manifest.webmanifest">
 <meta name="theme-color" content="#ffffff">
@@ -54,19 +54,41 @@ const layout = (title, body, depth = 0, extraHead = '') => {
 <link rel="apple-touch-icon" href="${root}assets/icon.svg">
 <link rel="icon" href="${root}assets/icon.svg">
 <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('${root}sw.js').catch(function(){})});}</script>
+<script>window.__ROOT__='${root}';</script>
 ${extraHead}
 </head><body>
-<header class="topbar">
-  <a class="brand" href="${root}index.html">🎰 スマスロ目標</a>
-  <nav>
+<header class="topbar" id="topbar">
+  <a class="brand" href="${root}index.html">🎰 スマスロ期待値</a>
+  <nav class="topnav">
     <a href="${root}index.html">機種</a>
     <a href="${root}news.html">お知らせ</a>
     <a href="${root}tool.html">期待値計算</a>
     <a href="${root}pages.html">資料</a>
   </nav>
+  <button class="topbar-search" id="searchOpen" aria-label="検索">🔍</button>
 </header>
 <main>${body}</main>
-<footer class="foot">個人アーカイブ（suroschool.jp / たかどらのスロ塾 会員コンテンツ）・${new Date().getFullYear ? '' : ''}閲覧用</footer>
+<footer class="foot">個人アーカイブ（suroschool.jp / たかどらのスロ塾 会員コンテンツ）・閲覧用</footer>
+
+<!-- スマホ用ボトムナビ（スクロールで隠れる/出る） -->
+<nav class="botnav" id="botnav">
+  <a href="${root}index.html" data-nav="index">🎰<span>機種</span></a>
+  <button id="searchOpen2">🔍<span>検索</span></button>
+  <a href="${root}index.html?fav=1">★<span>お気に入り</span></a>
+  <a href="${root}news.html">📰<span>お知らせ</span></a>
+  <a href="${root}tool.html">🧮<span>期待値</span></a>
+</nav>
+
+<!-- 全ページ横断の検索オーバーレイ -->
+<div class="search-overlay" id="searchOverlay" hidden>
+  <div class="search-head">
+    <input id="globalSearch" type="search" placeholder="機種名で検索…" autocomplete="off">
+    <button id="searchClose" aria-label="閉じる">✕</button>
+  </div>
+  <div id="searchResults" class="search-results"></div>
+</div>
+
+<script src="${root}assets/search-index.js"></script>
 <script src="${root}assets/app.js"></script>
 </body></html>`;
 };
@@ -240,9 +262,13 @@ fs.writeFileSync(path.join(SITE, 'assets', 'icon.svg'), icon);
 fs.writeFileSync(path.join(SITE, 'robots.txt'), 'User-agent: *\nDisallow: /\n');
 fs.writeFileSync(path.join(SITE, '.nojekyll'), '');
 
+// 全ページ横断検索用インデックス（機種名＋ふりがな）
+const searchIndex = machines.map(m => ({ t: m.title, u: 'm/' + fnameFor(m), k: m.has_kaiseki ? 1 : 0, s: dashMap[m.slug] ? 1 : 0 }));
+fs.writeFileSync(path.join(SITE, 'assets', 'search-index.js'), 'window.__SEARCH__=' + JSON.stringify(searchIndex) + ';');
+
 // ===== manifest =====
 const manifest = {
-  name: 'スマスロ目標（個人アーカイブ）', short_name: 'スマスロ目標',
+  name: 'スマスロ期待値（個人アーカイブ）', short_name: 'スマスロ期待値',
   start_url: './index.html', scope: './', display: 'standalone',
   background_color: '#ffffff', theme_color: '#ffffff', lang: 'ja',
   icons: [{ src: 'assets/icon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any' }],

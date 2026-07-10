@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="ja"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>ログイン | スマスロ目標 (個人アーカイブ)</title>
+<title>ログイン | スマスロ期待値 (個人アーカイブ)</title>
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="manifest" href="../manifest.webmanifest">
 <meta name="theme-color" content="#ffffff">
@@ -10,19 +10,314 @@
 <link rel="apple-touch-icon" href="../assets/icon.svg">
 <link rel="icon" href="../assets/icon.svg">
 <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){})});}</script>
+<script>window.__ROOT__='../';</script>
 
 </head><body>
-<header class="topbar">
-  <a class="brand" href="../index.html">🎰 スマスロ目標</a>
-  <nav>
+<header class="topbar" id="topbar">
+  <a class="brand" href="../index.html">🎰 スマスロ期待値</a>
+  <nav class="topnav">
     <a href="../index.html">機種</a>
     <a href="../news.html">お知らせ</a>
     <a href="../tool.html">期待値計算</a>
     <a href="../pages.html">資料</a>
   </nav>
+  <button class="topbar-search" id="searchOpen" aria-label="検索">🔍</button>
 </header>
 <main><article class="post"><a class="back" href="../pages.html">← 資料一覧</a>
-  <h1>ログイン</h1><div class="content"></div></article></main>
+  <h1>ログイン</h1><div class="content">
+<div id="ez-toc-container" class="ez-toc-v2_0_85 counter-hierarchy ez-toc-counter ez-toc-black ez-toc-container-direction">
+<div class="ez-toc-title-container">
+<p class="ez-toc-title" style="cursor:inherit">Table of Contents</p>
+<span class="ez-toc-title-toggle"><a href="#" class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle" aria-label="Toggle Table of Content"><span class="ez-toc-js-icon-con"><span class=""><span class="eztoc-hide" style="display:none;">Toggle</span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg" class="list-377408" width="20px" height="20px" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"></path></svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 24 24" version="1.2" baseProfile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"/></svg></span></span></span></a></span></div>
+<nav><ul class='ez-toc-list ez-toc-list-level-1 ' ><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-1" href="https://suroschool.jp/simple-login/#%F0%9F%9B%A0%EF%B8%8F_%E7%84%A1%E6%96%99%E3%81%A7%E4%BD%BF%E3%81%88%E3%82%8B%E3%83%84%E3%83%BC%E3%83%AB%E4%B8%80%E8%A6%A7" >🛠️ 無料で使えるツール一覧</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-2" href="https://suroschool.jp/simple-login/#%F0%9F%93%B1_iOS%E3%82%A2%E3%83%97%E3%83%AA%EF%BC%88%E7%84%A1%E6%96%99%EF%BC%89" >📱 iOSアプリ（無料）</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-3" href="https://suroschool.jp/simple-login/#%F0%9F%92%BB_Web%E3%83%84%E3%83%BC%E3%83%AB%EF%BC%88%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E3%81%A7%E4%BD%BF%E3%81%88%E3%82%8B%EF%BC%89" >💻 Webツール（ブラウザで使える）</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-4" href="https://suroschool.jp/simple-login/#%E3%81%9F%E3%81%8B%E3%81%A9%E3%82%89%E3%81%AE%E3%82%B9%E3%83%AD%E5%A1%BE_%E3%83%A1%E3%83%B3%E3%83%90%E3%83%BC%E3%82%B7%E3%83%83%E3%83%97" >たかどらのスロ塾 メンバーシップ</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-5" href="https://suroschool.jp/simple-login/#%E3%81%9F%E3%81%8B%E3%81%A9%E3%82%89%E3%81%AE%E3%82%B9%E3%83%AD%E5%A1%BE_%E5%88%A9%E7%94%A8%E3%83%BB%E5%85%A5%E4%BC%9A%E6%96%B9%E6%B3%95" >たかどらのスロ塾 利用・入会方法</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-6" href="https://suroschool.jp/simple-login/#%E5%85%A5%E4%BC%9A%E6%96%B9%E6%B3%95" >入会方法</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-7" href="https://suroschool.jp/simple-login/#Discord%E9%96%B2%E8%A6%A7%E6%96%B9%E6%B3%95" >Discord閲覧方法</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-8" href="https://suroschool.jp/simple-login/#%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E9%96%B2%E8%A6%A7%E6%96%B9%E6%B3%95" >ホームページ閲覧方法</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-9" href="https://suroschool.jp/simple-login/#%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AE%E5%88%A9%E7%94%A8%E6%96%B9%E6%B3%95" >ホームページの利用方法</a></li></ul></li></ul></nav></div>
+<h2 class="wp-block-heading"><span class="ez-toc-section" id="%F0%9F%9B%A0%EF%B8%8F_%E7%84%A1%E6%96%99%E3%81%A7%E4%BD%BF%E3%81%88%E3%82%8B%E3%83%84%E3%83%BC%E3%83%AB%E4%B8%80%E8%A6%A7"></span>🛠️ 無料で使えるツール一覧<span class="ez-toc-section-end"></span></h2>
+
+
+<style>
+        .suro-tool-list-wrapper { margin: 0; }
+        .suro-tool-section-heading {
+            font-size: 0.75rem !important; font-weight: 700 !important; margin: 1.2em 0 0.6em !important;
+            padding: 0 0 0.4em !important; border-bottom: 1px solid rgba(245,184,0,0.25) !important;
+            border-left: none !important; background: none !important;
+            color: #f5b800 !important; letter-spacing: 0.05em;
+        }
+        .suro-tool-section-heading:first-child { margin-top: 0 !important; }
+        .suro-tool-scroll-wrap {
+            position: relative !important;
+        }
+        .suro-tool-scroll-wrap::after {
+            content: "" !important;
+            position: absolute !important;
+            right: 0 !important; top: 0 !important; bottom: 8px !important;
+            width: 56px !important;
+            background: linear-gradient(to right, transparent, var(--overlay-fade)) !important;
+            pointer-events: none !important;
+            transition: opacity 0.25s !important;
+            z-index: 1 !important;
+        }
+        .suro-tool-scroll-arrow {
+            position: absolute !important;
+            right: 6px !important;
+            top: 50% !important;
+            transform: translateY(-60%) !important;
+            width: 26px !important; height: 26px !important;
+            background: rgba(245,184,0,0.15) !important;
+            border: 1px solid rgba(245,184,0,0.5) !important;
+            border-radius: 50% !important;
+            display: flex !important; align-items: center !important; justify-content: center !important;
+            color: #f5b800 !important;
+            font-size: 0.85rem !important;
+            pointer-events: none !important;
+            transition: opacity 0.25s !important;
+            z-index: 2 !important;
+        }
+        .suro-tool-scroll-wrap.is-end::after,
+        .suro-tool-scroll-wrap.is-end .suro-tool-scroll-arrow {
+            opacity: 0 !important;
+        }
+        .suro-tool-grid {
+            list-style: none !important; padding: 0 0 8px !important; margin: 0 !important;
+            display: flex !important;
+            flex-direction: row !important;
+            flex-wrap: nowrap !important;
+            gap: 8px !important;
+            overflow-x: auto !important;
+            -webkit-overflow-scrolling: touch !important;
+            scrollbar-width: none !important;
+        }
+        .suro-tool-grid::-webkit-scrollbar { display: none !important; }
+        .suro-tool-item {
+            background: var(--bg-card-hi) !important; padding: 0 !important; border-radius: 8px !important;
+            border: 1px solid rgba(245,184,0,0.15) !important;
+            transition: border-color 0.15s !important;
+            text-align: center !important; margin: 0 !important; overflow: hidden !important;
+            flex: 0 0 100px !important; width: 100px !important;
+        }
+        .suro-tool-item:hover { border-color: rgba(245,184,0,0.45) !important; }
+        .suro-tool-item a { text-decoration: none !important; color: var(--text-main) !important; display: block !important; padding: 8px 6px !important; }
+        .suro-tool-item a:hover { color: var(--text-main) !important; }
+        .suro-tool-thumb {
+            width: 100% !important; aspect-ratio: 1/1; object-fit: cover !important;
+            border-radius: 4px !important; margin-bottom: 6px !important; display: block !important;
+            background: var(--bg-white);
+        }
+        .suro-tool-noimg {
+            width: 100% !important; aspect-ratio: 1/1; background: var(--bg-white) !important; border-radius: 4px !important;
+            margin-bottom: 6px !important; color: var(--text-light) !important; font-size: 0.8em !important;
+            display: flex !important; align-items: center !important; justify-content: center !important;
+        }
+        .suro-tool-title {
+            display: block !important; font-size: 0.68rem !important; font-weight: 600 !important;
+            overflow-wrap: break-word !important; word-break: break-word !important;
+            line-height: 1.3 !important; color: var(--text-main) !important;
+        }
+        .suro-tool-badge {
+            display: inline-block !important; font-size: 0.6rem !important; font-weight: 700 !important;
+            background: #0070c9 !important; color: #fff !important;
+            border-radius: 3px !important; padding: 1px 5px !important;
+            margin-bottom: 4px !important; letter-spacing: 0.03em !important;
+        }
+    </style><div class="suro-tool-list-wrapper"><h3 class="suro-tool-section-heading"><span class="ez-toc-section" id="%F0%9F%93%B1_iOS%E3%82%A2%E3%83%97%E3%83%AA%EF%BC%88%E7%84%A1%E6%96%99%EF%BC%89"></span>📱 iOSアプリ（無料）<span class="ez-toc-section-end"></span></h3><div class="suro-tool-scroll-wrap" data-grid="suro-grid-1"><ul class="suro-tool-grid" id="suro-grid-1"><li class="suro-tool-item"><a href="https://apps.apple.com/us/app/slot-%E5%B0%8F%E5%BD%B9%E3%82%AB%E3%82%A6%E3%83%B3%E3%82%BF%E3%83%BC/id6761108082" target="_blank" rel="noopener"><img class="suro-tool-thumb" src="../img/d3cdd6ed27c66a33.png" alt="スロ塾のながらカウンター" loading="lazy" decoding="async" width="200" height="150" /><span class="suro-tool-badge">App Store</span><span class="suro-tool-title">スロ塾のながらカウンター</span></a></li><li class="suro-tool-item"><a href="https://apps.apple.com/us/app/%E3%82%B9%E3%83%AD%E3%82%B7%E3%82%A7%E3%82%A2/id6761332385" target="_blank" rel="noopener"><img class="suro-tool-thumb" src="../img/ac05917e5d4eb14e.png" alt="スロシェア（台情報共有）" loading="lazy" decoding="async" width="200" height="150" /><span class="suro-tool-badge">App Store</span><span class="suro-tool-title">スロシェア（台情報共有）</span></a></li><li class="suro-tool-item"><a href="https://apps.apple.com/jp/app/%E3%82%B9%E3%83%ADunit%E7%B0%BF/id6761616758" target="_blank" rel="noopener"><img class="suro-tool-thumb" src="../img/30e63c797d6939c5.png" alt="スロunit簿（収支管理）" loading="lazy" decoding="async" width="200" height="150" /><span class="suro-tool-badge">App Store</span><span class="suro-tool-title">スロunit簿（収支管理）</span></a></li></ul><div class="suro-tool-scroll-arrow">›</div></div><h3 class="suro-tool-section-heading"><span class="ez-toc-section" id="%F0%9F%92%BB_Web%E3%83%84%E3%83%BC%E3%83%AB%EF%BC%88%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E3%81%A7%E4%BD%BF%E3%81%88%E3%82%8B%EF%BC%89"></span>💻 Webツール（ブラウザで使える）<span class="ez-toc-section-end"></span></h3><div class="suro-tool-scroll-wrap" data-grid="suro-grid-2"><ul class="suro-tool-grid" id="suro-grid-2"><li class="suro-tool-item"><a href="https://appokiai.suroschool.jp/" target="_blank" rel="noopener"><img class="suro-tool-thumb" src="../img/fc3517921c428c5f.png" alt="沖ドキシリーズ有利区間算出" loading="lazy" decoding="async" width="200" height="150" /><span class="suro-tool-title">沖ドキシリーズ有利区間算出</span></a></li><li class="suro-tool-item"><a href="https://suroschool.jp/hanbetuokidoki.html" target="_blank" rel="noopener"><img class="suro-tool-thumb" src="../img/3c2026280e548d23.png" alt="沖ドキリセット分析" loading="lazy" decoding="async" width="200" height="150" /><span class="suro-tool-title">沖ドキリセット分析</span></a></li><li class="suro-tool-item"><a href="https://suroschool.jp/nikutool.html" target="_blank" rel="noopener"><img class="suro-tool-thumb" src="../img/2a2531a6afa95c0c.png" alt="キン肉マンspカウント" loading="lazy" decoding="async" width="200" height="150" /><span class="suro-tool-title">キン肉マンspカウント</span></a></li><li class="suro-tool-item"><a href="https://suroschool.jp/CoinTracker.html" target="_blank" rel="noopener"><img class="suro-tool-thumb" src="../img/12c2dbf6286dcd30.png" alt="現在差枚推測" loading="lazy" decoding="async" width="200" height="150" /><span class="suro-tool-title">現在差枚推測</span></a></li><li class="suro-tool-item"><a href="https://suroschool.jp/slot-simulator.html" target="_blank" rel="noopener"><img class="suro-tool-thumb" src="../img/8e082da83e11afbe.png" alt="収支シミュレーション" loading="lazy" decoding="async" width="200" height="150" /><span class="suro-tool-title">収支シミュレーション</span></a></li><li class="suro-tool-item"><a href="https://suroschool.jp/chibariyo-2.html" target="_blank" rel="noopener"><img class="suro-tool-thumb" src="../img/add77923ba3e94a5.png" alt="チバリヨ2チェリッカー" loading="lazy" decoding="async" width="200" height="150" /><span class="suro-tool-title">チバリヨ2チェリッカー</span></a></li><li class="suro-tool-item"><a href="https://suroschool.jp/slot-ev.html" target="_blank" rel="noopener"><img class="suro-tool-thumb" src="../img/687b8d752d340ee4.png" alt="抽選参加期待値算出" loading="lazy" decoding="async" width="200" height="150" /><span class="suro-tool-title">抽選参加期待値算出</span></a></li><li class="suro-tool-item"><a href="https://suroschool.jp/toloveltool.html" target="_blank" rel="noopener"><img class="suro-tool-thumb" src="../img/15a9411a63002f55.png" alt="とらぶるどきどきptカウンター" loading="lazy" decoding="async" width="200" height="150" /><span class="suro-tool-title">とらぶるどきどきptカウンター</span></a></li><li class="suro-tool-item"><a href="https://suroschool.jp/lmonkey.html" target="_blank" rel="noopener"><img class="suro-tool-thumb" src="../img/a6781e745e1b35f1.png" alt="モンキーターンv設定判別" loading="lazy" decoding="async" width="200" height="150" /><span class="suro-tool-title">モンキーターンv設定判別</span></a></li><li class="suro-tool-item"><a href="https://suroschool.jp/hokutosamai.html" target="_blank" rel="noopener"><img class="suro-tool-thumb" src="../img/e0d556a5515bb933.png" alt="北斗差枚チェック" loading="lazy" decoding="async" width="200" height="150" /><span class="suro-tool-title">北斗差枚チェック</span></a></li><li class="suro-tool-item"><a href="https://godlove.suroschool.jp/" target="_blank" rel="noopener"><img class="suro-tool-thumb" src="../img/0265697fe10e8ffc.png" alt="GOD リーチ目検索（神々の軌跡）" loading="lazy" decoding="async" width="200" height="150" /><span class="suro-tool-title">GOD リーチ目検索（神々の軌跡）</span></a></li></ul><div class="suro-tool-scroll-arrow">›</div></div></div><script>
+(function(){
+  document.querySelectorAll(".suro-tool-scroll-wrap").forEach(function(wrap){
+    var grid = wrap.querySelector(".suro-tool-grid");
+    if(!grid) return;
+    function check(){
+      var atEnd = grid.scrollLeft + grid.clientWidth >= grid.scrollWidth - 8;
+      wrap.classList.toggle("is-end", atEnd);
+    }
+    check();
+    grid.addEventListener("scroll", check, {passive:true});
+    window.addEventListener("resize", check, {passive:true});
+  });
+})();
+</script>
+
+
+
+<p class="wp-block-paragraph">ログインパスワードが必要です。Discord閲覧パスワードと同じです。毎月1日にパスワードが更新されます。<br>パスワードはたかどらのスロ塾メンバーシップより取得可能です。<br>詳細は<a href="https://note.com/kingtqkq/n/nf3a417ce4c7b" target="_blank" rel="noreferrer noopener">こちら</a>をご覧ください。</p>
+
+
+<form method="post" class="simple-login-form-inline"><label for="custom_password">Pass：</label><input type="password" name="custom_password" id="custom_password" class="simple-login-input-inline"><input type="submit" value="ログイン" class="simple-login-submit-inline"></form>
+
+
+
+<h3 class="wp-block-heading"><span class="ez-toc-section" id="%E3%81%9F%E3%81%8B%E3%81%A9%E3%82%89%E3%81%AE%E3%82%B9%E3%83%AD%E5%A1%BE_%E3%83%A1%E3%83%B3%E3%83%90%E3%83%BC%E3%82%B7%E3%83%83%E3%83%97"></span>たかどらのスロ塾 メンバーシップ<span class="ez-toc-section-end"></span></h3>
+
+
+
+<p class="wp-block-paragraph"><strong>利用・入会ガイド</strong><a href="https://note.com/kingtqkq"></a></p>
+
+
+
+<h3 class="wp-block-heading" id="a3428b84-c776-4322-be1c-e8ab8eb102a2"><span class="ez-toc-section" id="%E3%81%9F%E3%81%8B%E3%81%A9%E3%82%89%E3%81%AE%E3%82%B9%E3%83%AD%E5%A1%BE_%E5%88%A9%E7%94%A8%E3%83%BB%E5%85%A5%E4%BC%9A%E6%96%B9%E6%B3%95"></span>たかどらのスロ塾 利用・入会方法<span class="ez-toc-section-end"></span></h3>
+
+
+
+<p class="wp-block-paragraph" id="7cc51a51-f47a-4cf8-b3b9-a5b06ba33c4e">たかどらのスロ塾は、ホームページとDiscordでスロットの狙い目情報をリアルタイムに共有するサービスです。Discordの入室方法や、ホームページの閲覧方法から入会手続きまで全体の流れを説明いたします。</p>
+
+
+
+<h3 class="wp-block-heading" id="7d1f9903-63a6-403a-8406-ccdc98c6a179"><span class="ez-toc-section" id="%E5%85%A5%E4%BC%9A%E6%96%B9%E6%B3%95"></span>入会方法<span class="ez-toc-section-end"></span></h3>
+
+
+
+<p class="wp-block-paragraph" id="d4379343-28d8-44ab-8b65-a8fd486b01ca">1. noteのメンバーシップに参加<br>　たかどらのスロ塾の会員になるには、noteにて「たかどらのスロ塾メンバーシップ」に参加（月額¥1,999）が必要です。メンバーシップを開始いただくと、毎月Discord入室パスワードとホームページログインパスワードを発行します。</p>
+
+
+
+<figure class="wp-block-embed"><div class="wp-block-embed__wrapper">
+https://note.com/kingtqkq/n/nf3a417ce4c7b
+</div></figure>
+
+
+
+<p class="wp-block-paragraph" id="e5097a2e-3522-4df6-9b73-961c689b1179">2. Discord入室パスワードの取得とログイン<br>　毎月発行されるDiscordの入室パスワードを受け取っていただき、指定のDiscordログインページにアクセスし、パスワードを入力してください。これにより、狙い目情報の閲覧や質問チャットの利用が可能になります。<br><br>3. ホームページの閲覧パスワードについて<br>　なお、ホームページの閲覧パスワードは、Discordの閲覧パスワードと同一となっておりますので、同じパスワードを用いてどちらの情報にもアクセスいただけます。</p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://suroschool.jp/" rel="noreferrer noopener" target="_blank"><strong>たかどらのスロ塾</strong><em></em><em>suroschool.jp</em></a><a href="https://suroschool.jp/" rel="noreferrer noopener" target="_blank"></a></p>
+
+
+
+<p class="wp-block-paragraph" id="f48ff155-3eb9-4087-840e-d3abf18525a9"><br>•&nbsp;<a href="https://note.com/kingtqkq/m/ma32fb4bc8013" target="_blank" rel="noreferrer noopener">マガジン単発購入はこちら</a> ←単発購入も可能です。<br></p>
+
+
+
+<h3 class="wp-block-heading" id="5d4bb2d6-5d08-48f5-9f48-24ee43f44b29"><span class="ez-toc-section" id="Discord%E9%96%B2%E8%A6%A7%E6%96%B9%E6%B3%95"></span>Discord閲覧方法<span class="ez-toc-section-end"></span></h3>
+
+
+
+<p class="wp-block-paragraph" id="ed723756-20b7-4920-95e5-f933b006a86b">有料部分にあるDiscordへの招待URLから Discordサーバーへアクセスしてください。<br>その後#ログインはこちらから　のチャンネルをタップし入室します。</p>
+
+
+
+<figure class="wp-block-image" id="63dbb653-a107-47ee-a1eb-0f6cc1bd7230"><a href="https://assets.st-note.com/img/1741474398-vsTU9aiHhnQ4eByEGtbr58cp.jpg?width=2000&amp;height=2000&amp;fit=bounds&amp;quality=85"><img src="https://assets.st-note.com/img/1741474398-vsTU9aiHhnQ4eByEGtbr58cp.jpg?width=1200" alt="画像"/ loading="lazy" decoding="async"></a></figure>
+
+
+
+<p class="wp-block-paragraph" id="04dc0793-8524-48fe-8329-850bea977014">入室したら🚪のボタンをタップ</p>
+
+
+
+<figure class="wp-block-image" id="1804006c-884b-499d-97f7-cd641e05c109"><a href="https://assets.st-note.com/img/1741474398-VgUbYzNKCw2GF0ZcQX9DM4OH.jpg?width=2000&amp;height=2000&amp;fit=bounds&amp;quality=85"><img src="https://assets.st-note.com/img/1741474398-VgUbYzNKCw2GF0ZcQX9DM4OH.jpg?width=1200" alt="画像"/ loading="lazy" decoding="async"></a></figure>
+
+
+
+<p class="wp-block-paragraph" id="0e815dd4-ca51-4e6e-bec2-ca324e791501">そうするとこのような画面になりパスワード入力を求められます。ここで毎月発行されるパスワードを入力することでDiscordチャンス内を閲覧するメンバーロールが自動付与され全チャンネルが閲覧可能になります。</p>
+
+
+
+<figure class="wp-block-image" id="e351f608-ab69-4356-b5b7-260aecef6b58"><a href="https://assets.st-note.com/img/1741474398-qGiXS6c082ksjazEYFun4gQ9.jpg?width=2000&amp;height=2000&amp;fit=bounds&amp;quality=85"><img src="https://assets.st-note.com/img/1741474398-qGiXS6c082ksjazEYFun4gQ9.jpg?width=1200" alt="画像"/ loading="lazy" decoding="async"></a></figure>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<h3 class="wp-block-heading" id="a46e6c6b-11fe-457e-a3a1-0d3368dd1ccd"><span class="ez-toc-section" id="%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E9%96%B2%E8%A6%A7%E6%96%B9%E6%B3%95"></span>ホームページ閲覧方法<span class="ez-toc-section-end"></span></h3>
+
+
+
+<p class="wp-block-paragraph" id="d57a0d60-8501-4500-8aa3-457f39e96a03">ホームページへアクセス</p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://suroschool.jp/" rel="noreferrer noopener" target="_blank"><strong>Simple Login Page |</strong><em></em><em>suroschool.jp</em></a><a href="https://suroschool.jp/" rel="noreferrer noopener" target="_blank"></a></p>
+
+
+
+<figure class="wp-block-image" id="20465b44-29c6-49b5-865b-8268d7e1c397"><a href="https://assets.st-note.com/img/1741474108-W9I8sGVKxLfuJOr4ZlqDC6Qm.jpg?width=2000&amp;height=2000&amp;fit=bounds&amp;quality=85"><img src="https://assets.st-note.com/img/1741474108-W9I8sGVKxLfuJOr4ZlqDC6Qm.jpg?width=1200" alt="画像"/ loading="lazy" decoding="async"></a></figure>
+
+
+
+<p class="wp-block-paragraph" id="06ab3888-eca8-43d7-b346-3a047da3a3fa">所定箇所にパスワードを入力、ログインしてください。パスワードは毎月１日更新されます。<br>パスワード入力が成功しログインするとこのような画面になります。</p>
+
+
+
+<figure class="wp-block-image" id="6a519a69-3e0c-476f-8de1-3e8305c7e06a"><a href="https://assets.st-note.com/img/1741474295-td9W1H0oRS4u75pregJzaGMZ.jpg?width=2000&amp;height=2000&amp;fit=bounds&amp;quality=85"><img src="https://assets.st-note.com/img/1741474295-td9W1H0oRS4u75pregJzaGMZ.jpg?width=1200" alt="画像"/ loading="lazy" decoding="async"></a></figure>
+
+
+
+<p class="wp-block-paragraph" id="ab03c2fe-d806-495a-b4ed-44bd7ed597f7">Discordの利用方法</p>
+
+
+
+<p class="wp-block-paragraph" id="32e5cbdd-1959-49f9-a98c-fdcaa56839f8">たかどらのかどらのスロ塾では、Discordを利用して各機種に関する疑問を即座に<strong>コーチ</strong>が解消します。たかどらのスロ塾ホームページに掲載されている各機種ページ上部の［Discord質問する」ボタンをクリックするか、Discordの対応チャンネルに直接アクセスしていただくと、すぐにご質問が可能です。現役専業スタッフが迅速に回答いたしますので、疑問点や不明点があればお気軽にご利用ください。</p>
+
+
+
+<p class="wp-block-paragraph" id="66b978bc-0fa5-4554-a6d6-190a887a7425">［Discordの各機種チャンネル画面]</p>
+
+
+
+<figure class="wp-block-image" id="e3532344-5f99-4243-94dc-f45132b61bd2"><a href="https://assets.st-note.com/img/1740410128-2q8fPjLriyHzT7cp4DhGZUW5.jpg?width=2000&amp;height=2000&amp;fit=bounds&amp;quality=85"><img src="https://assets.st-note.com/img/1740410128-2q8fPjLriyHzT7cp4DhGZUW5.jpg?width=1200" alt="画像"/ loading="lazy" decoding="async"></a></figure>
+
+
+
+<h3 class="wp-block-heading" id="dff72b6c-a33f-41d1-9d82-3d8fbcef09a5"><span class="ez-toc-section" id="%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AE%E5%88%A9%E7%94%A8%E6%96%B9%E6%B3%95"></span>ホームページの利用方法<span class="ez-toc-section-end"></span></h3>
+
+
+
+<p class="wp-block-paragraph" id="471081e1-95d9-4153-86b5-3a2646ca2cb8">1. 狙い目情報の確認<br>　まずはホームページにアクセスして、各機種の狙い目情報をご確認いただけます。トップページには最新の情報が掲載されておりますので、日々のチェックに便利です。</p>
+
+
+
+<p class="wp-block-paragraph" id="3c86c66e-01c3-4c69-ae21-53121fae402f">[ホームページサンプル]</p>
+
+
+
+<figure class="wp-block-image" id="5c9dd66b-b358-4a58-81da-674448e16cb0"><a href="https://assets.st-note.com/img/1740410207-PfkW1s2IKnxzaQuSVpyqd67Z.jpg?width=2000&amp;height=2000&amp;fit=bounds&amp;quality=85"><img src="https://assets.st-note.com/img/1740410207-PfkW1s2IKnxzaQuSVpyqd67Z.jpg?width=1200" alt="画像"/ loading="lazy" decoding="async"></a></figure>
+
+
+
+<figure class="wp-block-image" id="1366b905-af36-4a0b-9731-b694120436de"><a href="https://assets.st-note.com/img/1740410196-IljFZuPmqSaKwYkvLoyAsxMr.jpg?width=2000&amp;height=2000&amp;fit=bounds&amp;quality=85"><img src="https://assets.st-note.com/img/1740410196-IljFZuPmqSaKwYkvLoyAsxMr.jpg?width=1200" alt="画像"/ loading="lazy" decoding="async"></a></figure>
+
+
+
+<p class="wp-block-paragraph" id="14f65b15-545d-45ab-ab34-1eed52565c01">2. 各機種の専用ページへアクセス<br>　各機種ごとに専用のページが用意されております。こちらで、より詳細な情報や各機種の特徴を確認することができます。<br><br>3. Discordでの質問対応<br>　もしご不明な点や疑問がございましたら、各機種ページ上部にある［【Discord】質問する」をタップしてください。Discordにリンクされ、リアルタイムでご質問に対する回答をお受けいただけます。</p>
+
+
+
+<figure class="wp-block-image" id="900baa79-d511-4f7f-90c3-97725ea579cf"><a href="https://assets.st-note.com/img/1740786093-3BZXey5hWmLS0CNxcFbPKoVd.jpg?width=2000&amp;height=2000&amp;fit=bounds&amp;quality=85"><img src="https://assets.st-note.com/img/1740786093-3BZXey5hWmLS0CNxcFbPKoVd.jpg?width=1200" alt="画像"/ loading="lazy" decoding="async"></a></figure>
+
+
+
+<p class="wp-block-paragraph" id="47391983-8133-47df-9886-48caf1d4664c"><br><br>4. 各機種に対応したツール<br>　たかどらのスロ塾では、各機種に対応したツールを一覧でご用意しております。初めてご利用される方のために、サンプルツールもご用意しております。サンプルツールをお試しいただくことで、ツールの使い方や効果を実感してみてください。</p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://suroschool.jp/toollist.html" rel="noreferrer noopener" target="_blank"><strong>たかどらのスロ塾ツール一覧</strong><em></em><em>suroschool.jp</em></a><a href="https://suroschool.jp/toollist.html" rel="noreferrer noopener" target="_blank"></a></p>
+
+
+
+<p class="wp-block-paragraph" id="ab03c2fe-d806-495a-b4ed-44bd7ed597f7">ツールはこれからも追加していきます。<br></p>
+
+
+
+<p class="wp-block-paragraph" id="ab03c2fe-d806-495a-b4ed-44bd7ed597f7">以上の手順に従っていただくことで、たかどらのスロ塾の最新スロット情報やDiscordでのリアルタイム質問対応をスムーズにご利用いただけます。皆様のご参加を心よりお待ちしております。</p>
+</div></article></main>
 <footer class="foot">個人アーカイブ（suroschool.jp / たかどらのスロ塾 会員コンテンツ）・閲覧用</footer>
+
+<!-- スマホ用ボトムナビ（スクロールで隠れる/出る） -->
+<nav class="botnav" id="botnav">
+  <a href="../index.html" data-nav="index">🎰<span>機種</span></a>
+  <button id="searchOpen2">🔍<span>検索</span></button>
+  <a href="../index.html?fav=1">★<span>お気に入り</span></a>
+  <a href="../news.html">📰<span>お知らせ</span></a>
+  <a href="../tool.html">🧮<span>期待値</span></a>
+</nav>
+
+<!-- 全ページ横断の検索オーバーレイ -->
+<div class="search-overlay" id="searchOverlay" hidden>
+  <div class="search-head">
+    <input id="globalSearch" type="search" placeholder="機種名で検索…" autocomplete="off">
+    <button id="searchClose" aria-label="閉じる">✕</button>
+  </div>
+  <div id="searchResults" class="search-results"></div>
+</div>
+
+<script src="../assets/search-index.js"></script>
 <script src="../assets/app.js"></script>
 </body></html>

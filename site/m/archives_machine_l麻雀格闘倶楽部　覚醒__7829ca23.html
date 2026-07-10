@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="ja"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>L麻雀格闘倶楽部　覚醒 | スマスロ目標 (個人アーカイブ)</title>
+<title>L麻雀格闘倶楽部　覚醒 | スマスロ期待値 (個人アーカイブ)</title>
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="manifest" href="../manifest.webmanifest">
 <meta name="theme-color" content="#ffffff">
@@ -10,16 +10,18 @@
 <link rel="apple-touch-icon" href="../assets/icon.svg">
 <link rel="icon" href="../assets/icon.svg">
 <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){})});}</script>
+<script>window.__ROOT__='../';</script>
 
 </head><body>
-<header class="topbar">
-  <a class="brand" href="../index.html">🎰 スマスロ目標</a>
-  <nav>
+<header class="topbar" id="topbar">
+  <a class="brand" href="../index.html">🎰 スマスロ期待値</a>
+  <nav class="topnav">
     <a href="../index.html">機種</a>
     <a href="../news.html">お知らせ</a>
     <a href="../tool.html">期待値計算</a>
     <a href="../pages.html">資料</a>
   </nav>
+  <button class="topbar-search" id="searchOpen" aria-label="検索">🔍</button>
 </header>
 <main>
   <article class="machine">
@@ -35,122 +37,107 @@
     <button class="tab" data-tab="kaiseki">解析情報</button>
     
   </div>
-  <section class="panel is-active" data-panel="nerai"><div class="tenjo-info"><div class="my-spoiler-wrapper" id="my-spoiler-1"><div class="my-spoiler-title" style="cursor:pointer; background:rgba(245,184,0,0.08); padding:10px; border:1px solid rgba(245,184,0,0.3); color:var(--text-main); font-weight:700; letter-spacing:0.04em;"><span class="spoiler-icon" style="margin-right:5px;">[-]</span>機種情報</div><div class="my-spoiler-content" style="display:block; padding:10px; border:1px solid rgba(245,184,0,0.2); border-top:0; background:var(--bg-card-hi); color:var(--text-main);"><p>天井情報</p>
-<p>770G(最大960G)+α AT当選<br>
-裏覚醒準備モード時は最大960G+αで、<br>
-次回裏覚醒モード。</p>
-<p>リセット時<br>
-160G+αまでにAT当選80%</p>
-<p>［有利区間切れ条件］</p>
-<p>不明</p>
-</div></div></div><p><strong>狙い目</strong></p>
-<p>背景(夕方、夜)や、モード示唆(高宮プロ解説で引き戻し以上)、ツモ運MAP(3/4/6/8戦はツモ運が高い傾向)などで狙い目の調整が必要。<br>
-何も示唆なければボーダー上げて、強い示唆あればボーダー下げる感じです。<br>
-ボーダー調整は30-50G程度？<br>
+  <section class="panel is-active" data-panel="nerai"><p><img loading="lazy" decoding="async" width="150" height="150" src="../img/b0b53a3a8660f235.jpg" class="machine-thumbnail wp-post-image" alt="" style="display:block; margin:0 auto;" srcset="https://suroschool.jp/wp-content/uploads/2025/02/thumb_1-36-150x150.jpg 150w, https://suroschool.jp/wp-content/uploads/2025/02/thumb_1-36-120x120.jpg 120w" sizes="auto, (max-width: 150px) 100vw, 150px" /><strong>狙い目</strong></p>
+<p>背景(夕方、夜)や、モード示唆(高宮プロ解説で引き戻し以上)、ツモ運MAP(3/4/6/8戦はツモ運が高い傾向)などで狙い目の調整が必要。<br />
+何も示唆なければボーダー上げて、強い示唆あればボーダー下げる感じです。<br />
+ボーダー調整は30-50G程度？<br />
 ゾーン狙い時の調整有無は不明。</p>
 <p>[リセット狙い]</p>
-<p>積極派　0Gから<br>
+<p>積極派　0Gから<br />
 慎重派　30Gから</p>
-<p>[天井狙い]<br>
+<p>[天井狙い]<br />
 580Gから</p>
 <p>[ゾーン狙い]</p>
-<p>前回100G以内後<br>
+<p>前回100G以内後<br />
 0Gから　160G後の対局でテンパイするまで。</p>
-<p>前回100G-230G当選後<br>
+<p>前回100G-230G当選後<br />
 130Gから　160G後の対局でテンパイするまで。</p>
-<p>前回160-230G当選後 2回連続後<br>
+<p>前回160-230G当選後 2回連続後<br />
 70Gから　160G後の対局でテンパイするまで。</p>
-<p>前回160-230G当選後 3回連続後<br>
+<p>前回160-230G当選後 3回連続後<br />
 50Gから　160G後の対局でテンパイするまで。</p>
-<p>引き戻しゾーン狙い<br>
+<p>引き戻しゾーン狙い<br />
 340Gから　390G後の対局でテンパイするまで。</p>
-<p>覚醒モード狙い<br>
+<p>覚醒モード狙い<br />
 前回850G以上ハマり　160G後の対局でテンパイするまで。</p>
 <p>【麻雀覚醒モード狙い時の押し引き】</p>
 <p>主にリセット狙い時の手順です。</p>
-<p>慎重派は30G回ってから。<br>
-完走後はリセット時と似た挙動になるけど、リセットよりは覚醒モードに行きやすい様です。<br>
+<p>慎重派は30G回ってから。<br />
+完走後はリセット時と似た挙動になるけど、リセットよりは覚醒モードに行きやすい様です。<br />
 応用で覚醒モードループ中の押し引きも出来るかも？？</p>
-<p>①リセット狙い(ガックンあり)<br>
-リセ0Gから　リセなら160G+αで当選する。<br>
-AT後は1周期の対局示唆を確認。<br>
+<p>①リセット狙い(ガックンあり)<br />
+リセ0Gから　リセなら160G+αで当選する。<br />
+AT後は1周期の対局示唆を確認。<br />
 リセ後は覚醒モードループ弱め。</p>
-<p>・覚醒ランプ右or両方<br>
-・親番<br>
-・日本夜ステージ<br>
-→続行　覚醒モード天井まで？<br>
-・「闘将戦」「桜花戦」「高段位戦」<br>
-→1周期消化して対局中の示唆と、2周期の対局開始時の示唆で押し引き。弱そうならやめ。<br>
-・それ以外<br>
+<p>・覚醒ランプ右or両方<br />
+・親番<br />
+・日本夜ステージ<br />
+→続行　覚醒モード天井まで？<br />
+・「闘将戦」「桜花戦」「高段位戦」<br />
+→1周期消化して対局中の示唆と、2周期の対局開始時の示唆で押し引き。弱そうならやめ。<br />
+・それ以外<br />
 →対局消化せずやめ。</p>
-<p>②対局中の示唆(1周期消化中)<br>
-1周期からツモ運レベル高いのは高シナリオ期待となるため、覚醒モードの可能性が上がる。<br>
+<p>②対局中の示唆(1周期消化中)<br />
+1周期からツモ運レベル高いのは高シナリオ期待となるため、覚醒モードの可能性が上がる。<br />
 以下の場合は覚醒モード天井まで？</p>
-<p>・解説高宮プロ　引き戻し以上<br>
-・解説沖プロ　覚醒モード<br>
-・日吉プロ　セリフ「風を感じてください」　裏覚醒モード<br>
-・テンパイ時にPUSH押して漢字5文字以上ならツモ運レベル3以上<br>
-・テンパイ前にプロ雀士がポン、チーする<br>
+<p>・解説高宮プロ　引き戻し以上<br />
+・解説沖プロ　覚醒モード<br />
+・日吉プロ　セリフ「風を感じてください」　裏覚醒モード<br />
+・テンパイ時にPUSH押して漢字5文字以上ならツモ運レベル3以上<br />
+・テンパイ前にプロ雀士がポン、チーする<br />
 ・テンパイ後の待ち牌が3面待ち以上</p>
 <p>参考記事　<a href="https://x.com/kitaichi_papa/status/1790240262046056851?s=46&amp;t=Pcvoa43hweF7QRD2P5j16g" target="_blank" rel="noopener">必勝期待値クマぱぱ</a></p>
 <p>&nbsp;</p>
 <p><strong>やめ時</strong></p>
 <p>周期準備中(対局決定)見てやめか、即やめ。</p>
-<p>770G+α(実質850G以上？)を超えた場合は、次回裏覚醒モードのため、160G+αまで。<br>
-究極Mリーグ終了後は覚醒モード濃厚。<br>
+<p>770G+α(実質850G以上？)を超えた場合は、次回裏覚醒モードのため、160G+αまで。<br />
+究極Mリーグ終了後は覚醒モード濃厚。<br />
 エンディング終了後も覚醒モード濃厚。</p>
-<p>周期準備中の覚醒ランプ<br>
-右のみ大点灯は、引き戻し以上<br>
+<p>周期準備中の覚醒ランプ<br />
+右のみ大点灯は、引き戻し以上<br />
 左右完全点灯は、覚醒モード期待大</p>
 <p>周期準備中にオレンジマン覚醒演出で、覚醒モード濃厚。</p>
 <p>&nbsp;</p>
 <p><strong>その他</strong></p>
 <p>覚醒モードに期待できる状況</p>
-<p><a href="../img/c560946d87451b98.jpg"><img class="alignnone size-medium wp-image-634" src="../img/0a59cc8bf7aea51f.jpg" alt="" width="270" height="300" decoding="async" sizes="auto, (max-width: 270px) 100vw, 270px"></a></p>
+<p><a href="../img/c560946d87451b98.jpg"><img class="alignnone size-medium wp-image-634" src="../img/0a59cc8bf7aea51f.jpg" alt="" width="270" height="300" / loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/02/C39B3F24-393A-4E81-A85C-1F0B98C138F6-270x300.jpg 270w, https://suroschool.jp/wp-content/uploads/2025/02/C39B3F24-393A-4E81-A85C-1F0B98C138F6-921x1024.jpg 921w, https://suroschool.jp/wp-content/uploads/2025/02/C39B3F24-393A-4E81-A85C-1F0B98C138F6-768x854.jpg 768w, https://suroschool.jp/wp-content/uploads/2025/02/C39B3F24-393A-4E81-A85C-1F0B98C138F6.jpg 1131w" sizes="auto, (max-width: 270px) 100vw, 270px" /></a></p>
 <p>ゾーン狙いについて</p>
-<p><a href="../img/6238eb6d42a573a4.jpg"><img class="alignnone size-medium wp-image-635" src="../img/e27e529d5626ce16.jpg" alt="" width="266" height="300" decoding="async" sizes="auto, (max-width: 266px) 100vw, 266px"></a></p>
+<p><a href="../img/6238eb6d42a573a4.jpg"><img class="alignnone size-medium wp-image-635" src="../img/e27e529d5626ce16.jpg" alt="" width="266" height="300" / loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/02/CC8A2073-F5AC-4F6F-B44F-9BE0676EBB6D-266x300.jpg 266w, https://suroschool.jp/wp-content/uploads/2025/02/CC8A2073-F5AC-4F6F-B44F-9BE0676EBB6D-906x1024.jpg 906w, https://suroschool.jp/wp-content/uploads/2025/02/CC8A2073-F5AC-4F6F-B44F-9BE0676EBB6D-768x868.jpg 768w, https://suroschool.jp/wp-content/uploads/2025/02/CC8A2073-F5AC-4F6F-B44F-9BE0676EBB6D.jpg 1125w" sizes="auto, (max-width: 266px) 100vw, 266px" /></a></p>
 <p>&nbsp;</p>
 <p><strong>参考元</strong></p>
 <p><a href="https://chonborista.com/slot/konami-slot/192777/" target="_blank" rel="noopener">ちょんぼりすた</a></p>
 <p><a href="https://www.slopachi-quest.com/article/lmajanfaitarclob-tenjou/" target="_blank" rel="noopener">すろぱちくえすと</a></p>
-<div class="post-views content-post post-632 entry-meta load-static">
-				<span class="post-views-icon dashicons dashicons-chart-bar"></span> <span class="post-views-label">Post Views:</span> <span class="post-views-count">527</span>
-			</div>
-          <!-- 目次ハンバーガー（右下固定・常時）。中身はJSが見出し(h2/h3)から生成。会員ロック時は空→自動非表示 --></section>
-  <section class="panel" data-panel="kaiseki"><div class="kaiseki-toolbar">
-              
-            </div>
-            <div class="kaiseki-accordion">
-              <details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i">基本情報</span></summary><div class="kaiseki-section-body">
+</section>
+  <section class="panel" data-panel="kaiseki"><h2>基本情報</h2>
 <ul>
 <li>メーカー: コナミアミューズメント</li>
 <li>機械割: 97.5% 〜 110.0%</li>
 <li>導入開始日: 2023年09月19日（火）</li>
 <li>ゲーム性概要: 通常時はリプレイやレア役でテンパイを目指し、テンパイ後対局で和了ることができればATに突入。シリーズおなじみの霊獣アタックをはじめ、新規の究局Mリーグなど強力なトリガーも多数搭載されている。</li>
 </ul>
-<p><img alt="麻雀格闘倶楽部 覚醒（パチスロ）のリール配列" src="https://p-town.dmm.com/upload/machines/4401/reel.jpg?t=1779358848" decoding="async"></p>
-<p><img alt="麻雀格闘倶楽部 覚醒（パチスロ）のゲームフロー" src="https://p-town.dmm.com/upload/machines/4401/flow.jpg?t=1779358848" decoding="async"></p>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-2">打ち方</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-3">打ち方・小役</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-4">打ち方（小役狙い）</span></h4>
+<p><img alt="麻雀格闘倶楽部 覚醒（パチスロ）のリール配列" src="https://p-town.dmm.com/upload/machines/4401/reel.jpg?t=1779358848"></p>
+<p><img alt="麻雀格闘倶楽部 覚醒（パチスロ）のゲームフロー" src="https://p-town.dmm.com/upload/machines/4401/flow.jpg?t=1779358848"></p>
+<h2>打ち方</h2>
+<h3>打ち方・小役</h3>
+<h4>打ち方（小役狙い）</h4>
 <p>［最初に狙う絵柄］</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-01-01.jpg" decoding="async"></p>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-01-01.jpg"></p>
 <p>左リール上段付近にBARを目押し。基本的にスイカやチェリーはリプレイフラグなのでオールフリー打ちでも問題ないが、成立役をしっかりと把握するため小役狙いを推奨だ。</p>
 <p>［BAR下段停止］ 成立役：ハズレorリプレイorベルorチャンス目A</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-01-02.jpg" decoding="async"></p>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-01-02.jpg"></p>
 <p>［角チェリー停止］ 成立役：弱チェリーor強チェリー</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-01-03.jpg" decoding="async"></p>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-01-03.jpg"></p>
 <p>［スイカ上段停止］ 成立役：スイカorチャンス目B</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-01-04.jpg" decoding="async"></p>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-01-04.jpg"></p>
 <p>［レア役の停止形］</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒レア役" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-01-05.jpg" decoding="async"></p>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒レア役" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-01-05.jpg"></p>
 <p>［ドヤ停止］ 通常時〜ATまで様々なタイミングで狙えカットインが発生。全リールにドヤを目押しして、停止数が多いほどチャンスとなる。</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-01-06.jpg" decoding="async"></p>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-01-06.jpg"></p>
 <p>［究極の一手］ 通常時のテンパイ後やAT中の格闘倶楽部バトル中に、中リールを狙えカットインで究極の一手が止まれば究極Mリーグ（スペシャルAT）突入!?</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-01-07.jpg" decoding="async"></p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-5">解析情報通常時</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-6">小役関連</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-7">小役確率</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-01-07.jpg"></p>
+<h2>解析情報通常時</h2>
+<h3>小役関連</h3>
+<h4>小役確率</h4>
 <table>
 <thead>
 <tr>
@@ -181,10 +168,10 @@ AT後は1周期の対局示唆を確認。<br>
 </tr>
 </tbody>
 </table>
-<h4><span id="10">10枚ベル確率（順押し）</span></h4>
+<h4>10枚ベル確率（順押し）</h4>
 <p>10枚ベルに設定差が存在する。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-8">モード</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-9">通常モードごとの天井</span></h4>
+<h3>モード</h3>
+<h4>通常モードごとの天井</h4>
 <table>
 <thead>
 <tr>
@@ -223,11 +210,11 @@ AT後は1周期の対局示唆を確認。<br>
 </table>
 <p>※天井は規定ゲーム数到達後の対局でATに突入</p>
 <p>裏覚醒準備モード滞在時は次回裏覚醒モード移行濃厚だ。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-10">テンパイ前対局</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-11">テンパイ前対局概要</span></h4>
+<h3>テンパイ前対局</h3>
+<h4>テンパイ前対局概要</h4>
 <p>リプレイやレア役を引けばテンパイが近づくゲーム性。様々なイベントでツモ運や翻数（AT当選時の初期ゲーム数優遇）を上げながらテンパイさせればテンパイ後対局へ移行する。</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒通常時" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-02-01.jpg" decoding="async"></p>
-<h4><span id="i-12">テンパイ前対局</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒通常時" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-02-01.jpg"></p>
+<h4>テンパイ前対局</h4>
 <table>
 <thead>
 <tr>
@@ -252,14 +239,14 @@ AT後は1周期の対局示唆を確認。<br>
 </table>
 <p>リプレイ・レア役最大6回でテンパイに到達する。</p>
 <p>「有効牌高確」 レア役・ベル・1枚役成立時の一部で、有効牌高確への移行が抽選される。有効牌高確中はリプレイやレア役以外でも約1/2で有効牌を獲得可能だ。</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-02-01.jpg" decoding="async"></p>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-02-01.jpg"></p>
 <p>「ずっと俺のツモ」 強レア役成立時の一部で移行する、AT当選濃厚状態。</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-02-02.jpg" decoding="async"></p>
-<h4><span id="i-13">特殊戦</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-02-02.jpg"></p>
+<h4>特殊戦</h4>
 <p>特殊戦が発生すればツモ運や翻数が優遇。パターンによって期待度が変化する。</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒通常時" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-03-01.jpg" decoding="async"></p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-14">イベントモード</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-15">イベントモード一覧</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒通常時" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-03-01.jpg"></p>
+<h3>イベントモード</h3>
+<h4>イベントモード一覧</h4>
 <table>
 <thead>
 <tr>
@@ -299,8 +286,8 @@ AT後は1周期の対局示唆を確認。<br>
 </tbody>
 </table>
 <p>［ナイトプールモード］</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒イベントモード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-04-02.jpg" decoding="async"></p>
-<h4><span id="i-16">ナイトプール性能</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒イベントモード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-04-02.jpg"></p>
+<h4>ナイトプール性能</h4>
 <table>
 <thead>
 <tr>
@@ -328,8 +315,8 @@ AT後は1周期の対局示唆を確認。<br>
 </tbody>
 </table>
 <p>［テツマンチャンス］</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒イベントモード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-04-03.jpg" decoding="async"></p>
-<h4><span id="i-17">テツマンチャンス性能</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒イベントモード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-04-03.jpg"></p>
+<h4>テツマンチャンス性能</h4>
 <table>
 <thead>
 <tr>
@@ -378,8 +365,8 @@ AT後は1周期の対局示唆を確認。<br>
 </table>
 <p>テンパイ後対局→AT非当選が続くほど、テツマンチャンスに突入しやすい。</p>
 <p>［雀牌モード］</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒イベントモード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-04-04.jpg" decoding="async"></p>
-<h4><span id="i-18">雀牌モード性能</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒イベントモード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-04-04.jpg"></p>
+<h4>雀牌モード性能</h4>
 <table>
 <thead>
 <tr>
@@ -412,8 +399,8 @@ AT後は1周期の対局示唆を確認。<br>
 </table>
 <p>供託棒は1本獲得するごとにATゲーム数が＋1Gされる。</p>
 <p>［バカンスモード］</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒イベントモード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-04-05.jpg" decoding="async"></p>
-<h4><span id="i-19">バカンスモード性能</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒イベントモード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-04-05.jpg"></p>
+<h4>バカンスモード性能</h4>
 <table>
 <thead>
 <tr>
@@ -449,8 +436,8 @@ AT後は1周期の対局示唆を確認。<br>
 </tbody>
 </table>
 <p>［特訓］</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒イベントモード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-04-06.jpg" decoding="async"></p>
-<h4><span id="i-20">特訓性能</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒イベントモード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-04-06.jpg"></p>
+<h4>特訓性能</h4>
 <table>
 <thead>
 <tr>
@@ -482,8 +469,8 @@ AT後は1周期の対局示唆を確認。<br>
 </tbody>
 </table>
 <p>［役満戦］</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒イベントモード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-04-07.jpg" decoding="async"></p>
-<h4><span id="i-21">役満戦性能</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒イベントモード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-04-07.jpg"></p>
+<h4>役満戦性能</h4>
 <table>
 <thead>
 <tr>
@@ -516,8 +503,8 @@ AT後は1周期の対局示唆を確認。<br>
 </table>
 <p>対局準備中のベルで突入抽選がおこなわれる。</p>
 <p>［昇龍チャレンジ］</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒イベントモード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-04-08.jpg" decoding="async"></p>
-<h4><span id="i-22">昇龍チャレンジ性能</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒イベントモード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-04-08.jpg"></p>
+<h4>昇龍チャレンジ性能</h4>
 <table>
 <thead>
 <tr>
@@ -548,11 +535,11 @@ AT後は1周期の対局示唆を確認。<br>
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-23">テンパイ後対局</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-24">テンパイ後対局概要</span></h4>
+<h3>テンパイ後対局</h3>
+<h4>テンパイ後対局概要</h4>
 <p>テンパイ前対局でテンパイすると移行。ここで和了ることができればATが確定する。5段階のツモ運レベルで、テンパイ後のリプレイ・レア役・ドヤ絵柄停止時の和了期待度が変化。ツモ運はシナリオによって管理（シナリオマップはメニュー画面から確認可能）。イベントステージ・テツマンチャンス・役満戦はシナリオではなく、専用のツモ運抽選がおこなわれる。</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒通常時" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-06-01.jpg" decoding="async"></p>
-<h4><span id="i-25">テンパイ後対局</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒通常時" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-06-01.jpg"></p>
+<h4>テンパイ後対局</h4>
 <table>
 <thead>
 <tr>
@@ -580,8 +567,8 @@ AT後は1周期の対局示唆を確認。<br>
 </tbody>
 </table>
 <p>「ツモ運シナリオ」</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒ツモ運" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-04-01.jpg" decoding="async"></p>
-<h4><span id="i-26">ツモ運レベル別の期待度</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒ツモ運" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-04-01.jpg"></p>
+<h4>ツモ運レベル別の期待度</h4>
 <table>
 <thead>
 <tr>
@@ -613,11 +600,11 @@ AT後は1周期の対局示唆を確認。<br>
 </tbody>
 </table>
 <p>※ツモ運シナリオマップはメニュー画面から確認可能</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-27">（裏）覚醒モード</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-28">覚醒モード概要</span></h4>
+<h3>（裏）覚醒モード</h3>
+<h4>覚醒モード概要</h4>
 <p>初当りAT確率が大幅にアップする強力なモード。さらに期待獲得枚数約3200枚の裏覚醒モードも存在する。</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒モード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-14-01.jpg" decoding="async"></p>
-<h4><span id="i-29">覚醒モード</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒モード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-14-01.jpg"></p>
+<h4>覚醒モード</h4>
 <table>
 <thead>
 <tr>
@@ -649,7 +636,7 @@ AT後は1周期の対局示唆を確認。<br>
 </tr>
 </tbody>
 </table>
-<h4><span id="i-30">覚醒モードの期待獲得枚数 ※シミュレーション値</span></h4>
+<h4>覚醒モードの期待獲得枚数 ※シミュレーション値</h4>
 <table>
 <thead>
 <tr>
@@ -683,14 +670,14 @@ AT後は1周期の対局示唆を確認。<br>
 <td>17.7%</td>
 </tr>
 </tbody>
-</table></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-31">解析情報ボーナス時</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="MAT">究局Mリーグ（スペシャルAT）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="M">究局Mリーグ概要</span></h4>
+</table>
+<h2>解析情報ボーナス時</h2>
+<h3>究局Mリーグ（スペシャルAT）</h3>
+<h4>究局Mリーグ概要</h4>
 <p>継続率80〜95%を誇る本機最強のスペシャルAT。終了しても覚醒モードへ突入するため早い引き戻しに期待できる。</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒AT究極Mリーグ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-13-01.jpg" decoding="async"></p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒AT究極Mリーグ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-13-02.jpg" decoding="async"></p>
-<h4><span id="M-2">究局Mリーグ概要性能</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒AT究極Mリーグ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-13-01.jpg"></p>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒AT究極Mリーグ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-13-02.jpg"></p>
+<h4>究局Mリーグ概要性能</h4>
 <table>
 <thead>
 <tr>
@@ -721,12 +708,12 @@ AT後は1周期の対局示唆を確認。<br>
 </tr>
 </tbody>
 </table>
-<h4><span id="M-3">Mリーグボーナス</span></h4>
+<h4>Mリーグボーナス</h4>
 <p>究局Mリーグで13人すべてを倒すと突入する、20Gの擬似ボーナス。消化中はレア役で究局Mリーグの勝利ストックを抽選していて、ボーナス消化後は再び究局Mリーグへ移行する。</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒Mリーグボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-10-01.jpg" decoding="async"></p>
-<h4><span id="i-32">消化中の書き換え＆ストック抽選</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒Mリーグボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-10-01.jpg"></p>
+<h4>消化中の書き換え＆ストック抽選</h4>
 <p>各ラウンド開始時に継続抽選がおこなわれ、消化中は非継続だった場合に勝利書き換えを、継続だった場合は勝利ストックを抽選。Mリーグボーナス中も継続時と同じ抽選値で勝利ストックを抽選する。 書き換えはリプレイとレア役時に抽選され、漏れた場合でも1R内にレア役なら計2回、リプレイは計4回引けば勝利書き換えが確定する。</p>
-<h4><span id="i-33">継続確定後の継続ストック当選率</span></h4>
+<h4>継続確定後の継続ストック当選率</h4>
 <table>
 <thead>
 <tr>
@@ -745,11 +732,11 @@ AT後は1周期の対局示唆を確認。<br>
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="AT">AT/格闘倶楽部ラッシュ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-34">格闘倶楽部ラッシュ概要</span></h4>
+<h3>AT/格闘倶楽部ラッシュ</h3>
+<h4>格闘倶楽部ラッシュ概要</h4>
 <p>ゲーム数管理型のATで、消化中はSP対局（高継続対局 or 継続確定対局）、CZ（霊獣アタック）経由のゲーム数上乗せを抽選。セット終了後の対局（獲得倶楽部バトル）で勝利すれば次セットへ継続。対局勝利次の一部でスペシャルAT「究局Mリーグ」へ突入する。</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒格闘倶楽部ラッシュ概要" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-07-00.jpg" decoding="async"></p>
-<h4><span id="AT-2">格闘倶楽部ラッシュ（AT）性能</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒格闘倶楽部ラッシュ概要" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-07-00.jpg"></p>
+<h4>格闘倶楽部ラッシュ（AT）性能</h4>
 <table>
 <thead>
 <tr>
@@ -780,7 +767,7 @@ AT後は1周期の対局示唆を確認。<br>
 </tr>
 </tbody>
 </table>
-<h4><span id="AT-3">翻数別のATゲーム数</span></h4>
+<h4>翻数別のATゲーム数</h4>
 <table>
 <thead>
 <tr>
@@ -824,10 +811,10 @@ AT後は1周期の対局示唆を確認。<br>
 </table>
 <p>※テンパイ後対局・格闘倶楽部バトルで和了った時の翻数</p>
 <p>初当り時の翻数が満貫（10G）かつ、ATを駆け抜けた場合、その後に突入する格闘倶楽部バトルは必ず勝利する。 ※ATが10Gのみで終了することはない</p>
-<h4><span id="i-35">覚醒チャレンジ</span></h4>
+<h4>覚醒チャレンジ</h4>
 <p>10G継続の役満ループモード突入をかけたチャンスゾーン。レア役・ドヤ3個以上停止で成功濃厚だ！</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-08-01.jpg" decoding="async"></p>
-<h4><span id="AT-4">AT中の上乗せ要素当選確率</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-08-01.jpg"></p>
+<h4>AT中の上乗せ要素当選確率</h4>
 <table>
 <thead>
 <tr>
@@ -850,7 +837,7 @@ AT後は1周期の対局示唆を確認。<br>
 </tr>
 </tbody>
 </table>
-<h4><span id="SP">［高確中］霊獣アタック・SP対局当選率</span></h4>
+<h4>［高確中］霊獣アタック・SP対局当選率</h4>
 <table>
 <thead>
 <tr>
@@ -913,7 +900,7 @@ AT後は1周期の対局示唆を確認。<br>
 </table>
 <p>※SP対局ストック中のSP対局はSP対局Vに昇格</p>
 <p>チャンス目や強チェリー、ドヤ3個以上は内部状態不問で霊獣アタック以上が確定する。</p>
-<h4><span id="i-36">霊獣アタック当選契機別の種類</span></h4>
+<h4>霊獣アタック当選契機別の種類</h4>
 <table>
 <thead>
 <tr>
@@ -936,11 +923,11 @@ AT後は1周期の対局示唆を確認。<br>
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-37">格闘倶楽部バトル（継続対局）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-38">格闘倶楽部バトル</span></h4>
+<h3>格闘倶楽部バトル（継続対局）</h3>
+<h4>格闘倶楽部バトル</h4>
 <p>AT継続をかけたおなじみの継続バトル（16G＋α継続）。リプレイ・ドヤ図柄・レア役で和了を抽選。SP対局ストック所持時はSP対局に発展する。</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒AT" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-10-01.jpg" decoding="async"></p>
-<h4><span id="i-39">格闘倶楽部バトル性能</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒AT" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-10-01.jpg"></p>
+<h4>格闘倶楽部バトル性能</h4>
 <table>
 <thead>
 <tr>
@@ -971,7 +958,7 @@ AT後は1周期の対局示唆を確認。<br>
 </tr>
 </tbody>
 </table>
-<h4><span id="SP-2">SP対局性能</span></h4>
+<h4>SP対局性能</h4>
 <table>
 <thead>
 <tr>
@@ -998,11 +985,11 @@ AT後は1周期の対局示唆を確認。<br>
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="CZ">霊獣アタック（CZ）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-40">霊獣アタック概要</span></h4>
+<h3>霊獣アタック（CZ）</h3>
+<h4>霊獣アタック概要</h4>
 <p>霊獣（6種類）に対応した役を引けばゲーム数上乗せとなる1G完結のCZだ。</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒霊獣アタックCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-08-00.jpg" decoding="async"></p>
-<h4><span id="i-41">霊獣アタックごとの特徴</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒霊獣アタックCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-08-00.jpg"></p>
+<h4>霊獣アタックごとの特徴</h4>
 <table>
 <thead>
 <tr>
@@ -1045,20 +1032,20 @@ AT後は1周期の対局示唆を確認。<br>
 </tbody>
 </table>
 <p>［黄龍］</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒霊獣アタックCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-08-04.jpg" decoding="async"></p>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒霊獣アタックCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-08-04.jpg"></p>
 <p>［朱雀］</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒霊獣アタックCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-08-06.jpg" decoding="async"></p>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒霊獣アタックCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-08-06.jpg"></p>
 <p>［麒麟］</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒霊獣アタックCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-08-07.jpg" decoding="async"></p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="SP-3">SP対局</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="SP-4">SP対局概要</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒霊獣アタックCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-08-07.jpg"></p>
+<h3>SP対局</h3>
+<h4>SP対局概要</h4>
 <p>継続期待度が大幅にアップするSP対局と継続確定のSP対局Vの2種類。SP対局は 10G＋α以内にリプレイorレア役を引けば勝利 となる。画面に表示されている対象のレア役を引いた場合は、勝利だけでなく「覚醒チャレンジ」or「和了乱舞」を獲得できる。</p>
 <p>［SP対局ストック］ ストック時にVが表示されれば勝利確定のSP対局Vだ。SP対局ストック中に再度、SP対局をストックすると突入する。</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒ATSP対局" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-09-01.jpg" decoding="async"></p>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒ATSP対局" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-09-01.jpg"></p>
 <p>［SP対局］</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒ATSP対局" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-09-02.jpg" decoding="async"></p>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒ATSP対局" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-09-02.jpg"></p>
 <p>もちろんほかにも多彩な組み合わせが存在する。</p>
-<h4><span id="SP-5">SP対局一覧</span></h4>
+<h4>SP対局一覧</h4>
 <table>
 <thead>
 <tr>
@@ -1126,11 +1113,11 @@ AT後は1周期の対局示唆を確認。<br>
 </tbody>
 </table>
 <p>ともかりんは対象レア役がランダムなので、発生時は液晶に表示されるレア役をチェックしておこう。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-42">和了乱舞（特化ゾーン）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-43">和了乱舞概要</span></h4>
+<h3>和了乱舞（特化ゾーン）</h3>
+<h4>和了乱舞概要</h4>
 <p>10G/セット＆継続率約84%のST型特化ゾーン。ゲーム数上乗せをするごとに10Gが再セットされる。</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒AT和了乱舞" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-11-01.jpg" decoding="async"></p>
-<h4><span id="i-44">和了乱舞の性能</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒AT和了乱舞" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-11-01.jpg"></p>
+<h4>和了乱舞の性能</h4>
 <table>
 <thead>
 <tr>
@@ -1158,15 +1145,15 @@ AT後は1周期の対局示唆を確認。<br>
 </tbody>
 </table>
 <p>強チェリーなら＋30G以上が確定する。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-45">役満ループモード</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-46">役満ループモード概要</span></h4>
+<h3>役満ループモード</h3>
+<h4>役満ループモード概要</h4>
 <p>小島武夫が登場する役満和了濃厚のモード。約50%で同モードが継続する。</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒役満ループモード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-12-01.jpg" decoding="async"></p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-47">演出情報</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-48">通常時</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-49">周期準備中</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒役満ループモード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0808/0720-12-01.jpg"></p>
+<h2>演出情報</h2>
+<h3>通常時</h3>
+<h4>周期準備中</h4>
 <p>3G＋α滞在し、成立役や滞在モードを参照してイベントモード移行を抽選。配牌の段階でテンパイしていれば天和チャンス、次ゲームでリプレイかレア役を引けば役満和了が確定する。和了れなかった場合でもダブルリーチとなるため、AT当選のチャンスは継続する。</p>
-<h4><span id="i-50">周期準備性能</span></h4>
+<h4>周期準備性能</h4>
 <table>
 <thead>
 <tr>
@@ -1194,7 +1181,7 @@ AT後は1周期の対局示唆を確認。<br>
 </tbody>
 </table>
 <p>滞在モードを示唆する演出も存在する。</p>
-<h4><span id="i-51">背景別の示唆</span></h4>
+<h4>背景別の示唆</h4>
 <table>
 <thead>
 <tr>
@@ -1236,9 +1223,9 @@ AT後は1周期の対局示唆を確認。<br>
 </tr>
 </tbody>
 </table>
-<h4><span id="i-52">モード示唆</span></h4>
+<h4>モード示唆</h4>
 <p>対局開始時の覚醒ランプ点灯パターンや解説・実況演出、対局中の沖ボイス（対局中にヒソヒソとささやく）で引き戻しモードや覚醒モード滞在が示唆される。</p>
-<h4><span id="i-53">対局開始時の覚醒ランプごとの示唆</span></h4>
+<h4>対局開始時の覚醒ランプごとの示唆</h4>
 <table>
 <thead>
 <tr>
@@ -1266,7 +1253,7 @@ AT後は1周期の対局示唆を確認。<br>
 </tbody>
 </table>
 <p>※覚醒ランプが大きく点灯するほど覚醒モード滞在期待度アップ</p>
-<h4><span id="i-54">引き戻しモード以上示唆演出</span></h4>
+<h4>引き戻しモード以上示唆演出</h4>
 <table>
 <thead>
 <tr>
@@ -1281,7 +1268,7 @@ AT後は1周期の対局示唆を確認。<br>
 </tr>
 </tbody>
 </table>
-<h4><span id="i-55">対局中の沖ボイス示唆</span></h4>
+<h4>対局中の沖ボイス示唆</h4>
 <table>
 <thead>
 <tr>
@@ -1332,7 +1319,7 @@ AT後は1周期の対局示唆を確認。<br>
 </tr>
 </tbody>
 </table>
-<h4><span id="i-56">実況・解説の示唆</span></h4>
+<h4>実況・解説の示唆</h4>
 <table>
 <thead>
 <tr>
@@ -1351,7 +1338,7 @@ AT後は1周期の対局示唆を確認。<br>
 </tr>
 </tbody>
 </table>
-<h4><span id="i-57">実況の掛け合い</span></h4>
+<h4>実況の掛け合い</h4>
 <table>
 <thead>
 <tr>
@@ -1382,7 +1369,7 @@ AT後は1周期の対局示唆を確認。<br>
 </tr>
 </tbody>
 </table>
-<h4><span id="i-58">実況の掛け合いごとの示唆内容</span></h4>
+<h4>実況の掛け合いごとの示唆内容</h4>
 <table>
 <thead>
 <tr>
@@ -1414,14 +1401,14 @@ AT後は1周期の対局示唆を確認。<br>
 </tbody>
 </table>
 <p>［覚醒ランプ］</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒ランプ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/1013/1010-02-01.jpg" decoding="async"></p>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒ランプ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/1013/1010-02-01.jpg"></p>
 <p>対局決定のタイミングで、液晶左右の覚醒ランプが点灯した場合はパターンで覚醒モード滞在期待度を示唆。 オレンジマン覚醒は発生した時点で当該対局勝利（AT当選）濃厚かつ、覚醒モード以上濃厚。紫点灯なら裏覚醒モード濃厚となる。</p>
 <p>［解説に高宮プロ］</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-14-04.jpg" decoding="async"></p>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-14-04.jpg"></p>
 <p>対局中の解説として登場するのは、岡田プロ・和久津プロ・伊達プロのいずれかがデフォルト。高宮プロが登場すると引き戻しモード以上が確定する。</p>
 <p>［実況・解説のセリフ］</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒モード示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/1001/1007-10-02.jpg" decoding="async"></p>
-<h4><span id="i-59">高ツモ運示唆演出</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒モード示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/1001/1007-10-02.jpg"></p>
+<h4>高ツモ運示唆演出</h4>
 <table>
 <thead>
 <tr>
@@ -1457,9 +1444,9 @@ AT後は1周期の対局示唆を確認。<br>
 </tbody>
 </table>
 <p>［特殊戦］</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒シナリオ示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-15-02.jpg" decoding="async"></p>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒シナリオ示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-15-02.jpg"></p>
 <p>高段位戦・豪華絢爛戦・桜花戦・新鋭戦・闘将戦・役満戦が存在する。</p>
-<h4><span id="i-60">特殊戦ごとのシナリオ示唆</span></h4>
+<h4>特殊戦ごとのシナリオ示唆</h4>
 <table>
 <thead>
 <tr>
@@ -1495,12 +1482,12 @@ AT後は1周期の対局示唆を確認。<br>
 </tbody>
 </table>
 <p>［伊達朱里紗プロにお任せ］</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒シナリオ示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-15-03.jpg" decoding="async"></p>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒シナリオ示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-15-03.jpg"></p>
 <p>［プチプロカート］</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒シナリオ示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-15-04.jpg" decoding="async"></p>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒シナリオ示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-15-04.jpg"></p>
 <p>［プロ雀士の鳴き］</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒シナリオ示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-15-05.jpg" decoding="async"></p>
-<h4><span id="i-61">プロ雀士の鳴き回数別示唆</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒シナリオ示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-15-05.jpg"></p>
+<h4>プロ雀士の鳴き回数別示唆</h4>
 <table>
 <thead>
 <tr>
@@ -1520,8 +1507,8 @@ AT後は1周期の対局示唆を確認。<br>
 </tbody>
 </table>
 <p>［テンパイ時のタイトルランプ点灯］</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒シナリオ示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-15-06.jpg" decoding="async"></p>
-<h4><span id="i-62">タイトルランプパターン別のツモ運レベル振り分け</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒シナリオ示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-15-06.jpg"></p>
+<h4>タイトルランプパターン別のツモ運レベル振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1578,11 +1565,11 @@ AT後は1周期の対局示唆を確認。<br>
 </tbody>
 </table>
 <p>［3面待ち以上］</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒シナリオ示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-15-07.jpg" decoding="async"></p>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒シナリオ示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-15-07.jpg"></p>
 <p>待ちが3面待ち以上なら ツモ運レベル4以上 ！</p>
-<h4><span id="MAP">ツモ運MAP</span></h4>
+<h4>ツモ運MAP</h4>
 <p>ツモ運は液晶で確認することが可能。MAPに表示されている◯はツモ運レベル2以上、◎は3以上が確定する。</p>
-<h4><span id="MAP-2">ツモ運MAPの記号別・ツモ運レベル振り分け</span></h4>
+<h4>ツモ運MAPの記号別・ツモ運レベル振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1614,7 +1601,7 @@ AT後は1周期の対局示唆を確認。<br>
 </tr>
 </tbody>
 </table>
-<h4><span id="i-63">通常時の演出法則</span></h4>
+<h4>通常時の演出法則</h4>
 <table>
 <thead>
 <tr>
@@ -1677,22 +1664,22 @@ AT後は1周期の対局示唆を確認。<br>
 </tbody>
 </table>
 <p>［実況・解説のセリフ］</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/1001/1007-11-02.jpg" decoding="async"></p>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/1001/1007-11-02.jpg"></p>
 <p>［状況演出のサイコロ］</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/1001/1007-11-03.jpg" decoding="async"></p>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/1001/1007-11-03.jpg"></p>
 <p>［チャンスボタンの雲海］</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/1001/1007-11-04.jpg" decoding="async"></p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="AT-5">AT／格闘倶楽部ラッシュ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-64">ステージ解説</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/1001/1007-11-04.jpg"></p>
+<h3>AT／格闘倶楽部ラッシュ</h3>
+<h4>ステージ解説</h4>
 <p>「基本ステージ」</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-06-01.jpg" decoding="async"></p>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-06-01.jpg"></p>
 <p>「SP対局ストック高確率ステージ」 おもに1枚役成立時の抽選で移行する。</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-06-02.jpg" decoding="async"></p>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-06-02.jpg"></p>
 <p>「女流PV・雀士PV」 SP対局ストックを獲得すると、通常ステージがPVステージに変化する。</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-06-03.jpg" decoding="async"></p>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-06-03.jpg"></p>
 <p>「小島降臨PV」 役満ループモード（役満での勝利が約50%でループする激アツモード）滞在濃厚ステージ。</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-06-04.jpg" decoding="async"></p>
-<h4><span id="AT-6">AT中の演出法則</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/0910/0910-06-04.jpg"></p>
+<h4>AT中の演出法則</h4>
 <table>
 <thead>
 <tr>
@@ -1720,10 +1707,10 @@ AT後は1周期の対局示唆を確認。<br>
 </tbody>
 </table>
 <p>［プチプロファイター］</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒AT演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/1001/1007-12-02.jpg" decoding="async"></p>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒AT演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/1001/1007-12-02.jpg"></p>
 <p>［試練の扉］</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒AT演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/1001/1007-12-03.jpg" decoding="async"></p>
-<h4><span id="i-65">霊獣アタックの違和感パターン</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒AT演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/1001/1007-12-03.jpg"></p>
+<h4>霊獣アタックの違和感パターン</h4>
 <table>
 <thead>
 <tr>
@@ -1758,9 +1745,9 @@ AT後は1周期の対局示唆を確認。<br>
 </tr>
 </tbody>
 </table>
-<h4><span id="BGM">BGM一覧</span></h4>
+<h4>BGM一覧</h4>
 <p>AT中は十字キーの左右でBGMを切り替えることができる。</p>
-<h4><span id="ATBGM">AT中のBGM</span></h4>
+<h4>AT中のBGM</h4>
 <table>
 <thead>
 <tr>
@@ -1806,7 +1793,7 @@ AT後は1周期の対局示唆を確認。<br>
 <td>麻雀格闘倶楽部参BGM③</td>
 </tr>
 <tr>
-<td>Brand New…</td>
+<td>Brand New...</td>
 <td>麻雀格闘倶楽部 真BGM①</td>
 </tr>
 <tr>
@@ -1815,11 +1802,11 @@ AT後は1周期の対局示唆を確認。<br>
 </tr>
 </tbody>
 </table>
-<h4><span id="i-66">次回覚醒モード確定パターン</span></h4>
+<h4>次回覚醒モード確定パターン</h4>
 <p>上記の画面が出ればAT終了後も必ず覚醒モードへ突入するため、AT終了後も160G＋αは続行しよう。</p>
-<p><img alt="スマスロ麻雀格闘倶楽部覚醒モード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/1013/1010-01-01.jpg" decoding="async"></p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="M-4">究局Mリーグ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-67">高継続率示唆パターン</span></h4>
+<p><img alt="スマスロ麻雀格闘倶楽部覚醒モード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S947_%E9%BA%BB%E9%9B%80%E6%A0%BC%E9%97%98%E5%80%B6%E6%A5%BD%E9%83%A8%E8%A6%9A%E9%86%92/1013/1010-01-01.jpg"></p>
+<h3>究局Mリーグ</h3>
+<h4>高継続率示唆パターン</h4>
 <table>
 <thead>
 <tr>
@@ -1841,15 +1828,30 @@ AT後は1周期の対局示唆を確認。<br>
 <td>派手な攻撃が多いほど高継続に期待</td>
 </tr>
 </tbody>
-</table>
-<div class="post-views content-post post-632 entry-meta load-static">
-				<span class="post-views-icon dashicons dashicons-chart-bar"></span> <span class="post-views-label">Post Views:</span> <span class="post-views-count">527</span>
-			</div></div></details></div></details>            </div>
-
-            <!-- 目次ハンバーガー（右下固定・常時）。中身はJSがセクションから生成 --></section>
+</table></section>
   
   
   </article></main>
 <footer class="foot">個人アーカイブ（suroschool.jp / たかどらのスロ塾 会員コンテンツ）・閲覧用</footer>
+
+<!-- スマホ用ボトムナビ（スクロールで隠れる/出る） -->
+<nav class="botnav" id="botnav">
+  <a href="../index.html" data-nav="index">🎰<span>機種</span></a>
+  <button id="searchOpen2">🔍<span>検索</span></button>
+  <a href="../index.html?fav=1">★<span>お気に入り</span></a>
+  <a href="../news.html">📰<span>お知らせ</span></a>
+  <a href="../tool.html">🧮<span>期待値</span></a>
+</nav>
+
+<!-- 全ページ横断の検索オーバーレイ -->
+<div class="search-overlay" id="searchOverlay" hidden>
+  <div class="search-head">
+    <input id="globalSearch" type="search" placeholder="機種名で検索…" autocomplete="off">
+    <button id="searchClose" aria-label="閉じる">✕</button>
+  </div>
+  <div id="searchResults" class="search-results"></div>
+</div>
+
+<script src="../assets/search-index.js"></script>
 <script src="../assets/app.js"></script>
 </body></html>

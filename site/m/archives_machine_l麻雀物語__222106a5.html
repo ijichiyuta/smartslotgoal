@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="ja"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>L麻雀物語 | スマスロ目標 (個人アーカイブ)</title>
+<title>L麻雀物語 | スマスロ期待値 (個人アーカイブ)</title>
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="manifest" href="../manifest.webmanifest">
 <meta name="theme-color" content="#ffffff">
@@ -10,16 +10,18 @@
 <link rel="apple-touch-icon" href="../assets/icon.svg">
 <link rel="icon" href="../assets/icon.svg">
 <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){})});}</script>
+<script>window.__ROOT__='../';</script>
 
 </head><body>
-<header class="topbar">
-  <a class="brand" href="../index.html">🎰 スマスロ目標</a>
-  <nav>
+<header class="topbar" id="topbar">
+  <a class="brand" href="../index.html">🎰 スマスロ期待値</a>
+  <nav class="topnav">
     <a href="../index.html">機種</a>
     <a href="../news.html">お知らせ</a>
     <a href="../tool.html">期待値計算</a>
     <a href="../pages.html">資料</a>
   </nav>
+  <button class="topbar-search" id="searchOpen" aria-label="検索">🔍</button>
 </header>
 <main>
   <article class="machine">
@@ -35,26 +37,12 @@
     <button class="tab" data-tab="kaiseki">解析情報</button>
     
   </div>
-  <section class="panel is-active" data-panel="nerai"><div class="tenjo-info"><div class="my-spoiler-wrapper" id="my-spoiler-1"><div class="my-spoiler-title" style="cursor:pointer; background:rgba(245,184,0,0.08); padding:10px; border:1px solid rgba(245,184,0,0.3); color:var(--text-main); font-weight:700; letter-spacing:0.04em;"><span class="spoiler-icon" style="margin-right:5px;">[-]</span>機種情報</div><div class="my-spoiler-content" style="display:block; padding:10px; border:1px solid rgba(245,184,0,0.2); border-top:0; background:var(--bg-card-hi); color:var(--text-main);"><p>【天井情報】</p>
-<p>ボーナス間999G　AT当選　</p>
-<p>（699は仮天井となり50.2%でボーナスに当選。）</p>
-<p>設定変更時は仮天井が399Gとなり50%でボーナスに当選。最大699GでAT当選となる。</p>
-<p>ボーナススルー天井　最大7回目のボーナス　AT当選　（7回以外の振り分けもあり、3回目はチャンス。）</p>
-<p>CZ間400G　CZ当選</p>
-<p>設定変更時・ボーナス終了後・AT終了後・CZで撃破数0後はCZ天井が200Gに短縮される</p>
-<p>(200G到達前に自力でCZへ当選した場合のCZ終了後も200G到達でCZに当選)</p>
-<p>【リセット判別】</p>
-<p>リセット時は内部加算あり。前兆ステージ移行ゲーム数がずれる。</p>
-<p>【有利区間について】</p>
-<p>差枚等で有利区間リセット時は勝利濃厚の煌帝とのバトルに突入。</p>
-<p>本機は上位ATの概念がなく基本的には通常ATでつらぬくタイプだが、大量上乗せ時はエンディングが発生。</p>
-</div></div></div>
-
-<h2 class="wp-block-heading"><span id="i">狙い目</span></h2>
+  <section class="panel is-active" data-panel="nerai"><img loading="lazy" decoding="async" width="150" height="150" src="../img/f4142e2495191dbc.jpg" class="machine-thumbnail wp-post-image" alt="" style="display:block; margin:0 auto;" srcset="https://suroschool.jp/wp-content/uploads/2025/04/thumb_1-1-150x150.jpg 150w, https://suroschool.jp/wp-content/uploads/2025/04/thumb_1-1-120x120.jpg 120w" sizes="auto, (max-width: 150px) 100vw, 150px" />
+<h2 class="wp-block-heading">狙い目</h2>
 
 
 
-<h3 class="wp-block-heading"><span id="i-2">【リセット狙い】</span></h3>
+<h3 class="wp-block-heading">【リセット狙い】</h3>
 
 
 
@@ -66,7 +54,7 @@
 
 
 
-<h3 class="wp-block-heading"><span id="i-3">【ボーナス間天井狙い】</span></h3>
+<h3 class="wp-block-heading">【ボーナス間天井狙い】</h3>
 
 
 
@@ -78,7 +66,7 @@
 
 
 
-<h3 class="wp-block-heading"><span id="i-4">【ボーナススルー回数天井狙い】</span></h3>
+<h3 class="wp-block-heading">【ボーナススルー回数天井狙い】</h3>
 
 
 
@@ -86,7 +74,7 @@
 
 
 
-<h3 class="wp-block-heading"><span id="CZ">【CZ間天井狙い】</span></h3>
+<h3 class="wp-block-heading">【CZ間天井狙い】</h3>
 
 
 
@@ -106,7 +94,7 @@
 
 
 
-<h3 class="wp-block-heading"><span id="i-5">【ピンズカウンタ狙い】</span></h3>
+<h3 class="wp-block-heading">【ピンズカウンタ狙い】</h3>
 
 
 
@@ -130,15 +118,15 @@
 
 
 
-<figure class="wp-block-image size-full"><img width="696" height="380" src="../img/e805a5b301417f27.png" alt="" class="wp-image-1439" decoding="async" sizes="auto, (max-width: 696px) 100vw, 696px"></figure>
+<figure class="wp-block-image size-full"><img width="696" height="380" src="../img/e805a5b301417f27.png" alt="" class="wp-image-1439"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/04/pincou.png 696w, https://suroschool.jp/wp-content/uploads/2025/04/pincou-300x164.png 300w" sizes="auto, (max-width: 696px) 100vw, 696px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="695" height="439" src="../img/4e63505a03784bae.png" alt="" class="wp-image-1440" decoding="async" sizes="auto, (max-width: 695px) 100vw, 695px"></figure>
+<figure class="wp-block-image size-full"><img width="695" height="439" src="../img/4e63505a03784bae.png" alt="" class="wp-image-1440"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/04/pincou2.png 695w, https://suroschool.jp/wp-content/uploads/2025/04/pincou2-300x189.png 300w" sizes="auto, (max-width: 695px) 100vw, 695px" /></figure>
 
 
 
-<h3 class="wp-block-heading"><span id="300500">【300、500高確ゾーン狙い】</span></h3>
+<h3 class="wp-block-heading">【300、500高確ゾーン狙い】</h3>
 
 
 
@@ -150,7 +138,7 @@
 
 
 
-<h3 class="wp-block-heading"><span id="i-6">【有利区間関連狙い】</span></h3>
+<h3 class="wp-block-heading">【有利区間関連狙い】</h3>
 
 
 
@@ -158,7 +146,7 @@
 
 
 
-<h2 class="wp-block-heading"><span id="i-7">やめ時</span></h2>
+<h2 class="wp-block-heading">やめ時</h2>
 
 
 
@@ -182,19 +170,19 @@
 
 
 
-<h2 class="wp-block-heading"><span id="i-8">その他</span></h2>
+<h2 class="wp-block-heading">その他</h2>
 
 
 
-<h3 class="wp-block-heading"><span id="i-9">麻雀物語の履歴の見方</span></h3>
+<h3 class="wp-block-heading">麻雀物語の履歴の見方</h3>
 
 
 
-<h4 class="wp-block-heading"><span id="i-10">履歴サンプル</span></h4>
+<h4 class="wp-block-heading">履歴サンプル</h4>
 
 
 
-<figure class="wp-block-image size-full"><img width="340" height="735" src="../img/43898f6e44c751ae.jpg" alt="" class="wp-image-1413" decoding="async" sizes="auto, (max-width: 340px) 100vw, 340px"></figure>
+<figure class="wp-block-image size-full"><img width="340" height="735" src="../img/43898f6e44c751ae.jpg" alt="" class="wp-image-1413"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/04/rieeki１２.jpg 340w, https://suroschool.jp/wp-content/uploads/2025/04/rieeki１２-139x300.jpg 139w" sizes="auto, (max-width: 340px) 100vw, 340px" /></figure>
 
 
 
@@ -210,11 +198,11 @@
 
 
 
-<h4 class="wp-block-heading"><span id="i-11">メニュー画面</span></h4>
+<h4 class="wp-block-heading">メニュー画面</h4>
 
 
 
-<figure class="wp-block-image size-full"><img width="551" height="735" src="../img/afc384e807be2012.webp" alt="" class="wp-image-1414" decoding="async" sizes="auto, (max-width: 551px) 100vw, 551px"></figure>
+<figure class="wp-block-image size-full"><img width="551" height="735" src="../img/afc384e807be2012.webp" alt="" class="wp-image-1414"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/04/rieki2.webp 551w, https://suroschool.jp/wp-content/uploads/2025/04/rieki2-225x300.webp 225w" sizes="auto, (max-width: 551px) 100vw, 551px" /></figure>
 
 
 
@@ -222,7 +210,7 @@
 
 
 
-<h3 class="wp-block-heading"><span id="AT">ボーナス、AT後の天井短縮狙いをする場合</span></h3>
+<h3 class="wp-block-heading">ボーナス、AT後の天井短縮狙いをする場合</h3>
 
 
 
@@ -234,7 +222,7 @@
 
 
 
-<h4 class="wp-block-heading"><span id="CZ-2">履歴サンプルから最低でも当選しただろうCZ回数を予想（上記サンプル履歴より）</span></h4>
+<h4 class="wp-block-heading">履歴サンプルから最低でも当選しただろうCZ回数を予想（上記サンプル履歴より）</h4>
 
 
 
@@ -282,19 +270,19 @@
 
 
 
-<figure class="wp-block-image size-full"><img width="716" height="780" src="../img/669f76b3f21f3209.png" alt="" class="wp-image-1318" decoding="async" sizes="auto, (max-width: 716px) 100vw, 716px"></figure>
+<figure class="wp-block-image size-full"><img width="716" height="780" src="../img/669f76b3f21f3209.png" alt="" class="wp-image-1318"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/04/ma-voice.png 716w, https://suroschool.jp/wp-content/uploads/2025/04/ma-voice-275x300.png 275w" sizes="auto, (max-width: 716px) 100vw, 716px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="717" height="699" src="../img/cb686c621ee7be66.png" alt="" class="wp-image-1303" decoding="async" sizes="auto, (max-width: 717px) 100vw, 717px"></figure>
+<figure class="wp-block-image size-full"><img width="717" height="699" src="../img/cb686c621ee7be66.png" alt="" class="wp-image-1303"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/04/pinzu.png 717w, https://suroschool.jp/wp-content/uploads/2025/04/pinzu-300x292.png 300w" sizes="auto, (max-width: 717px) 100vw, 717px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="719" height="766" src="../img/dd439d03e1731182.png" alt="" class="wp-image-1319" decoding="async" sizes="auto, (max-width: 719px) 100vw, 719px"></figure>
+<figure class="wp-block-image size-full"><img width="719" height="766" src="../img/dd439d03e1731182.png" alt="" class="wp-image-1319"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/04/ma-hain.png 719w, https://suroschool.jp/wp-content/uploads/2025/04/ma-hain-282x300.png 282w" sizes="auto, (max-width: 719px) 100vw, 719px" /></figure>
 
 
 
-<h2 class="wp-block-heading"><span id="i-12">参考元</span></h2>
+<h2 class="wp-block-heading">参考元</h2>
 
 
 
@@ -315,34 +303,27 @@
 
 
 <p class="wp-block-paragraph"></p>
-<div class="post-views content-post post-1297 entry-meta load-static">
-				<span class="post-views-icon dashicons dashicons-chart-bar"></span> <span class="post-views-label">Post Views:</span> <span class="post-views-count">931</span>
-			</div>
-          <!-- 目次ハンバーガー（右下固定・常時）。中身はJSが見出し(h2/h3)から生成。会員ロック時は空→自動非表示 --></section>
-  <section class="panel" data-panel="kaiseki"><div class="kaiseki-toolbar">
-              
-            </div>
-            <div class="kaiseki-accordion">
-              <details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i">基本情報</span></summary><div class="kaiseki-section-body">
+</section>
+  <section class="panel" data-panel="kaiseki"><h2>基本情報</h2>
 <ul>
 <li>メーカー: オリンピアエステート</li>
 <li>機械割: 98.0% 〜 114.6%</li>
 <li>導入開始日: 2025年04月21日（月）</li>
 <li>ゲーム性概要: ●スマスロで麻雀物語が登場 ●上位ATのない明快なゲーム性！AT突入で期待枚数800枚超！ ●通常時はレア役やゲーム数消化でCZを目指すゲーム性 ●初当りのメインは麻雀ボーナス、消化中にATを抽選 ●ATは純増約3.7枚のゲーム数管理型 ●AT中の天牌激闘に勝利すれば上乗せ以上濃厚</li>
 </ul>
-<p><img alt="L麻雀物語（パチスロ）のリール配列" src="https://p-town.dmm.com/upload/machines/4777/reel.jpg?t=1779358850" decoding="async"></p>
-<p><img alt="L麻雀物語（パチスロ）のゲームフロー" src="https://p-town.dmm.com/upload/machines/4777/flow.jpg?t=1779358850" decoding="async"></p>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-2">打ち方</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-3">打ち方・小役</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-4">打ち方（小役狙い）</span></h4>
+<p><img alt="L麻雀物語（パチスロ）のリール配列" src="https://p-town.dmm.com/upload/machines/4777/reel.jpg?t=1779358850"></p>
+<p><img alt="L麻雀物語（パチスロ）のゲームフロー" src="https://p-town.dmm.com/upload/machines/4777/flow.jpg?t=1779358850"></p>
+<h2>打ち方</h2>
+<h3>打ち方・小役</h3>
+<h4>打ち方（小役狙い）</h4>
 <p>［最初に狙う絵柄］ 左リール上段付近に赤7or白7を目押し。チェリー以外のこぼしはないので、中＆右リールはフリー打ちでOKだ。</p>
-<p><img alt="スマスロL麻雀物語打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-01-01.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-01-01.jpg"></p>
 <p>［レア役の停止例］ レア役は1枚。中押しカットイン時はいずれかのレア役濃厚。弱チェリーと弱竹が弱レア役、強チェリー・強竹・チャンス目が強レア役扱いになる。</p>
-<p><img alt="スマスロL麻雀物語打ち方レア役" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-01-02a.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語打ち方レア役" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-01-02a.jpg"></p>
 <p>※チェリーは2種類あるがどちらでもOK</p>
 <p>［小山ベルと小Vベル］ 小山ベルと小Vベル停止時はピンズカウンタが加算される。</p>
-<p><img alt="スマスロL麻雀物語打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-01-03.jpg" decoding="async"></p>
-<h4><span id="V">小山ベル＆小Vベル確率（ピンズカウンタ加算確率）</span></h4>
+<p><img alt="スマスロL麻雀物語打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-01-03.jpg"></p>
+<h4>小山ベル＆小Vベル確率（ピンズカウンタ加算確率）</h4>
 <table>
 <thead>
 <tr>
@@ -362,12 +343,12 @@
 </tbody>
 </table>
 <p>ピンズカウンタは通常時よりAT中のほうが貯まりやすくなっている。 特化ゾーン中など、一部状態ではピンズカウンタは加算されないが、小山ベル・小Vベルとしての上乗せ抽選を受けることができる。</p>
-<h4><span id="NG">変則押しはNG</span></h4>
+<h4>変則押しはNG</h4>
 <p>通常時は左1stでの消化を推奨だ。</p>
-<p><img alt="スマスロL麻雀物語打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-01-05.jpg" decoding="async"></p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-5">解析情報通常時</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-6">小役関連</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-7">小役確率</span></h4>
+<p><img alt="スマスロL麻雀物語打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-01-05.jpg"></p>
+<h2>解析情報通常時</h2>
+<h3>小役関連</h3>
+<h4>小役確率</h4>
 <table>
 <thead>
 <tr>
@@ -428,7 +409,7 @@
 </table>
 <p>※リプレイ・共通ベル以外はすべて1枚</p>
 <p>小役確率は全設定共通。</p>
-<h4><span id="MAX">［ピンズカウンタMAX時］中押しレア役確率</span></h4>
+<h4>［ピンズカウンタMAX時］中押しレア役確率</h4>
 <table>
 <thead>
 <tr>
@@ -469,7 +450,7 @@
 </table>
 <p>※順押し時の小役確率はピンズカウンタ非MAX時と同じ ※天牌激闘や麻雀ラッシュ中もピンズカウンタMAXになるので上表と同じ確率</p>
 <p>中押し経由のレア役確率はピンズカウンタをMAXにするゲーム数を加味して1/99.0になる。 AT中は特化ゾーン中など、つねにピンズカウンタがMAX発動する場面があるので、レア役確率も高い。</p>
-<h4><span id="or">［黒銀一色or真紅無双中］小役確率</span></h4>
+<h4>［黒銀一色or真紅無双中］小役確率</h4>
 <table>
 <thead>
 <tr>
@@ -554,7 +535,7 @@
 </table>
 <p>※リプレイフラグ・共通ベル以外はすべて1枚</p>
 <p>黒銀一色中および真紅無双中は、中押しからのレア役がすべて7揃いフラグとして出現するため中押しからのレア役はない。</p>
-<h4><span id="CZ">CZ当選率</span></h4>
+<h4>CZ当選率</h4>
 <table>
 <thead>
 <tr>
@@ -612,7 +593,7 @@
 </tbody>
 </table>
 <p>CZ高確中は竹やチャンス目だけでなく、全役でCZが抽選される。</p>
-<h4><span id="CZ-2">契機別のCZ当選時の狙え高確率移行率</span></h4>
+<h4>契機別のCZ当選時の狙え高確率移行率</h4>
 <table>
 <thead>
 <tr>
@@ -632,7 +613,7 @@
 </tbody>
 </table>
 <p>チャンス目でCZ当選した時の約25%、ゲーム数契機の高確中のCZ当選時は必ず狙え高確へ移行するため、マシロスナイプ経由のAT直行やピンズカウンタ大量ストックなどに期待できる。</p>
-<h4><span id="CZCZ">CZ本前兆中の上位CZ昇格率</span></h4>
+<h4>CZ本前兆中の上位CZ昇格率</h4>
 <table>
 <thead>
 <tr>
@@ -656,11 +637,11 @@
 </tbody>
 </table>
 <p>CZ（麻雀乱舞）本前兆中はレア役で上位CZ（マシロ潜入ミッション）への昇格が抽選される。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-8">内部状態関連</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="CZ-3">CZ高確</span></h4>
-<p><img alt="スマスロL麻雀物語通常時ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-03-01.jpg" decoding="async"></p>
+<h3>内部状態関連</h3>
+<h4>CZ高確</h4>
+<p><img alt="スマスロL麻雀物語通常時ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-03-01.jpg"></p>
 <p>CZ抽選が優遇される高確状態で、移行時は夕方ステージで示唆。移行契機は弱・強チェリーの抽選とゲーム数消化（300Gor500G消化で必ず高確へ）の2系統がある。 チェリー契機は20G、ゲーム数契機は30G継続。ゲーム数契機の高確に関しては、 CZに当選すれば狙え高確率を経由 してCZが告知されるため、マシロスナイプ発生にも期待できる。 ちなみに、通常・高確不問でチャンス目でCZに当選した時の一部でも狙え高確率（32G継続）へ移行する。</p>
-<h4><span id="CZ-4">CZ高確 性能</span></h4>
+<h4>CZ高確 性能</h4>
 <table>
 <thead>
 <tr>
@@ -687,7 +668,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="CZ-5">CZ高確移行率</span></h4>
+<h4>CZ高確移行率</h4>
 <table>
 <thead>
 <tr>
@@ -714,10 +695,10 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-9">モード</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-10">ピンズカウンタモード</span></h4>
+<h3>モード</h3>
+<h4>ピンズカウンタモード</h4>
 <p>通常時〜AT中共通で、ピンズカウンタを管理する2つのモードが存在。チャンスモードへ移行すれば規定回数5回が選ばれることはないうえ、モードが95.3%でループする。</p>
-<h4><span id="i-11">チャンスモード移行率＆継続率</span></h4>
+<h4>チャンスモード移行率＆継続率</h4>
 <table>
 <thead>
 <tr>
@@ -736,7 +717,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-12">ピンズカウンタモードごとの規定回数振り分け</span></h4>
+<h4>ピンズカウンタモードごとの規定回数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -763,16 +744,16 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-13">規定ゲーム数消化</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="CZ-6">CZ間ゲーム数</span></h4>
+<h3>規定ゲーム数消化</h3>
+<h4>CZ間ゲーム数</h4>
 <p>通常時は CZ間最大400G消化 でCZに当選。設定変更時、ボーナスやAT終了後はCZ間最大200GでCZに当選する。 なお、ボーナスやAT終了後のCZ間天井（最大200G）はゲーム数で到達するまで有効なので、200G以内に 自力でCZに当選して失敗した場合 でも、CZ終了後の規定ゲーム数は200Gになる（例えば自力で当選したCZが80Gで終了した場合、液晶上は280GがCZ間天井になる）。</p>
 <p>［牌人通過でCZ間ゲーム数をお知らせ］ 50・100・200・300・400G消化ごとに牌人が通過してCZ間ゲーム数を教えてくれる。</p>
-<p><img alt="スマスロL麻雀物語ゲーム数" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-08-02.jpg" decoding="async"></p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-14">ピンズカウンタ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-15">ピンズカウンタ解説</span></h4>
+<p><img alt="スマスロL麻雀物語ゲーム数" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-08-02.jpg"></p>
+<h3>ピンズカウンタ</h3>
+<h4>ピンズカウンタ解説</h4>
 <p>小山ベルor小Vベルを引くごとにポイントが加算されていき、 規定回数に達すると中押しカットインの待機状態 に移行する。 規定ポイントは液晶左のピンズ牌で表示されていて、規定回数は1回・３回・５回（一筒・三筒・五筒）の3種類。 中押しカットインフラグが成立（約1/6程度）すると、 中押しカットインが発生してレア役が停止 するシステムだ。 通常時だけでなくAT中も抽選されるため、どこで規定回数に到達するかも重要になる。</p>
-<p><img alt="スマスロL麻雀物語ピンズカウンタ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-04-01.jpg" decoding="async"></p>
-<h4><span id="i-16">ピンズカウンタ性能</span></h4>
+<p><img alt="スマスロL麻雀物語ピンズカウンタ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-04-01.jpg"></p>
+<h4>ピンズカウンタ性能</h4>
 <table>
 <thead>
 <tr>
@@ -800,13 +781,13 @@
 </tbody>
 </table>
 <p>［中押しカットイン］ パターンは青と赤の2種類。赤なら強レア役以上の期待大だ。</p>
-<p><img alt="スマスロL麻雀物語ピンズカウンタ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-04-03.jpg" decoding="async"></p>
-<p><img alt="スマスロL麻雀物語ピンズカウンタ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-04-04.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語ピンズカウンタ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-04-03.jpg"></p>
+<p><img alt="スマスロL麻雀物語ピンズカウンタ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-04-04.jpg"></p>
 <p>［停止出目ごとの成立役］</p>
-<p><img alt="スマスロL麻雀物語ピンズカウンタ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-04-05.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語ピンズカウンタ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-04-05.jpg"></p>
 <p>［テンパイ目］</p>
-<p><img alt="スマスロL麻雀物語ピンズカウンタ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/02@3x.jpg" decoding="async"></p>
-<h4><span id="i-17">テンパイ目のボーナス直撃当選率</span></h4>
+<p><img alt="スマスロL麻雀物語ピンズカウンタ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/02@3x.jpg"></p>
+<h4>テンパイ目のボーナス直撃当選率</h4>
 <table>
 <thead>
 <tr>
@@ -821,7 +802,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="orV">小山ベルor小Vベル成立時のポイント振り分け</span></h4>
+<h4>小山ベルor小Vベル成立時のポイント振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -852,11 +833,11 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-18">狙え高確率/マシロスナイプ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-19">狙え高確率解説</span></h4>
+<h3>狙え高確率/マシロスナイプ</h3>
+<h4>狙え高確率解説</h4>
 <p>チャンス目契機CZ当選時の一部や、ゲーム数消化契機の高確中のCZ当選から移行する「7を狙え」の高確率状態。 マシロスナイプが発生すれば7揃いやマシロック当選のチャンス。狙え高確率はおもにオープンバスステージ移行などで示唆される（オープンバスステージに行かなくても内部的に狙え高確率の場合あり）。 CZ当選時の本前兆ゲーム数がそのまま継続ゲーム数になる（通常時は最大32G継続、AT中は15GのST型）。</p>
-<p><img alt="スマスロL麻雀物語狙え高確率解説" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-05-01.jpg" decoding="async"></p>
-<h4><span id="i-20">狙え高確率中のマシロスナイプ確率</span></h4>
+<p><img alt="スマスロL麻雀物語狙え高確率解説" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-05-01.jpg"></p>
+<h4>狙え高確率中のマシロスナイプ確率</h4>
 <table>
 <thead>
 <tr>
@@ -875,12 +856,12 @@
 </tr>
 </tbody>
 </table>
-<p><img alt="スマスロL麻雀物語狙え高確率解説" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/00K.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語狙え高確率解説" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/00K.jpg"></p>
 <p>AT中はリール周囲の文字＆エフェクトで狙え高確率移行を示唆する。</p>
-<h4><span id="i-21">マシロスナイプ解説</span></h4>
+<h4>マシロスナイプ解説</h4>
 <p>マシロスナイプが発生すれば7揃いのチャンスで、7が揃えばAT直行＋特化ゾーン（黒銀一色or真紅無双）へ移行。失敗してもマシロック（ピンズカウンタの高確率状態）移行のチャンスだ。</p>
-<p><img alt="スマスロL麻雀物語マシロスナイプ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-06-01.jpg" decoding="async"></p>
-<h4><span id="i-22">マシロスナイプ性能</span></h4>
+<p><img alt="スマスロL麻雀物語マシロスナイプ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-06-01.jpg"></p>
+<h4>マシロスナイプ性能</h4>
 <table>
 <thead>
 <tr>
@@ -899,7 +880,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-23">マシロスナイプの恩恵まとめ</span></h4>
+<h4>マシロスナイプの恩恵まとめ</h4>
 <table>
 <thead>
 <tr>
@@ -927,14 +908,14 @@
 </tbody>
 </table>
 <p>［マシロスナイプの発生タイミング］ スコープが出現すれば発生のチャンス!?</p>
-<p><img alt="スマスロL麻雀物語マシロスナイプ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-06-03.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語マシロスナイプ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-06-03.jpg"></p>
 <p>マシロ登場でマシロスナイプ発動だ。</p>
-<p><img alt="スマスロL麻雀物語マシロスナイプ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-06-04.jpg" decoding="async"></p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-24">マシロック</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-25">マシロック概要</span></h4>
+<p><img alt="スマスロL麻雀物語マシロスナイプ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-06-04.jpg"></p>
+<h3>マシロック</h3>
+<h4>マシロック概要</h4>
 <p>12G継続するピンズカウンタかつ、7揃いの高確率状態（7揃い高確になるのは通常時のみ）で、ベルはフルナビ状態になるので出玉も増える。 規定数まで貯まったピンズカウンタは一旦ストックされ、終了後に放出される。 通常時は突入した時点でCZ濃厚 、消化中に7が揃えばAT＋特化ゾーン濃厚。AT中は上乗せやテンパイバトルに期待できる。</p>
-<p><img alt="スマスロL麻雀物語マシロック" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-07-01.jpg" decoding="async"></p>
-<h4><span id="i-26">マシロック性能</span></h4>
+<p><img alt="スマスロL麻雀物語マシロック" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-07-01.jpg"></p>
+<h4>マシロック性能</h4>
 <table>
 <thead>
 <tr>
@@ -965,7 +946,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="777">マシロック中の7揃い（赤7・白7合算）確率</span></h4>
+<h4>マシロック中の7揃い（赤7・白7合算）確率</h4>
 <table>
 <thead>
 <tr>
@@ -985,12 +966,12 @@
 </tbody>
 </table>
 <p>［狙えカットイン］ 7が揃えばマシロスナイプと同じ恩恵を獲得できる（白7揃いは黒銀一色、赤7揃いは真紅無双）。7揃いが高確率になるのは通常時のみなので、通常時のマシロック中は叩きどころだ。</p>
-<p><img alt="スマスロL麻雀物語マシロック" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-07-03.jpg" decoding="async"></p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="CZ-7">麻雀乱舞（CZ）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="CZ-8">CZ概要</span></h4>
+<p><img alt="スマスロL麻雀物語マシロック" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-07-03.jpg"></p>
+<h3>麻雀乱舞（CZ）</h3>
+<h4>CZ概要</h4>
 <p>4GのST型CZで、小役を引けば3G固定の連撃パートに移行して4Gが再セット。連撃パートでは成立役に応じて毎ゲーム敵へのダメージが抽選され、最終的に1000体の敵をすべて撃破できれば麻雀ボーナスに当選する。 1000体撃破できなくても、終了時は撃破数に応じて最終乱舞（ジャッジ演出）でボーナスが抽選される。</p>
-<p><img alt="スマスロL麻雀物語CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-09-01.jpg" decoding="async"></p>
-<h4><span id="CZ-9">麻雀乱舞（CZ）性能</span></h4>
+<p><img alt="スマスロL麻雀物語CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-09-01.jpg"></p>
+<h4>麻雀乱舞（CZ）性能</h4>
 <table>
 <thead>
 <tr>
@@ -1031,13 +1012,13 @@
 </table>
 <p>※マシロ潜入ミッションとの合算確率は1/185.0</p>
 <p>［STパート］ 小役入賞で牌人を撃破＋連撃パートへ。</p>
-<p><img alt="スマスロL麻雀物語CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-09-03.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-09-03.jpg"></p>
 <p>［連撃パート］ 毎ゲーム、最低でも50ダメージ、小役成立時は100ダメージ以上を与える。</p>
-<p><img alt="スマスロL麻雀物語CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-09-04.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-09-04.jpg"></p>
 <p>［最終乱舞］ 2〜3G継続する最終ジャッジで、タイトルの色で期待度が変化。</p>
-<p><img alt="スマスロL麻雀物語CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-09-05.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-09-05.jpg"></p>
 <p>ここでボーナスに当選した場合は、終了後の修行ステージを経由して告知されることがあるため、修行ステージを抜けるまでは続行したい。</p>
-<h4><span id="i-27">［対峙中］ （連撃突入契機役） 牌人撃破数振り分け</span></h4>
+<h4>［対峙中］ （連撃突入契機役） 牌人撃破数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1081,7 +1062,7 @@
 </tbody>
 </table>
 <p>レア役時は牌人を撃破したうえで連撃へ移行する。</p>
-<h4><span id="i-28">［連撃中］牌人撃破数振り分け</span></h4>
+<h4>［連撃中］牌人撃破数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1161,7 +1142,7 @@
 </tbody>
 </table>
 <p>テンパイ目はどの状況でもボーナス以上濃厚になる。</p>
-<h4><span id="_1">［最終乱舞］移行時のボーナス当選率 （設定1）</span></h4>
+<h4>［最終乱舞］移行時のボーナス当選率 （設定1）</h4>
 <table>
 <thead>
 <tr>
@@ -1185,7 +1166,7 @@
 </tbody>
 </table>
 <p>最終乱舞移行時に、撃破数を参照して麻雀ボーナスを抽選。高設定ほど期待できる!?</p>
-<h4><span id="i-29">［最終乱舞］消化中の書き換え当選率</span></h4>
+<h4>［最終乱舞］消化中の書き換え当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1209,11 +1190,11 @@
 </tbody>
 </table>
 <p>最終乱舞中はレア役で結果の書き換えを抽選。ボーナス非当選時や修行ステージ移行が決まっている場合はボーナス、ボーナス当選時はATへ、ATが当選している場合は天牌激闘のストックを獲得できる。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="CZ-10">マシロ潜入ミッション（上位CZ）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="CZ-11">上位CZ概要</span></h4>
+<h3>マシロ潜入ミッション（上位CZ）</h3>
+<h4>上位CZ概要</h4>
 <p>10G＋α継続する上位CZで、10G間の潜入パートで小役を引けば1〜3Gのミッションへ移行。ミッション中は潜入パートのゲーム数減算がストップして、小役を引くことができれば麻雀ボーナス濃厚。 潜入パートの最終ゲーム（10G目）で小役を引いた場合もボーナス濃厚!?</p>
-<p><img alt="スマスロL麻雀物語上位CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-10-01.jpg" decoding="async"></p>
-<h4><span id="CZ-12">マシロ潜入ミッション（上位CZ）性能</span></h4>
+<p><img alt="スマスロL麻雀物語上位CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-10-01.jpg"></p>
+<h4>マシロ潜入ミッション（上位CZ）性能</h4>
 <table>
 <thead>
 <tr>
@@ -1250,14 +1231,14 @@
 </table>
 <p>※麻雀乱舞との合算確率は1/185.0</p>
 <p>［潜入パート］ 潜入パートは10G間継続して、小役を引けばミッションへ突入する。</p>
-<p><img alt="スマスロL麻雀物語上位CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-10-02.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語上位CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-10-02.jpg"></p>
 <p>［ミッション］ ●黒牌人撃破</p>
-<p><img alt="スマスロL麻雀物語上位CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-10-03.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語上位CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-10-03.jpg"></p>
 <p>●罠解除</p>
-<p><img alt="スマスロL麻雀物語上位CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-10-04.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語上位CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-10-04.jpg"></p>
 <p>●扉開放 実戦上、ミッションは全3種類で、ミッションによって継続ゲーム数が変化（1〜3G）する。</p>
-<p><img alt="スマスロL麻雀物語上位CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-10-05.jpg" decoding="async"></p>
-<h4><span id="i-30">契機役ごとのミッション振り分け</span></h4>
+<p><img alt="スマスロL麻雀物語上位CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-10-05.jpg"></p>
+<h4>契機役ごとのミッション振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1290,13 +1271,13 @@
 </table>
 <p>※小役成立で必ずミッションに突入</p>
 <p>弱レア役時は半分が2G以上のミッションへ、強レア役時は必ず2G以上のミッションへ移行する。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-31">直撃抽選</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="AT">AT直撃確率</span></h4>
+<h3>直撃抽選</h3>
+<h4>AT直撃確率</h4>
 <p>通常時はパトランランチャンスの前兆中（おもにボーナスorAT後の99G間）を除き、毎ゲームAT直撃を抽選。高設定ほど直撃確率は高い。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-32">天井</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-33">天井抽選</span></h4>
+<h3>天井</h3>
+<h4>天井抽選</h4>
 <p>有利区間移行時とAT終了時にボーナススルー回数天井とゲーム数天井を抽選。ゲーム数天井は麻雀ボーナス終了後にも抽選される。 スルー回数天井は3回目がチャンス、7回目が天井。ゲーム数天井の699Gと999Gは振り分けで決定する。</p>
-<h4><span id="i-34">ゲーム数天井選択率</span></h4>
+<h4>ゲーム数天井選択率</h4>
 <table>
 <thead>
 <tr>
@@ -1317,16 +1298,16 @@
 </table>
 <p>※699Gで当選した場合はボーナス濃厚、999Gで当選した場合はAT濃厚＋ロングフリーズ発生のチャンス</p>
 <p>［設定変更時の抽選］ 設定変更時は内部的にゲーム数天井を300G〜399G短縮するため、結果的にゲーム数天井が最大399Gor699Gに短縮される。 ちなみにCZ天井も0〜49G短縮しているので、規定ゲーム数のズレで設定変更を完璧に見抜くのは難しい。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-35">フリーズ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-36">ロングフリーズ動画</span></h4>
-<p>リールロックを伴って発生するプレミアムフラグ。初期ゲーム数300Gを持って、ATへ直行する。</p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-37">解析情報ボーナス時</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-38">麻雀ボーナス</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-39">ボーナス概要</span></h4>
+<h3>フリーズ</h3>
+<h4>ロングフリーズ動画</h4>
+<p>リールロックを伴って発生するプレミアムフラグ。初期ゲーム数300Gを持って、ATへ直行する。</p>
+<h2>解析情報ボーナス時</h2>
+<h3>麻雀ボーナス</h3>
+<h4>ボーナス概要</h4>
 <p>初当り時はATを抽選、AT中はATゲーム数の上乗せを抽選する擬似ボーナス。 AT中に関しては、ボーナス中のゲーム数も規定ゲーム数としてカウントされるため、当選時はゲーム数契機の天牌激闘当選のチャンスにもなる。</p>
-<p><img alt="スマスロL麻雀物語麻雀ボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-11-01.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語麻雀ボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-11-01.jpg"></p>
 <p>開始時に3種類の告知モードを任意に選択することができる。</p>
-<h4><span id="i-40">麻雀ボーナス性能</span></h4>
+<h4>麻雀ボーナス性能</h4>
 <table>
 <thead>
 <tr>
@@ -1363,7 +1344,7 @@
 </table>
 <p>※期待度の約50%はスルー回数天井を含んだ数値</p>
 <p>AT中の当選は、基本的に狙え高確率経由になるため、終了後は狙え高確率15Gが再セットされる。</p>
-<h4><span id="i-41">麻雀ボーナス確率</span></h4>
+<h4>麻雀ボーナス確率</h4>
 <table>
 <thead>
 <tr>
@@ -1399,12 +1380,12 @@
 </tbody>
 </table>
 <p>［チャンス告知］ 様々な演出でチャンスを告知。7を狙えカットイン成功でAT濃厚となる。</p>
-<p><img alt="スマスロL麻雀物語麻雀ボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-11-03.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語麻雀ボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-11-03.jpg"></p>
 <p>［キュイン告知］ エフェクトの色で期待度を示唆して、最終的にパトランプが出現すれば成功。 エフェクトはそわそわ（青）＜わくわく（緑）＜どきどき（赤）の順でチャンスだ。</p>
-<p><img alt="スマスロL麻雀物語麻雀ボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-11-04.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語麻雀ボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-11-04.jpg"></p>
 <p>［初代告知］ 消化中は成立役に応じて4つの保留を強化。ラスト4Gでは保留を使ったリーチ演出で成否が告知される。</p>
-<p><img alt="スマスロL麻雀物語麻雀ボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-11-05.jpg" decoding="async"></p>
-<h4><span id="AT-2">初当りボーナス中のAT当選率</span></h4>
+<p><img alt="スマスロL麻雀物語麻雀ボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-11-05.jpg"></p>
+<h4>初当りボーナス中のAT当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1436,7 +1417,7 @@
 </tbody>
 </table>
 <p>初当りボーナス中は全役でATを抽選。強レア役は50%でATに当選するため大チャンスだ。</p>
-<h4><span id="i-42">初当りボーナス終了後のパトランランチャンス当選率</span></h4>
+<h4>初当りボーナス終了後のパトランランチャンス当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1452,11 +1433,11 @@
 </tbody>
 </table>
 <p>ボーナス当選契機不問で、終了後は8.6%でパトランランチャンスに当選。当選時は最大99Gの前兆を経てパトランランチャンスに突入する。 99G間にパトランランが登場するほどチャンス。10回登場すればパトランランチャンス濃厚だ。</p>
-<h4><span id="i-43">超麻雀ボーナス</span></h4>
+<h4>超麻雀ボーナス</h4>
 <p>レア役以外での上乗せ当選率がアップした超麻雀ボーナスも存在。麻雀ボーナス当選時の一部で当選する可能性がある。</p>
-<p><img alt="スマスロL麻雀物語超麻雀ボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0420/0420-23-01.jpg" decoding="async"></p>
-<p><img alt="スマスロL麻雀物語超麻雀ボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0420/0420-23-02.jpg" decoding="async"></p>
-<h4><span id="AT-3">［AT中］ボーナス中のゲーム数上乗せ当選率</span></h4>
+<p><img alt="スマスロL麻雀物語超麻雀ボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0420/0420-23-01.jpg"></p>
+<p><img alt="スマスロL麻雀物語超麻雀ボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0420/0420-23-02.jpg"></p>
+<h4>［AT中］ボーナス中のゲーム数上乗せ当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1487,7 +1468,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-44">ゲーム数上乗せ当選時の上乗せゲーム数振り分け</span></h4>
+<h4>ゲーム数上乗せ当選時の上乗せゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1515,8 +1496,8 @@
 </tbody>
 </table>
 <p>契機役で当選率は変化するが、上乗せされるゲーム数は契機不問で振り分けられる。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="AT-4">通常時・AT中共通</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-45">共通要素</span></h4>
+<h3>通常時・AT中共通</h3>
+<h4>共通要素</h4>
 <p>通常時との共通要素リンク先</p>
 <p>ピンズカウンタ</p>
 <p>狙え高確率</p>
@@ -1524,12 +1505,12 @@
 <p>マシロック</p>
 <p>麻雀ボーナス</p>
 <p>ピンズカウンタの貯まる確率など若干の違いはあるが、システムは共通だ。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="AT-5">麻雀闘牌（AT）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="AT-6">AT概要</span></h4>
+<h3>麻雀闘牌（AT）</h3>
+<h4>AT概要</h4>
 <p>ゲーム数管理型のATで、消化中はレア役でゲーム数上乗せや天牌激闘を抽選、天牌激闘はゲーム数消化でも抽選される。 AT開始時は「詮議の刻」で対戦相手を決定。天牌激闘で対戦相手に勝利すればゲーム数上乗せ以上濃厚かつ、再度詮議の刻で対戦相手を決定する。</p>
-<p><img alt="スマスロL麻雀物語麻雀AT" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-12-01.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語麻雀AT" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-12-01.jpg"></p>
 <p>ゲーム数を使い切っても、継続をかけた3G間の「ラストジャッジ」が発生するため、継続に期待できる。</p>
-<h4><span id="AT-7">麻雀闘牌（AT）性能</span></h4>
+<h4>麻雀闘牌（AT）性能</h4>
 <table>
 <thead>
 <tr>
@@ -1560,7 +1541,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="AT-8">AT中の規定ゲーム数</span></h4>
+<h4>AT中の規定ゲーム数</h4>
 <table>
 <thead>
 <tr>
@@ -1585,11 +1566,11 @@
 </table>
 <p>AT初回は30Gor60Gで天牌激闘に突入するため、まずは60G継続させるのが目標となる。</p>
 <p>［詮議の刻］ 詮議の刻は5G間継続。敵によって天牌激闘時の勝率や弱点役が変化。 最大5戦で、5戦目は勝利＝特化ゾーン濃厚となる「煌帝」が出現する。</p>
-<p><img alt="スマスロL麻雀物語麻雀AT" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-12-04.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語麻雀AT" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-12-04.jpg"></p>
 <p>一度倒したキャラは煌帝を倒すまで復活しない。一度煌帝を倒した後は、各キャラを倒しても消えることはなくランダムで出現（例：青龍を倒した後も青龍が選ばれる可能性あり）。ただし、同じキャラが連続で選ばれる割合は低くなっているようだ。</p>
 <p>［対戦相手］</p>
-<p><img alt="スマスロL麻雀物語麻雀AT" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-12-05.jpg" decoding="async"></p>
-<h4><span id="AT-9">AT中の対戦相手</span></h4>
+<p><img alt="スマスロL麻雀物語麻雀AT" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-12-05.jpg"></p>
+<h4>AT中の対戦相手</h4>
 <table>
 <thead>
 <tr>
@@ -1622,14 +1603,14 @@
 </table>
 <p>弱点の強レア役は勝利かつ覚醒移行濃厚になる。</p>
 <p>［規定ゲーム数消化］ 規定ゲーム数消化時はリール下部のセット数＆ゲーム数表示部分がCHANCE文字に変化。文字の色は複数あり、赤や紫なら大チャンス!?</p>
-<p><img alt="スマスロL麻雀物語麻雀AT" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-12-07.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語麻雀AT" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-12-07.jpg"></p>
 <p>［ラストジャッジ］ ここで勝利できれば必ず報酬上乗せゾーンの「覚醒」に移行するため、特化ゾーン当選にも期待できる。</p>
-<p><img alt="スマスロL麻雀物語麻雀AT" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-12-08.jpg" decoding="async"></p>
-<h4><span id="i-46">ゲーム数上乗せ抽選</span></h4>
+<p><img alt="スマスロL麻雀物語麻雀AT" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-12-08.jpg"></p>
+<h4>ゲーム数上乗せ抽選</h4>
 <p>ゲーム数上乗せ当選時は、まずマシロインパクト（上乗せ50G以上のフリーズ）の当否を抽選。そのあとに契機役に応じた上乗せゲーム数が抽選される。</p>
-<p><img alt="スマスロL麻雀物語ゲーム数上乗せ抽選" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0420/0420-16-01.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語ゲーム数上乗せ抽選" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0420/0420-16-01.jpg"></p>
 <p>［特殊な上乗せ］ ゲーム数上乗せ時に半端なゲーム数（例：58G、155Gなど）が表示されると大量ゲーム数上乗せのチャンス。発生率は上乗せ時の約1.6%だ。</p>
-<h4><span id="i-47">ゲーム数上乗せ当選率</span></h4>
+<h4>ゲーム数上乗せ当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1665,7 +1646,7 @@
 </tbody>
 </table>
 <p>まだ、上記表の段階では上乗せゲーム数は決まっておらず、マシロインパクトの当否を抽選してからゲーム数を決定。 テンパイ目は上乗せの期待大かつマシロインパクトのチャンス、上乗せ非当選でも天牌激闘濃厚だ。</p>
-<h4><span id="i-48">ゲーム数上乗せ当選時のマシロインパクト当選率</span></h4>
+<h4>ゲーム数上乗せ当選時のマシロインパクト当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1700,7 +1681,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-49">マシロインパクト当選時の上乗せゲーム数振り分け</span></h4>
+<h4>マシロインパクト当選時の上乗せゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1735,7 +1716,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-50">マシロインパクト非当選時の上乗せゲーム数振り分け</span></h4>
+<h4>マシロインパクト非当選時の上乗せゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1827,8 +1808,8 @@
 </tbody>
 </table>
 <p>［マシロインパクト］ AT中のマシロインパクトは＋50G以上濃厚。 弱竹・強竹はどちらも天牌激闘当選がメインなのでゲーム数上乗せ当選率は低めだが、上乗せ当選時はマシロインパクトのチャンス、ゲーム数上乗せのみだった場合でも＋30G以上濃厚になる。</p>
-<p><img alt="スマスロL麻雀物語ゲーム数上乗せ抽選" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0420/0420-16-06.jpg" decoding="async"></p>
-<h4><span id="i-51">［レア役］天牌激闘当選率</span></h4>
+<p><img alt="スマスロL麻雀物語ゲーム数上乗せ抽選" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0420/0420-16-06.jpg"></p>
+<h4>［レア役］天牌激闘当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1864,7 +1845,7 @@
 </tbody>
 </table>
 <p>当選のメインは竹系。チェリー系はゲーム数上乗せがメイン。 レア役で当選した場合でも規定ゲーム数はリセットされる。</p>
-<h4><span id="i-52">［規定ゲーム数］天牌激闘当選率 （振り分け）</span></h4>
+<h4>［規定ゲーム数］天牌激闘当選率 （振り分け）</h4>
 <table>
 <thead>
 <tr>
@@ -1896,10 +1877,10 @@
 </tbody>
 </table>
 <p>ゲーム数消化の本前兆中のレア役も非前兆中と同じ数値で天牌激闘ストックを抽選する。</p>
-<h4><span id="i-53">狙え高確率関連の抽選</span></h4>
+<h4>狙え高確率関連の抽選</h4>
 <p>チャンス目はほかのレア役と異なり、天牌激闘を抽選しない分、ゲーム数上乗せだけでなく狙え高確率を抽選。当選時は15G間の狙え高確率へ移行する。</p>
-<p><img alt="スマスロL麻雀物語狙え高確率関連の抽選" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0420/0420-18-01.jpg" decoding="async"></p>
-<h4><span id="i-54">狙え高確率移行率</span></h4>
+<p><img alt="スマスロL麻雀物語狙え高確率関連の抽選" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0420/0420-18-01.jpg"></p>
+<h4>狙え高確率移行率</h4>
 <table>
 <thead>
 <tr>
@@ -1915,7 +1896,7 @@
 </tbody>
 </table>
 <p>狙え高確率中もチャンス目で狙え高確率を抽選（抽選値は非高確率中と同じ）。当選した場合は狙え高確率15Gが再セットされる。</p>
-<h4><span id="i-55">狙え高確率中のマシロスナイプ発生確率</span></h4>
+<h4>狙え高確率中のマシロスナイプ発生確率</h4>
 <table>
 <thead>
 <tr>
@@ -1947,11 +1928,11 @@
 </tbody>
 </table>
 <p>狙え高確率中は1/18.4でマシロスナイプが発生。マシロスナイプが発生した時点でのマシロック以上期待度は約57%だ。</p>
-<h4><span id="i-56">ラストジャッジの抽選</span></h4>
+<h4>ラストジャッジの抽選</h4>
 <p>ラストジャッジは、内部的なポイントに応じて突入時に勝利を抽選する仕組みで、ポイントが多いほど勝利期待度が高く、玄武・白虎・煌帝は必ず3ptが加算されるため、勝利期待度が高い。 対戦相手以外では、現在の対戦相手に天牌激闘で何連続で負けているか（負けている回数がそのままポイントに換算）、一度でも天牌激闘に勝利しているか（0勝なら＋1pt）でポイントが加算される。</p>
-<p><img alt="スマスロL麻雀物語ラストジャッジの抽選" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0420/0420-21-01.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語ラストジャッジの抽選" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0420/0420-21-01.jpg"></p>
 <p>例）AT初回の対戦相手が玄武で、同セット内の天牌激闘で2回敗北…というケースなら3pt（玄武）＋2pt（2敗）＋1pt（天牌激闘未勝利）になって、計6ptで抽選</p>
-<h4><span id="i-57">ラストジャッジの期待度</span></h4>
+<h4>ラストジャッジの期待度</h4>
 <table>
 <thead>
 <tr>
@@ -1989,7 +1970,7 @@
 <p>対戦相手や継続セット数を平均するとトータル期待度は約30%だ。</p>
 <p>［開始時の抽選に漏れても書き換えを抽選］ 開始時のポイントによる抽選に漏れた場合でも、レア役で勝利書き換えを抽選。弱レア役なら期待度25%、強レア役は勝利書き換え濃厚になる。</p>
 <p>［ループの打牌抽選に受かれば90%継続に！］ ラストジャッジ勝利時は約0.4%と低い割合だが、以降のラストジャッジがすべて7pt固定（継続率90.2%）になる「ループの打牌抽選」がおこなわれる。</p>
-<h4><span id="i-58">ラストジャッジのポイント加算契機</span></h4>
+<h4>ラストジャッジのポイント加算契機</h4>
 <table>
 <thead>
 <tr>
@@ -2016,7 +1997,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-59">ラストジャッジ開始時の勝利当選率</span></h4>
+<h4>ラストジャッジ開始時の勝利当選率</h4>
 <table>
 <thead>
 <tr>
@@ -2059,7 +2040,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-60">ラストジャッジ中の勝利書き換え当選率</span></h4>
+<h4>ラストジャッジ中の勝利書き換え当選率</h4>
 <table>
 <thead>
 <tr>
@@ -2082,7 +2063,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-61">ループの打牌抽選当選率</span></h4>
+<h4>ループの打牌抽選当選率</h4>
 <table>
 <thead>
 <tr>
@@ -2097,11 +2078,11 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-62">天牌激闘/覚醒</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-63">天牌激闘概要</span></h4>
+<h3>天牌激闘/覚醒</h3>
+<h4>天牌激闘概要</h4>
 <p>レア役やゲーム数消化で抽選されるバトルで、勝利すればゲーム数上乗せ以上（最低30G）濃厚。上乗せ以上獲得後は再び詮議の刻で対戦相手を決めてATがスタートする。 消化中はレア役確率が約1/5.4と大幅にアップ（ピンズカウンタが常時点灯）していて、対戦相手ごとに設定されている 「弱点の強レア役」で撃破できれば必ず「覚醒」に移行 して、報酬をランクアップさせることが可能だ。</p>
-<p><img alt="スマスロL麻雀物語麻雀AT天牌激闘" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-13-01.jpg" decoding="async"></p>
-<h4><span id="i-64">天牌激闘 性能</span></h4>
+<p><img alt="スマスロL麻雀物語麻雀AT天牌激闘" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-13-01.jpg"></p>
+<h4>天牌激闘 性能</h4>
 <table>
 <thead>
 <tr>
@@ -2140,7 +2121,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="DATA">対戦相手別DATA</span></h4>
+<h4>対戦相手別DATA</h4>
 <table>
 <thead>
 <tr>
@@ -2184,19 +2165,19 @@
 </tbody>
 </table>
 <p>※出現割合は内部的な煌帝を含むトータル値 ※煌帝の勝率は設定1の数値</p>
-<h4><span id="i-65">煌帝のトータル出現確率</span></h4>
+<h4>煌帝のトータル出現確率</h4>
 <p>エンディング移行後も必ず煌帝が登場する。</p>
 <p>［液晶下部に弱点役が表示］ 対戦相手ごとの弱点役は液晶下部に表示。ちなみに背景の色は対戦相手に応じて変化する。</p>
-<p><img alt="スマスロL麻雀物語麻雀AT天牌激闘" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-13-03.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語麻雀AT天牌激闘" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-13-03.jpg"></p>
 <p>［煌帝とのバトル］ AT開始後、5戦目以内に登場する対戦相手で、勝利すれば覚醒濃厚かつ報酬が麻雀ラッシュ以上になる。</p>
-<p><img alt="スマスロL麻雀物語麻雀AT天牌激闘" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-13-04.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語麻雀AT天牌激闘" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-13-04.jpg"></p>
 <p>［武器破壊］ 弱点以外の強レア役を引いた場合は武器破壊を抽選。当選すれば すべての強レア役が弱点役 になる。 通常の弱点役と同じく、追加された弱点強レア役は勝利後の覚醒中も有効なので、武器破壊経由で覚醒へ移行すれば青龍や玄武、朱雀でも白虎と同等の恩恵を受けることができる。</p>
-<p><img alt="スマスロL麻雀物語天牌激闘概要" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0420/0420-19-01.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語天牌激闘概要" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0420/0420-19-01.jpg"></p>
 <p>［残り？？Gの海底抽選］ 残り？？Gの状態に移行して、小役以外（ハズレ）を引くと終了のピンチ。 この状態で勝利した場合、海底抽選がおこなわれ、 当選すれば10G＋αの覚醒 に移行。河底撈魚の1翻が加算された状態でスタートするうえ、ゲーム数も多い（通常の覚醒は5G＋α）ので、通常の覚醒より役満以上を狙いやすくなる。</p>
-<h4><span id="i-66">覚醒概要</span></h4>
+<h4>覚醒概要</h4>
 <p>天牌激闘勝利時の一部で移行する報酬ランクアップゾーン。毎ゲーム翻数アップを抽選していて、最終的に翻数に応じた恩恵を獲得する。天牌激闘の対戦相手の弱点強レア役はここでも有効で、引くことができれば翻数大幅アップに期待できる。 弱点強レア役は液晶上部に表示。天牌激闘中と同じく、ピンズカウンタMAX状態なので、1/6.2で中押しレア役が出現する。</p>
-<p><img alt="スマスロL麻雀物語麻雀AT覚醒" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-14-01.jpg" decoding="async"></p>
-<h4><span id="i-67">覚醒 性能</span></h4>
+<p><img alt="スマスロL麻雀物語麻雀AT覚醒" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-14-01.jpg"></p>
+<h4>覚醒 性能</h4>
 <table>
 <thead>
 <tr>
@@ -2223,7 +2204,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-68">トータル翻数ごとの恩恵</span></h4>
+<h4>トータル翻数ごとの恩恵</h4>
 <table>
 <thead>
 <tr>
@@ -2251,15 +2232,15 @@
 </tbody>
 </table>
 <p>［翻数アップ］ 麻雀の役に応じた翻数がアップする。</p>
-<p><img alt="スマスロL麻雀物語麻雀AT覚醒" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-14-04.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語麻雀AT覚醒" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-14-04.jpg"></p>
 <p>［裏ドラ発生で翻数大幅アップ］</p>
-<p><img alt="スマスロL麻雀物語麻雀AT覚醒" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-14-05.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語麻雀AT覚醒" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-14-05.jpg"></p>
 <p>［ラストの恩恵を告知］ 加算した翻数の合計に応じた恩恵が告知される。</p>
-<p><img alt="スマスロL麻雀物語麻雀AT覚醒" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-14-06.jpg" decoding="async"></p>
-<h4><span id="i-69">［天牌激闘］中押しレア役確率</span></h4>
+<p><img alt="スマスロL麻雀物語麻雀AT覚醒" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-14-06.jpg"></p>
+<h4>［天牌激闘］中押しレア役確率</h4>
 <p>※順押し時の小役確率は通常時と同じ</p>
 <p>消化中はピンズカウンタMAX状態になるので、レア役確率が大幅にアップする。</p>
-<h4><span id="i-70">対戦相手別の勝利当選率</span></h4>
+<h4>対戦相手別の勝利当選率</h4>
 <table>
 <thead>
 <tr>
@@ -2316,7 +2297,7 @@
 </tbody>
 </table>
 <p>弱点の強レア役は勝利＋覚醒濃厚。煌帝は白虎と同じく全レア役がチャンスになる。 煌帝に勝利すれば勝利契機役不問で、役満以上濃厚（天和スタート）の覚醒へ移行する。</p>
-<h4><span id="i-71">武器破壊当選率</span></h4>
+<h4>武器破壊当選率</h4>
 <table>
 <thead>
 <tr>
@@ -2331,7 +2312,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-72">海底当選率</span></h4>
+<h4>海底当選率</h4>
 <table>
 <thead>
 <tr>
@@ -2347,7 +2328,7 @@
 </tbody>
 </table>
 <p>海底は残り？？Gの間でのみ抽選される。</p>
-<h4><span id="_oror">成立役別の翻数振り分け 青龍or朱雀or玄武→勝利後（武器破壊なし）</span></h4>
+<h4>成立役別の翻数振り分け 青龍or朱雀or玄武→勝利後（武器破壊なし）</h4>
 <table>
 <thead>
 <tr>
@@ -2452,7 +2433,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="oror">武器破壊後or白虎or煌帝→勝利後</span></h4>
+<h4>武器破壊後or白虎or煌帝→勝利後</h4>
 <table>
 <thead>
 <tr>
@@ -2558,11 +2539,11 @@
 </tbody>
 </table>
 <p>レア役以外は1翻濃厚、弱レア役は弱点・非弱点不問で撃破した対戦相手共通の抽選値になる。 弱点の強レア役は30%以上で役満（13翻以上）が選ばれるので、いかに強レア役を引けるかが重要。 武器破壊経由なら朱雀以下でも白虎と同様の抽選を受けることが可能だ。 煌帝は開始時に必ず天和（役満）を上がるので、13翻が加算された状態でスタートする。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-73">特化ゾーン</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-74">麻雀ラッシュ</span></h4>
+<h3>特化ゾーン</h3>
+<h4>麻雀ラッシュ</h4>
 <p>シリーズおなじみのゲーム数上乗せ特化ゾーンで、毎ゲーム成立役に応じてゲーム数を上乗せしていく。消化中はピンズカウンタMAX状態なので、1/5.4でレア役が成立する。</p>
-<p><img alt="スマスロL麻雀物語麻雀AT麻雀ラッシュ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-15-01.jpg" decoding="async"></p>
-<h4><span id="i-75">麻雀ラッシュ性能</span></h4>
+<p><img alt="スマスロL麻雀物語麻雀AT麻雀ラッシュ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-15-01.jpg"></p>
+<h4>麻雀ラッシュ性能</h4>
 <table>
 <thead>
 <tr>
@@ -2594,13 +2575,13 @@
 </tbody>
 </table>
 <p>［キャラの種類とエフェクトに注目］ レバーON時の登場キャラとエフェクト（カットインの線の色）で上乗せされるゲーム数期待度が変化する。</p>
-<p><img alt="スマスロL麻雀物語麻雀AT麻雀ラッシュ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-15-03.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語麻雀AT麻雀ラッシュ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-15-03.jpg"></p>
 <p>［ダジャレの役告知も健在］ 翻数が多い役ほど上乗せ枚数もアップする。</p>
-<p><img alt="スマスロL麻雀物語麻雀AT麻雀ラッシュ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-15-04.jpg" decoding="async"></p>
-<h4><span id="i-76">黒銀一色</span></h4>
+<p><img alt="スマスロL麻雀物語麻雀AT麻雀ラッシュ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-15-04.jpg"></p>
+<h4>黒銀一色</h4>
 <p>2番目に強力なゲーム数上乗せ特化ゾーンで、消化中は高確率で白7が揃う。</p>
-<p><img alt="スマスロL麻雀物語麻雀AT特化ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-16-01.jpg" decoding="async"></p>
-<h4><span id="i-77">黒銀一色 性能</span></h4>
+<p><img alt="スマスロL麻雀物語麻雀AT特化ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-16-01.jpg"></p>
+<h4>黒銀一色 性能</h4>
 <table>
 <thead>
 <tr>
@@ -2636,14 +2617,14 @@
 </tbody>
 </table>
 <p>［白7揃いが上乗せのメイン契機］ 白7揃いやレア役は上乗せ濃厚。狙えカットインはキャラの種類にも注目だ。</p>
-<p><img alt="スマスロL麻雀物語麻雀AT特化ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-16-03.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語麻雀AT特化ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-16-03.jpg"></p>
 <p>［上乗せ後はマシロインパクトに期待！］ 上乗せの次ゲームでマシロインパクト（フリーズ）が発生すれば3桁上乗せ濃厚になる。</p>
-<p><img alt="スマスロL麻雀物語麻雀AT特化ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-16-04.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語麻雀AT特化ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-16-04.jpg"></p>
 <p>［レア役で転落なし状態移行を抽選］ レア役はゲーム数上乗せ濃厚となるだけでなく、3G間の「転落なし状態」への移行を抽選。強レア役時は約50%で移行する。</p>
-<h4><span id="i-78">真紅無双</span></h4>
+<h4>真紅無双</h4>
 <p>高確率で赤7が揃う最強のゲーム数上乗せ特化ゾーンだ。</p>
-<p><img alt="スマスロL麻雀物語麻雀AT特化ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-17-01.jpg" decoding="async"></p>
-<h4><span id="i-79">真紅無双 性能</span></h4>
+<p><img alt="スマスロL麻雀物語麻雀AT特化ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-17-01.jpg"></p>
+<h4>真紅無双 性能</h4>
 <table>
 <thead>
 <tr>
@@ -2679,10 +2660,10 @@
 </tbody>
 </table>
 <p>［赤7揃いが上乗せのメイン契機］ オーラの色にも注目！</p>
-<p><img alt="スマスロL麻雀物語麻雀AT特化ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-17-03.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語麻雀AT特化ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-17-03.jpg"></p>
 <p>［マシロインパクトもあり！］ マシロインパクト（フリーズ）が発生すれば3桁上乗せ濃厚だ。</p>
 <p>［レア役で転落なし状態移行を抽選］ 黒銀一色と同じく、レア役はゲーム数上乗せ濃厚濃厚かつ、3G間の「転落なし状態」への移行を抽選する。</p>
-<h4><span id="i-80">［麻雀ラッシュ］小役確率</span></h4>
+<h4>［麻雀ラッシュ］小役確率</h4>
 <table>
 <thead>
 <tr>
@@ -2762,7 +2743,7 @@
 </tbody>
 </table>
 <p>麻雀ラッシュ中はピンズカウンタMAX時と同じ確率になる。</p>
-<h4><span id="or-2">［黒銀一色or真紅無双中］小役確率</span></h4>
+<h4>［黒銀一色or真紅無双中］小役確率</h4>
 <table>
 <thead>
 <tr>
@@ -2847,7 +2828,7 @@
 </table>
 <p>※リプレイフラグ・共通ベル以外はすべて1枚</p>
 <p>黒銀一色と真紅無双中はリプレイの一部と中押しのレア役が7揃いフラグ（フェイク含む）に変換される。 もちろん、中押し以外のレア役確率は通常時〜AT中で共通だ。</p>
-<h4><span id="i-81">上乗せゲーム数振り分け</span></h4>
+<h4>上乗せゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2911,7 +2892,7 @@
 </tbody>
 </table>
 <p>毎ゲーム最低でも10Gを上乗せ。レア役は30G以上なので、いかにレア役を引けるかがポイントだ（レア役合算1/5.4）。</p>
-<h4><span id="3G">転落なしゲーム（3G）当選率</span></h4>
+<h4>転落なしゲーム（3G）当選率</h4>
 <table>
 <thead>
 <tr>
@@ -2930,7 +2911,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-82">マシロインパクト当選率</span></h4>
+<h4>マシロインパクト当選率</h4>
 <table>
 <thead>
 <tr>
@@ -2962,7 +2943,7 @@
 </tbody>
 </table>
 <p>AT中の上乗せと同じく、ゲーム数上乗せに当選（レア役or7揃い成立）してから契機役を参照してマシロインパクトを抽選。当選すればマシロインパクト用の上乗せゲーム数を抽選、非当選時は契機役に応じた上乗せゲーム数を抽選する。</p>
-<h4><span id="i-83">マシロインパクト当選時の上乗せゲーム数振り分け</span></h4>
+<h4>マシロインパクト当選時の上乗せゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2986,7 +2967,7 @@
 </tbody>
 </table>
 <p>黒銀一色中のマシロインパクトは最低100Gと、AT中よりも強力だ（AT中は最低50G）。</p>
-<h4><span id="i-84">上乗せゲーム数振り分け</span></h4>
+<h4>上乗せゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -3050,7 +3031,7 @@
 </tbody>
 </table>
 <p>マシロインパクト非当選時は、7揃いとテンパイ目の上乗せゲーム数振り分けは同じになる。</p>
-<h4><span id="i-85">マシロインパクト当選率</span></h4>
+<h4>マシロインパクト当選率</h4>
 <table>
 <thead>
 <tr>
@@ -3082,7 +3063,7 @@
 </tbody>
 </table>
 <p>AT中の上乗せや黒銀一色と同じで、上乗せに当選（レア役or7揃い成立）してから契機役を参照してマシロインパクトを抽選する。当選すればマシロインパクト用の上乗せゲーム数を抽選、非当選時は契機役に応じた上乗せゲーム数が抽選される。 黒銀一色中より7揃い時のマシロインパクト当選率が優遇されていて、斜め揃いは50%で当選する。</p>
-<h4><span id="i-86">マシロインパクト当選時の上乗せゲーム数振り分け</span></h4>
+<h4>マシロインパクト当選時の上乗せゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -3106,7 +3087,7 @@
 </tbody>
 </table>
 <p>真紅無双中のマシロインパクトは黒銀一色中よりも＋200G以上の選択率が高い。</p>
-<h4><span id="i-87">上乗せゲーム数振り分け</span></h4>
+<h4>上乗せゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -3170,11 +3151,11 @@
 </tbody>
 </table>
 <p>7揃いは最低50G以上かつ、マシロインパクトにも期待できるので、いかに7揃いを引けるかがポイントとなる。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-88">ヤキトリチャレンジ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-89">ヤキトリチャレンジ概要</span></h4>
+<h3>ヤキトリチャレンジ</h3>
+<h4>ヤキトリチャレンジ概要</h4>
 <p>ATの最終ゲームで発生する可能性がある要素で、レア役を引けば発生のチャンス。AT駆け抜け時はレア役以外でも発生する可能性がある。成功すればやきとりドライブが発生して100or200or300Gが上乗せされる。</p>
-<p><img alt="スマスロL麻雀物語麻雀ATヤキトリチャレンジ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-18-01.jpg" decoding="async"></p>
-<h4><span id="i-90">ヤキトリチャレンジ性能</span></h4>
+<p><img alt="スマスロL麻雀物語麻雀ATヤキトリチャレンジ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-18-01.jpg"></p>
+<h4>ヤキトリチャレンジ性能</h4>
 <table>
 <thead>
 <tr>
@@ -3194,14 +3175,14 @@
 </tbody>
 </table>
 <p>［第3停止までにフリーズすれば成功］ リール停止ごとにカウントダウンが発生する。</p>
-<p><img alt="スマスロL麻雀物語麻雀ATヤキトリチャレンジ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-18-03.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語麻雀ATヤキトリチャレンジ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-18-03.jpg"></p>
 <p>［やきとりドライブ］</p>
-<p><img alt="スマスロL麻雀物語麻雀ATヤキトリチャレンジ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-18-04.jpg" decoding="async"></p>
-<p><img alt="スマスロL麻雀物語麻雀ATヤキトリチャレンジ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-18-05.jpg" decoding="async"></p>
-<h4><span id="i-91">終了待機中のヤキトリ関連の抽選</span></h4>
+<p><img alt="スマスロL麻雀物語麻雀ATヤキトリチャレンジ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-18-04.jpg"></p>
+<p><img alt="スマスロL麻雀物語麻雀ATヤキトリチャレンジ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-18-05.jpg"></p>
+<h4>終了待機中のヤキトリ関連の抽選</h4>
 <p>ATの終了待機中（おもに最終ゲーム）では、レア役を引くとヤキトリチャレンジが発生。強レア役やテンパイ目なら成功＝やきとりドライブ濃厚となる。天牌激闘に一度も勝利していない場合は、AT駆け抜け扱いとなり、レア役以外でも抽選される。</p>
-<p><img alt="スマスロL麻雀物語ATヤキトリチャレンジ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0420/0420-28-01.jpg" decoding="async"></p>
-<h4><span id="i-92">終了待機中のやきとりドライブ当選率 （非駆け抜け時）</span></h4>
+<p><img alt="スマスロL麻雀物語ATヤキトリチャレンジ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0420/0420-28-01.jpg"></p>
+<h4>終了待機中のやきとりドライブ当選率 （非駆け抜け時）</h4>
 <table>
 <thead>
 <tr>
@@ -3224,7 +3205,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-93">やきとりドライブの上乗せゲーム数振り分け</span></h4>
+<h4>やきとりドライブの上乗せゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -3247,11 +3228,11 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-94">パトランランチャンス</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-95">パトランランチャンス概要</span></h4>
+<h3>パトランランチャンス</h3>
+<h4>パトランランチャンス概要</h4>
 <p>今回のパトランランチャンスはこれまでと異なり、通常時に戻ってからの引き戻しゾーン的な役割。 ボーナス・AT終了画面のPUSHボイスや、通常時（ボーナス・AT終了後の99G以内）のパトランラン通過などで示唆される。</p>
-<p><img alt="スマスロL麻雀物語麻雀ATパトランランチャンス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-18-06.jpg" decoding="async"></p>
-<h4><span id="i-96">パトランランチャンス性能</span></h4>
+<p><img alt="スマスロL麻雀物語麻雀ATパトランランチャンス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-18-06.jpg"></p>
+<h4>パトランランチャンス性能</h4>
 <table>
 <thead>
 <tr>
@@ -3279,10 +3260,10 @@
 </tbody>
 </table>
 <p>［キュインと鳴れば上乗せ］ 最低保証があるので、突入した時点でAT引き戻し濃厚。キュインと鳴ればゲーム数上乗せだ。</p>
-<p><img alt="スマスロL麻雀物語麻雀ATパトランランチャンス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-18-08.jpg" decoding="async"></p>
-<h4><span id="i-97">パトランラン関連の抽選</span></h4>
+<p><img alt="スマスロL麻雀物語麻雀ATパトランランチャンス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-18-08.jpg"></p>
+<h4>パトランラン関連の抽選</h4>
 <p>AT非当選の麻雀ボーナス終了時、AT終了後は 8.6% でパトランランチャンスに当選。当選後は、最大99Gの前兆を経て告知されるが、毎ゲーム、 前兆を7Gに短縮する抽選 がおこなわれるので、早いゲーム数で当選することもある。ただし、内部的にパトランランチャンスに当選している場合はCZやボーナスが抽選されない。 パトランランチャンス消化中は5〜15G間、成立役に応じてATゲーム数の上乗せを抽選。ハズレやベル・リプレイでもそれなりに期待できるうえ、上乗せは最低50Gなので、引き次第で強力なトリガーとなり得る。</p>
-<h4><span id="i-98">継続ゲーム数振り分け</span></h4>
+<h4>継続ゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -3305,7 +3286,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-99">ゲーム数上乗せ当選率</span></h4>
+<h4>ゲーム数上乗せ当選率</h4>
 <table>
 <thead>
 <tr>
@@ -3336,7 +3317,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-100">ゲーム数上乗せ当選時の上乗せゲーム数振り分け</span></h4>
+<h4>ゲーム数上乗せ当選時の上乗せゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -3372,13 +3353,13 @@
 </tbody>
 </table>
 <p>［パトランラン通過］ パトランランが最大10回通過すればパトランランチャンス!?</p>
-<p><img alt="スマスロL麻雀物語ATパトランランチャンス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0420/0420-29-04.jpg" decoding="async"></p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-101">演出情報</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="AT-10">ボーナス・AT終了画面</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="PUSH">PUSHボイスの示唆</span></h4>
+<p><img alt="スマスロL麻雀物語ATパトランランチャンス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0420/0420-29-04.jpg"></p>
+<h2>演出情報</h2>
+<h3>ボーナス・AT終了画面</h3>
+<h4>PUSHボイスの示唆</h4>
 <p>ボイスで99G以内のパトランランチャンス当選の有無などを示唆。さやかやマシロのボイスはモードや規定ゲーム数を示唆しているかも!?</p>
-<p><img alt="スマスロL麻雀物語終了画面" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-20-01.jpg" decoding="async"></p>
-<h4><span id="PUSH-2">PUSHボイスごとの示唆</span></h4>
+<p><img alt="スマスロL麻雀物語終了画面" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-20-01.jpg"></p>
+<h4>PUSHボイスごとの示唆</h4>
 <table>
 <thead>
 <tr>
@@ -3409,8 +3390,8 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-102">通常時</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-103">ステージごとの示唆</span></h4>
+<h3>通常時</h3>
+<h4>ステージごとの示唆</h4>
 <table>
 <thead>
 <tr>
@@ -3455,34 +3436,48 @@
 </table>
 <p>※夕方はさやか・あやか・まどかステージそれぞれにある</p>
 <p>［さやかステージ］</p>
-<p><img alt="スマスロL麻雀物語通常時ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-02-02.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語通常時ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-02-02.jpg"></p>
 <p>［あやかステージ］</p>
-<p><img alt="スマスロL麻雀物語通常時ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-02-03.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語通常時ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-02-03.jpg"></p>
 <p>［まどかステージ］</p>
-<p><img alt="スマスロL麻雀物語通常時ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-02-04.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語通常時ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-02-04.jpg"></p>
 <p>［夕方ステージ］</p>
-<p><img alt="スマスロL麻雀物語通常時ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-02-05.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語通常時ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-02-05.jpg"></p>
 <p>［ミッドナイトステージ］</p>
-<p><img alt="スマスロL麻雀物語通常時ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-02-06.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語通常時ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-02-06.jpg"></p>
 <p>［ナイトシティステージ］</p>
-<p><img alt="スマスロL麻雀物語通常時ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-02-07.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語通常時ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-02-07.jpg"></p>
 <p>［修行ステージ］ おもにCZ終了後に移行する前兆だ。</p>
-<p><img alt="スマスロL麻雀物語通常時ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-02-08.jpg" decoding="async"></p>
+<p><img alt="スマスロL麻雀物語通常時ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-02-08.jpg"></p>
 <p>［オープンバスステージ］</p>
-<p><img alt="スマスロL麻雀物語通常時ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-02-09.jpg" decoding="async"></p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-104">裏ボタン</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="AT-11">天牌激闘・AT中の裏ボタン</span></h4>
+<p><img alt="スマスロL麻雀物語通常時ステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0408/0404-02-09.jpg"></p>
+<h3>裏ボタン</h3>
+<h4>天牌激闘・AT中の裏ボタン</h4>
 <p>天牌激闘中の中押しカットイン発生時にPUSHボタンを押して告知が発生（液晶上部のランプ点灯）すれば勝利濃厚。 AT中や特化ゾーン中のレバーON後のPUSHで告知が発生した場合は上乗せ濃厚になる。</p>
-<p><img alt="画像" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0804-03-01.jpg" decoding="async"></p>
-<div class="post-views content-post post-1297 entry-meta load-static">
-				<span class="post-views-icon dashicons dashicons-chart-bar"></span> <span class="post-views-label">Post Views:</span> <span class="post-views-count">931</span>
-			</div></div></details></div></details>
-            </div>
-
-            <!-- 目次ハンバーガー（右下固定・常時）。中身はJSがセクションから生成 --></section>
+<p><img alt="画像" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1066_L%E9%BA%BB%E9%9B%80%E7%89%A9%E8%AA%9E/0804-03-01.jpg"></p></section>
   
   
   </article></main>
 <footer class="foot">個人アーカイブ（suroschool.jp / たかどらのスロ塾 会員コンテンツ）・閲覧用</footer>
+
+<!-- スマホ用ボトムナビ（スクロールで隠れる/出る） -->
+<nav class="botnav" id="botnav">
+  <a href="../index.html" data-nav="index">🎰<span>機種</span></a>
+  <button id="searchOpen2">🔍<span>検索</span></button>
+  <a href="../index.html?fav=1">★<span>お気に入り</span></a>
+  <a href="../news.html">📰<span>お知らせ</span></a>
+  <a href="../tool.html">🧮<span>期待値</span></a>
+</nav>
+
+<!-- 全ページ横断の検索オーバーレイ -->
+<div class="search-overlay" id="searchOverlay" hidden>
+  <div class="search-head">
+    <input id="globalSearch" type="search" placeholder="機種名で検索…" autocomplete="off">
+    <button id="searchClose" aria-label="閉じる">✕</button>
+  </div>
+  <div id="searchResults" class="search-results"></div>
+</div>
+
+<script src="../assets/search-index.js"></script>
 <script src="../assets/app.js"></script>
 </body></html>

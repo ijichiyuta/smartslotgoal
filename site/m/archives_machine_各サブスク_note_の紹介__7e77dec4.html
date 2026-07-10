@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="ja"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>各サブスク（note）の紹介 | スマスロ目標 (個人アーカイブ)</title>
+<title>各サブスク（note）の紹介 | スマスロ期待値 (個人アーカイブ)</title>
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="manifest" href="../manifest.webmanifest">
 <meta name="theme-color" content="#ffffff">
@@ -10,16 +10,18 @@
 <link rel="apple-touch-icon" href="../assets/icon.svg">
 <link rel="icon" href="../assets/icon.svg">
 <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){})});}</script>
+<script>window.__ROOT__='../';</script>
 
 </head><body>
-<header class="topbar">
-  <a class="brand" href="../index.html">🎰 スマスロ目標</a>
-  <nav>
+<header class="topbar" id="topbar">
+  <a class="brand" href="../index.html">🎰 スマスロ期待値</a>
+  <nav class="topnav">
     <a href="../index.html">機種</a>
     <a href="../news.html">お知らせ</a>
     <a href="../tool.html">期待値計算</a>
     <a href="../pages.html">資料</a>
   </nav>
+  <button class="topbar-search" id="searchOpen" aria-label="検索">🔍</button>
 </header>
 <main>
   <article class="machine">
@@ -35,7 +37,8 @@
     
     
   </div>
-  <section class="panel is-active" data-panel="nerai"><p class="wp-block-paragraph">このページでは期待値表などを発信している各サブスクについて紹介。</p>
+  <section class="panel is-active" data-panel="nerai"><img loading="lazy" decoding="async" width="150" height="150" src="../img/31a66fcd168e7807.webp" class="machine-thumbnail wp-post-image" alt="" style="display:block; margin:0 auto;" srcset="https://suroschool.jp/wp-content/uploads/2026/05/D0F71519-A241-44A6-BADA-3E55963ED941-150x150.webp 150w, https://suroschool.jp/wp-content/uploads/2026/05/D0F71519-A241-44A6-BADA-3E55963ED941-120x120.webp 120w" sizes="auto, (max-width: 150px) 100vw, 150px" />
+<p class="wp-block-paragraph">このページでは期待値表などを発信している各サブスクについて紹介。</p>
 
 
 
@@ -47,8 +50,7 @@
 
 
 
-
-<h2 class="wp-block-heading"><span id="i">すろらぼ</span></h2>
+<h2 class="wp-block-heading">すろらぼ</h2>
 
 
 
@@ -76,7 +78,7 @@
 
 
 
-<h2 class="wp-block-heading"><span id="i-2">狐チャンネル</span></h2>
+<h2 class="wp-block-heading">狐チャンネル</h2>
 
 
 
@@ -108,7 +110,7 @@
 
 
 
-<h2 class="wp-block-heading"><span id="i-3">なるちゃん</span></h2>
+<h2 class="wp-block-heading">なるちゃん</h2>
 
 
 
@@ -144,7 +146,7 @@
 
 
 
-<h2 class="wp-block-heading"><span id="i-4">ゼマ@つむつむ</span></h2>
+<h2 class="wp-block-heading">ゼマ@つむつむ</h2>
 
 
 
@@ -168,7 +170,7 @@
 
 
 
-<h2 class="wp-block-heading"><span id="i-5">ヲ猿</span></h2>
+<h2 class="wp-block-heading">ヲ猿</h2>
 
 
 
@@ -200,7 +202,7 @@
 
 
 
-<h2 class="wp-block-heading"><span id="i-6">けんけん@スロットデータ分析</span></h2>
+<h2 class="wp-block-heading">けんけん@スロットデータ分析</h2>
 
 
 
@@ -232,7 +234,7 @@
 
 
 
-<h2 class="wp-block-heading"><span id="i-7">パミ（無料）</span></h2>
+<h2 class="wp-block-heading">パミ（無料）</h2>
 
 
 
@@ -256,7 +258,7 @@
 
 
 
-<h2 class="wp-block-heading"><span id="i-8">豆スロ</span></h2>
+<h2 class="wp-block-heading">豆スロ</h2>
 
 
 
@@ -276,7 +278,7 @@
 
 
 
-<h2 class="wp-block-heading"><span id="i-9">たられば</span></h2>
+<h2 class="wp-block-heading">たられば</h2>
 
 
 
@@ -293,14 +295,31 @@
 
 
 <p class="wp-block-paragraph"></p>
-<div class="post-views content-post post-3031 entry-meta load-static">
-				<span class="post-views-icon dashicons dashicons-chart-bar"></span> <span class="post-views-label">Post Views:</span> <span class="post-views-count">246</span>
-			</div>
-          <!-- 目次ハンバーガー（右下固定・常時）。中身はJSが見出し(h2/h3)から生成。会員ロック時は空→自動非表示 --></section>
+</section>
   
   
   
   </article></main>
 <footer class="foot">個人アーカイブ（suroschool.jp / たかどらのスロ塾 会員コンテンツ）・閲覧用</footer>
+
+<!-- スマホ用ボトムナビ（スクロールで隠れる/出る） -->
+<nav class="botnav" id="botnav">
+  <a href="../index.html" data-nav="index">🎰<span>機種</span></a>
+  <button id="searchOpen2">🔍<span>検索</span></button>
+  <a href="../index.html?fav=1">★<span>お気に入り</span></a>
+  <a href="../news.html">📰<span>お知らせ</span></a>
+  <a href="../tool.html">🧮<span>期待値</span></a>
+</nav>
+
+<!-- 全ページ横断の検索オーバーレイ -->
+<div class="search-overlay" id="searchOverlay" hidden>
+  <div class="search-head">
+    <input id="globalSearch" type="search" placeholder="機種名で検索…" autocomplete="off">
+    <button id="searchClose" aria-label="閉じる">✕</button>
+  </div>
+  <div id="searchResults" class="search-results"></div>
+</div>
+
+<script src="../assets/search-index.js"></script>
 <script src="../assets/app.js"></script>
 </body></html>

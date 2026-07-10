@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="ja"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>Lようこそ実力至上主義の教室へ | スマスロ目標 (個人アーカイブ)</title>
+<title>Lようこそ実力至上主義の教室へ | スマスロ期待値 (個人アーカイブ)</title>
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="manifest" href="../manifest.webmanifest">
 <meta name="theme-color" content="#ffffff">
@@ -10,16 +10,18 @@
 <link rel="apple-touch-icon" href="../assets/icon.svg">
 <link rel="icon" href="../assets/icon.svg">
 <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){})});}</script>
+<script>window.__ROOT__='../';</script>
 
 </head><body>
-<header class="topbar">
-  <a class="brand" href="../index.html">🎰 スマスロ目標</a>
-  <nav>
+<header class="topbar" id="topbar">
+  <a class="brand" href="../index.html">🎰 スマスロ期待値</a>
+  <nav class="topnav">
     <a href="../index.html">機種</a>
     <a href="../news.html">お知らせ</a>
     <a href="../tool.html">期待値計算</a>
     <a href="../pages.html">資料</a>
   </nav>
+  <button class="topbar-search" id="searchOpen" aria-label="検索">🔍</button>
 </header>
 <main>
   <article class="machine">
@@ -35,43 +37,16 @@
     <button class="tab" data-tab="kaiseki">解析情報</button>
     
   </div>
-  <section class="panel is-active" data-panel="nerai"><div class="tenjo-info"><div class="my-spoiler-wrapper" id="my-spoiler-1"><div class="my-spoiler-title" style="cursor:pointer; background:rgba(245,184,0,0.08); padding:10px; border:1px solid rgba(245,184,0,0.3); color:var(--text-main); font-weight:700; letter-spacing:0.04em;"><span class="spoiler-icon" style="margin-right:5px;">[-]</span>機種情報</div><div class="my-spoiler-content" style="display:block; padding:10px; border:1px solid rgba(245,184,0,0.2); border-top:0; background:var(--bg-card-hi); color:var(--text-main);"><p>【天井情報】</p>
-<p>CZ間で最大500G＋α消化するとCZに当選。</p>
-<p>AT間で最大980G＋α消化するとATに当選。</p>
-<p>天井でのAT当選時の約50%でボーナス以上の恩恵を獲得。</p>
-<p>設定変更時はAT間天井が630G＋αに短縮。天井恩恵も有効。</p>
-<p>AT間でCZ7スルー後、8回目のCZがAT当選に書き換えられる。</p>
-<p>【リセット判別】</p>
-<p>不明</p>
-<p>【有利区間について】</p>
-<table>
-<tbody>
-<tr>
-<td>①エンディングボーナス後</td>
-</tr>
-<tr>
-<td>②1回のATでよう実ボーナス12回当選</td>
-</tr>
-<tr>
-<td>③一撃2400枚獲得</td>
-</tr>
-<tr>
-<td>④AT終了時に有利区間内で一定差枚数獲得</td>
-</tr>
-</tbody>
-</table>
-<p>エンディング等で有利区間がリセットされた場合はフリーズ高確に突入。フリーズが発生しなくてもATの引き戻しは濃厚となる。</p>
-</div></div></div>
+  <section class="panel is-active" data-panel="nerai"><img loading="lazy" decoding="async" width="150" height="150" src="../img/d05b9c0eaaaba908.jpg" class="machine-thumbnail wp-post-image" alt="" style="display:block; margin:0 auto;" srcset="https://suroschool.jp/wp-content/uploads/2025/05/youjitu-150x150.jpg 150w, https://suroschool.jp/wp-content/uploads/2025/05/youjitu-120x120.jpg 120w" sizes="auto, (max-width: 150px) 100vw, 150px" />
 <p class="wp-block-paragraph">ATやCZ間ハマリG数、CZモード、クラスランク、よう実ポイント、穢れポイントなど総合的に判断して打つ感じになりそうです。</p>
 
 
 
-
-<h2 class="wp-block-heading"><span id="i">狙い目</span></h2>
-
+<h2 class="wp-block-heading">狙い目</h2>
 
 
-<h3 class="wp-block-heading"><span id="i-2">【リセット狙い】</span></h3>
+
+<h3 class="wp-block-heading">【リセット狙い】</h3>
 
 
 
@@ -79,7 +54,7 @@
 
 
 
-<h3 class="wp-block-heading"><span id="CZ">【CZ間天井狙い】</span></h3>
+<h3 class="wp-block-heading">【CZ間天井狙い】</h3>
 
 
 
@@ -99,7 +74,7 @@
 
 
 
-<h3 class="wp-block-heading"><span id="AT">【AT間天井狙い】</span></h3>
+<h3 class="wp-block-heading">【AT間天井狙い】</h3>
 
 
 
@@ -107,7 +82,7 @@
 
 
 
-<h3 class="wp-block-heading"><span id="CZ-2">【CZモード狙い】</span></h3>
+<h3 class="wp-block-heading">【CZモード狙い】</h3>
 
 
 
@@ -123,19 +98,19 @@
 
 
 
-<figure class="wp-block-image size-full"><img width="713" height="501" src="../img/2e4864d7e2bced87.png" alt="" class="wp-image-1396" decoding="async" sizes="auto, (max-width: 713px) 100vw, 713px"></figure>
+<figure class="wp-block-image size-full"><img width="713" height="501" src="../img/2e4864d7e2bced87.png" alt="" class="wp-image-1396"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/05/youcho2.png 713w, https://suroschool.jp/wp-content/uploads/2025/05/youcho2-300x211.png 300w" sizes="auto, (max-width: 713px) 100vw, 713px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="717" height="805" src="../img/640101e0fd0d2368.png" alt="" class="wp-image-1397" decoding="async" sizes="auto, (max-width: 717px) 100vw, 717px"></figure>
+<figure class="wp-block-image size-full"><img width="717" height="805" src="../img/640101e0fd0d2368.png" alt="" class="wp-image-1397"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/05/yousisa.png 717w, https://suroschool.jp/wp-content/uploads/2025/05/yousisa-267x300.png 267w" sizes="auto, (max-width: 717px) 100vw, 717px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="714" height="712" src="../img/db2eec6886e6ec18.png" alt="" class="wp-image-1425" decoding="async" sizes="auto, (max-width: 714px) 100vw, 714px"></figure>
+<figure class="wp-block-image size-full"><img width="714" height="712" src="../img/db2eec6886e6ec18.png" alt="" class="wp-image-1425"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/05/youjitusta.png 714w, https://suroschool.jp/wp-content/uploads/2025/05/youjitusta-300x300.png 300w, https://suroschool.jp/wp-content/uploads/2025/05/youjitusta-150x150.png 150w, https://suroschool.jp/wp-content/uploads/2025/05/youjitusta-120x120.png 120w" sizes="auto, (max-width: 714px) 100vw, 714px" /></figure>
 
 
 
-<h3 class="wp-block-heading"><span id="i-3">【クラスランク狙い】</span></h3>
+<h3 class="wp-block-heading">【クラスランク狙い】</h3>
 
 
 
@@ -151,19 +126,19 @@
 
 
 
-<figure class="wp-block-image size-full"><img width="672" height="894" src="../img/5765859efd04249e.png" alt="" class="wp-image-1422" decoding="async" sizes="auto, (max-width: 672px) 100vw, 672px"></figure>
+<figure class="wp-block-image size-full"><img width="672" height="894" src="../img/5765859efd04249e.png" alt="" class="wp-image-1422"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/05/rankutara.png 672w, https://suroschool.jp/wp-content/uploads/2025/05/rankutara-226x300.png 226w" sizes="auto, (max-width: 672px) 100vw, 672px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="715" height="793" src="../img/8938d5c5e54e1eb1.png" alt="" class="wp-image-1421" decoding="async" sizes="auto, (max-width: 715px) 100vw, 715px"></figure>
+<figure class="wp-block-image size-full"><img width="715" height="793" src="../img/8938d5c5e54e1eb1.png" alt="" class="wp-image-1421"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/05/clasra.png 715w, https://suroschool.jp/wp-content/uploads/2025/05/clasra-270x300.png 270w" sizes="auto, (max-width: 715px) 100vw, 715px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="715" height="587" src="../img/832fda748f54d33e.png" alt="" class="wp-image-1395" decoding="async" sizes="auto, (max-width: 715px) 100vw, 715px"></figure>
+<figure class="wp-block-image size-full"><img width="715" height="587" src="../img/832fda748f54d33e.png" alt="" class="wp-image-1395"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/05/youchocho1.png 715w, https://suroschool.jp/wp-content/uploads/2025/05/youchocho1-300x246.png 300w" sizes="auto, (max-width: 715px) 100vw, 715px" /></figure>
 
 
 
-<h3 class="wp-block-heading"><span id="i-4">【よう実ポイント狙い】</span></h3>
+<h3 class="wp-block-heading">【よう実ポイント狙い】</h3>
 
 
 
@@ -191,11 +166,11 @@
 
 
 
-<figure class="wp-block-image size-full"><img width="713" height="678" src="../img/788db040a32f5edb.png" alt="" class="wp-image-1420" decoding="async" sizes="auto, (max-width: 713px) 100vw, 713px"></figure>
+<figure class="wp-block-image size-full"><img width="713" height="678" src="../img/788db040a32f5edb.png" alt="" class="wp-image-1420"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/05/yojitupoint.png 713w, https://suroschool.jp/wp-content/uploads/2025/05/yojitupoint-300x285.png 300w" sizes="auto, (max-width: 713px) 100vw, 713px" /></figure>
 
 
 
-<h3 class="wp-block-heading"><span id="i-5">【穢れポイント狙い】</span></h3>
+<h3 class="wp-block-heading">【穢れポイント狙い】</h3>
 
 
 
@@ -203,15 +178,15 @@
 
 
 
-<figure class="wp-block-image size-full"><img width="716" height="782" src="../img/b171f3f792b5e025.png" alt="" class="wp-image-1423" decoding="async" sizes="auto, (max-width: 716px) 100vw, 716px"></figure>
+<figure class="wp-block-image size-full"><img width="716" height="782" src="../img/b171f3f792b5e025.png" alt="" class="wp-image-1423"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/05/yojitukegare1.png 716w, https://suroschool.jp/wp-content/uploads/2025/05/yojitukegare1-275x300.png 275w" sizes="auto, (max-width: 716px) 100vw, 716px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="712" height="459" src="../img/062e1288c704de31.png" alt="" class="wp-image-1424" decoding="async" sizes="auto, (max-width: 712px) 100vw, 712px"></figure>
+<figure class="wp-block-image size-full"><img width="712" height="459" src="../img/062e1288c704de31.png" alt="" class="wp-image-1424"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/05/kegare2.png 712w, https://suroschool.jp/wp-content/uploads/2025/05/kegare2-300x193.png 300w" sizes="auto, (max-width: 712px) 100vw, 712px" /></figure>
 
 
 
-<h3 class="wp-block-heading"><span id="i-6">【スルー天井狙い】</span></h3>
+<h3 class="wp-block-heading">【スルー天井狙い】</h3>
 
 
 
@@ -219,7 +194,7 @@
 
 
 
-<h3 class="wp-block-heading"><span id="i-7">【有利区間関連狙い】</span></h3>
+<h3 class="wp-block-heading">【有利区間関連狙い】</h3>
 
 
 
@@ -227,7 +202,7 @@
 
 
 
-<h3 class="wp-block-heading"><span id="i-8">【プライベートポイント】</span></h3>
+<h3 class="wp-block-heading">【プライベートポイント】</h3>
 
 
 
@@ -247,11 +222,11 @@
 
 
 
-<figure class="wp-block-image size-full"><img width="715" height="793" src="../img/0d8567c9a9f21c79.png" alt="" class="wp-image-1539" decoding="async" sizes="auto, (max-width: 715px) 100vw, 715px"></figure>
+<figure class="wp-block-image size-full"><img width="715" height="793" src="../img/0d8567c9a9f21c79.png" alt="" class="wp-image-1539"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/05/purapo.png 715w, https://suroschool.jp/wp-content/uploads/2025/05/purapo-270x300.png 270w" sizes="auto, (max-width: 715px) 100vw, 715px" /></figure>
 
 
 
-<h2 class="wp-block-heading"><span id="i-9">やめ時</span></h2>
+<h2 class="wp-block-heading">やめ時</h2>
 
 
 
@@ -279,11 +254,11 @@
 
 
 
-<h2 class="wp-block-heading"><span id="i-10">その他</span></h2>
+<h2 class="wp-block-heading">その他</h2>
 
 
 
-<h4 class="wp-block-heading"><span id="i-11">履歴の見方</span></h4>
+<h4 class="wp-block-heading">履歴の見方</h4>
 
 
 
@@ -319,7 +294,7 @@
 
 
 
-<figure class="wp-block-image size-full"><img width="437" height="735" src="../img/83f212913952a19c.webp" alt="" class="wp-image-1426" decoding="async" sizes="auto, (max-width: 437px) 100vw, 437px"></figure>
+<figure class="wp-block-image size-full"><img width="437" height="735" src="../img/83f212913952a19c.webp" alt="" class="wp-image-1426"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/05/rireki1.webp 437w, https://suroschool.jp/wp-content/uploads/2025/05/rireki1-178x300.webp 178w" sizes="auto, (max-width: 437px) 100vw, 437px" /></figure>
 
 
 
@@ -327,11 +302,11 @@
 
 
 
-<figure class="wp-block-image size-full"><img width="452" height="734" src="../img/0da81b61f6f6deed.webp" alt="" class="wp-image-1427" decoding="async" sizes="auto, (max-width: 452px) 100vw, 452px"></figure>
+<figure class="wp-block-image size-full"><img width="452" height="734" src="../img/0da81b61f6f6deed.webp" alt="" class="wp-image-1427"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/05/rireki2.webp 452w, https://suroschool.jp/wp-content/uploads/2025/05/rireki2-185x300.webp 185w" sizes="auto, (max-width: 452px) 100vw, 452px" /></figure>
 
 
 
-<h2 class="wp-block-heading"><span id="i-12">参考元</span></h2>
+<h2 class="wp-block-heading">参考元</h2>
 
 
 
@@ -356,37 +331,30 @@
 
 
 <p class="wp-block-paragraph"></p>
-<div class="post-views content-post post-1394 entry-meta load-static">
-				<span class="post-views-icon dashicons dashicons-chart-bar"></span> <span class="post-views-label">Post Views:</span> <span class="post-views-count">630</span>
-			</div>
-          <!-- 目次ハンバーガー（右下固定・常時）。中身はJSが見出し(h2/h3)から生成。会員ロック時は空→自動非表示 --></section>
-  <section class="panel" data-panel="kaiseki"><div class="kaiseki-toolbar">
-              
-            </div>
-            <div class="kaiseki-accordion">
-              <details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i">基本情報</span></summary><div class="kaiseki-section-body">
+</section>
+  <section class="panel" data-panel="kaiseki"><h2>基本情報</h2>
 <ul>
 <li>メーカー: DAXEL</li>
 <li>機械割: 97.7% 〜 114.0%</li>
 <li>導入開始日: 2025年05月07日（水）</li>
 <li>ゲーム性概要: ●レア役やよう実ポイント契機のCZクリアがAT当選のメインルート ●32G＋α周期で切り替わるクラスランクによってAT中のベルナビ発生率やボーナス当選率が変化 ●AT「よう実チャンス」は純増約2.0〜3.3枚のゲーム数上乗せ型 ●AT中はベル6連やレア役で「よう実ボーナス」を抽選 ●「綾小路超覚醒ゾーン」や「裏モード」など、強力なトリガーも搭載 ●有利区間リセット時は1G限定のフリーズ高確へ移行＆フリーズ非発生でもAT引き戻し濃厚</li>
 </ul>
-<p><img alt="スマスロ ようこそ実力至上主義の教室へ（パチスロ）のリール配列" src="https://p-town.dmm.com/upload/machines/4770/reel.jpg?t=1779358856" decoding="async"></p>
-<p><img alt="スマスロ ようこそ実力至上主義の教室へ（パチスロ）のゲームフロー" src="https://p-town.dmm.com/upload/machines/4770/flow.jpg?t=1779358856" decoding="async"></p>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-2">打ち方</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-3">打ち方・小役</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-4">打ち方（小役狙い）</span></h4>
+<p><img alt="スマスロ ようこそ実力至上主義の教室へ（パチスロ）のリール配列" src="https://p-town.dmm.com/upload/machines/4770/reel.jpg?t=1779358856"></p>
+<p><img alt="スマスロ ようこそ実力至上主義の教室へ（パチスロ）のゲームフロー" src="https://p-town.dmm.com/upload/machines/4770/flow.jpg?t=1779358856"></p>
+<h2>打ち方</h2>
+<h3>打ち方・小役</h3>
+<h4>打ち方（小役狙い）</h4>
 <p>「最初に狙う絵柄」 左リール枠上〜上段を目安にBARを狙う。スイカがスベってきた時以外、中＆右リールはフリー打ちでOKだ。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-01-01.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-01-01.jpg"></p>
 <p>「スイカ停止時」 中リールはBARを目安にスイカを狙う。右リールにこぼしはないのでフリー打ちでOK。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-01-02.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-01-02.jpg"></p>
 <p>「レア役の停止形（一例）」</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実打ち方レア役の停止形" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-01-03.jpg" decoding="async"></p>
-<h4><span id="NG">変則押しはNG</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実打ち方レア役の停止形" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-01-03.jpg"></p>
+<h4>変則押しはNG</h4>
 <p>通常時、押し順ナビなし時は左リール第1停止での消化を推奨する。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実変則押し" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-02-01.jpg" decoding="async"></p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-5">中段チェリー</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-6">中段チェリーの恩恵</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実変則押し" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-02-01.jpg"></p>
+<h3>中段チェリー</h3>
+<h4>中段チェリーの恩恵</h4>
 <table>
 <thead>
 <tr>
@@ -422,10 +390,10 @@
 </tbody>
 </table>
 <p>※すでに綾小路超覚醒ゾーンを持っている場合はベルナビ10個に変換</p>
-<p>裏モード中は中段チェリー成立でボーナスに当選するので裏モードは終了してしまうが、裏ポイントがMAX目前まで貯まるので、すぐに裏モードへ再突入する。</p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-7">解析情報通常時</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-8">小役関連</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="1">小役確率（設定1）</span></h4>
+<p>裏モード中は中段チェリー成立でボーナスに当選するので裏モードは終了してしまうが、裏ポイントがMAX目前まで貯まるので、すぐに裏モードへ再突入する。</p>
+<h2>解析情報通常時</h2>
+<h3>小役関連</h3>
+<h4>小役確率（設定1）</h4>
 <table>
 <thead>
 <tr>
@@ -461,10 +429,10 @@
 </tbody>
 </table>
 <p>レア役の合算確率は1/28.2。</p>
-<h4><span id="i-9">リールロック</span></h4>
+<h4>リールロック</h4>
 <p>リールロック発生でレア役濃厚（強レア役の可能性大）かつCZ以上当選期待度がアップ。弱レア役だった場合はCZ以上濃厚になる。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実リールロック" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-31-01.jpg" decoding="async"></p>
-<h4><span id="i-10">リールロック発生率</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実リールロック" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-31-01.jpg"></p>
+<h4>リールロック発生率</h4>
 <table>
 <thead>
 <tr>
@@ -506,10 +474,10 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-11">モード</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="CZ">CZモード概要</span></h4>
+<h3>モード</h3>
+<h4>CZモード概要</h4>
 <p>レア役成立時のCZ当選期待度が変化するCZモードが存在（モード1〜4の4段階）。CZ当選までモードが転落することはなく、レア役契機でのCZ当選時やAT終了時にモードが再抽選される。</p>
-<h4><span id="CZ-2">CZモードの特徴</span></h4>
+<h4>CZモードの特徴</h4>
 <table>
 <thead>
 <tr>
@@ -528,7 +496,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="CZ-3">CZモード昇格期待度</span></h4>
+<h4>CZモード昇格期待度</h4>
 <table>
 <thead>
 <tr>
@@ -559,7 +527,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="CZ-4">設定変更時のCZモード振り分け</span></h4>
+<h4>設定変更時のCZモード振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -582,7 +550,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="CZ-5">CZモードアップ当選率（一部）</span></h4>
+<h4>CZモードアップ当選率（一部）</h4>
 <table>
 <thead>
 <tr>
@@ -614,11 +582,11 @@
 </tbody>
 </table>
 <p>スイカと強チャンス目がモードアップしやすい。とくに強チャンス目の当選率が高く、強チャンス目を引いてCZ非当選だった場合はモード2以上濃厚だ。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="CZ-6">CZ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-12">ガールズチャレンジ概要</span></h4>
+<h3>CZ</h3>
+<h4>ガールズチャレンジ概要</h4>
 <p>前半のランクアップパート（5G）と後半のジャッジパート（最大5G）の2部構成。前半は成立役に応じてランク（継続率）を上げていき、後半では継続率ごとの抽選を5回突破できればATに当選する。</p>
-<p><img alt="画像" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-10-01.jpg" decoding="async"></p>
-<h4><span id="i-13">ガールズチャレンジ性能</span></h4>
+<p><img alt="画像" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-10-01.jpg"></p>
+<h4>ガールズチャレンジ性能</h4>
 <table>
 <thead>
 <tr>
@@ -649,7 +617,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-14">［前半］成立役ごとの抽選</span></h4>
+<h4>［前半］成立役ごとの抽選</h4>
 <table>
 <thead>
 <tr>
@@ -676,7 +644,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-15">ランクごとの継続率</span></h4>
+<h4>ランクごとの継続率</h4>
 <table>
 <thead>
 <tr>
@@ -734,7 +702,7 @@
 </tbody>
 </table>
 <p>小役入賞時は必ず継続する。</p>
-<h4><span id="i-16">前半パート終了時のランクの分布</span></h4>
+<h4>前半パート終了時のランクの分布</h4>
 <table>
 <thead>
 <tr>
@@ -782,17 +750,17 @@
 </tbody>
 </table>
 <p>「前半：ランクアップパート」</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実ガールズチャレンジCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-10-05.jpg" decoding="async"></p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実ガールズチャレンジCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-10-06.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実ガールズチャレンジCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-10-05.jpg"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実ガールズチャレンジCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-10-06.jpg"></p>
 <p>「後半：ジャッジパート」 第3停止までにカットインが発生すれば継続。BETで復活するパターンもあり。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実ガールズチャレンジCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-10-07.jpg" decoding="async"></p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実ガールズチャレンジCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-10-08.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実ガールズチャレンジCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-10-07.jpg"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実ガールズチャレンジCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-10-08.jpg"></p>
 <p>［違和感告知モード］ CZの突入画面でPUSHボタンを3回押すと、違和感告知モードに変更可能。 違和感告知モードでは、ジャッジパート中の継続時に違和感演出が発生しやすくなる。発生した違和感は継続時に確認可能だ。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実ガールズチャレンジCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-10-09.jpg" decoding="async"></p>
-<h4><span id="CZ-7">実力至上主義ゾーン（上位CZ）概要</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実ガールズチャレンジCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-10-09.jpg"></p>
+<h4>実力至上主義ゾーン（上位CZ）概要</h4>
 <p>アイコンと成立役によってATを抽選するCZ。あらかじめ10G分のアイコンが決定し、アイコンは1Gごとに横にスライド。アイコンの色と成立役でAT期待度が変化する。 アイコンの種類はシナリオ管理となっていて、基本はアイコンの種類を視認できないが、プライベートポイントを使用すると内容を表示させることができる。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力至上主義ゾーンCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-11-01.jpg" decoding="async"></p>
-<h4><span id="CZ-8">実力至上主義ゾーン（上位CZ）性能</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力至上主義ゾーンCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-11-01.jpg"></p>
+<h4>実力至上主義ゾーン（上位CZ）性能</h4>
 <table>
 <thead>
 <tr>
@@ -824,9 +792,9 @@
 </tbody>
 </table>
 <p>「アイコン」 アイコンは基本的には？表示となっていて色がわからないが、プライベートポイントを使用することで確認可能だ。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力至上主義ゾーンCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-11-03.jpg" decoding="async"></p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力至上主義ゾーンCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-11-04.jpg" decoding="async"></p>
-<h4><span id="i-17">アイコン色・成立役ごとの期待度</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力至上主義ゾーンCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-11-03.jpg"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力至上主義ゾーンCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-11-04.jpg"></p>
+<h4>アイコン色・成立役ごとの期待度</h4>
 <table>
 <thead>
 <tr>
@@ -855,8 +823,8 @@
 </table>
 <p>レア役成立時は、もっとも期待度の低い青アイコンでも33%以上でATに当選する。</p>
 <p>［完全告知モード］ CZ突入画面でPUSHボタンを3回押すと、完全告知モードへの変更が可能。1G目で当選した場合のみ第1停止時に下パネルが消灯、それ以外はリール回転開始時に下パネルが消灯する。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力至上主義ゾーンCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-11-06.jpg" decoding="async"></p>
-<h4><span id="i-18">ランクアップ振り分け</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力至上主義ゾーンCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-11-06.jpg"></p>
+<h4>ランクアップ振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -906,7 +874,7 @@
 </tbody>
 </table>
 <p>ランク1のまま前半が終了した場合は最終ゲームで必ず1ランクアップするので、ランク1のまま後半へ進むことはない。</p>
-<h4><span id="i-19">［後半］抽選内容</span></h4>
+<h4>［後半］抽選内容</h4>
 <table>
 <thead>
 <tr>
@@ -929,7 +897,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="MAX_AT">［後半］ランクMAX時 レア役成立時のAT初期ゲーム数上乗せ当選率</span></h4>
+<h4>［後半］ランクMAX時 レア役成立時のAT初期ゲーム数上乗せ当選率</h4>
 <table>
 <thead>
 <tr>
@@ -949,7 +917,7 @@
 </tbody>
 </table>
 <p>後半では前半で上げたランクに応じて継続抽選がおこなわれ、小役入賞で継続濃厚。ランクMAX時（AT濃厚）はレア役でATの初期ゲーム数上乗せが抽選される。</p>
-<h4><span id="i-20">継続ゲーム数振り分け</span></h4>
+<h4>継続ゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -972,7 +940,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-21">アイコンシナリオ振り分け</span></h4>
+<h4>アイコンシナリオ振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1025,7 +993,7 @@
 </table>
 <p>実力至上主義ゾーン開始時にシナリオを抽選で決定。20G（以上）継続の場合、シナリオは継続時に再抽選されるが、再抽選の結果前回のシナリオよりも下が選択されると＋1したシナリオに書き換えられる。</p>
 <p>例）シナリオ5で継続した場合、再抽選で1〜5が選ばれたらシナリオ6へ書き換え、シナリオ6〜10が選ばれたらそのシナリオになる</p>
-<h4><span id="AT">アイコン色ごとのAT当選率</span></h4>
+<h4>アイコン色ごとのAT当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1061,7 +1029,7 @@
 </tbody>
 </table>
 <p>どのシナリオも最終ゲームは赤アイコンなので、最終ゲームで小役を引けば成功濃厚。</p>
-<h4><span id="CZ-9">CZ確率</span></h4>
+<h4>CZ確率</h4>
 <table>
 <thead>
 <tr>
@@ -1097,11 +1065,11 @@
 </tbody>
 </table>
 <p>ガールズチャレンジと実力至上主義ゾーンの合算確率だ。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-22">クラスランク</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-23">クラスランク概要</span></h4>
+<h3>クラスランク</h3>
+<h4>クラスランク概要</h4>
 <p>ゲーム数と当該ランクはつねにリールの右側に表示（内部的なランクと見た目のランクは完全リンクではない）されていて、約32Gごとにクラスランクが変動。AT当選時のクラスランクによってAT性能（純増やボーナス当選率など）が変化する。 フェイクを含む前兆中は、32Gを消化してもクラスランクが下がることはない。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実クラスランク" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-04-01.jpg" decoding="async"></p>
-<h4><span id="i-24">クラスランクの特徴</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実クラスランク" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-04-01.jpg"></p>
+<h4>クラスランクの特徴</h4>
 <table>
 <thead>
 <tr>
@@ -1128,7 +1096,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="AT-2">AT当選時のクラスランク比率</span></h4>
+<h4>AT当選時のクラスランク比率</h4>
 <table>
 <thead>
 <tr>
@@ -1155,7 +1123,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-25">クラスランク振り分け</span></h4>
+<h4>クラスランク振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1193,11 +1161,11 @@
 </tbody>
 </table>
 <p>通常周期でも約15%でBクラス以上が選択される。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-26">よう実ポイント</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-27">よう実ポイント概要</span></h4>
+<h3>よう実ポイント</h3>
+<h4>よう実ポイント概要</h4>
 <p>リール下部のタイトルロゴの「ようこそ～へ」までの12文字の部分がポイントゲージになっていて、全点灯（ポイントがMAX）するとCZ抽選がおこなわれる。 ポイントは毎ゲームの成立役に応じて抽選され、 平均94GでMAXポイントに到達 。よう実ポイント契機でCZに当選してもCZモードは転落しないが、CZ非当選時はCZモード昇格の可能性がある。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実よう実ポイント" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-07-01.jpg" decoding="async"></p>
-<h4><span id="i-28">よう実ポイント性能</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実よう実ポイント" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-07-01.jpg"></p>
+<h4>よう実ポイント性能</h4>
 <table>
 <thead>
 <tr>
@@ -1225,7 +1193,7 @@
 </tbody>
 </table>
 <p>よう実ポイントのMAXは240pt。</p>
-<h4><span id="ATMAXCZ">AT終了後・よう実ポイントMAX時のCZ当選率</span></h4>
+<h4>AT終了後・よう実ポイントMAX時のCZ当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1249,7 +1217,7 @@
 </tbody>
 </table>
 <p>YC高確終了後、1回目と4回目のポイントMAX時はその他の回数に比べてCZ期待度が高い。 また、AT当選〜YC高確を抜けるまでに一度もよう実ボーナスを引けなかった場合、救済として1回目のポイントMAXで必ずCZに当選する。</p>
-<h4><span id="14CZ">［1・4周期目］よう実ポイント契機のCZ種別振り分け</span></h4>
+<h4>［1・4周期目］よう実ポイント契機のCZ種別振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1277,7 +1245,7 @@
 </tbody>
 </table>
 <p>CZ当選時は周期数を参照してCZ種別を抽選。1・4周期目の振り分けは全設定だが、その他の周期は高設定ほど実力至上主義ゾーンに当選しやすい。 なお、本前兆中のレア役ではCZ種別の昇格抽選がおこなわれるので、前兆中にレア役を引いて実力至上主義ゾーンが出てきた場合は昇格した可能性もある。</p>
-<h4><span id="i-29">獲得よう実ポイント振り分け</span></h4>
+<h4>獲得よう実ポイント振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1321,7 +1289,7 @@
 </tbody>
 </table>
 <p>毎ゲーム、最低1ptを獲得する。</p>
-<h4><span id="i-30">点灯文字ごとの蓄積ポイント量示唆</span></h4>
+<h4>点灯文字ごとの蓄積ポイント量示唆</h4>
 <table>
 <thead>
 <tr>
@@ -1384,11 +1352,11 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-31">穢れ要素</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-32">穢れ要素概要</span></h4>
+<h3>穢れ要素</h3>
+<h4>穢れ要素概要</h4>
 <p>CZ失敗時や天井到達時などに、内部的にポイントを獲得。100pt貯まった状態でATに当選すると、白7揃い（よう実ボーナスパーフェクト）からスタートする。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実穢れ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-33-01.jpg" decoding="async"></p>
-<h4><span id="i-33">穢れ要素性能</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実穢れ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-33-01.jpg"></p>
+<h4>穢れ要素性能</h4>
 <table>
 <thead>
 <tr>
@@ -1409,18 +1377,18 @@
 </table>
 <p>獲得示唆、蓄積示唆パターンの演出が存在。蓄積：大は100pt到達目前だ。</p>
 <p>［獲得：小］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実穢れ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-34-01.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実穢れ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-34-01.jpg"></p>
 <p>［獲得：中］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実穢れ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-34-02.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実穢れ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-34-02.jpg"></p>
 <p>［獲得：大］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実穢れ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-34-03.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実穢れ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-34-03.jpg"></p>
 <p>［蓄積：小］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実穢れ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-34-04.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実穢れ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-34-04.jpg"></p>
 <p>［蓄積：中］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実穢れ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-34-05.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実穢れ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-34-05.jpg"></p>
 <p>［蓄積：大］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実穢れ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-34-06.jpg" decoding="async"></p>
-<h4><span id="i-34">設定変更時の初期穢れポイント振り分け</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実穢れ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-34-06.jpg"></p>
+<h4>設定変更時の初期穢れポイント振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1448,10 +1416,10 @@
 </tbody>
 </table>
 <p>設定変更時は90%以上で穢れポイントを30pt以上持った状態からスタート。約30%で70ptが選択されるため、朝イチはチャンスだ。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-35">前兆</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-36">前兆ゲーム数振り分け</span></h4>
+<h3>前兆</h3>
+<h4>前兆ゲーム数振り分け</h4>
 <p>フェイク前兆は15G以下が選ばれるので、前兆ゲーム数が16Gを超えれば本前兆濃厚。弱レア役契機のフェイク前兆は短いゲーム数が選ばれやすい（75%が7G以内に終了）傾向にあるため、弱レア役からの前兆が長ければ本前兆期待度がアップする。</p>
-<h4><span id="i-37">［レア役契機］前兆ゲーム数振り分け</span></h4>
+<h4>［レア役契機］前兆ゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1518,7 +1486,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="orYC">［よう実ポイント契機orYC高確中］前兆ゲーム数振り分け</span></h4>
+<h4>［よう実ポイント契機orYC高確中］前兆ゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1575,8 +1543,8 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="CZAT">CZ・AT当選率</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="CZ3CZ">［CZモード3］CZ当選率</span></h4>
+<h3>CZ・AT当選率</h3>
+<h4>［CZモード3］CZ当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1639,7 +1607,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="CZ4CZ">［CZモード4］CZ当選率</span></h4>
+<h4>［CZモード4］CZ当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1671,10 +1639,10 @@
 </tbody>
 </table>
 <p>モード4滞在時の強レア役はCZ当選濃厚。 高設定ほど、低モード＆弱レア役でCZに当選しやすい。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-38">天井</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-39">天井到達時の抽選</span></h4>
+<h3>天井</h3>
+<h4>天井到達時の抽選</h4>
 <p>AT間天井（980G＋α or 設定変更時の630G＋α）到達時はAT当選濃厚。さらに、約50%でボーナス以上に当選する。 設定変更時の天井短縮時も恩恵を受けることができるため、朝イチ（設定変更時）の機械割は設定1でも100%以上と高い。</p>
-<h4><span id="i-40">天井到達時の恩恵振り分け</span></h4>
+<h4>天井到達時の恩恵振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1701,11 +1669,11 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-41">フリーズ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-42">ロングフリーズ</span></h4>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実ロングフリーズ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/you1.jpg" decoding="async"></p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実ロングフリーズ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/you2.jpg" decoding="async"></p>
-<h4><span id="i-43">ロングフリーズ性能</span></h4>
+<h3>フリーズ</h3>
+<h4>ロングフリーズ</h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実ロングフリーズ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/you1.jpg"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実ロングフリーズ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/you2.jpg"></p>
+<h4>ロングフリーズ性能</h4>
 <table>
 <thead>
 <tr>
@@ -1724,14 +1692,14 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-44">ロングフリーズ動画</span></h4>
-<p>中段チェリーの一部で発生。AT80Gスタート・Aクラス・裏モードのすべてを獲得できる。</p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-45">解析情報ボーナス時</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="AT-3">よう実チャンス（AT）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-46">よう実チャンス概要</span></h4>
+<h4>ロングフリーズ動画</h4>
+<p>中段チェリーの一部で発生。AT80Gスタート・Aクラス・裏モードのすべてを獲得できる。</p>
+<h2>解析情報ボーナス時</h2>
+<h3>よう実チャンス（AT）</h3>
+<h4>よう実チャンス概要</h4>
 <p>初期ゲーム数40G＋αのAT。よう実ボーナスとのループで出玉を増やすゲーム性で、ボーナス中のレア役などでATゲーム数が上乗せされる。クラスランクによってボーナス当選期待度が異なるところもポイントで、AT中にBARが揃えばクラスランクが昇格する。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実よう実チャンス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-12-01.jpg" decoding="async"></p>
-<h4><span id="i-47">よう実チャンス性能</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実よう実チャンス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-12-01.jpg"></p>
+<h4>よう実チャンス性能</h4>
 <table>
 <thead>
 <tr>
@@ -1759,12 +1727,12 @@
 </tbody>
 </table>
 <p>「AT中の基本画面解説」</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実よう実チャンス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-12-03.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実よう実チャンス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-12-03.jpg"></p>
 <p>「ベル連カウンター」 ベル入賞ごとに1つずつ点灯していき、6連続で入賞（ハズレorリプレイを挟まずに6回連続でベルが入賞）すればボーナスとなる。レア役成立時はカウンターは据え置き（点灯も消灯もしない）。</p>
 <p>［ベルナビの種類］ 押し順ナビはフルナビと2択ナビの2種類があり、クラスランクが高いほどフルナビが発生しやすい＝ベルが揃いやすいので出玉増加スピードが早く、ボーナス当選率も高い。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実よう実チャンス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-12-04.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実よう実チャンス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-12-04.jpg"></p>
 <p>「ボーナス報酬示唆」</p>
-<h4><span id="i-48">パネル色ごとの示唆</span></h4>
+<h4>パネル色ごとの示唆</h4>
 <table>
 <thead>
 <tr>
@@ -1797,7 +1765,7 @@
 </table>
 <p>左のパネルから順に、次に当選するボーナスの種類や特化ゾーン当選を示唆。3の倍数回目は特化ゾーン当選のチャンスとなる。</p>
 <p>「実力カウンター」</p>
-<h4><span id="i-49">実力カウンター性能</span></h4>
+<h4>実力カウンター性能</h4>
 <table>
 <thead>
 <tr>
@@ -1818,7 +1786,7 @@
 </table>
 <p>ベル揃いのたびにポイントが加算されていき、MAXに到達するごとに恩恵を獲得。初回突入時は20ptが、2回目以降は20pt or 30ptがMAXとなる。</p>
 <p>「クラスランク」</p>
-<h4><span id="i-50">クラスランク性能</span></h4>
+<h4>クラスランク性能</h4>
 <table>
 <thead>
 <tr>
@@ -1842,14 +1810,14 @@
 </tbody>
 </table>
 <p>［狙えカットイン］ BARが揃えばクラスランクが昇格。一気にAクラスへ昇格することもある。 Aクラス以外への昇格時は＋20G、Aクラスへの昇格なら＋50Gの上乗せも獲得する。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実よう実チャンス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-12-08.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実よう実チャンス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-12-08.jpg"></p>
 <p>「ベルナビストック」 AT中のレア役や実力カウンターMAX時の報酬、ボーナス中の抽選などで獲得でき、ストック1個につき1回、押し順ベル成立時にフルナビが発生。ストックはリール下に表示される。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実よう実チャンス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-12-09.jpg" decoding="async"></p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実よう実チャンス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-12-10.jpg" decoding="async"></p>
-<h4><span id="i-51">レア役至上主義ゾーン</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実よう実チャンス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-12-09.jpg"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実よう実チャンス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-12-10.jpg"></p>
+<h4>レア役至上主義ゾーン</h4>
 <p>AT中に突入する可能性があるボーナスの高確率状態。5or10G継続し、滞在中にレア役を引けばボーナス濃厚だ。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実レア役至上主義ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-13-01.jpg" decoding="async"></p>
-<h4><span id="i-52">レア役至上主義ゾーン性能</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実レア役至上主義ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-13-01.jpg"></p>
+<h4>レア役至上主義ゾーン性能</h4>
 <table>
 <thead>
 <tr>
@@ -1873,10 +1841,10 @@
 </tbody>
 </table>
 <p>開始時のタイトルが赤なら10G濃厚になる。</p>
-<h4><span id="i-53">エリートタイム</span></h4>
+<h4>エリートタイム</h4>
 <p>突入後はATゲーム数の減算がストップして、ベルがフルナビ状態に昇格。ボーナス当選まで継続かつ、ATゲーム数の減算がないため、ベルを6連させずにロング継続させれば、エリートタイムだけで出玉を大幅に増加させることも可能だ。 エリートタイム中はレア役でのボーナス当選率もアップしていて、レア役契機のボーナスは白7ボーナス濃厚になる。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実エリートタイム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-14-01.jpg" decoding="async"></p>
-<h4><span id="i-54">エリートタイム性能</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実エリートタイム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-14-01.jpg"></p>
+<h4>エリートタイム性能</h4>
 <table>
 <thead>
 <tr>
@@ -1903,7 +1871,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-55">レア役成立時のベルナビストック・ボーナス当選率</span></h4>
+<h4>レア役成立時のベルナビストック・ボーナス当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1940,7 +1908,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-56">ベルナビストック当選時・個数振り分け</span></h4>
+<h4>ベルナビストック当選時・個数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1983,11 +1951,11 @@
 </tbody>
 </table>
 <p>［フルナビなので純増は3.3枚/G］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実エリートタイム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-14-02.jpg" decoding="async"></p>
-<h4><span id="i-57">実力で掴み取れ！チャレンジ</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実エリートタイム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-14-02.jpg"></p>
+<h4>実力で掴み取れ！チャレンジ</h4>
 <p>ベル6連目が2択ベルの場合、実力で掴み取れ！チャレンジが発生。2択正解でベル入賞＝よう実ボーナスに当選する。 共通ベルの場合も実力で掴み取れ！チャレンジが発生することはあるが、この場合は押し順不問でよう実ボーナス濃厚だ。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力で掴み取れチャレンジ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-12-01.jpg" decoding="async"></p>
-<h4><span id="i-58">フルナビ発生率</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力で掴み取れチャレンジ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-12-01.jpg"></p>
+<h4>フルナビ発生率</h4>
 <table>
 <thead>
 <tr>
@@ -2014,7 +1982,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-59">実力カウンターの規定値振り分け</span></h4>
+<h4>実力カウンターの規定値振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2046,7 +2014,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-60">初期裏ポイント振り分け</span></h4>
+<h4>初期裏ポイント振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2073,7 +2041,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="2">2択不正解時・裏ポイント振り分け</span></h4>
+<h4>2択不正解時・裏ポイント振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2108,7 +2076,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="MAX">実力カウンターMAX時の恩恵振り分け</span></h4>
+<h4>実力カウンターMAX時の恩恵振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2200,7 +2168,7 @@
 </tbody>
 </table>
 <p>初回のカウンターMAX時は良い報酬を獲得しやすい。</p>
-<h4><span id="i-61">［ スイカ ］レア役成立時の抽選値 ランク不問</span></h4>
+<h4>［ スイカ ］レア役成立時の抽選値 ランク不問</h4>
 <table>
 <thead>
 <tr>
@@ -2247,7 +2215,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="__D">［ スイカ以外 ］レア役成立時の抽選値 Dランク</span></h4>
+<h4>［ スイカ以外 ］レア役成立時の抽選値 Dランク</h4>
 <table>
 <thead>
 <tr>
@@ -2302,7 +2270,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="C">Cランク</span></h4>
+<h4>Cランク</h4>
 <table>
 <thead>
 <tr>
@@ -2357,7 +2325,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="B">Bランク</span></h4>
+<h4>Bランク</h4>
 <table>
 <thead>
 <tr>
@@ -2412,7 +2380,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="A">Aランク</span></h4>
+<h4>Aランク</h4>
 <table>
 <thead>
 <tr>
@@ -2467,7 +2435,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-62">エリートタイム当選時・ベルナビストック個数振り分け</span></h4>
+<h4>エリートタイム当選時・ベルナビストック個数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2494,11 +2462,11 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-63">よう実ボーナス</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-64">よう実ボーナス概要</span></h4>
+<h3>よう実ボーナス</h3>
+<h4>よう実ボーナス概要</h4>
 <p>赤7揃い（30G）と白7揃い（60G）の2種類が存在。白7揃いは名称がよう実ボーナスパーフェクトに変化するが、継続ゲーム数が違うのみで、純増や消化中の抽選などは基本的に同じだ。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実よう実ボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-17-01.jpg" decoding="async"></p>
-<h4><span id="i-65">よう実ボーナス性能</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実よう実ボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-17-01.jpg"></p>
+<h4>よう実ボーナス性能</h4>
 <table>
 <thead>
 <tr>
@@ -2530,9 +2498,9 @@
 </tbody>
 </table>
 <p>レア役だけでなく、ハズレ（1枚役）でもATゲーム数やAT中のベルナビストックを獲得する可能性がある。</p>
-<h4><span id="i-66">ボーナス中の抽選</span></h4>
+<h4>ボーナス中の抽選</h4>
 <p>よう実ボーナス中のレア役は、ベルナビストック・ATゲーム数・ドラゴンバーストをトリプル抽選。ベルナビストックかATゲーム数のどちらかは必ず獲得できる。</p>
-<h4><span id="i-67">ドラゴンバースト当選率</span></h4>
+<h4>ドラゴンバースト当選率</h4>
 <table>
 <thead>
 <tr>
@@ -2563,7 +2531,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-68">ベルナビストック当選率</span></h4>
+<h4>ベルナビストック当選率</h4>
 <table>
 <thead>
 <tr>
@@ -2642,7 +2610,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="AT-4">ATゲーム数上乗せ当選率</span></h4>
+<h4>ATゲーム数上乗せ当選率</h4>
 <table>
 <thead>
 <tr>
@@ -2745,11 +2713,11 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-69">ドラゴンバースト</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-70">ドラゴンバースト概要</span></h4>
+<h3>ドラゴンバースト</h3>
+<h4>ドラゴンバースト概要</h4>
 <p>ボーナス中に突入する可能性がある、1セット5Gの上乗せ特化ゾーン。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実ドラゴンバースト" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-18-01.jpg" decoding="async"></p>
-<h4><span id="i-71">ドラゴンバースト性能</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実ドラゴンバースト" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-18-01.jpg"></p>
+<h4>ドラゴンバースト性能</h4>
 <table>
 <thead>
 <tr>
@@ -2780,9 +2748,9 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-72">上乗せ抽選</span></h4>
+<h4>上乗せ抽選</h4>
 <p>ドラゴンバースト中は、毎ゲームベルナビストック・ATゲーム数・綾小路超覚醒ゾーンのすべてを抽選。 最低でもベルナビストックorATゲーム数のいずれかを獲得可能で、綾小路超覚醒ゾーンはレア役でのみ当選する可能性がある。</p>
-<h4><span id="i-73">ベルナビストック当選率</span></h4>
+<h4>ベルナビストック当選率</h4>
 <table>
 <thead>
 <tr>
@@ -2897,7 +2865,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="AT-5">ATゲーム数上乗せ当選率</span></h4>
+<h4>ATゲーム数上乗せ当選率</h4>
 <table>
 <thead>
 <tr>
@@ -3048,7 +3016,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-74">綾小路超覚醒ゾーン当選率</span></h4>
+<h4>綾小路超覚醒ゾーン当選率</h4>
 <table>
 <thead>
 <tr>
@@ -3079,12 +3047,12 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-75">綾小路超覚醒ゾーン</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-76">綾小路超覚醒ゾーン概要</span></h4>
+<h3>綾小路超覚醒ゾーン</h3>
+<h4>綾小路超覚醒ゾーン概要</h4>
 <p>ボーナス後の一部で突入する、本機最強特化ゾーン。2択正解orレア役成立でボーナス濃厚となっていて、ボーナス終了後は再び綾小路超覚醒ゾーンへ突入する。 終了条件は2択を2回続けて失敗すること。初回は保証があるため、突入した時点でボーナス1回は獲得できる。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実綾小路超覚醒ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-19-01.jpg" decoding="async"></p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実綾小路超覚醒ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-19-02.jpg" decoding="async"></p>
-<h4><span id="i-77">綾小路超覚醒ゾーン性能</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実綾小路超覚醒ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-19-01.jpg"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実綾小路超覚醒ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-19-02.jpg"></p>
+<h4>綾小路超覚醒ゾーン性能</h4>
 <table>
 <thead>
 <tr>
@@ -3115,10 +3083,10 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-78">裏ポイント・裏モード</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-79">裏ポイント概要</span></h4>
+<h3>裏ポイント・裏モード</h3>
+<h4>裏ポイント概要</h4>
 <p>よう実チャンス中、1stナビのみ発生時にベルを揃えられない（2択当てに漏れる）と、裏ポイントを獲得。規定ポイント到達で、次ゲームから裏モードへ突入する。</p>
-<h4><span id="i-80">裏ポイント性能</span></h4>
+<h4>裏ポイント性能</h4>
 <table>
 <thead>
 <tr>
@@ -3142,16 +3110,16 @@
 </tbody>
 </table>
 <p>［裏ポイント獲得示唆］ リールの上を左から右へ向かって黒っぽいエフェクトが流れるとポイント獲得を示唆。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実裏ポイント" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-15-02.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実裏ポイント" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-15-02.jpg"></p>
 <p>［裏ポイント蓄積示唆］ 液晶に文字出現で蓄積量を示唆する。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実裏ポイント" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-15-03.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実裏ポイント" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-15-03.jpg"></p>
 <p>「裏モード突入あおり」 裏の文字が表示されると、次ゲームで裏モードへ突入するかも!?</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実裏ポイント" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-15-04.jpg" decoding="async"></p>
-<h4><span id="i-81">裏モード概要</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実裏ポイント" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-15-04.jpg"></p>
+<h4>裏モード概要</h4>
 <p>裏モード中はATゲーム数の減算がストップして、 ボーナス当選まで毎ゲーム＋1GずつATゲーム数が上乗せ されていく特殊AT（滞在したゲーム数がATゲーム数に上乗せされる）。 滞在中のボーナス当選契機はベル6連のみ（レア役はベルナビストック抽選）となっているので、いかにベルを “6連続で揃えないか” がロング継続の鍵だ。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実裏モード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-16-01.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実裏モード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-16-01.jpg"></p>
 <p>ナビの発生率は通常のよう実チャンスと同様にクラスランクによって異なるため、クラスランクが低い＝ベルナビが発生しづらいほど、裏モードがロング継続しやすい。</p>
-<h4><span id="i-82">裏モード性能</span></h4>
+<h4>裏モード性能</h4>
 <table>
 <thead>
 <tr>
@@ -3180,7 +3148,7 @@
 </table>
 <p>もちろん、裏モード中はベルナビストックの使用はナシ。押し順ナビを無視してベルを揃えないなどの攻略要素は存在しない。</p>
 <p>中段チェリー成立時はボーナス（白7揃い）に当選するが、裏ポイントがMAX近くまで貯まるので、少しよう実チャンスを回せば裏モードに再突入する。</p>
-<h4><span id="i-83">裏モード中のベルナビストック当選率</span></h4>
+<h4>裏モード中のベルナビストック当選率</h4>
 <table>
 <thead>
 <tr>
@@ -3199,11 +3167,11 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="YC">YC高確</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="YC-2">YC高確概要</span></h4>
+<h3>YC高確</h3>
+<h4>YC高確概要</h4>
 <p>AT終了後はAT引き戻しに期待できるYC高確に滞在し、レア役成立でAT引き戻しのチャンス。YC高確中に引き戻した場合、ランクが下がることはない（アップすることはある）。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実YC高確" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-20-01.jpg" decoding="async"></p>
-<h4><span id="YC-3">YC高確性能</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実YC高確" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-20-01.jpg"></p>
+<h4>YC高確性能</h4>
 <table>
 <thead>
 <tr>
@@ -3226,10 +3194,10 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-84">引き戻し濃厚状態</span></h4>
+<h4>引き戻し濃厚状態</h4>
 <p>エンディング後は1G限定のフリーズ高確へ移行するのだが、ここでフリーズが発生しなかった場合、引き戻し濃厚のYC高確に移行。ATに当選するまで滞在して、引き戻し後はクラスランクがB以上となる。 通常のYC高確とは異なり、液晶周囲に「超高確率中」の文字が表示される。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実YC高確引き戻し濃厚状態" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-21-01.jpg" decoding="async"></p>
-<h4><span id="AT-6">AT引き戻し当選率</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実YC高確引き戻し濃厚状態" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-21-01.jpg"></p>
+<h4>AT引き戻し当選率</h4>
 <table>
 <thead>
 <tr>
@@ -3261,7 +3229,7 @@
 </tbody>
 </table>
 <p>強レア役は1/2で引き戻し！</p>
-<h4><span id="i-85">転落率</span></h4>
+<h4>転落率</h4>
 <table>
 <thead>
 <tr>
@@ -3277,7 +3245,7 @@
 </tbody>
 </table>
 <p>10G消化後のハズレ（1枚役・押し順ベルこぼし）時に転落を抽選する。</p>
-<h4><span id="i-86">引き戻し当選時のクラスランク振り分け</span></h4>
+<h4>引き戻し当選時のクラスランク振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -3305,7 +3273,7 @@
 </tbody>
 </table>
 <p>引き戻し当選時は上記の振り分けでクラスランクを決定。前回AT中のランクよりも下のランクに当選した場合は、前回のランクに補正される（前回のランクより低いランクにはならない）。</p>
-<h4><span id="AT-7">AT引き戻し当選率</span></h4>
+<h4>AT引き戻し当選率</h4>
 <table>
 <thead>
 <tr>
@@ -3325,12 +3293,12 @@
 </tbody>
 </table>
 <p>引き戻し濃厚状態は転落しないので、引き戻しに当選するまで継続。 引き戻し当選時は3〜19Gの前兆を経由するのだが、前兆中はAT初期ゲーム数の加算が抽選される（当選率は引き戻し当選率と共通）。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-87">フリーズ高確</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-88">フリーズ高確概要</span></h4>
+<h3>フリーズ高確</h3>
+<h4>フリーズ高確概要</h4>
 <p>有利区間リセット時に突入する、1G限定のフリーズ高確率状態。1G間だが、フリーズ発生期待度は33%以上と高い。 フリーズ非発生だった場合でも、引き戻し濃厚のYC高確へ移行する。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実フリーズ高確" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-24-01.jpg" decoding="async"></p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実フリーズ高確" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-24-02.jpg" decoding="async"></p>
-<h4><span id="i-89">フリーズ高確性能</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実フリーズ高確" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-24-01.jpg"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実フリーズ高確" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-24-02.jpg"></p>
+<h4>フリーズ高確性能</h4>
 <table>
 <thead>
 <tr>
@@ -3354,8 +3322,8 @@
 </tbody>
 </table>
 <p>※対象は「フリーズ高確率」と表示されたゲーム。あおり発生→YC高確へ移行するゲームでレア役を引いても対象外なので注意</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-90">ツラヌキ・有利区間</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-91">有利区間のリセット契機</span></h4>
+<h3>ツラヌキ・有利区間</h3>
+<h4>有利区間のリセット契機</h4>
 <table>
 <thead>
 <tr>
@@ -3383,7 +3351,7 @@
 </tbody>
 </table>
 <p>上記いずれかの条件を満たすとAT終了時に有利区間がリセットされ、フリーズ高確に突入。 よう実ボーナス12回当選と一撃2400枚以上獲得時はその時点でATが終わってしまうわけではなく、有利区間リセットの権利を獲得する（ATが終了orエンディングを迎えた後に有利区間をリセット）。</p>
-<h4><span id="i-92">ツラヌキ条件と恩恵</span></h4>
+<h4>ツラヌキ条件と恩恵</h4>
 <table>
 <thead>
 <tr>
@@ -3403,16 +3371,16 @@
 </tbody>
 </table>
 <p>※フリーズ高確終了後はAT引き戻し濃厚のYC高確へ</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-93">エンディング</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-94">エンディングボーナス</span></h4>
+<h3>エンディング</h3>
+<h4>エンディングボーナス</h4>
 <p>有利区間の残り枚数が少なくなると、エンディングボーナスが発生。エンディング終了後はフリーズ高確へ移行するのでフリーズ（裏モード）のチャンス。フリーズ高確でフリーズが引けなくても、引き戻し濃厚のYC高確へ移行するため、AT引き戻しは濃厚だ。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実エンディングボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-22-01.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実エンディングボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-22-01.jpg"></p>
 <p>「実力チャレンジで設定推測」 逆押しで左リール中段に白7を止めれば設定示唆ボイスが発生。上段or中段の2コマに白7を押せばOKだ。 左リール中段に赤を止めても示唆ボイスは発生するが、赤7狙いの場合は中段ビタ押しが必要になる。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実エンディングボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-22-02.jpg" decoding="async"></p>
-<p>※白7、赤7のいずれを狙う場合も、右リールを最初に押さないと目押しに成功しても示唆ボイスが発生しない</p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-95">演出情報</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-96">通常時</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-97">ステージ解説</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実エンディングボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-22-02.jpg"></p>
+<p>※白7、赤7のいずれを狙う場合も、右リールを最初に押さないと目押しに成功しても示唆ボイスが発生しない</p>
+<h2>演出情報</h2>
+<h3>通常時</h3>
+<h4>ステージ解説</h4>
 <table>
 <thead>
 <tr>
@@ -3444,16 +3412,16 @@
 </tbody>
 </table>
 <p>［教室］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-03-02.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-03-02.jpg"></p>
 <p>［校庭］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-03-03.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-03-03.jpg"></p>
 <p>［無人島］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-03-04.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-03-04.jpg"></p>
 <p>［豪華客船］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-03-05.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-03-05.jpg"></p>
 <p>［ホワイトルーム］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-03-06.jpg" decoding="async"></p>
-<h4><span id="CZ-10">クラスランク・CZモード示唆演出</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-03-06.jpg"></p>
+<h4>クラスランク・CZモード示唆演出</h4>
 <table>
 <thead>
 <tr>
@@ -3485,7 +3453,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-98">クラスランクごとのリール右のキャラ</span></h4>
+<h4>クラスランクごとのリール右のキャラ</h4>
 <table>
 <thead>
 <tr>
@@ -3514,13 +3482,13 @@
 </table>
 <p>基本的にはクラスランクに対応したクラスのキャラが出現するが、約20%で見た目よりも高いランクが選択。 綾小路だけは例外で、見た目はDクラスだが約50%で内部的にAクラスになる。</p>
 <p>［蝶々演出］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実蝶々演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-32-02.jpg" decoding="async"></p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実蝶々演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-32-03.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実蝶々演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-32-02.jpg"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実蝶々演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-32-03.jpg"></p>
 <p>［セリフ演出］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実セリフ演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-32-04.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実セリフ演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-32-04.jpg"></p>
 <p>［リール右のキャラ］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実クラスランクキャラ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-06-02.jpg" decoding="async"></p>
-<h4><span id="i-99">アイキャッチの示唆</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実クラスランクキャラ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-06-02.jpg"></p>
+<h4>アイキャッチの示唆</h4>
 <table>
 <thead>
 <tr>
@@ -3593,16 +3561,16 @@
 </tbody>
 </table>
 <p>［白背景］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実アイキャッチ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-05-02.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実アイキャッチ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-05-02.jpg"></p>
 <p>［紫背景］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実アイキャッチ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-05-03.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実アイキャッチ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-05-03.jpg"></p>
 <p>［黒背景］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実アイキャッチ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-05-04.jpg" decoding="async"></p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-100">プライベートポイント</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-101">プライベートポイント概要</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実アイキャッチ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-05-04.jpg"></p>
+<h3>プライベートポイント</h3>
+<h4>プライベートポイント概要</h4>
 <p>通常時は毎ゲーム、1000ptずつプライベートポイントを獲得していき、任意のタイミングでPUSHボタンを押すと貯まったポイントを使用可能。 通常時ならクラスランクやCZモードなど、実力至上主義ゾーン中ならアイコンのシナリオを教えてくれる。 ポイントがなくなることはそうそうないので、積極的に使ってOK。消費量は多いが、AT終了画面を2回表示させることもできる。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実プライベートポイント" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-26-01.jpg" decoding="async"></p>
-<h4><span id="i-102">プライベートポイントの使用箇所と示唆内容</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実プライベートポイント" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-26-01.jpg"></p>
+<h4>プライベートポイントの使用箇所と示唆内容</h4>
 <table>
 <thead>
 <tr>
@@ -3634,8 +3602,8 @@
 </tbody>
 </table>
 <p>［ボタンPUSH時の画面］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実プライベートポイント" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-26-04.jpg" decoding="async"></p>
-<h4><span id="i-103">現在のクラスランク示唆</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実プライベートポイント" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-26-04.jpg"></p>
+<h4>現在のクラスランク示唆</h4>
 <table>
 <thead>
 <tr>
@@ -3662,7 +3630,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="CZ-11">CZモード示唆</span></h4>
+<h4>CZモード示唆</h4>
 <table>
 <thead>
 <tr>
@@ -3714,7 +3682,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="4">4周期先までのクラスランク示唆</span></h4>
+<h4>4周期先までのクラスランク示唆</h4>
 <table>
 <thead>
 <tr>
@@ -3767,17 +3735,17 @@
 </tbody>
 </table>
 <p>［現在のクラスランク示唆］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実プライベートポイント" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-07-04.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実プライベートポイント" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-07-04.jpg"></p>
 <p>［CZモード示唆］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実プライベートポイント" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-07-06.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実プライベートポイント" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-07-06.jpg"></p>
 <p>［4周期先までのクラスランク示唆］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実プライベートポイント" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-07-07.jpg" decoding="async"></p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-104">前兆</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-105">前兆示唆</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実プライベートポイント" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-07-07.jpg"></p>
+<h3>前兆</h3>
+<h4>前兆示唆</h4>
 <p>リール枠にエフェクトが発生すると前兆の合図だ。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実リール枠エフェクト前兆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-08-01.jpg" decoding="async"></p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="CZ-12">CZ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-106">［前半］キャライルミの法則</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実リール枠エフェクト前兆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-08-01.jpg"></p>
+<h3>CZ</h3>
+<h4>［前半］キャライルミの法則</h4>
 <table>
 <thead>
 <tr>
@@ -3801,12 +3769,12 @@
 </tbody>
 </table>
 <p>［青イルミ］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実ガールズチャレンジCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-09-05.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実ガールズチャレンジCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-09-05.jpg"></p>
 <p>［赤イルミ］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実ガールズチャレンジCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-09-06.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実ガールズチャレンジCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-09-06.jpg"></p>
 <p>［虹イルミ］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実ガールズチャレンジCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-09-07.jpg" decoding="async"></p>
-<h4><span id="i-107">［後半］演出法則</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実ガールズチャレンジCZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-09-07.jpg"></p>
+<h4>［後半］演出法則</h4>
 <table>
 <thead>
 <tr>
@@ -3821,7 +3789,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-108">継続時のカットイン発生タイミング割合 違和感告知モード以外</span></h4>
+<h4>継続時のカットイン発生タイミング割合 違和感告知モード以外</h4>
 <table>
 <thead>
 <tr>
@@ -3912,7 +3880,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-109">違和感告知モード</span></h4>
+<h4>違和感告知モード</h4>
 <table>
 <thead>
 <tr>
@@ -4004,7 +3972,7 @@
 </tbody>
 </table>
 <p>違和感告知モード中は、継続時の復活告知の割合が半分以下になっている。</p>
-<h4><span id="i-110">違和感演出のパターン</span></h4>
+<h4>違和感演出のパターン</h4>
 <table>
 <thead>
 <tr>
@@ -4126,7 +4094,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-111">背景色ごとのシナリオ示唆</span></h4>
+<h4>背景色ごとのシナリオ示唆</h4>
 <table>
 <thead>
 <tr>
@@ -4151,12 +4119,12 @@
 </table>
 <p>シナリオ10はすべて赤アイコンの超激アツシナリオ。赤アイコンは小役を引けばAT濃厚、10G間で一度も小役を引けなかった場合は10G延長なので、実質AT当選濃厚となる。</p>
 <p>［緑背景］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力至上主義ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-10-03.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力至上主義ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-10-03.jpg"></p>
 <p>［赤背景］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力至上主義ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-10-04.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力至上主義ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-10-04.jpg"></p>
 <p>［金背景］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力至上主義ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-10-05.jpg" decoding="async"></p>
-<h4><span id="AT-8">カットインごとのAT当選期待度</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力至上主義ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-10-05.jpg"></p>
+<h4>カットインごとのAT当選期待度</h4>
 <table>
 <thead>
 <tr>
@@ -4184,15 +4152,15 @@
 </tbody>
 </table>
 <p>［青カットイン］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力至上主義ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-10-06.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力至上主義ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-10-06.jpg"></p>
 <p>［緑カットイン］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力至上主義ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-10-07.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力至上主義ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-10-07.jpg"></p>
 <p>［赤カットイン］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力至上主義ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-10-08.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力至上主義ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-10-08.jpg"></p>
 <p>［虹カットイン］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力至上主義ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-10-09.jpg" decoding="async"></p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="AT-9">AT</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-112">［裏ポイント示唆］キャラごとの裏ポイント蓄積量期待度</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力至上主義ゾーン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-10-09.jpg"></p>
+<h3>AT</h3>
+<h4>［裏ポイント示唆］キャラごとの裏ポイント蓄積量期待度</h4>
 <table>
 <thead>
 <tr>
@@ -4229,18 +4197,18 @@
 </table>
 <p>AT終了画面では、設定と裏ポイントの蓄積量を示唆。裏ポイントはAT後、YC高確終了でリセットされてしまうので、裏ポイントの蓄積量が多いタイミングで引き戻せれば裏モード突入に期待できる。</p>
 <p>［堀北（通常）］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実AT終了画面裏ポイント示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-02-02.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実AT終了画面裏ポイント示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-02-02.jpg"></p>
 <p>［佐倉］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実AT終了画面裏ポイント示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-02-03.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実AT終了画面裏ポイント示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-02-03.jpg"></p>
 <p>［龍園（通常）］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実AT終了画面裏ポイント示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-02-04.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実AT終了画面裏ポイント示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-02-04.jpg"></p>
 <p>［綾小路（ブレザー）］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実AT終了画面裏ポイント示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-02-05.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実AT終了画面裏ポイント示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-02-05.jpg"></p>
 <p>［綾小路（夏服）］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実AT終了画面裏ポイント示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-02-06.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実AT終了画面裏ポイント示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-02-06.jpg"></p>
 <p>［櫛田］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実AT終了画面裏ポイント示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-02-07.jpg" decoding="async"></p>
-<h4><span id="i-113">フリーズ発生濃厚演出</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実AT終了画面裏ポイント示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-02-07.jpg"></p>
+<h4>フリーズ発生濃厚演出</h4>
 <table>
 <thead>
 <tr>
@@ -4279,7 +4247,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="AT-10">AT開始画面の示唆</span></h4>
+<h4>AT開始画面の示唆</h4>
 <table>
 <thead>
 <tr>
@@ -4339,8 +4307,8 @@
 </tbody>
 </table>
 <p>［AT開始画面一覧］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実AT開始画面" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-11-02.jpg" decoding="async"></p>
-<h4><span id="2-2">キャラごとの2択正解時の示唆</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実AT開始画面" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-11-02.jpg"></p>
+<h4>キャラごとの2択正解時の示唆</h4>
 <table>
 <thead>
 <tr>
@@ -4369,12 +4337,12 @@
 </table>
 <p>ボイスカスタム時は基本的にカスタムしているキャラが登場。異なるキャラなら白7揃いやドラゴンバースト当選に期待できる。 ボイスカスタムをしていないかつ、高円寺・龍園・堀北学以外のキャラが登場した場合は共通ベル＝よう実ボーナス濃厚となる。</p>
 <p>［高円寺］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力で掴み取れチャレンジ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-13-02.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力で掴み取れチャレンジ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-13-02.jpg"></p>
 <p>［龍園］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力で掴み取れチャレンジ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-13-03.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力で掴み取れチャレンジ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-13-03.jpg"></p>
 <p>［堀北学］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力で掴み取れチャレンジ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-13-04.jpg" decoding="async"></p>
-<h4><span id="i-114">キャライルミ系の演出法則</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実実力で掴み取れチャレンジ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-13-04.jpg"></p>
+<h4>キャライルミ系の演出法則</h4>
 <table>
 <thead>
 <tr>
@@ -4403,11 +4371,11 @@
 </table>
 <p>ベルナビをストックしたゲームの次のBET時にキャライルミが発生すると、レバーONでエリートタイムあおり発生のチャンス。 基本的にはキャライルミ→エリートタイムあおりを経由して、エリートタイムが告知される。</p>
 <p>［キャライルミ・エリートタイムあおり］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実ATキャライルミ・エリートタイムあおり" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-15-02.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実ATキャライルミ・エリートタイムあおり" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-15-02.jpg"></p>
 <p>綾小路のエリートタイムあおりはエリートタイム突入濃厚。あおり中の下パネル消灯や筐体振動、綾小路のイルミ→坂柳のエリートタイムあおりのような違和感パターンもエリートタイム濃厚となる。</p>
-<h4><span id="i-115">狙えカットインの期待度</span></h4>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実狙えカットイン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-16-01.jpg" decoding="async"></p>
-<h4><span id="i-116">狙えカットインの色割合</span></h4>
+<h4>狙えカットインの期待度</h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実狙えカットイン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-16-01.jpg"></p>
+<h4>狙えカットインの色割合</h4>
 <table>
 <thead>
 <tr>
@@ -4439,7 +4407,7 @@
 </tbody>
 </table>
 <p>フェイク時は必ず青カットインが出るので、赤以上のカットインが出た時点でBAR揃い濃厚。金はAクラスへの昇格も濃厚になる。</p>
-<h4><span id="i-117">裏ポイント示唆</span></h4>
+<h4>裏ポイント示唆</h4>
 <table>
 <thead>
 <tr>
@@ -4466,7 +4434,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="AT-11">AT復帰時・櫛田（モノクロ）の出現率</span></h4>
+<h4>AT復帰時・櫛田（モノクロ）の出現率</h4>
 <table>
 <thead>
 <tr>
@@ -4491,25 +4459,25 @@
 </table>
 <p>保有している裏ポイントが多いほど櫛田（モノクロ）が出現しやすいので、ボーナス後に櫛田（モノクロ）が複数回出現すれば裏モードはもう目前！</p>
 <p>［櫛田（モノクロ）］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実裏ポイント示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0515/0515-01-03.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実裏ポイント示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0515/0515-01-03.jpg"></p>
 <p>［リール周囲エフェクト：弱］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実裏ポイント示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0515/0515-01-04.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実裏ポイント示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0515/0515-01-04.jpg"></p>
 <p>［リール周囲エフェクト：強］ リール上のみにエフェクトが走るのが弱、リール全体に走れば強となる。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実裏ポイント示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0515/0515-01-05.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実裏ポイント示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0515/0515-01-05.jpg"></p>
 <p>［文字（ノイズ）：弱］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実裏ポイント示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0515/0515-01-06.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実裏ポイント示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0515/0515-01-06.jpg"></p>
 <p>［文字（ノイズ）：中］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実裏ポイント示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0515/0515-01-07.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実裏ポイント示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0515/0515-01-07.jpg"></p>
 <p>［文字（ノイズ）：強］ 白文字が弱、赤文字が交じると中、文字の後に櫛田の顔エフェクトが入ると強。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実裏ポイント示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0515/0515-01-08.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実裏ポイント示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0515/0515-01-08.jpg"></p>
 <p>［裏ポイントあおり：白黒］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実裏ポイント示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0515/0515-01-09.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実裏ポイント示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0515/0515-01-09.jpg"></p>
 <p>［裏ポイントあおり：赤い櫛田の顔］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実裏ポイント示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0515/0515-01-10.jpg" decoding="async"></p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-118">よう実ボーナス</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-119">搭載楽曲</span></h4>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実搭載楽曲" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-29-00.jpg" decoding="async"></p>
-<h4><span id="i-120">搭載楽曲</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実裏ポイント示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0515/0515-01-10.jpg"></p>
+<h3>よう実ボーナス</h3>
+<h4>搭載楽曲</h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実搭載楽曲" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-29-00.jpg"></p>
+<h4>搭載楽曲</h4>
 <table>
 <thead>
 <tr>
@@ -4537,7 +4505,7 @@
 </tbody>
 </table>
 <p>ボーナス中の楽曲は4種類。7を揃えたタイミングでPUSHボタンを押すと楽曲を変更できる。</p>
-<h4><span id="i-121">ドラゴンバースト突入画面の示唆</span></h4>
+<h4>ドラゴンバースト突入画面の示唆</h4>
 <table>
 <thead>
 <tr>
@@ -4558,23 +4526,23 @@
 </table>
 <p>タイトルロゴの“BURST”の部分が虹なら3セット以上濃厚！</p>
 <p>［赤文字（デフォルト）］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実ドラゴンバースト" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-14-02.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実ドラゴンバースト" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-14-02.jpg"></p>
 <p>［虹文字］</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実ドラゴンバースト" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-14-03.jpg" decoding="async"></p>
-<h4><span id="1-2">1人目の振り分け</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実ドラゴンバースト" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-14-03.jpg"></p>
+<h4>1人目の振り分け</h4>
 <p>キャラ紹介の1人目は蓄積している裏ポイントを参照して抽選されていて、櫛田は裏ポイントが多いほど出現しやすい。 2人目は設定と1人目のキャラを参照して抽選される。</p>
 <p>キャラ紹介の設定示唆はコチラ</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-122">カスタム</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="1-3">1バレカスタム</span></h4>
+<h3>カスタム</h3>
+<h4>1バレカスタム</h4>
 <p>PUSHボタンを押すと開くメニュー画面では、演出カスタムや遊技履歴（ゲーム数や小役確率など）を確認可能。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実メニュー画面" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-28-01.jpg" decoding="async"></p>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実メニュー画面" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-28-01.jpg"></p>
 <p>「1バレカスタム」 第1停止時に告知音発生で強レア役濃厚。弱レア役が成立していればCZ以上の大チャンスだ。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実メニュー画面" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-28-02.jpg" decoding="async"></p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-123">裏ボタン</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-124">裏ポイント＆裏モード示唆</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実メニュー画面" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-28-02.jpg"></p>
+<h3>裏ボタン</h3>
+<h4>裏ポイント＆裏モード示唆</h4>
 <p>「よう実チャンスの開始画面」 PUSHボタンを押すと、上部パネルの色が変化して蓄積している裏ポイント量を示唆。 白＜青＜緑＜赤の順にポイント量に期待できる。</p>
-<p><img alt="画像" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-03-01a.jpg" decoding="async"></p>
-<h4><span id="i-125">上部パネル色別・裏ポイント蓄積割合</span></h4>
+<p><img alt="画像" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0512/0512-03-01a.jpg"></p>
+<h4>上部パネル色別・裏ポイント蓄積割合</h4>
 <table>
 <thead>
 <tr>
@@ -4617,11 +4585,11 @@
 </tbody>
 </table>
 <p>「裏モード突入あおり時」 PUSHボタンを押してバイブが発生すると裏モード突入濃厚。 裏モード突入時の約2%でバイブが発生する（PUSHボタンは何度でも押すことが可能）。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実よう実チャンス裏ボタン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-35-02.jpg" decoding="async"></p>
-<h4><span id="i-126">よう実チャンス中のカットイン・エリートタイム判別</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実よう実チャンス裏ボタン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-35-02.jpg"></p>
+<h4>よう実チャンス中のカットイン・エリートタイム判別</h4>
 <p>「狙えカットイン発生時」</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実裏ボタン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-36-01.jpg" decoding="async"></p>
-<h4><span id="i-127">ボイスごとの示唆</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実裏ボタン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-36-01.jpg"></p>
+<h4>ボイスごとの示唆</h4>
 <table>
 <thead>
 <tr>
@@ -4642,20 +4610,34 @@
 </table>
 <p>PUSHボタンを押してボイスが発生すればBAR揃い濃厚。※PUSHは1回のみ有効</p>
 <p>「エリートタイムあおり時」 PUSHボタンを押してバイブが発生すればエリートタイム濃厚。 エリートタイム突入時の約5%でバイブが発生する（PUSHボタンは何度でも押すことが可能）。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実裏ボタン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-36-03.jpg" decoding="async"></p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-128">その他</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-129">遊技説明</span></h4>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実裏ボタン" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-36-03.jpg"></p>
+<h3>その他</h3>
+<h4>遊技説明</h4>
 <p>全リールが止まっている状態で中ボタンを押すと、遊技説明を確認できる（通常時なら通常時の、AT中ならAT中の説明が表示）。</p>
-<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実遊技説明" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-27-01.jpg" decoding="async"></p>
-<div class="post-views content-post post-1394 entry-meta load-static">
-				<span class="post-views-icon dashicons dashicons-chart-bar"></span> <span class="post-views-label">Post Views:</span> <span class="post-views-count">630</span>
-			</div></div></details></div></details>
-            </div>
-
-            <!-- 目次ハンバーガー（右下固定・常時）。中身はJSがセクションから生成 --></section>
+<p><img alt="スマスロようこそ実力至上主義の教室へようじつよう実遊技説明" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1068_%E3%82%88%E3%81%86%E5%AE%9F/0416/0411-27-01.jpg"></p></section>
   
   
   </article></main>
 <footer class="foot">個人アーカイブ（suroschool.jp / たかどらのスロ塾 会員コンテンツ）・閲覧用</footer>
+
+<!-- スマホ用ボトムナビ（スクロールで隠れる/出る） -->
+<nav class="botnav" id="botnav">
+  <a href="../index.html" data-nav="index">🎰<span>機種</span></a>
+  <button id="searchOpen2">🔍<span>検索</span></button>
+  <a href="../index.html?fav=1">★<span>お気に入り</span></a>
+  <a href="../news.html">📰<span>お知らせ</span></a>
+  <a href="../tool.html">🧮<span>期待値</span></a>
+</nav>
+
+<!-- 全ページ横断の検索オーバーレイ -->
+<div class="search-overlay" id="searchOverlay" hidden>
+  <div class="search-head">
+    <input id="globalSearch" type="search" placeholder="機種名で検索…" autocomplete="off">
+    <button id="searchClose" aria-label="閉じる">✕</button>
+  </div>
+  <div id="searchResults" class="search-results"></div>
+</div>
+
+<script src="../assets/search-index.js"></script>
 <script src="../assets/app.js"></script>
 </body></html>

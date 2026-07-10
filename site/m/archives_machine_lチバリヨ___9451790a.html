@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="ja"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>Lチバリヨ２ | スマスロ目標 (個人アーカイブ)</title>
+<title>Lチバリヨ２ | スマスロ期待値 (個人アーカイブ)</title>
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="manifest" href="../manifest.webmanifest">
 <meta name="theme-color" content="#ffffff">
@@ -10,16 +10,18 @@
 <link rel="apple-touch-icon" href="../assets/icon.svg">
 <link rel="icon" href="../assets/icon.svg">
 <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){})});}</script>
+<script>window.__ROOT__='../';</script>
 
 </head><body>
-<header class="topbar">
-  <a class="brand" href="../index.html">🎰 スマスロ目標</a>
-  <nav>
+<header class="topbar" id="topbar">
+  <a class="brand" href="../index.html">🎰 スマスロ期待値</a>
+  <nav class="topnav">
     <a href="../index.html">機種</a>
     <a href="../news.html">お知らせ</a>
     <a href="../tool.html">期待値計算</a>
     <a href="../pages.html">資料</a>
   </nav>
+  <button class="topbar-search" id="searchOpen" aria-label="検索">🔍</button>
 </header>
 <main>
   <article class="machine">
@@ -35,71 +37,57 @@
     
     
   </div>
-  <section class="panel is-active" data-panel="nerai"><div class="tenjo-info"><div class="my-spoiler-wrapper" id="my-spoiler-1"><div class="my-spoiler-title" style="cursor:pointer; background:rgba(245,184,0,0.08); padding:10px; border:1px solid rgba(245,184,0,0.3); color:var(--text-main); font-weight:700; letter-spacing:0.04em;"><span class="spoiler-icon" style="margin-right:5px;">[-]</span>機種情報</div><div class="my-spoiler-content" style="display:block; padding:10px; border:1px solid rgba(245,184,0,0.2); border-top:0; background:var(--bg-card-hi); color:var(--text-main);"><p>【天井情報】</p>
-<p>999G ボーナス当選<br>
-チェリー回数天井　45回　ボーナス当選</p>
-<p>設定変更時　600G+α</p>
-<p>仮天井　350G</p>
-<p>※チェリーのカウントについては0Gからが現状有力。<br>
-※単チェで通常B以上確定。</p>
-<p>【リセット判別】</p>
-<p>ガックン判別　不可</p>
-<p>リセット時はほぼ3回目のチェリーまでに単チェ出現</p>
-<p>５倍数時のロングフラッシュは当日依存で発生</p>
-<p>【有利区間について】</p>
-<p>有利区間+1800枚あたりで有利区間切れてそう。<br>
-有利区間完走後は88%ループのリミットレスモードに突入。</p>
-</div></div></div><p><strong>狙い目</strong></p>
+  <section class="panel is-active" data-panel="nerai"><p><img loading="lazy" decoding="async" width="150" height="150" src="../img/1273a632322ad030.jpg" class="machine-thumbnail wp-post-image" alt="" style="display:block; margin:0 auto;" srcset="https://suroschool.jp/wp-content/uploads/2025/02/thumb_1-1-31-150x150.jpg 150w, https://suroschool.jp/wp-content/uploads/2025/02/thumb_1-1-31-120x120.jpg 120w" sizes="auto, (max-width: 150px) 100vw, 150px" /><strong>狙い目</strong></p>
 <p><a href="https://suroschool.jp/archives/machine/l%e3%83%81%e3%83%90%e3%83%aa%e3%83%a82-%e3%80%80%e5%ae%9f%e8%b7%b5%e7%9a%84%e3%81%aa%e7%8b%99%e3%81%84%e7%9b%ae" target="_blank" rel="noopener">実践的な狙い目は別記事で</a></p>
 <p><a href="https://suroschool.jp/archives/machine/%e3%83%81%e3%83%90%e3%83%aa%e3%83%a8%ef%bc%92%e5%bc%b7%e5%a4%a9%e5%9b%bd%e7%8b%99%e3%81%84%e5%a4%a7%e9%87%8f%e5%ae%9f%e8%b7%b5%e5%80%a42000%e4%b8%87g%e3%83%87%e3%83%bc%e3%82%bf%e3%81%a8%e5%ae%9f">チバリヨ２強天国狙い~大量実践値(2000万G)データと実践サンプルから考察~</a></p>
 <p>【スルー別リセット狙い】</p>
-<p>0スルー　100Gから<br>
-1スルー　800Gから<br>
-2スルー　800Gから<br>
-3スルー　700Gから<br>
+<p>0スルー　100Gから<br />
+1スルー　800Gから<br />
+2スルー　800Gから<br />
+3スルー　700Gから<br />
 4スルー以降　650Gから</p>
-<p>350G仮天井狙い<br>
-1から2スルー　250Gから<br>
+<p>350G仮天井狙い<br />
+1から2スルー　250Gから<br />
 3スルー以降　220Gから</p>
 <p>【スルー別ボーナス間天井狙い】</p>
-<p>0スルー　800Gから<br>
-1スルー　700Gから<br>
-2スルー　680Gから<br>
-3スルー　620Gから<br>
-4スルー　570Gから<br>
-5スルー　550Gから<br>
-6スルー以降<br>
-超積極派　天国まで(非推奨)<br>
+<p>0スルー　800Gから<br />
+1スルー　700Gから<br />
+2スルー　680Gから<br />
+3スルー　620Gから<br />
+4スルー　570Gから<br />
+5スルー　550Gから<br />
+6スルー以降<br />
+超積極派　天国まで(非推奨)<br />
 積極派&amp;慎重派　550Gから</p>
 <p>【スルー別350G仮天井狙い】</p>
 <p>※仮天井狙い単体は280G以上から(前任者不問)</p>
 <p>※仮天井狙いは前任者のペナ打ちも考慮して355Gから360 Gまで打つ。</p>
 <p>※ ボーナス終了時のランプでモード示唆確認や天国準備天井の10チェ確認済みのケースがあるため、上級者多い店舗は+20Gボーダー上げる。差枚+1000枚以上のケースはグラフで確認出来るためボーダーそのままで打てる。</p>
-<p>0スルー<br>
+<p>0スルー<br />
 有利区間差枚で調整</p>
-<p>+1500枚以上　0Gから<br>
-+1000枚から+1500枚<br>
-積極派　0Gから<br>
-慎重派　50Gから<br>
-+0枚から+1000枚　80Gから<br>
+<p>+1500枚以上　0Gから<br />
++1000枚から+1500枚<br />
+積極派　0Gから<br />
+慎重派　50Gから<br />
++0枚から+1000枚　80Gから<br />
 -1枚以下　160Gから</p>
-<p>1スルー　280Gから<br>
-2スルー　270Gから<br>
-3スルー　220Gから<br>
-4スルー　210Gから<br>
+<p>1スルー　280Gから<br />
+2スルー　270Gから<br />
+3スルー　220Gから<br />
+4スルー　210Gから<br />
 5スルー以降　200Gから</p>
 <p>※仮天井当選時は319Gから350Gの間で前兆開始？</p>
 <p>【リミットレスモード後狙い】</p>
-<p>連チャン回数15連以上の台。<br>
-リミットレスモード後はモード優遇の影響で天国まで。<br>
-機械割は110%超え？<br>
-ただし天国までだと青天井になるため展開はかなり荒れそう。<br>
+<p>連チャン回数15連以上の台。<br />
+リミットレスモード後はモード優遇の影響で天国まで。<br />
+機械割は110%超え？<br />
+ただし天国までだと青天井になるため展開はかなり荒れそう。<br />
 キン肉マンのSP狙い級の荒さ？</p>
-<p>・原則　天国まで<br>
-・残り4時間切ってる場合　当該の　10チェ or 350仮天井まで<br>
+<p>・原則　天国まで<br />
+・残り4時間切ってる場合　当該の　10チェ or 350仮天井まで<br />
 ・当日軍資金10万以下　10チェ or 350仮天井まで</p>
 <p>【高モード狙い】</p>
-<p>通常Bで機械割100%超え。<br>
+<p>通常Bで機械割100%超え。<br />
 単体で狙うのは厳しそう。</p>
 <p>&nbsp;</p>
 <p><strong>やめ時</strong></p>
@@ -109,48 +97,65 @@
 <p><strong>重要！！</strong></p>
 <p><strong>打つ時は必ず注意して確認</strong></p>
 <p><strong>【有利切れ時の挙動】</strong></p>
-<p><strong>ボーナス後32Gは外枠がふわふわ点灯していて、32G打ち終わると通常に戻ります。</strong><br>
-<strong>チェリーは擬似遊戯のため店データ機でカウントされず、1回引いた場合は店データ機31Gで通常に戻ります。</strong><br>
-<strong>これが矛盾(1G遅れて通常戻る)した場合は直近で有利切れしているので、実質リミットレスモード後と同様の状況です。</strong><br>
+<p><strong>ボーナス後32Gは外枠がふわふわ点灯していて、32G打ち終わると通常に戻ります。</strong><br />
+<strong>チェリーは擬似遊戯のため店データ機でカウントされず、1回引いた場合は店データ機31Gで通常に戻ります。</strong><br />
+<strong>これが矛盾(1G遅れて通常戻る)した場合は直近で有利切れしているので、実質リミットレスモード後と同様の状況です。</strong><br />
 <strong>天国抜け後はリミットレスモードに行かなくても有利切れするケースがあるため(頻度は不明)、自分の台は勿論、周りの台も気にした方が良いです。</strong></p>
 <p>&nbsp;</p>
 <p><strong>その他</strong></p>
 <p>示唆の影響が大きいため期待値表が役に立たないケースが多いタイプの台です。</p>
 <p>実際の主な狙い目は<a href="https://suroschool.jp/archives/machine/l%e3%83%81%e3%83%90%e3%83%aa%e3%83%a82-%e3%80%80%e5%ae%9f%e8%b7%b5%e7%9a%84%e3%81%aa%e7%8b%99%e3%81%84%e7%9b%ae" target="_blank" rel="noopener">こちら</a></p>
 <p>[リミットレスモードについて]</p>
-<p>①突入契機<br>
-・有利区間切れ(差枚+1800枚くらい)<br>
+<p>①突入契機<br />
+・有利区間切れ(差枚+1800枚くらい)<br />
 ・虹パトモード終了後</p>
 <p>虹パトモード濃厚(15連以上後)の場合は、その後リミットレスモード移行するものと思われる。</p>
-<p>②有利切れるタイミング<br>
+<p>②有利切れるタイミング<br />
 リミットレスモード移行後はボーナス終了の度に有利区間が切れる。</p>
 <p>モード</p>
-<p><a href="../img/aa0634d29d335150.jpg"><img class="alignnone size-medium wp-image-610" src="../img/bd595fe3208d454f.jpg" alt="" width="190" height="300" decoding="async" sizes="auto, (max-width: 190px) 100vw, 190px"></a></p>
+<p><a href="../img/aa0634d29d335150.jpg"><img class="alignnone size-medium wp-image-610" src="../img/bd595fe3208d454f.jpg" alt="" width="190" height="300" / loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/02/1F157EAA-0261-43CD-A5EB-FB046551AAE7-190x300.jpg 190w, https://suroschool.jp/wp-content/uploads/2025/02/1F157EAA-0261-43CD-A5EB-FB046551AAE7-648x1024.jpg 648w, https://suroschool.jp/wp-content/uploads/2025/02/1F157EAA-0261-43CD-A5EB-FB046551AAE7-768x1214.jpg 768w, https://suroschool.jp/wp-content/uploads/2025/02/1F157EAA-0261-43CD-A5EB-FB046551AAE7-971x1536.jpg 971w, https://suroschool.jp/wp-content/uploads/2025/02/1F157EAA-0261-43CD-A5EB-FB046551AAE7.jpg 1122w" sizes="auto, (max-width: 190px) 100vw, 190px" /></a></p>
 <p>チェリー回数天井</p>
-<p><a href="../img/e2c75145380c8187.jpg"><img class="alignnone size-medium wp-image-609" src="../img/a5cfe212abc4121e.jpg" alt="" width="300" height="300" decoding="async" sizes="auto, (max-width: 300px) 100vw, 300px"></a></p>
+<p><a href="../img/e2c75145380c8187.jpg"><img class="alignnone size-medium wp-image-609" src="../img/a5cfe212abc4121e.jpg" alt="" width="300" height="300" / loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/02/70563E6C-BB1B-44DA-89A3-90FBD93C66C7-300x300.jpg 300w, https://suroschool.jp/wp-content/uploads/2025/02/70563E6C-BB1B-44DA-89A3-90FBD93C66C7-1021x1024.jpg 1021w, https://suroschool.jp/wp-content/uploads/2025/02/70563E6C-BB1B-44DA-89A3-90FBD93C66C7-150x150.jpg 150w, https://suroschool.jp/wp-content/uploads/2025/02/70563E6C-BB1B-44DA-89A3-90FBD93C66C7-768x770.jpg 768w, https://suroschool.jp/wp-content/uploads/2025/02/70563E6C-BB1B-44DA-89A3-90FBD93C66C7-120x120.jpg 120w, https://suroschool.jp/wp-content/uploads/2025/02/70563E6C-BB1B-44DA-89A3-90FBD93C66C7.jpg 1111w" sizes="auto, (max-width: 300px) 100vw, 300px" /></a></p>
 <p>ボーナス振り分け</p>
-<p><a href="../img/33cd0a2d564d26ea.jpg"><img class="alignnone size-medium wp-image-608" src="../img/96546c5d307c41f1.jpg" alt="" width="267" height="300" decoding="async" sizes="auto, (max-width: 267px) 100vw, 267px"></a></p>
+<p><a href="../img/33cd0a2d564d26ea.jpg"><img class="alignnone size-medium wp-image-608" src="../img/96546c5d307c41f1.jpg" alt="" width="267" height="300" / loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/02/221109ED-9207-42E7-8738-C80336D94A36-267x300.jpg 267w, https://suroschool.jp/wp-content/uploads/2025/02/221109ED-9207-42E7-8738-C80336D94A36-911x1024.jpg 911w, https://suroschool.jp/wp-content/uploads/2025/02/221109ED-9207-42E7-8738-C80336D94A36-768x863.jpg 768w, https://suroschool.jp/wp-content/uploads/2025/02/221109ED-9207-42E7-8738-C80336D94A36.jpg 1113w" sizes="auto, (max-width: 267px) 100vw, 267px" /></a></p>
 <p>SPテンパイボイス</p>
-<p><a href="../img/e8cb69de10a24dda.jpg"><img class="alignnone size-medium wp-image-607" src="../img/2334cca07e50a0bf.jpg" alt="" width="148" height="300" decoding="async" sizes="auto, (max-width: 148px) 100vw, 148px"></a></p>
+<p><a href="../img/e8cb69de10a24dda.jpg"><img class="alignnone size-medium wp-image-607" src="../img/2334cca07e50a0bf.jpg" alt="" width="148" height="300" / loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/02/3E551BB5-8ACD-4BF3-B5BD-07870B1884EC-148x300.jpg 148w, https://suroschool.jp/wp-content/uploads/2025/02/3E551BB5-8ACD-4BF3-B5BD-07870B1884EC-505x1024.jpg 505w, https://suroschool.jp/wp-content/uploads/2025/02/3E551BB5-8ACD-4BF3-B5BD-07870B1884EC-768x1558.jpg 768w, https://suroschool.jp/wp-content/uploads/2025/02/3E551BB5-8ACD-4BF3-B5BD-07870B1884EC-757x1536.jpg 757w, https://suroschool.jp/wp-content/uploads/2025/02/3E551BB5-8ACD-4BF3-B5BD-07870B1884EC-1009x2048.jpg 1009w, https://suroschool.jp/wp-content/uploads/2025/02/3E551BB5-8ACD-4BF3-B5BD-07870B1884EC.jpg 1096w" sizes="auto, (max-width: 148px) 100vw, 148px" /></a></p>
 <p>ボーナス終了時のトップランプ</p>
-<p><a href="../img/4c6b68e020e776a2.jpg"><img class="alignnone size-medium wp-image-606" src="../img/bab1b54a6706dc35.jpg" alt="" width="218" height="300" decoding="async" sizes="auto, (max-width: 218px) 100vw, 218px"></a></p>
+<p><a href="../img/4c6b68e020e776a2.jpg"><img class="alignnone size-medium wp-image-606" src="../img/bab1b54a6706dc35.jpg" alt="" width="218" height="300" / loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/02/FA74A2EE-6B70-4DD0-A416-5EDB5B735086-218x300.jpg 218w, https://suroschool.jp/wp-content/uploads/2025/02/FA74A2EE-6B70-4DD0-A416-5EDB5B735086-743x1024.jpg 743w, https://suroschool.jp/wp-content/uploads/2025/02/FA74A2EE-6B70-4DD0-A416-5EDB5B735086-768x1059.jpg 768w, https://suroschool.jp/wp-content/uploads/2025/02/FA74A2EE-6B70-4DD0-A416-5EDB5B735086.jpg 1097w" sizes="auto, (max-width: 218px) 100vw, 218px" /></a></p>
 <p>単チェ出現率</p>
-<p><a href="../img/164c7753d5404fbb.jpg"><img class="alignnone size-medium wp-image-605" src="../img/a3b5fcedc2a78d3b.jpg" alt="" width="241" height="300" decoding="async" sizes="auto, (max-width: 241px) 100vw, 241px"></a></p>
+<p><a href="../img/164c7753d5404fbb.jpg"><img class="alignnone size-medium wp-image-605" src="../img/a3b5fcedc2a78d3b.jpg" alt="" width="241" height="300" / loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/02/665F31BC-D634-4015-B890-B22F3912056C-241x300.jpg 241w, https://suroschool.jp/wp-content/uploads/2025/02/665F31BC-D634-4015-B890-B22F3912056C-822x1024.jpg 822w, https://suroschool.jp/wp-content/uploads/2025/02/665F31BC-D634-4015-B890-B22F3912056C-768x957.jpg 768w, https://suroschool.jp/wp-content/uploads/2025/02/665F31BC-D634-4015-B890-B22F3912056C.jpg 1105w" sizes="auto, (max-width: 241px) 100vw, 241px" /></a></p>
 <p>小スベリ</p>
-<p><a href="../img/5648061d729bb4c1.jpg"><img class="alignnone size-medium wp-image-603" src="../img/696a849d1b9fe12e.jpg" alt="" width="174" height="300" decoding="async" sizes="auto, (max-width: 174px) 100vw, 174px"></a></p>
+<p><a href="../img/5648061d729bb4c1.jpg"><img class="alignnone size-medium wp-image-603" src="../img/696a849d1b9fe12e.jpg" alt="" width="174" height="300" / loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/02/135B87D5-7260-4B32-813C-BF331AEB42ED-174x300.jpg 174w, https://suroschool.jp/wp-content/uploads/2025/02/135B87D5-7260-4B32-813C-BF331AEB42ED-594x1024.jpg 594w, https://suroschool.jp/wp-content/uploads/2025/02/135B87D5-7260-4B32-813C-BF331AEB42ED-768x1324.jpg 768w, https://suroschool.jp/wp-content/uploads/2025/02/135B87D5-7260-4B32-813C-BF331AEB42ED-891x1536.jpg 891w, https://suroschool.jp/wp-content/uploads/2025/02/135B87D5-7260-4B32-813C-BF331AEB42ED.jpg 1111w" sizes="auto, (max-width: 174px) 100vw, 174px" /></a></p>
 <p>&nbsp;</p>
 <p><strong>参考元</strong></p>
 <p><a href="https://chonborista.com/slot/net-slot/205860/" target="_blank" rel="noopener">ちょんぼりすた</a></p>
 <p><a href="https://www.slopachi-quest.com/article/lchibariyo2-tenjou/" target="_blank" rel="noopener">すろぱちくえすと</a></p>
 <p><a href="https://tsuranuki-method.com/expected-value-about-limit/lchibariyo-1/" target="_blank" rel="noopener">ツラヌキメソッド（無料期待値表）</a></p>
-<div class="post-views content-post post-600 entry-meta load-static">
-				<span class="post-views-icon dashicons dashicons-chart-bar"></span> <span class="post-views-label">Post Views:</span> <span class="post-views-count">2,075</span>
-			</div>
-          <!-- 目次ハンバーガー（右下固定・常時）。中身はJSが見出し(h2/h3)から生成。会員ロック時は空→自動非表示 --></section>
+</section>
   
   
   
   </article></main>
 <footer class="foot">個人アーカイブ（suroschool.jp / たかどらのスロ塾 会員コンテンツ）・閲覧用</footer>
+
+<!-- スマホ用ボトムナビ（スクロールで隠れる/出る） -->
+<nav class="botnav" id="botnav">
+  <a href="../index.html" data-nav="index">🎰<span>機種</span></a>
+  <button id="searchOpen2">🔍<span>検索</span></button>
+  <a href="../index.html?fav=1">★<span>お気に入り</span></a>
+  <a href="../news.html">📰<span>お知らせ</span></a>
+  <a href="../tool.html">🧮<span>期待値</span></a>
+</nav>
+
+<!-- 全ページ横断の検索オーバーレイ -->
+<div class="search-overlay" id="searchOverlay" hidden>
+  <div class="search-head">
+    <input id="globalSearch" type="search" placeholder="機種名で検索…" autocomplete="off">
+    <button id="searchClose" aria-label="閉じる">✕</button>
+  </div>
+  <div id="searchResults" class="search-results"></div>
+</div>
+
+<script src="../assets/search-index.js"></script>
 <script src="../assets/app.js"></script>
 </body></html>

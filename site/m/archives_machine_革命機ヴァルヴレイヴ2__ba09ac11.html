@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="ja"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>革命機ヴァルヴレイヴ2 | スマスロ目標 (個人アーカイブ)</title>
+<title>革命機ヴァルヴレイヴ2 | スマスロ期待値 (個人アーカイブ)</title>
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="manifest" href="../manifest.webmanifest">
 <meta name="theme-color" content="#ffffff">
@@ -10,16 +10,18 @@
 <link rel="apple-touch-icon" href="../assets/icon.svg">
 <link rel="icon" href="../assets/icon.svg">
 <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){})});}</script>
+<script>window.__ROOT__='../';</script>
 
 </head><body>
-<header class="topbar">
-  <a class="brand" href="../index.html">🎰 スマスロ目標</a>
-  <nav>
+<header class="topbar" id="topbar">
+  <a class="brand" href="../index.html">🎰 スマスロ期待値</a>
+  <nav class="topnav">
     <a href="../index.html">機種</a>
     <a href="../news.html">お知らせ</a>
     <a href="../tool.html">期待値計算</a>
     <a href="../pages.html">資料</a>
   </nav>
+  <button class="topbar-search" id="searchOpen" aria-label="検索">🔍</button>
 </header>
 <main>
   <article class="machine">
@@ -35,29 +37,12 @@
     <button class="tab" data-tab="kaiseki">解析情報</button>
     
   </div>
-  <section class="panel is-active" data-panel="nerai"><div class="tenjo-info"><div class="my-spoiler-wrapper" id="my-spoiler-1"><div class="my-spoiler-title" style="cursor:pointer; background:rgba(245,184,0,0.08); padding:10px; border:1px solid rgba(245,184,0,0.3); color:var(--text-main); font-weight:700; letter-spacing:0.04em;"><span class="spoiler-icon" style="margin-right:5px;">[-]</span>機種情報</div><div class="my-spoiler-content" style="display:block; padding:10px; border:1px solid rgba(245,184,0,0.2); border-top:0; background:var(--bg-card-hi); color:var(--text-main);"><p>【天井情報】<br>
-1500G＋α 革命ボーナスor決戦ボーナスor革命RUSH　当選<br>
-設定変更時は天井が1000Gに短縮。</p>
-<p>決戦ボーナス3連続後は次回革命ボーナス。（途中で革命ラッシュ当選時は無効と思われる）</p>
-<p>CZ間999G消化でCZに当選。</p>
-<p>周期天井　最大6周期　CZ当選<br>
-通常時の内部モードで周期天井が異なる他、設定変更時は最大3周期でCZに当選する。<br>
-1周期の最大規定ポイントは600pt。<br>
-1周期目は200pt以下で周期到達。<br>
-最大の600pt到達時は次回の規定ポイント数が400pt以下になる。</p>
-<p>【リセット判別】<br>
-朝イチ設定変更時は周期ポイントがリセットされるので、1周期目の200ptで前兆演出が発生しなければ据え置きの可能性が高くなる。</p>
-<p>【有利区間について】<br>
-超革命ラッシュ時に差枚+1000枚を超えたら有利切れ？<br>
-大量上乗せ時のエンディングを除き基本的にATはシームレスに継続するので見た目上で有利区間リセットが分からない場合あり!?<br>
-前作同様に有利区間リセット時はハラキリチャレンジに突入すると推測される。</p>
-</div></div></div>
-
-<h2 class="wp-block-heading"><span id="i">狙い目</span></h2>
+  <section class="panel is-active" data-panel="nerai"><img loading="lazy" decoding="async" width="150" height="150" src="../img/1f763880032da85e.jpg" class="machine-thumbnail wp-post-image" alt="" style="display:block; margin:0 auto;" srcset="https://suroschool.jp/wp-content/uploads/2025/11/thumb_1-1-150x150.jpg 150w, https://suroschool.jp/wp-content/uploads/2025/11/thumb_1-1-120x120.jpg 120w" sizes="auto, (max-width: 150px) 100vw, 150px" />
+<h2 class="wp-block-heading">狙い目</h2>
 
 
 
-<h3 class="wp-block-heading"><span id="i-2">リセット狙い</span></h3>
+<h3 class="wp-block-heading">リセット狙い</h3>
 
 
 
@@ -81,7 +66,7 @@
 
 
 
-<h3 class="wp-block-heading"><span id="i-3">ボーナス、革命ラッシュ間天井狙い</span></h3>
+<h3 class="wp-block-heading">ボーナス、革命ラッシュ間天井狙い</h3>
 
 
 
@@ -105,33 +90,294 @@
 
 
 
-<h2 class="wp-block-heading"><span id="A">【特殊A(ミミズ)狙い超重要】</span></h2>
+<h2 class="wp-block-heading">【特殊A(ミミズ)狙い超重要】</h2>
 
 
 
 <figure class="wp-block-embed is-type-wp-embed"><div class="wp-block-embed__wrapper">
-<blockquote class="wp-embedded-content" data-secret="kB9efFvE9N" style="display: none;"><a href="https://suroschool.jp/archives/machine/%e3%80%90%e7%89%b9%e6%ae%8aa%e7%8b%99%e3%81%84%e3%80%91%e9%9d%a9%e5%91%bd%e6%a9%9f%e3%83%b4%e3%82%a1%e3%83%ab%e3%83%b4%e3%83%ac%e3%82%a4%e3%83%b42">【特殊A狙い】革命機ヴァルヴレイヴ2&nbsp;</a></blockquote><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="“【特殊A狙い】革命機ヴァルヴレイヴ2&nbsp;” — たかどらのスロ塾" src="https://suroschool.jp/archives/machine/%e3%80%90%e7%89%b9%e6%ae%8aa%e7%8b%99%e3%81%84%e3%80%91%e9%9d%a9%e5%91%bd%e6%a9%9f%e3%83%b4%e3%82%a1%e3%83%ab%e3%83%b4%e3%83%ac%e3%82%a4%e3%83%b42/embed#?secret=1B5QDYGjIK#?secret=kB9efFvE9N" data-secret="kB9efFvE9N" width="500" height="237" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+<blockquote class="wp-embedded-content" data-secret="kB9efFvE9N"><a href="https://suroschool.jp/archives/machine/%e3%80%90%e7%89%b9%e6%ae%8aa%e7%8b%99%e3%81%84%e3%80%91%e9%9d%a9%e5%91%bd%e6%a9%9f%e3%83%b4%e3%82%a1%e3%83%ab%e3%83%b4%e3%83%ac%e3%82%a4%e3%83%b42">【特殊A狙い】革命機ヴァルヴレイヴ2 </a></blockquote><iframe loading="lazy" class="wp-embedded-content" sandbox="allow-scripts" security="restricted" style="position: absolute; visibility: hidden;" title="&#8220;【特殊A狙い】革命機ヴァルヴレイヴ2 &#8221; &#8212; たかどらのスロ塾" src="https://suroschool.jp/archives/machine/%e3%80%90%e7%89%b9%e6%ae%8aa%e7%8b%99%e3%81%84%e3%80%91%e9%9d%a9%e5%91%bd%e6%a9%9f%e3%83%b4%e3%82%a1%e3%83%ab%e3%83%b4%e3%83%ac%e3%82%a4%e3%83%b42/embed#?secret=1B5QDYGjIK#?secret=kB9efFvE9N" data-secret="kB9efFvE9N" width="500" height="282" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 </div></figure>
 
 
 
-
-
-
+<!DOCTYPE html>
+<html lang="ja">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>特殊A狙いツール (WP Native Monochrome)</title>
-    
+    <style>
+        /* * WP Native Blend & Monochrome High-Contrast Style */
 
+        #vvv-tool-wrapper {
+            background-color: transparent;
+            border: none;
+            box-shadow: none;
+            max-width: 100%;
+            margin: 2em auto;
+            color: inherit; 
+            font-family: inherit;
+            line-height: 1.6;
+        }
 
+        #vvv-tool-wrapper h3.tool-title {
+            text-align: center;
+            margin-bottom: 1.5em;
+            font-size: 1.4em;
+            border: none;
+            padding: 0;
+            color: inherit;
+        }
+
+        .vvv-step {
+            margin-bottom: 1.5em;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+            padding-bottom: 1em;
+        }
+
+        .vvv-step-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding: 0.5em 0;
+            user-select: none;
+        }
+
+        .vvv-step-header h4 {
+            margin: 0;
+            font-size: 1.1em;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        
+        .vvv-step-num {
+            display: inline-block;
+            width: 1.5em;
+            height: 1.5em;
+            line-height: 1.5em;
+            text-align: center;
+            background: #333;
+            color: #fff;
+            border-radius: 50%;
+            margin-right: 0.5em;
+            font-size: 0.8em;
+        }
+
+        .vvv-selected-val {
+            font-size: 0.9em;
+            font-weight: bold;
+            opacity: 0.8;
+        }
+
+        .vvv-step-content {
+            margin-top: 1em;
+            display: block;
+            animation: vvvFadeIn 0.3s ease;
+        }
+        
+        .vvv-step.collapsed .vvv-step-content {
+            display: none;
+        }
+
+        .vvv-step.collapsed .vvv-step-header {
+            opacity: 0.7;
+        }
+
+        .vvv-desc {
+            font-size: 0.9em;
+            margin-bottom: 1em;
+            opacity: 0.8;
+        }
+        .vvv-note {
+            font-size: 0.8em;
+            margin-top: 0.5em;
+            opacity: 0.6;
+        }
+
+        .vvv-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 8px;
+        }
+
+        .vvv-grid input[type="radio"] {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .vvv-grid label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 8px;
+            background: #fff;
+            border: 1px solid #ccc;
+            color: #333;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 0.95em;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+
+        .vvv-grid label:hover {
+            border-color: #999;
+            background: #f9f9f9;
+        }
+
+        .vvv-grid input[type="radio"]:checked + label {
+            background: #333;
+            color: #fff;
+            border-color: #333;
+            box-shadow: none;
+        }
+
+        #vvv-result-area {
+            margin-top: 2em;
+            padding: 1.5em;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        #vvv-result-area.initial {
+            border: 2px dashed #ccc;
+            color: #999;
+            text-align: center;
+        }
+
+        #vvv-result-area.shown {
+            border: 2px solid #333;
+            background: transparent;
+        }
+
+        .vvv-result-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            border-bottom: 1px solid #333;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+            display: block;
+        }
+
+        .vvv-result-row {
+            margin-bottom: 0.8em;
+            padding-left: 1em;
+            border-left: 4px solid #ccc;
+        }
+
+        /* 打ち出し目安の強調スタイル */
+        .start-guideline {
+            background-color: #ffebee;
+            color: #c62828;
+            font-weight: bold;
+            font-size: 1.1em;
+            border-left: 5px solid #d32f2f;
+            padding: 12px;
+            margin-bottom: 12px;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .res-lv-4 {
+            border-left-color: #000;
+            font-weight: bold;
+        }
+        .res-lv-0 {
+            border-left-style: dashed;
+            border-left-color: #666;
+            color: #666;
+        }
+
+        .hidden { display: none !important; }
+
+        @keyframes vvvFadeIn {
+            from { opacity: 0; transform: translateY(-5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* スマホ向け調整 */
+        @media (max-width: 600px) {
+            #vvv-tool-wrapper {
+                font-size: 14px;
+            }
+            #vvv-tool-wrapper h3.tool-title {
+                font-size: 1.2em;
+                margin-bottom: 1em;
+            }
+            .vvv-step-header h4 {
+                font-size: 1em;
+            }
+            .vvv-grid {
+                grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+                gap: 6px;
+            }
+            .vvv-grid label {
+                font-size: 0.85em;
+                padding: 8px 4px;
+            }
+            .vvv-desc {
+                font-size: 0.85em;
+            }
+            .vvv-result-title {
+                font-size: 1em;
+            }
+            .start-guideline {
+                font-size: 1em;
+                padding: 10px;
+            }
+            #vvv-result-area {
+                padding: 1em;
+                margin-top: 1.5em;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .vvv-grid label {
+                background: #f0f0f0;
+                color: #333;
+                border-color: #ccc;
+            }
+            .vvv-grid input[type="radio"]:checked + label {
+                background: #eee;
+                color: #000;
+                border-color: #fff;
+            }
+            .vvv-step-num {
+                background: #eee;
+                color: #000;
+            }
+             #vvv-result-area.shown {
+                border-color: #eee;
+            }
+            .vvv-result-title {
+                border-bottom-color: #eee;
+            }
+            .res-lv-4 {
+                border-left-color: #fff;
+            }
+            .start-guideline {
+                background-color: #3e2723;
+                color: #ffcdd2;
+                border-left-color: #ef5350;
+            }
+        }
+    </style>
+</head>
+<body>
 
 <div id="vvv-tool-wrapper">
-    <h3 class="tool-title"><span id="A-2">特殊A狙い目検索ツール</span></h3>
+    <h3 class="tool-title">特殊A狙い目検索ツール</h3>
 
     <!-- STEP 1: CZスルー回数 -->
     <div class="vvv-step" id="step-1">
         <div class="vvv-step-header" onclick="toggleStep('1')">
-            <h4><span id="1_CZ"><span class="vvv-step-num">1</span> CZスルー回数</span></h4>
+            <h4><span class="vvv-step-num">1</span> CZスルー回数</h4>
             <span class="vvv-selected-val" id="disp-1">未選択</span>
         </div>
         <div class="vvv-step-content">
@@ -151,7 +397,7 @@
     <!-- STEP 2-0: 有利区間 (0スルー) -->
     <div class="vvv-step hidden" id="step-2-0">
         <div class="vvv-step-header" onclick="toggleStep('2-0')">
-            <h4><span id="2_10_or"><span class="vvv-step-num">2</span> 10連以上 or 切断</span></h4>
+            <h4><span class="vvv-step-num">2</span> 10連以上 or 切断</h4>
             <span class="vvv-selected-val" id="disp-2-0">未選択</span>
         </div>
         <div class="vvv-step-content">
@@ -173,7 +419,7 @@
     <!-- STEP 3-0: 切断あり詳細 -->
     <div class="vvv-step hidden" id="step-3-0">
         <div class="vvv-step-header" onclick="toggleStep('3-0')">
-            <h4><span id="3"><span class="vvv-step-num">3</span> 切断後の履歴状況</span></h4>
+            <h4><span class="vvv-step-num">3</span> 切断後の履歴状況</h4>
             <span class="vvv-selected-val" id="disp-3-0">未選択</span>
         </div>
         <div class="vvv-step-content">
@@ -194,7 +440,7 @@
     <!-- STEP 4-0: 前々回 -->
     <div class="vvv-step hidden" id="step-4-0">
         <div class="vvv-step-header" onclick="toggleStep('4-0')">
-            <h4><span id="4"><span class="vvv-step-num">4</span> 前々回の履歴</span></h4>
+            <h4><span class="vvv-step-num">4</span> 前々回の履歴</h4>
             <span class="vvv-selected-val" id="disp-4-0">未選択</span>
         </div>
         <div class="vvv-step-content">
@@ -218,7 +464,7 @@
     <!-- STEP 5-0: 差枚 -->
     <div class="vvv-step hidden" id="step-5-0">
         <div class="vvv-step-header" onclick="toggleStep('5-0')">
-            <h4><span id="5"><span class="vvv-step-num">5</span> 差枚状況</span></h4>
+            <h4><span class="vvv-step-num">5</span> 差枚状況</h4>
             <span class="vvv-selected-val" id="disp-5-0">未選択</span>
         </div>
         <div class="vvv-step-content">
@@ -242,7 +488,7 @@
     <!-- STEP 6-0: 前回種類 -->
     <div class="vvv-step hidden" id="step-6-0">
         <div class="vvv-step-header" onclick="toggleStep('6-0')">
-            <h4><span id="6"><span class="vvv-step-num">6</span> 前回の種類</span></h4>
+            <h4><span class="vvv-step-num">6</span> 前回の種類</h4>
             <span class="vvv-selected-val" id="disp-6-0">未選択</span>
         </div>
         <div class="vvv-step-content">
@@ -266,7 +512,7 @@
     <!-- STEP 2-1: 種類 (1スルー以降) -->
     <div class="vvv-step hidden" id="step-2-1">
         <div class="vvv-step-header" onclick="toggleStep('2-1')">
-            <h4><span id="2"><span class="vvv-step-num">2</span> 前回の種類</span></h4>
+            <h4><span class="vvv-step-num">2</span> 前回の種類</h4>
             <span class="vvv-selected-val" id="disp-2-1">未選択</span>
         </div>
         <div class="vvv-step-content">
@@ -290,7 +536,7 @@
     <!-- STEP 3-1: CZG -->
     <div class="vvv-step hidden" id="step-3-1">
         <div class="vvv-step-header" onclick="toggleStep('3-1')">
-            <h4><span id="3_CZG"><span class="vvv-step-num">3</span> 前回のCZ当選G数</span></h4>
+            <h4><span class="vvv-step-num">3</span> 前回のCZ当選G数</h4>
             <span class="vvv-selected-val" id="disp-3-1">未選択</span>
         </div>
         <div class="vvv-step-content">
@@ -308,9 +554,264 @@
 
 </div>
 
+<script>
+    // 診断ロジック
+    const judgmentData0 = {
+        none: { upper: { level: 2, s: "2周目0pt〜" }, lower: { level: 1, s: "2周目0pt〜" }, bb: { level: 1, s: "2周目0pt〜" } },
+        low: { upper: { level: 3, s: "1周目100pt〜" }, lower: { level: 2, s: "2周目0pt〜" }, bb: { level: 1, s: "2周目0pt〜" } },
+        high: { upper: { level: 0, s: "" }, lower: { level: 3, s: "1周目0pt〜" }, bb: { level: 3, s: "1周目0pt〜" } }
+    };
 
+    const levels = {
+        0: { n: "推奨されません (慎重判断)", stop: "冷遇状態や期待度の低い可能性があります" },
+        1: { n: "レベル1 (期待度: 低)", stop: "2周目100発展なし等で終了検討", cont: "2周目100発展あり→3周目100確認" },
+        2: { n: "レベル2 (期待度: 中)", stop: "2周目200発展なし等で終了検討", cont: "2周目200発展あり→3周目100確認" },
+        3: { n: "レベル3 (期待度: 高)", stop: "2周目200発展なし等で終了検討", cont: "2周目200発展あり→3周目100確認" },
+        4: { n: "レベル4 (期待度: 最高)", stop: "2周目200発展なし等で終了検討", cont: "2周目200発展あり→3周目100確認まで推奨" }
+    };
 
+    // リセット機能：指定したID以降のステップを初期化
+    function resetFollowingSteps(currentId) {
+        resetResult(); // 結果エリアをクリア
 
+        // 0スルーのステップ順
+        const route0 = ['2-0', '3-0', '4-0', '5-0', '6-0'];
+        // 1スルーのステップ順
+        const route1 = ['2-1', '3-1'];
+
+        if (currentId === '1') {
+            // ルート分岐点なので全てリセット
+            [...route0, ...route1].forEach(id => hideStep(id));
+        } else if (route0.includes(currentId)) {
+            // 0スルー系: 現在より後ろをリセット
+            const idx = route0.indexOf(currentId);
+            route0.slice(idx + 1).forEach(id => hideStep(id));
+        } else if (route1.includes(currentId)) {
+            // 1スルー系: 現在より後ろをリセット
+            const idx = route1.indexOf(currentId);
+            route1.slice(idx + 1).forEach(id => hideStep(id));
+        }
+    }
+
+    function hideStep(id) {
+        const el = document.getElementById('step-' + id);
+        if(el) {
+            el.classList.add('hidden', 'collapsed');
+            // 入力のリセット
+            el.querySelectorAll('input').forEach(i => i.checked = false);
+            // 表示テキストのリセット
+            const disp = document.getElementById('disp-' + id);
+            if(disp) disp.innerText = "未選択";
+        }
+    }
+
+    function resetResult() {
+        const resArea = document.getElementById('vvv-result-area');
+        const resContent = document.getElementById('result-content');
+        const placeholder = document.getElementById('result-placeholder');
+        
+        resArea.className = ''; 
+        resArea.classList.add('initial');
+        resContent.classList.add('hidden');
+        resContent.innerHTML = '';
+        placeholder.style.display = 'inline';
+    }
+
+    function next(id, text) {
+        updateDisp(id, text);
+        closeStep(id);
+
+        // ★選択変更時に、それ以降のステップをリセット
+        resetFollowingSteps(id);
+
+        if (id === '1') {
+            const val = document.querySelector('input[name="tc"]:checked').value;
+            // リセット済みなのでシンプルに次のステップを開くのみ
+            if (val === '0') openStep('2-0'); else openStep('2-1');
+        } else if (id === '2-0') {
+            const val = document.querySelector('input[name="cut"]:checked').value;
+            if (val === 'yes') openStep('3-0'); else openStep('4-0');
+        } else if (id === '3-0') {
+            const val = document.querySelector('input[name="mu"]:checked').value;
+            if (val === 'no') diagnose(); else openStep('4-0');
+        } else if (id === '4-0') {
+            openStep('5-0');
+        } else if (id === '5-0') {
+            openStep('6-0');
+        }
+    }
+
+    function updateDisp(id, text) {
+        const dispEl = document.getElementById('disp-' + id);
+        if(dispEl) {
+            dispEl.innerText = text;
+            closeStep(id);
+        }
+    }
+
+    function openStep(id) {
+        const el = document.getElementById('step-' + id);
+        if(el) {
+            el.classList.remove('hidden', 'collapsed');
+            setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'center' }), 100);
+        }
+    }
+
+    function closeStep(id) {
+        const el = document.getElementById('step-' + id);
+        if(el) el.classList.add('collapsed');
+    }
+
+    function toggleStep(id) {
+        const el = document.getElementById('step-' + id);
+        if(el) el.classList.toggle('collapsed');
+    }
+
+    function buildCZG(text) {
+        updateDisp('2-1', text);
+        
+        // ★2-1変更時に3-1以降をリセット
+        resetFollowingSteps('2-1');
+
+        const at = document.querySelector('input[name="at1"]:checked').value;
+        const group = document.getElementById('czg-group');
+        
+        let html = `
+            <div>
+                <input type="radio" name="cz1" id="cz1-sp" value="sp" onchange="diagnose('特殊A当選台')">
+                <label for="cz1-sp" style="font-weight:bold; border:2px solid #333;">前回 特殊A当選 (確信)</label>
+            </div>
+        `;
+        
+        const ranges = {
+            upper: [
+                { val: "target", label: "140-220G" },
+                { val: "others", label: "100-140G / 220-250G" }
+            ],
+            lower: [
+                { val: "target", label: "150-200G" },
+                { val: "others", label: "100-150G / 200-250G" }
+            ],
+            bb: [
+                { val: "target", label: "150-200G" },
+                { val: "others", label: "100-150G / 200-250G" }
+            ]
+        };
+        
+        if (ranges[at]) {
+            ranges[at].forEach((item, idx) => {
+                html += `
+                    <div>
+                        <input type="radio" name="cz1" id="cz1-${idx}" value="${item.val}" onchange="diagnose('${item.label}')">
+                        <label for="cz1-${idx}">${item.label}</label>
+                    </div>
+                `;
+            });
+        }
+        
+        group.innerHTML = html;
+        openStep('3-1');
+    }
+
+    function diagnose(text) {
+        // ガード処理
+        const tcInput = document.querySelector('input[name="tc"]:checked');
+        if(!tcInput) return;
+        const tc = tcInput.value;
+
+        if(text) {
+            if(tc === '0') updateDisp('6-0', text);
+            else updateDisp('3-1', text);
+        }
+
+        const resArea = document.getElementById('vvv-result-area');
+        const resContent = document.getElementById('result-content');
+        const placeholder = document.getElementById('result-placeholder');
+
+        let lv = 0, reason = "", start = "-";
+
+        if (tc === '0') {
+            const cut = document.querySelector('input[name="cut"]:checked')?.value;
+            const mu = document.querySelector('input[name="mu"]:checked')?.value;
+            const pre = document.querySelector('input[name="pre"]:checked')?.value;
+            const sm = document.querySelector('input[name="sm"]:checked')?.value;
+            const at = document.querySelector('input[name="at0"]:checked')?.value;
+
+            if (!cut) return;
+
+            if (cut === 'yes' && mu === 'no') {
+                reason = "10連以上/差枚+1001枚後、引き戻し履歴不足のため冷遇状態の可能性あり。";
+                lv = 0;
+            } else if (sm === 'high' && at === 'upper') {
+                reason = "差枚+1001枚以上かつ前回上位ATは期待度が低下する傾向。";
+                lv = 0;
+            } else if ((pre === 'none' || pre === 'reset') && at === 'upper') {
+                reason = "リセット/履歴なし→前回上位ATは特殊A期待度高。";
+                lv = 4; start = "1周目0pt〜";
+            } else if (pre === 'reset' && (at === 'lower' || at === 'bb')) {
+                lv = 0; reason = "設定変更→前回ボナ/下位ATは優遇薄の可能性。";
+            } else {
+                if(sm && at && judgmentData0[sm] && judgmentData0[sm][at]){
+                    const d = judgmentData0[sm][at];
+                    lv = d.level; start = d.s;
+                } else {
+                    lv = 0; reason = "条件が不足しているか、判定外の組み合わせです。";
+                }
+            }
+        } else {
+            const czInput = document.querySelector('input[name="cz1"]:checked');
+            const at1Input = document.querySelector('input[name="at1"]:checked');
+            
+            if (!czInput || !at1Input) return;
+            
+            const cz = czInput.value;
+            const at1 = at1Input.value;
+
+            if (cz === 'sp') {
+                lv = 4; start = "1周目0pt〜"; reason = "前回特殊A濃厚のため期待度高。";
+            } else {
+                if (at1 === 'upper') {
+                   if (cz === 'target') { lv = 4; start = "1周目0pt〜"; }
+                   else { lv = 3; start = "1周目100pt〜"; }
+                   reason = "超革命ラッシュ後(9連以下)のゾーン振り分けに基づく判定です。";
+               } else if (at1 === 'lower') {
+                   if (cz === 'target') { lv = 4; start = "1周目0pt〜"; }
+                   else { lv = 3; start = "1周目100pt〜"; }
+                   reason = "革命ラッシュ後(1-3連)のゾーン振り分けに基づく判定です。";
+               } else if (at1 === 'bb') {
+                   if (cz === 'target') { lv = 3; start = "1周目100pt〜"; }
+                   else { lv = 1; start = "2周目0pt〜"; }
+                   reason = "革命ボーナス後のゾーン振り分けに基づく判定です。";
+               }
+            }
+        }
+
+        const info = levels[lv];
+        let html = `<span class="vvv-result-title">診断結果: ${info.n}</span>`;
+        
+        if (lv === 0) {
+            html += `<div class="vvv-result-row res-lv-0">${reason || info.stop}</div>`;
+        } else {
+            html += `
+                <div class="start-guideline">打ち出し目安: ${start}</div>
+                <div class="vvv-result-row">終了検討: ${info.stop}</div>
+                <div class="vvv-result-row">継続目安: ${info.cont}</div>
+                <p class="vvv-note">${reason}</p>
+            `;
+        }
+
+        resContent.innerHTML = html;
+        resContent.classList.remove('hidden');
+        placeholder.style.display = 'none';
+        
+        resArea.classList.remove('initial');
+        resArea.classList.add('shown');
+        
+        setTimeout(() => resArea.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 100);
+    }
+</script>
+</body>
+</html>
 
 
 
@@ -337,7 +838,7 @@
 
 
 
-<h3 class="wp-block-heading"><span id="CZ">CZ間天井狙い</span></h3>
+<h3 class="wp-block-heading">CZ間天井狙い</h3>
 
 
 
@@ -357,7 +858,7 @@
 
 
 
-<h3 class="wp-block-heading"><span id="i-4">モード毎の狙い目（超暫定）</span></h3>
+<h3 class="wp-block-heading">モード毎の狙い目（超暫定）</h3>
 
 
 
@@ -369,7 +870,7 @@
 
 
 
-<h3 class="wp-block-heading"><span id="i-5">決戦ボーナススルー回数狙い</span></h3>
+<h3 class="wp-block-heading">決戦ボーナススルー回数狙い</h3>
 
 
 
@@ -381,7 +882,7 @@
 
 
 
-<h3 class="wp-block-heading"><span id="PT">各周期PT間天井狙い</span></h3>
+<h3 class="wp-block-heading">各周期PT間天井狙い</h3>
 
 
 
@@ -393,7 +894,7 @@
 
 
 
-<h3 class="wp-block-heading"><span id="CZ-2">CZ、決戦ボーナス累計スルー狙い</span></h3>
+<h3 class="wp-block-heading">CZ、決戦ボーナス累計スルー狙い</h3>
 
 
 
@@ -409,15 +910,15 @@
 
 
 
-<figure class="wp-block-image"><img width="474" height="661" src="../img/4d6dde3db9f491f3.png" alt="" class="wp-image-2276" decoding="async" sizes="auto, (max-width: 474px) 100vw, 474px"></figure>
+<figure class="wp-block-image"><img width="474" height="661" src="../img/4d6dde3db9f491f3.png" alt="" class="wp-image-2276"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/11/modeten.png 474w, https://suroschool.jp/wp-content/uploads/2025/11/modeten-215x300.png 215w" sizes="auto, (max-width: 474px) 100vw, 474px" /></figure>
 
 
 
-<h3 class="wp-block-heading"><span id="i-6">示唆関連の押し引き</span></h3>
+<h3 class="wp-block-heading">示唆関連の押し引き</h3>
 
 
 
-<h4 class="wp-block-heading"><span id="i-7">サブモニター</span></h4>
+<h4 class="wp-block-heading">サブモニター</h4>
 
 
 
@@ -425,7 +926,7 @@
 
 
 
-<h4 class="wp-block-heading"><span id="i-8">アイキャッチ</span></h4>
+<h4 class="wp-block-heading">アイキャッチ</h4>
 
 
 
@@ -433,7 +934,7 @@
 
 
 
-<h4 class="wp-block-heading"><span id="i-9">電脳ゾーン終了時のボイス</span></h4>
+<h4 class="wp-block-heading">電脳ゾーン終了時のボイス</h4>
 
 
 
@@ -441,7 +942,7 @@
 
 
 
-<h4 class="wp-block-heading"><span id="i-10">会話演出</span></h4>
+<h4 class="wp-block-heading">会話演出</h4>
 
 
 
@@ -450,9 +951,9 @@
 
 
 <p class="wp-block-paragraph"><strong>紫セリフ</strong><br>
-– マリエセリフ：ボーナス当選まで<br>
-– ハルト：引き戻し確認<br>
-– ソウイチ：引き戻し確認</p>
+&#8211; マリエセリフ：ボーナス当選まで<br>
+&#8211; ハルト：引き戻し確認<br>
+&#8211; ソウイチ：引き戻し確認</p>
 
 
 
@@ -461,7 +962,7 @@
 
 
 
-<h3 class="wp-block-heading"><span id="G">規定ポイント到達時の前兆G数について</span></h3>
+<h3 class="wp-block-heading">規定ポイント到達時の前兆G数について</h3>
 
 
 
@@ -477,7 +978,7 @@
 
 
 
-<h3 class="wp-block-heading"><span id="i-11">有利区間関連狙い</span></h3>
+<h3 class="wp-block-heading">有利区間関連狙い</h3>
 
 
 
@@ -485,7 +986,7 @@
 
 
 
-<h2 class="wp-block-heading"><span id="i-12">やめ時</span></h2>
+<h2 class="wp-block-heading">やめ時</h2>
 
 
 
@@ -501,55 +1002,55 @@
 
 
 
-<h2 class="wp-block-heading"><span id="i-13">その他</span></h2>
+<h2 class="wp-block-heading">その他</h2>
 
 
 
-<figure class="wp-block-image size-full"><img width="481" height="832" src="../img/566ee9447eb6daa0.png" alt="" class="wp-image-2260" decoding="async" sizes="auto, (max-width: 481px) 100vw, 481px"></figure>
+<figure class="wp-block-image size-full"><img width="481" height="832" src="../img/566ee9447eb6daa0.png" alt="" class="wp-image-2260"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/11/miniv.png 481w, https://suroschool.jp/wp-content/uploads/2025/11/miniv-173x300.png 173w" sizes="auto, (max-width: 481px) 100vw, 481px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="477" height="453" src="../img/91a7410163cdb58a.png" alt="" class="wp-image-2261" decoding="async" sizes="auto, (max-width: 477px) 100vw, 477px"></figure>
+<figure class="wp-block-image size-full"><img width="477" height="453" src="../img/91a7410163cdb58a.png" alt="" class="wp-image-2261"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/11/vaikys.png 477w, https://suroschool.jp/wp-content/uploads/2025/11/vaikys-300x285.png 300w" sizes="auto, (max-width: 477px) 100vw, 477px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="478" height="557" src="../img/1be57949567ea5db.png" alt="" class="wp-image-2262" decoding="async" sizes="auto, (max-width: 478px) 100vw, 478px"></figure>
+<figure class="wp-block-image size-full"><img width="478" height="557" src="../img/1be57949567ea5db.png" alt="" class="wp-image-2262"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/11/magima.png 478w, https://suroschool.jp/wp-content/uploads/2025/11/magima-257x300.png 257w" sizes="auto, (max-width: 478px) 100vw, 478px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="475" height="486" src="../img/e4abde756364296b.png" alt="" class="wp-image-2268" decoding="async" sizes="auto, (max-width: 475px) 100vw, 475px"></figure>
+<figure class="wp-block-image size-full"><img width="475" height="486" src="../img/e4abde756364296b.png" alt="" class="wp-image-2268"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/11/denoshuryo.png 475w, https://suroschool.jp/wp-content/uploads/2025/11/denoshuryo-293x300.png 293w" sizes="auto, (max-width: 475px) 100vw, 475px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="479" height="517" src="../img/05b1637fd33b4a30.png" alt="" class="wp-image-2264" decoding="async" sizes="auto, (max-width: 479px) 100vw, 479px"></figure>
+<figure class="wp-block-image size-full"><img width="479" height="517" src="../img/05b1637fd33b4a30.png" alt="" class="wp-image-2264"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/11/kaiwavv.png 479w, https://suroschool.jp/wp-content/uploads/2025/11/kaiwavv-278x300.png 278w" sizes="auto, (max-width: 479px) 100vw, 479px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="477" height="553" src="../img/5bba48e243c38820.png" alt="" class="wp-image-2265" decoding="async" sizes="auto, (max-width: 477px) 100vw, 477px"></figure>
+<figure class="wp-block-image size-full"><img width="477" height="553" src="../img/5bba48e243c38820.png" alt="" class="wp-image-2265"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/11/pinovvv.png 477w, https://suroschool.jp/wp-content/uploads/2025/11/pinovvv-259x300.png 259w" sizes="auto, (max-width: 477px) 100vw, 477px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="474" height="374" src="../img/59dce1b2acd11f38.png" alt="" class="wp-image-2266" decoding="async" sizes="auto, (max-width: 474px) 100vw, 474px"></figure>
+<figure class="wp-block-image size-full"><img width="474" height="374" src="../img/59dce1b2acd11f38.png" alt="" class="wp-image-2266"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/11/marivv.png 474w, https://suroschool.jp/wp-content/uploads/2025/11/marivv-300x237.png 300w" sizes="auto, (max-width: 474px) 100vw, 474px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="477" height="890" src="../img/963f2f14a0459105.png" alt="" class="wp-image-2170" decoding="async" sizes="auto, (max-width: 477px) 100vw, 477px"></figure>
+<figure class="wp-block-image size-full"><img width="477" height="890" src="../img/963f2f14a0459105.png" alt="" class="wp-image-2170"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/11/スクリーンショット-2025-11-02-074544.png 477w, https://suroschool.jp/wp-content/uploads/2025/11/スクリーンショット-2025-11-02-074544-161x300.png 161w" sizes="auto, (max-width: 477px) 100vw, 477px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="471" height="270" src="../img/369c9ff84757b55a.png" alt="" class="wp-image-2171" decoding="async" sizes="auto, (max-width: 471px) 100vw, 471px"></figure>
+<figure class="wp-block-image size-full"><img width="471" height="270" src="../img/369c9ff84757b55a.png" alt="" class="wp-image-2171"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/11/modebetste.png 471w, https://suroschool.jp/wp-content/uploads/2025/11/modebetste-300x172.png 300w" sizes="auto, (max-width: 471px) 100vw, 471px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="354" height="834" src="../img/df8bcdc9122c85f4.png" alt="" class="wp-image-2277" decoding="async" sizes="auto, (max-width: 354px) 100vw, 354px"></figure>
+<figure class="wp-block-image size-full"><img width="354" height="834" src="../img/df8bcdc9122c85f4.png" alt="" class="wp-image-2277"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/11/kitepohuri.png 354w, https://suroschool.jp/wp-content/uploads/2025/11/kitepohuri-127x300.png 127w" sizes="auto, (max-width: 354px) 100vw, 354px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="351" height="444" src="../img/c2fc0660eb29a926.png" alt="" class="wp-image-2278" decoding="async" sizes="auto, (max-width: 351px) 100vw, 351px"></figure>
+<figure class="wp-block-image size-full"><img width="351" height="444" src="../img/c2fc0660eb29a926.png" alt="" class="wp-image-2278"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/11/shukihuri.png 351w, https://suroschool.jp/wp-content/uploads/2025/11/shukihuri-237x300.png 237w" sizes="auto, (max-width: 351px) 100vw, 351px" /></figure>
 
 
 
-<h2 class="wp-block-heading"><span id="i-14"><strong>参考元</strong></span></h2>
+<h2 class="wp-block-heading"><strong>参考元</strong></h2>
 
 
 
@@ -574,35 +1075,28 @@
 
 
 <p class="wp-block-paragraph"></p>
-<div class="post-views content-post post-2168 entry-meta load-static">
-				<span class="post-views-icon dashicons dashicons-chart-bar"></span> <span class="post-views-label">Post Views:</span> <span class="post-views-count">4,370</span>
-			</div>
-          <!-- 目次ハンバーガー（右下固定・常時）。中身はJSが見出し(h2/h3)から生成。会員ロック時は空→自動非表示 --></section>
-  <section class="panel" data-panel="kaiseki"><div class="kaiseki-toolbar">
-              
-            </div>
-            <div class="kaiseki-accordion">
-              <details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i">基本情報</span></summary><div class="kaiseki-section-body">
+</section>
+  <section class="panel" data-panel="kaiseki"><h2>基本情報</h2>
 <ul>
 <li>メーカー: SANKYO</li>
 <li>機械割: 97.7% 〜 114.9%</li>
 <li>導入開始日: 2025年11月04日（火）</li>
 <li>ゲーム性概要: ●純増約9.0枚/Gの高純増×高継続ATで登場 ●通常時は毎ゲーム獲得するポイントが規定数に到達すればCZ以上に当選 ●CZクリア後のボーナスを突破すればAT突入！ ●ATは初期ゲーム数10〜100G以上のセット継続型 ●「革命ラッシュ」は継続期待度約75%で、3回継続できれば上位ATへ昇格 ●上位AT「超革命ラッシュ」の継続率は約90%と破壊力は抜群！</li>
 </ul>
-<p><img alt="Lパチスロ 革命機ヴァルヴレイヴ2（パチスロ）のリール配列" src="https://p-town.dmm.com/upload/machines/4885/reel.jpg?t=1779358691" decoding="async"></p>
-<p><img alt="Lパチスロ 革命機ヴァルヴレイヴ2（パチスロ）のゲームフロー" src="https://p-town.dmm.com/upload/machines/4885/flow.jpg?t=1779358691" decoding="async"></p>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-2">打ち方</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-3">打ち方・小役</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-4">打ち方（小役狙い）</span></h4>
+<p><img alt="Lパチスロ 革命機ヴァルヴレイヴ2（パチスロ）のリール配列" src="https://p-town.dmm.com/upload/machines/4885/reel.jpg?t=1779358691"></p>
+<p><img alt="Lパチスロ 革命機ヴァルヴレイヴ2（パチスロ）のゲームフロー" src="https://p-town.dmm.com/upload/machines/4885/flow.jpg?t=1779358691"></p>
+<h2>打ち方</h2>
+<h3>打ち方・小役</h3>
+<h4>打ち方（小役狙い）</h4>
 <p>［最初に狙う絵柄］ 左リール上段付近にBARを目押し。基本的に中＆右リールはフリー打ちでOKだ。</p>
 <p>［レア役の停止例］ BAR揃いはレア役というより、通常時のルーンドライブ移行契機などとして機能。出現確率は約1/682だ。</p>
-<h4><span id="NG">変則押しはNG</span></h4>
-<p>ナビ非発生時は順押しでの消化を推奨。 ハサミ打ちもNG なので、「順押し」を心がけよう。</p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-5">解析情報通常時</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-6">小役関連</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="BAR3">BAR揃い・ルーン3個停止の恩恵まとめ</span></h4>
+<h4>変則押しはNG</h4>
+<p>ナビ非発生時は順押しでの消化を推奨。 ハサミ打ちもNG なので、「順押し」を心がけよう。</p>
+<h2>解析情報通常時</h2>
+<h3>小役関連</h3>
+<h4>BAR揃い・ルーン3個停止の恩恵まとめ</h4>
 <p>BAR揃い・ルーン3個はともに、タイミング次第で大きな恩恵を獲得することもできる。 さらに狙えカットインが発生したのに BARが揃わない（BARズレ目）場合はプレミアムとなり、AT直撃濃厚 。発生時の一部でロングフリーズへ発展する。</p>
-<h4><span id="BAR">BAR揃い時の恩恵</span></h4>
+<h4>BAR揃い時の恩恵</h4>
 <table>
 <thead>
 <tr>
@@ -703,7 +1197,7 @@
 </table>
 <p>※ハラキリチャレンジはVストック・ドライブVストック経由時も同様 ※ドライブVストック…ハラキリドライブ濃厚のVストック</p>
 <p>［BARズレ目］ 発生した時点でAT直撃以上濃厚。ただし、狙えカットイン発生時に右リール下段にBARをビタ押ししてしまうと、内部的にはBAR揃いなのに見た目上はBARズレ目になるため勘違いに注意。あくまでBARを中段より上に押して揃わなかった場合のみが対象となる。</p>
-<h4><span id="3">ルーン3個停止時の恩恵</span></h4>
+<h4>ルーン3個停止時の恩恵</h4>
 <table>
 <thead>
 <tr>
@@ -785,10 +1279,10 @@
 <p>※ハラキリチャレンジはVストック・ドライブVストック経由時も同様 ※ドライブVストック…ハラキリドライブ濃厚のVストック</p>
 <p>通常時や電脳ゾーン中に獲得できる600ptと当選するCZは別物（ポイント契機でCZが当選するわけではない）なので、CZに失敗しても600ptは残る＝チャンスは継続する。 また、電脳ゾーンは継続するのでさらなるポイント加算に期待できる。</p>
 <p>［天井到達ゲームのBAR揃い注意点］ 通常時と電脳ゾーン中は上表の通りAT直撃＋Vストック3個を獲得。ただし、それ以外（ルーンドライブ中やCZ中など）に天井到達ゲームでBAR揃いをしても、状態ごとの恩恵を優先させるため、天井到達ゲームの固有の恩恵を受けることはできない（ルーンドライブ中やCZ中に天井到達し、失敗した場合は通常に戻った1G目にBARを引けば恩恵は獲得可能）。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-7">内部状態関連</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-8">通常時の内部状態</span></h4>
+<h3>内部状態関連</h3>
+<h4>通常時の内部状態</h4>
 <p>高確はおもに夕方ステージ滞在で示唆され、電脳ゾーン当選率がアップする。</p>
-<h4><span id="i-9">高確 性能</span></h4>
+<h4>高確 性能</h4>
 <table>
 <thead>
 <tr>
@@ -815,7 +1309,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-10">高確移行率</span></h4>
+<h4>高確移行率</h4>
 <table>
 <thead>
 <tr>
@@ -848,8 +1342,8 @@
 </table>
 <p>※前兆ステージ…革命の高校生or地球脱出作戦</p>
 <p>前兆ステージ失敗後は約50%で高確へ移行する。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-11">モード</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-12">通常モード</span></h4>
+<h3>モード</h3>
+<h4>通常モード</h4>
 <table>
 <thead>
 <tr>
@@ -869,7 +1363,7 @@
 </tbody>
 </table>
 <p>通常時の周期ポイント＆周期抽選は4種類のモードで管理。1周期目は全モード共通で200pt以内に規定ポイントに到達、2周期目以降はモードによって振り分けが変化する。</p>
-<h4><span id="i-13">モードごとの最大規定ポイント天井周期</span></h4>
+<h4>モードごとの最大規定ポイント天井周期</h4>
 <table>
 <thead>
 <tr>
@@ -901,7 +1395,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="2">2周期目以降の規定ポイント分布</span></h4>
+<h4>2周期目以降の規定ポイント分布</h4>
 <table>
 <thead>
 <tr>
@@ -953,7 +1447,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-14">天井周期分布</span></h4>
+<h4>天井周期分布</h4>
 <table>
 <thead>
 <tr>
@@ -1005,7 +1499,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="AT">［設定変更後・革命ボーナス後・AT後］モード振り分け</span></h4>
+<h4>［設定変更後・革命ボーナス後・AT後］モード振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1032,7 +1526,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="CZ">［CZ失敗後・決戦ボーナス後］モード振り分け</span></h4>
+<h4>［CZ失敗後・決戦ボーナス後］モード振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1075,12 +1569,12 @@
 </tbody>
 </table>
 <p>CZ失敗や決戦ボーナスのAT非当選時はモード昇格を抽選。天国終了後は6割強が通常Aへ移行する。</p>
-<h4><span id="i-15">マリエモード</span></h4>
+<h4>マリエモード</h4>
 <p>内部的にボーナス当選時の「革命ボーナス＋マリエ覚醒濃厚」となるマリエモードが存在。 マリエモード滞在は通常時のマリエセリフやアイキャッチなど、様々な演出で示唆される。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-16">周期ポイント</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-17">周期ポイント解説</span></h4>
+<h3>周期ポイント</h3>
+<h4>周期ポイント解説</h4>
 <p>1Gにつき1pt以上加算されていき、規定ポイントに到達するとCZ以上を抽選。スルー時の余剰分は次周期に持ち越し（ポイントは画面左下に表示）。 期待できるポイントと周期回数は画面下部のメーターに表示されている。</p>
-<h4><span id="i-18">周期ポイント性能</span></h4>
+<h4>周期ポイント性能</h4>
 <table>
 <thead>
 <tr>
@@ -1104,7 +1598,7 @@
 </tbody>
 </table>
 <p>一気に大量ポイントを獲得した時も引き損はなく、複数回の前兆へ突入する可能性がある（200ptなら2回発生など）。 300・500ptは前兆に行きにくいが、前兆が発生した時点で前兆ステージ移行濃厚。地球脱出作戦へ移行する可能性も高めだ。</p>
-<h4><span id="i-19">周期の注目要素</span></h4>
+<h4>周期の注目要素</h4>
 <table>
 <thead>
 <tr>
@@ -1125,10 +1619,10 @@
 </table>
 <p>［マギウスマークに注目］ マギウスマークが付いている周期はCZ以上当選期待度約50%、出現割合は約30%。該当周期がフェイクでも天井周期が1周期分短縮される。</p>
 <p>規定ポイントは滞在モードで変化（モードはコチラ）</p>
-<h4><span id="i-20">規定ポイント到達時の周期抽選</span></h4>
+<h4>規定ポイント到達時の周期抽選</h4>
 <p>［革命の高校生］</p>
 <p>［地球脱出作戦］ 規定ポイント到達時（周期抽選）は「革命の高校生」か「地球脱出作戦」に突入。後者は高期待度となるだけでなく、天井周期を1回分短縮してくれる。</p>
-<h4><span id="i-21">規定周期ポイント到達時の移行ステージ別本前兆期待度</span></h4>
+<h4>規定周期ポイント到達時の移行ステージ別本前兆期待度</h4>
 <table>
 <thead>
 <tr>
@@ -1171,7 +1665,7 @@
 </tbody>
 </table>
 <p>地球奪還作戦は300・500pt以外で移行すれば本前兆濃厚。フェイクだった場合でも当該周期分に加え、天井から1周期分が短縮される。</p>
-<h4><span id="i-22">規定周期ポイント到達時のステージ選択割合</span></h4>
+<h4>規定周期ポイント到達時のステージ選択割合</h4>
 <table>
 <thead>
 <tr>
@@ -1216,7 +1710,7 @@
 <p>プレ前兆発生時の法則</p>
 <p>300・500pt時はプレ前兆が発生した時点で前兆ステージ移行濃厚</p>
 <p>300・500ptはプレ前兆…つまり、何も引いていないのにザワザワし始めた時点で前兆ステージ移行濃厚となるわけだ。</p>
-<h4><span id="i-23">成立役ごとの獲得ポイント振り分け</span></h4>
+<h4>成立役ごとの獲得ポイント振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1288,7 +1782,7 @@
 </tbody>
 </table>
 <p>ルーン停止時は10pt以上濃厚。ルーン3個停止時は600pt獲得＋CZ本前兆へ移行する。</p>
-<h4><span id="i-24">周期ポイント獲得率</span></h4>
+<h4>周期ポイント獲得率</h4>
 <table>
 <thead>
 <tr>
@@ -1392,9 +1886,9 @@
 </tbody>
 </table>
 <p>ルーン2個は30pt以上濃厚。ルーン3個は周期ポイント600pt獲得＋CZ濃厚だ。</p>
-<h4><span id="i-25">マギウスマークの性能まとめ</span></h4>
+<h4>マギウスマークの性能まとめ</h4>
 <p>マギウスマークがついている周期の期待度は約50%だ。</p>
-<h4><span id="i-26">マギウスマークの特徴</span></h4>
+<h4>マギウスマークの特徴</h4>
 <table>
 <thead>
 <tr>
@@ -1413,7 +1907,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-27">複数個あった場合の法則</span></h4>
+<h4>複数個あった場合の法則</h4>
 <table>
 <thead>
 <tr>
@@ -1445,7 +1939,7 @@
 </tbody>
 </table>
 <p>4個以上あった場合は天国モード濃厚。さらに、特定設定以上濃厚になる。</p>
-<h4><span id="i-28">天井周期振り分け</span></h4>
+<h4>天井周期振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1503,7 +1997,7 @@
 </table>
 <p>※設定変更後はモード不問で最大3周期が天井</p>
 <p>滞在モードに応じて天井周期を抽選。2周期目はどのモードも比較的に期待できるので、状況次第で狙ってみるのもありだ。</p>
-<h4><span id="_1">天井周期振り分け 1周期目</span></h4>
+<h4>天井周期振り分け 1周期目</h4>
 <table>
 <thead>
 <tr>
@@ -1559,7 +2053,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="26_500pt">2～6周期目（前周期の規定ポイントが 500pt以下 ）</span></h4>
+<h4>2～6周期目（前周期の規定ポイントが 500pt以下 ）</h4>
 <table>
 <thead>
 <tr>
@@ -1615,7 +2109,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="26_600pt">2～6周期目（前周期の規定ポイントが 600ptまたは特殊テーブル選択時 ）</span></h4>
+<h4>2～6周期目（前周期の規定ポイントが 600ptまたは特殊テーブル選択時 ）</h4>
 <table>
 <thead>
 <tr>
@@ -1673,12 +2167,12 @@
 </table>
 <p>規定ポイントは1周期目が200pt以下。2〜6周期は最大600ptだが、前回が600ptだった場合は必ず400pt以下が選択される。</p>
 <p>［特殊テーブルについて］ 通常A〜C滞在時は設定に応じて規定ポイントが400pt以下になる特殊テーブル移行を抽選。 通常Cに滞在していた場合も、この特殊テーブルに当選した場合は上記の振り分けになる。</p>
-<h4><span id="AC">［通常A〜C滞在時］特殊テーブル選択率</span></h4>
+<h4>［通常A〜C滞在時］特殊テーブル選択率</h4>
 <p>高設定ほど特殊テーブルが選ばれやすいため、400ptを超えるケースが少ない。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-29">電脳ゾーン</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-30">電脳ゾーン概要</span></h4>
+<h3>電脳ゾーン</h3>
+<h4>電脳ゾーン概要</h4>
 <p>おもにレア役で抽選される周期ポイント加算ゾーン。STタイプなので、小役入賞でゲーム数が再セットされる。 10セット継続させれば革命ボーナスに突入する嬉しい特典もある。</p>
-<h4><span id="i-31">電脳ゾーン性能</span></h4>
+<h4>電脳ゾーン性能</h4>
 <table>
 <thead>
 <tr>
@@ -1711,7 +2205,7 @@
 </table>
 <p>［毎ゲーム周期ポイント獲得］</p>
 <p>［小役入賞で再セット］</p>
-<h4><span id="i-32">電脳ゾーン当選率</span></h4>
+<h4>電脳ゾーン当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1734,7 +2228,7 @@
 </tbody>
 </table>
 <p>電脳ゾーン当選時は9G前後の前兆を経て告知。 通常滞在時のルーン2個は電脳ゾーンに当選しなかった場合、必ず高確へ移行する（電脳ゾーン60%：高確移行：40%）。</p>
-<h4><span id="i-33">成立役ごとの獲得ポイント振り分け</span></h4>
+<h4>成立役ごとの獲得ポイント振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1815,10 +2309,10 @@
 </table>
 <p>［ピノ思い出回想演出］ デフォルトパターン。</p>
 <p>［ピノスクロール］ 発生した時点で小役以上＝リセット濃厚だ。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-34">ルーンドライブ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-35">ルーンドライブ概要</span></h4>
+<h3>ルーンドライブ</h3>
+<h4>ルーンドライブ概要</h4>
 <p>通常時のBAR揃いから突入するST型のCZ高確率ゾーン。ルーンを3回引ければ（3セット継続）CZ濃厚だ。さらに、CZ当選後に発生する昇格チャレンジに成功すればボーナスへ昇格。 突入した時点でCZ以上濃厚かつ、成功でボーナス濃厚の「ルーンドライブハイパー」もある。</p>
-<h4><span id="i-36">ルーンドライブ性能</span></h4>
+<h4>ルーンドライブ性能</h4>
 <table>
 <thead>
 <tr>
@@ -1855,7 +2349,7 @@
 <p>［押し順の紫ナビ発生時はルーン濃厚］</p>
 <p>［昇格チャレンジ］ 昇格チャレンジ中にルーンが停止すれば成功。ルーンドライブハイパーでは、成功＝革命ボーナス＋AT濃厚（必ずマリエ覚醒に突入）になる。</p>
 <p>［ルーンドライブハイパー］ 開始後に画面にノイズが発生するとルーンドライブハイパーに突入する。</p>
-<h4><span id="i-37">ルーンドライブの種別振り分け</span></h4>
+<h4>ルーンドライブの種別振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1875,7 +2369,7 @@
 </tbody>
 </table>
 <p>ルーンドライブ当選の約5%でハイパーに突入する。</p>
-<h4><span id="i-38">レア役成立時の規定回数減算</span></h4>
+<h4>レア役成立時の規定回数減算</h4>
 <table>
 <thead>
 <tr>
@@ -1912,7 +2406,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-39">ルーン停止濃厚パターン</span></h4>
+<h4>ルーン停止濃厚パターン</h4>
 <p>押し順ナビ発生</p>
 <p>カウントダウンの数字が紫</p>
 <p>カウントダウンの数字が非表示</p>
@@ -1922,10 +2416,10 @@
 <p>［カウントダウンの数字が紫］</p>
 <p>［カウントダウンの数字が非表示］</p>
 <p>［ランプ系］</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="CZ-2">ドルシア攻防戦（CZ）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="CZ-3">CZ概要</span></h4>
+<h3>ドルシア攻防戦（CZ）</h3>
+<h4>CZ概要</h4>
 <p>小役を引けば「1stアタック」へ移行して、以降は小役で敵を撃破するごとに「2ndアタック」→「革命の一撃」へ発展。革命の一撃を成功させればボーナスとなる。味方キャラは4種類で、キャラによって小役非成立時の発展期待度が変化する。</p>
-<h4><span id="CZ-4">ドルシア攻防戦（CZ）性能</span></h4>
+<h4>ドルシア攻防戦（CZ）性能</h4>
 <table>
 <thead>
 <tr>
@@ -1967,9 +2461,9 @@
 <p>［1stアタック］ 敵を撃破すれば2ndアタックへ。</p>
 <p>［2ndアタック］ 敵を撃破すれば革命の一撃へ。</p>
 <p>［革命の一撃］ 革命の一撃に行けばキャラ不問で期待度90%以上。Vを狙って成功すればボーナスだ。</p>
-<h4><span id="i-40">消化中の抽選</span></h4>
+<h4>消化中の抽選</h4>
 <p>［出撃キャラ］</p>
-<h4><span id="i-41">成立役ごとの出撃キャラ振り分け</span></h4>
+<h4>成立役ごとの出撃キャラ振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2018,7 +2512,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-42">トータル選択率</span></h4>
+<h4>トータル選択率</h4>
 <table>
 <thead>
 <tr>
@@ -2050,7 +2544,7 @@
 </tbody>
 </table>
 <p>［各フェーズの突破］</p>
-<h4><span id="i-43">成立役ごとの突破段階振り分け キューマ</span></h4>
+<h4>成立役ごとの突破段階振り分け キューマ</h4>
 <table>
 <thead>
 <tr>
@@ -2078,7 +2572,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-44">ライゾウ</span></h4>
+<h4>ライゾウ</h4>
 <table>
 <thead>
 <tr>
@@ -2106,7 +2600,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-45">サキ</span></h4>
+<h4>サキ</h4>
 <table>
 <thead>
 <tr>
@@ -2134,7 +2628,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-46">アキラ</span></h4>
+<h4>アキラ</h4>
 <table>
 <thead>
 <tr>
@@ -2163,7 +2657,7 @@
 </tbody>
 </table>
 <p>2段階突破なら一気に2段階分のフェーズが進行（1stフェーズ中なら2ndフェーズ突破も確定）。もちろん最終フェーズでは1段階・2段階不問でボーナス濃厚となる。 アキラはルーン1個でも2段階突破濃厚だ。</p>
-<h4><span id="i-47">突破確定状態中の突破ストック当選率</span></h4>
+<h4>突破確定状態中の突破ストック当選率</h4>
 <table>
 <thead>
 <tr>
@@ -2206,8 +2700,8 @@
 </tbody>
 </table>
 <p>各フェーズ突破が確定したあとは、成立役に応じて突破ストックを抽選する。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-48">直撃抽選</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="BAR-2">BAR揃い時の振り分け</span></h4>
+<h3>直撃抽選</h3>
+<h4>BAR揃い時の振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2245,10 +2739,10 @@
 </tbody>
 </table>
 <p>あくまでBAR揃い時の直撃当選率なので、BARズレ目（AT直撃以上濃厚）は含まない数値だ。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-49">フリーズ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-50">ロングフリーズ</span></h4>
+<h3>フリーズ</h3>
+<h4>ロングフリーズ</h4>
 <p>BARを狙えカットインのハズレ（BARズレ目）の一部で発生する可能性がある。 BARのズレ目が停止した時点でAT直撃以上濃厚だ。</p>
-<h4><span id="i-51">ロングフリーズ性能</span></h4>
+<h4>ロングフリーズ性能</h4>
 <table>
 <thead>
 <tr>
@@ -2263,14 +2757,14 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-52">ロングフリーズ動画</span></h4>
+<h4>ロングフリーズ動画</h4>
 <p>BARを狙えカットインのハズレ（BARズレ目）はAT直撃濃厚。この時の一部でロングフリーズが発生する。</p>
-<p>恩恵は上位AT20G＋Vストック9個獲得と超強力だ。</p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-53">解析情報ボーナス時</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-54">革命ボーナス</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-55">革命ボーナス概要</span></h4>
+<p>恩恵は上位AT20G＋Vストック9個獲得と超強力だ。</p>
+<h2>解析情報ボーナス時</h2>
+<h3>革命ボーナス</h3>
+<h4>革命ボーナス概要</h4>
 <p>消化中にHOLDを引きつつ延命させて、払い出しが666枚を突破すればATになる初当りボーナス。 マリエが覚醒するAT濃厚パターンもある。</p>
-<h4><span id="i-56">革命ボーナス性能</span></h4>
+<h4>革命ボーナス性能</h4>
 <table>
 <thead>
 <tr>
@@ -2321,7 +2815,7 @@
 <p>［666枚突破］</p>
 <p>［BARを狙え］ BARが揃えばマリエ覚醒濃厚！</p>
 <p>［マリエ覚醒］ ボーナス中のBAR揃いはもちろんのこと、ボーナス開始時からマリエが覚醒しているパターンもある。 マリエが覚醒すると残りゲーム数が∞になるので、実質的にAT当選が確定する。</p>
-<h4><span id="i-57">ホールド当選率 非ホールド中</span></h4>
+<h4>ホールド当選率 非ホールド中</h4>
 <table>
 <thead>
 <tr>
@@ -2352,7 +2846,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-58">ホールド中</span></h4>
+<h4>ホールド中</h4>
 <table>
 <thead>
 <tr>
@@ -2383,7 +2877,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="G">残？Gでの延長中</span></h4>
+<h4>残？Gでの延長中</h4>
 <table>
 <thead>
 <tr>
@@ -2415,7 +2909,7 @@
 </tbody>
 </table>
 <p>非ホールド中はルーン停止以外でもホールドを抽選（残？Gでの延長中を除く）。 革命ボーナスには1回のホールド保障があるため、自力でホールドを引けなかった場合、ボーナス終了までにホールド1個分が付与される。</p>
-<h4><span id="i-59">ホールド中のベルナビ回数振り分け</span></h4>
+<h4>ホールド中のベルナビ回数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2443,7 +2937,7 @@
 </tbody>
 </table>
 <p>ベルナビ8回が選ばれた場合は、ホールド終了後にマリエ覚醒（AT濃厚）に突入。ホールド時に出現するキャラでベルナビ回数を示唆している。</p>
-<h4><span id="i-60">出撃キャラごとのベルナビ回数</span></h4>
+<h4>出撃キャラごとのベルナビ回数</h4>
 <table>
 <thead>
 <tr>
@@ -2470,7 +2964,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-61">ホールド以外の抽選</span></h4>
+<h4>ホールド以外の抽選</h4>
 <table>
 <thead>
 <tr>
@@ -2494,10 +2988,10 @@
 </tbody>
 </table>
 <p>開始時のマリエ覚醒は見た目上で判別できないが、当選時はHOLDが抽選されないため、ルーンを何回引いてもホールドに当選しない…というような場合はマリエ覚醒に期待。 どの状況でもマリエ覚醒は666枚獲得まで革命ボーナスが継続する。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-62">決戦ボーナス</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-63">決戦ボーナス概要</span></h4>
+<h3>決戦ボーナス</h3>
+<h4>決戦ボーナス概要</h4>
 <p>「1stエピソード」からスタートして、条件をクリアするごとに「2ndエピソード」→「最終決戦」と進行。最終決戦をクリアできればAT濃厚だ。 また、最終決戦まで行かずに終了した場合は3G間の「アクティベートチャレンジ」でATを目指す流れとなる。</p>
-<h4><span id="i-64">決戦ボーナス性能</span></h4>
+<h4>決戦ボーナス性能</h4>
 <table>
 <thead>
 <tr>
@@ -2528,7 +3022,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-65">各ミッションのクリア条件</span></h4>
+<h4>各ミッションのクリア条件</h4>
 <table>
 <thead>
 <tr>
@@ -2552,7 +3046,7 @@
 </tbody>
 </table>
 <p>1st・2ndミッション・最終決戦共通で、開始1G目は押し順ベルを引いてもベルナビは非発生。2G目以降はナビが発生する（最終決戦の2G目以降はフルナビ）。</p>
-<h4><span id="i-66">状態別の成立役別抽選内容まとめ</span></h4>
+<h4>状態別の成立役別抽選内容まとめ</h4>
 <table>
 <thead>
 <tr>
@@ -2594,7 +3088,7 @@
 <p>［2ndエピソード］</p>
 <p>［最終決戦］ カインを撃破できればAT突入だ。</p>
 <p>［アクティベートチャレンジ］ ルーン1個停止でチャンス、ルーン2個以上停止ならAT濃厚。消化中の押し順ベルはフルナビとなる。</p>
-<h4><span id="1st2nd">［1st・2ndミッション］解放パネル数別の突破率</span></h4>
+<h4>［1st・2ndミッション］解放パネル数別の突破率</h4>
 <table>
 <thead>
 <tr>
@@ -2622,7 +3116,7 @@
 </tbody>
 </table>
 <p>パネル解放が0枚（ベル・ルーンを1回も引かない）なら3枚解放しなくても突破濃厚。 低期待度だが、1枚や2枚でも突破することはある。</p>
-<h4><span id="AT-2">アクティベートチャレンジ・リザルト画面のAT当選率</span></h4>
+<h4>アクティベートチャレンジ・リザルト画面のAT当選率</h4>
 <table>
 <thead>
 <tr>
@@ -2650,10 +3144,10 @@
 </tbody>
 </table>
 <p>アクティベートチャレンジ中はレア役以外でもATを抽選。 アクティベートチャレンジ中・リザルト画面ともに、ルーン2個成立でAT濃厚となる。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="ATAT">革命ラッシュ（AT）/超革命ラッシュ（上位AT）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="AT-3">AT概要</span></h4>
+<h3>革命ラッシュ（AT）/超革命ラッシュ（上位AT）</h3>
+<h4>AT概要</h4>
 <p>高純増タイプのATで、消化中はVストック（セットストック）を抽選。Vストックなし時は終了後に突入する「ハラキリチャレンジ」で継続をジャッジする。3回継続させれば上位ATの「超革命ラッシュ」へ昇格。上位へ昇格したセットは超高確率で継続する。</p>
-<h4><span id="AT-4">革命ラッシュ（AT）性能</span></h4>
+<h4>革命ラッシュ（AT）性能</h4>
 <table>
 <thead>
 <tr>
@@ -2687,9 +3181,9 @@
 <p>※継続期待度はハラキリチャレンジ→通常時潜伏からの引き戻しを含んだ数値</p>
 <p>抽選の順番はゲーム数上乗せ→Vストック→革命の剣だ。</p>
 <p>［継続回数はランプで表示］</p>
-<h4><span id="AT-5">上位AT概要</span></h4>
+<h4>上位AT概要</h4>
 <p>継続期待度が90%にアップする上位AT。抽選の仕組みなどは通常のAT（革命ラッシュ）と同じだが、各種抽選値は上位ATのほうが若干優遇されている。</p>
-<h4><span id="AT-6">超革命ラッシュ（上位AT）性能</span></h4>
+<h4>超革命ラッシュ（上位AT）性能</h4>
 <table>
 <thead>
 <tr>
@@ -2709,7 +3203,7 @@
 </tbody>
 </table>
 <p>※継続期待度はハラキリチャレンジ→通常時潜伏からの引き戻しを含んだ数値</p>
-<h4><span id="i-67">継続時の成立役別・初期ゲーム数</span></h4>
+<h4>継続時の成立役別・初期ゲーム数</h4>
 <table>
 <thead>
 <tr>
@@ -2740,7 +3234,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="_50G">設定ごとのハラキリドライブ発生割合 （＋50G以上選択）</span></h4>
+<h4>設定ごとのハラキリドライブ発生割合 （＋50G以上選択）</h4>
 <table>
 <thead>
 <tr>
@@ -2761,9 +3255,9 @@
 </table>
 <p>（超）ハラキリチャレンジ中の継続抽選当選時（Vストック使用時含む）の成立役に応じて次セットのゲーム数を決定。上位AT中は20G以上の選択率がアップする。 また、AT・上位AT共通で高設定ほど20G以上が選択されやすいため、ハラキリドライブ（50G以上時）が発生しやすい。</p>
 <p>ちなみに初代と比べ、ハラキリドライブ発生率は若干低いが、そのぶん純増枚数が高くなっている。</p>
-<h4><span id="V">ゲーム数上乗せ＆Vストック抽選</span></h4>
+<h4>ゲーム数上乗せ＆Vストック抽選</h4>
 <p>【ゲーム数上乗せ抽選】 基本的にレア役契機のゲーム数上乗せは上位AT中にのみ発生。期待度はルーン1個＆2個＜BAR揃いで、BAR揃い契機でゲーム数が上乗せされなかった場合は「革命の剣」濃厚になる。</p>
-<h4><span id="i-68">ゲーム数上乗せ当選時のゲーム数振り分け</span></h4>
+<h4>ゲーム数上乗せ当選時のゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2793,7 +3287,7 @@
 <p>［突ハラキリドライブ］</p>
 <p>レア役契機で移行する上乗せ演出のひとつ。ハラキリチャレンジ経由とは異なりループ性やダブル昇格はない。</p>
 <p>［イッパイノセマスカ］ レア役契機で発生する3桁ゲーム数上乗せ濃厚パターンだ。</p>
-<h4><span id="i-69">特殊な上乗せパターン</span></h4>
+<h4>特殊な上乗せパターン</h4>
 <table>
 <thead>
 <tr>
@@ -2814,7 +3308,7 @@
 </table>
 <p>【Vストック抽選】 Vストック期待度はルーン1個＜ルーン2個で、ルーン3個はストック濃厚。ラウンド開始画面やハラキリチャレンジ中のAT継続告知〜次セット開始画面表示などの特定条件下ではVストック期待度がアップする。 また、ラウンド開始画面でのBAR揃いはVストック濃厚になる。</p>
 <p>【ドライブVストックへの書き換え抽選】 Vストック当選時は契機役不問で、継続時のハラキリドライブ濃厚になる「ドライブVストック」への昇格を抽選。 ドライブVストック使用時の成立役に応じて、ハラキリドライブ時の上乗せゲーム数（50or100G）を決定する。 ちなみに、革命の剣経由で獲得したVストックは昇格率が優遇される。</p>
-<h4><span id="V-2">ドライブVストック使用時の ハラキリドライブ上乗せゲーム数振り分け</span></h4>
+<h4>ドライブVストック使用時の ハラキリドライブ上乗せゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2851,10 +3345,10 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-70">革命の剣</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-71">革命の剣概要</span></h4>
+<h3>革命の剣</h3>
+<h4>革命の剣概要</h4>
 <p>AT中のレア役で当選する可能性がある2G間のチャンスゾーン的な存在で、レア役を引けばVストック獲得の大チャンス。 ルーン2個停止時は革命の剣突入の期待大!?</p>
-<h4><span id="i-72">革命の剣 性能</span></h4>
+<h4>革命の剣 性能</h4>
 <table>
 <thead>
 <tr>
@@ -2879,7 +3373,7 @@
 </table>
 <p>［レア役契機の月煽り演出］ 月煽り演出が成功すれば革命の剣へ突入する。</p>
 <p>獲得したVストックが虹色なら…？</p>
-<h4><span id="i-73">革命の剣当選期待度</span></h4>
+<h4>革命の剣当選期待度</h4>
 <table>
 <thead>
 <tr>
@@ -2902,7 +3396,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="V-3">Vストック当選率</span></h4>
+<h4>Vストック当選率</h4>
 <table>
 <thead>
 <tr>
@@ -2934,10 +3428,10 @@
 </tbody>
 </table>
 <p>ルーン停止でほぼVストック濃厚（1個は極稀に非当選の場合あり）。レア役を引かなくても約23%とそれなりの割合でVストックを獲得できる。 また、革命の剣中のストックは1個までなので、2G間でルーンを2回引いてもストックを2個獲得できるわけではない。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-74">（究極）ハラキリチャレンジ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-75">ハラキリチャレンジ概要</span></h4>
+<h3>（究極）ハラキリチャレンジ</h3>
+<h4>ハラキリチャレンジ概要</h4>
 <p>ATのゲーム数が0になると3G間のハラキリチャレンジへ突入してAT継続を抽選。継続の成否は成立役に応じて抽選され、レア役は継続濃厚。成功時の一部で「ハラキリドライブ」や「革命分岐」に突入する。</p>
-<h4><span id="i-76">ハラキリチャレンジ性能</span></h4>
+<h4>ハラキリチャレンジ性能</h4>
 <table>
 <thead>
 <tr>
@@ -2975,9 +3469,9 @@
 <p>［継続時はブラックアウト］ 画面がブラックアウトすればAT継続！</p>
 <p>ハラキリチャレンジの告知モードはコチラ</p>
 <p>告知モードを任意に選択できる。</p>
-<h4><span id="i-77">究極ハラキリチャレンジ概要</span></h4>
+<h4>究極ハラキリチャレンジ概要</h4>
 <p>ハラキリチャレンジのタイトル画面が切り裂かれると継続濃厚の究極ハラキリチャレンジへ突入。</p>
-<h4><span id="i-78">究極ハラキリチャレンジ性能</span></h4>
+<h4>究極ハラキリチャレンジ性能</h4>
 <table>
 <thead>
 <tr>
@@ -3004,10 +3498,10 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-79">革命分岐</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-80">革命分岐概要</span></h4>
+<h3>革命分岐</h3>
+<h4>革命分岐概要</h4>
 <p>革命ボーナス中やハラキリドライブの一部で突入する可能性がある「ハラキリドライブ」をかけたジャッジ。 Vが揃えばハラキリドライブに突入する。</p>
-<h4><span id="i-81">革命分岐 性能</span></h4>
+<h4>革命分岐 性能</h4>
 <table>
 <thead>
 <tr>
@@ -3031,10 +3525,10 @@
 </tbody>
 </table>
 <p>［V揃いジャッジ］ Vが揃えば成功だ。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-82">ハラキリドライブ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-83">ハラキリドライブ概要</span></h4>
+<h3>ハラキリドライブ</h3>
+<h4>ハラキリドライブ概要</h4>
 <p>ATのゲーム数が50G以上の場合に選択される可能性がある上乗せ要素で、最低でも＋50G以上を獲得できる。 今回はAT中にいきなりハラキリドライブが発生する「突ハラキリドライブ」もあり。</p>
-<h4><span id="i-84">ハラキリドライブの上乗せまとめ</span></h4>
+<h4>ハラキリドライブの上乗せまとめ</h4>
 <table>
 <thead>
 <tr>
@@ -3057,14 +3551,14 @@
 <p>［ハラキリダブルドライブ］ ＋50Gの場合、上乗せ発生ゲーム（タイトル画面表示の次ゲーム）でレア役を引くと上乗せ表示が2倍になって＋200G以上濃厚になるダブルドライブに発展。ループ率管理なので、ループに当選すれば200G以上を追加で上乗せしていく。</p>
 <p>追撃とハラキリダブルが複合する超強力なパターンもある。</p>
 <p>※ハラキリダブルドライブはレア役以外でも発生の可能性あり</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-85">引き戻し状態</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-86">引き戻し状態概要</span></h4>
+<h3>引き戻し状態</h3>
+<h4>引き戻し状態概要</h4>
 <p>ボーナスやAT・上位AT終了後は通常時に戻っても、 66G間 は上画像のように液晶上部にある「ニンゲンヤメマスカ？」ランプが紫色に点灯。引き戻し（AT潜伏）の可能性があるので66Gは続行を推奨だ。 AT後はあくまでセット継続が潜伏している状態なので、継続セット数は引き継がれる。 上位AT後は引き戻せば上位ATに復帰！</p>
 <p>引き戻し状態中のポイント</p>
 <p>引き戻し時はATの継続回数や上位ATを引き継ぐ （自力当選時は引き継がない）</p>
 <p>BAR揃いやBARズレ目時は引き戻しを抽選。 引き戻し非当選の状態でも、抽選に当選すれば引き戻し扱いになる</p>
 <p>66G間は通常時としての抽選もおこなわれるが、ボーナスに当選した時点で引き戻しに非当選だったことが濃厚。 また、引き戻し時はほぼ第3停止でブラックアウト、デカPUSHで告知される。</p>
-<h4><span id="66G">引き戻し当選率（最大66G間潜伏）</span></h4>
+<h4>引き戻し当選率（最大66G間潜伏）</h4>
 <table>
 <thead>
 <tr>
@@ -3091,10 +3585,10 @@
 </tr>
 </tbody>
 </table>
-<p>決戦ボーナスより革命ボーナス後のほうが潜伏当選率は高い。AT・上位AT後は引き戻し当選率が高めなので注目しておきたい。</p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-87">演出情報</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-88">通常時</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-89">ステージごとの示唆</span></h4>
+<p>決戦ボーナスより革命ボーナス後のほうが潜伏当選率は高い。AT・上位AT後は引き戻し当選率が高めなので注目しておきたい。</p>
+<h2>演出情報</h2>
+<h3>通常時</h3>
+<h4>ステージごとの示唆</h4>
 <table>
 <thead>
 <tr>
@@ -3135,7 +3629,7 @@
 <p>［マリエステージ］</p>
 <p>［革命の高校生ステージ］</p>
 <p>［地球脱出作戦］</p>
-<h4><span id="i-90">サブモニターの機体別示唆</span></h4>
+<h4>サブモニターの機体別示唆</h4>
 <table>
 <thead>
 <tr>
@@ -3179,9 +3673,9 @@
 </tbody>
 </table>
 <p>リール左側にあるサブモニターにヴァルヴレイヴ1or3or4or5or6号機が出現すれば高モード示唆。ヴァルヴレイヴ以外の機体は設定示唆となる。</p>
-<h4><span id="i-91">アイキャッチのモード示唆</span></h4>
+<h4>アイキャッチのモード示唆</h4>
 <p>キャラのシルエットがいるパターンや白背景ver.なら高モードのチャンスだ。</p>
-<h4><span id="i-92">アイキャッチの示唆</span></h4>
+<h4>アイキャッチの示唆</h4>
 <table>
 <thead>
 <tr>
@@ -3221,7 +3715,7 @@
 <p>［ヴァルヴレイヴシルエット］</p>
 <p>［ピノシルエット］</p>
 <p>［白背景＋ピノシルエット］</p>
-<h4><span id="_orCZ">連続演出期待度 （成功で電脳ゾーンorCZ）</span></h4>
+<h4>連続演出期待度 （成功で電脳ゾーンorCZ）</h4>
 <table>
 <thead>
 <tr>
@@ -3253,7 +3747,7 @@
 <p>［ショーコの独立宣言］</p>
 <p>［呪いの絆］</p>
 <p>［チャンスアップは成功濃厚］ タイトルの色変化を含め、チャンスアップは発生した時点で成功濃厚になる。</p>
-<h4><span id="i-93">演出法則</span></h4>
+<h4>演出法則</h4>
 <table>
 <thead>
 <tr>
@@ -3286,7 +3780,7 @@
 </table>
 <p>［マリエステージ］</p>
 <p>［アキラフラッシュバック］</p>
-<h4><span id="i-94">電脳ゾーン当選関連の法則</span></h4>
+<h4>電脳ゾーン当選関連の法則</h4>
 <table>
 <thead>
 <tr>
@@ -3316,7 +3810,7 @@
 <p>先走りランプ（筐体右側の看板横部分）発生時はルーン2個以上濃厚だが、1個だった場合は法則崩れで電脳ゾーン濃厚になる。</p>
 <p>［4号機ロックオン演出］</p>
 <p>［シャワー演出］</p>
-<h4><span id="i-95">会話演出パターン別の電脳ゾーン当選期待度</span></h4>
+<h4>会話演出パターン別の電脳ゾーン当選期待度</h4>
 <table>
 <thead>
 <tr>
@@ -3355,9 +3849,9 @@
 </table>
 <p>［会話演出］</p>
 <p>青文字発生時は組み合わせに注目だ。</p>
-<h4><span id="i-96">周期抽選関連の法則</span></h4>
+<h4>周期抽選関連の法則</h4>
 <p>規定の周期ポイント到達後は、ピノオーラ煽りと複合する演出パターンで前兆期待度が変化する。</p>
-<h4><span id="i-97">ピノオーラとの複合演出別期待度 複合演出ごとのトータル</span></h4>
+<h4>ピノオーラとの複合演出別期待度 複合演出ごとのトータル</h4>
 <table>
 <thead>
 <tr>
@@ -3418,7 +3912,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="_1-2">ハルトカミツキ 1回 と複合</span></h4>
+<h4>ハルトカミツキ 1回 と複合</h4>
 <table>
 <thead>
 <tr>
@@ -3449,7 +3943,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="_2">ハルトカミツキ 2回 と複合</span></h4>
+<h4>ハルトカミツキ 2回 と複合</h4>
 <table>
 <thead>
 <tr>
@@ -3480,7 +3974,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="_3">ハルトカミツキ 3回 と複合</span></h4>
+<h4>ハルトカミツキ 3回 と複合</h4>
 <table>
 <thead>
 <tr>
@@ -3515,9 +4009,9 @@
 <p>［カインクリスタル演出］</p>
 <p>［暴かれたカミツキ演出］</p>
 <p>激熱なら本前兆濃厚だ。</p>
-<h4><span id="i-98">ピノのセリフ別規定ポイント示唆</span></h4>
+<h4>ピノのセリフ別規定ポイント示唆</h4>
 <p>リール右側にいるピノのセリフ内容で当該周期の規定ポイントが示唆される。</p>
-<h4><span id="i-99">ピノのセリフ別示唆</span></h4>
+<h4>ピノのセリフ別示唆</h4>
 <table>
 <thead>
 <tr>
@@ -3544,7 +4038,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-100">会話演出の特殊パターン</span></h4>
+<h4>会話演出の特殊パターン</h4>
 <table>
 <thead>
 <tr>
@@ -3571,10 +4065,10 @@
 <p>［マリエ］ 出現時は次回ボーナス当選まで続行をオススメ。</p>
 <p>［カミツキハルト］ 引き戻しの期待大。引き戻し非当選でも通常B以上濃厚になる。</p>
 <p>［ソウイチ］ 引き戻し期待度が80%と高いうえ、引き戻し非当選でも天国濃厚。必ず100ptまで打ち続けよう。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-101">レア役ナビ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-102">レア役ナビの示唆</span></h4>
+<h3>レア役ナビ</h3>
+<h4>レア役ナビの示唆</h4>
 <p>レア役ナビは「!」と「!!!」の2種類で、状態によって示唆するレア役の種類が変化する。</p>
-<h4><span id="i-103">レア役ナビの示唆</span></h4>
+<h4>レア役ナビの示唆</h4>
 <table>
 <thead>
 <tr>
@@ -3642,8 +4136,8 @@
 </tbody>
 </table>
 <p>※AT・上位AT中の上乗せ…突ハラキリドライブorイッパイノセマスカ</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-104">前兆ステージ中</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-105">［革命の高校生・地球脱出作戦共通］チャンスパターン</span></h4>
+<h3>前兆ステージ中</h3>
+<h4>［革命の高校生・地球脱出作戦共通］チャンスパターン</h4>
 <table>
 <thead>
 <tr>
@@ -3659,7 +4153,7 @@
 </tbody>
 </table>
 <p>通常の演出から発展するより、連続演出ハズレから移行するほうが期待度が高い。</p>
-<h4><span id="i-106">チャンスカテゴリ［中］</span></h4>
+<h4>チャンスカテゴリ［中］</h4>
 <table>
 <thead>
 <tr>
@@ -3674,7 +4168,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-107">チャンスカテゴリ［強］</span></h4>
+<h4>チャンスカテゴリ［強］</h4>
 <table>
 <thead>
 <tr>
@@ -3739,7 +4233,7 @@
 <p>ビーストハイ演出orあなたがいけないんですよ演出と 起動前の1号機演出が複合</p>
 <p>起動前の1号機演出が1回の前兆中に2回発生</p>
 <p>［失われた記憶は激アツ！］ 前兆中固有の連続演出は「ハルトヴァルヴレイヴ起動演出」と「失われた記憶」の2種類で、後者なら大チャンスとなる。</p>
-<h4><span id="i-108">失われた記憶（連続演出）期待度</span></h4>
+<h4>失われた記憶（連続演出）期待度</h4>
 <table>
 <thead>
 <tr>
@@ -3754,7 +4248,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-109">「地球脱出作戦」中の演出</span></h4>
+<h4>「地球脱出作戦」中の演出</h4>
 <p>本前兆濃厚法則</p>
 <p>会話演出で対応したフェーズ以外のキャラが登場 ▼対応キャラ▼ フェーズ1：エルエルフ／フェーズ2：ハルト、キューマ、ライゾウ、サキ、アキラ／ フェーズ3：エルエルフ以外のドルシア軍キャラ</p>
 <p>会話演出で赤セリフ発生</p>
@@ -3766,7 +4260,7 @@
 <p>4号機ロックオン演出は発生した時点でCZ告知発生濃厚</p>
 <p>フェーズ3は移行した時点で激アツだ。</p>
 <p>［地球からの脱出はほぼ成功］ 地球脱出作戦中の連続演出は滞在フェーズによって変化（3種類）。フェーズ3滞在時は超激アツの「地球からの脱出」に発展する。</p>
-<h4><span id="i-110">フェーズごとの連続演出 期待度</span></h4>
+<h4>フェーズごとの連続演出 期待度</h4>
 <table>
 <thead>
 <tr>
@@ -3789,10 +4283,10 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-111">電脳ゾーン</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="PUSH">終了時のPUSHボイス</span></h4>
+<h3>電脳ゾーン</h3>
+<h4>終了時のPUSHボイス</h4>
 <p>電脳ゾーン終了時にPUSHボタンを押すと、ボイスのパターンで様々な示唆が発生。 デフォルトのボイス以外は期待値がプラスの状況にいるかも！</p>
-<h4><span id="PUSH-2">PUSHボイスごとの示唆</span></h4>
+<h4>PUSHボイスごとの示唆</h4>
 <table>
 <thead>
 <tr>
@@ -3823,8 +4317,8 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="CZ-5">ドルシア攻防戦（CZ）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-112">演出別のバトル発展期待度</span></h4>
+<h3>ドルシア攻防戦（CZ）</h3>
+<h4>演出別のバトル発展期待度</h4>
 <table>
 <thead>
 <tr>
@@ -3859,7 +4353,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-113">フェーズ中の演出法則</span></h4>
+<h4>フェーズ中の演出法則</h4>
 <table>
 <thead>
 <tr>
@@ -3902,7 +4396,7 @@
 <p>［タイトルの文字色変化］</p>
 <p>「革命の一撃」のタイトル表示後に表示される「世界を曝く！」の文字に注目。赤ならボーナス以上濃厚、金なら革命ボーナス濃厚だ。</p>
 <p>［Vのテンパイライン］ ダブルテンパイは革命ボーナス濃厚！</p>
-<h4><span id="V-4">Vのテンパイライン</span></h4>
+<h4>Vのテンパイライン</h4>
 <table>
 <thead>
 <tr>
@@ -3925,10 +4419,10 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-114">ボーナス</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-115">決戦ボーナス〜最終決戦の演出法則</span></h4>
+<h3>ボーナス</h3>
+<h4>決戦ボーナス〜最終決戦の演出法則</h4>
 <p>【各ゲームのルート分岐に注目】 基本的に最終決戦中は、毎ゲーム押し順ベルorルーン1個停止時はチャンスルート（3G目は味方ルート）の演出が選ばれるのだが、その法則が崩れればAT濃厚になる。</p>
-<h4><span id="or1">押し順ベルorルーン1個成立時のパターン別分岐</span></h4>
+<h4>押し順ベルorルーン1個成立時のパターン別分岐</h4>
 <table>
 <thead>
 <tr>
@@ -3957,7 +4451,7 @@
 </table>
 <p>［チャンスルート］ エフェクトともに味方が登場するパターンがチャンスルートだ。</p>
 <p>【世界を曝くの文字色】 最後に発生する「世界を曝く」の文字色で期待度が変化する。</p>
-<h4><span id="AT-7">世界を曝くの文字色別AT期待度</span></h4>
+<h4>世界を曝くの文字色別AT期待度</h4>
 <table>
 <thead>
 <tr>
@@ -3982,11 +4476,11 @@
 </table>
 <p>［赤文字］</p>
 <p>［金文字］</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="ATAT-2">AT・上位AT</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-116">特殊な上乗せパターン</span></h4>
+<h3>AT・上位AT</h3>
+<h4>特殊な上乗せパターン</h4>
 <p>［突ハラキリドライブ］ レア役契機で移行する上乗せ演出のひとつ。ハラキリチャレンジ経由とは異なりループ性やダブル昇格はない。</p>
 <p>［イッパイノセマスカ］ レア役契機で発生する3桁ゲーム数上乗せ濃厚パターンだ。</p>
-<h4><span id="i-117">前兆の王道パターン</span></h4>
+<h4>前兆の王道パターン</h4>
 <table>
 <thead>
 <tr>
@@ -4021,7 +4515,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-118">パターン別の本前兆期待度</span></h4>
+<h4>パターン別の本前兆期待度</h4>
 <table>
 <thead>
 <tr>
@@ -4070,7 +4564,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="1G">前兆発生契機の演出別期待度（1G目の演出）</span></h4>
+<h4>前兆発生契機の演出別期待度（1G目の演出）</h4>
 <table>
 <thead>
 <tr>
@@ -4130,7 +4624,7 @@
 <p>［レア役煽り②］ 通信に応答するパイロットのセリフが赤文字なら強パターン。</p>
 <p>［レア役煽り③］ 赤セリフなら強パターンとなる。</p>
 <p>【革命の剣煽り】</p>
-<h4><span id="i-119">革命の剣煽りパターン別の本前兆期待度</span></h4>
+<h4>革命の剣煽りパターン別の本前兆期待度</h4>
 <table>
 <thead>
 <tr>
@@ -4186,10 +4680,10 @@
 <p>演出なしでルーン2個以上停止（レア役ナビも演出に含む）</p>
 <p>［革命の剣煽りの赤満月］</p>
 <p>［激熱］</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-120">ハラキリチャレンジ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-121">ハラキリチャレンジの告知モード</span></h4>
+<h3>ハラキリチャレンジ</h3>
+<h4>ハラキリチャレンジの告知モード</h4>
 <p>ハラキリチャレンジ開始画面では十字キー（上下）で4種類の告知モードを選択可能。消化中も十字キーの上or下を長押しすれば変更できる。</p>
-<h4><span id="i-122">告知モード</span></h4>
+<h4>告知モード</h4>
 <table>
 <thead>
 <tr>
@@ -4214,7 +4708,7 @@
 </table>
 <p>※違和感アップモードは上位AT時のみ選択可能</p>
 <p>違和感は2つ発生すればハラキリドライブ濃厚だ。</p>
-<h4><span id="i-123">告知モードごとの詳細法則</span></h4>
+<h4>告知モードごとの詳細法則</h4>
 <table>
 <thead>
 <tr>
@@ -4243,7 +4737,7 @@
 </table>
 <p>※F…フラッシュ</p>
 <p>［ピノフラッシュ］</p>
-<h4><span id="i-124">違和感パターン一覧</span></h4>
+<h4>違和感パターン一覧</h4>
 <p>継続以上濃厚</p>
 <p>BGM停止</p>
 <p>下パネル消灯</p>
@@ -4312,7 +4806,7 @@
 <p>［DRIVE文字］ 通常はLASTと表示されるところがDRIVEに変化する。</p>
 <p>［夢夢ちゃんピース］</p>
 <p>［ミニキャラ群］</p>
-<h4><span id="i-125">ブラックアウト後のハラキリドライブ濃厚パターン</span></h4>
+<h4>ブラックアウト後のハラキリドライブ濃厚パターン</h4>
 <table>
 <thead>
 <tr>
@@ -4337,17 +4831,17 @@
 </table>
 <p>継続濃厚時のブラックアウト後の展開でハラキリドライブ濃厚となるパターンが存在する。</p>
 <p>［虹色の斬撃］</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-126">ハラキリドライブ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-127">究極ハラキリチャレンジ濃厚パターン</span></h4>
+<h3>ハラキリドライブ</h3>
+<h4>究極ハラキリチャレンジ濃厚パターン</h4>
 <p>通常はここでカスタムウインドウが表示！</p>
 <p>超ハラキリチャレンジ開始画面で、リール下部に演出モードの選択肢（カスタムウインドウ）が出ていなければ究極ハラキリドライブ濃厚。 画面が斬り裂かれて、究極のタイトルが表示されたあとに選択肢が表示される。</p>
-<h4><span id="100G">＋100G濃厚パターン</span></h4>
+<h4>＋100G濃厚パターン</h4>
 <p>49Gから50Gに上がる間のスローモーション煽りで 「ダメだ、コントロールが！」のボイスが発生</p>
 <p>通常は49Gから50Gに上がる間にスローモーション煽りになるが 48Gからスローモーション煽りが発生</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-128">裏ボタン</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-129">決戦ボーナス中のフルナビ告知</span></h4>
+<h3>裏ボタン</h3>
+<h4>決戦ボーナス中のフルナビ告知</h4>
 <p>ナビ煽り中にPUSHボタンを押して、筐体の右看板部分が発光すればフルナビが発生。 フルナビが発生してミッションを突破する時にのみ有効となる裏ボタンなので、フルナビが出てもミッション突破が確定しない時は無効になる。</p>
-<h4><span id="i-130">裏ボタン手順＆効果</span></h4>
+<h4>裏ボタン手順＆効果</h4>
 <table>
 <thead>
 <tr>
@@ -4365,9 +4859,9 @@
 <p>裏ボタンが無効となる状況</p>
 <p>ラスト2Gかつ表示上の残りベル回数が３回以上の場合</p>
 <p>ラスト1Gかつ表示上の残りベル回数が2回以上の場合</p>
-<h4><span id="i-131">革命ボーナス中のホールド告知</span></h4>
+<h4>革命ボーナス中のホールド告知</h4>
 <p>ルーン1個or2個停止時の第3停止後にPUSHボタンを押して、筐体の右看板がフラッシュすればホールド当選濃厚。 白発光なら1個以上、赤発光なら2個ストック濃厚だ。</p>
-<h4><span id="i-132">裏ボタン手順＆効果</span></h4>
+<h4>裏ボタン手順＆効果</h4>
 <table>
 <thead>
 <tr>
@@ -4390,9 +4884,9 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="100G-2">ハラキリドライブ中の＋100G濃厚告知</span></h4>
+<h4>ハラキリドライブ中の＋100G濃厚告知</h4>
 <p>49Gから50Gに上がる時のスローモーション煽り中にボタンをPUSHしてピノ看板がフラッシュすれば＋100G以上濃厚となる。</p>
-<h4><span id="i-133">ハラキリドライブ中の裏ボタン</span></h4>
+<h4>ハラキリドライブ中の裏ボタン</h4>
 <table>
 <thead>
 <tr>
@@ -4418,16 +4912,30 @@
 <td>＋100G以上時の約50%でピノ看板発光</td>
 </tr>
 </tbody>
-</table>
-<div class="post-views content-post post-2168 entry-meta load-static">
-				<span class="post-views-icon dashicons dashicons-chart-bar"></span> <span class="post-views-label">Post Views:</span> <span class="post-views-count">4,370</span>
-			</div></div></details></div></details>
-            </div>
-
-            <!-- 目次ハンバーガー（右下固定・常時）。中身はJSがセクションから生成 --></section>
+</table></section>
   
   
   </article></main>
 <footer class="foot">個人アーカイブ（suroschool.jp / たかどらのスロ塾 会員コンテンツ）・閲覧用</footer>
+
+<!-- スマホ用ボトムナビ（スクロールで隠れる/出る） -->
+<nav class="botnav" id="botnav">
+  <a href="../index.html" data-nav="index">🎰<span>機種</span></a>
+  <button id="searchOpen2">🔍<span>検索</span></button>
+  <a href="../index.html?fav=1">★<span>お気に入り</span></a>
+  <a href="../news.html">📰<span>お知らせ</span></a>
+  <a href="../tool.html">🧮<span>期待値</span></a>
+</nav>
+
+<!-- 全ページ横断の検索オーバーレイ -->
+<div class="search-overlay" id="searchOverlay" hidden>
+  <div class="search-head">
+    <input id="globalSearch" type="search" placeholder="機種名で検索…" autocomplete="off">
+    <button id="searchClose" aria-label="閉じる">✕</button>
+  </div>
+  <div id="searchResults" class="search-results"></div>
+</div>
+
+<script src="../assets/search-index.js"></script>
 <script src="../assets/app.js"></script>
 </body></html>

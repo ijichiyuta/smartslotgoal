@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="ja"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>咲‐Saki‐ 頂上決戦 | スマスロ目標 (個人アーカイブ)</title>
+<title>咲‐Saki‐ 頂上決戦 | スマスロ期待値 (個人アーカイブ)</title>
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="manifest" href="../manifest.webmanifest">
 <meta name="theme-color" content="#ffffff">
@@ -10,16 +10,18 @@
 <link rel="apple-touch-icon" href="../assets/icon.svg">
 <link rel="icon" href="../assets/icon.svg">
 <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){})});}</script>
+<script>window.__ROOT__='../';</script>
 
 </head><body>
-<header class="topbar">
-  <a class="brand" href="../index.html">🎰 スマスロ目標</a>
-  <nav>
+<header class="topbar" id="topbar">
+  <a class="brand" href="../index.html">🎰 スマスロ期待値</a>
+  <nav class="topnav">
     <a href="../index.html">機種</a>
     <a href="../news.html">お知らせ</a>
     <a href="../tool.html">期待値計算</a>
     <a href="../pages.html">資料</a>
   </nav>
+  <button class="topbar-search" id="searchOpen" aria-label="検索">🔍</button>
 </header>
 <main>
   <article class="machine">
@@ -35,30 +37,16 @@
     <button class="tab" data-tab="kaiseki">解析情報</button>
     
   </div>
-  <section class="panel is-active" data-panel="nerai"><div class="tenjo-info"><div class="my-spoiler-wrapper" id="my-spoiler-1"><div class="my-spoiler-title" style="cursor:pointer; background:rgba(245,184,0,0.08); padding:10px; border:1px solid rgba(245,184,0,0.3); color:var(--text-main); font-weight:700; letter-spacing:0.04em;"><span class="spoiler-icon" style="margin-right:5px;">[-]</span>機種情報</div><div class="my-spoiler-content" style="display:block; padding:10px; border:1px solid rgba(245,184,0,0.2); border-top:0; background:var(--bg-card-hi); color:var(--text-main);"><p>【天井情報】</p>
-<p>通常時を最大1000G＋αを消化でATに当選。</p>
-<p>設定変更時は最大600G+αに短縮。</p>
-<p>CZ本前兆中に天井到達の場合は、CZをストック。</p>
-<p>AT中駆け抜け(麻雀激闘に1度も勝利できず)後は天井が800G＋αに短縮。</p>
-<p>周期天井　</p>
-<p>最大8周期到達でCZ当選。</p>
-<p>東1局からスタートし、周期のたびに1局づつ進み南4局目で必ずCZに当選。</p>
-<p>CZ「特打」を最大6スルー後、7回目で成功濃厚のCZへ。</p>
-<p>【リセット判別】</p>
-<p>不明</p>
-<p>【有利区間について】</p>
-<p>エンディング到達で有利区間がリセットされ、「スペシャルのどっちジャッジ」で獲得した特化ゾーンからATがスタート。</p>
-</div></div></div>
+  <section class="panel is-active" data-panel="nerai"><img loading="lazy" decoding="async" width="150" height="150" src="../img/fe87ed2480357770.jpg" class="machine-thumbnail wp-post-image" alt="" style="display:block; margin:0 auto;" srcset="https://suroschool.jp/wp-content/uploads/2025/08/thumb_1-1-150x150.jpg 150w, https://suroschool.jp/wp-content/uploads/2025/08/thumb_1-1-120x120.jpg 120w" sizes="auto, (max-width: 150px) 100vw, 150px" />
 <p class="wp-block-paragraph">※周期抽選タイプのため、期待値表鵜呑みは危険。ポイント残り300ptと10ptで狙い目がかなり変わってくると思われる。</p>
 
 
 
-
-<h2 class="wp-block-heading"><span id="i">狙い目</span></h2>
-
+<h2 class="wp-block-heading">狙い目</h2>
 
 
-<h3 class="wp-block-heading"><span id="i-2">【リセット狙い】</span></h3>
+
+<h3 class="wp-block-heading">【リセット狙い】</h3>
 
 
 
@@ -66,7 +54,7 @@
 
 
 
-<h3 class="wp-block-heading"><span id="i-3">【ゲーム数天井狙い】</span></h3>
+<h3 class="wp-block-heading">【ゲーム数天井狙い】</h3>
 
 
 
@@ -78,7 +66,7 @@
 
 
 
-<h4 class="wp-block-heading"><span id="i-4">駆け抜け後以外　</span></h4>
+<h4 class="wp-block-heading">駆け抜け後以外　</h4>
 
 
 
@@ -86,7 +74,7 @@
 
 
 
-<h4 class="wp-block-heading"><span id="i-5">駆け抜け後　</span></h4>
+<h4 class="wp-block-heading">駆け抜け後　</h4>
 
 
 
@@ -98,7 +86,7 @@
 
 
 
-<h3 class="wp-block-heading"><span id="i-6">【周期別天井狙い】</span></h3>
+<h3 class="wp-block-heading">【周期別天井狙い】</h3>
 
 
 
@@ -142,11 +130,11 @@
 
 
 
-<figure class="wp-block-image size-full"><img width="534" height="882" src="../img/59f974809fe04a19.png" alt="" class="wp-image-1949" decoding="async" sizes="auto, (max-width: 534px) 100vw, 534px"></figure>
+<figure class="wp-block-image size-full"><img width="534" height="882" src="../img/59f974809fe04a19.png" alt="" class="wp-image-1949"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/08/modedakisa-1.png 534w, https://suroschool.jp/wp-content/uploads/2025/08/modedakisa-1-182x300.png 182w" sizes="auto, (max-width: 534px) 100vw, 534px" /></figure>
 
 
 
-<h3 class="wp-block-heading"><span id="i-7">【ライバルモード狙い】</span></h3>
+<h3 class="wp-block-heading">【ライバルモード狙い】</h3>
 
 
 
@@ -162,7 +150,7 @@
 
 
 
-<h4 class="wp-block-heading"><span id="i-8">各ライバルモードの狙い目（暫定）</span></h4>
+<h4 class="wp-block-heading">各ライバルモードの狙い目（暫定）</h4>
 
 
 
@@ -190,11 +178,11 @@
 
 
 
-<figure class="wp-block-image size-full"><img width="709" height="859" src="../img/a5137b2920cdd328.png" alt="" class="wp-image-1849" decoding="async" sizes="auto, (max-width: 709px) 100vw, 709px"></figure>
+<figure class="wp-block-image size-full"><img width="709" height="859" src="../img/a5137b2920cdd328.png" alt="" class="wp-image-1849"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/08/raiabrumodesaki.png 709w, https://suroschool.jp/wp-content/uploads/2025/08/raiabrumodesaki-248x300.png 248w" sizes="auto, (max-width: 709px) 100vw, 709px" /></figure>
 
 
 
-<h3 class="wp-block-heading"><span id="i-9">【有利区間関連狙い】</span></h3>
+<h3 class="wp-block-heading">【有利区間関連狙い】</h3>
 
 
 
@@ -206,7 +194,7 @@
 
 
 
-<h3 class="wp-block-heading"><span id="i-10">【示唆等での押し引き】</span></h3>
+<h3 class="wp-block-heading">【示唆等での押し引き】</h3>
 
 
 
@@ -214,11 +202,11 @@
 
 
 
-<figure class="wp-block-image size-full is-resized"><img width="707" height="708" src="../img/62daf79684855324.webp" alt="" class="wp-image-1961" style="width:304px;height:auto" decoding="async" sizes="auto, (max-width: 707px) 100vw, 707px"></figure>
+<figure class="wp-block-image size-full is-resized"><img width="707" height="708" src="../img/62daf79684855324.webp" alt="" class="wp-image-1961" style="width:304px;height:auto"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/08/78A11C09-74A0-4AB8-B26C-C07AEEC9C313.webp 707w, https://suroschool.jp/wp-content/uploads/2025/08/78A11C09-74A0-4AB8-B26C-C07AEEC9C313-300x300.webp 300w, https://suroschool.jp/wp-content/uploads/2025/08/78A11C09-74A0-4AB8-B26C-C07AEEC9C313-150x150.webp 150w, https://suroschool.jp/wp-content/uploads/2025/08/78A11C09-74A0-4AB8-B26C-C07AEEC9C313-120x120.webp 120w" sizes="auto, (max-width: 707px) 100vw, 707px" /></figure>
 
 
 
-<h2 class="wp-block-heading"><span id="i-11">やめ時</span></h2>
+<h2 class="wp-block-heading">やめ時</h2>
 
 
 
@@ -230,39 +218,39 @@
 
 
 
-<h2 class="wp-block-heading"><span id="i-12">その他</span></h2>
+<h2 class="wp-block-heading">その他</h2>
 
 
 
-<h4 class="wp-block-heading"><span id="i-13">履歴</span></h4>
+<h4 class="wp-block-heading">履歴</h4>
 
 
 
-<figure class="wp-block-image size-full"><img width="769" height="839" src="../img/8a59c675f70a9ede.png" alt="" class="wp-image-1885" decoding="async" sizes="auto, (max-width: 769px) 100vw, 769px"></figure>
+<figure class="wp-block-image size-full"><img width="769" height="839" src="../img/8a59c675f70a9ede.png" alt="" class="wp-image-1885"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/08/sakirireki.png 769w, https://suroschool.jp/wp-content/uploads/2025/08/sakirireki-275x300.png 275w" sizes="auto, (max-width: 769px) 100vw, 769px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="472" height="839" src="../img/8b85cc26e5dcb2b5.png" alt="" class="wp-image-1850" decoding="async" sizes="auto, (max-width: 472px) 100vw, 472px"></figure>
+<figure class="wp-block-image size-full"><img width="472" height="839" src="../img/8b85cc26e5dcb2b5.png" alt="" class="wp-image-1850"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/08/stasaki.png 472w, https://suroschool.jp/wp-content/uploads/2025/08/stasaki-169x300.png 169w" sizes="auto, (max-width: 472px) 100vw, 472px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="717" height="476" src="../img/6bb3b7d450020319.png" alt="" class="wp-image-1851" decoding="async" sizes="auto, (max-width: 717px) 100vw, 717px"></figure>
+<figure class="wp-block-image size-full"><img width="717" height="476" src="../img/6bb3b7d450020319.png" alt="" class="wp-image-1851"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/08/modesaki.png 717w, https://suroschool.jp/wp-content/uploads/2025/08/modesaki-300x199.png 300w" sizes="auto, (max-width: 717px) 100vw, 717px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="717" height="804" src="../img/2fb2dc19ac29809c.png" alt="" class="wp-image-1854" decoding="async" sizes="auto, (max-width: 717px) 100vw, 717px"></figure>
+<figure class="wp-block-image size-full"><img width="717" height="804" src="../img/2fb2dc19ac29809c.png" alt="" class="wp-image-1854"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/08/aikya.png 717w, https://suroschool.jp/wp-content/uploads/2025/08/aikya-268x300.png 268w" sizes="auto, (max-width: 717px) 100vw, 717px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="715" height="436" src="../img/f1fbb43083abf804.png" alt="" class="wp-image-1853" decoding="async" sizes="auto, (max-width: 715px) 100vw, 715px"></figure>
+<figure class="wp-block-image size-full"><img width="715" height="436" src="../img/f1fbb43083abf804.png" alt="" class="wp-image-1853"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/08/sutemo.png 715w, https://suroschool.jp/wp-content/uploads/2025/08/sutemo-300x183.png 300w" sizes="auto, (max-width: 715px) 100vw, 715px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img width="714" height="628" src="../img/9f262541b95d070e.png" alt="" class="wp-image-1917" decoding="async" sizes="auto, (max-width: 714px) 100vw, 714px"></figure>
+<figure class="wp-block-image size-full"><img width="714" height="628" src="../img/9f262541b95d070e.png" alt="" class="wp-image-1917"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/08/スクリーンショット-2025-08-12-082728.png 714w, https://suroschool.jp/wp-content/uploads/2025/08/スクリーンショット-2025-08-12-082728-300x264.png 300w" sizes="auto, (max-width: 714px) 100vw, 714px" /></figure>
 
 
 
-<h2 class="wp-block-heading"><span id="i-14">参考元</span></h2>
+<h2 class="wp-block-heading">参考元</h2>
 
 
 
@@ -279,45 +267,38 @@
 
 
 <p class="wp-block-paragraph"></p>
-<div class="post-views content-post post-1847 entry-meta load-static">
-				<span class="post-views-icon dashicons dashicons-chart-bar"></span> <span class="post-views-label">Post Views:</span> <span class="post-views-count">1,250</span>
-			</div>
-          <!-- 目次ハンバーガー（右下固定・常時）。中身はJSが見出し(h2/h3)から生成。会員ロック時は空→自動非表示 --></section>
-  <section class="panel" data-panel="kaiseki"><div class="kaiseki-toolbar">
-              
-            </div>
-            <div class="kaiseki-accordion">
-              <details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i">基本情報</span></summary><div class="kaiseki-section-body">
+</section>
+  <section class="panel" data-panel="kaiseki"><h2>基本情報</h2>
 <ul>
 <li>メーカー: 三洋</li>
 <li>機械割: 97.6% 〜 114.9%</li>
 <li>導入開始日: 2025年08月04日（月）</li>
 <li>ゲーム性概要: ●通常時は規定ポイントを減算することでCZ抽選をおこなう周期抽選タイプ ●AT当選のメイン契機はCZ ●AT「頂上決戦」は純増約4.5枚/Gのゲーム数管理型 ●AT中は麻雀激闘勝利で上乗せor特化ゾーンを獲得 ●報酬の一部で突入するおーるすたぁラッシュはボーナスとのループ型AT ●おーるすたぁラッシュ終了後は頂上決戦へ復帰</li>
 </ul>
-<p><img alt="L咲-Saki- 頂上決戦（パチスロ）のリール配列" src="https://p-town.dmm.com/upload/machines/4834/reel.jpg?t=1779358743" decoding="async"></p>
-<p><img alt="L咲-Saki- 頂上決戦（パチスロ）のゲームフロー" src="https://p-town.dmm.com/upload/machines/4834/flow.jpg?t=1779358743" decoding="async"></p>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-2">打ち方</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-3">打ち方・小役</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="BAR">左リールBAR狙い（小役狙い）</span></h4>
+<p><img alt="L咲-Saki- 頂上決戦（パチスロ）のリール配列" src="https://p-town.dmm.com/upload/machines/4834/reel.jpg?t=1779358743"></p>
+<p><img alt="L咲-Saki- 頂上決戦（パチスロ）のゲームフロー" src="https://p-town.dmm.com/upload/machines/4834/flow.jpg?t=1779358743"></p>
+<h2>打ち方</h2>
+<h3>打ち方・小役</h3>
+<h4>左リールBAR狙い（小役狙い）</h4>
 <p>「最初に狙う絵柄」 左リールにBARを狙う。スイカが上段までスベった時以外、中＆右リールはフリー打ちでOKだ。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ左リールBAR狙い打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-01-01.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロ左リールBAR狙い打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-01-01.jpg"></p>
 <p>「スイカ停止時」 中リールに赤7 or BARを目安にスイカを狙う。右リールはこぼしがないのでフリー打ちでOK。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ左リールBAR狙い打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-01-02.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロ左リールBAR狙い打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-01-02.jpg"></p>
 <p>「小役の停止形」</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ左リールBAR狙い打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-01-03.jpg" decoding="async"></p>
-<h4><span id="7">左リール白7狙い（小役狙い）</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロ左リールBAR狙い打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-01-03.jpg"></p>
+<h4>左リール白7狙い（小役狙い）</h4>
 <p>「最初に狙う絵柄」 小役1確目を出せるので、CZ中など、小役揃いが重要となる場面では左リール枠上白7狙いもオススメだ。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ左リール白7狙い打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-02-01.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロ左リール白7狙い打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-02-01.jpg"></p>
 <p>「スイカ上＆中段停止時」 下段ベル（共通1枚ベル）orスイカorチャンス目。中リールにスイカを狙い、右リールはフリー打ちでOK。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ左リール白7狙い打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-02-02.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロ左リール白7狙い打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-02-02.jpg"></p>
 <p>「白7中段停止時」 弱チェリーor強チェリーorリプレイ。 リプレイ否定でチェリー。出目では弱チェリーと強チェリーを判別できないため、第3停止後の効果音やリールバックライトフラッシュの強弱等で判別しよう。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ左リール白7狙い打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-02-03.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロ左リール白7狙い打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-02-03.jpg"></p>
 <p>「白7下段停止時」 ハズレ（1枚役）orリプレイor上段ベル（共通or押し順ベル）orチャンス目。 小Vベル停止でチャンス目。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ左リール白7狙い打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-02-04.jpg" decoding="async"></p>
-<h4><span id="NG">変則押しはNG</span></h4>
-<p><img alt="L咲-Saki-頂上決戦スマスロ変則押し" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0728/0728-12-01.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロ左リール白7狙い打ち方" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-02-04.jpg"></p>
+<h4>変則押しはNG</h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロ変則押し" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0728/0728-12-01.jpg"></p>
 <p>通常時は左リール第1停止での消化を推奨する。</p>
-<h4><span id="i-4">押し順ナビの発生箇所＆発生確率</span></h4>
+<h4>押し順ナビの発生箇所＆発生確率</h4>
 <table>
 <thead>
 <tr>
@@ -384,10 +365,10 @@
 </tr>
 </tbody>
 </table>
-<p>特打中の押し順ナビ発生は一度だけだが、地獄の特打ではベル成立時の1/4で押し順が発生するため、クリア期待度がアップ。 AT中はもちろんフルナビで、特化ゾーン中などはナビ発生率が低下する。</p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-5">解析情報通常時</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-6">小役関連</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-7">小役確率</span></h4>
+<p>特打中の押し順ナビ発生は一度だけだが、地獄の特打ではベル成立時の1/4で押し順が発生するため、クリア期待度がアップ。 AT中はもちろんフルナビで、特化ゾーン中などはナビ発生率が低下する。</p>
+<h2>解析情報通常時</h2>
+<h3>小役関連</h3>
+<h4>小役確率</h4>
 <table>
 <thead>
 <tr>
@@ -443,8 +424,8 @@
 </tbody>
 </table>
 <p>上段7枚ベルは上段揃いの共通7枚ベルと押し順ベルの一部で揃うベルの合算値で、上段7枚の共通ベル確率は1/99.9。通常時は判別できないが、AT中はナビなしの上段ベル＝共通7枚ベルになる。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-8">モード</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-9">ライバルモード性能</span></h4>
+<h3>モード</h3>
+<h4>ライバルモード性能</h4>
 <table>
 <thead>
 <tr>
@@ -477,10 +458,10 @@
 </table>
 <p>通常時はCZ当選期待度の異なる5つのライバルモードが存在。ステージチェンジ時のアイキャッチなどに滞在モード示唆パターンがある。 複数のライバルモードが複合する可能性もあり、ステルスモモモード（AT後の引き戻し抽選に当選）はループ性を持っている。</p>
 <p>［ライバルアイコン］ ライバルモードを示唆するアイキャッチ発生後は液晶左上にアイコンが出現。出現しているアイコンに対応したライバルモード滞在が濃厚となる（加治木なら加治木モードなど）。 アイコンは最大3つまで出現する可能性あり。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロライバルモード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-05-02.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロライバルモード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-05-02.jpg"></p>
 <p>［ステルスモモモード示唆］ モモのアイキャッチ発生後は液晶右下のゲーム数カウンタ部分にモモのエフェクトが出現し、ステルスモモモード滞在を示唆する。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロライバルモード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-05-03.jpg" decoding="async"></p>
-<h4><span id="CZ">通常モードごとのCZ天井周期</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロライバルモード" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-05-03.jpg"></p>
+<h4>通常モードごとのCZ天井周期</h4>
 <table>
 <thead>
 <tr>
@@ -509,7 +490,7 @@
 </table>
 <p>※AT後1周期目はモード不問で約50%でCZに当選</p>
 <p>特打（CZ）の天井周期や特打レベル（目標点数）が異なる4種類の内部モードが存在。 モードは設定変更時とAT終了時に抽選され、高設定ほど良いモードが選択されやすい。</p>
-<h4><span id="i-10">通常モードごとのゾーン期待度</span></h4>
+<h4>通常モードごとのゾーン期待度</h4>
 <table>
 <thead>
 <tr>
@@ -580,7 +561,7 @@
 </tbody>
 </table>
 <p>※期待度 ×…10.0%以下、△…12.5～20.0%、◯25.0～40.0%、◎…50.0%以上</p>
-<h4><span id="1">通常モード振り分け（設定1）</span></h4>
+<h4>通常モード振り分け（設定1）</h4>
 <table>
 <thead>
 <tr>
@@ -607,7 +588,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-11">ステルスモモモード当選率＆ループ率</span></h4>
+<h4>ステルスモモモード当選率＆ループ率</h4>
 <table>
 <thead>
 <tr>
@@ -627,11 +608,11 @@
 </tbody>
 </table>
 <p>有利区間移行時・CZ失敗時・AT終了時にステルスモモモードへの移行を抽選。ステルスモモモード滞在中のAT終了後は、50%で同モードがループする。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-12">周期ポイント</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-13">周期ポイント概要</span></h4>
+<h3>周期ポイント</h3>
+<h4>周期ポイント概要</h4>
 <p>通常時は毎ゲーム、液晶左下のポイントを減算していき、0になるとCZを抽選。周期は東1局〜南4局までの8周期で、8周期目はCZ当選濃厚だ。 上段ベルの一部で（超）ポイ活や部長命令が発動することもある。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ周期" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-04-01.jpg" decoding="async"></p>
-<h4><span id="i-14">周期ポイント性能</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロ周期" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-04-01.jpg"></p>
+<h4>周期ポイント性能</h4>
 <table>
 <thead>
 <tr>
@@ -664,8 +645,8 @@
 </table>
 <p>AT後1周期目のCZ当選期待度は50%と高めだ。</p>
 <p>「（超）ポイ活」</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロポイ活" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-04-03.jpg" decoding="async"></p>
-<h4><span id="i-15">（超）ポイ活</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロポイ活" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-04-03.jpg"></p>
+<h4>（超）ポイ活</h4>
 <table>
 <thead>
 <tr>
@@ -686,8 +667,8 @@
 </table>
 <p>10G数間、ポイント減算性能が大幅にアップ。 AT終了後は必ずポイ活からスタート、咲メーターが8個以上貯まっていた場合は超ポイ活からスタートする。</p>
 <p>「部長命令」 15G以内に指定された小役を引けば300ptが減算されるので、強制的に周期到達となる。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ部長命令" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-04-05.jpg" decoding="async"></p>
-<h4><span id="i-16">成立役ごとの減算ポイント</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロ部長命令" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-04-05.jpg"></p>
+<h4>成立役ごとの減算ポイント</h4>
 <table>
 <thead>
 <tr>
@@ -714,7 +695,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-17">小役別・減算ポイント振り分け</span></h4>
+<h4>小役別・減算ポイント振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -875,7 +856,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="or">上段ベル時の（超）ポイ活or部長命令当選率</span></h4>
+<h4>上段ベル時の（超）ポイ活or部長命令当選率</h4>
 <table>
 <thead>
 <tr>
@@ -895,7 +876,7 @@
 </tbody>
 </table>
 <p>上段ベル成立時は上記の当選率でポイ活か部長命令に当選する。</p>
-<h4><span id="i-18">（超）ポイ活・部長命令の当選率詳細</span></h4>
+<h4>（超）ポイ活・部長命令の当選率詳細</h4>
 <table>
 <thead>
 <tr>
@@ -947,11 +928,11 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="CZ-2">特打（CZ）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="CZ-3">CZ概要</span></h4>
+<h3>特打（CZ）</h3>
+<h4>CZ概要</h4>
 <p>7GのST型CZで、消化中は小役入賞で点数を獲得していき、規定の点数に到達すればAT当選濃厚、非到達で終わった場合でも獲得した点数に応じてATを抽選。 規定点数に到達した際の一部で突入する地獄の特打に成功すれば、上位特化ゾーンからスタートする。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ特打CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-09-01.jpg" decoding="async"></p>
-<h4><span id="i-19">特打性能</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロ特打CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-09-01.jpg"></p>
+<h4>特打性能</h4>
 <table>
 <thead>
 <tr>
@@ -982,7 +963,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="CZ-4">CZ確率</span></h4>
+<h4>CZ確率</h4>
 <table>
 <thead>
 <tr>
@@ -1018,9 +999,9 @@
 </tbody>
 </table>
 <p>「点数獲得」 目標の点数は32000・24000・16000の3パターンで、レア役なら大きな点数の期待度がアップ。 STの1G目（2G連続での小役入賞時）に小役を引くと、一発が付いて1000点増える。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ特打CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-09-03.jpg" decoding="async"></p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ特打CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-09-04.jpg" decoding="async"></p>
-<h4><span id="i-20">残り点数ごとのメーター色</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロ特打CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-09-03.jpg"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロ特打CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-09-04.jpg"></p>
+<h4>残り点数ごとのメーター色</h4>
 <table>
 <thead>
 <tr>
@@ -1058,10 +1039,10 @@
 </tbody>
 </table>
 <p>「目標非到達時のAT抽選」 獲得した点数ごとに中央の点数表示の色が青＜黄＜緑＜赤と進行。基本的に、青・黄で終了した場合は連続演出（5〜6G）に発展してATの当否を告知、緑・赤まで進んだ場合は前兆の清澄トライアル（11〜17G）を経由した連続演出でATの当否が告知される。 点数表示が緑or赤で連続演出（県予選決勝）に発展した場合はAT当選濃厚だ。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ特打CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-09-05.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロ特打CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-09-05.jpg"></p>
 <p>「地獄の特打」 特打で規定点数獲得後の一部で突入。AT突入はすでに確定しているが、もう一度CZをおこない、クリアできればポインとタイム親番突入、2回（特打と合わせて3回）クリアできれば宮永照覚醒へ突入する。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ特打CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-09-06.jpg" decoding="async"></p>
-<h4><span id="i-21">成立役ごとの獲得点数</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロ特打CZ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-09-06.jpg"></p>
+<h4>成立役ごとの獲得点数</h4>
 <table>
 <thead>
 <tr>
@@ -1093,7 +1074,7 @@
 </tbody>
 </table>
 <p>※一発はST1G目（CZ開始ゲームや2連続で小役入賞時に1000点を加算）</p>
-<h4><span id="i-22">レア役契機でのクリア時・地獄の特打当選率</span></h4>
+<h4>レア役契機でのクリア時・地獄の特打当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1114,7 +1095,7 @@
 </table>
 <p>※当選率は特打クリア時のもの、地獄の特打成功時の（2回目の）地獄の特打当選率は上記とは異なる</p>
 <p>特打をクリアしたタイミングで地獄の特打ちを抽選していて、レア役でクリアすれば大チャンスとなる。</p>
-<h4><span id="AT1">清澄トライアルのAT当選期待度（設定1）</span></h4>
+<h4>清澄トライアルのAT当選期待度（設定1）</h4>
 <table>
 <thead>
 <tr>
@@ -1140,8 +1121,8 @@
 <p>メーター色が緑or赤まで進んだ場合は前兆の清澄トライアル（11〜17G）を経由した連続演出でATの当否を告知。</p>
 <p>CZ後の連続演出中（清澄トライアル経由・非経由共通）のレア役では、AT非当選時はATへの書き換えを、AT当選時はポインとタイム親番への昇格を抽選する。</p>
 <p>［タイトル背景］ 緑メーターからは緑背景の清澄トライアルへ発展するのがデフォルト、赤背景だったらAT濃厚となる（赤メーターからは赤背景がデフォルト）。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ清澄トライアルの色" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0818/0818-02-02.jpg" decoding="async"></p>
-<h4><span id="i-23">小役別・獲得点数</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロ清澄トライアルの色" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0818/0818-02-02.jpg"></p>
+<h4>小役別・獲得点数</h4>
 <table>
 <thead>
 <tr>
@@ -1220,7 +1201,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-24">特打レベル振り分け</span></h4>
+<h4>特打レベル振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1244,8 +1225,8 @@
 </tbody>
 </table>
 <p>有利期間移行時・特打失敗時・AT終了時に、次回の特打レベルを抽選する。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="CZAT">CZ・AT当選率</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="CZ-5">CZ直撃当選率</span></h4>
+<h3>CZ・AT当選率</h3>
+<h4>CZ直撃当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1272,13 +1253,13 @@
 </tr>
 </tbody>
 </table>
-<p>CZ終了後のジャッジ演出中（AT非当選時）も、同様の数値でCZ抽選がおこなわれる。</p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-25">解析情報ボーナス時</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-26">ポインとタイム（親番）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-27">ポインとタイム概要</span></h4>
+<p>CZ終了後のジャッジ演出中（AT非当選時）も、同様の数値でCZ抽選がおこなわれる。</p>
+<h2>解析情報ボーナス時</h2>
+<h3>ポインとタイム（親番）</h3>
+<h4>ポインとタイム概要</h4>
 <p>AT初当り時はおもにポインとタイムで初期ゲーム数を決定。AT中も麻雀激闘勝利時の報酬の一部で突入する。 10G＋α間、狙えカットイン発生時にポイン目が止まれば上乗せ濃厚で、上乗せ時にポインフリーズが発生すれば上乗せゲーム数が倍化。 上位版のポインとタイム親番は継続ゲーム数が15G＋αに増えているだけでなく、ポイン目停止時に必ずポインフリーズが発生するので、上乗せ期待度が高い。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロポインとタイム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-11-01.jpg" decoding="async"></p>
-<h4><span id="i-28">ポインとタイム性能</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロポインとタイム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-11-01.jpg"></p>
+<h4>ポインとタイム性能</h4>
 <table>
 <thead>
 <tr>
@@ -1309,7 +1290,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-29">ポインとタイム親番性能</span></h4>
+<h4>ポインとタイム親番性能</h4>
 <table>
 <thead>
 <tr>
@@ -1337,12 +1318,12 @@
 </tbody>
 </table>
 <p>「狙えカットイン」 中リールに和絵柄が止まればポイン目、左右リールの中段に7orBARorブランクが止まると強ポイン目。ポインとタイム中のポイン目停止時は約40%でポインフリーズが発生する（1回目のポイン目・強ポイン目・内部的に強レア役が成立していた場合はポインフリーズ濃厚）。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロポインとタイム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-11-03.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロポインとタイム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-11-03.jpg"></p>
 <p>「ポインフリーズ」 ポイン目が止まった後のレバーONでリールが逆回転すれば、上乗せゲーム数が倍化。1回発生で2倍、2回発生で3倍というように、最大で10倍まで上乗せする可能性がある。 初回のポイン目停止時や強ポイン目はポインフリーズ発生濃厚だ。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロポインとタイム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-11-04.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロポインとタイム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-11-04.jpg"></p>
 <p>「ポインとタイム親番」</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロポインとタイム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-11-05.jpg" decoding="async"></p>
-<h4><span id="i-30">ポイン目停止時の上乗せゲーム数振り分け</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロポインとタイム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-11-05.jpg"></p>
+<h4>ポイン目停止時の上乗せゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1369,7 +1350,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-31">上乗せ時・ポインフリーズ発生率</span></h4>
+<h4>上乗せ時・ポインフリーズ発生率</h4>
 <table>
 <thead>
 <tr>
@@ -1389,7 +1370,7 @@
 </tbody>
 </table>
 <p>ポイン目契機での上乗せ後は約40%でポインフリーズが発生。ポインフリーズ当選時に上乗せを何倍にするか（最大10倍）も決まっている。 初回上乗せ時・ポインとタイム親番中・内部的に強レア役が成立していた場合はポインフリーズ発生濃厚だ。</p>
-<h4><span id="i-32">ポインとタイムの種別振り分け</span></h4>
+<h4>ポインとタイムの種別振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1409,11 +1390,11 @@
 </tbody>
 </table>
 <p>通常時の天井到達時・CZ成功時にポインとタイムの種別を抽選しているので、地獄の特打をクリアしなくてもポインとタイム親番へ突入する可能性はある。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="AT">頂上決戦（AT）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="AT-2">AT概要</span></h4>
+<h3>頂上決戦（AT）</h3>
+<h4>AT概要</h4>
 <p>ゲーム数上乗せ型のAT。消化中はレア役などでゲーム数上乗せと麻雀激闘を抽選していて、麻雀激闘に勝利するとゲーム数上乗せや特化ゾーンを獲得できる。 右下がりベルや下段ベルの一部でキャラ能力が発動すれば、各種抽選が優遇される。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ頂上決戦" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-12-01.jpg" decoding="async"></p>
-<h4><span id="i-33">頂上決戦性能</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロ頂上決戦" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-12-01.jpg"></p>
+<h4>頂上決戦性能</h4>
 <table>
 <thead>
 <tr>
@@ -1441,8 +1422,8 @@
 </tbody>
 </table>
 <p>「咲メーター」 AT開始時は5pt貯まった状態からスタート。リプレイが成立するごとに液晶左側のメーターにポイントを蓄積していき、10pt貯まると麻雀激闘を抽選する。ポイントの獲得契機はおもにリプレイだが、まこのキャラ能力発動中はベルでもポイントを獲得できる。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ頂上決戦" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-12-03.jpg" decoding="async"></p>
-<h4><span id="i-34">キャラごとの恩恵</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロ頂上決戦" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-12-03.jpg"></p>
+<h4>キャラごとの恩恵</h4>
 <table>
 <thead>
 <tr>
@@ -1477,7 +1458,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="1-2">［1枚ベル］キャラ能力発動時の振り分け</span></h4>
+<h4>［1枚ベル］キャラ能力発動時の振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1514,19 +1495,19 @@
 </table>
 <p>1枚ベル（右下がりベル）でキャラ能力が発動し、キャラに応じたさまざまな抽選が優遇される。 キャラ能力発動中に1枚ベルを引いてもゲーム数が延長されたり複数のキャラ能力が重複することはない。</p>
 <p>［優希］</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ頂上決戦キャラ能力" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-12-05.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロ頂上決戦キャラ能力" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-12-05.jpg"></p>
 <p>［まこ］</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ頂上決戦キャラ能力" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-12-06.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロ頂上決戦キャラ能力" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-12-06.jpg"></p>
 <p>［久］</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ頂上決戦キャラ能力" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-12-07.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロ頂上決戦キャラ能力" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-12-07.jpg"></p>
 <p>［和］</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ頂上決戦キャラ能力" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-12-08.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロ頂上決戦キャラ能力" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-12-08.jpg"></p>
 <p>AT中のポイン目停止時も、ポインフリーズが発生する可能性あり。</p>
 <p>［場の支配］</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ頂上決戦キャラ能力" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-12-09.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロ頂上決戦キャラ能力" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-12-09.jpg"></p>
 <p>［のどっち降臨］</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ頂上決戦キャラ能力" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-12-10.jpg" decoding="async"></p>
-<h4><span id="i-35">［リプレイ］加算咲メーター個数振り分け</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロ頂上決戦キャラ能力" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-12-10.jpg"></p>
+<h4>［リプレイ］加算咲メーター個数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1558,7 +1539,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-36">［ベル］咲メーター加算当選率</span></h4>
+<h4>［ベル］咲メーター加算当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1573,7 +1554,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="10">咲メーター10個獲得時・麻雀激闘当選率</span></h4>
+<h4>咲メーター10個獲得時・麻雀激闘当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1593,11 +1574,11 @@
 </tbody>
 </table>
 <p>場の支配発動中に咲メーター契機で麻雀激闘に当選した場合は、大将戦濃厚だ。</p>
-<h4><span id="i-37">スペシャルのどっちジャッジ</span></h4>
+<h4>スペシャルのどっちジャッジ</h4>
 <p>有利区間リセット時はスペシャルのどっちジャッジへ突入し、ポインとタイム親番or宮永照覚醒のいずれかを経由してATへ復帰。有利区間リセット時以外にも、差枚数がプラスの状態で当選したAT開始時にスペシャルのどっちジャッジへ突入する可能性がある。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロスペシャルのどっちジャッジ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0811/0811-01-01.jpg" decoding="async"></p>
-<p><img alt="L咲-Saki-頂上決戦スマスロスペシャルのどっちジャッジ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0811/0811-01-02.jpg" decoding="async"></p>
-<h4><span id="i-38">恩恵振り分け</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロスペシャルのどっちジャッジ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0811/0811-01-01.jpg"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロスペシャルのどっちジャッジ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0811/0811-01-02.jpg"></p>
+<h4>恩恵振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1617,7 +1598,7 @@
 </tbody>
 </table>
 <p>レア役成立時は宮永照覚醒への昇格濃厚だ。</p>
-<h4><span id="i-39">宮永照覚醒への昇格率</span></h4>
+<h4>宮永照覚醒への昇格率</h4>
 <table>
 <thead>
 <tr>
@@ -1640,7 +1621,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="AT-3">AT中のゲーム数上乗せ当選率</span></h4>
+<h4>AT中のゲーム数上乗せ当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1697,7 +1678,7 @@
 </tbody>
 </table>
 <p>1契機の上乗せゲーム数は10〜100G。 ポインとタイム中と同様に、ポイン目停止時はポインフリーズ抽選がおこなわれる（強ポイン目はポインフリーズ濃厚）。</p>
-<h4><span id="i-40">［キャラ能力非発動中］麻雀激闘当選率</span></h4>
+<h4>［キャラ能力非発動中］麻雀激闘当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1725,7 +1706,7 @@
 </tbody>
 </table>
 <p>麻雀激闘は複数ストックも可能。</p>
-<h4><span id="i-41">［久のキャラ能力発動中］麻雀激闘当選率</span></h4>
+<h4>［久のキャラ能力発動中］麻雀激闘当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1758,7 +1739,7 @@
 </tbody>
 </table>
 <p>弱レア役は麻雀激闘ストック1個、強レア役は2個ストックする。</p>
-<h4><span id="i-42">［場の支配発動中］麻雀激闘当選率</span></h4>
+<h4>［場の支配発動中］麻雀激闘当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1796,7 +1777,7 @@
 </tbody>
 </table>
 <p>場の支配中の麻雀激闘は大将戦濃厚。レア役以外でもストック抽選がおこなわれるため、10Gでのストック獲得期待度は62.5%となる。</p>
-<h4><span id="i-43">［和のキャラ能力発動中］ ポイン目確率＆ポイン目停止時の平均上乗せゲーム数</span></h4>
+<h4>［和のキャラ能力発動中］ ポイン目確率＆ポイン目停止時の平均上乗せゲーム数</h4>
 <table>
 <thead>
 <tr>
@@ -1824,7 +1805,7 @@
 </tbody>
 </table>
 <p>※平均上乗せはポインフリーズ発生を加味した数値</p>
-<h4><span id="i-44">［のどっち降臨発動中］ ポイン目確率＆ポイン目停止時の平均上乗せゲーム数</span></h4>
+<h4>［のどっち降臨発動中］ ポイン目確率＆ポイン目停止時の平均上乗せゲーム数</h4>
 <table>
 <thead>
 <tr>
@@ -1852,7 +1833,7 @@
 </tbody>
 </table>
 <p>※平均上乗せはポインフリーズ発生を加味した数値</p>
-<h4><span id="i-45">麻雀激闘前兆ゲーム数振り分け</span></h4>
+<h4>麻雀激闘前兆ゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1902,11 +1883,11 @@
 </tbody>
 </table>
 <p>前兆は最大4Gで、当選時に勝利していた場合は25%で4Gが選択される。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-46">麻雀激闘</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-47">麻雀激闘概要</span></h4>
+<h3>麻雀激闘</h3>
+<h4>麻雀激闘概要</h4>
 <p>AT中に突入するバトル型のCZで、勝利すればゲーム数上乗せや特化ゾーンをゲット。バトルの組み合わせは5パターンあり、組み合わせ（味方キャラに応じて固定の対戦相手が登場）によって勝利期待度や勝利時の報酬の期待度が変化。5戦目は和以上、10戦目は咲（大将戦）濃厚だ。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ麻雀激闘" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-13-01.jpg" decoding="async"></p>
-<h4><span id="i-48">麻雀激闘性能</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロ麻雀激闘" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-13-01.jpg"></p>
+<h4>麻雀激闘性能</h4>
 <table>
 <thead>
 <tr>
@@ -1938,8 +1919,8 @@
 </tbody>
 </table>
 <p>「バトルの組み合わせ」 バトルによって勝利時の恩恵が変化。恩恵の昇格抽選もあるので、どの組み合わせのバトルでも特化ゾーン当選の可能性はある。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ麻雀激闘" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-13-03.jpg" decoding="async"></p>
-<h4><span id="i-49">味方キャラごとの勝利期待度</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロ麻雀激闘" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-13-03.jpg"></p>
+<h4>味方キャラごとの勝利期待度</h4>
 <table>
 <thead>
 <tr>
@@ -1971,10 +1952,10 @@
 </tbody>
 </table>
 <p>「イルミ発生でチャンス」 小役入賞時はイルミが発生して勝利期待度を示唆。赤イルミなら大チャンス！</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ麻雀激闘" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-13-05.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロ麻雀激闘" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-13-05.jpg"></p>
 <p>「報酬ジャッジ」</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ麻雀激闘" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-13-06.jpg" decoding="async"></p>
-<h4><span id="i-50">獲得できる可能性のある報酬一覧</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロ麻雀激闘" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-13-06.jpg"></p>
+<h4>獲得できる可能性のある報酬一覧</h4>
 <table>
 <thead>
 <tr>
@@ -2055,7 +2036,7 @@
 </table>
 <p>※ASラッシュ…おーるすたぁラッシュ、PT…ポインとタイム</p>
 <p>バトルの組み合わせごとに獲得できる報酬の種類は決まっている（表内の◯が獲得できる報酬）。 例えば久の場合、勝利時報酬が＋10Gだった場合、おーるすたぁラッシュ→＋100G→ポインとタイム親番→宮永照覚醒の順に昇格していく。</p>
-<h4><span id="i-51">報酬昇格抽選</span></h4>
+<h4>報酬昇格抽選</h4>
 <table>
 <thead>
 <tr>
@@ -2078,7 +2059,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-52">報酬ジャッジ時・報酬昇格率</span></h4>
+<h4>報酬ジャッジ時・報酬昇格率</h4>
 <table>
 <thead>
 <tr>
@@ -2134,7 +2115,7 @@
 </tbody>
 </table>
 <p>報酬ジャッジ中のレア役は報酬昇格濃厚、強レア役なら2段階昇格する。</p>
-<h4><span id="i-53">昇格抽選等を加味したトータルの報酬選択割合</span></h4>
+<h4>昇格抽選等を加味したトータルの報酬選択割合</h4>
 <table>
 <thead>
 <tr>
@@ -2267,9 +2248,9 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-54">麻雀激中の勝利＆報酬抽選</span></h4>
+<h4>麻雀激中の勝利＆報酬抽選</h4>
 <p>「勝利抽選」</p>
-<h4><span id="i-55">麻雀激闘当選時の勝利当選率</span></h4>
+<h4>麻雀激闘当選時の勝利当選率</h4>
 <table>
 <thead>
 <tr>
@@ -2286,7 +2267,7 @@
 </table>
 <p>麻雀激闘当選時に勝利抽選がおこなわれ、この抽選に当選した場合は勝利濃厚。激闘中は報酬の格上げが抽選される。 同時に前兆ゲーム数（1〜4G）も抽選されていて、AT残りゲーム数が前兆ゲーム数よりも少ない場合は残り0Gのタイミングで麻雀激闘に突入する（のどっち降臨中は前兆ナシで即告知）。</p>
 <p>「報酬抽選」 麻雀激闘開始時に勝利時の初期報酬を抽選し、勝利が確定した後は報酬の格上げが抽選される。報酬ジャッジゲームでも報酬格上げ抽選あり。</p>
-<h4><span id="i-56">麻雀激闘勝利当選率</span></h4>
+<h4>麻雀激闘勝利当選率</h4>
 <table>
 <thead>
 <tr>
@@ -2379,7 +2360,7 @@
 </table>
 <p>※ベル揃い…押し順ベル（押し順ミスしてもOK）・左1stベル（ナビなしベル）</p>
 <p>最終ゲームはキャラ不問で、小役が揃えば勝利濃厚だ。</p>
-<h4><span id="i-57">麻雀激闘のキャラ振り分け</span></h4>
+<h4>麻雀激闘のキャラ振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2423,11 +2404,11 @@
 </tbody>
 </table>
 <p>5の倍数回目は和以上、10の倍数回目は大将戦濃厚だ。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-58">宮永照覚醒</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-59">宮永照覚醒概要</span></h4>
+<h3>宮永照覚醒</h3>
+<h4>宮永照覚醒概要</h4>
 <p>本機最強の上乗せ特化ゾーンで、10Gα間、成立役に応じて上乗せが抽選される。打点上昇が発生すると大量上乗せのチャンスだ。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ宮永照覚醒" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-14-01.jpg" decoding="async"></p>
-<h4><span id="i-60">宮永照覚醒性能</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロ宮永照覚醒" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-14-01.jpg"></p>
+<h4>宮永照覚醒性能</h4>
 <table>
 <thead>
 <tr>
@@ -2455,8 +2436,8 @@
 </tbody>
 </table>
 <p>「打点上昇」 ＋20G以上の上乗せに当選していた場合は、基本的に打点上昇でゲーム数を告知する。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ宮永照覚醒" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-14-03.jpg" decoding="async"></p>
-<h4><span id="i-61">上乗せゲーム数振り分け</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロ宮永照覚醒" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-14-03.jpg"></p>
+<h4>上乗せゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2548,11 +2529,11 @@
 </tbody>
 </table>
 <p>※その他（ハズレ・1枚役）は＋10G固定</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-62">おーるすたぁラッシュ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-63">おーるすたぁラッシュ概要</span></h4>
+<h3>おーるすたぁラッシュ</h3>
+<h4>おーるすたぁラッシュ概要</h4>
 <p>麻雀激闘勝利時の報酬として突入する可能性あり。20G＋α間継続で、消化中は「花が咲くこともあるんだゾーン（花咲ゾーン）」を抽選。花咲ゾーンは5GのCZとなっていて、ユリが光れば「嶺上開花ボーナスorポインとタイム」を獲得できる。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロおーるすたぁラッシュ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-15-01.jpg" decoding="async"></p>
-<h4><span id="i-64">おーるすたぁラッシュ性能</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロおーるすたぁラッシュ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-15-01.jpg"></p>
+<h4>おーるすたぁラッシュ性能</h4>
 <table>
 <thead>
 <tr>
@@ -2584,11 +2565,11 @@
 </tbody>
 </table>
 <p>「花咲ゾーン」 5G以内にユリが光れば成功となり、のどっちジャッジで報酬を告知。成功期待度は約50%で、失敗時はおーるすたぁラッシュへ戻る。 嶺上開花ボーナスに当選しても5G消化まで花咲ゾーンは継続。残りゲーム数で報酬の昇格が抽選される。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロおーるすたぁラッシュ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-15-03.jpg" decoding="async"></p>
-<p><img alt="L咲-Saki-頂上決戦スマスロおーるすたぁラッシュ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-15-04.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロおーるすたぁラッシュ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-15-03.jpg"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロおーるすたぁラッシュ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-15-04.jpg"></p>
 <p>「のどっちジャッジ」</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロおーるすたぁラッシュ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-15-05.jpg" decoding="async"></p>
-<h4><span id="i-65">花咲ゾーン当選率</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロおーるすたぁラッシュ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-15-05.jpg"></p>
+<h4>花咲ゾーン当選率</h4>
 <table>
 <thead>
 <tr>
@@ -2644,13 +2625,13 @@
 </tbody>
 </table>
 <p>強レア役は花咲ゾーン2個ストックする。</p>
-<h4><span id="AT-4">頂上決戦中のATゲーム数上乗せ当選率</span></h4>
+<h4>頂上決戦中のATゲーム数上乗せ当選率</h4>
 <p>おーるすたぁラッシュ中は花咲ゾーンに加え、頂上決戦のゲーム数上乗せも抽選。当選率は頂上決戦中と共通だ。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-66">嶺上開花ボーナス</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-67">嶺上開花ボーナス概要</span></h4>
+<h3>嶺上開花ボーナス</h3>
+<h4>嶺上開花ボーナス概要</h4>
 <p>花咲ゾーン中の抽選で突入する20G固定の擬似ボーナスで、消化中は成立役に応じて麻雀激闘のストックを抽選。獲得したストックはおーるすたぁラッシュ終了後に頂上決戦へ戻ってからまとめて放出される。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ嶺上開花ボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-16-01.jpg" decoding="async"></p>
-<h4><span id="i-68">嶺上開花ボーナス性能</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロ嶺上開花ボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-16-01.jpg"></p>
+<h4>嶺上開花ボーナス性能</h4>
 <table>
 <thead>
 <tr>
@@ -2678,9 +2659,9 @@
 </tbody>
 </table>
 <p>「ストック抽選」</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ嶺上開花ボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-16-03.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロ嶺上開花ボーナス" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-16-03.jpg"></p>
 <p>「終了後はおーるすたぁラッシュのゲーム数を上乗せ」 花咲ゾーン成功後は、嶺上開花ボーナスやポインとたいむ（親番）や宮永照覚醒からおーるすたぁラッシュに復帰するタイミングでゲーム数が＋5Gされる。</p>
-<h4><span id="i-69">麻雀激闘ストック当選率</span></h4>
+<h4>麻雀激闘ストック当選率</h4>
 <table>
 <thead>
 <tr>
@@ -2724,8 +2705,8 @@
 </tbody>
 </table>
 <p>レア役はストック濃厚。1契機で2個までストックする可能性がある。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-70">ツラヌキ・有利区間</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-71">ツラヌキ条件と恩恵</span></h4>
+<h3>ツラヌキ・有利区間</h3>
+<h4>ツラヌキ条件と恩恵</h4>
 <table>
 <thead>
 <tr>
@@ -2746,12 +2727,12 @@
 </table>
 <p>エンディングに到達すると有利区間がリセットし、スペシャルのどっちジャッジで獲得した特化ゾーンからATが再スタートする。</p>
 <p>［エンディング］</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロエンディング" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-17-03.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロエンディング" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-17-03.jpg"></p>
 <p>［スペシャルのどっちジャッジ］</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロスペシャルのどっちジャッジ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-17-04.jpg" decoding="async"></p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-72">演出情報</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-73">通常時</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-74">ステージの示唆</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロスペシャルのどっちジャッジ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-17-04.jpg"></p>
+<h2>演出情報</h2>
+<h3>通常時</h3>
+<h4>ステージの示唆</h4>
 <table>
 <thead>
 <tr>
@@ -2779,14 +2760,14 @@
 </tbody>
 </table>
 <p>［咲］</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-06-02.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-06-02.jpg"></p>
 <p>［和］</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-06-03.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-06-03.jpg"></p>
 <p>［咲＆和］</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-06-04.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-06-04.jpg"></p>
 <p>［二人きりの帰り道］</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-06-05.jpg" decoding="async"></p>
-<h4><span id="i-75">アイキャッチの示唆</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロステージ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-06-05.jpg"></p>
+<h4>アイキャッチの示唆</h4>
 <table>
 <thead>
 <tr>
@@ -2851,16 +2832,16 @@
 </table>
 <p>アイキャッチは移行先のステージ（前兆等）を示唆するパターンが多いが、加治木・福路・衣・透華のアイキャッチはライバルモード滞在を示唆（アイキャッチ後、液晶にキャラアイコンが表示）。 モモのアイキャッチ後は、キャラアイコンの代わりにモモのミニキャラがゲーム数表示部分に出現する。</p>
 <p>［加治木］</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロアイキャッチ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0728/0728-06-02.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロアイキャッチ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0728/0728-06-02.jpg"></p>
 <p>［福路］</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロアイキャッチ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0728/0728-06-03.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロアイキャッチ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0728/0728-06-03.jpg"></p>
 <p>［衣］</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロアイキャッチ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0728/0728-06-04.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロアイキャッチ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0728/0728-06-04.jpg"></p>
 <p>［透華］</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロアイキャッチ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0728/0728-06-05.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロアイキャッチ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0728/0728-06-05.jpg"></p>
 <p>［モモ］</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロアイキャッチ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0728/0728-06-06.jpg" decoding="async"></p>
-<h4><span id="i-76">ステルスストック演出の示唆</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロアイキャッチ" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0728/0728-06-06.jpg"></p>
+<h4>ステルスストック演出の示唆</h4>
 <table>
 <thead>
 <tr>
@@ -2881,10 +2862,10 @@
 </table>
 <p>第3停止後に液晶にモモの透過ビジョンが表示されると、ステルスモモモード滞在を示唆。 目線がアップになる強パターンなら、ステルスモモモード滞在の期待大となる。</p>
 <p>［弱パターン］</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロステルス示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0729/04.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロステルス示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0729/04.jpg"></p>
 <p>［強パターン］</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロステルス示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0729/06.jpg" decoding="async"></p>
-<h4><span id="i-77">二人きりの帰り道ステージ・夜の会話演出の示唆</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロステルス示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0729/06.jpg"></p>
+<h4>二人きりの帰り道ステージ・夜の会話演出の示唆</h4>
 <table>
 <thead>
 <tr>
@@ -2909,8 +2890,8 @@
 </table>
 <p>特打レベル1は32000点、レベル2は24000点、レベル3は16000点が規定点数となる。</p>
 <p>［夜の会話演出］</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ特打レベル示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0814/0818-06-02.jpg" decoding="async"></p>
-<h4><span id="CZ-6">温泉合宿中・CZ本前兆濃厚演出</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロ特打レベル示唆" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0814/0818-06-02.jpg"></p>
+<h4>温泉合宿中・CZ本前兆濃厚演出</h4>
 <table>
 <thead>
 <tr>
@@ -2934,8 +2915,8 @@
 </tbody>
 </table>
 <p>［よくできましたハンコ］</p>
-<p><img alt="画像" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0814/0818-07-02.jpg" decoding="async"></p>
-<h4><span id="CZ-7">通常ステージ・CZ本前兆濃厚演出</span></h4>
+<p><img alt="画像" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0814/0818-07-02.jpg"></p>
+<h4>通常ステージ・CZ本前兆濃厚演出</h4>
 <table>
 <thead>
 <tr>
@@ -2975,10 +2956,10 @@
 </tbody>
 </table>
 <p>［タコスのコスプレをした優希］</p>
-<p><img alt="画像" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0814/0818-07-04.jpg" decoding="async"></p>
+<p><img alt="画像" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0814/0818-07-04.jpg"></p>
 <p>［インターフェース文字演出］ 液晶下部に機種説明などが流れる演出。 エトペン通過は1匹＜3匹＜5匹の順にチャンスで、無限ループなら当該周期でのCZ当選濃厚。温泉合宿中の無限ループは本前兆濃厚となる。</p>
-<p><img alt="画像" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0814/0818-07-05.jpg" decoding="async"></p>
-<h4><span id="i-78">違和感演出</span></h4>
+<p><img alt="画像" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0814/0818-07-05.jpg"></p>
+<h4>違和感演出</h4>
 <table>
 <thead>
 <tr>
@@ -3001,7 +2982,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-79">鶴賀演出の示唆 弱パターン（加治木がモモに話しかける）</span></h4>
+<h4>鶴賀演出の示唆 弱パターン（加治木がモモに話しかける）</h4>
 <table>
 <thead>
 <tr>
@@ -3028,7 +3009,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-80">強パターン（モモが過去を思い返す）</span></h4>
+<h4>強パターン（モモが過去を思い返す）</h4>
 <table>
 <thead>
 <tr>
@@ -3055,7 +3036,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-81">龍門渕演出の示唆 弱パターン（透華が机を叩いて登場）</span></h4>
+<h4>龍門渕演出の示唆 弱パターン（透華が机を叩いて登場）</h4>
 <table>
 <thead>
 <tr>
@@ -3082,7 +3063,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-82">強パターン（龍門渕が会場入りするシーン）</span></h4>
+<h4>強パターン（龍門渕が会場入りするシーン）</h4>
 <table>
 <thead>
 <tr>
@@ -3109,7 +3090,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-83">風越演出の示唆 弱パターン（風越メンバーが麻雀を打っている）</span></h4>
+<h4>風越演出の示唆 弱パターン（風越メンバーが麻雀を打っている）</h4>
 <table>
 <thead>
 <tr>
@@ -3132,7 +3113,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-84">強パターン（福路が膝枕をしている）</span></h4>
+<h4>強パターン（福路が膝枕をしている）</h4>
 <table>
 <thead>
 <tr>
@@ -3160,23 +3141,23 @@
 </tbody>
 </table>
 <p>［ライバル校演出（龍門渕）］ ライバル校演出はレア役の期待度が高い演出で、それぞれの高校の対応役を否定すれば前兆以上を示唆する。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ龍門渕演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0814/0818-08-04.jpg" decoding="async"></p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-85">前兆</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-86">温泉合宿</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロ龍門渕演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0814/0818-08-04.jpg"></p>
+<h3>前兆</h3>
+<h4>温泉合宿</h4>
 <p>周期ポイント経由で移行するCZの前兆ステージ。最終的に発展する連続演出に成功すればCZに突入する。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ温泉合宿" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-07-01.jpg" decoding="async"></p>
-<h4><span id="i-87">連続演出</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロ温泉合宿" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-07-01.jpg"></p>
+<h4>連続演出</h4>
 <p>［寿司バトル］</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ連続演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-08-01.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロ連続演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-08-01.jpg"></p>
 <p>［温泉卓球］</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ連続演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-08-02.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロ連続演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-08-02.jpg"></p>
 <p>［流れ星］ CZの当否を告知する連続演出。いずれも赤タイトルなら成功濃厚だ。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ連続演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-08-03.jpg" decoding="async"></p>
-<h4><span id="i-88">清澄トライアル</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロ連続演出" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-08-03.jpg"></p>
+<h4>清澄トライアル</h4>
 <p>特打（CZ）で点数表示が緑・赤で終了した場合に移行する前兆ステージで、キャラが増えるほどAT当選期待度がアップ。消化中はAT非当選の場合はATへの書き換えを、当選している場合は報酬の格上げが抽選される。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ清澄トライアル" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-10-01.jpg" decoding="async"></p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ清澄トライアル" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-10-02.jpg" decoding="async"></p>
-<h4><span id="AT-5">清澄トライアル中のAT当選濃厚パターン</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロ清澄トライアル" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-10-01.jpg"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロ清澄トライアル" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-10-02.jpg"></p>
+<h4>清澄トライアル中のAT当選濃厚パターン</h4>
 <table>
 <thead>
 <tr>
@@ -3220,7 +3201,7 @@
 </tbody>
 </table>
 <p>キャラの合流する順番は優希→まこ→和→久の順で固定で、複数キャラの同時合流や一人飛ばして合流などはない。</p>
-<h4><span id="i-89">連続演出中の法則 先鋒戦</span></h4>
+<h4>連続演出中の法則 先鋒戦</h4>
 <table>
 <thead>
 <tr>
@@ -3251,7 +3232,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-90">次鋒戦</span></h4>
+<h4>次鋒戦</h4>
 <table>
 <thead>
 <tr>
@@ -3282,7 +3263,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-91">副将戦</span></h4>
+<h4>副将戦</h4>
 <table>
 <thead>
 <tr>
@@ -3313,7 +3294,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-92">大将戦</span></h4>
+<h4>大将戦</h4>
 <table>
 <thead>
 <tr>
@@ -3344,7 +3325,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-93">個人戦（久まで合流時に発展）</span></h4>
+<h4>個人戦（久まで合流時に発展）</h4>
 <table>
 <thead>
 <tr>
@@ -3359,19 +3340,19 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="AT-6">頂上決戦（AT）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="AT-7">AT中の楽曲</span></h4>
+<h3>頂上決戦（AT）</h3>
+<h4>AT中の楽曲</h4>
 <p>楽曲</p>
 <p>デフォルトBGM（おーるすたぁラッシュ中はオートプレイ）</p>
 <p>Glossy:MMM</p>
-<p>bloooomin’</p>
+<p>bloooomin'</p>
 <p>熱烈歓迎わんだーらんど</p>
 <p>残酷な願いの中で</p>
 <p>New SPARKS!</p>
 <p>ギリギリプレッシャー</p>
 <p>Run to a Dream</p>
 <p>AT中（おーるすたぁラッシュ・嶺上開花ボーナス中含む）は十字キーの左右で楽曲を変更できる。 ＋100G以上を上乗せ時などにGlossy:MMMに変化するが、その後で任意の楽曲に変更可能だ。</p>
-<h4><span id="AT-8">AT終了画面の示唆</span></h4>
+<h4>AT終了画面の示唆</h4>
 <table>
 <thead>
 <tr>
@@ -3403,12 +3384,12 @@
 <p>［バニーガール］</p>
 <p>［咲＆和］</p>
 <p>［全国編ライバル］</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-94">カスタム</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-95">演出カスタム</span></h4>
+<h3>カスタム</h3>
+<h4>演出カスタム</h4>
 <p>待機画面で十字キーの真ん中を押すとカスタム画面へ移行。3つのチャンス演出の頻度を「出ない」・「普通」・「出やすい」の3パターンからカスタムできる。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ演出カスタム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-18-01.jpg" decoding="async"></p>
+<p><img alt="L咲-Saki-頂上決戦スマスロ演出カスタム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-18-01.jpg"></p>
 <p>［咲バレ予告］ レバーON時や第3停止時に専用SE・筐体ランプ赤発光・咲のボイス「これが私の麻雀」が発生する激アツ演出。通常時はCZ当選の、AT中は麻雀激闘や上乗せ当選の期待度がアップする。</p>
-<h4><span id="i-96">［通常時］咲バレ予告発生タイミングでの示唆</span></h4>
+<h4>［通常時］咲バレ予告発生タイミングでの示唆</h4>
 <table>
 <thead>
 <tr>
@@ -3427,7 +3408,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="CZ-8">［通常時］カスタムごとの咲バレ予告発生率＆CZ期待度</span></h4>
+<h4>［通常時］カスタムごとの咲バレ予告発生率＆CZ期待度</h4>
 <table>
 <thead>
 <tr>
@@ -3464,7 +3445,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="AT-9">［AT中］状態ごとの咲バレ予告発生契機</span></h4>
+<h4>［AT中］状態ごとの咲バレ予告発生契機</h4>
 <table>
 <thead>
 <tr>
@@ -3518,8 +3499,8 @@
 </table>
 <p>※ASラッシュ…おーるすたぁラッシュ</p>
 <p>［名言カットイン］ おもに連続演出発展時に発生する可能性あり。通常時はCZ以上の本前兆濃厚、AT中は名言カットインが発生した時点で和or咲＋勝利濃厚だ。AT中の場合、カスタムを出やすいに設定していれば、条件を満たした時はほぼ名言カットインが発生する。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ演出カスタム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-18-05.jpg" decoding="async"></p>
-<h4><span id="i-97">［通常時］名言カットインの示唆</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロ演出カスタム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-18-05.jpg"></p>
+<h4>［通常時］名言カットインの示唆</h4>
 <table>
 <thead>
 <tr>
@@ -3539,7 +3520,7 @@
 </tbody>
 </table>
 <p>※高鴨穏乃、新子憧、松実玄、松実宥、鷺森灼の5人</p>
-<h4><span id="i-98">［通常時］名言カットインの発生率</span></h4>
+<h4>［通常時］名言カットインの発生率</h4>
 <table>
 <thead>
 <tr>
@@ -3558,7 +3539,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="AT-10">［AT中］名言カットインの示唆</span></h4>
+<h4>［AT中］名言カットインの示唆</h4>
 <table>
 <thead>
 <tr>
@@ -3574,8 +3555,8 @@
 </tbody>
 </table>
 <p>［ねじれば分かる演出］ 前兆中（連続演出中などを除く）に第3停止ボタンを長押しすると、液晶下部からエトペンがひょこっと出現。完全に出現すると通常時ならCZ、AT中なら麻雀激闘当選が濃厚となる。</p>
-<p><img alt="L咲-Saki-頂上決戦スマスロ演出カスタム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-18-09.jpg" decoding="async"></p>
-<h4><span id="i-99">［通常時］ねじれば分かる演出の発生率</span></h4>
+<p><img alt="L咲-Saki-頂上決戦スマスロ演出カスタム" src="https://cdn.p-town.dmm.com/editor/_01_%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E7%A8%AE%E3%83%9A%E3%83%BC%E3%82%B8/S1086_%E5%92%B2/0711/0710-18-09.jpg"></p>
+<h4>［通常時］ねじれば分かる演出の発生率</h4>
 <table>
 <thead>
 <tr>
@@ -3597,7 +3578,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="AT-11">［AT中］ねじれば分かる演出の成功期待度</span></h4>
+<h4>［AT中］ねじれば分かる演出の成功期待度</h4>
 <table>
 <thead>
 <tr>
@@ -3615,16 +3596,30 @@
 <td>麻雀激闘当選時はほぼ成功</td>
 </tr>
 </tbody>
-</table>
-<div class="post-views content-post post-1847 entry-meta load-static">
-				<span class="post-views-icon dashicons dashicons-chart-bar"></span> <span class="post-views-label">Post Views:</span> <span class="post-views-count">1,250</span>
-			</div></div></details></div></details>
-            </div>
-
-            <!-- 目次ハンバーガー（右下固定・常時）。中身はJSがセクションから生成 --></section>
+</table></section>
   
   
   </article></main>
 <footer class="foot">個人アーカイブ（suroschool.jp / たかどらのスロ塾 会員コンテンツ）・閲覧用</footer>
+
+<!-- スマホ用ボトムナビ（スクロールで隠れる/出る） -->
+<nav class="botnav" id="botnav">
+  <a href="../index.html" data-nav="index">🎰<span>機種</span></a>
+  <button id="searchOpen2">🔍<span>検索</span></button>
+  <a href="../index.html?fav=1">★<span>お気に入り</span></a>
+  <a href="../news.html">📰<span>お知らせ</span></a>
+  <a href="../tool.html">🧮<span>期待値</span></a>
+</nav>
+
+<!-- 全ページ横断の検索オーバーレイ -->
+<div class="search-overlay" id="searchOverlay" hidden>
+  <div class="search-head">
+    <input id="globalSearch" type="search" placeholder="機種名で検索…" autocomplete="off">
+    <button id="searchClose" aria-label="閉じる">✕</button>
+  </div>
+  <div id="searchResults" class="search-results"></div>
+</div>
+
+<script src="../assets/search-index.js"></script>
 <script src="../assets/app.js"></script>
 </body></html>

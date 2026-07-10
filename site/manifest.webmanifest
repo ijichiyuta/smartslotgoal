@@ -1,6 +1,6 @@
 {
-  "name": "スマスロ目標（個人アーカイブ）",
-  "short_name": "スマスロ目標",
+  "name": "スマスロ期待値（個人アーカイブ）",
+  "short_name": "スマスロ期待値",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

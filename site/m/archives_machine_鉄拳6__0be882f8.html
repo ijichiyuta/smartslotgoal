@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="ja"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>鉄拳6 | スマスロ目標 (個人アーカイブ)</title>
+<title>鉄拳6 | スマスロ期待値 (個人アーカイブ)</title>
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="manifest" href="../manifest.webmanifest">
 <meta name="theme-color" content="#ffffff">
@@ -10,16 +10,18 @@
 <link rel="apple-touch-icon" href="../assets/icon.svg">
 <link rel="icon" href="../assets/icon.svg">
 <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){})});}</script>
+<script>window.__ROOT__='../';</script>
 
 </head><body>
-<header class="topbar">
-  <a class="brand" href="../index.html">🎰 スマスロ目標</a>
-  <nav>
+<header class="topbar" id="topbar">
+  <a class="brand" href="../index.html">🎰 スマスロ期待値</a>
+  <nav class="topnav">
     <a href="../index.html">機種</a>
     <a href="../news.html">お知らせ</a>
     <a href="../tool.html">期待値計算</a>
     <a href="../pages.html">資料</a>
   </nav>
+  <button class="topbar-search" id="searchOpen" aria-label="検索">🔍</button>
 </header>
 <main>
   <article class="machine">
@@ -35,51 +37,9 @@
     <button class="tab" data-tab="kaiseki">解析情報</button>
     
   </div>
-  <section class="panel is-active" data-panel="nerai"><div class="tenjo-info"><div class="my-spoiler-wrapper" id="my-spoiler-1"><div class="my-spoiler-title" style="cursor:pointer; background:rgba(245,184,0,0.08); padding:10px; border:1px solid rgba(245,184,0,0.3); color:var(--text-main); font-weight:700; letter-spacing:0.04em;"><span class="spoiler-icon" style="margin-right:5px;">[-]</span>機種情報</div><div class="my-spoiler-content" style="display:block; padding:10px; border:1px solid rgba(245,184,0,0.2); border-top:0; background:var(--bg-card-hi); color:var(--text-main);"><table style="width:100%;border-collapse:collapse;margin:10px 0;border:1px solid #ddd">
-<thead>
-<tr>
-<th style="border:1px solid #ddd;padding:12px;background-color:#f8f9fa;font-weight:bold">項目</th>
-<th style="border:1px solid #ddd;padding:12px;background-color:#f8f9fa;font-weight:bold">内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="border:1px solid #ddd;padding:12px"><strong>天井G数</strong></td>
-<td style="border:1px solid #ddd;padding:12px">900pt＋α (平均747G＋α)</td>
-</tr>
-<tr>
-<td style="border:1px solid #ddd;padding:12px"><strong>恩恵</strong></td>
-<td style="border:1px solid #ddd;padding:12px">ボーナス当選</td>
-</tr>
-<tr>
-<td style="border:1px solid #ddd;padding:12px"><strong>天井詳細</strong></td>
-<td style="border:1px solid #ddd;padding:12px">通常時のBB/AT終了後最大900pt＋αで当選。<br>設定変更時は500pt＋αに短縮。</td>
-</tr>
-<tr>
-<td style="border:1px solid #ddd;padding:12px"><strong>スルー天井</strong></td>
-<td style="border:1px solid #ddd;padding:12px">ボーナス3回連続AT非当選</td>
-</tr>
-<tr>
-<td style="border:1px solid #ddd;padding:12px"><strong>恩恵</strong></td>
-<td style="border:1px solid #ddd;padding:12px">次回ボーナスでAT濃厚（赤7揃い）</td>
-</tr>
-<tr>
-<td style="border:1px solid #ddd;padding:12px"><strong>短縮条件</strong></td>
-<td style="border:1px solid #ddd;padding:12px">設定変更後、デビルロード終了後、デビルラッシュ終了後は最大2回スルーに短縮</td>
-</tr>
-<tr>
-<td style="border:1px solid #ddd;padding:12px"><strong>リセット判別</strong></td>
-<td style="border:1px solid #ddd;padding:12px">不明</td>
-</tr>
-<tr>
-<td style="border:1px solid #ddd;padding:12px"><strong>有利区間切断条件</strong></td>
-<td style="border:1px solid #ddd;padding:12px">デビルラッシュ突入で有利区間切断</td>
-</tr>
-</tbody>
-</table>
-</div></div></div>
-<h2><span id="i">狙い目</span></h2>
-<h3><span id="i-2">リセット狙い</span></h3>
+  <section class="panel is-active" data-panel="nerai"><p><img loading="lazy" decoding="async" width="150" height="150" src="../img/e5ed7f4eea9f084b.jpg" class="machine-thumbnail wp-post-image" alt="" style="display:block; margin:0 auto;" srcset="https://suroschool.jp/wp-content/uploads/2026/01/thumb_1-150x150.jpg 150w, https://suroschool.jp/wp-content/uploads/2026/01/thumb_1-120x120.jpg 120w" sizes="auto, (max-width: 150px) 100vw, 150px" /></p>
+<h2>狙い目</h2>
+<h3>リセット狙い</h3>
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; border: 1px solid #ddd;">
 <thead>
 <tr>
@@ -102,7 +62,7 @@
 </tr>
 </tbody>
 </table>
-<h3><span id="i-3">ゲーム数、スルー天井狙い</span></h3>
+<h3>ゲーム数、スルー天井狙い</h3>
 <p>下位AT後</p>
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; border: 1px solid #ddd;">
 <thead>
@@ -149,7 +109,7 @@
 </tr>
 </tbody>
 </table>
-<h3><span id="i-4">ゾーン狙い</span></h3>
+<h3>ゾーン狙い</h3>
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; border: 1px solid #ddd;">
 <thead>
 <tr>
@@ -165,7 +125,7 @@
 </tbody>
 </table>
 <blockquote><p>※公式から天国選択率25％。また、全てのモード移行抽選に前回のモードは依存しないと言われている。</p></blockquote>
-<h3><span id="i-5">示唆関連の押し引きについて</span></h3>
+<h3>示唆関連の押し引きについて</h3>
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; border: 1px solid #ddd;">
 <thead>
 <tr>
@@ -193,7 +153,7 @@
 </tbody>
 </table>
 <blockquote><p>※木人示唆、終了画面の示唆は現在解析が出ていない。</p></blockquote>
-<h3><span id="i-6">有利区間関連狙い</span></h3>
+<h3>有利区間関連狙い</h3>
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; border: 1px solid #ddd;">
 <thead>
 <tr>
@@ -208,7 +168,7 @@
 </tr>
 </tbody>
 </table>
-<h2><span id="i-7">やめ時</span></h2>
+<h2>やめ時</h2>
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; border: 1px solid #ddd;">
 <thead>
 <tr>
@@ -223,69 +183,62 @@
 </tr>
 <tr>
 <td style="border: 1px solid #ddd; padding: 12px; font-size: 12px;"><strong>ボーナス後</strong></td>
-<td style="border: 1px solid #ddd; padding: 12px; font-size: 12px;">前兆を経由してAT当選する場合あり。<br>
+<td style="border: 1px solid #ddd; padding: 12px; font-size: 12px;">前兆を経由してAT当選する場合あり。<br />
 10-20Gくらい様子見した方が良いかも？</td>
 </tr>
 <tr>
 <td style="border: 1px solid #ddd; padding: 12px; font-size: 12px;"><strong>AT後</strong></td>
-<td style="border: 1px solid #ddd; padding: 12px; font-size: 12px;">基本1G回してやめ。<br>
-※上位後でも引き戻しが強いわけではない。<br>
+<td style="border: 1px solid #ddd; padding: 12px; font-size: 12px;">基本1G回してやめ。<br />
+※上位後でも引き戻しが強いわけではない。<br />
 ※「示唆関連の押し引きについて」「有利区間関連狙い」に該当する場合は続行。</td>
 </tr>
 <tr>
 <td style="border: 1px solid #ddd; padding: 12px; font-size: 12px;"><strong>CZモード</strong></td>
-<td style="border: 1px solid #ddd; padding: 12px; font-size: 12px;">CZ当選まで転落しない。<br>
-高モードでCZ非当選のままボーナスやAT当選時はCZフォロー。<br>
+<td style="border: 1px solid #ddd; padding: 12px; font-size: 12px;">CZ当選まで転落しない。<br />
+高モードでCZ非当選のままボーナスやAT当選時はCZフォロー。<br />
 （有利切断してそうな場合は除く。現状有利切断条件は不明）</td>
 </tr>
 </tbody>
 </table>
-<h2><span id="i-8"><strong>その他</strong></span></h2>
-<h4><span id="AT">履歴から上位AT、スルー回数の確認方法</span></h4>
-<p><img src="../img/cef00c160590adc1.webp" alt="" decoding="async"></p>
+<h2><strong>その他</strong></h2>
+<h4>履歴から上位AT、スルー回数の確認方法</h4>
+<p><img src="../img/cef00c160590adc1.webp" alt="" / loading="lazy" decoding="async"></p>
 <p><a href="https://x.com/dejikame_blog/status/2008852871803203910?s=46&amp;t=Pcvoa43hweF7QRD2P5j16g">参考元　X</a></p>
-<h4><span id="i-9">通常時のモード</span></h4>
-<p><img src="../img/5c94ef1bba71e284.png" alt="" decoding="async"></p>
-<h4><span id="i-10">木人示唆</span></h4>
-<p><img src="../img/3cfd4763e9bcfc4c.png" alt="" decoding="async"></p>
-<h4><span id="CZ">CZモード</span></h4>
-<p><img src="../img/3c10ec2f04b0a29f.png" alt="" decoding="async"><br>
-<img src="../img/f510a3d694f59c09.png" alt="" decoding="async"></p>
-<h4><span id="i-11">ボーナス終了画面</span></h4>
-<p><img src="../img/12810f6303e5d42d.png" alt="" decoding="async"></p>
-<h2><span id="i-12"><strong>参考元</strong></span></h2>
+<h4>通常時のモード</h4>
+<p><img src="../img/5c94ef1bba71e284.png" alt="" / loading="lazy" decoding="async"></p>
+<h4>木人示唆</h4>
+<p><img src="../img/3cfd4763e9bcfc4c.png" alt="" / loading="lazy" decoding="async"></p>
+<h4>CZモード</h4>
+<p><img src="../img/3c10ec2f04b0a29f.png" alt="" / loading="lazy" decoding="async"><br />
+<img src="../img/f510a3d694f59c09.png" alt="" / loading="lazy" decoding="async"></p>
+<h4>ボーナス終了画面</h4>
+<p><img src="../img/12810f6303e5d42d.png" alt="" / loading="lazy" decoding="async"></p>
+<h2><strong>参考元</strong></h2>
 <p><a href="https://chonborista.com/slot/yamasa-slot/247112/">ちょんぼりすた</a></p>
 <p><a href="https://www.slopachi-quest.com/article/tekken6-tenjou/">すろぱちくえすと</a></p>
 <p>かめとうさぎのパチスロブログ</p>
-<div class="post-views content-post post-2527 entry-meta load-static">
-				<span class="post-views-icon dashicons dashicons-chart-bar"></span> <span class="post-views-label">Post Views:</span> <span class="post-views-count">2,164</span>
-			</div>
-          <!-- 目次ハンバーガー（右下固定・常時）。中身はJSが見出し(h2/h3)から生成。会員ロック時は空→自動非表示 --></section>
-  <section class="panel" data-panel="kaiseki"><div class="kaiseki-toolbar">
-              
-            </div>
-            <div class="kaiseki-accordion">
-              <details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i">基本情報</span></summary><div class="kaiseki-section-body">
+</section>
+  <section class="panel" data-panel="kaiseki"><h2>基本情報</h2>
 <ul>
 <li>メーカー: 山佐</li>
 <li>機械割: 97.9% 〜 114.9%</li>
 <li>導入開始日: 2026年01月05日（月）</li>
 <li>ゲーム性概要: ●鉄拳シリーズの最新作がスマスロで登場 ●通常時はレア役や規定ポイントを契機にCZやボーナスを目指すゲーム性 ●初当りボーナス中は全役でATを抽選 ●AT「鉄拳ラッシュ」はゲーム数上乗せタイプ ●AT中は2G間の自力CZ「拳奪バトル」を搭載 ●AT中のボーナス終了後はゲーム数上乗せor鉄拳チャンス！ ●上位AT「デビルラッシュ」は期待値は約3,500枚！ ※上位ATの期待値は初当りからの流れを含めた合算</li>
 </ul>
-<p><img alt="スマスロ鉄拳6（パチスロ）のリール配列" src="https://p-town.dmm.com/upload/machines/4913/reel.jpg?t=1779358788" decoding="async"></p>
-<p><img alt="スマスロ鉄拳6（パチスロ）のゲームフロー" src="https://p-town.dmm.com/upload/machines/4913/flow.jpg?t=1779358788" decoding="async"></p>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-2">打ち方</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-3">打ち方・小役</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-4">打ち方（小役狙い）</span></h4>
+<p><img alt="スマスロ鉄拳6（パチスロ）のリール配列" src="https://p-town.dmm.com/upload/machines/4913/reel.jpg?t=1779358788"></p>
+<p><img alt="スマスロ鉄拳6（パチスロ）のゲームフロー" src="https://p-town.dmm.com/upload/machines/4913/flow.jpg?t=1779358788"></p>
+<h2>打ち方</h2>
+<h3>打ち方・小役</h3>
+<h4>打ち方（小役狙い）</h4>
 <p>［最初に狙う絵柄］ 左リールの上段付近にBARを目押し。スイカ停止時のみ中リールの目押しが必要で、それ以外の停止形は中＆右リールフリー打ちでOKだ。</p>
 <p>［スイカ停止時］ 中リールはBAR目安でスイカをフォロー、右リールは取りこぼしがないのでフリー打ちで消化しよう。</p>
 <p>［BARを狙え］ おもにレア役高確中に発生するレア役示唆で、発生時は全リールにBARを目押し。 発生時はスイカorチャンス目or強チェリーの期待大だ。すべてリプレイフラグなので、目押しに失敗しても取りこぼしはない。</p>
 <p>［レア役の停止例］ 基本的にスイカは斜めに揃うが、BARを狙え発生時は上段に揃う。</p>
-<h4><span id="NG">変則押しはNG</span></h4>
-<p>押し順ナビ非発生時は左1stでの消化を推奨だ。</p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-5">解析情報通常時</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-6">小役関連</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-7">レア役確率</span></h4>
+<h4>変則押しはNG</h4>
+<p>押し順ナビ非発生時は左1stでの消化を推奨だ。</p>
+<h2>解析情報通常時</h2>
+<h3>小役関連</h3>
+<h4>レア役確率</h4>
 <table>
 <thead>
 <tr>
@@ -328,9 +281,9 @@
 </tbody>
 </table>
 <p>ブースト目はチャンス目と同等の抽選がおこなわれる。</p>
-<h4><span id="i-8">リバースロック</span></h4>
+<h4>リバースロック</h4>
 <p>おなじみのリバースロック（リールロック）は今回も健在。2段階目発展でボーナス期待度50%超、3段階目はロングフリーズ濃厚になる。</p>
-<h4><span id="i-9">リバースロックの性能</span></h4>
+<h4>リバースロックの性能</h4>
 <table>
 <thead>
 <tr>
@@ -362,8 +315,8 @@
 <p>デビルゾーンの連続演出中にリバースロックすればロングフリーズ濃厚</p>
 <p>AT中にリバースロック1段階で スベらないチャンス目が停止すれば鉄拳コンボ濃厚</p>
 <p>AT中のリールロック1段階→スベらないチャンス目（左リールBAR狙い時に左下段BAR停止からのチャンス目）は鉄拳コンボ濃厚。 そのため、リールロック1段階で左リール下段にBARが停止した時点でブースト目or鉄拳コンボ濃厚になる。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-10">モード</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-11">通常モード</span></h4>
+<h3>モード</h3>
+<h4>通常モード</h4>
 <p>通常モードの特徴</p>
 <p>設定変更時は必ず設定変更モードへ移行</p>
 <p>通常時のビッグ（AT非当選）当選後は 引き戻し・設定変更を除くいずれかのモードへ移行</p>
@@ -375,7 +328,7 @@
 <p>設定に応じてモード移行＆規定鉄拳ポイント抽選</p>
 <p>高設定ほど200・400ptの当選率が優遇</p>
 <p>モードによって規定鉄拳ポイントの振り分けが変化する。</p>
-<h4><span id="i-12">通常モードごとの規定鉄拳ポイント分布</span></h4>
+<h4>通常モードごとの規定鉄拳ポイント分布</h4>
 <table>
 <thead>
 <tr>
@@ -582,7 +535,7 @@
 </table>
 <p>※序列は△＜▲＜◯＜◎</p>
 <p>［設定変更＆引き戻しモードのゲーム数］ 基本的には引戻しモード&amp;設定変更モードの規定ポイント煽りは40～49ptからスタート（リール右横に表示している鉄拳ポイントの色が変化）。 40～49pt以外で鉄拳ポイントの色が変化するとチャンス!? ただし、レア役などでポイントが加算された場合、どこで色が変化したかわからないこともあるので注意しよう。</p>
-<h4><span id="CZ">CZモード概要</span></h4>
+<h4>CZモード概要</h4>
 <table>
 <thead>
 <tr>
@@ -621,8 +574,8 @@
 </table>
 <p>CZ当選期待度を管理する5種類のモードで、CZに当選するまで転落なし。CZ終了時に初期モードを抽選して、弱チェリー・チャンス目・スイカでモード昇格を抽選する。 初期モード決定時に次回のCZ種別も抽選される。</p>
 <p>［ボーナスやATではクリアされない！］ 有利区間を切った時を除き、CZを経由せずにボーナス・ATに当選した場合はCZモードがクリアされないため、強めの示唆が出ていた時はCZ当選まで打つことをオススメだ。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-13">鉄拳ポイント</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-14">鉄拳ポイント概要</span></h4>
+<h3>鉄拳ポイント</h3>
+<h4>鉄拳ポイント概要</h4>
 <p>1G消化で1pt、レア役時は最大100ptまで貯めることが可能（画面右下に表示）。滞在モードに応じた規定ポイントに到達すればボーナスorデビルゾーンに当選する。 ボーナス当選（初当り時）の約60%が規定鉄拳ポイント経由になる（CZ経由が約29%、レア役時の直撃が約11%）。</p>
 <p>1Gにつき1pt加算</p>
 <p>レア役時は最大100pt加算</p>
@@ -634,9 +587,9 @@
 <p>鉄拳ゾーン終了時 （おもに鉄拳ゾーン中にレア役を引いていた場合）</p>
 <p>CZ失敗時 (レア役契機でCZ当選かつポイント加算当選時など)</p>
 <p>レア役で獲得したポイントは上記のタイミングで告知（潜伏している分はすべて告知）。 レア役でポイントを獲得かつボーナスが当選していた場合、短い前兆ゲーム数が選ばれた時は、ポイントが告知されずにボーナスへ移行することもある。</p>
-<h4><span id="i-15">色ごとの期待度</span></h4>
+<h4>色ごとの期待度</h4>
 <p>鉄拳ポイントの色で本前兆期待度を示唆。緑になればチャンス、赤なら期待度約90%だ。</p>
-<h4><span id="i-16">鉄拳ポイント色別の本前兆期待度</span></h4>
+<h4>鉄拳ポイント色別の本前兆期待度</h4>
 <table>
 <thead>
 <tr>
@@ -659,10 +612,10 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-17">鉄拳ブースト</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-18">鉄拳ブースト概要</span></h4>
+<h3>鉄拳ブースト</h3>
+<h4>鉄拳ブースト概要</h4>
 <p>すべての状態から移行する可能性のあるレア役高確率状態で、滞在中はBARを狙え演出が発生して、レア役確率が1/6.8にアップ。 確率がアップするのは強チェリー・スイカ・チャンス目の3種類だ。</p>
-<h4><span id="i-19">鉄拳ブースト概要</span></h4>
+<h4>鉄拳ブースト概要</h4>
 <table>
 <thead>
 <tr>
@@ -686,7 +639,7 @@
 </tbody>
 </table>
 <p>CZ中やボーナス中に鉄拳ブーストに当選した場合、CZやビッグボーナスブーストが終了した後も鉄拳ブースト状態になる。</p>
-<h4><span id="i-20">鉄拳ブースト当選率</span></h4>
+<h4>鉄拳ブースト当選率</h4>
 <table>
 <thead>
 <tr>
@@ -706,11 +659,11 @@
 </tbody>
 </table>
 <p>鉄拳ブースト当選時は、見た目上前兆を経由して突入する場合もあるが、当選したゲームから内部的にスタートしているため「レア役高確率中」の帯が出現していない状態でも、BARを狙えが発生する（発生したゲームからレア役高確率の帯が表示）。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-21">鉄拳ゾーン/クライマックスバトル</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-22">前兆ステージ概要</span></h4>
+<h3>鉄拳ゾーン/クライマックスバトル</h3>
+<h4>前兆ステージ概要</h4>
 <p>［鉄拳ゾーン］ 規定ポイント到達時やビッグ終了後に移行するおなじみの前兆ステージだ。</p>
 <p>［クライマックスバトル］ ビッグ後などに突入する可能性がある高期待度の前兆ステージ。</p>
-<h4><span id="i-23">前兆中の抽選</span></h4>
+<h4>前兆中の抽選</h4>
 <p>フェイク前兆・本前兆不問で消化中は通常時と同じ抽選がおこなわれる。 各種当選時は前兆の対象によって告知されるタイミングが変化する。</p>
 <p>前兆中に当選した場合の告知タイミング</p>
 <p>鉄拳ゾーン中や連続演出中は、鉄拳ゾーンまたは連続演出終了後の 次ゲームレバーON時でのポイントを含めて告知 ※連続演出でCZに当選した場合はCZ終了後に告知</p>
@@ -718,9 +671,9 @@
 <p>AT本前兆中にCZが当選した場合は AT終了後にCZを告知(有利区間移行時を除く)</p>
 <p>フェイク前兆中にCZに当選した場合は 鉄拳ゾーン中またはAT終了後にCZを告知</p>
 <p>ボーナス本前兆中のレア役は、 鉄拳ラッシュ（赤7ビッグ昇格抽選）を抽選</p>
-<h4><span id="i-24">鉄拳ゾーンのゲーム数</span></h4>
+<h4>鉄拳ゾーンのゲーム数</h4>
 <p>鉄拳ゾーン開始から連続演出発展までのゲーム数で本前兆期待度が変化する。</p>
-<h4><span id="i-25">鉄拳ゾーン突入→連続演出発展までのゲーム数別期待度</span></h4>
+<h4>鉄拳ゾーン突入→連続演出発展までのゲーム数別期待度</h4>
 <table>
 <thead>
 <tr>
@@ -743,12 +696,12 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="CZ-2">CZ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="CZ-3">CZ確率 （ロックオンチャレンジ・一八チャレンジ合算）</span></h4>
+<h3>CZ</h3>
+<h4>CZ確率 （ロックオンチャレンジ・一八チャレンジ合算）</h4>
 <p>そこまで大きな差はないが、高設定ほどCZに当選しやすい。</p>
-<h4><span id="i-26">ロックオンチャレンジ</span></h4>
+<h4>ロックオンチャレンジ</h4>
 <p>3種類のキャラによって対応役＆期待度が変化するCZ。 消化中はレア役確率が1/6.8にアップ、対応役を引くことができればボーナス濃厚となる。</p>
-<h4><span id="CZ-4">ロックオンチャレンジ（CZ）概要</span></h4>
+<h4>ロックオンチャレンジ（CZ）概要</h4>
 <table>
 <thead>
 <tr>
@@ -775,7 +728,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-27">キャラごとの対応レア役＆期待度</span></h4>
+<h4>キャラごとの対応レア役＆期待度</h4>
 <table>
 <thead>
 <tr>
@@ -805,9 +758,9 @@
 <p>［シャオユウ］</p>
 <p>［ラース］</p>
 <p>［キング］</p>
-<h4><span id="i-28">一八チャレンジ</span></h4>
+<h4>一八チャレンジ</h4>
 <p>10G以内にリプレイorレア役を引けばボーナス濃厚になる高期待度CZだ。</p>
-<h4><span id="CZ-5">一八チャレンジ（CZ）概要</span></h4>
+<h4>一八チャレンジ（CZ）概要</h4>
 <table>
 <thead>
 <tr>
@@ -830,7 +783,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="CZ-6">CZ成功当選率（ボーナス当選率）</span></h4>
+<h4>CZ成功当選率（ボーナス当選率）</h4>
 <table>
 <thead>
 <tr>
@@ -868,22 +821,22 @@
 </tbody>
 </table>
 <p>各キャラの対応レア役を引けばボーナス濃厚。強チェリーは全キャラ共通でボーナス濃厚になる。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-29">引き戻し状態</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-30">引き戻し状態概要</span></h4>
+<h3>引き戻し状態</h3>
+<h4>引き戻し状態概要</h4>
 <p>コンティニューゾーン失敗時や上位AT終了時に通常時へ戻っても99pt以内の引き戻しに当選している可能性あり。 99ptまではリール周辺のUIが赤く光って引き戻し状態であることを示唆してくれる。</p>
-<h4><span id="i-31">引き戻し当選率</span></h4>
+<h4>引き戻し当選率</h4>
 <p>引き戻し当選率は高設定ほど優遇される。</p>
-<h4><span id="i-32">ボーナス当選時の抽選</span></h4>
+<h4>ボーナス当選時の抽選</h4>
 <p>引き戻し状態中、CZ経由でボーナスに当選した場合はAT濃厚の赤7BIGになる。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-33">直撃抽選</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="AT">AT直撃確率</span></h4>
+<h3>直撃抽選</h3>
+<h4>AT直撃確率</h4>
 <p>通常時は成立役不問でAT直撃を抽選する。</p>
-<h4><span id="i-34">ボーナス直撃当選確率</span></h4>
+<h4>ボーナス直撃当選確率</h4>
 <p>レア役の種類と設定に応じてボーナスを抽選、各役の当選率は設定4以上が優遇。 全役共通で、当選時は前兆を経て告知される。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-35">フリーズ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-36">ロングフリーズ</span></h4>
+<h3>フリーズ</h3>
+<h4>ロングフリーズ</h4>
 <p>基本的にリールロック3段階目から画面がプチュンして、笑い声とともにロングフリーズへ移行。AT中に発生した場合は残りゲーム数をすべて上位ATのゲーム数に変換してくれる。</p>
-<h4><span id="i-37">ロングフリーズ性能</span></h4>
+<h4>ロングフリーズ性能</h4>
 <table>
 <thead>
 <tr>
@@ -902,13 +855,13 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-38">ロングフリーズ動画</span></h4>
-<p>リールロック3段階目到達でロングフリーズが発生。上位ATのデビルラッシュへ直行する。</p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-39">解析情報ボーナス時</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-40">初当りボーナス</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-41">初当りビッグボーナス概要</span></h4>
+<h4>ロングフリーズ動画</h4>
+<p>リールロック3段階目到達でロングフリーズが発生。上位ATのデビルラッシュへ直行する。</p>
+<h2>解析情報ボーナス時</h2>
+<h3>初当りボーナス</h3>
+<h4>初当りビッグボーナス概要</h4>
 <p>青7揃い・赤7揃いの2系統があり、後者ならAT濃厚。 基本パターンは青7揃いのビッグで、消化中は全役でATを抽選する。ビッグ中に7が揃った場合はボーナス終了後に即ATへ移行するが、その他の契機は終了後の前兆ステージ（鉄拳ゾーン＜クライマックスバトル）を経由して告知される。</p>
-<h4><span id="i-42">初当り時のビッグボーナス概要</span></h4>
+<h4>初当り時のビッグボーナス概要</h4>
 <table>
 <thead>
 <tr>
@@ -948,7 +901,7 @@
 </tbody>
 </table>
 <p>［3種類の告知パターン］ 今作でも3種類の告知タイプを任意に選択できる。</p>
-<h4><span id="i-43">告知タイプ</span></h4>
+<h4>告知タイプ</h4>
 <table>
 <thead>
 <tr>
@@ -975,9 +928,9 @@
 <p>［赤ビッグはAT濃厚！］</p>
 <p>［ビッグ中の７を狙えカットイン］</p>
 <p>背景の色にも注目だ。</p>
-<h4><span id="i-44">エピソードボーナス</span></h4>
+<h4>エピソードボーナス</h4>
 <p>赤7揃い時の一部で移行する可能性があるボーナスで、終了後は初期ゲーム数100GのATへ突入する。</p>
-<h4><span id="i-45">エピソードボーナス概要</span></h4>
+<h4>エピソードボーナス概要</h4>
 <table>
 <thead>
 <tr>
@@ -1000,7 +953,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-46">エピソードボーナス当選率</span></h4>
+<h4>エピソードボーナス当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1015,9 +968,9 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-47">デビルゾーン概要</span></h4>
+<h4>デビルゾーン概要</h4>
 <p>ボーナス当選時の一部で突入するフリーズ高確率状態で、フリーズ発生orラスト5Gのバトルに勝利すればデビルラッシュ（上位AT）に突入。失敗した場合でもATへ突入する。</p>
-<h4><span id="i-48">デビルゾーン概要</span></h4>
+<h4>デビルゾーン概要</h4>
 <table>
 <thead>
 <tr>
@@ -1048,7 +1001,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-49">突入時のバトル勝利当選率</span></h4>
+<h4>突入時のバトル勝利当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1063,7 +1016,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-50">消化中のロングフリーズ当選率</span></h4>
+<h4>消化中のロングフリーズ当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1090,7 +1043,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-51">最終バトル中の勝利書き換え当選率</span></h4>
+<h4>最終バトル中の勝利書き換え当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1118,9 +1071,9 @@
 </tbody>
 </table>
 <p>まず突入時に最終バトルの勝利を抽選し、それ以降は消化中のレア役でロングフリーズを抽選。最終バトル中のレア役では勝利書き換えを抽選する。成功するのはレア役がメインとなる。</p>
-<h4><span id="AT-2">ビッグ中のAT当選率</span></h4>
+<h4>ビッグ中のAT当選率</h4>
 <p>【7揃い抽選】</p>
-<h4><span id="7">7揃い確率</span></h4>
+<h4>7揃い確率</h4>
 <table>
 <thead>
 <tr>
@@ -1147,7 +1100,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="7-2">揃った7の種類別恩恵</span></h4>
+<h4>揃った7の種類別恩恵</h4>
 <table>
 <thead>
 <tr>
@@ -1168,7 +1121,7 @@
 </table>
 <p>ビッグ中の7揃い時は、ビッグ終了後の前兆を経由せずATに突入。 シャオユウ選択時は7を狙えが発生しないため、内部的に7揃いに当選していた場合は最終告知でATが告知される。</p>
 <p>【レア役抽選】</p>
-<h4><span id="AT-3">レア役のAT当選率</span></h4>
+<h4>レア役のAT当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1197,10 +1150,10 @@
 </table>
 <p>レア役契機のAT当選時はおもに前兆ステージを経由して告知。 レア役だけでなく全役で抽選していて、トータル期待度は約37%となる。</p>
 <p>［AT当選後の抽選］ AT当選後は、AT当選前とは異なる抽選値でATのセットストックを抽選。 7揃いした場合は、AT開始時にストックしたATのゲーム数が加算された状態でスタートする。 7揃い以外でストックした時は、AT最終ゲームで告知される。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="AT-4">AT中ボーナス</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="AT-5">AT中のビッグボーナス概要</span></h4>
+<h3>AT中ボーナス</h3>
+<h4>AT中のビッグボーナス概要</h4>
 <p>AT中のビッグボーナスは純増が約5.0枚にアップ。消化中はエクストララウンドで獲得した拳球に応じて、ATゲーム数の上乗せを抽選する。赤7揃いのビッグはレア役高確率状態なので上乗せのハイチャンスだ。 終了後は約25%で鉄拳チャンスへ突入する。</p>
-<h4><span id="AT-6">AT中のビッグボーナス概要</span></h4>
+<h4>AT中のビッグボーナス概要</h4>
 <table>
 <thead>
 <tr>
@@ -1231,7 +1184,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="AT-7">AT中のビッグボーナスの種類</span></h4>
+<h4>AT中のビッグボーナスの種類</h4>
 <table>
 <thead>
 <tr>
@@ -1259,7 +1212,7 @@
 <p>［ビッグボーナスパーフェクト］</p>
 <p>［消化中の上乗せ抽選］ 拳球の数が多いほど大量ゲーム数上乗せに期待できる。</p>
 <p>［終了後の鉄拳チャンスジャッジ］ ビッグ終了後は鉄拳チャンスorATゲーム数上乗せを告知。 終了時のレバーONで抽選するため、叩きどころ！</p>
-<h4><span id="i-52">拳球ごとの上乗せ抽選値</span></h4>
+<h4>拳球ごとの上乗せ抽選値</h4>
 <table>
 <thead>
 <tr>
@@ -1287,10 +1240,10 @@
 </tbody>
 </table>
 <p>昇球を持っている場合でも、ボーナス最終ゲームでは鉄拳コンボが発生せず、当該ゲームで上乗せゲーム数が告知される。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="AT-8">鉄拳ラッシュ（AT）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="AT-9">AT概要</span></h4>
+<h3>鉄拳ラッシュ（AT）</h3>
+<h4>AT概要</h4>
 <p>ゲーム数上乗せ型のATで、ゲーム数直乗せや拳奪バトル（AT中CZ）を目指すのがメインのゲーム性。 3種類の告知パターンを任意に選択できるのもこれまで通りだ。</p>
-<h4><span id="AT-10">鉄拳ラッシュ（AT）概要</span></h4>
+<h4>鉄拳ラッシュ（AT）概要</h4>
 <table>
 <thead>
 <tr>
@@ -1321,7 +1274,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-53">レア役時の抽選まとめ</span></h4>
+<h4>レア役時の抽選まとめ</h4>
 <table>
 <thead>
 <tr>
@@ -1381,7 +1334,7 @@
 <p>初回は最大90G＋αで拳奪バトル当選（30Gと60Gも優遇）</p>
 <p>拳奪バトル2回目以降は240G＋αが天井</p>
 <p>［告知タイプ］</p>
-<h4><span id="i-54">告知タイプ</span></h4>
+<h4>告知タイプ</h4>
 <table>
 <thead>
 <tr>
@@ -1404,12 +1357,12 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-55">鉄拳コンボ</span></h4>
+<h4>鉄拳コンボ</h4>
 <p>ゲーム数上乗せ時の一部で発生する上乗せ昇格フリーズ。発生した時点で＋50G以上濃厚、ステップアップするほど期待できる。 発展キャラによって上乗せゲーム数期待度が変化。スイカ契機で発生した場合はキャラ不問で＋100G以上濃厚になる。</p>
 <p>［一八］</p>
 <p>［クマ］</p>
 <p>［平八］</p>
-<h4><span id="i-56">鉄拳コンボのキャラ別上乗せ性能</span></h4>
+<h4>鉄拳コンボのキャラ別上乗せ性能</h4>
 <table>
 <thead>
 <tr>
@@ -1432,9 +1385,9 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-57">鉄拳アタック概要</span></h4>
+<h4>鉄拳アタック概要</h4>
 <p>AT中（AT中ビッグ含む）の7揃いから突入する伝統の0G連。0G連発生ごとに10G以上を上乗せ、5回保障なので最低でも50Gを獲得できる。</p>
-<h4><span id="i-58">鉄拳アタック性能</span></h4>
+<h4>鉄拳アタック性能</h4>
 <table>
 <thead>
 <tr>
@@ -1454,7 +1407,7 @@
 </tbody>
 </table>
 <p>［赤オーラなら高継続］ オーラは通常が青、赤なら高継続率に期待できる。</p>
-<h4><span id="i-59">オーラの色別性能</span></h4>
+<h4>オーラの色別性能</h4>
 <table>
 <thead>
 <tr>
@@ -1479,7 +1432,7 @@
 <p>最低0G連5回の保障があるため、オーラの色による継続抽選は5回目以降からおこなわれる。</p>
 <p>［チャンスパターン］ 0G連で揃う7の種類や演出パターンで上乗せゲーム数が変化。青7＋赤7揃いや赤7のダブル揃い、オール赤7揃いは液晶の7表示と複合するパターンだ。</p>
 <p>0G連のMAX回数は13回で、13回到達時はフリーズが発生して100G以上が上乗せされる。</p>
-<h4><span id="i-60">パターン別上乗せゲーム数</span></h4>
+<h4>パターン別上乗せゲーム数</h4>
 <table>
 <thead>
 <tr>
@@ -1518,7 +1471,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-61">ゲーム数上乗せ当選率</span></h4>
+<h4>ゲーム数上乗せ当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1545,7 +1498,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-62">成立役ごとの最低上乗せゲーム数</span></h4>
+<h4>成立役ごとの最低上乗せゲーム数</h4>
 <table>
 <thead>
 <tr>
@@ -1573,7 +1526,7 @@
 </tbody>
 </table>
 <p>チャンス目と強チェリーはゲーム数上乗せ以上濃厚だ。</p>
-<h4><span id="i-63">上乗せゲーム数振り分け</span></h4>
+<h4>上乗せゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1623,7 +1576,7 @@
 </tbody>
 </table>
 <p>バトル発展ゲームなどの一部状況では裏乗せになり、AT最終ゲーム後に告知される。</p>
-<h4><span id="i-64">拳奪バトル高確移行率</span></h4>
+<h4>拳奪バトル高確移行率</h4>
 <table>
 <thead>
 <tr>
@@ -1649,7 +1602,7 @@
 </tbody>
 </table>
 <p>弱レア役で拳奪バトル高確への昇格を抽選する。</p>
-<h4><span id="i-65">拳奪バトル当選率</span></h4>
+<h4>拳奪バトル当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1693,9 +1646,9 @@
 </tbody>
 </table>
 <p>高確中は確役の拳奪バトル当選率が大幅にアップする。</p>
-<h4><span id="i-66">デビルラッシュ高確率</span></h4>
+<h4>デビルラッシュ高確率</h4>
 <p>獲得枚数が2000枚を超えた時のAT残りゲーム数を加味して移行を抽選。3000枚獲得時は残りゲーム数不問で必ず移行する。 2000枚超時の抽選は見た目上ではわからないが、3000枚超時は液晶下部に紫色のモヤが表示（上液晶参照）。 デビルラッシュ高確率中はレア役でデビルラッシュが抽選される。</p>
-<h4><span id="i-67">デビルラッシュ高確率 性能</span></h4>
+<h4>デビルラッシュ高確率 性能</h4>
 <table>
 <thead>
 <tr>
@@ -1714,10 +1667,10 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="ATCZ">拳奪バトル（AT中CZ）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-68">拳奪バトル概要</span></h4>
+<h3>拳奪バトル（AT中CZ）</h3>
+<h4>拳奪バトル概要</h4>
 <p>2G間の自力バトルで、勝利すればエクストララウンドを経由してボーナスに当選。 対戦相手によって勝利期待度やエクストララウンド中の拳球獲得期待度が変化する。</p>
-<h4><span id="i-69">拳奪バトル概要</span></h4>
+<h4>拳奪バトル概要</h4>
 <table>
 <thead>
 <tr>
@@ -1745,7 +1698,7 @@
 </tbody>
 </table>
 <p>［対戦相手］</p>
-<h4><span id="i-70">対戦相手別の勝利期待度＆拳球獲得期待度</span></h4>
+<h4>対戦相手別の勝利期待度＆拳球獲得期待度</h4>
 <table>
 <thead>
 <tr>
@@ -1793,9 +1746,9 @@
 </tbody>
 </table>
 <p>※ ★ は半個分</p>
-<h4><span id="i-71">エクストララウンド</span></h4>
+<h4>エクストララウンド</h4>
 <p>拳奪バトル勝利後に移行する6G間の拳球獲得ゾーンで、拳球を獲得するほどボーナス中のゲーム数上乗せ性能を強化できる。 毎ゲーム性能の異なる拳球を抽選するため、最大で6種類の拳球を獲得可能。一気にすべての拳球を獲得できる白7停止フラグもある。</p>
-<h4><span id="i-72">エクストララウンド概要</span></h4>
+<h4>エクストララウンド概要</h4>
 <table>
 <thead>
 <tr>
@@ -1823,7 +1776,7 @@
 </tbody>
 </table>
 <p>［拳球の種類］</p>
-<h4><span id="i-73">拳球ごとの効果</span></h4>
+<h4>拳球ごとの効果</h4>
 <table>
 <thead>
 <tr>
@@ -1867,7 +1820,7 @@
 </table>
 <p>すべての拳球を獲得した場合、超高性能の「ビッグボーナスパーフェクト」に突入する。</p>
 <p>［白7停止フラグ］</p>
-<h4><span id="7-3">白7フラグ確率</span></h4>
+<h4>白7フラグ確率</h4>
 <table>
 <thead>
 <tr>
@@ -1883,7 +1836,7 @@
 </tbody>
 </table>
 <p>［拳球の効果は液晶でも確認可能］</p>
-<h4><span id="i-74">キャラ別の出現割合＆勝率</span></h4>
+<h4>キャラ別の出現割合＆勝率</h4>
 <table>
 <thead>
 <tr>
@@ -1930,7 +1883,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-75">［開始時のキャラ別］勝利当選率</span></h4>
+<h4>［開始時のキャラ別］勝利当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1970,7 +1923,7 @@
 </tbody>
 </table>
 <p>まずは当選時の対戦相手に応じて勝利を抽選。漏れた場合はバトル中の成立役で勝利書き換えを抽選する。</p>
-<h4><span id="i-76">［バトル中の成立役別］勝利当選率</span></h4>
+<h4>［バトル中の成立役別］勝利当選率</h4>
 <table>
 <thead>
 <tr>
@@ -2020,7 +1973,7 @@
 </tbody>
 </table>
 <p>クラウディオ以上はリプレイと押し順ベルの期待度が大幅にアップ、ニーナはリプレイを引けば勝利濃厚。 バトル勝利時および勝利後のレア役で、エクストララウンドでの拳球獲得ストックを抽選しているため、強い役で勝つほど拳球ストックに期待できる＋引き損なしだ。</p>
-<h4><span id="i-77">拳奪バトル中の拳球ストック当選率</span></h4>
+<h4>拳奪バトル中の拳球ストック当選率</h4>
 <table>
 <thead>
 <tr>
@@ -2048,7 +2001,7 @@
 </tbody>
 </table>
 <p>強チェリーで勝利した場合は必ず拳球ストックを獲得。 中押しで2連7が中下段に停止するフラグは1.2%、上中段に停止するフラグなら必ず拳球をストックできる（どちらも左1stだとハズレ目が停止）。</p>
-<h4><span id="EX">勝利時のEXレベル振り分け</span></h4>
+<h4>勝利時のEXレベル振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2200,7 +2153,7 @@
 </tbody>
 </table>
 <p>勝利した対戦相手によって、内部的に7段階のレベルを決定。レベルに応じてリプレイ・レア役以外の拳球獲得期待度が変化する。</p>
-<h4><span id="EX-2">EXレベルごとの拳球獲得期待度</span></h4>
+<h4>EXレベルごとの拳球獲得期待度</h4>
 <table>
 <thead>
 <tr>
@@ -2263,7 +2216,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-78">ボーナスのゲーム数上乗せ当選率</span></h4>
+<h4>ボーナスのゲーム数上乗せ当選率</h4>
 <table>
 <thead>
 <tr>
@@ -2291,10 +2244,10 @@
 </tbody>
 </table>
 <p>レア役は拳球獲得だけでなく、ボーナスのゲーム数を5or10G上乗せする抽選もおこなわれる。 中押しで2連7が中下段に停止するフラグは0.8%、上中段に停止するフラグ停止するフラグなら必ず上乗せが発生する（どちらも左1stだとハズレ目が停止）。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-79">鉄拳チャンス</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-80">鉄拳チャンス概要</span></h4>
+<h3>鉄拳チャンス</h3>
+<h4>鉄拳チャンス概要</h4>
 <p>AT中ボーナス後の一部で突入する15G間の拳奪バトル高確率ゾーン。 拳奪バトル勝利→ビッグ終了後は必ず鉄拳チャンスに再突入（15G再セット）するため、ビッグ連打に期待できる。 開始画面が赤タイトルなら拳奪バトル当選率が優遇される（上画像は通常の青タイトル）。</p>
-<h4><span id="i-81">鉄拳チャンス性能</span></h4>
+<h4>鉄拳チャンス性能</h4>
 <table>
 <thead>
 <tr>
@@ -2326,7 +2279,7 @@
 </tbody>
 </table>
 <p>［おなじみの演出］ 様々な専用演出が発生する。</p>
-<h4><span id="i-82">鉄拳チャンス中の拳奪バトル当選率 最終ゲーム以外</span></h4>
+<h4>鉄拳チャンス中の拳奪バトル当選率 最終ゲーム以外</h4>
 <table>
 <thead>
 <tr>
@@ -2353,7 +2306,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-83">最終ゲーム</span></h4>
+<h4>最終ゲーム</h4>
 <table>
 <thead>
 <tr>
@@ -2382,7 +2335,7 @@
 </table>
 <p>※上記以外の役でも拳奪バトルを抽選</p>
 <p>拳奪バトルの本前兆中は基本的にレア役でのみ拳奪バトルのストックが抽選される。</p>
-<h4><span id="i-84">特殊抽選時の振り分け</span></h4>
+<h4>特殊抽選時の振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2403,10 +2356,10 @@
 </table>
 <p>最終ゲームで当選したバトルでは、 勝利濃厚かつ対戦相手がクマor金木人 （＝リプレイ以上を引けばボーナス濃厚）になる特殊抽選が発生。 また、最終ゲーム以外でも契機役に応じて上記の対戦相手がクマor金木人になる抽選がおこなわれる。 当選期待度は弱チェリー・スイカ・中押し中下段2連7停止＜チャンス目＜強チェリー・中押し・上中段2連7停止（濃厚）だ。 ちなみに、AT中の拳奪バトルでも上記のクマor金木人が選択される可能性がある。</p>
 <p>［中押しからの1確目も面白い！］ 中リールに2連7を狙って、枠内に2連7が停止（上中段or中下段に停止）すれば拳奪バトル濃厚（順押しした場合はハズレ目が停止）。 上中段に止まった時はクマor金木人とのバトルになるためボーナス濃厚になる。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-85">コンティニューゾーン</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-86">コンティニューゾーン概要</span></h4>
+<h3>コンティニューゾーン</h3>
+<h4>コンティニューゾーン概要</h4>
 <p>AT終了後に突入する3G間の引き戻しゾーンで、レア役を引けばATに復帰。 チャンス目や強チェリーを引いた場合は頭突きコンボチャンス発生に期待できる。</p>
-<h4><span id="i-87">コンティニューゾーン性能</span></h4>
+<h4>コンティニューゾーン性能</h4>
 <table>
 <thead>
 <tr>
@@ -2425,11 +2378,11 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-88">頭突きコンボチャンス</span></h4>
+<h4>頭突きコンボチャンス</h4>
 <p>コンティニューゾーンでレア役を引いた時の一部で突入する上乗せ特化ゾーン。 頭突きが成功するたびにATゲーム数を50G以上上乗せする。 レア役を引いた場合は継続（頭突き成功）濃厚だ。</p>
-<h4><span id="i-89">引き戻し＆頭突きコンボチャンス当選率</span></h4>
+<h4>引き戻し＆頭突きコンボチャンス当選率</h4>
 <p>レア役を引けば引き戻し濃厚。チャンス目や強チェリーで引き戻せば頭突きコンボチャンス当選のチャンスだ。</p>
-<h4><span id="AT-11">コンティニューゾーン中のAT当選率</span></h4>
+<h4>コンティニューゾーン中のAT当選率</h4>
 <table>
 <thead>
 <tr>
@@ -2448,7 +2401,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="AT-12">AT当選契機役別・頭突きコンボチャンス当選率</span></h4>
+<h4>AT当選契機役別・頭突きコンボチャンス当選率</h4>
 <table>
 <thead>
 <tr>
@@ -2472,10 +2425,10 @@
 </tbody>
 </table>
 <p>中押しで中下段または上中段に2連7が停止するフラグが内部成立した場合、鉄拳ラッシュ濃厚になる。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="AT-13">デビルラッシュ（上位AT）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="AT-14">上位AT概要</span></h4>
+<h3>デビルラッシュ（上位AT）</h3>
+<h4>上位AT概要</h4>
 <p>まずは「デビルラッシュ覚醒」からスタートして、継続に漏れると「デビルラッシュ」に突入。デビルラッシュで勝利すればデビルラッシュ覚醒に戻るという、ダブルループシステムになっている。 デビルラッシュ覚醒中は成立役に応じて継続ストックを抽選する。</p>
-<h4><span id="i-90">デビルラッシュ覚醒性能</span></h4>
+<h4>デビルラッシュ覚醒性能</h4>
 <table>
 <thead>
 <tr>
@@ -2514,7 +2467,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-91">デビルラッシュ性能</span></h4>
+<h4>デビルラッシュ性能</h4>
 <table>
 <thead>
 <tr>
@@ -2550,9 +2503,9 @@
 <p>［デビルラッシュ覚醒の継続バトル］ バトル勝利で継続濃厚だ。</p>
 <p>［デビルラッシュ］</p>
 <p>［デビルラッシュの継続バトル］ ここで継続できなかった場合は終了。引き戻し状態へ移行する。</p>
-<h4><span id="i-92">初期ゲーム数抽選</span></h4>
+<h4>初期ゲーム数抽選</h4>
 <p>デビルラッシュ覚醒の初期ゲーム数は30Gがデフォルトだが、セット数に応じてゲーム数の昇格を抽選。3の倍数セットは昇格率がアップしているので50G以上が選択されやすい。</p>
-<h4><span id="50G">初期ゲーム数昇格率（50G以上への昇格）</span></h4>
+<h4>初期ゲーム数昇格率（50G以上への昇格）</h4>
 <table>
 <thead>
 <tr>
@@ -2571,7 +2524,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-93">昇格時の初期ゲーム数振り分け</span></h4>
+<h4>昇格時の初期ゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -2598,9 +2551,9 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-94">勝利ストック抽選</span></h4>
+<h4>勝利ストック抽選</h4>
 <p>上位AT中（デビルラッシュ覚醒・デビルラッシュで共通）はレア役で勝利ストックを抽選。 ラストのデビルクライマックスバトル中はストック当選率が大幅にアップする。</p>
-<h4><span id="AT-15">［上位AT中］勝利ストック当選率 ※クライマックスバトル中以外</span></h4>
+<h4>［上位AT中］勝利ストック当選率 ※クライマックスバトル中以外</h4>
 <table>
 <thead>
 <tr>
@@ -2628,7 +2581,7 @@
 </tbody>
 </table>
 <p>デビルロード中も上表と同じ数値でストックを抽選する。</p>
-<h4><span id="i-95">［デビルクライマックスバトル中］勝利ストック当選率</span></h4>
+<h4>［デビルクライマックスバトル中］勝利ストック当選率</h4>
 <table>
 <thead>
 <tr>
@@ -2656,10 +2609,10 @@
 </tbody>
 </table>
 <p>デビルクライマックスバトル中の強レア役はストック濃厚。ストックの有無に関わらず上記数値で抽選される。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="CZ-7">デビルロード（上位CZ）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-96">デビルロード概要</span></h4>
+<h3>デビルロード（上位CZ）</h3>
+<h4>デビルロード概要</h4>
 <p>エンディング終了後に移行する上位ATをかけたCZだ。</p>
-<h4><span id="CZ-8">デビルロード（上位CZ）性能</span></h4>
+<h4>デビルロード（上位CZ）性能</h4>
 <table>
 <thead>
 <tr>
@@ -2682,14 +2635,14 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-97">勝利ストック抽選</span></h4>
+<h4>勝利ストック抽選</h4>
 <p>上位CZは準備中とCZ消化中のレア役で勝利ストックを抽選。準備中の当選率が高いところがポイントだ。</p>
-<h4><span id="CZ-9">［上位CZ中］勝利ストック当選率</span></h4>
+<h4>［上位CZ中］勝利ストック当選率</h4>
 <p>上位CZ準備中はデビルクライマックスバトル中と、消化中は上位AT中と共通の抽選値だ。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-98">エンディング</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-99">エンディング移行条件</span></h4>
+<h3>エンディング</h3>
+<h4>エンディング移行条件</h4>
 <p>［鉄拳ラッシュエンディング］</p>
-<h4><span id="i-100">鉄拳ラッシュエンディング</span></h4>
+<h4>鉄拳ラッシュエンディング</h4>
 <table>
 <thead>
 <tr>
@@ -2709,7 +2662,7 @@
 </tbody>
 </table>
 <p>［デビルラッシュエンディング］</p>
-<h4><span id="i-101">デビルラッシュエンディング</span></h4>
+<h4>デビルラッシュエンディング</h4>
 <table>
 <thead>
 <tr>
@@ -2729,19 +2682,19 @@
 </tbody>
 </table>
 <p>エピソード中のレア役は終了時のトロフィー出現率アップ抽選がおこなわれる。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-102">その他</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-103">リバースロック</span></h4>
+<h3>その他</h3>
+<h4>リバースロック</h4>
 <p>リバースロック（リールロック）はAT中も発生する。</p>
-<h4><span id="i-104">リバースロックの性能</span></h4>
+<h4>リバースロックの性能</h4>
 <p>リバースロックの注目ポイント</p>
 <p>デビルゾーンの連続演出中は リバースロック1段階及び2段階の発生抽選をしない</p>
 <p>デビルゾーンの連続演出中にリバースロックすればロングフリーズ濃厚</p>
-<p>AT中にリバースロック1段階で スベらないチャンス目が停止すれば鉄拳コンボ濃厚</p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-105">演出情報</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-106">激熱ランプ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-107">激熱ランプ点灯時の恩恵</span></h4>
+<p>AT中にリバースロック1段階で スベらないチャンス目が停止すれば鉄拳コンボ濃厚</p>
+<h2>演出情報</h2>
+<h3>激熱ランプ</h3>
+<h4>激熱ランプ点灯時の恩恵</h4>
 <p>液晶下部にある激熱ランプが点灯した場合は、状況に応じた強力な恩恵をゲットできる。</p>
-<h4><span id="i-108">激熱ランプ点灯時の恩恵</span></h4>
+<h4>激熱ランプ点灯時の恩恵</h4>
 <table>
 <thead>
 <tr>
@@ -2764,8 +2717,8 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-109">通常時</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-110">ステージごとの示唆</span></h4>
+<h3>通常時</h3>
+<h4>ステージごとの示唆</h4>
 <table>
 <thead>
 <tr>
@@ -2811,10 +2764,10 @@
 <p>［仁ステージ］</p>
 <p>［平八ステージ］</p>
 <p>［クマステージ］</p>
-<h4><span id="i-111">サブ液晶の木人タッチ示唆</span></h4>
+<h4>サブ液晶の木人タッチ示唆</h4>
 <p>鉄拳ゾーン終了の次ゲームは、サブ液晶に木人示唆が発生することがある。 サブ液晶をタッチすると、表示された文字でボーナス当選までの残り鉄拳ポイントが示唆される。</p>
 <p>［木人の種類］</p>
-<h4><span id="i-112">木人の種類別示唆</span></h4>
+<h4>木人の種類別示唆</h4>
 <table>
 <thead>
 <tr>
@@ -2838,7 +2791,7 @@
 </tbody>
 </table>
 <p>［表示文字の種類］</p>
-<h4><span id="i-113">文字パターン別の規定までの残り鉄拳ポイント</span></h4>
+<h4>文字パターン別の規定までの残り鉄拳ポイント</h4>
 <table>
 <thead>
 <tr>
@@ -2869,9 +2822,9 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-114">木人ゲーム解説の示唆</span></h4>
+<h4>木人ゲーム解説の示唆</h4>
 <p>木人のゲーム数解説は文字色に注目。青文字以上なら滞在モードが示唆される。</p>
-<h4><span id="i-115">木人ゲーム解説の文字色示唆</span></h4>
+<h4>木人ゲーム解説の文字色示唆</h4>
 <table>
 <thead>
 <tr>
@@ -2902,9 +2855,9 @@
 <p>［青文字］</p>
 <p>［緑文字］</p>
 <p>［赤文字］</p>
-<h4><span id="i-116">アイキャッチ（ステージチェンジ）の示唆</span></h4>
+<h4>アイキャッチ（ステージチェンジ）の示唆</h4>
 <p>ステージチェンジ発生時のアイキャッチでCZやクマステージ移行を示唆している。</p>
-<h4><span id="i-117">アイキャッチの示唆</span></h4>
+<h4>アイキャッチの示唆</h4>
 <table>
 <thead>
 <tr>
@@ -2934,9 +2887,9 @@
 <p>［仁］</p>
 <p>［一八＆平八］</p>
 <p>［ラース＆シャオユウ＆キング］</p>
-<h4><span id="i-118">鉄拳ボウル演出</span></h4>
+<h4>鉄拳ボウル演出</h4>
 <p>画面左下のシャッターが開いて鉄拳ボウルが発生するとレア役を示唆。ボウリングの結果に応じてしさない異様が変化する。</p>
-<h4><span id="i-119">結果ごとの示唆</span></h4>
+<h4>結果ごとの示唆</h4>
 <table>
 <thead>
 <tr>
@@ -2975,7 +2928,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-120">ミッション演出期待度</span></h4>
+<h4>ミッション演出期待度</h4>
 <table>
 <thead>
 <tr>
@@ -3037,7 +2990,7 @@
 <p>プレミアムパターン発生時はATor赤7ビッグ濃厚</p>
 <p>期待度約80%のミッションハズレ時はCZモードC以上濃厚</p>
 <p>全ミッション共通で、復活演出で成功した場合はボーナス濃厚、プレミアムパターン発生時はATor赤7ビッグ濃厚。 また、各ステージの期待度約80%のミッションは、ハズれた場合でもCZモードC以上濃厚となる。</p>
-<h4><span id="i-121">バトル演出期待度</span></h4>
+<h4>バトル演出期待度</h4>
 <table>
 <thead>
 <tr>
@@ -3155,7 +3108,7 @@
 </tbody>
 </table>
 <p>バトル演出は勝利すればボーナス以上濃厚。ステージごとに存在する組み合わせや、擬似連の有無によって期待度が変化する。</p>
-<h4><span id="23G">2・3G目の組み合わせ別期待度</span></h4>
+<h4>2・3G目の組み合わせ別期待度</h4>
 <table>
 <thead>
 <tr>
@@ -3222,7 +3175,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="23G-2">2・3G目の演出単体パターン別期待度</span></h4>
+<h4>2・3G目の演出単体パターン別期待度</h4>
 <table>
 <thead>
 <tr>
@@ -3314,7 +3267,7 @@
 </tbody>
 </table>
 <p>［インターフェイス擬似連経由］</p>
-<h4><span id="i-122">インターフェイス擬似連経由の期待度</span></h4>
+<h4>インターフェイス擬似連経由の期待度</h4>
 <table>
 <thead>
 <tr>
@@ -3342,7 +3295,7 @@
 </tbody>
 </table>
 <p>［ストーリー擬似連経由］ ストーリー擬似連は発生した時点で期待度80%超！</p>
-<h4><span id="i-123">ストーリー擬似連経由の期待度</span></h4>
+<h4>ストーリー擬似連経由の期待度</h4>
 <table>
 <thead>
 <tr>
@@ -3369,13 +3322,13 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="CZ-10">CZ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-124">拳奪バトル中のオススメ打ち方手順</span></h4>
+<h3>CZ</h3>
+<h4>拳奪バトル中のオススメ打ち方手順</h4>
 <p>［中押し手順］ 拳奪バトル中は「2連7停止フラグ」が成立すれば拳球獲得濃厚になるのだが、順押しだとハズレとの判別ができない。 中押しをすることでこの「2連7停止フラグ」を判別することができる。</p>
 <p>［順押し手順］ 左リールに2連の赤＆青7を狙って、中下段に2連が停止すればリプレイor強チェリー。 拳奪バトル中はチャンス、エクストララウンド中は拳球獲得濃厚だ。</p>
-<h4><span id="i-125">ロックオンチャレンジの演出法則</span></h4>
+<h4>ロックオンチャレンジの演出法則</h4>
 <p>【シャオユウ】</p>
-<h4><span id="i-126">［シャオユウ］パターン別期待度</span></h4>
+<h4>［シャオユウ］パターン別期待度</h4>
 <table>
 <thead>
 <tr>
@@ -3406,7 +3359,7 @@
 <p>［ステップ4］</p>
 <p>［虹イルミ］</p>
 <p>【ラース】</p>
-<h4><span id="i-127">［ラース］パターン期待度</span></h4>
+<h4>［ラース］パターン期待度</h4>
 <table>
 <thead>
 <tr>
@@ -3428,7 +3381,7 @@
 <p>［アリサカットイン］</p>
 <p>［リーカットイン］</p>
 <p>【キング】</p>
-<h4><span id="i-128">［キング］パターン期待度</span></h4>
+<h4>［キング］パターン期待度</h4>
 <table>
 <thead>
 <tr>
@@ -3457,10 +3410,10 @@
 <p>軒ランプの発光法則</p>
 <p>ジャッジ演出中に先光りすれば成功濃厚</p>
 <p>強チェリーor対応役成立の次ゲームレバーON時の ジャッジ演出中に先光りすれば赤7ビッグ以上濃厚</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="AT-16">AT中ボーナス関連</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-129">終了画面の鉄拳チャンス示唆</span></h4>
+<h3>AT中ボーナス関連</h3>
+<h4>終了画面の鉄拳チャンス示唆</h4>
 <p>［状況によって示唆が変化!?］ AT中のビッグ終了画面は非鉄拳チャンス中なら鉄拳チャンス当選期待度を、鉄拳チャンス中なら設定示唆になる!?</p>
-<h4><span id="AT-17">AT中ビッグ終了画面の示唆（非鉄拳チャンス中）</span></h4>
+<h4>AT中ビッグ終了画面の示唆（非鉄拳チャンス中）</h4>
 <table>
 <thead>
 <tr>
@@ -3496,9 +3449,9 @@
 <p>［赤背景：一八］</p>
 <p>［赤背景：平八］</p>
 <p>［赤背景：一美］</p>
-<h4><span id="7-4">7を狙え演出期待度</span></h4>
+<h4>7を狙え演出期待度</h4>
 <p>AT中と同じく7が揃えば鉄拳アタック濃厚。青（狙）球なし時は緑以上のカットインが発生した時点で7揃い濃厚だが、青（狙）球あり時のほうがカットイン発生率が圧倒的に高くなっている。</p>
-<h4><span id="AT7">AT中・ボーナス中の7を狙え演出期待度</span></h4>
+<h4>AT中・ボーナス中の7を狙え演出期待度</h4>
 <table>
 <thead>
 <tr>
@@ -3532,8 +3485,8 @@
 </table>
 <p>［緑］</p>
 <p>［赤］</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-130">初当りボーナス関連</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-131">初当りビッグおよび鉄拳ラッシュ終了画面の示唆</span></h4>
+<h3>初当りボーナス関連</h3>
+<h4>初当りビッグおよび鉄拳ラッシュ終了画面の示唆</h4>
 <table>
 <thead>
 <tr>
@@ -3600,7 +3553,7 @@
 <p>［一八＆平八］</p>
 <p>［デビル仁］</p>
 <p>［デビル一美］</p>
-<h4><span id="7-5">青7ビッグ中の演出</span></h4>
+<h4>青7ビッグ中の演出</h4>
 <p>【ラース選択時】</p>
 <p>［ラース選択時］演出法則</p>
 <p>鉄拳衆ナビ演出が3人ならCMB濃厚</p>
@@ -3612,7 +3565,7 @@
 <p>［平八オーバーラップ：金］ 青がデフォルト、金ならクライマックスバトル発展濃厚だ。</p>
 <p>［親子喧嘩を掴み取れ：特殊画像］ 親子喧嘩を掴み取れは発生した時点でクライマックスバトル発展濃厚。上写真のように、一八が平八を投げている画像があれば勝利濃厚の虹クライマックバトルに発展する。</p>
 <p>【シャオユウ選択時】 ［メッセージ演出］ メッセージ色でクライマックスバトル＆鉄拳ラッシュの期待度が示唆される（序列は白＜青＜緑＜赤＜虹） 。</p>
-<h4><span id="i-132">［シャオユウ選択時］メッセージ演出の示唆</span></h4>
+<h4>［シャオユウ選択時］メッセージ演出の示唆</h4>
 <table>
 <thead>
 <tr>
@@ -3665,9 +3618,9 @@
 <p>※CMB…クライマックスバトル</p>
 <p>●ケロット柄タイトル</p>
 <p>●チャンスアップ</p>
-<h4><span id="7-6">7を狙え演出期待度</span></h4>
+<h4>7を狙え演出期待度</h4>
 <p>7が揃えばAT濃厚。7が揃った後または虹クライマックスバトル告知後は、「7を狙え」が発生した時点で7揃い＝ATゲーム数上乗せ濃厚になる（カットインの色不問）。</p>
-<h4><span id="7-7">初当りビッグ中の7を狙え演出期待度</span></h4>
+<h4>初当りビッグ中の7を狙え演出期待度</h4>
 <table>
 <thead>
 <tr>
@@ -3696,8 +3649,8 @@
 </table>
 <p>［赤カットイン］</p>
 <p>［キング選択時のカットイン］</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="AT-18">AT関連</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-133">拳奪バトル高確・超高確示唆 ラース選択時の帯色</span></h4>
+<h3>AT関連</h3>
+<h4>拳奪バトル高確・超高確示唆 ラース選択時の帯色</h4>
 <table>
 <thead>
 <tr>
@@ -3712,7 +3665,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-134">シャオユウ選択時のサブ液晶</span></h4>
+<h4>シャオユウ選択時のサブ液晶</h4>
 <table>
 <thead>
 <tr>
@@ -3731,10 +3684,10 @@
 <p>［ラース選択時］</p>
 <p>［シャオユウ選択時］</p>
 <p>［キング選択時］ キングに示唆はなく、拳奪バトル接近中の帯は拳奪バトルの本前兆を示唆。 高確の判別はできないが、高確率中の方がミッション演出が出やすい特徴があるため、たとえミッション演出がハズれても高確率中の可能性は高い。</p>
-<h4><span id="i-135">コンティニューゾーン・頭突きコンボチャンス演出法則</span></h4>
+<h4>コンティニューゾーン・頭突きコンボチャンス演出法則</h4>
 <p>［リール変則始動］</p>
 <p>コンティニューゾーン中は右リール→中リール→左リールの順に始動すると引き戻し濃厚。 これは頭突きコンボチャンス中も有効で、上記の始動順だと当該ゲームでの上乗せ濃厚になる。</p>
-<h4><span id="i-136">リール変則変動（右→中→左）時の恩恵</span></h4>
+<h4>リール変則変動（右→中→左）時の恩恵</h4>
 <table>
 <thead>
 <tr>
@@ -3754,7 +3707,7 @@
 </tbody>
 </table>
 <p>［演出発生タイミング］</p>
-<h4><span id="i-137">演出発生パターン</span></h4>
+<h4>演出発生パターン</h4>
 <table>
 <thead>
 <tr>
@@ -3777,17 +3730,17 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-138">上乗せゲーム数の矛盾</span></h4>
+<h4>上乗せゲーム数の矛盾</h4>
 <p>レア役時の上乗せが＋5G、強チェリーで20G未満の上乗せ…のように、上乗せゲーム数の矛盾が発生した場合は鉄拳コンボ発生濃厚。次ゲームのレバーONから鉄拳コンボがスタートする。 ちなみに、鉄拳コンボ中の矛盾は特定回数以上のコンボ濃厚となる。</p>
 <p>鉄拳コンボ中の矛盾パターン</p>
 <p>一八コンボの1コンボ目で＋30Gが表示された場合は 2コンボ以上濃厚(+100G以上)</p>
 <p>一八コンボの2コンボ目に＋200G以上が表示された場合は 3コンボ濃厚 （2コンボ目に表示されたゲーム数を超える上乗せ発生）</p>
 <p>クマコンボの1コンボ目に＋200G以上が表示された場合は 2コンボ濃厚 （1コンボ目に表示されたゲーム数を超える上乗せが発生）</p>
-<h4><span id="i-139">拳奪バトル中の演出法則</span></h4>
+<h4>拳奪バトル中の演出法則</h4>
 <p>［1G目・味方キャラから登場］ 1G目は基本的に敵キャラから登場するが、ここで味方キャラが登場すればチャンスアップ。 キング選択時はキングから（味方キャラから）登場すれば勝利濃厚になる。</p>
 <p>キング選択時は勝利濃厚！</p>
 <p>［2G目・PUSH表示］ 2G目に表示されるPUSHボタンは、デカPUSHorケロット柄なら勝利濃厚かつ高EXレベル濃厚だ。</p>
-<h4><span id="PUSH">PUSHボタンごとの示唆</span></h4>
+<h4>PUSHボタンごとの示唆</h4>
 <table>
 <thead>
 <tr>
@@ -3815,9 +3768,9 @@
 </tbody>
 </table>
 <p>ケロット柄なら勝利プラスEXレベル7濃厚！</p>
-<h4><span id="i-140">払い出しランプ虹点灯の示唆</span></h4>
+<h4>払い出しランプ虹点灯の示唆</h4>
 <p>通常は払い出し時に白点滅するが、虹点滅した場合は状態に応じた恩恵を獲得することができる。</p>
-<h4><span id="i-141">払い出しランプ虹点灯時の恩恵</span></h4>
+<h4>払い出しランプ虹点灯時の恩恵</h4>
 <table>
 <thead>
 <tr>
@@ -3840,9 +3793,9 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-142">鉄拳アタックの演出法則</span></h4>
+<h4>鉄拳アタックの演出法則</h4>
 <p>［オーラの色］ 赤オーラなら高継続率に期待できる。</p>
-<h4><span id="i-143">オーラの色</span></h4>
+<h4>オーラの色</h4>
 <table>
 <thead>
 <tr>
@@ -3862,7 +3815,7 @@
 </tbody>
 </table>
 <p>［文字パターン］</p>
-<h4><span id="i-144">文字パターン</span></h4>
+<h4>文字パターン</h4>
 <table>
 <thead>
 <tr>
@@ -3883,7 +3836,7 @@
 </table>
 <p>「拳魂一撃」なら＋30G以上濃厚になる。</p>
 <p>［リール上の継続示唆］</p>
-<h4><span id="i-145">リール上の継続示唆</span></h4>
+<h4>リール上の継続示唆</h4>
 <table>
 <thead>
 <tr>
@@ -3919,11 +3872,11 @@
 </tbody>
 </table>
 <p>※鉄拳アタック完走時の場合も各示唆が発生する可能性あり(上乗せ100G以上)</p>
-<h4><span id="i-146">鉄拳チャンスの最終ゲーム</span></h4>
+<h4>鉄拳チャンスの最終ゲーム</h4>
 <p>最終ゲームは基本的に鉄拳チャンスルーレット演出（上画像）が発生。 それ以外の演出が発生した場合は拳奪バトル濃厚!?</p>
-<h4><span id="7-8">7を狙え演出期待度</span></h4>
+<h4>7を狙え演出期待度</h4>
 <p>7が揃えば鉄拳アタック濃厚。ラースorシャオユウ選択時の期待度はほぼ同じ、キング選択時は発生した時点で7揃い濃厚になる（レバーON時にキングシャッターが閉まる）。</p>
-<h4><span id="AT7-2">AT中の7を狙え演出期待度</span></h4>
+<h4>AT中の7を狙え演出期待度</h4>
 <table>
 <thead>
 <tr>
@@ -3950,8 +3903,8 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="AT-19">上位AT関連</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-147">ラウンド開始画面の示唆</span></h4>
+<h3>上位AT関連</h3>
+<h4>ラウンド開始画面の示唆</h4>
 <table>
 <thead>
 <tr>
@@ -3982,7 +3935,7 @@
 <p>［平八］</p>
 <p>［デビル仁］</p>
 <p>［デビル一美］ デビル一美は最高継続率（90%）濃厚になる。</p>
-<h4><span id="50G-2">次回セットが50G以上濃厚になる勝ち方</span></h4>
+<h4>次回セットが50G以上濃厚になる勝ち方</h4>
 <table>
 <thead>
 <tr>
@@ -4034,7 +3987,7 @@
 </tbody>
 </table>
 <p>バトル中の勝ち方には、次セットの初期ゲーム数が50G以上となるパターンが存在する。</p>
-<h4><span id="i-148">セリフパターン別期待度</span></h4>
+<h4>セリフパターン別期待度</h4>
 <table>
 <thead>
 <tr>
@@ -4086,7 +4039,7 @@
 <p>1G目のセリフパターンと3G目の平八攻撃パターンに多彩なチャンスアップが存在する。 セリフは青で大チャンス、赤はほぼ勝利になる。</p>
 <p>［平八の青＆赤文字］</p>
 <p>［一八の青＆赤文字］</p>
-<h4><span id="i-149">平八の攻撃パターン別期待度</span></h4>
+<h4>平八の攻撃パターン別期待度</h4>
 <table>
 <thead>
 <tr>
@@ -4116,10 +4069,10 @@
 <p>［強攻撃］ 平八剛掌破は大ピンチ。 ちなみに、平八剛掌破は俗称ではなく、ゲーム鉄拳7の正式な技名称だ。</p>
 <p>［中攻撃］ 頭突きが中攻撃になる。</p>
 <p>［弱攻撃］ パンチなら大チャンスだ。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-150">裏ボタン</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="7-9">7揃い先判別</span></h4>
+<h3>裏ボタン</h3>
+<h4>7揃い先判別</h4>
 <p>レバーON時の7を狙え発生時に、もう一度レバーを叩いて筐体がバイブすれば7揃い濃厚になる。 初当りビッグ中ならAT濃厚、AT中やAT中のビッグ中は鉄拳アタック濃厚だ。</p>
-<h4><span id="7AT">7揃い先判別手順（ビッグ中・AT中）</span></h4>
+<h4>7揃い先判別手順（ビッグ中・AT中）</h4>
 <table>
 <thead>
 <tr>
@@ -4134,9 +4087,9 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-151">拳奪バトルの勝利先判別</span></h4>
+<h4>拳奪バトルの勝利先判別</h4>
 <p>拳奪バトルの1G目にPUSHボタンを押して、液晶右側のビッグボーナス告知ランプが点滅すると勝利濃厚となる。</p>
-<h4><span id="i-152">拳奪バトル勝利先判別手順</span></h4>
+<h4>拳奪バトル勝利先判別手順</h4>
 <table>
 <thead>
 <tr>
@@ -4151,9 +4104,9 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-153">リバースロック中の先告知</span></h4>
+<h4>リバースロック中の先告知</h4>
 <p>リバースロック発生時に、もう一度レバーを叩いて筐体がバイブすれば、通常時・デビルゾーン中はロングフリーズ濃厚、AT中は鉄拳コンボ以上濃厚になる。</p>
-<h4><span id="i-154">リバースロック時の隠しレバーバイブ</span></h4>
+<h4>リバースロック時の隠しレバーバイブ</h4>
 <table>
 <thead>
 <tr>
@@ -4185,19 +4138,34 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-155">その他</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="712">7を狙えの1確・2確目</span></h4>
+<h3>その他</h3>
+<h4>7を狙えの1確・2確目</h4>
 <p>［逆押し時］</p>
 <p>［逆ハサミ時］</p>
-<p>［中押し時］ 中押し時は1リールでフェイク・赤7揃い・青7揃いを判別できる。</p>
-<div class="post-views content-post post-2527 entry-meta load-static">
-				<span class="post-views-icon dashicons dashicons-chart-bar"></span> <span class="post-views-label">Post Views:</span> <span class="post-views-count">2,164</span>
-			</div></div></details></div></details>            </div>
-
-            <!-- 目次ハンバーガー（右下固定・常時）。中身はJSがセクションから生成 --></section>
+<p>［中押し時］ 中押し時は1リールでフェイク・赤7揃い・青7揃いを判別できる。</p></section>
   
   
   </article></main>
 <footer class="foot">個人アーカイブ（suroschool.jp / たかどらのスロ塾 会員コンテンツ）・閲覧用</footer>
+
+<!-- スマホ用ボトムナビ（スクロールで隠れる/出る） -->
+<nav class="botnav" id="botnav">
+  <a href="../index.html" data-nav="index">🎰<span>機種</span></a>
+  <button id="searchOpen2">🔍<span>検索</span></button>
+  <a href="../index.html?fav=1">★<span>お気に入り</span></a>
+  <a href="../news.html">📰<span>お知らせ</span></a>
+  <a href="../tool.html">🧮<span>期待値</span></a>
+</nav>
+
+<!-- 全ページ横断の検索オーバーレイ -->
+<div class="search-overlay" id="searchOverlay" hidden>
+  <div class="search-head">
+    <input id="globalSearch" type="search" placeholder="機種名で検索…" autocomplete="off">
+    <button id="searchClose" aria-label="閉じる">✕</button>
+  </div>
+  <div id="searchResults" class="search-results"></div>
+</div>
+
+<script src="../assets/search-index.js"></script>
 <script src="../assets/app.js"></script>
 </body></html>

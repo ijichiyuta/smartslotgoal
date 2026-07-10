@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="ja"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>無職転生 ～異世界行ったら本気だす～ | スマスロ目標 (個人アーカイブ)</title>
+<title>無職転生 ～異世界行ったら本気だす～ | スマスロ期待値 (個人アーカイブ)</title>
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="manifest" href="../manifest.webmanifest">
 <meta name="theme-color" content="#ffffff">
@@ -10,16 +10,18 @@
 <link rel="apple-touch-icon" href="../assets/icon.svg">
 <link rel="icon" href="../assets/icon.svg">
 <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){})});}</script>
+<script>window.__ROOT__='../';</script>
 
 </head><body>
-<header class="topbar">
-  <a class="brand" href="../index.html">🎰 スマスロ目標</a>
-  <nav>
+<header class="topbar" id="topbar">
+  <a class="brand" href="../index.html">🎰 スマスロ期待値</a>
+  <nav class="topnav">
     <a href="../index.html">機種</a>
     <a href="../news.html">お知らせ</a>
     <a href="../tool.html">期待値計算</a>
     <a href="../pages.html">資料</a>
   </nav>
+  <button class="topbar-search" id="searchOpen" aria-label="検索">🔍</button>
 </header>
 <main>
   <article class="machine">
@@ -35,64 +37,12 @@
     <button class="tab" data-tab="kaiseki">解析情報</button>
     
   </div>
-  <section class="panel is-active" data-panel="nerai"><div class="tenjo-info"><div class="my-spoiler-wrapper" id="my-spoiler-1"><div class="my-spoiler-title" style="cursor:pointer; background:rgba(245,184,0,0.08); padding:10px; border:1px solid rgba(245,184,0,0.3); color:var(--text-main); font-weight:700; letter-spacing:0.04em;"><span class="spoiler-icon" style="margin-right:5px;">[-]</span>機種情報</div><div class="my-spoiler-content" style="display:block; padding:10px; border:1px solid rgba(245,184,0,0.2); border-top:0; background:var(--bg-card-hi); color:var(--text-main);"><table style="width:100%;border-collapse:collapse;margin:10px 0;border:1px solid #ddd">
-<thead>
-<tr>
-<th style="border:1px solid #ddd;padding:12px;background-color:#f8f9fa;font-weight:bold">項目</th>
-<th style="border:1px solid #ddd;padding:12px;background-color:#f8f9fa;font-weight:bold">内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="border:1px solid #ddd;padding:12px"><strong>ボーナス間天井</strong></td>
-<td style="border:1px solid #ddd;padding:12px">ステチェン最大19回</td>
-</tr>
-<tr>
-<td style="border:1px solid #ddd;padding:12px"><strong>恩恵</strong></td>
-<td style="border:1px solid #ddd;padding:12px">ボーナス</td>
-</tr>
-<tr>
-<td style="border:1px solid #ddd;padding:12px"><strong>リセット後</strong></td>
-<td style="border:1px solid #ddd;padding:12px">最大13回に短縮</td>
-</tr>
-<tr>
-<td style="border:1px solid #ddd;padding:12px"><strong>AT駆け抜け後</strong></td>
-<td style="border:1px solid #ddd;padding:12px">最大13回に短縮</td>
-</tr>
-<tr>
-<td style="border:1px solid #ddd;padding:12px"><strong>AT間天井</strong></td>
-<td style="border:1px solid #ddd;padding:12px">ステチェン最大40回</td>
-</tr>
-<tr>
-<td style="border:1px solid #ddd;padding:12px"><strong>恩恵</strong></td>
-<td style="border:1px solid #ddd;padding:12px">エピソードボーナス</td>
-</tr>
-<tr>
-<td style="border:1px solid #ddd;padding:12px"><strong>リセット後</strong></td>
-<td style="border:1px solid #ddd;padding:12px">最大17回に短縮</td>
-</tr>
-</tbody>
-</table>
-<table style="width:100%;border-collapse:collapse;margin:10px 0;border:1px solid #ddd">
-<thead>
-<tr>
-<th style="border:1px solid #ddd;padding:12px;background-color:#f8f9fa;font-weight:bold">項目</th>
-<th style="border:1px solid #ddd;padding:12px;background-color:#f8f9fa;font-weight:bold">内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="border:1px solid #ddd;padding:12px"><strong>有利区間</strong></td>
-<td style="border:1px solid #ddd;padding:12px">有利区間リセット時は上位ATへのCZ「ターニングポイント2」に突入!?</td>
-</tr>
-</tbody>
-</table>
-</div></div></div>
-<h2><span id="i">狙い目</span></h2>
-<p>周期タイプの台。1周期平均50Gくらい？メニュー画面から確認可能。<br>
-連続演出失敗、CZ失敗、通常時99G消化でステージチェンジが発生。<br>
+  <section class="panel is-active" data-panel="nerai"><p><img loading="lazy" decoding="async" width="150" height="150" src="../img/564ba2d1f3bbebd6.jpg" class="machine-thumbnail wp-post-image" alt="" style="display:block; margin:0 auto;" srcset="https://suroschool.jp/wp-content/uploads/2025/12/thumb_1-3-150x150.jpg 150w, https://suroschool.jp/wp-content/uploads/2025/12/thumb_1-3-120x120.jpg 120w" sizes="auto, (max-width: 150px) 100vw, 150px" /></p>
+<h2>狙い目</h2>
+<p>周期タイプの台。1周期平均50Gくらい？メニュー画面から確認可能。<br />
+連続演出失敗、CZ失敗、通常時99G消化でステージチェンジが発生。<br />
 ステージチェンジ最大19回で天井となる。（ボーナス間）</p>
-<h3><span id="i-2">天井・リセット狙い</span></h3>
+<h3>天井・リセット狙い</h3>
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; border: 1px solid #ddd;">
 <thead>
 <tr>
@@ -124,7 +74,7 @@
 </tbody>
 </table>
 <p>※魔術ボーナスを履歴から確実に見抜けるか不明</p>
-<h3><span id="i-3">ゾーン狙い</span></h3>
+<h3>ゾーン狙い</h3>
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; border: 1px solid #ddd;">
 <thead>
 <tr>
@@ -135,12 +85,12 @@
 <tbody>
 <tr>
 <td style="border: 1px solid #ddd; padding: 12px; font-size: 12px;"><strong>8周期目</strong></td>
-<td style="border: 1px solid #ddd; padding: 12px; font-size: 12px;">7周期目残り40Gくらいから。<br>
+<td style="border: 1px solid #ddd; padding: 12px; font-size: 12px;">7周期目残り40Gくらいから。<br />
 8周期到達時にCZ当選かシーローン王国移行の有無を確認してどちらも該当しなければやめ。</td>
 </tr>
 </tbody>
 </table>
-<h3><span id="i-4">示唆関連の押し引きについて</span></h3>
+<h3>示唆関連の押し引きについて</h3>
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; border: 1px solid #ddd;">
 <thead>
 <tr>
@@ -155,9 +105,9 @@
 </tr>
 </tbody>
 </table>
-<h3><span id="i-5">有利区間関連狙い</span></h3>
+<h3>有利区間関連狙い</h3>
 <p>不明</p>
-<h2><span id="i-6">やめ時</span></h2>
+<h2>やめ時</h2>
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; border: 1px solid #ddd;">
 <thead>
 <tr>
@@ -168,53 +118,46 @@
 <tbody>
 <tr>
 <td style="border: 1px solid #ddd; padding: 12px; font-size: 12px;"><strong>基本</strong></td>
-<td style="border: 1px solid #ddd; padding: 12px; font-size: 12px;">AT、ボーナス終了後にヤメ。<br>
+<td style="border: 1px solid #ddd; padding: 12px; font-size: 12px;">AT、ボーナス終了後にヤメ。<br />
 ボーナス後は「AT間天井」が近くないかを必ずチェック。</td>
 </tr>
 </tbody>
 </table>
-<h2><span id="i-7">その他</span></h2>
-<h4><span id="i-8">履歴の見方</span></h4>
-<p>赤枠が駆け抜けと思われる。<br>
-魔術ボーナス、無職転生ボーナスはRB表示。<br>
-魔術ボーナス約50枚、無職転生ボーナス約70枚だがハッキリとは区別つかなそう？<br>
+<h2>その他</h2>
+<h4>履歴の見方</h4>
+<p>赤枠が駆け抜けと思われる。<br />
+魔術ボーナス、無職転生ボーナスはRB表示。<br />
+魔術ボーナス約50枚、無職転生ボーナス約70枚だがハッキリとは区別つかなそう？<br />
 40枚前後未満なら魔術、80枚前後以上なら無職転生と判断出来るかも？</p>
-<p><img src="../img/d4d92f17fbfda33c.png" alt="" decoding="async"><br>
-<img src="../img/c0f8eed9fba6c06b.png" alt="" decoding="async"><br>
-<img src="../img/221fcb65e38005a5.png" alt="" decoding="async"></p>
-<h2><span id="i-9">参考元</span></h2>
+<p><img src="../img/d4d92f17fbfda33c.png" alt="" / loading="lazy" decoding="async"><br />
+<img src="../img/c0f8eed9fba6c06b.png" alt="" / loading="lazy" decoding="async"><br />
+<img src="../img/221fcb65e38005a5.png" alt="" / loading="lazy" decoding="async"></p>
+<h2>参考元</h2>
 <p><a href="https://chonborista.com/slot/newgin-slot/246382/">ちょんぼりすた</a></p>
 <p><a href="https://www.slopachi-quest.com/article/mushokutensei-tenjou/">すろぱちくえすと</a></p>
 <p><a href="https://note.com/g1slotapple/n/n8457b0b022d5">たられば（無料期待値表）</a></p>
 <p>かめとうさぎのパチスロブログ</p>
-<div class="post-views content-post post-2425 entry-meta load-static">
-				<span class="post-views-icon dashicons dashicons-chart-bar"></span> <span class="post-views-label">Post Views:</span> <span class="post-views-count">1,306</span>
-			</div>
-          <!-- 目次ハンバーガー（右下固定・常時）。中身はJSが見出し(h2/h3)から生成。会員ロック時は空→自動非表示 --></section>
-  <section class="panel" data-panel="kaiseki"><div class="kaiseki-toolbar">
-              
-            </div>
-            <div class="kaiseki-accordion">
-              <details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i">基本情報</span></summary><div class="kaiseki-section-body">
+</section>
+  <section class="panel" data-panel="kaiseki"><h2>基本情報</h2>
 <ul>
 <li>メーカー: ニューギン</li>
 <li>機械割: 97.7% 〜 113.7%</li>
 <li>導入開始日: 2025年12月22日（月）</li>
 <li>ゲーム性概要: ●次世代筐体「MIRAI-H」はレバー非搭載で、MAX BETスタートが一体！ ●手を置いてゆったりと遊技できる新感覚かつ快適に楽しめる ●通常時はヒロイン役でCZを目指すゲーム性 ●ステージチェンジ回数によるボーナス抽選もあり ●ATはセット継続タイプで、ヒロイン役でVストックを抽選！ ●最強の特化ゾーン「七大列強龍神オルステッド」搭載</li>
 </ul>
-<p><img alt="L無職転生～異世界行ったら本気だす～（パチスロ）のリール配列" src="https://p-town.dmm.com/upload/machines/4924/reel.jpg?t=1779358854" decoding="async"></p>
-<p><img alt="L無職転生～異世界行ったら本気だす～（パチスロ）のゲームフロー" src="https://p-town.dmm.com/upload/machines/4924/flow.jpg?t=1779358854" decoding="async"></p>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-2">打ち方</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-3">打ち方・小役</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-4">打ち方（小役狙い）</span></h4>
+<p><img alt="L無職転生～異世界行ったら本気だす～（パチスロ）のリール配列" src="https://p-town.dmm.com/upload/machines/4924/reel.jpg?t=1779358854"></p>
+<p><img alt="L無職転生～異世界行ったら本気だす～（パチスロ）のゲームフロー" src="https://p-town.dmm.com/upload/machines/4924/flow.jpg?t=1779358854"></p>
+<h2>打ち方</h2>
+<h3>打ち方・小役</h3>
+<h4>打ち方（小役狙い）</h4>
 <p>［最初に狙う絵柄］ ナビなし時はオールフリー打ちでOKだ。</p>
 <p>［ヒロイン役の停止形］</p>
-<h4><span id="NG">変則押しはNG</span></h4>
+<h4>変則押しはNG</h4>
 <p>ナビ非発生時は左1stでの消化を推奨だ。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-5">確定役</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-6">ヒロイン役トリプルの恩恵</span></h4>
+<h3>確定役</h3>
+<h4>ヒロイン役トリプルの恩恵</h4>
 <p>ヒロイン役トリプル成立時は状態に応じて大きな恩恵を獲得できる。</p>
-<h4><span id="i-7">ヒロイン役トリプルの恩恵</span></h4>
+<h4>ヒロイン役トリプルの恩恵</h4>
 <table>
 <thead>
 <tr>
@@ -256,10 +199,10 @@
 <td>各ヒロイン役の恩恵をまとめて獲得</td>
 </tr>
 </tbody>
-</table></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-8">解析情報通常時</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-9">小役関連</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-10">小役確率</span></h4>
+</table>
+<h2>解析情報通常時</h2>
+<h3>小役関連</h3>
+<h4>小役確率</h4>
 <table>
 <thead>
 <tr>
@@ -332,9 +275,9 @@
 </tbody>
 </table>
 <p>基本的に小役確率は全設定共通だ。</p>
-<h4><span id="i-11">ヒロインチャンス</span></h4>
+<h4>ヒロインチャンス</h4>
 <p>通常時・AT中共通で発生する択当てチャレンジで、3択に正解すれば対応したヒロイン役濃厚（押し順ナビが発生するパターンもあり）。失敗しても非対応のヒロイン役が停止する。</p>
-<h4><span id="i-12">ヒロインチャンス</span></h4>
+<h4>ヒロインチャンス</h4>
 <table>
 <thead>
 <tr>
@@ -353,8 +296,8 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-13">ステージ（周期抽選）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-14">ステージチェンジ概要</span></h4>
+<h3>ステージ（周期抽選）</h3>
+<h4>ステージチェンジ概要</h4>
 <p>ステージチェンジ回数に応じて「ヒトガミの空間」・「シーローン王国」・「ターニングポイント1」の移行率が変化。 ステージチェンジ回数ごとのマップは実機の液晶で確認することができる（上画像）。</p>
 <p>ステージチェンジの特徴</p>
 <p>1ステージの平均滞在は53G</p>
@@ -370,9 +313,9 @@
 <p>CZ失敗</p>
 <p>通常時99G消化</p>
 <p>ステージ対応のチャンス目を引いた場合はCZ非当選でも連続演出失敗になるため、ステージチェンジが発生する。</p>
-<h4><span id="i-15">ステージとヒロイン役解説</span></h4>
+<h4>ステージとヒロイン役解説</h4>
 <p>ステージに対応したヒロイン役を引けばCZのチャンスで、リールや筐体のランプでもどのリールのヒロイン役が停止すれば期待できるのかをわかりやすく表示。 シーローン王国滞在時は全ヒロイン役がチャンスになる。</p>
-<h4><span id="CZ">対応したヒロイン役成立時のCZ当選期待度</span></h4>
+<h4>対応したヒロイン役成立時のCZ当選期待度</h4>
 <table>
 <thead>
 <tr>
@@ -399,9 +342,9 @@
 <p>［シルフィステージ］ ロキシーよりもCZに当選しにくいぶん、CZの成功期待度が高い。</p>
 <p>［エリスステージ］ CZ当選率はシルフィと、CZ成功期待度はロキシーと同じだが、CZに成功すれば無職転生ボーナス以上濃厚となる。</p>
 <p>［シーローン王国ステージ］ 全てのヒロイン役がチャンスになる高確ステージだ。</p>
-<h4><span id="i-16">ヒトガミの空間</span></h4>
+<h4>ヒトガミの空間</h4>
 <p>ステージチェンジでボーナス直撃に当選していればこのステージを経由して告知。 周期開始時に移行する、いわゆる前兆ステージと考えてOKだ。</p>
-<h4><span id="i-17">ヒトガミの空間 性能</span></h4>
+<h4>ヒトガミの空間 性能</h4>
 <table>
 <thead>
 <tr>
@@ -420,7 +363,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-18">連続演出確率＆本前兆期待度</span></h4>
+<h4>連続演出確率＆本前兆期待度</h4>
 <table>
 <thead>
 <tr>
@@ -463,7 +406,7 @@
 </tbody>
 </table>
 <p>基本的に連続演出失敗を契機にステージがチェンジする。</p>
-<h4><span id="i-19">ヒトガミの空間移行確率</span></h4>
+<h4>ヒトガミの空間移行確率</h4>
 <table>
 <thead>
 <tr>
@@ -506,10 +449,10 @@
 </tbody>
 </table>
 <p>高設定ほど移行率が高いうえ、本前兆である可能性も高い。</p>
-<h4><span id="i-20">非ヒトガミの空間移行時のステージ振り分け</span></h4>
+<h4>非ヒトガミの空間移行時のステージ振り分け</h4>
 <p>※AT後2周期目は設定不問でシーローン王国濃厚</p>
 <p>ヒトガミの空間だけでなく、シーローン王国移行率も高設定が優遇される。</p>
-<h4><span id="i-21">ヒロイン役時のステージチェンジ以上当選率</span></h4>
+<h4>ヒロイン役時のステージチェンジ以上当選率</h4>
 <table>
 <thead>
 <tr>
@@ -529,8 +472,8 @@
 </tbody>
 </table>
 <p>対応ヒロイン役は連続演出orCZ（ステージチェンジ以上）濃厚、非対応ヒロイン役でも約25%でステージチェンジ以上になるため、周期を進めることができる。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="CZ-2">無職チャンス（CZ）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="CZ-3">CZトータル確率</span></h4>
+<h3>無職チャンス（CZ）</h3>
+<h4>CZトータル確率</h4>
 <table>
 <thead>
 <tr>
@@ -565,7 +508,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="CZ1">CZ当選率（設定1）</span></h4>
+<h4>CZ当選率（設定1）</h4>
 <table>
 <thead>
 <tr>
@@ -598,9 +541,9 @@
 </tbody>
 </table>
 <p>各ヒロイン役確率は同じなので、ロキシーステージはCZに当選しやすい。シルフィとエリスステージのCZ当選率は同じで、前者はCZの成功期待度が高く、後者はCZ成功時の恩恵が無職転生ボーナス以上になる。 シーローン王国ステージ中はどのヒロイン役を引いても対応ヒロイン役として抽選される。</p>
-<h4><span id="CZ-4">ロキシーCZ</span></h4>
+<h4>ロキシーCZ</h4>
 <p>ロキシーのヒロイン目を引けばチャンス。</p>
-<h4><span id="CZ-5">ロキシーCZ 性能</span></h4>
+<h4>ロキシーCZ 性能</h4>
 <table>
 <thead>
 <tr>
@@ -631,7 +574,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="1">ボーナス当選率（設定1）</span></h4>
+<h4>ボーナス当選率（設定1）</h4>
 <table>
 <thead>
 <tr>
@@ -660,9 +603,9 @@
 </table>
 <p>［ジャッジゲーム］ CZ終了後は5G前後のジャッジゲームに突入して、ルーデウスがキュムロンニンバスを詠唱できれば成功だ。</p>
 <p>※ジャッジゲームも成立役に応じてボーナスを抽選</p>
-<h4><span id="CZ-6">シルフィCZ</span></h4>
+<h4>シルフィCZ</h4>
 <p>シルフィのヒロイン目を引けばチャンス。</p>
-<h4><span id="CZ-7">シルフィCZ 性能</span></h4>
+<h4>シルフィCZ 性能</h4>
 <table>
 <thead>
 <tr>
@@ -693,7 +636,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="1-2">ボーナス当選率（設定1）</span></h4>
+<h4>ボーナス当選率（設定1）</h4>
 <table>
 <thead>
 <tr>
@@ -722,9 +665,9 @@
 </table>
 <p>［ジャッジゲーム］ CZ終了後は5G前後のジャッジゲームに突入して、ルーデウスがシルフィと仲直りできれば成功だ。</p>
 <p>※ジャッジゲームも成立役に応じてボーナスを抽選</p>
-<h4><span id="CZ-8">エリスCZ</span></h4>
+<h4>エリスCZ</h4>
 <p>エリスのヒロイン目を引けばチャンス。</p>
-<h4><span id="CZ-9">エリスCZ 性能</span></h4>
+<h4>エリスCZ 性能</h4>
 <table>
 <thead>
 <tr>
@@ -755,7 +698,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="1-3">ボーナス当選率（設定1）</span></h4>
+<h4>ボーナス当選率（設定1）</h4>
 <table>
 <thead>
 <tr>
@@ -784,7 +727,7 @@
 </table>
 <p>［ジャッジゲーム］ CZ終了後は5G前後のジャッジゲームに突入して、レッドフードコブラを討伐できれば成功。 開始画面の背景はデフォルトが白、赤ならチャンスアップだ。</p>
 <p>※ジャッジゲームも成立役に応じてボーナスを抽選</p>
-<h4><span id="CZ1-2">CZ成功時のボーナス比率（設定1）</span></h4>
+<h4>CZ成功時のボーナス比率（設定1）</h4>
 <table>
 <thead>
 <tr>
@@ -816,9 +759,9 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="CZ-10">シルフィCZ中</span></h4>
+<h4>シルフィCZ中</h4>
 <p>※CZ共通でトリプルはAT濃厚（実戦上）</p>
-<h4><span id="CZ-11">CZ中の予見眼発生率</span></h4>
+<h4>CZ中の予見眼発生率</h4>
 <table>
 <thead>
 <tr>
@@ -854,10 +797,10 @@
 </tbody>
 </table>
 <p>ボーナス当選率だけでなく、ヒロインチャンス時の予見眼（ナビ発生）発動率も高設定ほど優遇。 通常時と同じく予見眼の示唆も発生するので注目しておこう。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="1CZ">ターニングポイント1（特殊CZ）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="CZ-12">特殊CZ概要</span></h4>
+<h3>ターニングポイント1（特殊CZ）</h3>
+<h4>特殊CZ概要</h4>
 <p>ステージチェンジの一部などで当選するCZで、滞在中はヒロイン目確率が大幅にアップ。 成功すればエピソードボーナス濃厚（AT当選）となる。 さらに、成功後はヒロイン役を引くごとにエピソードの種類がランクアップしていく。</p>
-<h4><span id="CZ1-3">特殊CZ（ターニングポイント1） 性能</span></h4>
+<h4>特殊CZ（ターニングポイント1） 性能</h4>
 <table>
 <thead>
 <tr>
@@ -881,14 +824,14 @@
 </tbody>
 </table>
 <p>［エピソードの色で種類を示唆］ 実戦上、ダブルヒロイン役を引けば2段階以上アップ。昇格させたエピソードはリール左側でも確認できる。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-22">フリーズ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-23">ロングフリーズ動画</span></h4>
-<p>エピソードボーナス（ターニングポイント2）に当選。ボーナス終了後は七大列強龍神オルステッドを経由して、ATへ突入する。</p></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-24">解析情報ボーナス時</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-25">ボーナス</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-26">無職転生ボーナス</span></h4>
+<h3>フリーズ</h3>
+<h4>ロングフリーズ動画</h4>
+<p>エピソードボーナス（ターニングポイント2）に当選。ボーナス終了後は七大列強龍神オルステッドを経由して、ATへ突入する。</p>
+<h2>解析情報ボーナス時</h2>
+<h3>ボーナス</h3>
+<h4>無職転生ボーナス</h4>
 <p>毎ゲーム全役でATを抽選するAT突入のメインルートとなるボーナス。 開始時は3種類の告知パターンを任意に選択できる。</p>
-<h4><span id="i-27">無職転生ボーナス 性能</span></h4>
+<h4>無職転生ボーナス 性能</h4>
 <table>
 <thead>
 <tr>
@@ -921,7 +864,7 @@
 </table>
 <p>AT確定後のヒロイン役でVストックを獲得した場合は40％以上がヒロインVになる。</p>
 <p>［告知パターン選択］ チャンス告知、ヒロイン告知、突発告知の3種類。左右ボタンを長押しすれば裏告知ver.に変更することも可能だ。</p>
-<h4><span id="AT">ヒロイン役（単体）出現率＆出現時のAT期待度</span></h4>
+<h4>ヒロイン役（単体）出現率＆出現時のAT期待度</h4>
 <table>
 <thead>
 <tr>
@@ -954,9 +897,9 @@
 </tbody>
 </table>
 <p>※ヒロイン役以外での当選もあり　※ヒロイン役のダブル・トリプルはAT濃厚</p>
-<h4><span id="i-28">エピソードボーナス</span></h4>
+<h4>エピソードボーナス</h4>
 <p>当選した時点でAT濃厚。エピソード（全7種類）によって様々な特典がある。シルフィのエピソードならシルフィの特殊効果発動など、内容に応じた恩恵を獲得できる。</p>
-<h4><span id="i-29">エピソードボーナス 性能</span></h4>
+<h4>エピソードボーナス 性能</h4>
 <table>
 <thead>
 <tr>
@@ -983,7 +926,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-30">エピソードごとの恩恵（実戦上）</span></h4>
+<h4>エピソードごとの恩恵（実戦上）</h4>
 <table>
 <thead>
 <tr>
@@ -1029,9 +972,9 @@
 <p>［ターニングポイント1］</p>
 <p>［魔眼を持つ女］</p>
 <p>［ターニングポイント2］</p>
-<h4><span id="i-31">魔術ボーナス</span></h4>
+<h4>魔術ボーナス</h4>
 <p>［魔術ボーナス］ 消化中はヒロイン役で終了後に移行する魔術発動チャンスのゲーム数上乗せを抽選。 終了後に移行する魔術発動チャンスのミッションをクリアできればAT濃厚だ。</p>
-<h4><span id="i-32">魔術ボーナス 性能</span></h4>
+<h4>魔術ボーナス 性能</h4>
 <table>
 <thead>
 <tr>
@@ -1059,7 +1002,7 @@
 </tbody>
 </table>
 <p>［魔術発動チャンス］</p>
-<h4><span id="i-33">魔術発動チャンス（魔術ボーナス後）</span></h4>
+<h4>魔術発動チャンス（魔術ボーナス後）</h4>
 <table>
 <thead>
 <tr>
@@ -1082,9 +1025,9 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-34">本気ボーナス</span></h4>
+<h4>本気ボーナス</h4>
 <p>［本気ボーナス］ ゲーム数や抽選内容は魔術ボーナスと同じだが、こちらは終了後の魔術発動チャンスに成功すれば最強特化ゾーンの「七大列強龍神オルステッド」濃厚、失敗してもエピソードボーナス濃厚となるプレミアムボーナス的存在だ。</p>
-<h4><span id="i-35">本気ボーナス 性能</span></h4>
+<h4>本気ボーナス 性能</h4>
 <table>
 <thead>
 <tr>
@@ -1115,9 +1058,9 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-36">魔術ボーナス当選時の振り分け</span></h4>
+<h4>魔術ボーナス当選時の振り分け</h4>
 <p>［魔術発動チャンス］ 最低5G継続するので成功期待度も魔術ボーナス後よりも高い。</p>
-<h4><span id="i-37">魔術発動チャンス（本気ボーナス後）</span></h4>
+<h4>魔術発動チャンス（本気ボーナス後）</h4>
 <table>
 <thead>
 <tr>
@@ -1140,10 +1083,10 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="AT-2">異世界行ったら本気だす（AT）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="AT-3">AT概要</span></h4>
+<h3>異世界行ったら本気だす（AT）</h3>
+<h4>AT概要</h4>
 <p>セット継続型のATで、消化中はヒロイン目でVストックを獲得できればセット継続濃厚だ。 ラスト3Gの転生の回廊でVストックを使用して次セットへ移行。 「七大列強龍神オルステッド」経由時は純増が約4.5枚/Gにパワーアップする。</p>
-<h4><span id="AT-4">AT（異世界行ったら本気だす） 性能</span></h4>
+<h4>AT（異世界行ったら本気だす） 性能</h4>
 <table>
 <thead>
 <tr>
@@ -1187,9 +1130,9 @@
 <p>20G消化時は必ず1人以上のヒロインがリンク</p>
 <p>［デフォルトステージ］ デフォルトパターン（ヒロインの特殊効果非発動時）ではルーデウスが登場。</p>
 <p>［ヒロインの特殊効果発動中］ ヒロインの特殊効果発動中はヒロインの背景に変化。 複数の特殊効果が発動している場合は画面が分割されてヒロインたちが登場する。</p>
-<h4><span id="V">ヒロインVストック</span></h4>
+<h4>ヒロインVストック</h4>
 <p>Vストック当選時の一部やバケーションモード中の昇格で獲得できるVストック。 通常のVストックとは異なり、使用時は転生の回廊突入までヒロインの特殊効果が発動するため、ATを有利に進めることができる。</p>
-<h4><span id="V-2">ヒロインVの特殊効果</span></h4>
+<h4>ヒロインVの特殊効果</h4>
 <table>
 <thead>
 <tr>
@@ -1216,7 +1159,7 @@
 <p>［シルフィV］</p>
 <p>［エリスV］</p>
 <p>［ダブル・トリプルヒロインV］ 複数ヒロインのVなら特殊効果が複合して発動する。</p>
-<h4><span id="V-3">Vストック当選率</span></h4>
+<h4>Vストック当選率</h4>
 <table>
 <thead>
 <tr>
@@ -1248,7 +1191,7 @@
 </tbody>
 </table>
 <p>ヒロインリンク発動中は対応したヒロイン役を引けばVストック濃厚。非対応（ヒロインリンク非発動中含む）のヒロイン役でも約20%でVストックを獲得できる。</p>
-<h4><span id="V-4">対応ヒロイン役成立時の獲得V振り分け 非シルフィのヒロイン効果発動中</span></h4>
+<h4>対応ヒロイン役成立時の獲得V振り分け 非シルフィのヒロイン効果発動中</h4>
 <table>
 <thead>
 <tr>
@@ -1290,7 +1233,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-38">シルフィのヒロイン効果発動中</span></h4>
+<h4>シルフィのヒロイン効果発動中</h4>
 <table>
 <thead>
 <tr>
@@ -1333,7 +1276,7 @@
 </tbody>
 </table>
 <p>対応ヒロインを含んだヒロイン役ダブルはバケーションゾーン濃厚になる。</p>
-<h4><span id="1V">1セット目とオールヒロインV時のヒロインリンク点灯率</span></h4>
+<h4>1セット目とオールヒロインV時のヒロインリンク点灯率</h4>
 <table>
 <thead>
 <tr>
@@ -1357,10 +1300,10 @@
 </tbody>
 </table>
 <p>すでにヒロインリンクが点灯している状態で、10Gor20G消化時に点灯煽りが発生した場合、追加点灯濃厚という法則もある。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-39">転生の回廊</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-40">転生の回廊概要</span></h4>
+<h3>転生の回廊</h3>
+<h4>転生の回廊概要</h4>
 <p>AT終了後に移行する3G間の引き戻しゾーン。Vストックがある場合はここで使用して次セットへ継続する。</p>
-<h4><span id="i-41">転生の回廊 性能</span></h4>
+<h4>転生の回廊 性能</h4>
 <table>
 <thead>
 <tr>
@@ -1383,7 +1326,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="V-5">Vストックなし時の継続率</span></h4>
+<h4>Vストックなし時の継続率</h4>
 <table>
 <thead>
 <tr>
@@ -1399,10 +1342,10 @@
 </tbody>
 </table>
 <p>Vストックなしでも約10%で継続する。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-42">バケーションゾーン</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-43">バケーションゾーン概要</span></h4>
+<h3>バケーションゾーン</h3>
+<h4>バケーションゾーン概要</h4>
 <p>Vストック獲得の一部で移行するVストック獲得＆強化の特化ゾーン。消化中はヒロインリンクも全点灯状態で、ヒロイン役が成立するたびにVストック獲得orヒロインVへ昇格する。</p>
-<h4><span id="i-44">バケーションゾーン 性能</span></h4>
+<h4>バケーションゾーン 性能</h4>
 <table>
 <thead>
 <tr>
@@ -1426,7 +1369,7 @@
 </tbody>
 </table>
 <p>［ヒロインVの昇格］ もちろんヒロインリンクによる恩恵も受けることができる。</p>
-<h4><span id="i-45">ゲーム数振り分け</span></h4>
+<h4>ゲーム数振り分け</h4>
 <table>
 <thead>
 <tr>
@@ -1454,10 +1397,10 @@
 </tbody>
 </table>
 <p>エリスV発動中はバケーションゾーン当選率だけでなく、ゲーム数も優遇される。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-46">御神体チャンス</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-47">御神体チャンス概要</span></h4>
+<h3>御神体チャンス</h3>
+<h4>御神体チャンス概要</h4>
 <p>リプレイの一部で突入するボーナス高確率状態。7狙え高確・BAR狙え高確の2種類がある（どちらも滞在中はATゲーム数の減算ストップ）。 7が揃えば無職転生ボーナス、BARが揃えばヒロインVをストックできる。</p>
-<h4><span id="i-48">御神体チャンス 性能</span></h4>
+<h4>御神体チャンス 性能</h4>
 <table>
 <thead>
 <tr>
@@ -1481,7 +1424,7 @@
 </tbody>
 </table>
 <p>［高確の種類］ 7狙え高確かBAR狙え高確かは帯の表示内容でわかる。</p>
-<h4><span id="i-49">高確ごとの成功期待度</span></h4>
+<h4>高確ごとの成功期待度</h4>
 <table>
 <thead>
 <tr>
@@ -1500,7 +1443,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-50">狙え発生確率&amp;期待度</span></h4>
+<h4>狙え発生確率&amp;期待度</h4>
 <table>
 <thead>
 <tr>
@@ -1522,10 +1465,10 @@
 </tr>
 </tbody>
 </table>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="2CZ">ターニングポイント2（上位CZ）</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="CZ-13">上位CZ概要</span></h4>
+<h3>ターニングポイント2（上位CZ）</h3>
+<h4>上位CZ概要</h4>
 <p>成功すれば最強の特化ゾーン「七大列強龍神オルステッド」へ、失敗してもエピソードボーナスを経由してATへ突入する。</p>
-<h4><span id="CZ2">上位CZ（ターニングポイント2） 性能</span></h4>
+<h4>上位CZ（ターニングポイント2） 性能</h4>
 <table>
 <thead>
 <tr>
@@ -1560,12 +1503,12 @@
 <p>AT駆け抜け時の突入抽選あり</p>
 <p>25セット以上継続時の 約25%</p>
 <p>35セット以上継続で 突入濃厚</p>
-<h4><span id="CZAT">上位CZのAT中出現率</span></h4>
+<h4>上位CZのAT中出現率</h4>
 <p>AT中の上位CZ出現率は高設定ほど高くなる。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-51">七大列強龍神オルステッド</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-52">七大列強龍神オルステッド概要</span></h4>
+<h3>七大列強龍神オルステッド</h3>
+<h4>七大列強龍神オルステッド概要</h4>
 <p>上位CZ成功後に突入する本機最強の特化ゾーン。 ヒロインリンク・特殊効果がすべてMAX状態かつヒロイン役確率が約1/6.8 になるため超強力。もちろんバケーションゾーンもあって、Vストックすれば約70%で突入する（エリスの特殊効果があるため）。 終了後は通常のAT終了後と同じく、転生の回廊を経て純増が約4.5枚/GにアップしたATへ移行する。</p>
-<h4><span id="i-53">七大列強龍神オルステッド 性能</span></h4>
+<h4>七大列強龍神オルステッド 性能</h4>
 <table>
 <thead>
 <tr>
@@ -1599,13 +1542,13 @@
 <td>純増約4.5枚/GのATへ（上位AT扱い）</td>
 </tr>
 </tbody>
-</table></div></details>
-</div></details><details class="kaiseki-section" open=""><summary class="kaiseki-section-title"><span id="i-54">演出情報</span></summary><div class="kaiseki-section-body">
-<details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-55">予見状態</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-56">予見状態示唆</span></h4>
+</table>
+<h2>演出情報</h2>
+<h3>予見状態</h3>
+<h4>予見状態示唆</h4>
 <p>リール枠のエフェクトをはじめ、液晶演出やメニュー画面などで、予見状態（ヒロインチャンス発生時に予見眼演出が発生する状態にいるかどうか）を示唆。ATセット開始画面でリール枠のエフェクトの予見状態示唆が発生した場合、予見状態滞在濃厚＋対応役が1つ以上点灯する。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-57">通常時</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-58">ステージごとの特徴</span></h4>
+<h3>通常時</h3>
+<h4>ステージごとの特徴</h4>
 <table>
 <thead>
 <tr>
@@ -1641,7 +1584,7 @@
 <p>［エリスステージ］</p>
 <p>［シーローン王国ステージ］</p>
 <p>［ヒトガミの空間］</p>
-<h4><span id="i-59">［非前兆中］演出法則</span></h4>
+<h4>［非前兆中］演出法則</h4>
 <table>
 <thead>
 <tr>
@@ -1672,7 +1615,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-60">［前兆中］演出法則</span></h4>
+<h4>［前兆中］演出法則</h4>
 <table>
 <thead>
 <tr>
@@ -1748,7 +1691,7 @@
 <p>［キシリカ魔眼ルーレット演出］</p>
 <p>［オルステッド前龍門の扉演出］</p>
 <p>［魔法陣演出］</p>
-<h4><span id="i-61">連続演出の期待度</span></h4>
+<h4>連続演出の期待度</h4>
 <table>
 <thead>
 <tr>
@@ -1825,8 +1768,8 @@
 <p>［キャラ固有の連続演出］ 対応ヒロインによって演出が変化する。</p>
 <p>［キシリカ様のご褒美］</p>
 <p>［ドルディアでの死闘］</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-62">ヒトガミステージ</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-63">演出ごとのボーナス期待度 助言演出</span></h4>
+<h3>ヒトガミステージ</h3>
+<h4>演出ごとのボーナス期待度 助言演出</h4>
 <table>
 <thead>
 <tr>
@@ -1861,7 +1804,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-64">会話演出</span></h4>
+<h4>会話演出</h4>
 <table>
 <thead>
 <tr>
@@ -1876,7 +1819,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-65">ヒトガミのお告げ演出</span></h4>
+<h4>ヒトガミのお告げ演出</h4>
 <table>
 <thead>
 <tr>
@@ -1891,7 +1834,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-66">回想演出</span></h4>
+<h4>回想演出</h4>
 <table>
 <thead>
 <tr>
@@ -1913,7 +1856,7 @@
 <p>［助言演出］</p>
 <p>［ヒトガミのお告げ演出］</p>
 <p>［回想演出］</p>
-<h4><span id="i-67">連続演出のパターン別・ボーナス期待度</span></h4>
+<h4>連続演出のパターン別・ボーナス期待度</h4>
 <table>
 <thead>
 <tr>
@@ -1958,7 +1901,7 @@
 <p>［アイシャ救出］</p>
 <p>［ジャッジの段階］ 邂逅は基本的に1stジャッジで失敗するが、2ndまで行けば期待度が大幅にアップする。</p>
 <p>［連続演出への発展ゲーム数］ 特定ゲーム数から連続演出に発展することで期待度が大幅にアップする。</p>
-<h4><span id="i-68">連続演出への発展ゲーム数別・ボーナス期待度</span></h4>
+<h4>連続演出への発展ゲーム数別・ボーナス期待度</h4>
 <table>
 <thead>
 <tr>
@@ -1986,8 +1929,8 @@
 </tbody>
 </table>
 <p>11Gから発展した連続演出が2ndジャッジ以下で終了した場合は復活からのボーナス濃厚となる。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="CZ-14">CZ関連</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="CZ-15">CZ中の演出法則</span></h4>
+<h3>CZ関連</h3>
+<h4>CZ中の演出法則</h4>
 <table>
 <thead>
 <tr>
@@ -2081,7 +2024,7 @@
 <p>［レバーON時の導光板］</p>
 <p>［導光板の色］</p>
 <p>【ヒロイン役時のボイス】 ヒロイン役成立ゲームの第3停止後にキャラボイスが発生すると無職転生ボーナス以上濃厚になる。</p>
-<h4><span id="i-69">ヒロイン役時のボイス別・ボーナス種別</span></h4>
+<h4>ヒロイン役時のボイス別・ボーナス種別</h4>
 <table>
 <thead>
 <tr>
@@ -2133,7 +2076,7 @@
 </tbody>
 </table>
 <p>※EPB…エピソードボーナス ※ヒロインV濃厚のEPB…師匠or緊急家族会議or努力の先にあるもの</p>
-<h4><span id="i-70">ジャッジ演出中の期待度</span></h4>
+<h4>ジャッジ演出中の期待度</h4>
 <table>
 <thead>
 <tr>
@@ -2163,8 +2106,8 @@
 <p>［チャンスアップ］ タイトル色やセリフ文字色変化や道中の固有チャンスアップに注目だ。</p>
 <p>［俺は本気で生きるんだ！煽り］</p>
 <p>金ならエピソードボーナス濃厚だ。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-71">ボーナス</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-72">ボーナス確定画面の法則</span></h4>
+<h3>ボーナス</h3>
+<h4>ボーナス確定画面の法則</h4>
 <p>ボーナス確定画面の矛盾法則</p>
 <p>下記以外の矛盾→無職転生ボーナス以上濃厚</p>
 <p>ヒトガミステージでヒロインの確定画面→約50%でエピソードボーナス</p>
@@ -2175,9 +2118,9 @@
 <p>［ロキシー］</p>
 <p>［シルフィ］</p>
 <p>［エリス］</p>
-<h4><span id="i-73">初当り無職転生ボーナスの演出法則</span></h4>
+<h4>初当り無職転生ボーナスの演出法則</h4>
 <p>［チャンス告知時］</p>
-<h4><span id="i-74">［チャンス告知］高期待度パターン</span></h4>
+<h4>［チャンス告知］高期待度パターン</h4>
 <table>
 <thead>
 <tr>
@@ -2221,8 +2164,8 @@
 <p>演出が発生した時点でAT濃厚</p>
 <p>ボタンPUSHの指示を無視すると…!?</p>
 <p>違和感発生時もAT濃厚</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="AT-5">AT関連</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-75">ラウンド開始画面の示唆</span></h4>
+<h3>AT関連</h3>
+<h4>ラウンド開始画面の示唆</h4>
 <table>
 <thead>
 <tr>
@@ -2332,7 +2275,7 @@
 <p>［ヒトガミ］</p>
 <p>［前世の男］</p>
 <p>［オルステッド］</p>
-<h4><span id="AT-6">AT中の演出法則</span></h4>
+<h4>AT中の演出法則</h4>
 <p>ヒロイン演出時に別のヒロイン図柄が停止するとチャンス （対応役or対応2人役濃厚）</p>
 <p>契機のヒロイン役と別のヒロインの前兆演出が発生するとVストック濃厚</p>
 <p>初級でクロッシングポイントの ルーデウスorヒロインが発生すれば期待度50％以上</p>
@@ -2359,7 +2302,7 @@
 <p>連続演出がAT残り0G目で発生していれば成功濃厚</p>
 <p>［●●級で本前兆期待度示唆］ 神級まで行けばバカンスゾーン濃厚！（リール右側に表示）</p>
 <p>［擬似連の期待度］ 擬似連の種類によって期待度が変化。対応ヒロイン役成立後は擬似連が発生することでバカンスゾーン当選期待度もアップする。</p>
-<h4><span id="i-76">擬似連演出の期待度</span></h4>
+<h4>擬似連演出の期待度</h4>
 <table>
 <thead>
 <tr>
@@ -2431,7 +2374,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-77">擬似連経由の対応連続演出</span></h4>
+<h4>擬似連経由の対応連続演出</h4>
 <table>
 <thead>
 <tr>
@@ -2450,7 +2393,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-78">狙え演出のカットイン色別期待度</span></h4>
+<h4>狙え演出のカットイン色別期待度</h4>
 <table>
 <thead>
 <tr>
@@ -2477,7 +2420,7 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-79">ジャッジ演出期待度</span></h4>
+<h4>ジャッジ演出期待度</h4>
 <table>
 <thead>
 <tr>
@@ -2508,7 +2451,7 @@
 <p>［クロッシングポイント：ヒロイン］</p>
 <p>［クロッシングポイント：ルーデウス］</p>
 <p>［クロッシングポイント：ルーデウス＆ヒロイン］ ルーデウス＆ヒロイン（螺旋階段）はほぼVストック獲得になる。</p>
-<h4><span id="i-80">転生の回廊中の演出法則</span></h4>
+<h4>転生の回廊中の演出法則</h4>
 <p>非対応ヒロイン役成立時にVフラッシュ発生でVストック濃厚</p>
 <p>羽のチャンスアップ出現で継続高期待</p>
 <p>羽の色と異なるヒロインVが出てきた場合は ストック3個以上濃厚 （青でロキシー否定、緑でシルフィ否定、赤でエリス否定）</p>
@@ -2517,7 +2460,7 @@
 <p>ヒロインV対応の羽で失敗→ 2セット以上継続濃厚</p>
 <p>ダブルヒロインV対応の羽で失敗（復活）→ 3セット以上継続濃厚</p>
 <p>紫orオールヒロインV対応の羽で失敗（復活）→ 5セット以上継続濃厚</p>
-<h4><span id="V-6">復活→ヒロインV出現時の法則</span></h4>
+<h4>復活→ヒロインV出現時の法則</h4>
 <table>
 <thead>
 <tr>
@@ -2541,7 +2484,7 @@
 </tbody>
 </table>
 <p>［羽出現］ 白羽でチャンス、白以外の色なら継続濃厚。羽の色でストックしているヒロインVの種類を示唆している。</p>
-<h4><span id="i-81">羽の色別示唆</span></h4>
+<h4>羽の色別示唆</h4>
 <table>
 <thead>
 <tr>
@@ -2589,7 +2532,7 @@
 </tbody>
 </table>
 <p>［オルステッド登場］</p>
-<h4><span id="i-82">バケーションゾーン中のヒロイン役期待度</span></h4>
+<h4>バケーションゾーン中のヒロイン役期待度</h4>
 <table>
 <thead>
 <tr>
@@ -2681,7 +2624,7 @@
 <p>［シルフィのカニ演出］</p>
 <p>［エリスのスイカ演出］</p>
 <p>［ルーデウス演出］</p>
-<h4><span id="i-83">御神体チャンス中の期待度</span></h4>
+<h4>御神体チャンス中の期待度</h4>
 <table>
 <thead>
 <tr>
@@ -2731,7 +2674,7 @@
 <p>［キュムロニンバス演出］</p>
 <p>［7を狙えカットイン］</p>
 <p>［BARを狙えカットイン］</p>
-<h4><span id="V-7">七大龍神オルステッドのVストック （ヒロイン役） 期待度</span></h4>
+<h4>七大龍神オルステッドのVストック （ヒロイン役） 期待度</h4>
 <table>
 <thead>
 <tr>
@@ -2781,10 +2724,10 @@
 <p>［威圧演出］</p>
 <p>［崩壊演出］</p>
 <p>［開眼演出］</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-84">カスタム</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-85">フラッシュカスタム・バイブカスタム</span></h4>
+<h3>カスタム</h3>
+<h4>フラッシュカスタム・バイブカスタム</h4>
 <p>［フラッシュカスタム］ フラッシュカスタム時の特徴や各種占有率をまとめて紹介。フラッシュなし時のヒロイン役や赤フラッシュ発生時は何らかに当選していることが濃厚になる。</p>
-<h4><span id="i-86">フラッシュカスタムの恩恵</span></h4>
+<h4>フラッシュカスタムの恩恵</h4>
 <table>
 <thead>
 <tr>
@@ -2858,7 +2801,7 @@
 </tbody>
 </table>
 <p>※EPB…エピソードボーナス　VZ…バケーションゾーンの略 ※W…ダブル、T…トリプルの略</p>
-<h4><span id="i-87">フラッシュカスタム・恩恵獲得時のフラッシュ占有率</span></h4>
+<h4>フラッシュカスタム・恩恵獲得時のフラッシュ占有率</h4>
 <table>
 <thead>
 <tr>
@@ -2910,7 +2853,7 @@
 </tbody>
 </table>
 <p>［バイブカスタム］ バイブカスタム時は通常時＆初当りボーナス中限定で、バイブが発生すれば何らかの恩恵獲得濃厚。 恩恵獲得時の約65%でバイブが発生する。</p>
-<h4><span id="i-88">バイブカスタムの恩恵</span></h4>
+<h4>バイブカスタムの恩恵</h4>
 <table>
 <thead>
 <tr>
@@ -2942,7 +2885,7 @@
 </tbody>
 </table>
 <p>VZ…バケーションゾーンの略</p>
-<h4><span id="i-89">バイブカスタム・恩恵獲得時のバイブ占有率</span></h4>
+<h4>バイブカスタム・恩恵獲得時のバイブ占有率</h4>
 <table>
 <thead>
 <tr>
@@ -2958,10 +2901,10 @@
 </tbody>
 </table>
 <p>ちなみに、非バイブカスタムでバイブした場合は成功濃厚のCZに当選する。</p>
-</div></details><details class="kaiseki-subsection" open=""><summary class="kaiseki-subsection-title"><span id="i-90">裏ボタン</span></summary><div class="kaiseki-subsection-body">
-<h4><span id="i-91">ヒロイン役示唆音</span></h4>
+<h3>裏ボタン</h3>
+<h4>ヒロイン役示唆音</h4>
 <p>MAX BETを押した後、PUSHボタンを押して示唆音が発生すればヒロイン役成立かつ状況に応じた恩恵を獲得できる大チャンスとなる。</p>
-<h4><span id="i-92">ヒロイン役示唆音</span></h4>
+<h4>ヒロイン役示唆音</h4>
 <table>
 <thead>
 <tr>
@@ -2981,9 +2924,9 @@
 </tbody>
 </table>
 <p>※TP…ターニングポイント　VZ…バケーションゾーンの略</p>
-<h4><span id="i-93">当り示唆</span></h4>
+<h4>当り示唆</h4>
 <p>ヒロイン役成立時の第3停止後にPUSHボタンを押して、下パネル下部のLEDがフラッシュすれば恩恵獲得の大チャンス！</p>
-<h4><span id="i-94">当り示唆</span></h4>
+<h4>当り示唆</h4>
 <table>
 <thead>
 <tr>
@@ -3011,9 +2954,9 @@
 </tbody>
 </table>
 <p>※VZ…バケーションゾーンの略</p>
-<h4><span id="i-95">狙え発生時の色昇格</span></h4>
+<h4>狙え発生時の色昇格</h4>
 <p>リールを停止する前にPUSHボタンを押すと色が昇格する場合がある。</p>
-<h4><span id="i-96">狙え発生時の色昇格</span></h4>
+<h4>狙え発生時の色昇格</h4>
 <table>
 <thead>
 <tr>
@@ -3028,9 +2971,9 @@
 </tr>
 </tbody>
 </table>
-<h4><span id="i-97">バケーションゾーン当選告知</span></h4>
+<h4>バケーションゾーン当選告知</h4>
 <p>バケーションゾーンの煽り中（上画像）にPUSHボタンを押してボイスが発生すればバケーションゾーン当選の期待大だ。</p>
-<h4><span id="i-98">バケーションゾーン当選告知</span></h4>
+<h4>バケーションゾーン当選告知</h4>
 <table>
 <thead>
 <tr>
@@ -3044,15 +2987,30 @@
 <td>ボイスが発生すればバケーションゾーン当選の期待大</td>
 </tr>
 </tbody>
-</table>
-<div class="post-views content-post post-2425 entry-meta load-static">
-				<span class="post-views-icon dashicons dashicons-chart-bar"></span> <span class="post-views-label">Post Views:</span> <span class="post-views-count">1,306</span>
-			</div></div></details></div></details>            </div>
-
-            <!-- 目次ハンバーガー（右下固定・常時）。中身はJSがセクションから生成 --></section>
+</table></section>
   
   
   </article></main>
 <footer class="foot">個人アーカイブ（suroschool.jp / たかどらのスロ塾 会員コンテンツ）・閲覧用</footer>
+
+<!-- スマホ用ボトムナビ（スクロールで隠れる/出る） -->
+<nav class="botnav" id="botnav">
+  <a href="../index.html" data-nav="index">🎰<span>機種</span></a>
+  <button id="searchOpen2">🔍<span>検索</span></button>
+  <a href="../index.html?fav=1">★<span>お気に入り</span></a>
+  <a href="../news.html">📰<span>お知らせ</span></a>
+  <a href="../tool.html">🧮<span>期待値</span></a>
+</nav>
+
+<!-- 全ページ横断の検索オーバーレイ -->
+<div class="search-overlay" id="searchOverlay" hidden>
+  <div class="search-head">
+    <input id="globalSearch" type="search" placeholder="機種名で検索…" autocomplete="off">
+    <button id="searchClose" aria-label="閉じる">✕</button>
+  </div>
+  <div id="searchResults" class="search-results"></div>
+</div>
+
+<script src="../assets/search-index.js"></script>
 <script src="../assets/app.js"></script>
 </body></html>

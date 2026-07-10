@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="ja"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>Lシスタークエスト | スマスロ目標 (個人アーカイブ)</title>
+<title>Lシスタークエスト | スマスロ期待値 (個人アーカイブ)</title>
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="manifest" href="../manifest.webmanifest">
 <meta name="theme-color" content="#ffffff">
@@ -10,16 +10,18 @@
 <link rel="apple-touch-icon" href="../assets/icon.svg">
 <link rel="icon" href="../assets/icon.svg">
 <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js').catch(function(){})});}</script>
+<script>window.__ROOT__='../';</script>
 
 </head><body>
-<header class="topbar">
-  <a class="brand" href="../index.html">🎰 スマスロ目標</a>
-  <nav>
+<header class="topbar" id="topbar">
+  <a class="brand" href="../index.html">🎰 スマスロ期待値</a>
+  <nav class="topnav">
     <a href="../index.html">機種</a>
     <a href="../news.html">お知らせ</a>
     <a href="../tool.html">期待値計算</a>
     <a href="../pages.html">資料</a>
   </nav>
+  <button class="topbar-search" id="searchOpen" aria-label="検索">🔍</button>
 </header>
 <main>
   <article class="machine">
@@ -35,25 +37,12 @@
     
     
   </div>
-  <section class="panel is-active" data-panel="nerai"><div class="tenjo-info"><div class="my-spoiler-wrapper" id="my-spoiler-1"><div class="my-spoiler-title" style="cursor:pointer; background:rgba(245,184,0,0.08); padding:10px; border:1px solid rgba(245,184,0,0.3); color:var(--text-main); font-weight:700; letter-spacing:0.04em;"><span class="spoiler-icon" style="margin-right:5px;">[-]</span>機種情報</div><div class="my-spoiler-content" style="display:block; padding:10px; border:1px solid rgba(245,184,0,0.2); border-top:0; background:var(--bg-card-hi); color:var(--text-main);"><p>【天井情報】</p>
-<p>CZ天井　EXPを最大1400＋αでCZに当選。</p>
-<p>リセット時は500EXPに短縮。</p>
-<p>CZスルー天井　CZを最大5回連続で失敗すると6回目のCZで必ずAT当選となる。</p>
-<p>AT天井　通常時を最大2000G＋α消化するとATに当選。999Gの振り分けもあり。　リセット時は999Gに短縮。</p>
-<p>【リセット判別】</p>
-<p>目覚めの呪文画面終わりの台は据置だと翌日も目覚めの呪文画面スタート？</p>
-<p>【有利区間について】</p>
-<p>エンディング後など、有利区間がリセット(設定変更除く)されると赤背景の「目覚めの呪文」を経由して上位ATへ突入。</p>
-<p>有利区間切れ条件　</p>
-<p>差枚+2200枚前後</p>
-<p>差枚プラスでの上位AT突入で有利切れ。差枚マイナスの上位AT突入は有利切れてなさそう。</p>
-</div></div></div>
-
-<h2 class="wp-block-heading has-medium-font-size"><span id="i"><strong>狙い目</strong></span></h2>
+  <section class="panel is-active" data-panel="nerai"><img loading="lazy" decoding="async" width="150" height="150" src="../img/d37f943c48caac8a.jpg" class="machine-thumbnail wp-post-image" alt="" style="display:block; margin:0 auto;" srcset="https://suroschool.jp/wp-content/uploads/2025/03/thumb_1-4-150x150.jpg 150w, https://suroschool.jp/wp-content/uploads/2025/03/thumb_1-4-120x120.jpg 120w" sizes="auto, (max-width: 150px) 100vw, 150px" />
+<h2 class="wp-block-heading has-medium-font-size"><strong>狙い目</strong></h2>
 
 
 
-<h3 class="wp-block-heading has-small-font-size"><span id="i-2">【リセット狙い】</span></h3>
+<h3 class="wp-block-heading has-small-font-size">【リセット狙い】</h3>
 
 
 
@@ -65,7 +54,7 @@
 
 
 
-<h3 class="wp-block-heading has-small-font-size"><span id="AT">【AT間天井狙い】</span></h3>
+<h3 class="wp-block-heading has-small-font-size">【AT間天井狙い】</h3>
 
 
 
@@ -73,7 +62,7 @@
 
 
 
-<h3 class="wp-block-heading has-small-font-size"><span id="CZ">【CZ間天井狙い】</span></h3>
+<h3 class="wp-block-heading has-small-font-size">【CZ間天井狙い】</h3>
 
 
 
@@ -93,7 +82,7 @@
 
 
 
-<h3 class="wp-block-heading has-small-font-size"><span id="CZ-2">【CZゾーン狙い】</span></h3>
+<h3 class="wp-block-heading has-small-font-size">【CZゾーン狙い】</h3>
 
 
 
@@ -129,7 +118,7 @@
 
 
 
-<h3 class="wp-block-heading has-small-font-size"><span id="i-3">【アイテム、仲間狙い】</span></h3>
+<h3 class="wp-block-heading has-small-font-size">【アイテム、仲間狙い】</h3>
 
 
 
@@ -149,7 +138,7 @@
 
 
 
-<h3 class="wp-block-heading has-small-font-size"><span id="AT-2">【上位AT後狙いの押し引き】</span></h3>
+<h3 class="wp-block-heading has-small-font-size">【上位AT後狙いの押し引き】</h3>
 
 
 
@@ -169,7 +158,7 @@
 
 
 
-<h3 class="wp-block-heading has-small-font-size"><span id="CZ-3">【CZスルー天井狙い】</span></h3>
+<h3 class="wp-block-heading has-small-font-size">【CZスルー天井狙い】</h3>
 
 
 
@@ -181,7 +170,7 @@
 
 
 
-<h3 class="wp-block-heading has-small-font-size"><span id="i-4">【有利区間切れ狙い】</span></h3>
+<h3 class="wp-block-heading has-small-font-size">【有利区間切れ狙い】</h3>
 
 
 
@@ -201,7 +190,7 @@
 
 
 
-<h2 class="wp-block-heading has-medium-font-size"><span id="i-5"><strong>やめ時</strong></span></h2>
+<h2 class="wp-block-heading has-medium-font-size"><strong>やめ時</strong></h2>
 
 
 
@@ -225,11 +214,11 @@
 
 
 
-<h2 class="wp-block-heading has-medium-font-size"><span id="i-6"><strong>その他</strong></span></h2>
+<h2 class="wp-block-heading has-medium-font-size"><strong>その他</strong></h2>
 
 
 
-<h3 class="wp-block-heading has-small-font-size"><span id="AT-3">上位AT後の確認方法</span></h3>
+<h3 class="wp-block-heading has-small-font-size">上位AT後の確認方法</h3>
 
 
 
@@ -241,19 +230,19 @@
 
 
 
-<figure class="wp-block-image size-full"><img width="654" height="852" src="../img/cbae62f4cb615b79.png" alt="" class="wp-image-972" decoding="async" sizes="auto, (max-width: 654px) 100vw, 654px"></figure>
+<figure class="wp-block-image size-full"><img width="654" height="852" src="../img/cbae62f4cb615b79.png" alt="" class="wp-image-972"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/03/joui.png 654w, https://suroschool.jp/wp-content/uploads/2025/03/joui-230x300.png 230w" sizes="auto, (max-width: 654px) 100vw, 654px" /></figure>
 
 
 
-<h3 class="wp-block-heading has-small-font-size"><span id="i-7">モード</span></h3>
+<h3 class="wp-block-heading has-small-font-size">モード</h3>
 
 
 
-<figure class="wp-block-image size-full"><img width="730" height="788" src="../img/c4f6cc5865d40c19.png" alt="" class="wp-image-847" decoding="async" sizes="auto, (max-width: 730px) 100vw, 730px"></figure>
+<figure class="wp-block-image size-full"><img width="730" height="788" src="../img/c4f6cc5865d40c19.png" alt="" class="wp-image-847"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/03/スクリーンショット-2025-03-04-080542.png 730w, https://suroschool.jp/wp-content/uploads/2025/03/スクリーンショット-2025-03-04-080542-278x300.png 278w" sizes="auto, (max-width: 730px) 100vw, 730px" /></figure>
 
 
 
-<h3 class="wp-block-heading has-small-font-size"><span id="i-8">所持アイテム、仲間の特性</span></h3>
+<h3 class="wp-block-heading has-small-font-size">所持アイテム、仲間の特性</h3>
 
 
 
@@ -261,11 +250,11 @@
 
 
 
-<figure class="wp-block-image size-full"><img width="727" height="660" src="../img/3e46aa4c7deef072.png" alt="" class="wp-image-849" decoding="async" sizes="auto, (max-width: 727px) 100vw, 727px"></figure>
+<figure class="wp-block-image size-full"><img width="727" height="660" src="../img/3e46aa4c7deef072.png" alt="" class="wp-image-849"/ loading="lazy" decoding="async" srcset="https://suroschool.jp/wp-content/uploads/2025/03/スクリーンショット-2025-03-04-075513-1.png 727w, https://suroschool.jp/wp-content/uploads/2025/03/スクリーンショット-2025-03-04-075513-1-300x272.png 300w" sizes="auto, (max-width: 727px) 100vw, 727px" /></figure>
 
 
 
-<h2 class="wp-block-heading has-medium-font-size"><span id="i-9"><strong>参考元</strong></span></h2>
+<h2 class="wp-block-heading has-medium-font-size"><strong>参考元</strong></h2>
 
 
 
@@ -286,14 +275,31 @@
 
 
 <p class="wp-block-paragraph"></p>
-<div class="post-views content-post post-822 entry-meta load-static">
-				<span class="post-views-icon dashicons dashicons-chart-bar"></span> <span class="post-views-label">Post Views:</span> <span class="post-views-count">341</span>
-			</div>
-          <!-- 目次ハンバーガー（右下固定・常時）。中身はJSが見出し(h2/h3)から生成。会員ロック時は空→自動非表示 --></section>
+</section>
   
   
   
   </article></main>
 <footer class="foot">個人アーカイブ（suroschool.jp / たかどらのスロ塾 会員コンテンツ）・閲覧用</footer>
+
+<!-- スマホ用ボトムナビ（スクロールで隠れる/出る） -->
+<nav class="botnav" id="botnav">
+  <a href="../index.html" data-nav="index">🎰<span>機種</span></a>
+  <button id="searchOpen2">🔍<span>検索</span></button>
+  <a href="../index.html?fav=1">★<span>お気に入り</span></a>
+  <a href="../news.html">📰<span>お知らせ</span></a>
+  <a href="../tool.html">🧮<span>期待値</span></a>
+</nav>
+
+<!-- 全ページ横断の検索オーバーレイ -->
+<div class="search-overlay" id="searchOverlay" hidden>
+  <div class="search-head">
+    <input id="globalSearch" type="search" placeholder="機種名で検索…" autocomplete="off">
+    <button id="searchClose" aria-label="閉じる">✕</button>
+  </div>
+  <div id="searchResults" class="search-results"></div>
+</div>
+
+<script src="../assets/search-index.js"></script>
 <script src="../assets/app.js"></script>
 </body></html>
