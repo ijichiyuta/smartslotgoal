@@ -45,6 +45,8 @@ const layout = (title, body, depth = 0, extraHead = '') => {
   return `<!DOCTYPE html><html lang="ja"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
+<script>if(!localStorage.getItem('ssg_unlocked'))document.documentElement.classList.add('locked');</script>
+<style>.pin-gate{display:none}html.locked .pin-gate{display:flex;position:fixed;inset:0;z-index:99999;background:#fff}html.locked body{overflow:hidden}</style>
 <title>${esc(title)} | スマスロ期待値 (個人アーカイブ)</title>
 <link rel="stylesheet" href="${root}assets/style.css">
 <link rel="manifest" href="${root}manifest.webmanifest">
@@ -57,6 +59,15 @@ const layout = (title, body, depth = 0, extraHead = '') => {
 <script>window.__ROOT__='${root}';</script>
 ${extraHead}
 </head><body>
+<div class="pin-gate" id="pinGate">
+  <form class="pin-card" id="pinForm">
+    <div class="pin-emoji">🔒</div>
+    <div class="pin-title">スマスロ期待値</div>
+    <div class="pin-sub">4桁の数字を入力してください</div>
+    <input id="pinInput" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off" placeholder="••••" aria-label="4桁パスワード">
+    <div class="pin-err" id="pinErr"></div>
+  </form>
+</div>
 <header class="topbar" id="topbar">
   <a class="brand" href="${root}index.html">🎰 スマスロ期待値</a>
   <nav class="topnav">

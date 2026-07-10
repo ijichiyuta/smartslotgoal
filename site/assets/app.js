@@ -1,3 +1,37 @@
+// ---- 簡易パスワードゲート（4桁PIN・端末ごとに一度解錠すれば記憶）----
+// 注意: 公開静的サイトのため“抑止”レベル。直リンク/ソース閲覧では突破可能。
+(function () {
+  var gate = document.getElementById('pinGate');
+  if (!gate) return;
+  var H = 2088261204; // djb2("0807")
+  var djb2 = function (s) { var x = 5381; for (var i = 0; i < s.length; i++) x = ((x << 5) + x + s.charCodeAt(i)) >>> 0; return x; };
+  var input = document.getElementById('pinInput');
+  var err = document.getElementById('pinErr');
+  var card = gate.querySelector('.pin-card');
+  var locked = document.documentElement.classList.contains('locked');
+  if (locked) setTimeout(function () { input && input.focus(); }, 120);
+  function tryUnlock() {
+    var v = (input.value || '').replace(/\D/g, '');
+    if (v.length < 4) return;
+    if (djb2(v) === H) {
+      try { localStorage.setItem('ssg_unlocked', '1'); } catch (e) {}
+      document.documentElement.classList.remove('locked');
+      input.blur();
+    } else {
+      err.textContent = 'パスワードが違います';
+      input.value = '';
+      if (card) { card.classList.add('shake'); setTimeout(function () { card.classList.remove('shake'); }, 400); }
+    }
+  }
+  if (input) input.addEventListener('input', function () {
+    input.value = input.value.replace(/\D/g, '').slice(0, 4);
+    if (err.textContent) err.textContent = '';
+    if (input.value.length === 4) tryUnlock();
+  });
+  var form = document.getElementById('pinForm');
+  if (form) form.addEventListener('submit', function (e) { e.preventDefault(); tryUnlock(); });
+})();
+
 // app.js — 個人サイトの動作（機種一覧の検索/フィルタ/お気に入り、タブ切替、解析の全展開、ニュース検索）
 (function () {
   'use strict';

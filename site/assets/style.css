@@ -145,3 +145,16 @@ details[open] summary::before{content:"▾ "}
 .sr-item:hover,.sr-item:active{background:var(--panel2);text-decoration:none}
 .sr-name{flex:1;font-weight:600}
 .sr-item .badge{font-size:10px;flex:0 0 auto}
+
+/* ===== パスワードゲート ===== */
+.pin-gate{align-items:center;justify-content:center}
+.pin-card{display:flex;flex-direction:column;align-items:center;gap:10px;width:88%;max-width:320px;padding:32px 24px;text-align:center}
+.pin-emoji{font-size:40px}
+.pin-title{font-size:20px;font-weight:800;color:var(--text)}
+.pin-sub{font-size:13px;color:var(--muted);margin-bottom:6px}
+#pinInput{width:180px;padding:14px;font-size:28px;letter-spacing:14px;text-align:center;
+  border:1px solid var(--border);border-radius:12px;background:#fff;color:var(--text);caret-color:var(--accent)}
+#pinInput:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-weak)}
+.pin-err{color:#dc2626;font-size:13px;min-height:18px}
+.pin-card.shake{animation:shake .38s}
+@keyframes shake{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-8px)}40%,80%{transform:translateX(8px)}}
