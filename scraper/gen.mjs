@@ -183,8 +183,8 @@ fs.writeFileSync(path.join(SITE, 'pages.html'), layout('資料', pagesBody, 0));
 
 // ===== 期待値計算ツール（自作・公開理論ベース） =====
 const toolBody = `
-<h1>期待値計算ツール</h1>
-<p class="note">スロット稼働の期待収支を概算します。公開されている計算理論に基づく自作ツールです（機種別の具体的な期待値は各機種ページの「狙い目」を参照）。</p>
+<h1>期待値ツール</h1>
+<p class="note">スロット稼働の期待収支・下振れ確率を概算し、実収支を記録するツール。公開されている計算理論に基づく自作（機種別の具体的な期待値は各機種ページの「狙い目」を参照）。</p>
 
 <div class="card-box">
   <h2 style="margin-top:0">① 機械割ベース 期待収支</h2>
@@ -262,8 +262,112 @@ var kwEl=kw,gamesEl=games,betEl=bet,coinEl=coin,diffEl=diff,rateEl=rate,minEl=mi
 ids.forEach(function(id){var e=document.getElementById(id); if(e) e.addEventListener('input',calc);});
 calc();
 </script>
+
+<div class="card-box">
+  <h2 style="margin-top:0">④ 下振れシミュレーター</h2>
+  <p class="note">期待値稼働の月収支のブレを正規分布で推定。「−○円以下になる確率」「今の結果が何σ」を出します。</p>
+  <div class="calc">
+    <div class="row">
+      <div class="field"><label>稼働件数（台数）</label><input id="s_n" type="number" value="150"></div>
+      <div class="field"><label>1台あたり平均期待値（円）</label><input id="s_ev" type="number" value="1000"></div>
+    </div>
+    <div class="row">
+      <div class="field"><label>1台あたりのブレσ（円）目安1.5万〜2.5万</label><input id="s_sd" type="number" value="18000"></div>
+      <div class="field"><label>判定したい結果（円）例:-150000</label><input id="s_res" type="number" value="-150000"></div>
+    </div>
+    <div class="result" id="s_out"></div>
+  </div>
+</div>
+
+<div class="card-box">
+  <h2 style="margin-top:0">⑤ 稼働ロガー（実収支 vs 理論期待値）</h2>
+  <p class="note">1台ごとに理論期待値を記録 → 実収支との乖離で「運か実力か」を可視化。データは端末にのみ保存（お気に入りと同じ方式）。</p>
+  <div class="calc">
+    <div class="row">
+      <div class="field"><label>機種名（任意）</label><input id="l_m" type="text" placeholder="例: 北斗転生2"></div>
+      <div class="field"><label>理論期待値（円）狙った時の</label><input id="l_ev" type="number" placeholder="例: 1500"></div>
+    </div>
+    <div class="row">
+      <div class="field"><label>投資（円）</label><input id="l_inv" type="number" placeholder="例: 20000"></div>
+      <div class="field"><label>回収（円）</label><input id="l_rec" type="number" placeholder="例: 8000"></div>
+    </div>
+    <button id="l_add" class="mini-btn" style="padding:11px 20px;align-self:start">＋ 記録を追加</button>
+    <div class="result" id="l_sum"></div>
+    <div id="l_chart"></div>
+    <div id="l_list"></div>
+  </div>
+</div>
+
+<script>(function(){
+  function gid(x){return document.getElementById(x);}
+  function erf(x){var s=x<0?-1:1;x=Math.abs(x);var t=1/(1+0.3275911*x);var y=1-(((((1.061405429*t-1.453152027)*t)+1.421413741)*t-0.284496736)*t+0.254829592)*t*Math.exp(-x*x);return s*y;}
+  function ncdf(z){return 0.5*(1+erf(z/Math.SQRT2));}
+  function yenS(n){return (n>=0?'+':'')+Math.round(n).toLocaleString()+'円';}
+  function cl(n){return n>=0?'pos':'neg';}
+
+  // ④ シミュレーター
+  var Q=[[0.01,-2.326],[0.05,-1.645],[0.25,-0.674],[0.5,0],[0.75,0.674],[0.95,1.645],[0.99,2.326]];
+  function sim(){
+    var n=+gid('s_n').value,ev=+gid('s_ev').value,sd=+gid('s_sd').value,res=+gid('s_res').value;
+    var mu=n*ev,sig=sd*Math.sqrt(n);
+    if(!(sig>0)){gid('s_out').innerHTML='<span class="note">値を入力してください</span>';return;}
+    var z=(res-mu)/sig,p=ncdf(z);
+    var rows=Q.map(function(q){var v=mu+sig*q[1];return '<tr><td>'+(q[0]*100)+'%</td><td class="'+cl(v)+'">'+yenS(v)+'</td></tr>';}).join('');
+    gid('s_out').innerHTML=
+      '<div>期待収支: <b class="'+cl(mu)+'">'+yenS(mu)+'</b> ／ 月のブレσ: ±'+Math.round(sig).toLocaleString()+'円</div>'+
+      '<div style="margin:8px 0">結果 '+yenS(res)+' は <b>'+z.toFixed(2)+'σ</b>。<b class="'+(p<0.5?'neg':'')+'">これ以下になる確率 '+(p*100).toFixed(1)+'%</b></div>'+
+      '<table><thead><tr><th>下位</th><th>この収支以下に収まる</th></tr></thead><tbody>'+rows+'</tbody></table>'+
+      '<div class="note">σ(ブレ)が支配的。1ヶ月は誤差の範囲で、件数が増えるほど期待収支へ収束する。</div>';
+  }
+  ['s_n','s_ev','s_sd','s_res'].forEach(function(id){var e=gid(id);if(e)e.addEventListener('input',sim);});
+  if(gid('s_out'))sim();
+
+  // ⑤ 稼働ロガー
+  var LKEY='ssg_log';
+  function lget(){try{return JSON.parse(localStorage.getItem(LKEY)||'[]');}catch(e){return[];}}
+  function lset(a){try{localStorage.setItem(LKEY,JSON.stringify(a));}catch(e){}}
+  function stdev(a,m){if(a.length<2)return 0;var s=0;for(var i=0;i<a.length;i++){var d=a[i]-m;s+=d*d;}return Math.sqrt(s/(a.length-1));}
+  function spark(pts){
+    if(pts.length<2)return '';
+    var all=[0];pts.forEach(function(p){all.push(p[0],p[1]);});
+    var mn=Math.min.apply(null,all),mx=Math.max.apply(null,all),W=320,H=110,pad=6,n=pts.length;
+    function X(i){return pad+(W-2*pad)*i/(n-1);}
+    function Y(v){return H-pad-(H-2*pad)*(v-mn)/((mx-mn)||1);}
+    function P(sel){var d='';for(var i=0;i<n;i++){d+=(i?'L':'M')+X(i).toFixed(1)+' '+Y(pts[i][sel]).toFixed(1)+' ';}return d;}
+    return '<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;height:auto;border:1px solid var(--border);border-radius:8px;margin:10px 0;background:#fff">'+
+      '<line x1="0" y1="'+Y(0).toFixed(1)+'" x2="'+W+'" y2="'+Y(0).toFixed(1)+'" stroke="#e5e7eb"/>'+
+      '<path d="'+P(1)+'" fill="none" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="4 3"/>'+
+      '<path d="'+P(0)+'" fill="none" stroke="#2563eb" stroke-width="2"/></svg>'+
+      '<div class="note">青=実収支の累積 ／ 灰点線=理論期待値の累積。青が灰を大きく下回る＝下振れ(または実力不足)。</div>';
+  }
+  function renderLog(){
+    var log=lget(),sum=gid('l_sum'),list=gid('l_list'),chart=gid('l_chart');
+    if(!log.length){sum.innerHTML='<span class="note">まだ記録がありません。1台ずつ追加してください。</span>';list.innerHTML='';chart.innerHTML='';return;}
+    var n=log.length,nets=log.map(function(x){return x.rec-x.inv;});
+    var realTot=nets.reduce(function(s,v){return s+v;},0);
+    var evTot=log.reduce(function(s,x){return s+(+x.ev||0);},0);
+    var gap=realTot-evTot,sd=stdev(nets,realTot/n),sig=sd*Math.sqrt(n),z=sig>0?gap/sig:0;
+    sum.innerHTML='<div>記録 <b>'+n+'台</b> ／ 実収支 <b class="'+cl(realTot)+'">'+yenS(realTot)+'</b> ／ 理論期待値合計 <b>'+yenS(evTot)+'</b></div>'+
+      '<div style="margin-top:6px">乖離(実−理論): <b class="'+cl(gap)+'">'+yenS(gap)+'</b>'+(sig>0?'（<b>'+z.toFixed(2)+'σ</b>）':'')+'</div>'+
+      '<div class="note">'+(n<100?'※'+n+'台は少なすぎ。数百台で「運か実力か」が見えてくる。':'乖離が±2σ以内なら概ね運の範囲＝理論どおり。継続的に−方向なら条件/立ち回りを見直し。')+'</div>';
+    var cr=0,ce=0,pts=[];for(var i=0;i<log.length;i++){cr+=nets[i];ce+=(+log[i].ev||0);pts.push([cr,ce]);}
+    chart.innerHTML=spark(pts);
+    list.innerHTML='<table><thead><tr><th>#</th><th>機種</th><th>収支</th><th>理論EV</th><th></th></tr></thead><tbody>'+
+      log.map(function(x,i){var net=x.rec-x.inv;return '<tr><td>'+(i+1)+'</td><td style="white-space:normal;text-align:left">'+(x.m||'-')+'</td><td class="'+cl(net)+'">'+yenS(net)+'</td><td>'+yenS(+x.ev||0)+'</td><td><button class="l_del" data-i="'+i+'" style="border:none;background:none;color:#dc2626;cursor:pointer;font-size:16px">×</button></td></tr>';}).join('')+'</tbody></table>';
+    Array.prototype.forEach.call(document.querySelectorAll('.l_del'),function(btn){btn.addEventListener('click',function(){var lg=lget();lg.splice(+btn.dataset.i,1);lset(lg);renderLog();});});
+  }
+  var add=gid('l_add');
+  if(add)add.addEventListener('click',function(){
+    var m=gid('l_m').value.trim(),inv=+gid('l_inv').value||0,rec=+gid('l_rec').value||0,ev=+gid('l_ev').value||0;
+    if(!inv&&!rec&&!ev){return;}
+    var log=lget();log.push({m:m,inv:inv,rec:rec,ev:ev,t:Date.now()});lset(log);
+    gid('l_m').value='';gid('l_inv').value='';gid('l_rec').value='';gid('l_ev').value='';
+    renderLog();gid('l_m').focus();
+  });
+  if(gid('l_sum'))renderLog();
+})();</script>
 `;
-fs.writeFileSync(path.join(SITE, 'tool.html'), layout('期待値計算ツール', toolBody, 0));
+fs.writeFileSync(path.join(SITE, 'tool.html'), layout('期待値ツール', toolBody, 0));
 
 // ===== アイコン(SVG) =====
 const icon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" rx="96" fill="#ffffff"/><rect x="8" y="8" width="496" height="496" rx="92" fill="none" stroke="#e5e7eb" stroke-width="8"/><text x="50%" y="54%" font-size="300" text-anchor="middle" dominant-baseline="central">🎰</text></svg>`;
